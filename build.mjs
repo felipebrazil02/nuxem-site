@@ -3,7 +3,7 @@
 import { readdirSync, readFileSync, writeFileSync, mkdirSync, cpSync, rmSync, existsSync, statSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { EMPRESA, PRODUTOS, SOLUCOES, HOME, CONTATO } from './src/dados.mjs';
+import { EMPRESA, PRODUTOS, SOLUCOES, HOME, CONTATO, PILAR } from './src/dados.mjs';
 
 const raiz = dirname(fileURLToPath(import.meta.url));
 const dirBlog = join(raiz, 'conteudo', 'blog');
@@ -256,6 +256,39 @@ for (const p of PRODUTOS) {
 </div></div>`,
   }));
 }
+
+// PILAR — página pilar "Guia Completo do Óleo BPF"
+salvar(PILAR.slug, layout({
+  title: PILAR.title, description: PILAR.description, caminho: PILAR.slug,
+  conteudo: `
+<div class="pagina-topo"><div class="container">
+  <h1>${PILAR.h1}</h1>
+  <p class="resumo">${PILAR.resumo}</p>
+</div></div>
+<div class="container"><div class="conteudo">
+  ${PILAR.secoes.map(s => s.ehFaq ? `
+    <h2>${s.titulo}</h2>
+    ${s.perguntas.map(q => `<h3>${q.p}</h3><p>${q.r}</p>`).join('')}
+  ` : `
+    <h2>${s.titulo}</h2>
+    ${(s.paragrafos || []).map(p => `<p>${p}</p>`).join('\\n')}
+    ${s.lista ? `<ul>${s.lista.map(i => i.link ? `<li><a href="${i.link}">${i.texto}</a></li>` : `<li>${i.texto}</li>`).join('')}</ul>` : ''}
+  `).join('\\n')}
+  <p style="margin-top:32px"><a class="btn btn-laranja" href="${ZAP}">Solicitar cotação de óleo BPF</a></p>
+</div></div>`}));
+salvar(PILAR.slug + '/faq', layout({
+  title: 'Perguntas Frequentes sobre Óleo BPF | Nuxem',
+  description: 'FAQ sobre óleo BPF: diferenças entre tipos, armazenamento, aquecimento, poder calorífico e mais. Tire suas dúvidas técnicas.',
+  caminho: PILAR.slug + '/faq',
+  conteudo: `
+<div class="pagina-topo"><div class="container">
+  <h1>Perguntas Frequentes sobre Óleo BPF</h1>
+  <p class="resumo">Respostas técnicas para as dúvidas mais comentes sobre óleo combustível industrial.</p>
+</div></div>
+<div class="container"><div class="conteudo">
+  ${PILAR.secoes.filter(s => s.ehFaq)[0]?.perguntas.map(q => `<h2>${q.p}</h2><p>${q.r}</p>`).join('') || ''}
+  <p><a class="btn btn-laranja" href="/${PILAR.slug}/">← Voltar ao guia completo</a></p>
+</div></div>`}));
 
 // SOLUÇÕES (índice)
 salvar('solucoes', layout({

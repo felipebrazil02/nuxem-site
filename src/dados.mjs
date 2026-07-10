@@ -236,3 +236,96 @@ export const CONTATO = {
   title: 'Contato | Solicite Cotação de Óleo Combustível | Nuxem',
   description: 'Solicite sua cotação de óleo BPF e combustíveis industriais. Atendimento 24h pelo WhatsApp, telefone ou e-mail. Entrega em todo o estado de São Paulo.',
 };
+
+export const PILAR = {
+  slug: 'guia-oleo-bpf',
+  title: 'Óleo BPF: Tudo que Sua Indústria Precisa Saber | Guia Completo | Nuxem',
+  description: 'Guia completo sobre óleo BPF: o que é, tipos (B1, A1, BTE, Xisto), aplicações em caldeiras, usinas de asfalto e fundições, como escolher e armazenar. Tudo que sua indústria precisa saber.',
+  h1: 'Óleo BPF: Tudo que Sua Indústria Precisa Saber',
+  resumo: 'Guia completo sobre o principal combustível industrial do Brasil. Saiba o que é, como escolher, onde usar e como garantir o melhor fornecimento para sua operação térmica.',
+  secoes: [
+    {
+      titulo: 'O que é Óleo BPF?',
+      paragrafos: [
+        'Óleo BPF significa Baixo Ponto de Fluidez. É um combustível industrial derivado de petróleo, classificado pela ANP como óleo combustível pesado, utilizado principalmente em processos de geração de energia térmica em caldeiras, fornos, usinas de asfalto e fundições.',
+        'Sua principal característica é o alto poder calorífico (acima de 10.400 kcal/kg), o que o torna a escolha padrão para operações que exigem queima contínua e alta carga energética. O "baixo ponto de fluidez" significa que ele mantém fluidez em temperaturas mais baixas que outros óleos pesados, facilitando o manuseio e a queima.',
+        'O óleo BPF segue a regulamentação da ANP (Resolução CNP-05) e é comercializado em diferentes classificações: tipo A (maior teor de enxofre) e tipo B (menor teor de enxofre), cada um com aplicações específicas.',
+      ],
+    },
+    {
+      titulo: 'Tipos de Óleo BPF e Combustíveis Relacionados',
+      paragrafos: [
+        'Existem diferentes tipos de óleo combustível industrial, cada um com características específicas de viscosidade, teor de enxofre e poder calorífico. A escolha do tipo certo depende do equipamento, da aplicação e das exigências ambientais da sua operação.',
+      ],
+      lista: [
+        { texto: 'Óleo BPF — padrão industrial, alto poder calorífico, ideal para caldeiras e fornos', link: '/produtos/oleo-bpf/' },
+        { texto: 'Óleo APF — baixa viscosidade, dispensa aquecimento prévio, fácil manuseio', link: '/produtos/oleo-apf/' },
+        { texto: 'Óleo B1 (OC-B1) — baixo teor de enxofre (máx 1%), ideal para indústrias com restrição ambiental', link: '/produtos/oleo-b1/' },
+        { texto: 'Óleo A1 (OC-A1) — maior teor de enxofre, alta carga energética contínua', link: '/produtos/oleo-a1/' },
+        { texto: 'Óleo de Xisto (OTE) — alta fluidez, dispensa pré-aquecimento, baixa emissão', link: '/produtos/oleo-de-xisto/' },
+        { texto: 'Óleo BTE — baixíssimo teor de enxofre (0,5%), premium Braskem, menor fuligem', link: '/produtos/oleo-bte/' },
+        { texto: 'Óleos Alternativos — viscosidades variadas, sob medida para seu equipamento', link: '/produtos/oleos-alternativos/' },
+      ],
+    },
+    {
+      titulo: 'Aplicações Industriais do Óleo BPF',
+      paragrafos: [
+        'O óleo BPF é amplamente utilizado em diversos segmentos industriais que dependem de geração de calor para seus processos produtivos. Cada aplicação exige um perfil específico de combustível.',
+      ],
+      lista: [
+        { texto: 'Caldeiras Industriais — geração de vapor para processos contínuos', link: '/solucoes/caldeiras/' },
+        { texto: 'Usinas de Asfalto — secagem de agregados e produção de massa asfáltica', link: '/solucoes/usinas-de-asfalto/' },
+        { texto: 'Fundições — alta carga térmica para fusão de metais', link: '/solucoes/fundicoes/' },
+        { texto: 'Fornos Industriais — aquecimento de processos, secagem e tratamento térmico', link: '/solucoes/' },
+        { texto: 'Secadores Industriais — aquecimento de ar para secagem de grãos e minerais', link: '/solucoes/' },
+      ],
+    },
+    {
+      titulo: 'Como Escolher o Óleo BPF Ideal',
+      paragrafos: [
+        'A escolha do óleo BPF ideal para sua operação depende de alguns fatores técnicos fundamentais:',
+        '1. Tipo de equipamento: queimador, caldeira, forno ou secador — cada um tem exigências diferentes de viscosidade e atomização.',
+        '2. Temperatura de operação: a viscosidade do combustível precisa ser compatível com a temperatura de trabalho do sistema de aquecimento.',
+        '3. Exigências ambientais: indústrias sujeitas a limites de emissão de SOx precisam de óleos com baixo teor de enxofre (B1, BTE ou Xisto).',
+        '4. Infraestrutura de armazenamento: tanques, linhas aquecidas e bombas precisam estar dimensionados para o tipo de combustível.',
+        '5. Regime de operação: operações contínuas 24h exigem fornecimento programado e suporte técnico permanente.',
+        'A Nuxem oferece suporte técnico gratuito para ajudar na especificação correta do combustível para seu equipamento.',
+      ],
+    },
+    {
+      titulo: 'Armazenamento e Manuseio Seguro',
+      paragrafos: [
+        'O armazenamento adequado do óleo BPF é essencial para preservar suas características e garantir segurança operacional:',
+        '- Tanques devem ser dimensionados para o volume de consumo com folga mínima de 5 dias.',
+        '- O óleo BPF requer aquecimento para manter a fluidez ideal para bombeamento (entre 40°C e 80°C, dependendo da viscosidade).',
+        '- O ponto de fulgor do óleo BPF é acima de 66°C, o que exige cuidados com fontes de ignição próximas aos tanques.',
+        '- A manutenção periódica dos tanques evita acúmulo de borra e contaminação do combustível.',
+        '- Sistemas de contenção e drenagem devem seguir as normas ambientais vigentes.',
+      ],
+    },
+    {
+      titulo: 'Logística e Fornecimento',
+      paragrafos: [
+        'Uma operação térmica contínua não pode parar por falta de combustível. Por isso, a logística de fornecimento é tão importante quanto a qualidade do produto.',
+        'A Nuxem trabalha com frota própria e produção sob demanda em todo o estado de São Paulo, garantindo:',
+        '- Entrega programada conforme o consumo da sua planta',
+        '- Atendimento 24 horas para emergências',
+        '- Rastreabilidade completa de cada carga',
+        '- Suporte técnico na especificação e no acompanhamento',
+        '- Padrão constante de qualidade entre entregas',
+      ],
+    },
+    {
+      titulo: 'Perguntas Frequentes (FAQ)',
+      ehFaq: true,
+      perguntas: [
+        { p: 'Qual a diferença entre óleo BPF e óleo APF?', r: 'O BPF tem Baixo Ponto de Fluidez (mantém fluidez em temperaturas mais baixas), enquanto o APF tem Alto Ponto de Fluidez. O BPF é mais viscoso e exige aquecimento, o APF é mais fluido e dispensa aquecimento prévio.' },
+        { p: 'Óleo BPF é inflamável?', r: 'Sim, mas seu ponto de fulgor é acima de 66°C, o que o classifica como combustível (não inflamável) segundo a regulamentação brasileira. Isso significa que não entra em combustão espontânea em temperatura ambiente.' },
+        { p: 'Qual o poder calorífico do óleo BPF?', r: 'O óleo BPF tem poder calorífico superior acima de 10.400 kcal/kg, um dos mais altos entre os combustíveis líquidos industriais disponíveis no Brasil.' },
+        { p: 'Precisa aquecer o óleo BPF para usar?', r: 'Sim, o óleo BPF requer aquecimento entre 40°C e 80°C para reduzir sua viscosidade e permitir atomização adequada no queimador.' },
+        { p: 'Qual a diferença entre BPF A1 e B1?', r: 'O BPF tipo A1 tem maior teor de enxofre (até 2,5%), enquanto o B1 tem teor reduzido (máx 1%). O B1 é indicado para indústrias com restrições ambientais.' },
+        { p: 'Quanto tempo dura o óleo BPF armazenado?', r: 'Quando armazenado corretamente, o óleo BPF pode ser mantido por meses sem perda significativa de qualidade, desde que protegido de contaminação e com temperatura controlada.' },
+      ],
+    },
+  ],
+};
