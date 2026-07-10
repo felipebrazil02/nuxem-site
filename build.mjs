@@ -1,6 +1,6 @@
 // Montador do site da Nuxem — gera HTML estático em dist/
 // Sem dependências externas: rápido, previsível e fácil de manter.
-import { readdirSync, readFileSync, writeFileSync, mkdirSync, cpSync, rmSync, existsSync } from 'node:fs';
+import { readdirSync, readFileSync, writeFileSync, mkdirSync, cpSync, rmSync, existsSync, statSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { EMPRESA, PRODUTOS, SOLUCOES, HOME, CONTATO } from './src/dados.mjs';
@@ -455,4 +455,41 @@ if (blogBackup && existsSync(blogBackup)) {
     if (!existsSync(dst)) cpSync(src, dst, { recursive: true });
   }
   rmSync(blogBackup, { recursive: true });
+  // re-escaneia dist/blog/ para incluir posts restaurados na listagem
+  const todosSlugs = readdirSync(blogDir).filter(e => statSync(join(blogDir, e)).isDirectory());
+  for (const slug of todosSlugs) {
+    const idx = join(blogDir, slug, 'index.html');
+    if (existsSync(idx) && !posts.find(p => p.slug === slug)) {
+      const html = readFileSync(idx, 'utf8');
+      const tm = html.match(/<h1>([^<]+)<\/h1>/);
+      const dm = html.match(/Publicado em (\d+ de [^<]+)/);
+      const mm = html.match(/<meta name="description" content="([^"]+)"/);
+      posts.push({
+        slug,
+        slugOriginal: '',
+        title: tm ? tm[1] : slug,
+        description: mm ? mm[1] : '',
+        date: dm ? dm[1] : '',
+      });
+    }
+  }
+  posts.sort((a, b) => (a.date < b.date ? 1 : -1));
+  // regera a listagem do blog com todos os posts
+  const blogHtml = `<div class="pagina-topo"><div class="container">
+  <h1>Blog Nuxem</h1>
+  <p class="resumo">Conteúdo técnico sobre combustível industrial, para você decidir com segurança.</p>
+</div></div>
+<section><div class="container lista-posts">
+  ${posts.map(p => `<div class="card"><h3><a href="/blog/${p.slug}/">${p.title}</a></h3><p class="post-meta">${typeof p.date === 'string' && p.date.includes('de') ? p.date : ''}</p><p>${p.description}</p></div>`).join('\n  ')}
+</div></section>`;
+  writeFileSync(join(blogDir, 'index.html'), layout({ title: 'Blog Nuxem | Conteúdo Técnico sobre Óleo Combustível Industrial', description: 'Artigos técnicos sobre óleo BPF, caldeiras, usinas de asfalto, fundições e logística de combustível industrial.', caminho: 'blog', conteudo: blogHtml }), 'utf8');
+  // atualiza sitemap com blog posts
+  const datasPorPagina = Object.fromEntries(posts.map(p => [`/blog/${p.slug}/`, new Date().toISOString().slice(0, 10)]));
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${paginas.map(p => `  <url><loc>${EMPRESA.dominio}${p}</loc>${datasPorPagina[p] ? `<lastmod>${datasPorPagina[p]}</lastmod>` : ''}</url>`).join('\n')}
+${posts.map(p => `  <url><loc>${EMPRESA.dominio}/blog/${p.slug}/</loc><lastmod>${new Date().toISOString().slice(0, 10)}</lastmod></url>`).join('\n')}
+</urlset>`;
+  writeFileSync(join(dist, 'sitemap.xml'), sitemap, 'utf8');
+  console.log(`  + ${todosSlugs.length - arquivosBlog.length} posts restaurados do backup`);
 }
