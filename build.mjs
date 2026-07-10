@@ -9,6 +9,14 @@ const raiz = dirname(fileURLToPath(import.meta.url));
 const dirBlog = join(raiz, '..', 'conteudo', 'blog');
 const dist = join(raiz, 'dist');
 
+// preserva blog existente se não houver posts .md para regenerar
+let blogBackup = null;
+const blogDir = join(dist, 'blog');
+if (existsSync(blogDir) && (!existsSync(dirBlog) || readdirSync(dirBlog).filter(f => f.endsWith('.md')).length === 0)) {
+  blogBackup = join(raiz, '.blogbak');
+  mkdirSync(blogBackup, { recursive: true });
+  cpSync(blogDir, blogBackup, { recursive: true });
+}
 if (existsSync(dist)) rmSync(dist, { recursive: true });
 mkdirSync(dist, { recursive: true });
 cpSync(join(raiz, 'src', 'estilo.css'), join(dist, 'estilo.css'));
@@ -293,8 +301,8 @@ for (const s of SOLUCOES) {
 }
 
 // BLOG
-const arquivosBlog = readdirSync(dirBlog).filter(f => f.endsWith('.md'));
 const posts = [];
+const arquivosBlog = existsSync(dirBlog) ? readdirSync(dirBlog).filter(f => f.endsWith('.md')) : [];
 for (const f of arquivosBlog) {
   const { meta, corpo } = lerFrontmatter(readFileSync(join(dirBlog, f), 'utf8'));
   // remove o cabeçalho repetido do Wix (título + autor + data + tempo de leitura)
@@ -437,3 +445,9 @@ writeFileSync(join(dist, 'sitemap.xml'), sitemap, 'utf8');
 writeFileSync(join(dist, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${EMPRESA.dominio}/sitemap.xml\n`, 'utf8');
 
 console.log(`Site gerado: ${paginas.length} páginas em dist/`);
+
+// restaura blog existente se não foi regenerado
+if (blogBackup && existsSync(blogBackup)) {
+  cpSync(blogBackup, blogDir, { recursive: true });
+  rmSync(blogBackup, { recursive: true });
+}
