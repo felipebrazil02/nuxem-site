@@ -9,10 +9,10 @@ const raiz = dirname(fileURLToPath(import.meta.url));
 const dirBlog = join(raiz, 'conteudo', 'blog');
 const dist = join(raiz, 'dist');
 
-// preserva blog existente se não houver posts .md para regenerar
+// preserva blog existente ANTES de limpar dist — sempre
 let blogBackup = null;
 const blogDir = join(dist, 'blog');
-if (existsSync(blogDir) && (!existsSync(dirBlog) || readdirSync(dirBlog).filter(f => f.endsWith('.md')).length === 0)) {
+if (existsSync(blogDir)) {
   blogBackup = join(raiz, '.blogbak');
   mkdirSync(blogBackup, { recursive: true });
   cpSync(blogDir, blogBackup, { recursive: true });
@@ -447,7 +447,12 @@ writeFileSync(join(dist, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${EMP
 console.log(`Site gerado: ${paginas.length} páginas em dist/`);
 
 // restaura blog existente se não foi regenerado
+// mescla blog backup com o recém-gerado: só entra o que não foi regenerado
 if (blogBackup && existsSync(blogBackup)) {
-  cpSync(blogBackup, blogDir, { recursive: true });
+  for (const entry of readdirSync(blogBackup)) {
+    const src = join(blogBackup, entry);
+    const dst = join(blogDir, entry);
+    if (!existsSync(dst)) cpSync(src, dst, { recursive: true });
+  }
   rmSync(blogBackup, { recursive: true });
 }
