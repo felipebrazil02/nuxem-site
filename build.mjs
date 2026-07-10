@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 import { EMPRESA, PRODUTOS, SOLUCOES, HOME, CONTATO } from './src/dados.mjs';
 
 const raiz = dirname(fileURLToPath(import.meta.url));
-const dirBlog = join(raiz, '..', 'conteudo', 'blog');
+const dirBlog = join(raiz, 'conteudo', 'blog');
 const dist = join(raiz, 'dist');
 
 // preserva blog existente se não houver posts .md para regenerar
