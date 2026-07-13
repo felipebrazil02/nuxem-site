@@ -271,9 +271,9 @@ salvar(PILAR.slug, layout({
     ${s.perguntas.map(q => `<h3>${q.p}</h3><p>${q.r}</p>`).join('')}
   ` : `
     <h2>${s.titulo}</h2>
-    ${(s.paragrafos || []).map(p => `<p>${p}</p>`).join('\\n')}
+    ${(s.paragrafos || []).map(p => `<p>${p}</p>`).join('\n')}
     ${s.lista ? `<ul>${s.lista.map(i => i.link ? `<li><a href="${i.link}">${i.texto}</a></li>` : `<li>${i.texto}</li>`).join('')}</ul>` : ''}
-  `).join('\\n')}
+  `).join('\n')}
   <p style="margin-top:32px"><a class="btn btn-laranja" href="${ZAP}">Solicitar cotação de óleo BPF</a></p>
 </div></div>`}));
 salvar(PILAR.slug + '/faq', layout({
@@ -519,7 +519,7 @@ if (blogBackup && existsSync(blogBackup)) {
   <p class="resumo">Conteúdo técnico sobre combustível industrial, para você decidir com segurança.</p>
 </div></div>
 <section><div class="container lista-posts">
-  ${posts.map(p => `<div class="card"><h3><a href="/blog/${p.slug}/">${p.title}</a></h3><p class="post-meta">${p.dataExibicao || dataBr(p.date)}</p><p>${p.description}</p></div>`).join('\\n  ')}
+  ${posts.map(p => `<div class="card"><h3><a href="/blog/${p.slug}/">${p.title}</a></h3><p class="post-meta">${p.dataExibicao || dataBr(p.date)}</p><p>${p.description}</p></div>`).join('\n  ')}
 </div></section>`;
   writeFileSync(join(blogDir, 'index.html'), layout({ title: 'Blog Nuxem | Conteúdo Técnico sobre Óleo Combustível Industrial', description: 'Artigos técnicos sobre óleo BPF, caldeiras, usinas de asfalto, fundições e logística de combustível industrial.', caminho: 'blog', conteudo: blogHtml }), 'utf8');
   // atualiza sitemap com blog posts
