@@ -495,14 +495,20 @@ if (blogBackup && existsSync(blogBackup)) {
     if (existsSync(idx) && !posts.find(p => p.slug === slug)) {
       const html = readFileSync(idx, 'utf8');
       const tm = html.match(/<h1>([^<]+)<\/h1>/);
-      const dm = html.match(/Publicado em (\d+ de [^<]+)/);
+      const jd = html.match(/"datePublished":"([^"]+)"/);
+      const dm = html.match(/Publicado em (\d+) de (\w+) de (\d+)/);
       const mm = html.match(/<meta name="description" content="([^"]+)"/);
+      // converte data pt-BR para ISO para ordenação correta
+      const meses = { janeiro:'01',fevereiro:'02',março:'03',abril:'04',maio:'05',junho:'06',julho:'07',agosto:'08',setembro:'09',outubro:'10',novembro:'11',dezembro:'12' };
+      let dataIso = jd ? jd[1] : '';
+      if (!dataIso && dm) dataIso = `${dm[3]}-${meses[dm[2]]||'00'}-${dm[1].padStart(2,'0')}`;
       posts.push({
         slug,
         slugOriginal: '',
         title: tm ? tm[1] : slug,
         description: mm ? mm[1] : '',
-        date: dm ? dm[1] : '',
+        date: dataIso,
+        dataExibicao: dm ? `${dm[1]} de ${dm[2]} de ${dm[3]}` : (jd ? dataBr(jd[1]) : ''),
       });
     }
   }
@@ -513,7 +519,7 @@ if (blogBackup && existsSync(blogBackup)) {
   <p class="resumo">Conteúdo técnico sobre combustível industrial, para você decidir com segurança.</p>
 </div></div>
 <section><div class="container lista-posts">
-  ${posts.map(p => `<div class="card"><h3><a href="/blog/${p.slug}/">${p.title}</a></h3><p class="post-meta">${typeof p.date === 'string' && p.date.includes('de') ? p.date : ''}</p><p>${p.description}</p></div>`).join('\n  ')}
+  ${posts.map(p => `<div class="card"><h3><a href="/blog/${p.slug}/">${p.title}</a></h3><p class="post-meta">${p.dataExibicao || dataBr(p.date)}</p><p>${p.description}</p></div>`).join('\\n  ')}
 </div></section>`;
   writeFileSync(join(blogDir, 'index.html'), layout({ title: 'Blog Nuxem | Conteúdo Técnico sobre Óleo Combustível Industrial', description: 'Artigos técnicos sobre óleo BPF, caldeiras, usinas de asfalto, fundições e logística de combustível industrial.', caminho: 'blog', conteudo: blogHtml }), 'utf8');
   // atualiza sitemap com blog posts
