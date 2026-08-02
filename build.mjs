@@ -57,7 +57,9 @@ function mdParaHtml(md) {
 }
 
 function inline(t) {
-  return t.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  let s = t.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  s = s.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
+  return s;
 }
 
 function lerFrontmatter(texto) {
