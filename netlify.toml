@@ -4,3 +4,17 @@ command = "node build.mjs"
 
 [build.processing]
 skip_processing = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+[[headers]]
+  for = "/imagens/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

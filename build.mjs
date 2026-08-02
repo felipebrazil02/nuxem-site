@@ -104,11 +104,19 @@ function layout({ title, description, caminho, conteudo, ogImage, jsonLd, preloa
 <meta property="og:url" content="${url}">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
-<meta property="og:image" content="${EMPRESA.dominio}${ogImage || '/imagens/hero-usina-asfalto.jpg'}">
+<meta property="og:image" content="${EMPRESA.dominio}${ogImage || '/imagens/hero-usina-asfalto.webp'}">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/imagens/icone-nuxem.png">
-${preloadHero ? '<link rel="preload" as="image" href="/imagens/hero-usina-asfalto.jpg">' : ''}
+${preloadHero ? '<link rel="preload" as="image" href="/imagens/hero-usina-asfalto.webp">' : ''}
 <link rel="stylesheet" href="/estilo.css">
+${EMPRESA.gaId ? `<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=${EMPRESA.gaId}"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${EMPRESA.gaId}');
+</script>` : ''}
 ${jsonLd ? `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>` : ''}
 </head>
 <body>
@@ -176,7 +184,7 @@ salvar('.', layout({
     description: HOME.description,
     url: `${EMPRESA.dominio}/`,
     logo: `${EMPRESA.dominio}/imagens/icone-nuxem.png`,
-    image: `${EMPRESA.dominio}/imagens/hero-usina-asfalto.jpg`,
+    image: `${EMPRESA.dominio}/imagens/hero-usina-asfalto.webp`,
     telephone: '+55-11-91501-1527',
     email: EMPRESA.email,
     address: { '@type': 'PostalAddress', streetAddress: 'Av Brasília, 2242', addressLocality: 'Salto', addressRegion: 'SP', postalCode: '13327-896', addressCountry: 'BR' },
@@ -220,11 +228,22 @@ salvar('.', layout({
 </div></section>`,
 }));
 
-// PRODUTOS (índice)
+// PRODUTOS (índice) — com schema ItemList para rich snippet
 salvar('produtos', layout({
   title: 'Produtos | Óleo BPF, APF e Alternativos | Nuxem São Paulo',
   description: 'Conheça os combustíveis industriais da Nuxem: óleo BPF, óleo APF e óleos alternativos com viscosidades variadas. Especificações completas e cotação rápida.',
   caminho: 'produtos',
+  jsonLd: {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Combustíveis industriais Nuxem',
+    itemListElement: PRODUTOS.map((p, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `${EMPRESA.dominio}/produtos/${p.slug}/`,
+      name: p.nome,
+    })),
+  },
   conteudo: `
 <div class="pagina-topo"><div class="container">
   <h1>Combustíveis industriais Nuxem</h1>
@@ -237,10 +256,34 @@ salvar('produtos', layout({
 </div></section>`,
 }));
 
-// PRODUTOS (páginas individuais)
+// PRODUTOS (páginas individuais) — com schema Product
 for (const p of PRODUTOS) {
   salvar(join('produtos', p.slug), layout({
     title: p.title, description: p.description, caminho: `produtos/${p.slug}`,
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'Product',
+      name: p.nome,
+      description: p.description,
+      image: `${EMPRESA.dominio}/imagens/${p.imagem}`,
+      brand: { '@type': 'Brand', name: 'Nuxem' },
+      category: 'Combustível industrial',
+      sku: p.slug,
+      offers: {
+        '@type': 'Offer',
+        url: `${EMPRESA.dominio}/produtos/${p.slug}/`,
+        priceCurrency: 'BRL',
+        price: '0',
+        priceValidUntil: new Date(new Date().setFullYear(new Date().getFullYear() + 1)).toISOString().slice(0, 10),
+        availability: 'https://schema.org/InStock',
+        seller: { '@type': 'Organization', name: 'Nuxem' },
+      },
+      additionalProperty: p.specs.map(([k, v]) => ({
+        '@type': 'PropertyValue',
+        name: k,
+        value: v,
+      })),
+    },
     conteudo: `
 <div class="pagina-topo"><div class="container">
   <h1>${p.nome}</h1>
@@ -282,6 +325,15 @@ salvar(PILAR.slug + '/faq', layout({
   title: 'Perguntas Frequentes sobre Óleo BPF | Nuxem',
   description: 'FAQ sobre óleo BPF: diferenças entre tipos, armazenamento, aquecimento, poder calorífico e mais. Tire suas dúvidas técnicas.',
   caminho: PILAR.slug + '/faq',
+  jsonLd: {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: (PILAR.secoes.find(s => s.ehFaq)?.perguntas || []).map(q => ({
+      '@type': 'Question',
+      name: q.p,
+      acceptedAnswer: { '@type': 'Answer', text: q.r },
+    })),
+  },
   conteudo: `
 <div class="pagina-topo"><div class="container">
   <h1>Perguntas Frequentes sobre Óleo BPF</h1>
@@ -376,7 +428,7 @@ salvar('blog', layout({
   <p class="resumo">Conteúdo técnico sobre combustível industrial, para você decidir com segurança.</p>
 </div></div>
 <section><div class="container lista-posts">
-  ${posts.map(p => { const c = existsSync(join(raiz, 'src', 'imagens', 'blog', `${p.slug}.jpg`)); return `<div class="card${c ? ' card-post' : ''}">${c ? `<img src="/imagens/blog/${p.slug}.jpg" alt="" loading="lazy">` : ''}<div><h3><a href="/blog/${p.slug}/">${p.title}</a></h3><p class="post-meta">${dataBr(p.date)}</p><p>${p.description}</p></div></div>`; }).join('\n  ')}
+  ${posts.map(p => { const c = existsSync(join(raiz, 'src', 'imagens', 'blog', `${p.slug}.webp`)); return `<div class="card${c ? ' card-post' : ''}">${c ? `<img src="/imagens/blog/${p.slug}.webp" alt="" loading="lazy">` : ''}<div><h3><a href="/blog/${p.slug}/">${p.title}</a></h3><p class="post-meta">${dataBr(p.date)}</p><p>${p.description}</p></div></div>`; }).join('\n  ')}
 </div></section>`,
 }));
 
@@ -392,7 +444,7 @@ function relacionados(post, todos, n = 3) {
 }
 
 for (const p of posts) {
-  const capa = existsSync(join(raiz, 'src', 'imagens', 'blog', `${p.slug}.jpg`)) ? `/imagens/blog/${p.slug}.jpg` : null;
+  const capa = existsSync(join(raiz, 'src', 'imagens', 'blog', `${p.slug}.webp`)) ? `/imagens/blog/${p.slug}.webp` : null;
   const rel = relacionados(p, posts);
   salvar(join('blog', p.slug), layout({
     title: `${p.title} | Blog Nuxem`, description: p.description, caminho: `blog/${p.slug}`,
@@ -436,9 +488,20 @@ for (const s of SOLUCOES) {
   writeFileSync(caminho, html, 'utf8');
 }
 
-// CONTATO
+// CONTATO — com schema Organization (NAP completo)
 salvar('contato', layout({
   title: CONTATO.title, description: CONTATO.description, caminho: 'contato',
+  jsonLd: {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Nuxem',
+    url: `${EMPRESA.dominio}/`,
+    logo: `${EMPRESA.dominio}/imagens/icone-nuxem.png`,
+    telephone: '+55-11-91501-1527',
+    email: EMPRESA.email,
+    address: { '@type': 'PostalAddress', streetAddress: 'Av Brasília, 2242', addressLocality: 'Salto', addressRegion: 'SP', postalCode: '13327-896', addressCountry: 'BR' },
+    vatID: EMPRESA.cnpj,
+  },
   conteudo: `
 <div class="pagina-topo"><div class="container">
   <h1>Fale com a Nuxem</h1>
@@ -507,6 +570,14 @@ if (blogBackup && existsSync(blogBackup)) {
     const idx = join(blogDir, slug, 'index.html');
     if (existsSync(idx) && !posts.find(p => p.slug === slug)) {
       let html = readFileSync(idx, 'utf8');
+      // migra refs .jpg -> .webp nos posts restaurados (quando o webp existe)
+      const htmlAntes = html;
+      html = html.replace(/(["'])([^"']*?)([a-z0-9-]+)\.jpg\1/g, (m, q, pre, nome) => {
+        const webp = join(raiz, 'src', 'imagens', `${nome}.webp`);
+        const webpBlog = join(raiz, 'src', 'imagens', 'blog', `${nome}.webp`);
+        return (existsSync(webp) || existsSync(webpBlog)) ? `${q}${pre}${nome}.webp${q}` : m;
+      });
+      const mudouWebp = html !== htmlAntes;
       const tm = html.match(/<h1>([^<]+)<\/h1>/);
       const jd = html.match(/"datePublished":"([^"]+)"/);
       const dm = html.match(/Publicado em (\d+) de (\w+) de (\d+)/);
@@ -523,14 +594,15 @@ if (blogBackup && existsSync(blogBackup)) {
       const novo = tituloDesc || titulo || tituloSlug;
       const titleAtual = html.match(/<title>([^<]*)<\/title>/);
       const esperado = `${novo} | Blog Nuxem`;
-      if (novo !== titulo || !titleAtual || titleAtual[1].trim() !== esperado) {
+      const mudouTitulo = novo !== titulo || !titleAtual || titleAtual[1].trim() !== esperado;
+      if (mudouTitulo) {
         titulo = novo;
         html = html
           .replace(/<title>[^<]*\| Blog Nuxem<\/title>/, `<title>${titulo} | Blog Nuxem</title>`)
           .replace(/<h1>[^<]*<\/h1>/, `<h1>${titulo}</h1>`)
           .replace(/"headline":"[^"]*"/, `"headline":"${titulo}"`);
-        writeFileSync(idx, html, 'utf8');
       }
+      if (mudouTitulo || mudouWebp) writeFileSync(idx, html, 'utf8');
       // converte data pt-BR para ISO para ordenação correta
       const meses = { janeiro:'01',fevereiro:'02',março:'03',abril:'04',maio:'05',junho:'06',julho:'07',agosto:'08',setembro:'09',outubro:'10',novembro:'11',dezembro:'12' };
       let dataIso = jd ? jd[1] : '';

@@ -8,6 +8,7 @@ export const EMPRESA = {
   whatsappSecundario: '5511945868799',
   telefone: '(11) 97462-0945',
   telefoneLink: 'tel:+5511974620945',
+  gaId: '', // preencher com G-XXXXXXX para ativar Google Analytics 4
   email: 'contato@nuxemoil.com',
   endereco: 'Av Brasília, 2242 - Vila Norma, Salto/SP, CEP 13327-896',
   cnpj: '47.626.641/0001-10',
@@ -25,7 +26,7 @@ export const PRODUTOS = [
   {
     slug: 'oleo-bpf',
     nome: 'Óleo BPF',
-    imagem: 'produto-oleo-bpf.jpg',
+    imagem: 'produto-oleo-bpf.webp',
     imagemAlt: 'Óleo BPF sendo despejado em béquer de laboratório, mostrando sua alta viscosidade',
     resumo: 'Combustível industrial pesado, de alto poder calorífico, para operações de alta demanda energética.',
     title: 'Óleo BPF em São Paulo | Fornecedor com Entrega Rápida | Nuxem',
@@ -47,7 +48,7 @@ export const PRODUTOS = [
   {
     slug: 'oleo-apf',
     nome: 'Óleo APF',
-    imagem: 'produto-oleo-apf.jpg',
+    imagem: 'produto-oleo-apf.webp',
     imagemAlt: 'Óleo APF fluido sendo despejado em béquer, mostrando sua baixa viscosidade',
     resumo: 'Combustível industrial leve, de baixa viscosidade, que dispensa aquecimento prévio.',
     title: 'Óleo APF – Combustível Industrial Leve | Nuxem São Paulo',
@@ -68,7 +69,7 @@ export const PRODUTOS = [
   {
     slug: 'oleo-b1',
     nome: 'Óleo B1 (OC-B1)',
-    imagem: 'produto-oleo-bpf.jpg',
+    imagem: 'produto-oleo-bpf.webp',
     imagemAlt: 'Óleo B1 OC-B1 sendo despejado em béquer de laboratório',
     resumo: 'Óleo combustível de baixo teor de enxofre, ideal para indústrias com exigência ambiental.',
     title: 'Óleo B1 (OC-B1) em São Paulo | Fornecedor Industrial | Nuxem',
@@ -90,7 +91,7 @@ export const PRODUTOS = [
   {
     slug: 'oleo-a1',
     nome: 'Óleo A1 (OC-A1)',
-    imagem: 'produto-oleo-bpf.jpg',
+    imagem: 'produto-oleo-bpf.webp',
     imagemAlt: 'Óleo A1 OC-A1 combustível industrial pesado',
     resumo: 'Óleo combustível pesado tipo A1, alto poder calorífico, para caldeiras, fornos e usinas de asfalto.',
     title: 'Óleo A1 (OC-A1) em São Paulo | Fornecedor de Óleo BPF A1 | Nuxem',
@@ -112,7 +113,7 @@ export const PRODUTOS = [
   {
     slug: 'oleo-de-xisto',
     nome: 'Óleo de Xisto (OTE)',
-    imagem: 'produto-oleo-bpf.jpg',
+    imagem: 'produto-oleo-bpf.webp',
     imagemAlt: 'Óleo de Xisto OTE de alta fluidez',
     resumo: 'Alta fluidez, baixo teor de enxofre, dispensa pré-aquecimento. Alternativa ao petróleo.',
     title: 'Óleo de Xisto OTE em São Paulo | Fornecedor | Nuxem',
@@ -134,7 +135,7 @@ export const PRODUTOS = [
   {
     slug: 'oleo-bte',
     nome: 'Óleo BTE',
-    imagem: 'produto-oleo-bpf.jpg',
+    imagem: 'produto-oleo-bpf.webp',
     imagemAlt: 'Óleo BTE baixo teor de enxofre',
     resumo: 'Combustível premium baixo teor de enxofre, produzido pela Braskem. Menor emissão de fuligem.',
     title: 'Óleo BTE em São Paulo | Baixo Teor de Enxofre | Nuxem',
@@ -156,7 +157,7 @@ export const PRODUTOS = [
   {
     slug: 'oleos-alternativos',
     nome: 'Óleos alternativos',
-    imagem: 'queimador-industrial.jpg',
+    imagem: 'queimador-industrial.webp',
     imagemAlt: 'Queimador industrial em operação com chama estável',
     resumo: 'Alternativas ao BPF com viscosidades diferentes e desempenho equivalente, sob medida para seu equipamento.',
     title: 'Óleos Combustíveis Alternativos ao BPF | Nuxem São Paulo',
@@ -179,7 +180,7 @@ export const SOLUCOES = [
   {
     slug: 'usinas-de-asfalto',
     nome: 'Usinas de asfalto',
-    imagem: 'hero-usina-asfalto.jpg',
+    imagem: 'hero-usina-asfalto.webp',
     imagemAlt: 'Usina de asfalto ao entardecer com caminhão de óleo combustível',
     resumo: 'Combustível com entrega programada para a usina nunca parar por falta de abastecimento.',
     title: 'Óleo Combustível para Usina de Asfalto | Entrega em SP | Nuxem',
@@ -195,7 +196,7 @@ export const SOLUCOES = [
   {
     slug: 'caldeiras',
     nome: 'Caldeiras industriais',
-    imagem: 'caldeira.jpg',
+    imagem: 'caldeira.webp',
     imagemAlt: 'Caldeira industrial de geração de vapor com queimador',
     resumo: 'Queima estável e fornecimento contínuo para geração de vapor sem sustos.',
     title: 'Óleo Combustível para Caldeira Industrial | Nuxem São Paulo',
@@ -211,7 +212,7 @@ export const SOLUCOES = [
   {
     slug: 'fundicoes',
     nome: 'Fundições',
-    imagem: 'fundicao.jpg',
+    imagem: 'fundicao.webp',
     imagemAlt: 'Forno de fundição vertendo metal incandescente',
     resumo: 'Alta carga térmica com consistência de processo e fornecimento confiável.',
     title: 'Óleo Combustível para Fundição | Fornecedor em SP | Nuxem',
