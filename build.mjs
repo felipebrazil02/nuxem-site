@@ -149,7 +149,7 @@ ${conteudo}
       <div>
         <h4>Contato</h4>
         <a href="${ZAP}">WhatsApp: (11) 91501-1527</a>
-        <a href="tel:+5511974620945">Telefone: ${EMPRESA.telefone}</a>
+        <a href="${EMPRESA.telefoneLink}">Telefone: ${EMPRESA.telefone}</a>
         <a href="mailto:${EMPRESA.email}">${EMPRESA.email}</a>
       </div>
     </div>
@@ -336,6 +336,17 @@ for (const s of SOLUCOES) {
 }
 
 // BLOG
+// Gera título legível a partir do slug p/ posts antigos sem metadados (herança Wix)
+function tituloDoSlug(slug) {
+  const siglas = new Set(['bpf', 'a1', 'a2', 'b1', 'bte', 'ocbv', 'anp', 'sp', 'api', 'cnp', 'cst']);
+  const lig = new Set(['de', 'para', 'em', 'e', 'com', 'na', 'no', 'da', 'do', 'por', 'o', 'a', 'os', 'as', 'um', 'uma', 'ao', 'aos']);
+  return slug.split('-').map((w, i) => {
+    if (siglas.has(w)) return w.toUpperCase();
+    if (lig.has(w)) return w;
+    if (w === 'oleo') return 'Óleo';
+    return w.charAt(0).toUpperCase() + w.slice(1);
+  }).join(' ');
+}
 const posts = [];
 const arquivosBlog = existsSync(dirBlog) ? readdirSync(dirBlog).filter(f => f.endsWith('.md')) : [];
 for (const f of arquivosBlog) {
@@ -456,7 +467,7 @@ salvar('contato', layout({
   <div class="contato-direto">
     <h2>Contato direto</h2>
     <p><strong>WhatsApp:</strong> <a href="${ZAP}">(11) 91501-1527</a></p>
-    <p><strong>Telefone:</strong> <a href="tel:+5511974620945">${EMPRESA.telefone}</a></p>
+    <p><strong>Telefone:</strong> <a href="${EMPRESA.telefoneLink}">${EMPRESA.telefone}</a></p>
     <p><strong>E-mail:</strong> <a href="mailto:${EMPRESA.email}">${EMPRESA.email}</a></p>
     <p><strong>Endereço:</strong> ${EMPRESA.endereco}</p>
     <p><strong>CNPJ:</strong> ${EMPRESA.cnpj}</p>
@@ -495,11 +506,31 @@ if (blogBackup && existsSync(blogBackup)) {
   for (const slug of todosSlugs) {
     const idx = join(blogDir, slug, 'index.html');
     if (existsSync(idx) && !posts.find(p => p.slug === slug)) {
-      const html = readFileSync(idx, 'utf8');
+      let html = readFileSync(idx, 'utf8');
       const tm = html.match(/<h1>([^<]+)<\/h1>/);
       const jd = html.match(/"datePublished":"([^"]+)"/);
       const dm = html.match(/Publicado em (\d+) de (\w+) de (\d+)/);
       const mm = html.match(/<meta name="description" content="([^"]+)"/);
+      // posts antigos (herança Wix) podem ter title/H1 vazios — deriva título do slug
+      // ou da meta description (que começa com o título real, ex: "Óleo B1: ... Aotimização")
+      let titulo = (tm && tm[1].trim()) ? tm[1].trim() : '';
+      const tituloSlug = tituloDoSlug(slug);
+      let tituloDesc = '';
+      if (mm && mm[1].trim().startsWith('Óleo')) {
+        const corte = mm[1].match(/[a-zà-ú][A-ZÀ-Ú]/);
+        if (corte && corte.index < 90) tituloDesc = mm[1].slice(0, corte.index + 1).trim();
+      }
+      const novo = tituloDesc || titulo || tituloSlug;
+      const titleAtual = html.match(/<title>([^<]*)<\/title>/);
+      const esperado = `${novo} | Blog Nuxem`;
+      if (novo !== titulo || !titleAtual || titleAtual[1].trim() !== esperado) {
+        titulo = novo;
+        html = html
+          .replace(/<title>[^<]*\| Blog Nuxem<\/title>/, `<title>${titulo} | Blog Nuxem</title>`)
+          .replace(/<h1>[^<]*<\/h1>/, `<h1>${titulo}</h1>`)
+          .replace(/"headline":"[^"]*"/, `"headline":"${titulo}"`);
+        writeFileSync(idx, html, 'utf8');
+      }
       // converte data pt-BR para ISO para ordenação correta
       const meses = { janeiro:'01',fevereiro:'02',março:'03',abril:'04',maio:'05',junho:'06',julho:'07',agosto:'08',setembro:'09',outubro:'10',novembro:'11',dezembro:'12' };
       let dataIso = jd ? jd[1] : '';
@@ -507,7 +538,7 @@ if (blogBackup && existsSync(blogBackup)) {
       posts.push({
         slug,
         slugOriginal: '',
-        title: tm ? tm[1] : slug,
+        title: titulo,
         description: mm ? mm[1] : '',
         date: dataIso,
         dataExibicao: dm ? `${dm[1]} de ${dm[2]} de ${dm[3]}` : (jd ? dataBr(jd[1]) : ''),

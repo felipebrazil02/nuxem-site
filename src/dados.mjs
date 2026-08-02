@@ -7,6 +7,7 @@ export const EMPRESA = {
   whatsappPrincipal: '5511915011527',
   whatsappSecundario: '5511945868799',
   telefone: '(11) 97462-0945',
+  telefoneLink: 'tel:+5511974620945',
   email: 'contato@nuxemoil.com',
   endereco: 'Av Brasília, 2242 - Vila Norma, Salto/SP, CEP 13327-896',
   cnpj: '47.626.641/0001-10',
