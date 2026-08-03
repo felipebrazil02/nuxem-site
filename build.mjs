@@ -570,6 +570,20 @@ if (blogBackup && existsSync(blogBackup)) {
     const idx = join(blogDir, slug, 'index.html');
     if (existsSync(idx) && !posts.find(p => p.slug === slug)) {
       let html = readFileSync(idx, 'utf8');
+      // injeta snippet GA4 nos posts restaurados (HTML antigo não tem)
+      let mudouGtag = false;
+      if (EMPRESA.gaId && !html.includes('googletagmanager.com/gtag/js')) {
+        const gtag = `<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=${EMPRESA.gaId}"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${EMPRESA.gaId}');
+</script>`;
+        html = html.replace('</head>', `${gtag}\n</head>`);
+        mudouGtag = true;
+      }
       // migra refs .jpg -> .webp nos posts restaurados (quando o webp existe)
       const htmlAntes = html;
       html = html.replace(/(["'])([^"']*?)([a-z0-9-]+)\.jpg\1/g, (m, q, pre, nome) => {
@@ -602,7 +616,7 @@ if (blogBackup && existsSync(blogBackup)) {
           .replace(/<h1>[^<]*<\/h1>/, `<h1>${titulo}</h1>`)
           .replace(/"headline":"[^"]*"/, `"headline":"${titulo}"`);
       }
-      if (mudouTitulo || mudouWebp) writeFileSync(idx, html, 'utf8');
+      if (mudouTitulo || mudouWebp || mudouGtag) writeFileSync(idx, html, 'utf8');
       // converte data pt-BR para ISO para ordenação correta
       const meses = { janeiro:'01',fevereiro:'02',março:'03',abril:'04',maio:'05',junho:'06',julho:'07',agosto:'08',setembro:'09',outubro:'10',novembro:'11',dezembro:'12' };
       let dataIso = jd ? jd[1] : '';

@@ -8,7 +8,7 @@ export const EMPRESA = {
   whatsappSecundario: '5511945868799',
   telefone: '(11) 97462-0945',
   telefoneLink: 'tel:+5511974620945',
-  gaId: '', // preencher com G-XXXXXXX para ativar Google Analytics 4
+  gaId: 'G-H0XF8SXJ4B',
   email: 'contato@nuxemoil.com',
   endereco: 'Av Brasília, 2242 - Vila Norma, Salto/SP, CEP 13327-896',
   cnpj: '47.626.641/0001-10',
