@@ -12,8 +12,8 @@ export const EMPRESA = {
   email: 'contato@nuxemoil.com',
   endereco: 'Av Brasília, 2242 - Vila Norma, Salto/SP, CEP 13327-896',
   cnpj: '47.626.641/0001-10',
-  regiao: 'todo o estado de São Paulo',
-  cidades: 'Grande São Paulo, Campinas, Sorocaba, Jundiaí, Piracicaba e Ribeirão Preto',
+  regiao: 'todo o estado de São Paulo, Minas Gerais e Paraná',
+  cidades: 'São Paulo, Campinas, Sorocaba, Jundiaí, Piracicaba, Ribeirão Preto, Belo Horizonte, Betim, Contagem, Uberlândia, Juiz de Fora, Curitiba, Araucária, Ponta Grossa, Londrina, Maringá e São José dos Pinhais',
   diferenciais: [
     { titulo: 'Atendimento 24h', texto: 'Suporte e atendimento a qualquer hora, todos os dias. Operação térmica não espera horário comercial.' },
     { titulo: 'Frota própria', texto: 'Entrega rápida com caminhões próprios, sem depender de terceiros para cumprir prazo.' },
@@ -228,16 +228,40 @@ export const SOLUCOES = [
 ];
 
 export const HOME = {
-  title: 'Nuxem | Fornecedor de Óleo BPF e Combustíveis Industriais em São Paulo',
-  description: 'Fornecemos óleo BPF e combustíveis industriais para caldeiras, usinas de asfalto e fundições em todo o estado de SP. Frota própria, atendimento 24h e produção sob demanda.',
+  title: 'Nuxem | Fornecedor de Óleo BPF e Combustíveis Industriais em SP, MG e PR',
+  description: 'Fornecemos óleo BPF e combustíveis industriais para caldeiras, usinas de asfalto e fundições em São Paulo, Minas Gerais e Paraná. Frota própria, atendimento 24h e produção sob demanda.',
   heroTitulo: 'Óleo BPF e combustíveis industriais para sua operação não parar',
-  heroTexto: 'Fornecimento para caldeiras, usinas de asfalto e fundições em todo o estado de São Paulo — com frota própria, produção sob demanda e atendimento 24 horas.',
+  heroTexto: 'Fornecimento para caldeiras, usinas de asfalto e fundições em São Paulo, Minas Gerais e Paraná — com frota própria, produção sob demanda e atendimento 24 horas.',
 };
 
 export const CONTATO = {
   title: 'Contato | Solicite Cotação de Óleo Combustível | Nuxem',
-  description: 'Solicite sua cotação de óleo BPF e combustíveis industriais. Atendimento 24h pelo WhatsApp, telefone ou e-mail. Entrega em todo o estado de São Paulo.',
+  description: 'Solicite sua cotação de óleo BPF e combustíveis industriais. Atendimento 24h pelo WhatsApp, telefone ou e-mail. Entrega em SP, MG e PR.',
 };
+
+export const COBERTURA = [
+  {
+    slug: 'sao-paulo',
+    nome: 'São Paulo',
+    uf: 'SP',
+    chamada: 'Operação principal, com entrega programada e atendimento 24h em todo o estado.',
+    cidades: 'São Paulo, Campinas, Sorocaba, Jundiaí, Piracicaba, Ribeirão Preto, Santos, São José dos Campos e interior',
+  },
+  {
+    slug: 'minas-gerais',
+    nome: 'Minas Gerais',
+    uf: 'MG',
+    chamada: 'Fornecimento de óleo BPF e combustíveis industriais para o polo metalúrgico, usinas de asfalto e caldeiras mineiras.',
+    cidades: 'Belo Horizonte, Betim, Contagem, Uberlândia, Juiz de Fora, Ipatinga, Divinópolis e região metropolitana',
+  },
+  {
+    slug: 'parana',
+    nome: 'Paraná',
+    uf: 'PR',
+    chamada: 'Entrega com frota própria para caldeiras, fornos e usinas de asfalto em todo o estado, com apoio no polo de Araucária.',
+    cidades: 'Curitiba, Araucária, Ponta Grossa, Londrina, Maringá, São José dos Pinhais, Cascavel e região metropolitana',
+  },
+];
 
 export const PILAR = {
   slug: 'guia-oleo-bpf',

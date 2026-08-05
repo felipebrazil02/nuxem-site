@@ -3,7 +3,7 @@
 import { readdirSync, readFileSync, writeFileSync, mkdirSync, cpSync, rmSync, existsSync, statSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { EMPRESA, PRODUTOS, SOLUCOES, HOME, CONTATO, PILAR } from './src/dados.mjs';
+import { EMPRESA, PRODUTOS, SOLUCOES, HOME, CONTATO, PILAR, COBERTURA } from './src/dados.mjs';
 
 const raiz = dirname(fileURLToPath(import.meta.url));
 const dirBlog = join(raiz, 'conteudo', 'blog');
@@ -88,6 +88,7 @@ function layout({ title, description, caminho, conteudo, ogImage, jsonLd, preloa
     ['/', 'Início'],
     ['/produtos/', 'Produtos'],
     ['/solucoes/', 'Soluções'],
+    ['/cobertura/', 'Regiões'],
     ['/blog/', 'Blog'],
   ];
   const atual = caminho === '.' ? '/' : `/${caminho.replace(/\\/g, '/')}/`;
@@ -188,7 +189,11 @@ salvar('.', layout({
     telephone: '+55-11-91501-1527',
     email: EMPRESA.email,
     address: { '@type': 'PostalAddress', streetAddress: 'Av Brasília, 2242', addressLocality: 'Salto', addressRegion: 'SP', postalCode: '13327-896', addressCountry: 'BR' },
-    areaServed: { '@type': 'State', name: 'São Paulo' },
+    areaServed: [
+      { '@type': 'State', name: 'São Paulo' },
+      { '@type': 'State', name: 'Minas Gerais' },
+      { '@type': 'State', name: 'Paraná' },
+    ],
     priceRange: '$$',
     vatID: EMPRESA.cnpj,
   },
@@ -223,8 +228,9 @@ salvar('.', layout({
   </div>
 </div></section>
 <section class="alt"><div class="container">
-  <h2 class="secao">Atendemos todo o estado de São Paulo</h2>
-  <p class="secao-sub">Entrega com frota própria na ${EMPRESA.cidades} — e em todas as demais regiões do estado.</p>
+  <h2 class="secao">Atendemos São Paulo, Minas Gerais e Paraná</h2>
+  <p class="secao-sub">Entrega com frota própria em ${EMPRESA.cidades} — e em todas as demais regiões dos três estados.</p>
+  <p style="margin-top:8px"><a class="saiba" href="/cobertura/">Ver todas as regiões atendidas →</a></p>
 </div></section>`,
 }));
 
@@ -534,8 +540,44 @@ salvar('contato', layout({
     <p><strong>E-mail:</strong> <a href="mailto:${EMPRESA.email}">${EMPRESA.email}</a></p>
     <p><strong>Endereço:</strong> ${EMPRESA.endereco}</p>
     <p><strong>CNPJ:</strong> ${EMPRESA.cnpj}</p>
-</div></div>`,
-}));
+</div></div>`}));
+
+// COBERTURA — página com os estados atendidos (SEO local MG/PR)
+salvar('cobertura', layout({
+  title: 'Regiões Atendidas | Óleo BPF em SP, MG e PR | Nuxem',
+  description: 'A Nuxem entrega óleo BPF e combustíveis industriais com frota própria em São Paulo, Minas Gerais e Paraná. Belo Horizonte, Curitiba, Uberlândia e mais. Peça cotação.',
+  caminho: 'cobertura',
+  jsonLd: {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    name: 'Nuxem',
+    url: `${EMPRESA.dominio}/cobertura/`,
+    telephone: '+55-11-91501-1527',
+    email: EMPRESA.email,
+    address: { '@type': 'PostalAddress', streetAddress: 'Av Brasília, 2242', addressLocality: 'Salto', addressRegion: 'SP', postalCode: '13327-896', addressCountry: 'BR' },
+    areaServed: COBERTURA.map(e => ({ '@type': 'State', name: e.nome })),
+  },
+  conteudo: `
+<div class="pagina-topo"><div class="container">
+  <h1>Regiões atendidas pela Nuxem</h1>
+  <p class="resumo">Entrega de óleo BPF e combustíveis industriais com frota própria e atendimento 24h em São Paulo, Minas Gerais e Paraná.</p>
+</div></div>
+<section><div class="container">
+  <div class="grid grid-3">
+    ${COBERTURA.map(e => `
+    <div class="card">
+      <h2>${e.nome} (${e.uf})</h2>
+      <p>${e.chamada}</p>
+      <p><strong>Cidades:</strong> ${e.cidades}</p>
+      <p style="margin-top:12px"><a class="btn btn-laranja" href="${ZAP}">Cotação para ${e.nome}</a></p>
+    </div>`).join('\n    ')}
+  </div>
+</div></section>
+<section class="alt"><div class="container">
+  <h2 class="secao">Atendemos onde sua operação precisa</h2>
+  <p class="secao-sub">Frota própria, produção sob demanda e padrão constante de qualidade — do interior de SP ao polo metalúrgico de MG e às caldeiras do PR.</p>
+  <p><a class="btn" href="${ZAP}">Falar com a Nuxem agora</a></p>
+</div></section>`}));
 
 // ---------- redirecionamentos (links antigos do Wix → páginas novas) ----------
 const redirects = posts
