@@ -103,6 +103,45 @@ test('generation cache prevents duplicate AI calls, and never publishes', async 
   assert.equal((await run(request({ ...payload, topic: 'Another topic' }))).status, 409);
 });
 
+test('recover returns completed generation without another AI call or storage write', async () => {
+  let calls = 0;
+  const store = new MemoryStore();
+  const { run } = setup({ store, fetchImpl: async () => {
+    calls++;
+    return Response.json({ status: 'completed', output: [{ type: 'message', content: [{ type: 'output_text', text: JSON.stringify(sample()) }] }] });
+  } });
+  const requestId = randomUUID();
+  const generated = await (await run(request({ action: 'generate', requestId, topic: 'Planejamento industrial', brief: '' }))).json();
+  const revision = store.revision;
+  const snapshot = structuredClone([...store.records]);
+  // Recovery does not require provider configuration, because it reads only the completed cache.
+  const { run: recover } = setup({ store, env: { STUDIO_BRIDGE_SECRET: secret }, fetchImpl: async () => { calls++; throw new Error('Must not call AI'); } });
+  const response = await recover(request({ action: 'recover', requestId }));
+  assert.equal(response.status, 200);
+  assert.deepEqual((await response.json()).article, generated.article);
+  assert.equal(calls, 1);
+  assert.equal(store.revision, revision);
+  assert.deepEqual([...store.records], snapshot);
+});
+
+test('recover rejects absent, incomplete and invalid IDs without generation or writes', async () => {
+  const { run, store, calls } = setup();
+  for (const state of [null, 'running', 'failed']) {
+    const requestId = randomUUID();
+    if (state) await store.setJSON(`generation/${requestId}`, { state });
+    const revision = store.revision;
+    const response = await run(request({ action: 'recover', requestId }));
+    assert.equal(response.status, 409);
+    assert.equal((await response.json()).code, 'generation_incomplete');
+    assert.equal(store.revision, revision);
+  }
+  const revision = store.revision;
+  assert.equal((await run(request({ action: 'recover', requestId: '../invalid' }))).status, 400);
+  assert.equal((await run(request({ action: 'recover', requestId: randomUUID() }, { headers: { 'x-studio-signature': '0'.repeat(64) } }))).status, 401);
+  assert.equal(store.revision, revision);
+  assert.equal(calls(), 0);
+});
+
 test('lost generation response does not cause another provider call', async () => {
   let calls = 0;
   const { run } = setup({ fetchImpl: async () => { calls++; throw new Error('timeout'); } });
@@ -120,5 +159,6 @@ test('HTML, unsafe URL schemes, encoded attribute escapes and path traversal are
   assert.throws(() => validateArticle({ ...sample(), description: 'x'.repeat(181) }));
   assert.doesNotThrow(() => validateArticle({ ...sample(), body: sample().body + '[A source](https://example.org/source?a=1&b=2)' }));
   assert.equal(responsesURL('https://api.openai.com/v1'), null);
+  assert.equal(responsesURL('https://nuxemoil.com.br/.netlify/ai/openai'), 'https://nuxemoil.com.br/.netlify/ai/openai/v1/responses');
   assert.equal(responsesURL('https://ai-gateway.netlify.com'), 'https://ai-gateway.netlify.com/v1/responses');
 });

@@ -89,7 +89,8 @@ export async function readBody(request) {
 export function responsesURL(base) {
   try {
     const url = new URL(base);
-    if (url.protocol !== 'https:' || !/(^|\.)netlify\.(com|app)$/.test(url.hostname) || url.username || url.password || url.search || url.hash) return null;
+    const trustedGateway = /(^|\.)netlify\.(com|app)$/.test(url.hostname) || (url.origin === SITE && url.pathname.startsWith('/.netlify/ai/'));
+    if (url.protocol !== 'https:' || !trustedGateway || url.username || url.password || url.search || url.hash) return null;
     const path = url.pathname.replace(/\/+$/, '');
     url.pathname = `${path}${path.endsWith('/v1') ? '' : '/v1'}/responses`;
     return url.href;
@@ -157,6 +158,12 @@ export function createBridge({ getStore, env = process.env, fetchImpl = fetch, n
         // Read a harmless key to detect an unconfigured Blobs environment without mutating it.
         await store.get('healthcheck', { type: 'json' });
         return json({ generationReady: Boolean(responsesURL(env.OPENAI_BASE_URL) && env.OPENAI_API_KEY), publishingReady: Boolean(buildHookURL(env.STUDIO_BUILD_HOOK)), site: SITE });
+      }
+      if (input.action === 'recover') {
+        const requestId = validateUUID(input.requestId, 'requestId');
+        const saved = await store.get(`generation/${requestId}`, { type: 'json' });
+        if (saved?.state !== 'complete') throw new BridgeError(409, 'generation_incomplete', 'No completed generation is available for this request ID.');
+        return json({ article: saved.article });
       }
       if (input.action === 'generate') {
         const requestId = validateUUID(input.requestId, 'requestId');
