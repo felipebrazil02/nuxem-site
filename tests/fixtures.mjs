@@ -2,6 +2,10 @@ export class MemoryStore {
   records = new Map();
   revision = 0;
   async get(key) { return structuredClone(this.records.get(key)?.value ?? null); }
+  async getWithMetadata(key) {
+    const saved = this.records.get(key);
+    return saved ? { data: structuredClone(saved.value), etag: saved.etag, metadata: {} } : null;
+  }
   async setJSON(key, value, options = {}) {
     const old = this.records.get(key);
     if (options.onlyIfNew && old) return { modified: false };
