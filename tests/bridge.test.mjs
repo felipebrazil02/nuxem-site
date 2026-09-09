@@ -159,6 +159,7 @@ test('HTML, unsafe URL schemes, encoded attribute escapes and path traversal are
   assert.throws(() => validateArticle({ ...sample(), description: 'x'.repeat(181) }));
   assert.doesNotThrow(() => validateArticle({ ...sample(), body: sample().body + '[A source](https://example.org/source?a=1&b=2)' }));
   assert.equal(responsesURL('https://api.openai.com/v1'), null);
+  assert.equal(responsesURL('https://nuxemoil.com.br/.netlify/ai'), 'https://nuxemoil.com.br/.netlify/ai/v1/responses');
   assert.equal(responsesURL('https://nuxemoil.com.br/.netlify/ai/openai'), 'https://nuxemoil.com.br/.netlify/ai/openai/v1/responses');
   assert.equal(responsesURL('https://ai-gateway.netlify.com'), 'https://ai-gateway.netlify.com/v1/responses');
 });

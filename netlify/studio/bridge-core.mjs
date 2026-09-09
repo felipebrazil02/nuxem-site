@@ -89,7 +89,7 @@ export async function readBody(request) {
 export function responsesURL(base) {
   try {
     const url = new URL(base);
-    const trustedGateway = /(^|\.)netlify\.(com|app)$/.test(url.hostname) || (url.origin === SITE && url.pathname.startsWith('/.netlify/ai/'));
+    const trustedGateway = /(^|\.)netlify\.(com|app)$/.test(url.hostname) || (url.origin === SITE && (url.pathname === '/.netlify/ai' || url.pathname.startsWith('/.netlify/ai/')));
     if (url.protocol !== 'https:' || !trustedGateway || url.username || url.password || url.search || url.hash) return null;
     const path = url.pathname.replace(/\/+$/, '');
     url.pathname = `${path}${path.endsWith('/v1') ? '' : '/v1'}/responses`;
