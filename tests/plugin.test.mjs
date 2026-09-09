@@ -1,0 +1,57 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { mkdtemp, mkdir, readFile, writeFile, readdir } from 'node:fs/promises';
+import { join } from 'node:path';
+import { randomUUID } from 'node:crypto';
+import { fileURLToPath } from 'node:url';
+import { createContentPlugin } from '../netlify/plugins/studio-content/core.mjs';
+import { hash } from '../netlify/studio/bridge-core.mjs';
+import { MemoryStore, sample } from './fixtures.mjs';
+
+test('plugin preserves legacy files, escapes imports, adds live marker and removes only its temporary source', async () => {
+  const scratch = fileURLToPath(new URL('../work/', import.meta.url));
+  await mkdir(scratch, { recursive: true });
+  const root = await mkdtemp(join(scratch, 'plugin-test-'));
+  await mkdir(join(root, 'conteudo', 'blog'), { recursive: true });
+  await mkdir(join(root, 'dist', 'blog', 'legacy'), { recursive: true });
+  const legacyPath = join(root, 'conteudo', 'blog', 'legacy.md');
+  await writeFile(legacyPath, 'legacy source unchanged');
+  await writeFile(join(root, 'dist', 'blog', 'legacy', 'index.html'), '<html>legacy page</html>');
+  const store = new MemoryStore();
+  const article = { ...sample(), title: 'A title with "quotes" & symbols', language: 'en' };
+  const articleId = randomUUID();
+  const record = { articleId, article, contentHash: hash(article), approvedAt: '2026-09-08T12:00:00.000Z' };
+  await store.setJSON(`approved/${articleId}`, record);
+  await store.setJSON(`slug/${article.slug}`, { articleId, contentHash: record.contentHash });
+  const plugin = createContentPlugin({ root, getStore: () => store, baseline: [] });
+  await plugin.onPreBuild();
+  const generated = join(root, 'conteudo', 'blog', `${article.slug}.md`);
+  assert.match(await readFile(generated, 'utf8'), /&quot;quotes&quot; &amp; symbols/);
+  await mkdir(join(root, 'dist', 'blog', article.slug), { recursive: true });
+  const htmlPath = join(root, 'dist', 'blog', article.slug, 'index.html');
+  await writeFile(htmlPath, '<html lang="pt-BR"><head></head><body>article</body></html>');
+  await plugin.onPostBuild();
+  assert.match(await readFile(htmlPath, 'utf8'), new RegExp(`studio-seo-article" content="${articleId}`));
+  assert.match(await readFile(htmlPath, 'utf8'), /lang="en-US"/);
+  assert.equal(await readFile(join(root, 'dist', 'blog', 'legacy', 'index.html'), 'utf8'), '<html>legacy page</html>');
+  await plugin.onEnd();
+  assert.deepEqual(await readdir(join(root, 'conteudo', 'blog')), ['legacy.md']);
+  assert.equal(await readFile(legacyPath, 'utf8'), 'legacy source unchanged');
+});
+
+test('plugin refuses approved content colliding with preexisting static articles', async () => {
+  const scratch = fileURLToPath(new URL('../work/', import.meta.url));
+  await mkdir(scratch, { recursive: true });
+  const root = await mkdtemp(join(scratch, 'collision-test-'));
+  const article = sample('legacy-static');
+  const articleId = randomUUID();
+  await mkdir(join(root, 'dist', 'blog', article.slug), { recursive: true });
+  const path = join(root, 'dist', 'blog', article.slug, 'index.html');
+  await writeFile(path, '<html>legacy</html>');
+  const store = new MemoryStore();
+  await store.setJSON(`approved/${articleId}`, { articleId, article, contentHash: hash(article), approvedAt: '2026-09-08T12:00:00.000Z' });
+  await store.setJSON(`slug/${article.slug}`, { articleId, contentHash: hash(article) });
+  const plugin = createContentPlugin({ root, getStore: () => store, baseline: [] });
+  await assert.rejects(plugin.onPreBuild(), /conflicts with an existing article/);
+  assert.equal(await readFile(path, 'utf8'), '<html>legacy</html>');
+});

@@ -63,6 +63,7 @@ function inline(t) {
 }
 
 function lerFrontmatter(texto) {
+  texto = texto.replace(/\r\n/g, "\n");
   const m = texto.match(/^---\n([\s\S]*?)\n---\n?/);
   const meta = {};
   if (m) {
