@@ -83,7 +83,7 @@ function dataBr(iso) {
 }
 
 // ---------- layout ----------
-function layout({ title, description, caminho, conteudo, ogImage, jsonLd, preloadHero }) {
+function layout({ title, description, caminho, conteudo, ogImage, jsonLd, preloadHero, studioArticleId, studioContentHash, language = 'pt' }) {
   const url = `${EMPRESA.dominio}${caminho === '.' ? '/' : `/${caminho.replace(/\\/g, '/')}/`}`;
   const nav = [
     ['/', 'Início'],
@@ -94,12 +94,14 @@ function layout({ title, description, caminho, conteudo, ogImage, jsonLd, preloa
   ];
   const atual = caminho === '.' ? '/' : `/${caminho.replace(/\\/g, '/')}/`;
   return `<!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="${({pt:'pt-BR',en:'en',es:'es'})[language] || 'pt-BR'}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${title}</title>
 <meta name="description" content="${description}">
+${studioArticleId && /^[0-9a-f-]{36}$/.test(studioArticleId) ? `<meta name="studio-seo-article" content="${studioArticleId}">` : ''}
+${studioContentHash && /^[0-9a-f]{64}$/.test(studioContentHash) ? `<meta name="studio-seo-content" content="${studioContentHash}">` : ''}
 <link rel="canonical" href="${url}">
 <meta property="og:title" content="${title}">
 <meta property="og:description" content="${description}">
@@ -418,6 +420,8 @@ for (const f of arquivosBlog) {
     slug: f.replace(/\.md$/, ''),
     slugOriginal: meta.slugOriginal || '',
     title: meta.title, description: meta.description, date: meta.date,
+    studioArticleId: meta.studioArticleId, studioContentHash: meta.studioContentHash,
+    language: ['pt','en','es'].includes(meta.language) ? meta.language : 'pt',
     html: mdParaHtml(corpoLimpo),
   });
 }
@@ -455,6 +459,7 @@ for (const p of posts) {
   const rel = relacionados(p, posts);
   salvar(join('blog', p.slug), layout({
     title: `${p.title} | Blog Nuxem`, description: p.description, caminho: `blog/${p.slug}`,
+    studioArticleId: p.studioArticleId, studioContentHash: p.studioContentHash, language: p.language,
     ogImage: capa,
     jsonLd: {
       '@context': 'https://schema.org',
@@ -462,7 +467,7 @@ for (const p of posts) {
       headline: p.title,
       description: p.description,
       datePublished: p.date,
-      inLanguage: 'pt-BR',
+      inLanguage: p.language === 'pt' ? 'pt-BR' : p.language,
       ...(capa ? { image: `${EMPRESA.dominio}${capa}` } : {}),
       author: { '@type': 'Organization', name: 'Nuxem' },
       publisher: { '@type': 'Organization', name: 'Nuxem', logo: { '@type': 'ImageObject', url: `${EMPRESA.dominio}/imagens/icone-nuxem.png` } },

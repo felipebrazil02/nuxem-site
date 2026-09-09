@@ -21,6 +21,3 @@ skip_processing = true
 
 [build.environment]
 NODE_VERSION = "22"
-
-[[plugins]]
-package = "./netlify/plugins/studio-content"
