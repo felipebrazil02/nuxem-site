@@ -157,7 +157,9 @@ export function createBridge({ getStore, env = process.env, fetchImpl = fetch, n
       if (input.action === 'status') {
         // Read a harmless key to detect an unconfigured Blobs environment without mutating it.
         await store.get('healthcheck', { type: 'json' });
-        return json({ generationReady: Boolean(responsesURL(env.OPENAI_BASE_URL) && env.OPENAI_API_KEY), publishingReady: Boolean(buildHookURL(env.STUDIO_BUILD_HOOK)), site: SITE });
+        let gatewayAddress = null;
+        try { const gateway = new URL(env.OPENAI_BASE_URL); gatewayAddress = gateway.origin + gateway.pathname; } catch {}
+        return json({ generationReady: Boolean(responsesURL(env.OPENAI_BASE_URL) && env.OPENAI_API_KEY), publishingReady: Boolean(buildHookURL(env.STUDIO_BUILD_HOOK)), site: SITE, generationConfig: { keyPresent: Boolean(env.OPENAI_API_KEY), basePresent: Boolean(env.OPENAI_BASE_URL), gatewayAddress } });
       }
       if (input.action === 'recover') {
         const requestId = validateUUID(input.requestId, 'requestId');
