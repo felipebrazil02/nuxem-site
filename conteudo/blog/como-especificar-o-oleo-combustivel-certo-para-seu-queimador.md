@@ -1,67 +1,51 @@
 ---
-title: "Como especificar o óleo combustível certo para seu queimador"
-description: "Guia prático para definir o óleo combustível ideal ao seu queimador: viscosidade, enxofre, poder calorífico, atomização e compatibilidade do equipamento."
+title: "Como especificar óleo combustível para o queimador industrial"
+description: "Monte o pedido de óleo combustível com viscosidade, poder calorífico, enxofre e documentos. Confira compatibilidade do queimador antes da cotação."
 date: 2026-07-22
+updated: 2026-10-09
 slugOriginal: ""
 ---
 
-## Por que a especificação correta decide a operação
+**A especificação do óleo combustível deve partir do manual do queimador e das condições da instalação.** Compras precisa receber critérios definidos com a equipe técnica para comparar propostas equivalentes. Apenas informar que a planta utiliza BPF, A1 ou óleo de xisto não descreve todos os requisitos.
 
-Escolher o combustível não é uma decisão de compras isolada: é uma definição de engenharia que afeta a estabilidade da chama, o consumo específico, a vida útil do queimador e o atendimento às normas ambientais. Muitas paradas e retrabalhos em caldeiras, fornos e usinas de asfalto não começam na operação — começam na especificação errada do óleo no momento da contratação.
+Comece pelo modelo do equipamento, tipo de atomização, capacidade, regime de carga e estrutura de armazenamento. Para uma visão dos produtos, consulte o [guia de óleo BPF](/guia-oleo-bpf/).
 
-Um queimador é projetado para um perfil de combustível. Quando o produto entregue foge desse perfil — seja na viscosidade, no teor de enxofre ou no poder calorífico — o sistema compensa mal, a chama oscila e o custo térmico sobe. Especificar corretamente é, portanto, o primeiro passo para uma planta estável e econômica.
+## Dados que devem acompanhar o pedido
 
-## Os parâmetros que definem a escolha
+- **Viscosidade:** valor ou faixa requerida, unidade e temperatura de ensaio. Quando necessário, peça a curva em função da temperatura.
+- **Poder calorífico:** valor, unidade e indicação de PCI ou PCS, coerentes com o cálculo de consumo.
+- **Densidade:** valor e condição de referência para conversão entre massa e volume.
+- **Teor de enxofre:** limite definido para o produto e para a operação.
+- **Segurança e qualidade:** ficha de dados de segurança, ponto de fulgor e demais propriedades pertinentes à especificação aprovada.
+- **Identificação:** produto, fornecedor, lote e documentação que permita conferir os requisitos contratados.
 
-A especificação técnica do combustível precisa espelhar as exigências do equipamento. Os cinco parâmetros abaixo são o mínimo que deve constar em qualquer pedido:
+A classificação e as referências regulatórias dos óleos combustíveis estão disponíveis na [página oficial da ANP](https://www.gov.br/anp/pt-br/assuntos/producao-de-derivados-de-petroleo-e-processamento-de-gas-natural/producao-de-derivados-de-petroleo-e-processamento-de-gas-natural/oleo-combustivel). A área responsável deve verificar os requisitos aplicáveis ao produto e ao destino.
 
-- **Viscosidade cinemática:** define o aquecimento de linha e a qualidade da atomização. Tratamos em profundidade no post sobre o [impacto da viscosidade do óleo BPF na eficiência da queima](/blog/impacto-da-viscosidade-do-oleo-bpf-na-eficiencia-da-queima/).
-- **Teor de enxofre:** critério ambiental e de corrosão. Óleos do tipo B e BTE limitam esse teor; óleos pesados como A1 suportam mais.
-- **Poder calorífico superior:** garante previsibilidade energética e cálculo de consumo, tema abordado em [como calcular o consumo de óleo em caldeiras](/blog/como-calcular-consumo-de-oleo-combustivel-em-caldeiras/).
-- **Ponto de fulgor:** parâmetro de segurança no armazenamento, normalmente acima de 66 °C.
-- **Composição e estabilidade:** padrão constante entre lotes, para que o ajuste de processo não mude a cada entrega.
+## Viscosidade de ensaio não é viscosidade no bico
 
-### Viscosidade e o ponto de trabalho
+O laudo informa uma propriedade em determinada condição de ensaio. O queimador precisa receber combustível na faixa admitida para sua operação. A temperatura necessária depende do produto, do projeto e do tipo de atomização; não adote um valor genérico de viscosidade ou temperatura para todos os equipamentos.
 
-A viscosidade é o parâmetro que mais exige atenção no dia a dia. O queimador não queima o óleo como líquido: ele o atomiza em microgotículas. Se a viscosidade no bico estiver fora da faixa (tipicamente 15 a 25 cSt para atomização por pressão), a pulverização fica grossa, a queima incompleta e surgem fuligem e depósitos. Por isso o combustível deve ser especificado já considerando a infraestrutura de aquecimento da planta.
+Verifique também bombas, filtros, linhas e partidas a frio. Um produto transferível pelo sistema pode exigir outra condição no ponto de atomização. Ajustes devem respeitar as orientações do fabricante e do responsável técnico.
 
-### Enxofre e restrição ambiental
+## Como comparar BPF e óleo de xisto
 
-O enxofre vira óxidos de enxofre (SOx) na combustão, com impacto direto em emissões, corrosão de dutos e chaminés. Operações em regiões metropolitanas ou com limites contratuais costumam exigir óleos de baixo teor. Nesses casos, o [óleo BTE](/produtos/oleo-bte/) (máximo 0,5% de enxofre) ou o [óleo B1](/produtos/oleo-b1/) são as opções alinhadas à restrição — veja as [vantagens do óleo BTE para indústrias com restrição ambiental](/blog/vantagens-do-oleo-bte-para-industrias-com-restricao-ambiental/).
+A seleção entre [óleo BPF](/produtos/oleo-bpf/) e [óleo de xisto](/produtos/oleo-de-xisto/) deve considerar os dados efetivos das propostas. Fluidez, economia e necessidade de aquecimento não podem ser presumidas pelo nome comercial.
 
-## Conhecendo o seu queimador antes de comprar
+Compare o [custo por energia útil de BPF e xisto](/blog/oleo-de-xisto-ote-vs-oleo-bpf-diferencas-praticas-para-a-industria/) e estime o consumo com a mesma base de poder calorífico e eficiência. Registre como pendente qualquer produto cuja compatibilidade ainda não tenha sido avaliada.
 
-A especificação começa lendo o equipamento, não o catálogo do fornecedor. Três pontos precisam estar claros:
+## O que conferir no recebimento
 
-1. **Tipo de atomização:** pressão, vapor ou rotativa. Cada uma pede faixa de viscosidade diferente.
-2. **Capacidade e regime de carga:** operação contínua de alta carga favorece óleos pesados como [óleo A1](/produtos/oleo-a1/) ou [óleo BPF](/produtos/oleo-bpf/); cargas variáveis ou partidas frequentes pedem produtos mais fluidos.
-3. **Infraestrutura de aquecimento:** tanque, linha e aquecedor final. Sem aquecimento adequado, óleos pesados não chegam à viscosidade de trabalho — e o [óleo APF](/produtos/oleo-apf/) pode ser a alternativa que dispensa aquecimento.
+Cruze a identificação da carga com a proposta e os documentos acordados. Registre divergências e siga o procedimento de aceitação da planta antes da descarga ou uso. Ficha técnica, resultados do lote e ficha de dados de segurança têm finalidades diferentes.
 
-### O erro mais comum
+Se houver estoque remanescente, avalie a [compatibilidade entre lotes de óleo BPF](/blog/compatibilidade-entre-lotes-de-oleo-bpf-como-evitar-borra-na-mistura/). Dois produtos individualmente aprovados não estão automaticamente aprovados para mistura.
 
-O erro recorrente é especificar pelo menor preço por litro, ignorando o consumo específico. Um combustível mais barato, porém fora do perfil do queimador, queima pior e eleva os litros (ou kg) por tonelada de vapor, massa asfáltica ou metal fundido. O custo real é o custo térmico por unidade produzida, não o preço na nota fiscal.
+## Modelo de informações para enviar na cotação
 
-## Documentação e conformidade
+- Município e endereço industrial de entrega.
+- Aplicação, fabricante e modelo do queimador.
+- Combustível atual e especificação requerida pela equipe técnica.
+- Consumo mensal, quantidade solicitada e unidade de compra.
+- Prazo desejado, capacidade disponível no tanque e condições de recebimento.
+- Documentos necessários para avaliação e aceitação do produto.
 
-A especificação correta também é a base da conformidade. Toda carga deve chegar com laudo que ateste os parâmetros contratados, em linha com as [normas da ANP para óleo combustível industrial](/blog/normas-anp-para-oleo-combustivel-industrial/). Manter o histórico de recebimento protege a planta em fiscalizações e garante que o que foi comprado é o que está sendo queimado.
-
-### Produção sob demanda e padrão constante
-
-A variação de lote é um dos maiores inimigos da especificação: se o combustível muda de perfil entre entregas, o mesmo ajuste de temperatura produz viscosidades diferentes. A [produção sob demanda com qualidade constante](/produtos/oleo-bpf/) elimina esse ruído, mantendo o ponto de trabalho estável mês a mês.
-
-## Checklist para especificar
-
-Antes de fechar a contratação, valide:
-
-- [ ] Viscosidade de trabalho compatível com o queimador e a linha de aquecimento.
-- [ ] Teor de enxofre dentro do limite ambiental aplicável.
-- [ ] Poder calorífico e ponto de fulgor documentados.
-- [ ] Padrão constante entre lotes (produção sob demanda).
-- [ ] Documentação de cada carga (laudo e nota fiscal corretos).
-- [ ] Suporte técnico do fornecedor para ajuste fino na partida.
-
-## Conclusão
-
-Especificar o óleo combustível certo para o seu queimador é uma decisão técnica que protege a estabilidade da chama, reduz o consumo específico e mantém a operação dentro das normas. O caminho é simples: conhecer o equipamento, definir os parâmetros críticos (viscosidade, enxofre, poder calorífico), exigir documentação e garantir padrão constante entre entregas. O combustível adequado, entregue com suporte técnico, transforma a especificação de risco em vantagem competitiva.
-
-Para definir o óleo ideal ao seu queimador e receber um produto com especificação documentada e padrão constante, fale com a equipe Nuxem e solicite uma cotação sob medida. Conheça também nossas [soluções para caldeiras](/solucoes/caldeiras/).
+Com os requisitos definidos, [encaminhe a solicitação à Nuxem](/contato/). A proposta deve confirmar produto, documentação e condições de entrega. Alterações na especificação precisam voltar à equipe técnica antes da aprovação comercial.

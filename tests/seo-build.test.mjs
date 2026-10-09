@@ -19,12 +19,28 @@ test('SEO output stays consistent across clean and incremental builds, including
     const sitemapURLs = () => [...read('sitemap.xml').matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
     build();
     const cleanURLs = sitemapURLs();
+    const consumptionPath = 'blog/como-calcular-consumo-de-oleo-combustivel-em-caldeiras/index.html';
+    const article = JSON.parse(read(consumptionPath).match(/<script type="application\/ld\+json">([^]*?)<\/script>/)[1]);
+    assert.equal(article.datePublished, '2026-07-16');
+    assert.equal(article.dateModified, '2026-10-09');
+    assert.match(read(consumptionPath), /Atualizado em 9 de outubro de 2026/);
+    const curatedLinks = read('produtos/oleo-bpf/index.html').match(/<aside class="leituras"[^]*?<\/aside>/)[0];
+    assert.equal([...curatedLinks.matchAll(/href=/g)].length, 3);
+    assert.match(read('blog/index.html'), /Guias para escolher e comprar combustível/);
     assert.equal(cleanURLs.length, new Set(cleanURLs).size);
     const legacyDir = join(root, 'dist', 'blog', 'legacy-test');
     mkdirSync(legacyDir, { recursive: true });
     writeFileSync(join(legacyDir, 'index.html'), '<html><head><title>Legado | Blog Nuxem</title></head><body><h1>Legado</h1></body></html>');
     build();
     const incrementalURLs = sitemapURLs();
+    assert.match(read('blog/index.html'), /Guias para escolher e comprar combustível/);
+    for (const url of cleanURLs.filter(url => url.includes('/blog/') && !url.endsWith('/blog/'))) {
+      const html = read(new URL(url).pathname.slice(1) + 'index.html');
+      const bodyLinks = [...html.split('<h2>Leia também</h2>')[0].matchAll(/href="(\/blog\/[^" ]+)"/g)].map(m => m[1]);
+      const relatedLinks = [...html.split('<h2>Leia também</h2>')[1].split('</ul>')[0].matchAll(/href="(\/blog\/[^" ]+)"/g)].map(m => m[1]);
+      assert.equal(new Set(relatedLinks).size, relatedLinks.length);
+      assert.ok(relatedLinks.every(link => !bodyLinks.includes(link)), url);
+    }
     assert.equal(incrementalURLs.length, cleanURLs.length + 1);
     assert.equal(incrementalURLs.length, new Set(incrementalURLs).size);
     assert.ok(incrementalURLs.includes('https://nuxemoil.com.br/blog/legacy-test/'));

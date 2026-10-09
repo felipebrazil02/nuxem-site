@@ -171,3 +171,10 @@ footer .creditos { border-top: 1px solid #ffffff22; padding-top: 18px; font-size
   .grid-3, .grid-4 { grid-template-columns: 1fr; }
   .hero { padding: 48px 0; }
 }
+
+/* Leituras editoriais: separadas do menu principal, inclusive no celular. */
+.leituras { margin: 24px 0; padding: 22px; border: 1px solid #dce4ec; border-radius: 10px; background: #f5f8fb; }
+.leituras h2, .conteudo .leituras h2 { margin: 0 0 12px; color: var(--azul); font-size: 1.3rem; }
+.leituras ul { margin: 0 0 0 20px; }
+.leituras li { margin: 8px 0; }
+.leituras a { color: var(--azul); text-decoration: underline; text-underline-offset: 3px; }

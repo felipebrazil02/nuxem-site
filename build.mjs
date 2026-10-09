@@ -5,6 +5,7 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { EMPRESA, PRODUTOS, SOLUCOES, HOME, CONTATO, PILAR, COBERTURA } from './src/dados.mjs';
 import { redirecionamentosLegados, destinoLegado } from './src/redirecionamentos.mjs';
+import { LEITURAS } from './src/leituras.mjs';
 
 const raiz = dirname(fileURLToPath(import.meta.url));
 const dirBlog = join(raiz, 'conteudo', 'blog');
@@ -81,6 +82,16 @@ function dataBr(iso) {
   const [a, m, d] = iso.split('-');
   const meses = ['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
   return `${Number(d)} de ${meses[Number(m) - 1]} de ${a}`;
+}
+
+function leituras(caminho) {
+  const itens = LEITURAS[caminho];
+  if (!itens) return '';
+  const links = itens.map(([slug, titulo]) => {
+    if (!existsSync(join(dirBlog, slug + '.md'))) throw new Error('Artigo de leitura ausente: ' + slug);
+    return '<li><a href="/blog/' + slug + '/">' + titulo + '</a></li>';
+  }).join('');
+  return '<aside class="leituras" aria-label="Guias para escolher e comprar combustível"><h2>Guias para escolher e comprar combustível</h2><ul>' + links + '</ul></aside>';
 }
 
 // ---------- layout ----------
@@ -301,6 +312,7 @@ for (const p of PRODUTOS) {
   </table>
   <p><strong>Aplicações:</strong> ${p.aplicacoes}</p>
 ${p.orientacao ? `  <h2>Como solicitar sua cotação</h2><p>${p.orientacao}</p>` : ''}
+${leituras(`produtos/${p.slug}`)}
   <p><a class="btn btn-laranja" href="${ZAP}">Solicitar cotação de ${p.nome}</a></p>
 </div></div>`,
   }));
@@ -323,6 +335,7 @@ salvar(PILAR.slug, layout({
     ${(s.paragrafos || []).map(p => `<p>${p}</p>`).join('\n')}
     ${s.lista ? `<ul>${s.lista.map(i => i.link ? `<li><a href="${i.link}">${i.texto}</a></li>` : `<li>${i.texto}</li>`).join('')}</ul>` : ''}
   `).join('\n')}
+  ${leituras(PILAR.slug)}
   <p style="margin-top:32px"><a class="btn btn-laranja" href="${ZAP}">Solicitar cotação de óleo BPF</a></p>
 </div></div>`}));
 salvar(PILAR.slug + '/faq', layout({
@@ -414,7 +427,7 @@ for (const f of arquivosBlog) {
   posts.push({
     slug: f.replace(/\.md$/, ''),
     slugOriginal: meta.slugOriginal || '',
-    title: meta.title, description: meta.description, date: meta.date,
+    title: meta.title, description: meta.description, date: meta.date, updated: meta.updated,
     studioArticleId: meta.studioArticleId, studioContentHash: meta.studioContentHash,
     language: ['pt','en','es'].includes(meta.language) ? meta.language : 'pt',
     html: mdParaHtml(corpoLimpo),
@@ -434,15 +447,17 @@ salvar('blog', layout({
   <p class="resumo">Conteúdo técnico sobre combustível industrial, para você decidir com segurança.</p>
 </div></div>
 <section><div class="container lista-posts">
+  ${leituras('blog')}
   ${posts.map(p => { const c = existsSync(join(raiz, 'src', 'imagens', 'blog', `${p.slug}.webp`)); return `<div class="card${c ? ' card-post' : ''}">${c ? `<img src="/imagens/blog/${p.slug}.webp" alt="" loading="lazy">` : ''}<div><h3><a href="/blog/${p.slug}/">${p.title}</a></h3><p class="post-meta">${dataBr(p.date)}</p><p>${p.description}</p></div></div>`; }).join('\n  ')}
 </div></section>`,
 }));
 
 function relacionados(post, todos, n = 3) {
-  const palavras = t => new Set(t.toLowerCase().split(/[^a-zà-ú0-9]+/).filter(w => w.length > 3));
+  const ignorar = new Set(['oleo', 'para', 'como', 'entre', 'industrial', 'industriais']);
+  const palavras = t => new Set(t.toLowerCase().normalize('NFD').replace(/\p{M}/gu, '').split(/[^a-z0-9]+/).filter(w => w.length >= 3 && !ignorar.has(w)));
   const base = palavras(post.title);
   return todos
-    .filter(o => o.slug !== post.slug)
+    .filter(o => o.slug !== post.slug && o.language === post.language && !post.html.includes(`href="/blog/${o.slug}/"`))
     .map(o => ({ o, pontos: [...palavras(o.title)].filter(w => base.has(w)).length }))
     .sort((a, b) => b.pontos - a.pontos)
     .slice(0, n)
@@ -462,6 +477,7 @@ for (const p of posts) {
       headline: p.title,
       description: p.description,
       datePublished: p.date,
+      ...(p.updated ? { dateModified: p.updated } : {}),
       inLanguage: p.language === 'pt' ? 'pt-BR' : p.language,
       ...(capa ? { image: `${EMPRESA.dominio}${capa}` } : {}),
       author: { '@type': 'Organization', name: 'Nuxem' },
@@ -474,6 +490,7 @@ for (const p of posts) {
 </div></div>
 <div class="container"><div class="conteudo">
   <p class="post-meta">Publicado em ${dataBr(p.date)} — Equipe Nuxem</p>
+${p.updated ? `<p class="post-meta">Atualizado em ${dataBr(p.updated)}</p>` : ''}
   ${capa ? `<img class="foto-pagina" src="${capa}" alt="${p.title}">` : ''}
   ${p.html}
   <h2>Leia também</h2>
@@ -688,6 +705,7 @@ gtag('config', '${EMPRESA.gaId}');
   <p class="resumo">Conteúdo técnico sobre combustível industrial, para você decidir com segurança.</p>
 </div></div>
 <section><div class="container lista-posts">
+  ${leituras('blog')}
   ${posts.map(p => `<div class="card"><h3><a href="/blog/${p.slug}/">${p.title}</a></h3><p class="post-meta">${p.dataExibicao || dataBr(p.date)}</p><p>${p.description}</p></div>`).join('\n  ')}
 </div></section>`;
   writeFileSync(join(blogDir, 'index.html'), layout({ title: 'Blog Nuxem | Conteúdo Técnico sobre Óleo Combustível Industrial', description: 'Artigos técnicos sobre óleo BPF, caldeiras, usinas de asfalto, fundições e logística de combustível industrial.', caminho: 'blog', conteudo: blogHtml }), 'utf8');
