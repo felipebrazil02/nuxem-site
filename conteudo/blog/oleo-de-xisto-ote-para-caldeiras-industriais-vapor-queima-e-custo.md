@@ -1,66 +1,54 @@
 ---
-title: "Óleo de xisto (OTE) para caldeiras industriais: vapor, queima e custo de operação"
-description: "Óleo de xisto (OTE) em caldeiras industriais: geração de vapor, queima estável, fluidez a frio e custo de operação em SP, MG e PR."
+title: "Óleo de xisto para caldeiras: consumo, compatibilidade e cotação"
+description: "Avalie óleo de xisto em caldeiras: dados do queimador, consumo por tonelada de vapor, aquecimento e informações para cotar em SP, MG e PR."
 date: 2026-10-02
+updated: 2026-10-09
 slugOriginal: ""
 ---
 
-## A caldeira é o coração do processo — e o combustível decide o custo
+O **óleo de xisto pode ser avaliado como combustível para caldeiras industriais**, desde que sua especificação seja compatível com o queimador e a instalação. Compare consumo por tonelada de vapor, necessidade de adaptação e custo entregue. Não há uma economia fixa que possa ser prometida para toda caldeira.
 
-A caldeira industrial é responsável por boa parte do custo energético de uma planta. Seja para gerar vapor de processo, aquecer linhas ou alimentar trocadores, o combustível queimado nela define o consumo, a manutenção e a previsibilidade da operação. Por isso, a escolha entre óleo BPF, óleo de xisto (OTE) e óleos alternativos não é só uma questão de preço por litro — é uma decisão de custo total e de confiabilidade.
+Consulte as informações do [óleo de xisto fornecido pela Nuxem](/produtos/oleo-de-xisto/) e solicite a ficha técnica do produto cotado para iniciar a avaliação.
 
-O [óleo de xisto (OTE)](/produtos/oleo-de-xisto/) entra nessa conta como uma alternativa que combina fluidez, baixo teor de enxofre e desempenho térmico competitivo, com ganhos que aparecem tanto na queima quanto na infraestrutura de aquecimento.
+## Quais dados da caldeira reunir antes da cotação?
 
-## O que o OTE muda na operação da caldeira
+- Fabricante e modelo da caldeira e do queimador.
+- Tipo de atomização e combustíveis admitidos pelo fabricante.
+- Produção de vapor, pressão de operação e temperatura da água de alimentação.
+- Consumo atual, horas de funcionamento e variação de carga entre turnos.
+- Capacidade útil do tanque, bombas, filtros e aquecimento existente.
+- Especificação do combustível atual e registros recentes de operação.
 
-O óleo de xisto é produzido a partir do xisto betuminoso e tem características que respondem bem às necessidades de uma caldeira em regime contínuo:
+Esses dados permitem discutir a aplicação sem tratar o combustível como uma escolha isolada. Veja também as [soluções de abastecimento para caldeiras](/solucoes/caldeiras/).
 
-- **Alta fluidez a frio:** o OTE permanece fluido mesmo em baixas temperaturas, o que reduz a necessidade de pré-aquecimento de tanque e linha. Em caldeiras que operam por turnos ou param na madrugada, a partida fica mais simples e o consumo elétrico de aquecimento cai.
-- **Baixo teor de enxofre:** reduz as emissões de SOx e diminui a corrosão em chaminés, dutos e trocadores de calor — um ganho direto de manutenção.
-- **Poder calorífico competitivo:** mantém a geração de vapor necessária para o processo, sem exigir aumento de consumo.
-- **Queima mais estável:** com menos variação de viscosidade, a atomização no bico do queimador fica mais previsível, o que ajuda a manter a pressão e a temperatura do vapor constantes.
+## Como medir o consumo por tonelada de vapor
 
-## Onde o custo de operação aparece
+**Consumo específico = massa de combustível consumida ÷ massa de vapor produzida.**
 
-O ganho mais visível do OTE em caldeiras está no sistema de aquecimento do próprio combustível. Com a fluidez a frio, em boa parte das operações não é preciso manter resistências e serpentinas ligadas apenas para garantir o bombeamento. Na prática, isso significa:
+Por exemplo, 300 kg de combustível para produzir 4 toneladas de vapor correspondem a 75 kg/t de vapor. O exemplo é hipotético e não representa o desempenho de um produto. Para comparar períodos, mantenha identificadas pressão do vapor, temperatura da água, carga e condições de medição.
 
-- **Menos consumo elétrico:** a energia gasta para manter o óleo fluido pode ser desligada ou reduzida.
-- **Menos infraestrutura:** plantas sem isolamento de linha, resistência ou trocadores conseguem operar sem instalar esse aparato para o combustível.
-- **Partida e retomada mais simples:** em caldeiras que param no fim do turno, o retorno à pressão de trabalho é menos problemático quando o combustível não "engomou" na linha.
+Se o registro estiver em litros, converta para massa com a densidade e a temperatura de referência do produto. O artigo sobre [cálculo do consumo de óleo em caldeiras](/blog/como-calcular-consumo-de-oleo-combustivel-em-caldeiras/) detalha o balanço de energia e a diferença entre estimativa e medição.
 
-Para entender como o calor vira consumo real, vale ler o guia de [como calcular o consumo de óleo combustível em caldeiras](/blog/como-calcular-consumo-de-oleo-combustivel-em-caldeiras/).
+## O óleo de xisto dispensa aquecimento?
 
-## Estabilidade entre lotes: o ponto que ninguém deve pular
+Essa conclusão não deve ser tomada pelo nome comercial. A necessidade de aquecimento depende da viscosidade do produto, da temperatura ambiente e das condições exigidas para transferência e atomização. Uma bomba e um bico de queimador podem admitir faixas diferentes.
 
-Mais importante do que o preço por litro é a consistência do combustível entre entregas. Uma caldeira opera com faixa de pressão e temperatura definida; se a qualidade do combustível varia entre lotes, o consumo específico muda, a chama desregula e o operador passa o turno compensando com ajuste manual.
+Peça a viscosidade com a temperatura de ensaio e confronte os dados com o manual. Qualquer alteração no aquecimento deve passar pelo responsável técnico. O roteiro de [especificação do combustível para o queimador](/blog/como-especificar-o-oleo-combustivel-certo-para-seu-queimador/) ajuda a organizar essa análise.
 
-Essa é uma das razões pelas quais a [produção sob demanda](/produtos/oleos-alternativos/) e o padrão constante de qualidade fazem diferença em processos contínuos. Um combustível com especificação estável permite dimensionar o consumo, manter a pressão e reduzir o retrabalho.
+## O que comparar com o combustível atual?
 
-## Como validar o OTE na sua caldeira
+Além do preço entregue, compare poder calorífico, densidade, teor de enxofre, estabilidade e condições de fornecimento. A ficha técnica descreve o produto; os registros da caldeira mostram o desempenho no processo. Nenhum desses documentos substitui o outro.
 
-A troca de combustível em uma caldeira não é decisão de catálogo. Antes de migrar, vale cobrir quatro pontos:
+Na avaliação econômica, separe combustível, energia auxiliar, manutenção e investimento de adaptação. Consulte a [comparação entre óleo de xisto e óleo BPF](/blog/oleo-de-xisto-ote-vs-oleo-bpf-diferencas-praticas-para-a-industria/) para colocar as propostas na mesma base.
 
-1. **Queimador e atomização:** a viscosidade de trabalho do OTE precisa estar na faixa que o bico do queimador entrega. Esse é o mesmo cuidado descrito no artigo sobre [como especificar o óleo combustível certo para o seu queimador](/blog/como-especificar-o-oleo-combustivel-certo-para-seu-queimador/).
-2. **Pressão e temperatura do processo:** o OTE muda o combustível, mas a caldeira continua precisando da pressão de vapor correta. A avaliação deve separar o aquecimento do processo do aquecimento do próprio combustível.
-3. **Tanque, linhas e vedações:** confirmar compatibilidade de filtros, vedações e a real necessidade de aquecimento, que pode inclusive ser desligado.
-4. **Consumo e autonomia:** recalcular o consumo estimado com o poder calorífico do novo combustível, para dimensionar tanque e programar o abastecimento.
+## Como planejar a avaliação na planta
 
-### Um lote-piloto antes da migração completa
+Defina com a equipe técnica os critérios de aceitação antes do teste: carga de referência, consumo específico, estabilidade da pressão de vapor e parâmetros de combustão acompanhados. Registre também as condições do combustível e do equipamento durante a medição.
 
-Quando a avaliação apontar para a troca, o caminho seguro é validar aos poucos:
+Não misture um novo produto ao estoque existente sem avaliar a compatibilidade. Programe o recebimento e o acompanhamento para preservar a continuidade do processo. O plano de mudança deve incluir a conduta em caso de desvio e respeitar os procedimentos da instalação.
 
-- **Teste um lote-piloto:** meça consumo, pressão de vapor e estabilidade de chama no regime real de operação.
-- **Acompanhe a manutenção:** a melhor prova é a redução de corrosão e de borra ao longo de um ciclo completo.
-- **Revise o fornecimento:** a troca só vale se o abastecimento for tão confiável quanto o anterior, com entrega programada e suporte técnico.
+## Cotação de óleo de xisto para caldeiras em SP, MG e PR
 
-## Fornecimento contínuo em SP, MG e PR
+Envie município, volume pretendido, consumo mensal, prazo desejado e dados do queimador. Informe se a demanda é uma reposição de produto já aprovado ou uma avaliação de substituição.
 
-Uma caldeira não pode parar no meio de um lote por falta de combustível. O abastecimento precisa acompanhar o ritmo da linha, e a região de atendimento importa tanto quanto a especificação do produto.
-
-A Nuxem atende indústrias em São Paulo, Minas Gerais e Paraná, com entrega programada e padrão constante de qualidade. Para entender como a operação é organizada entre os estados, vale ler o artigo sobre [logística de abastecimento de óleo BPF entre SP, MG e PR](/blog/logistica-de-abastecimento-de-oleo-bpf-entre-sp-mg-e-pr/).
-
-## Conclusão
-
-O óleo de xisto é uma alternativa real para caldeiras industriais que querem reduzir o custo de aquecimento de linha, simplificar a partida e diminuir a corrosão — desde que a especificação seja feita com base no queimador e no processo, e o fornecimento tenha a mesma confiabilidade do combustível tradicional. Em operação contínua, a estabilidade entre lotes pesa tanto quanto a fluidez ou o preço.
-
-A Nuxem produz [óleo de xisto](/produtos/oleo-de-xisto/), [óleos alternativos](/produtos/oleos-alternativos/) e [óleo BTE](/produtos/oleo-bte/) sob demanda, com padrão constante de qualidade e suporte técnico para avaliar a compatibilidade com o seu queimador. Para receber uma avaliação da sua caldeira e uma cotação sob medida, fale com a equipe Nuxem pelo WhatsApp.
+A Nuxem atende São Paulo, Minas Gerais e Paraná. Consulte a [cobertura de entregas](/cobertura/) e [encaminhe os dados para cotação](/contato/). A programação e a especificação devem ser confirmadas para cada operação.

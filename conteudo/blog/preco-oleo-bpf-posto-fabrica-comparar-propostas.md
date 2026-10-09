@@ -2,6 +2,7 @@
 title: "Preço do óleo BPF com frete: como comparar propostas"
 description: "Compare propostas de óleo BPF na mesma base: produto, quantidade, frete, destino, adicionais e pagamento para calcular o custo entregue."
 date: 2026-09-10
+updated: 2026-10-09
 slugOriginal: ""
 studioArticleId: "28841fbc-b9e5-4ef4-913a-3e20c784e072"
 studioContentHash: "5db48d732225cfa31887de084560e6c628ab1d53947317fd2320f7b328358151"
@@ -13,6 +14,8 @@ Para comparar o preço do óleo BPF com frete, coloque todas as propostas na mes
 Uma oferta com valor unitário menor pode deixar o transporte para contratação à parte. Outra pode incluir o frete, mas considerar quantidade ou destino diferentes. Antes de escolher, elimine essas diferenças de escopo.
 
 ## Confirme qual produto está sendo comparado
+
+Se você está definindo a compra, consulte a página de [fornecimento de óleo BPF](/produtos/oleo-bpf/) e reúna os requisitos do equipamento antes de comparar preços. Quando as propostas usam unidades diferentes, veja [como comparar litro, quilo e tonelada de BPF](/blog/oleo-bpf-litro-quilo-tonelada-unidade-compra/).
 
 A primeira linha do comparativo deve identificar o combustível ofertado e a documentação técnica usada na avaliação. A expressão óleo BPF, isoladamente, não informa todos os requisitos necessários para aprovar uma compra.
 
@@ -66,6 +69,8 @@ Para tributos, use a composição expressamente informada e encaminhe dúvidas �
 
 ## Feche a comparação com as condições confirmadas
 
+O custo entregue por unidade é uma etapa da decisão. Produtos com desempenho diferente precisam também ser comparados pelo consumo para a mesma produção. Use o [cálculo de consumo de óleo em caldeiras](/blog/como-calcular-consumo-de-oleo-combustivel-em-caldeiras/) para organizar as premissas, sem presumir eficiência igual para todas as opções.
+
 Antes da aprovação, confira se a oferta continua válida, se a quantidade pode ser atendida e se a janela informada corresponde à necessidade da fábrica. Guarde a versão utilizada, os esclarecimentos e o total aprovado no registro do pedido.
 
-Para solicitar uma proposta compatível com essa comparação, informe município, aplicação, volume ou massa pretendida e período de entrega. Consulte os [combustíveis industriais da Nuxem](https://nuxemoil.com.br/produtos/) e encaminhe a demanda real da sua unidade para avaliação comercial.
+Para solicitar uma proposta compatível com essa comparação, informe município, aplicação, volume ou massa pretendida e período de entrega. Consulte a [cobertura de entregas em SP, MG e PR](/cobertura/) e [encaminhe sua solicitação de cotação à Nuxem](/contato/).

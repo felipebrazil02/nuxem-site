@@ -1,71 +1,80 @@
 ---
-title: "Como calcular o consumo de óleo combustível em caldeiras"
-description: "Aprenda a calcular o consumo de óleo combustível em caldeiras por balanceamento térmico, com fórmulas práticas, exemplos e fatores que distortem a medição."
+title: "Consumo de óleo BPF em caldeiras: fórmula e exemplo de cálculo"
+description: "Calcule consumo de óleo combustível em kg/h, litros/h e kg por tonelada de vapor. Veja um exemplo e os cuidados com densidade, PCI, PCS e eficiência."
 date: 2026-07-16
+updated: 2026-10-09
 slugOriginal: ""
 ---
 
-## Por que medir o consumo de óleo combustível
+**Consumo de combustível = carga térmica útil ÷ (poder calorífico × eficiência).** Essa relação permite estimar o consumo de óleo BPF ou de outro combustível em uma caldeira. O resultado só é comparável à operação quando unidades e condições adotadas são consistentes.
 
-Saber quanto óleo combustível uma caldeira consome não é apenas uma questão contábil: é a base do planejamento de abastecimento, da precificação do vapor ou da energia térmica, e da identificação de perdas. Uma indústria que não conhece seu consumo específico (litros ou kg de óleo por tonelada de vapor) opera no escuro — não sabe se o queimador está eficiente, se o isolamento está adequado nem quando programar a próxima entrega.
+Para preparar uma compra de [óleo BPF](/produtos/oleo-bpf/), confronte a estimativa com os registros da caldeira. A ficha técnica do produto e os dados do equipamento são necessários; não existe um consumo universal por tipo de óleo.
 
-O cálculo do consumo combina três grandezas físicas simples: a energia que a caldeira precisa entregar, o poder calorífico do combustível e a eficiência real do sistema. A partir daí, basta converter unidades. Abaixo apresentamos o método de balanceamento térmico, o mais robusto para a operação industrial.
+## Dados necessários para o cálculo
 
-## O princípio do balanceamento térmico
+O método de relacionar combustível, eficiência e condições do vapor é apresentado também na [referência técnica do Departamento de Energia dos EUA sobre custo de geração de vapor](https://www.energy.gov/sites/prod/files/2014/05/f16/steam15_benchmark.pdf). Os números abaixo são exemplos próprios, sem representar uma especificação comercial.
 
-Toda a energia térmica fornecida pelo óleo deve, em equilíbrio, cobrir a carga útil da caldeira mais as perdas. A fórmula base é:
+- Vazão de vapor, em kg/h, e condições de pressão e temperatura.
+- Entalpia do vapor e da água de alimentação nessas condições.
+- Poder calorífico do combustível, com indicação de PCI ou PCS e unidade.
+- Eficiência medida ou estimada, identificando a base de poder calorífico usada.
+- Densidade na condição de referência para converter kg em litros.
 
-> Consumo = Carga térmica útil ÷ (Poder calorífico × Eficiência)
+### PCI e PCS: mantenha a mesma base
 
-Onde a **carga térmica útil** é a energia efetivamente absorvida pela água para virar vapor (ou para aquecer o fluido térmico). O **poder calorífico** é a energia liberada por unidade de combustível — normalmente expresso em kcal/kg ou MJ/kg. A **eficiência** é o rendimento da caldeira/queimador naquele regime de operação (frequentemente entre 80% e 90% em equipamentos bem mantidos).
+O poder calorífico superior (PCS) considera a recuperação do calor de condensação da água dos produtos de combustão; o inferior (PCI) não inclui essa parcela. Uma eficiência calculada sobre PCI deve ser usada com PCI. Misturar PCS com uma eficiência baseada em PCI distorce a estimativa.
 
-### Passo 1: calcular a carga térmica útil
+## Passo 1: determinar a carga térmica útil
 
-Para uma caldeira de vapor, a carga útil é a massa de vapor produzida multiplicada pela entalpia necessária para levar a água de alimentação à condição de saída do vapor. Simplificando para vapor saturado:
+Para estimar a energia transferida à água que sai como vapor:
 
-> Q_útil = m_vapor × (h_vapor − h_água_alimentação)
+**Carga útil (kcal/h) = vazão de vapor (kg/h) × diferença de entalpia (kcal/kg).**
 
-Com valores típicos de tabela de vapor, isso costuma ficar na casa de 600 a 700 kcal por kg de vapor, dependendo da pressão e da temperatura de alimentação. Para aquecimento de óleo térmico ou ar, a carga útil é a massa do fluido vezes seu calor específico vezes a variação de temperatura.
+A diferença é a entalpia do vapor na saída menos a entalpia da água de alimentação. Use tabelas ou ferramenta técnica apropriada para as condições reais. Purgas, vazamentos e outras perdas precisam ser considerados na análise completa da instalação.
 
-### Passo 2: usar o poder calorífico do combustível
+## Passo 2: calcular o consumo em kg/h
 
-O óleo BPF e o óleo A1 costumam apresentar poder calorífico superior próximo de 10.000 a 10.500 kcal/kg. O fornecedor deve informar esse valor na especificação de cada carga — e a [produção sob demanda com qualidade constante](/produtos/oleo-bpf/) reduz a variação entre lotes, o que torna o cálculo previsível mês a mês. Conforme abordado nas [normas da ANP para óleo combustível](/blog/normas-anp-para-oleo-combustivel-industrial/), esses parâmetros devem constar documentados.
+Exemplo didático, sem atribuição a uma caldeira ou produto específico:
 
-### Passo 3: aplicar a eficiência da caldeira
+- Produção de vapor: 4.000 kg/h.
+- Diferença de entalpia adotada: 600 kcal/kg.
+- PCI adotado: 10.000 kcal/kg.
+- Eficiência sobre PCI: 80%, equivalente a 0,80.
 
-A eficiência não é um número fixo. Ela cai com excesso de ar, fuligem no feixe de tubos, temperatura de chaminé elevada e instabilidade de chama. Aqui entra a [viscosidade do óleo BPF](/blog/impacto-da-viscosidade-do-oleo-bpf-na-eficiencia-da-queima/): fora da faixa de atomização, a queima incompleta derruba o rendimento e infla o consumo sem aviso.
+A carga útil é 4.000 × 600 = 2.400.000 kcal/h.
 
-## Exemplo prático de cálculo
+**Consumo = 2.400.000 ÷ (10.000 × 0,80) = 300 kg/h.**
 
-Imagine uma caldeira produzindo 4.000 kg/h de vapor saturado a 10 bar, com água de alimentação a 80 °C. Aproximando a energia útil em 640 kcal/kg:
+Os números são premissas do exemplo, não valores garantidos para óleo BPF. Substitua cada um pelos dados da operação e do combustível cotado.
 
-- Q_útil = 4.000 × 640 = 2.560.000 kcal/h
-- Poder calorífico do óleo = 10.200 kcal/kg
-- Eficiência estimada = 85% (0,85)
+## Passo 3: converter para litros e consumo diário
 
-> Consumo = 2.560.000 ÷ (10.200 × 0,85) ≈ 295 kg/h de óleo
+**Consumo (L/h) = consumo (kg/h) ÷ densidade (kg/L).**
 
-Convertendo para litros (densidade típica ~0,94 kg/L): cerca de 314 L/h. Em 24 horas de operação contínua, isso representa pouco mais de 7.500 litros — número fundamental para dimensionar o tanque e programar o abastecimento junto à [solução para caldeiras](/solucoes/caldeiras/) da Nuxem.
+Adotando, apenas para o exemplo, densidade de 0,95 kg/L, o resultado é aproximadamente 315,8 L/h. Em 16 horas no mesmo regime, seriam 4.800 kg ou aproximadamente 5.053 litros. Partidas, paradas e mudanças de carga podem alterar esse consumo.
 
-## Fatores que distorcem a medição
+Na compra, confirme unidade e condição de referência. Veja [como comparar óleo BPF por litro, quilo ou tonelada](/blog/oleo-bpf-litro-quilo-tonelada-unidade-compra/).
 
-O cálculo teórico serve de referência, mas a medição de campo costuma divergir. Os principais vilões:
+## Como calcular kg de combustível por tonelada de vapor
 
-- **Variação de lote:** poder calorífico e densidade diferentes entre entregas deslocam a conversão kg↔L.
-- **Perdas não contabilizadas:** purga de fundo, vazamentos de vapor e isolamento deficiente somam carga "invisível".
-- **Regime de carga:** caldeiras em partida ou em carga parcial têm eficiência menor que em regime pleno.
-- **Umidade e borra:** contaminação reduz o poder calorífico efetivo entregue à chama.
+Divida o consumo em kg/h pela produção de vapor em t/h. No exemplo, 300 ÷ 4 = **75 kg de combustível por tonelada de vapor**.
 
-Por isso, o recomendado é cruzar o cálculo térmico com a medição volumétrica do tanque (leitura de nível antes/depois do turno) e com o medidor de vazão do queimador. A divergência sistemática entre teoria e prática é o primeiro sintoma de que algo na queima ou no isolamento precisa de atenção.
+Multiplicar esse indicador pelo preço entregue em R$/kg estima a parcela de combustível do custo por tonelada de vapor. Energia auxiliar, água, tratamento e manutenção são parcelas separadas. Para comparar propostas, consulte [preço do óleo BPF com frete](/blog/preco-oleo-bpf-posto-fabrica-comparar-propostas/).
 
-## Da medição à gestão de custos
+## Por que o consumo medido pode ser diferente?
 
-Com o consumo específico estabelecido, a indústria ganha três vantagens concretas. A primeira é o **planejamento de abastecimento**: saber que a planta queima X litros por dia permite programar entregas e evitar paradas por falta de combustível. A segunda é o **benchmarking**: consumo específico de hoje comparado ao do mês passado revela degradação de eficiência antes que vire falha. A terceira é a **negociação**: volume e perfil de uso bem conhecidos fortalecem a cotação junto ao fornecedor.
+- A carga ou a temperatura da água mudou entre os períodos.
+- A eficiência estimada não representa o regime real.
+- Poder calorífico ou densidade diferem dos valores adotados.
+- Há diferença de calibração, período ou referência entre medições.
+- Partidas, purgas, perdas ou problemas de combustão não foram contemplados.
 
-Para operações com restrição de enxofre, a troca por óleos de baixo teor como [óleo B1](/produtos/oleo-b1/) ou [óleo BTE](/produtos/oleo-bte/) pode alterar ligeiramente o poder calorífico — refazendo o cálculo acima, garante-se que a substituição mantém a mesma entrega térmica com menor emissão.
+Investigue divergências com a equipe técnica; não ajuste o queimador apenas para aproximar a medição do resultado teórico. Compare períodos equivalentes e preserve os registros.
 
-## Conclusão
+## Como usar a estimativa no abastecimento
 
-Calcular o consumo de óleo combustível em caldeiras é um exercício de balanceamento térmico: carga útil dividida pelo produto do poder calorífico pela eficiência. O número resultante, convertido para a unidade de medição da planta, é a âncora de toda a gestão energética — do abastecimento à detecção de perdas. Mais do que uma fórmula, é um hábito: medir, comparar e corrigir.
+Combine consumo diário, estoque utilizável, prazo de entrega e reserva operacional definida para a planta. O volume nominal do tanque não equivale necessariamente ao volume disponível para consumo.
 
-Para definir o combustível ideal para o seu queimador, receber óleo BPF com padrão constante entre entregas e obter suporte no dimensionamento térmico da sua operação, fale com a equipe Nuxem e solicite uma cotação sob medida.
+Consulte o roteiro de [programação do abastecimento de BPF](/blog/como-programar-o-abastecimento-de-oleo-bpf-para-evitar-paradas/). Se estiver avaliando uma troca, refaça a conta com dados documentados do [óleo de xisto](/produtos/oleo-de-xisto/) ou de outro produto aprovado, sem presumir que a eficiência será a mesma.
+
+Para uma proposta de fornecimento, [informe à Nuxem a cidade, o consumo e os dados da caldeira](/contato/).

@@ -1,77 +1,58 @@
 ---
-title: "Óleo de xisto (OTE) vs óleo BPF: diferenças práticas para a indústria"
-description: "Óleo de xisto (OTE) vs óleo BPF: fluidez, enxofre, poder calorífico, queima e custo. Como escolher o combustível certo para caldeiras, fornos e usinas."
+title: "Óleo de xisto ou BPF: como comparar consumo e custo industrial"
+description: "Compare óleo de xisto e BPF por viscosidade, enxofre, consumo e custo por energia útil. Saiba quais documentos pedir antes de trocar o combustível."
 date: 2026-10-03
+updated: 2026-10-09
 slugOriginal: ""
 ---
 
-## Duas alternativas, decisões diferentes
+**A escolha entre óleo de xisto e óleo BPF depende da especificação dos produtos e do equipamento.** Compare a energia útil entregue, o aquecimento necessário, a compatibilidade da instalação e o abastecimento. O menor preço por litro não garante o menor custo de operação.
 
-Quem opera caldeira, forno ou usina de asfalto no Brasil convive com uma pergunta recorrente: óleo de xisto (OTE) ou óleo BPF? Os dois são combustíveis líquidos usados em queima industrial, mas respondem de forma diferente a fluidez, enxofre, poder calorífico e custo de operação. Entender essas diferenças é o que separa uma troca bem-feita de um problema de queimador.
+O [óleo BPF](/produtos/oleo-bpf/) e o [óleo de xisto (OTE)](/produtos/oleo-de-xisto/) são opções para avaliação em processos térmicos industriais. O nome comercial não garante menor consumo, ausência de aquecimento ou atendimento ambiental: essas conclusões exigem documentação e verificação na planta.
 
-Este artigo compara os dois na prática, para ajudar compradores e gerentes de manutenção a decidir com base no processo, e não só no preço por litro.
+## Viscosidade: transferência e atomização têm exigências diferentes
 
-## O que é cada um
+Peça a viscosidade com a temperatura de ensaio e, quando necessário, a curva de viscosidade em função da temperatura. Compare esses dados com as faixas admitidas pelas bombas e pelo queimador. Um produto que pode ser transferido à temperatura ambiente ainda pode precisar de aquecimento para atomização.
 
-O [óleo BPF](/produtos/oleo-bpf/) é um óleo combustível pesado, tradicionalmente usado em caldeiras e fornos, conhecido pela alta densidade e pela necessidade de aquecimento para fluir. O [óleo de xisto (OTE)](/produtos/oleo-de-xisto/) é produzido a partir do xisto betuminoso e se destaca por ser mais fluido a frio e ter menor teor de enxofre.
+Não desligue aquecedores apenas porque a proposta descreve o combustível como mais fluido. A revisão depende do fabricante e das condições de partida, transferência e queima. Veja [como especificar o óleo combustível para o queimador](/blog/como-especificar-o-oleo-combustivel-certo-para-seu-queimador/).
 
-## Diferenças práticas na operação
+## Enxofre: compare os produtos documentados
 
-### Fluidez a frio
+Não presuma que todo óleo de xisto terá teor inferior ao de todo BPF. Compare os dados do produto cotado com os requisitos da instalação. Consulte a [classificação dos óleos combustíveis na ANP](https://www.gov.br/anp/pt-br/assuntos/producao-de-derivados-de-petroleo-e-processamento-de-gas-natural/producao-de-derivados-de-petroleo-e-processamento-de-gas-natural/oleo-combustivel).
 
-O BPF é um óleo pesado: em temperatura ambiente ele fica viscoso e precisa de pré-aquecimento de tanque e linha para ser bombeado e atomizado. O OTE, por ser mais leve, permanece fluido em temperaturas mais baixas, o que reduz a necessidade de resistências, serpentinas e isolamento de linha.
+O teor de enxofre é um dos dados da avaliação. A conformidade ambiental também depende das condições de combustão, dos controles instalados e das exigências aplicáveis à planta.
 
-Na prática, isso significa:
+## Como comparar o custo por energia útil
 
-- **Menos consumo elétrico** para manter o combustível fluido.
-- **Partida mais simples** em operações que param no fim do turno.
-- **Menos infraestrutura** de aquecimento instalada.
+Use preço e poder calorífico na mesma unidade de massa. A eficiência precisa estar na mesma base do poder calorífico: inferior (PCI) ou superior (PCS).
 
-### Teor de enxofre
+**Custo do combustível por MJ útil = preço entregue em R$/kg ÷ (poder calorífico em MJ/kg × eficiência).**
 
-O BPF costuma ter teor de enxofre mais alto, o que aumenta as emissões de SOx e acelera a corrosão em chaminés, dutos e trocadores. O OTE tem menor teor de enxofre, o que reduz emissões e custo de manutenção — um ganho relevante em processos de contato indireto, onde os gases de combustão passam perto de produto e equipamento.
+Exemplo exclusivamente didático: um combustível A a R$ 3,00/kg, com 40 MJ/kg e eficiência de 80%, custa aproximadamente R$ 0,094 por MJ útil. Um combustível B a R$ 3,10/kg, com 41 MJ/kg e eficiência de 85%, custa aproximadamente R$ 0,089 por MJ útil. Esses números não são cotações nem características atribuídas ao BPF ou ao OTE.
 
-### Poder calorífico
+O segundo produto tem preço maior por massa e custo menor por energia útil neste exemplo. A conclusão muda se a eficiência real for diferente. Some separadamente energia auxiliar, manutenção e adaptação para avaliar o custo total. O [cálculo do consumo em caldeiras](/blog/como-calcular-consumo-de-oleo-combustivel-em-caldeiras/) detalha a relação entre carga térmica e consumo.
 
-Os dois entregam desempenho energético competitivo para manter a temperatura de trabalho. A diferença está mais na forma como o calor é entregue e na estabilidade da chama do que no total de energia por litro.
+## O que registrar antes de trocar
 
-### Queima e estabilidade
+- Fichas técnicas e identificação do combustível atual e da alternativa.
+- Equipamento, faixa de carga e condições de partida.
+- Consumo por unidade produzida, medido em condições comparáveis.
+- Capacidade do aquecimento, bombas, filtros e materiais em contato com o produto.
+- Estoque remanescente e avaliação de compatibilidade antes da mistura.
+- Custos e prazos de entrega, além do volume disponível no tanque.
 
-Com menos variação de viscosidade, o OTE tende a atomizar de forma mais previsível no bico do queimador, o que ajuda a manter a chama constante. Em processos contínuos, essa estabilidade reduz retrabalho e refugo.
+A troca deve seguir um plano aprovado pelo responsável técnico. Consulte os cuidados com [compatibilidade entre lotes e formação de borra](/blog/compatibilidade-entre-lotes-de-oleo-bpf-como-evitar-borra-na-mistura/) antes de programar a descarga.
 
-## Como escolher
+## Dúvidas frequentes
 
-A escolha entre OTE e BPF depende do processo:
+### Óleo de xisto sempre consome menos que BPF?
 
-- **Se a planta já tem infraestrutura de aquecimento e opera com BPF sem problema**, a troca pode não ser necessária — mas vale comparar o custo total, incluindo energia de aquecimento e manutenção.
-- **Se a planta quer reduzir consumo elétrico, simplificar a partida e diminuir corrosão**, o OTE é uma alternativa real.
-- **Se há restrição ambiental ou preocupação com emissões de SOx**, o menor teor de enxofre do OTE pesa a favor.
+Não é possível concluir isso pelo nome do combustível. O consumo depende do poder calorífico, da carga útil e da eficiência do conjunto. Compare a mesma produção em condições equivalentes.
 
-Para uma visão mais ampla das opções, vale ler o guia de [como escolher entre óleo de xisto, BTE, BPF e óleos alternativos](/blog/comparacao-tecnica-oleo-de-xisto-bte-bpf-e-oleos-alternativos/).
+### Posso usar o mesmo queimador?
 
-## O que validar antes de trocar
+A compatibilidade deve ser confirmada pelo fabricante ou responsável técnico. Viscosidade, atomização, vazão, materiais e controles precisam ser avaliados antes da substituição.
 
-A troca de combustível não é decisão de catálogo. Antes de migrar, vale cobrir quatro pontos:
+### Como pedir uma comparação à Nuxem?
 
-1. **Queimador e atomização:** a viscosidade de trabalho do novo combustível precisa estar na faixa que o bico do queimador entrega. Veja o artigo sobre [como especificar o óleo combustível certo para o seu queimador](/blog/como-especificar-o-oleo-combustivel-certo-para-seu-queimador/).
-2. **Temperatura do processo:** o combustível muda, mas o forno, caldeira ou secador continua precisando da temperatura correta.
-3. **Tanque, linhas e vedações:** confirmar compatibilidade de filtros, vedações e a real necessidade de aquecimento.
-4. **Consumo e autonomia:** recalcular o consumo estimado com o poder calorífico do novo combustível, para dimensionar tanque e programar o abastecimento.
-
-### Um lote-piloto antes da migração completa
-
-Quando a avaliação apontar para a troca, o caminho seguro é validar aos poucos:
-
-- **Teste um lote-piloto:** meça consumo, temperatura de chama e estabilidade no regime real de operação.
-- **Acompanhe o refugo e a manutenção:** a melhor prova é a estabilidade do produto final e a redução de corrosão ao longo de um ciclo completo.
-- **Revise o fornecimento:** a troca só vale se o abastecimento for tão confiável quanto o anterior, com entrega programada e suporte técnico.
-
-## Fornecimento em SP, MG e PR
-
-A Nuxem atende indústrias em São Paulo, Minas Gerais e Paraná, com entrega programada e padrão constante de qualidade. Para entender como a operação é organizada entre os estados, vale ler o artigo sobre [logística de abastecimento de óleo BPF entre SP, MG e PR](/blog/logistica-de-abastecimento-de-oleo-bpf-entre-sp-mg-e-pr/).
-
-## Conclusão
-
-Óleo de xisto e óleo BPF são alternativas legítimas, mas atendem a perfis diferentes de operação. O OTE se destaca pela fluidez a frio, menor teor de enxofre e queima mais estável; o BPF é o combustível tradicional, com infraestrutura de aquecimento já consolidada em muitas plantas. A decisão certa depende do queimador, do processo e do custo total — não só do preço por litro.
-
-A Nuxem produz [óleo de xisto](/produtos/oleo-de-xisto/), [óleo BPF](/produtos/oleo-bpf/), [óleos alternativos](/produtos/oleos-alternativos/) e [óleo BTE](/produtos/oleo-bte/) sob demanda, com padrão constante de qualidade e suporte técnico para avaliar a compatibilidade com o seu queimador. Para receber uma avaliação e uma cotação sob medida, fale com a equipe Nuxem pelo WhatsApp.
+Informe cidade de entrega, combustível utilizado, modelo do equipamento e consumo atual. A Nuxem atende SP, MG e PR; consulte a [cobertura de fornecimento](/cobertura/) e [solicite uma cotação para sua operação](/contato/).

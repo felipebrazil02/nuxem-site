@@ -1,7 +1,8 @@
 ---
-title: "Compatibilidade entre lotes de óleo BPF: como evitar borra na mistura"
+title: "Qualidade do óleo BPF: recebimento e compatibilidade entre lotes"
 description: "Entenda como avaliar a compatibilidade entre lotes de óleo BPF, prevenir borra e planejar a troca de combustível em caldeiras, fornos e usinas de asfalto."
 date: 2026-09-07
+updated: 2026-10-09
 slugOriginal: ""
 ---
 
@@ -11,7 +12,15 @@ Receber um novo lote de óleo combustível não significa apenas recompor o esto
 
 Em caldeiras, fornos e usinas de asfalto, essa condição pode provocar formação de borra, saturação de filtros e restrição de vazão. O problema merece atenção especialmente nas mudanças de fornecedor, de formulação ou de tipo de combustível. Avaliar a compatibilidade do [óleo BPF](/produtos/oleo-bpf/) antes da transição ajuda a preservar a continuidade operacional sem atribuir automaticamente toda ocorrência à qualidade de uma carga isolada.
 
-## Estabilidade e compatibilidade não são a mesma coisa
+## Qualidade do óleo BPF: o que conferir no recebimento
+
+Comece pela identificação do produto e do lote. Compare a documentação recebida com a especificação aprovada: viscosidade e temperatura de ensaio, teor de enxofre, água e sedimentos e demais propriedades acordadas. Registre método, unidade, resultado e limite de aceitação quando aplicáveis. A conferência visual, isoladamente, não comprova qualidade nem compatibilidade.
+
+A ficha técnica descreve o produto; o documento de resultados identifica as propriedades informadas para o lote; a ficha de dados de segurança orienta os cuidados de uso. Solicite os documentos pertinentes à compra e encaminhe divergências ao responsável técnico antes da liberação. Consulte a [referência da ANP sobre classificação e controle da qualidade](https://www.gov.br/anp/pt-br/assuntos/producao-de-derivados-de-petroleo-e-processamento-de-gas-natural/producao-de-derivados-de-petroleo-e-processamento-de-gas-natural/oleo-combustivel).
+
+Ter resultados dentro da especificação não comprova, por si só, que o lote possa ser misturado ao estoque existente. Essa é uma avaliação adicional, como explicado a seguir.
+
+## Como distinguir estabilidade e compatibilidade
 
 ### Estabilidade do lote
 
