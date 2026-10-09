@@ -91,7 +91,7 @@ function leituras(caminho) {
     if (!existsSync(join(dirBlog, slug + '.md'))) throw new Error('Artigo de leitura ausente: ' + slug);
     return '<li><a href="/blog/' + slug + '/">' + titulo + '</a></li>';
   }).join('');
-  return '<nav aria-label="Guias para escolher e comprar combustível"><h2>Guias para escolher e comprar combustível</h2><ul>' + links + '</ul></nav>';
+  return '<aside class="leituras" aria-label="Guias para escolher e comprar combustível"><h2>Guias para escolher e comprar combustível</h2><ul>' + links + '</ul></aside>';
 }
 
 // ---------- layout ----------

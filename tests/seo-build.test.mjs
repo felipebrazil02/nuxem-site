@@ -24,7 +24,7 @@ test('SEO output stays consistent across clean and incremental builds, including
     assert.equal(article.datePublished, '2026-07-16');
     assert.equal(article.dateModified, '2026-10-09');
     assert.match(read(consumptionPath), /Atualizado em 9 de outubro de 2026/);
-    const curatedLinks = read('produtos/oleo-bpf/index.html').match(/<nav aria-label="Guias[^]*?<\/nav>/)[0];
+    const curatedLinks = read('produtos/oleo-bpf/index.html').match(/<aside class="leituras"[^]*?<\/aside>/)[0];
     assert.equal([...curatedLinks.matchAll(/href=/g)].length, 3);
     assert.match(read('blog/index.html'), /Guias para escolher e comprar combustível/);
     assert.equal(cleanURLs.length, new Set(cleanURLs).size);
