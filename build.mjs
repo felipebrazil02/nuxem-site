@@ -278,15 +278,8 @@ for (const p of PRODUTOS) {
       brand: { '@type': 'Brand', name: 'Nuxem' },
       category: 'Combustível industrial',
       sku: p.slug,
-      offers: {
-        '@type': 'Offer',
-        url: `${EMPRESA.dominio}/produtos/${p.slug}/`,
-        priceCurrency: 'BRL',
-        price: '0',
-        priceValidUntil: new Date(new Date().setFullYear(new Date().getFullYear() + 1)).toISOString().slice(0, 10),
-        availability: 'https://schema.org/InStock',
-        seller: { '@type': 'Organization', name: 'Nuxem' },
-      },
+      // Venda sob cotação: não publicar uma oferta fictícia de preço zero.
+      url: `${EMPRESA.dominio}/produtos/${p.slug}/`,
       additionalProperty: p.specs.map(([k, v]) => ({
         '@type': 'PropertyValue',
         name: k,
@@ -306,6 +299,7 @@ for (const p of PRODUTOS) {
     ${p.specs.map(([k, v]) => `<tr><td>${k}</td><td>${v}</td></tr>`).join('\n    ')}
   </table>
   <p><strong>Aplicações:</strong> ${p.aplicacoes}</p>
+${p.orientacao ? `  <h2>Como solicitar sua cotação</h2><p>${p.orientacao}</p>` : ''}
   <p><a class="btn btn-laranja" href="${ZAP}">Solicitar cotação de ${p.nome}</a></p>
 </div></div>`,
   }));
@@ -590,13 +584,25 @@ const redirects = posts
   .filter(p => p.slugOriginal)
   .map(p => `/post/${encodeURI(p.slugOriginal)} /blog/${p.slug}/ 301`)
   .join('\n');
-writeFileSync(join(dist, '_redirects'), redirects + '\n/post/* /blog/ 301\n', 'utf8');
+const redirecionamentosLegados = [
+  ['/blog/oleo-de-xisto-analise-comparativa/', '/blog/comparacao-tecnica-oleo-de-xisto-bte-bpf-e-oleos-alternativos/'],
+  ['/blog/oleo-de-xisto-propriedades-e-aplicacoes-industriais/', '/produtos/oleo-de-xisto/'],
+  ['/blog/oleo-combustivel-bpf-especificacoes-e-aplicacoes-industriais/', '/guia-oleo-bpf/'],
+  ['/blog/oleo-bpf-e-inflamavel-entenda-o-risco/', '/guia-oleo-bpf/faq/'],
+];
+writeFileSync(join(dist, '_redirects'), [
+  ...redirecionamentosLegados.flatMap(([origem, destino]) => [
+    `${origem} ${destino} 301`,
+    `${origem.slice(0, -1)} ${destino} 301`,
+  ]),
+  redirects,
+  '/post/* /blog/ 301',
+].filter(Boolean).join('\n') + '\n', 'utf8');
 
 // ---------- sitemap e robots ----------
-const datasPorPagina = Object.fromEntries(posts.map(p => [`/blog/${p.slug}/`, p.date]));
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${paginas.map(p => `  <url><loc>${EMPRESA.dominio}${p}</loc>${datasPorPagina[p] ? `<lastmod>${datasPorPagina[p]}</lastmod>` : ''}</url>`).join('\n')}
+${[...new Set(paginas)].map(p => `  <url><loc>${EMPRESA.dominio}${p}</loc></url>`).join('\n')}
 </urlset>`;
 writeFileSync(join(dist, 'sitemap.xml'), sitemap, 'utf8');
 writeFileSync(join(dist, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${EMPRESA.dominio}/sitemap.xml\n`, 'utf8');
@@ -690,11 +696,11 @@ gtag('config', '${EMPRESA.gaId}');
 </div></section>`;
   writeFileSync(join(blogDir, 'index.html'), layout({ title: 'Blog Nuxem | Conteúdo Técnico sobre Óleo Combustível Industrial', description: 'Artigos técnicos sobre óleo BPF, caldeiras, usinas de asfalto, fundições e logística de combustível industrial.', caminho: 'blog', conteudo: blogHtml }), 'utf8');
   // atualiza sitemap com blog posts
-  const datasPorPagina = Object.fromEntries(posts.map(p => [`/blog/${p.slug}/`, new Date().toISOString().slice(0, 10)]));
+  // Uma URL por página. Não usar a data do build como atualização de conteúdo.
+  const paginasUnicas = [...new Set([...paginas, ...posts.map(p => `/blog/${p.slug}/`)])];
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${paginas.map(p => `  <url><loc>${EMPRESA.dominio}${p}</loc>${datasPorPagina[p] ? `<lastmod>${datasPorPagina[p]}</lastmod>` : ''}</url>`).join('\n')}
-${posts.map(p => `  <url><loc>${EMPRESA.dominio}/blog/${p.slug}/</loc><lastmod>${new Date().toISOString().slice(0, 10)}</lastmod></url>`).join('\n')}
+${paginasUnicas.map(p => `  <url><loc>${EMPRESA.dominio}${p}</loc></url>`).join('\n')}
 </urlset>`;
   writeFileSync(join(dist, 'sitemap.xml'), sitemap, 'utf8');
   console.log(`  + ${todosSlugs.length - arquivosBlog.length} posts restaurados do backup`);
