@@ -1,66 +1,44 @@
 ---
-title: "Normas ANP para óleo combustível industrial: o que muda na sua operação"
-description: "Entenda as resoluções da ANP que regulam o óleo combustível industrial no Brasil: classificação, teor de enxofre, rastreabilidade e impacto na rotina da planta."
+title: "Óleo combustível: classificação ANP e documentos para a compra"
+description: "Entenda classificação de óleo combustível, documentação de qualidade e a diferença entre especificação do produto e limites de emissão da instalação."
 date: 2026-07-10
 slugOriginal: ""
+updated: 2026-10-09
+category: operacao
 ---
 
-## Por que a regulamentação importa para a indústria
+**A especificação do combustível e a conformidade ambiental da instalação são avaliações diferentes.** A compra deve identificar o produto e seus requisitos de qualidade; a operação também precisa atender às condições da licença e às regras aplicáveis à fonte de emissão.
 
-Óleo combustível não é um produto genérico: trata-se de um combustível líquido regulado pelo poder público, cuja comercialização, especificação e rastreabilidade são acompanhadas de perto pelos órgãos ambientais e pelo órgão regulador da indústria de petróleo e derivados. Para o gestor de uma caldeira, de uma usina de asfalto ou de uma fundição, conhecer as normas não é burocracia — é a diferença entre uma operação regular e uma autuação que paralisa a produção.
+## Onde consultar a classificação do produto
 
-A Agência Nacional do Petróleo, Gás Natural e Biocombustíveis (ANP) é a responsável por definir os padrões de qualidade e as condições de comercialização dos combustíveis derivados de petróleo no Brasil. Os óleos combustíveis industriais estão sujeitos a essas regras, e o descumprimento afeta tanto o fornecedor quanto o usuário final.
+A [página da ANP sobre óleo combustível](https://www.gov.br/anp/pt-br/assuntos/producao-de-derivados-de-petroleo-e-processamento-de-gas-natural/producao-de-derivados-de-petroleo-e-processamento-de-gas-natural/oleo-combustivel) referencia a Resolução ANP nº 899/2022 e apresenta classes por limites de viscosidade e teor de enxofre. Consulte a versão vigente dos atos ao definir a especificação contratual.
 
-## Classificação dos óleos combustíveis (tipos A e B)
+As designações A1, A2, B1 e B2 combinam esses critérios. Não deduza o resultado de um lote, sua eficiência ou sua compatibilidade com o queimador apenas pela classe. Veja as [diferenças entre A1 e A2](/blog/diferencas-entre-oleo-bpf-a1-e-a2/) e as informações de [óleo B1](/produtos/oleo-b1/).
 
-A ANP classifica os óleos combustíveis industriais em tipos conforme sua composição e propriedades. Os dois mais relevantes para a indústria são:
+## Quais informações organizar no pedido
 
-- **Tipo A (OC-A1):** óleo combustível pesado, com limite de viscosidade mais alto e teor de enxofre mais elevado (até 2,5% em massa). É a escolha para operações de alta carga energética contínua, como caldeiras de grande porte e usinas de asfalto. Conheça as especificações em [óleo A1 (OC-A1)](/produtos/oleo-a1/).
-- **Tipo B (OC-B1):** óleo combustível de baixo teor de enxofre (máximo 1% em massa), voltado a operações com exigência ambiental mais rigorosa. Veja detalhes em [óleo B1 (OC-B1)](/produtos/oleo-b1/).
+- Identificação comercial e classificação aplicável ao produto.
+- Propriedades requeridas, unidades e condições de ensaio.
+- Referências da especificação acordada e documentos de qualidade pertinentes.
+- Identificação do fornecedor, quantidade, unidade de compra e destino.
+- Critérios de recebimento e responsável pela avaliação de divergências.
 
-A distinção é objetiva e aparece na documentação de cada carga. O enxofre, em particular, é o parâmetro que mais pesa na conformidade ambiental e na vida útil dos equipamentos.
+A ficha técnica descreve o produto; os resultados identificados por lote permitem conferir propriedades informadas; a ficha de dados de segurança tem finalidade própria. Defina os documentos necessários para a operação e mantenha a rastreabilidade dos registros.
 
-### Por que o enxofre é o parâmetro crítico
+## Qualidade do ar não é limite de emissão da chaminé
 
-O enxofre presente na queima gera óxidos de enxofre (SOx), associados à corrosão em dutos e chaminés, à formação de fuligem e às emissões atmosféricas controladas por lei. Quanto menor o teor de enxofre do combustível, menor o desgaste do sistema e mais simples o atendimento aos limites de emissão da planta.
+O [Ministério do Meio Ambiente explica a regulamentação de fontes fixas](https://www.gov.br/mma/pt-br/assuntos/meio-ambiente-urbano-recursos-hidricos-qualidade-ambiental/qualidade-do-ar/fontes-fixas), incluindo as Resoluções Conama nº 382/2006 e nº 436/2011. O enquadramento depende das características e do histórico da fonte, além das exigências competentes.
 
-## Limites de enxofre e a Resolução CONAMA 491/2018
+Padrões nacionais de qualidade do ar tratam das concentrações no ambiente. Eles não devem ser apresentados como uma certificação de um combustível ou como substitutos dos limites específicos de uma instalação. A equipe ambiental deve verificar o enquadramento e as condições da licença antes de aprovar uma mudança.
 
-Além da ANP, a operação industrial está sujeita à Resolução CONAMA nº 491/2018, que estabelece padrões de emissão de poluentes atmosféricos para fontes fixas. Na prática, o limite de enxofre do combustível e o limite de emissão do processo caminham juntos: um combustível com teor de enxofre acima do permitido pode inviabilizar o atendimento ao padrão de chaminé, mesmo com queimador e sistema de tratamento em bom estado.
+## Baixo teor de enxofre garante conformidade?
 
-Por isso, indústrias em regiões metropolitanas ou com restrição ambiental contratual frequentemente migram para o **[óleo BTE](/produtos/oleo-bte/)**, que possui teor de enxofre máximo de 0,5% em massa — a opção mais limpa entre os combustíveis líquidos industriais, com menor emissão de fuligem e melhor desempenho em processos com restrição ambiental.
+Não, isoladamente. O teor de enxofre é um dado relevante, mas a avaliação inclui os demais requisitos da operação e os resultados exigidos para a fonte. A designação BTE ou a escolha de outro produto não comprova, sozinha, atendimento integral.
 
-## Especificações técnicas que a norma exige
+Também não confunda o limite da especificação com uma medição de emissões. São documentos e grandezas diferentes, que precisam ser interpretados em seus respectivos contextos.
 
-Independentemente do tipo, o combustível industrial deve atender a parâmetros documentados de:
+## Como levar os requisitos à cotação
 
-- **Viscosidade cinemática:** define o aquecimento de linha e a atomização no queimador.
-- **Poder calorífico superior:** garante a previsibilidade energética da queima.
-- **Ponto de fulgor:** acima de 66 °C na maioria dos produtos, critério de segurança no armazenamento.
-- **Teor de enxofre:** conforme o tipo (A ou B) e a aplicação.
+Encaminhe a especificação definida pela equipe responsável, a cidade de entrega e o equipamento. O [roteiro de especificação para queimadores](/blog/como-especificar-o-oleo-combustivel-certo-para-seu-queimador/) ajuda a reunir os dados técnicos, e a [solicitação de cotação](/blog/como-preparar-uma-solicitacao-de-cotacao-de-oleo-combustivel-industrial/) organiza as informações comerciais.
 
-Esses valores devem constar na especificação técnica entregue pelo fornecedor e ser compatíveis com o equipamento. A especificação correta para o seu queimador é o primeiro passo para evitar instabilidade de chama e consumo específico elevado — tema abordado em [soluções para caldeiras](/solucoes/caldeiras/).
-
-## Rastreabilidade e documentação
-
-A conformidade não termina na qualidade do produto: ela passa pela documentação. Cada carga de óleo combustível deve ser acompanhada de nota fiscal com a descrição correta do produto, além de laudos e manifestos quando aplicável. A rastreabilidade protege a indústria em uma eventual fiscalização e garante que o que foi comprado é o que está sendo queimado.
-
-Manter um histórico de recebimento, com amostras e laudos organizados, é uma prática recomendada para qualquer planta térmica — especialmente para operações recorrentes com múltiplas entregas ao longo do mês.
-
-## Como a Nuxem apoia a conformidade
-
-A Nuxem fornece óleos combustíveis com padrão constante de qualidade e **produção sob demanda**, o que significa que o combustível é preparado conforme a necessidade da sua operação e entregue com a especificação documentada. O suporte técnico da equipe ajuda a escolher o produto certo — equilibrando exigência de queima, restrição ambiental e custo térmico.
-
-### Escolhendo o produto certo
-
-Para uma operação com restrição ambiental, o caminho costuma ser o óleo B1 ou o óleo BTE. Para alta carga contínua sem restrição de enxofre, o óleo A1 ou o [óleo BPF](/produtos/oleo-bpf/) atendem com eficiência. A escolha deve considerar o queimador, o sistema de aquecimento e o regime de produção.
-
-### Recebimento e documentação
-
-Toda entrega é acompanhada da documentação pertinente, e a frota própria garante previsibilidade no abastecimento — fator crítico para evitar paradas por falta de combustível. O atendimento 24 horas cobre imprevistos de forma que a conformidade e a continuidade andem juntas.
-
-## Conclusão
-
-Entender as normas da ANP e os limites ambientais aplicáveis é parte da gestão técnica de qualquer planta térmica. A classificação correta do óleo (tipo A ou B), o controle do teor de enxofre e a organização documental do recebimento protegem a operação contra paradas e autuações. O combustível certo, entregue com especificação clara e suporte técnico, transforma a regulamentação de obstáculo em vantagem competitiva.
-
-Para avaliar qual combustível atende à sua operação e à legislação aplicável, fale com a equipe Nuxem e solicite uma cotação sob medida.
+Para avaliar o fornecimento de [óleo BPF](/produtos/oleo-bpf/) e outros produtos, [fale com a Nuxem](/contato/). Confirme produto e documentação na proposta; decisões de enquadramento e licenciamento devem ser verificadas com os responsáveis pela instalação.

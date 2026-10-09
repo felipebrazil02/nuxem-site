@@ -2,6 +2,7 @@
 title: "Qualidade do óleo BPF: recebimento e compatibilidade entre lotes"
 description: "Entenda como avaliar a compatibilidade entre lotes de óleo BPF, prevenir borra e planejar a troca de combustível em caldeiras, fornos e usinas de asfalto."
 date: 2026-09-07
+category: operacao
 updated: 2026-10-09
 slugOriginal: ""
 ---

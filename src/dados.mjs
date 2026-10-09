@@ -24,158 +24,393 @@ export const EMPRESA = {
 
 export const PRODUTOS = [
   {
-    slug: 'oleo-bpf',
-    nome: 'Óleo BPF',
-    imagem: 'produto-oleo-bpf.webp',
-    imagemAlt: 'Óleo BPF sendo despejado em béquer de laboratório, mostrando sua alta viscosidade',
-    resumo: 'Combustível industrial pesado, de alto poder calorífico, para operações de alta demanda energética.',
-    title: 'Óleo BPF em SP, MG e PR | Fornecedor | Nuxem',
-    description: 'Fornecimento de óleo BPF para caldeiras, fornos e usinas de asfalto em SP, MG e PR. Frota própria e atendimento 24h. Solicite cotação.',
-    specs: [
-      ['Viscosidade', 'Alta'],
-      ['Poder calorífico superior', 'Acima de 10.400 kcal/kg — confirmar na especificação do produto cotado'],
-      ['Ponto de fluidez', '18 ºC a 27 ºC'],
-      ['Ponto de fulgor', 'Acima de 66 ºC'],
-      ['Aspecto', 'Líquido escuro e viscoso'],
+    "slug": "oleo-bpf",
+    "nome": "Óleo BPF",
+    "imagem": "produto-oleo-bpf.webp",
+    "imagemAlt": "Imagem ilustrativa de óleo combustível para uso industrial",
+    "resumo": "Óleo combustível para caldeiras, fornos e usinas de asfalto. Compare classe, viscosidade, enxofre e custo entregue.",
+    "title": "Óleo BPF em SP, MG e PR | Fornecedor | Nuxem",
+    "description": "Fornecimento de óleo BPF para caldeiras, fornos e usinas de asfalto em SP, MG e PR. Frota própria e atendimento 24h. Solicite cotação.",
+    "specs": [
+      [
+        "Viscosidade cinemática",
+        "Solicitar valor em mm²/s (cSt) e temperatura do ensaio"
+      ],
+      [
+        "Poder calorífico",
+        "Solicitar PCS ou PCI em kcal/kg ou MJ/kg, identificando a base usada"
+      ],
+      [
+        "Teor de enxofre",
+        "Confirmar percentual em massa na especificação do produto cotado"
+      ],
+      [
+        "Ponto de fluidez e ponto de fulgor",
+        "Consultar os valores em °C e as condições de manuseio na documentação"
+      ],
+      [
+        "Densidade",
+        "Confirmar valor e temperatura de referência para converter litros em massa"
+      ]
     ],
-    aplicacoes: 'Caldeiras, fornos industriais, usinas de asfalto e fundições.',
-    corpo: [
-      'O óleo BPF (Baixo Ponto de Fluidez) é um combustível industrial derivado de petróleo, amplamente utilizado como fonte de energia térmica em caldeiras, fornos, secadores e usinas de asfalto. Seu alto poder calorífico o torna a escolha padrão para operações que exigem queima contínua e alta carga energética.',
-      'A Nuxem fornece óleo BPF com padrão constante de qualidade e produção sob demanda: o combustível é preparado conforme a necessidade da sua operação, com rastreabilidade e suporte técnico para especificação correta de viscosidade, aquecimento de linha e atomização.',
-      'Atendemos São Paulo, Minas Gerais e Paraná com frota própria e atendimento 24 horas. Consulte a programação de entrega para a sua cidade.',
+    "aplicacoes": "Caldeiras, fornos e outros processos térmicos industriais, mediante avaliação de compatibilidade e dos requisitos da instalação.",
+    "corpo": [
+      "O óleo BPF (Baixo Ponto de Fluidez) é um combustível derivado de petróleo utilizado na geração de calor industrial. Sua aplicação em caldeiras, fornos e secadores depende da compatibilidade com o sistema de armazenamento, bombeamento e queima.",
+      "A designação BPF não substitui a especificação de compra. Confirme a classe do óleo, o teor de enxofre, a viscosidade e o poder calorífico do produto ofertado. Esses dados orientam a regulagem do queimador e a comparação de propostas.",
+      "A Nuxem atende São Paulo, Minas Gerais e Paraná com frota própria e atendimento 24 horas. Informe seu consumo e a cidade para consultar o produto disponível e a programação de entrega."
     ],
-    orientacao: 'Informe a cidade de entrega, o equipamento, o consumo estimado e o volume desejado. Solicite a ficha técnica e a ficha de dados de segurança do produto cotado; confirme viscosidade, temperatura de ensaio, teor de enxofre e poder calorífico antes da compra. Consulte também o <a href="/guia-oleo-bpf/">guia de óleo BPF</a> e as <a href="/cobertura/">regiões atendidas</a>.',
+    "orientacao": "Informe a cidade de entrega, o equipamento, o consumo estimado e o volume desejado. Solicite a ficha técnica e a ficha de dados de segurança do produto cotado; confirme viscosidade, temperatura de ensaio, teor de enxofre e poder calorífico antes da compra. Consulte também o <a href=\"/guia-oleo-bpf/\">guia de óleo BPF</a> e as <a href=\"/cobertura/\">regiões atendidas</a>.",
+    "criterio": "Classe do óleo, viscosidade na temperatura de uso e custo por energia útil.",
+    "faq": [
+      {
+        "p": "Qual é o preço do óleo BPF?",
+        "r": "A cotação depende do produto, volume, destino, frete, tributos e condições de pagamento. Compare propostas na mesma unidade e inclua o custo entregue e o rendimento do processo."
+      },
+      {
+        "p": "Óleo BPF precisa de aquecimento?",
+        "r": "A necessidade e a temperatura de aquecimento dependem da viscosidade do óleo, do clima e dos limites de bombas e queimadores. Defina esses parâmetros com a ficha técnica e o fabricante do equipamento."
+      },
+      {
+        "p": "BPF, A1 e B1 são a mesma especificação?",
+        "r": "BPF é uma denominação comercial ampla. A1 e B1 identificam classes de óleo combustível com critérios próprios. Registre na compra a classificação aplicável e os parâmetros do produto fornecido."
+      }
+    ],
+    "notaSpecs": "Os itens abaixo orientam a consulta e não constituem certificado de um lote. Solicite a ficha técnica e a ficha de dados de segurança do produto ofertado."
   },
   {
-    slug: 'oleo-apf',
-    nome: 'Óleo APF',
-    imagem: 'produto-oleo-apf.webp',
-    imagemAlt: 'Óleo APF fluido sendo despejado em béquer, mostrando sua baixa viscosidade',
-    resumo: 'Combustível industrial leve, de baixa viscosidade, que dispensa aquecimento prévio.',
-    title: 'Óleo APF – Combustível Industrial Leve | Nuxem São Paulo',
-    description: 'Óleo APF de baixa viscosidade, sem necessidade de aquecimento, para caldeiras, fornos e usinas de asfalto. Entrega rápida em SP. Solicite cotação.',
-    specs: [
-      ['Viscosidade', 'Baixa'],
-      ['Poder calorífico', 'Acima de 10.400 kcal'],
-      ['Ponto de fulgor', 'Acima de 60 ºC'],
-      ['Aspecto', 'Líquido escuro fino'],
+    "slug": "oleo-apf",
+    "nome": "Óleo APF",
+    "imagem": "produto-oleo-apf.webp",
+    "imagemAlt": "Imagem ilustrativa de óleo combustível para uso industrial",
+    "resumo": "Óleo combustível APF: confirme ponto de fluidez, viscosidade e condições de aquecimento antes de escolher.",
+    "title": "Óleo APF em SP, MG e PR | Especificação e Cotação | Nuxem",
+    "description": "Consulte óleo APF para processos térmicos em SP, MG e PR. Avalie viscosidade, ponto de fluidez e compatibilidade com o queimador. Peça cotação.",
+    "specs": [
+      [
+        "Viscosidade cinemática",
+        "Solicitar valor em mm²/s (cSt) e temperatura do ensaio"
+      ],
+      [
+        "Poder calorífico",
+        "Solicitar PCS ou PCI em kcal/kg ou MJ/kg, identificando a base usada"
+      ],
+      [
+        "Teor de enxofre",
+        "Confirmar percentual em massa na especificação do produto cotado"
+      ],
+      [
+        "Ponto de fluidez e ponto de fulgor",
+        "Consultar os valores em °C e as condições de manuseio na documentação"
+      ],
+      [
+        "Densidade",
+        "Confirmar valor e temperatura de referência para converter litros em massa"
+      ]
     ],
-    aplicacoes: 'Caldeiras, fornos industriais, usinas de asfalto e fundições.',
-    corpo: [
-      'O óleo APF (Alto Ponto de Fluidez) é um combustível industrial leve, de baixa viscosidade, que dispensa sistemas de aquecimento para bombeamento e queima. Isso simplifica a operação e reduz custo em plantas que não possuem linha aquecida.',
-      'Com poder calorífico equivalente ao do BPF, o APF é indicado para equipamentos que exigem atomização eficiente e partidas rápidas, mantendo estabilidade de chama e queima limpa.',
-      'A Nuxem entrega óleo APF em todo o estado de São Paulo com frota própria, produção sob demanda e suporte técnico para avaliar a compatibilidade com seu equipamento.',
+    "aplicacoes": "Caldeiras, fornos e outros processos térmicos industriais, mediante avaliação de compatibilidade e dos requisitos da instalação.",
+    "corpo": [
+      "APF é a denominação Alto Ponto de Fluidez. Ao consultar esse óleo combustível, solicite a identificação comercial completa e a ficha técnica: a sigla, isoladamente, não informa a viscosidade na temperatura de operação.",
+      "Ponto de fluidez e viscosidade representam características diferentes. Não se deve concluir que um óleo APF dispensa aquecimento. O projeto precisa considerar o produto real, a menor temperatura ambiente, as condições de partida e os limites do equipamento.",
+      "Para avaliar a aplicação em caldeiras, fornos ou usinas de asfalto, compare as exigências de bombeamento e atomização. A Nuxem atende SP, MG e PR; consulte disponibilidade, documentação e programação para o seu destino."
     ],
+    "criterio": "Ponto de fluidez, curva de viscosidade e necessidade de aquecimento.",
+    "faq": [
+      {
+        "p": "APF é sempre mais fluido que BPF?",
+        "r": "Não é possível estabelecer essa comparação pela sigla. Compare os valores de viscosidade na mesma temperatura e os pontos de fluidez das duas propostas."
+      },
+      {
+        "p": "Posso usar APF em uma linha sem aquecimento?",
+        "r": "Isso exige avaliação do produto, das temperaturas de partida e do sistema. Solicite a curva de viscosidade e consulte o fabricante de bombas e queimadores antes de decidir."
+      },
+      {
+        "p": "O que informar para cotar APF?",
+        "r": "Envie cidade, volume, combustível atual, modelo do queimador e condições de aquecimento disponíveis. Peça a especificação do produto ofertado para validar a aplicação."
+      }
+    ],
+    "notaSpecs": "Os itens abaixo orientam a consulta e não constituem certificado de um lote. Solicite a ficha técnica e a ficha de dados de segurança do produto ofertado.",
+    "orientacao": "Informe cidade, volume, consumo estimado, combustível atual e modelo do queimador. Envie também os requisitos de aquecimento e as restrições da instalação. Consulte as <a href=\"/cobertura/\">regiões atendidas</a> e veja <a href=\"/blog/como-preparar-uma-solicitacao-de-cotacao-de-oleo-combustivel-industrial/\">como preparar os dados para uma cotação</a>."
   },
   {
-    slug: 'oleo-b1',
-    nome: 'Óleo B1 (OC-B1)',
-    imagem: 'produto-oleo-bpf.webp',
-    imagemAlt: 'Óleo B1 OC-B1 sendo despejado em béquer de laboratório',
-    resumo: 'Óleo combustível de baixo teor de enxofre, ideal para indústrias com exigência ambiental.',
-    title: 'Óleo B1 (OC-B1) em São Paulo | Fornecedor Industrial | Nuxem',
-    description: 'Fornecemos óleo combustível B1 OC-B1 para caldeiras e fornos industriais em SP. Baixo teor de enxofre, alta eficiência térmica. Solicite cotação.',
-    specs: [
-      ['Viscosidade cinemática a 60°C', 'Máx. 620 cSt'],
-      ['Teor de Enxofre', 'Máx. 1% em massa'],
-      ['Poder Calorífico Superior', '> 10.000 kcal/kg'],
-      ['Ponto de Fulgor', '> 66°C'],
-      ['Classificação ANP', 'Tipo B (OC-B1)'],
+    "slug": "oleo-b1",
+    "nome": "Óleo B1 (OC-B1)",
+    "imagem": "produto-oleo-bpf.webp",
+    "imagemAlt": "Imagem ilustrativa de óleo combustível para uso industrial",
+    "resumo": "Óleo combustível OCB1: avalie a classe de menor teor de enxofre com a documentação e os requisitos da instalação.",
+    "title": "Óleo B1 (OCB1) em SP, MG e PR | Cotação | Nuxem",
+    "description": "Óleo combustível B1 para caldeiras e fornos em SP, MG e PR. Consulte especificação, teor de enxofre, viscosidade e entrega. Solicite cotação.",
+    "specs": [
+      [
+        "Classe solicitada",
+        "OCB1 — confirmar enquadramento na especificação"
+      ],
+      [
+        "Viscosidade cinemática",
+        "Solicitar valor em mm²/s (cSt) e temperatura do ensaio"
+      ],
+      [
+        "Poder calorífico",
+        "Solicitar PCS ou PCI em kcal/kg ou MJ/kg, identificando a base usada"
+      ],
+      [
+        "Teor de enxofre",
+        "Confirmar percentual em massa na especificação do produto cotado"
+      ],
+      [
+        "Ponto de fluidez e ponto de fulgor",
+        "Consultar os valores em °C e as condições de manuseio na documentação"
+      ],
+      [
+        "Densidade",
+        "Confirmar valor e temperatura de referência para converter litros em massa"
+      ]
     ],
-    aplicacoes: 'Caldeiras a vapor, fornos industriais, geração de energia térmica, aquecimento de processos, queimadores industriais, usinas de asfalto.',
-    corpo: [
-      'O Óleo B1 (OC-B1) é um óleo combustível de baixo teor de enxofre (máximo 1% em massa), classificado pela ANP como tipo B, ideal para indústrias que buscam redução de emissões sem abrir mão do alto desempenho energético.',
-      'Com viscosidade máxima de 620 cSt a 60°C e poder calorífico superior a 10.000 kcal/kg, atende os limites da Resolução CONAMA 491/2018, sendo a escolha certa para operações que precisam de conformidade ambiental.',
-      'A Nuxem fornece óleo B1 com padrão constante de qualidade e produção sob demanda, garantindo rastreabilidade total e suporte técnico para especificação correta.',
+    "aplicacoes": "Caldeiras, fornos e outros processos térmicos industriais, mediante avaliação de compatibilidade e dos requisitos da instalação.",
+    "corpo": [
+      "O óleo B1, também identificado como OCB1, pertence à classificação de óleos combustíveis de menor teor de enxofre e menor limite de viscosidade dentro dos tipos B1 e B2. A especificação deve ser conferida na documentação do produto cotado.",
+      "Um combustível com menor teor de enxofre pode ajudar na gestão das emissões de óxidos de enxofre, mas não comprova sozinho a conformidade ambiental da operação. Licenciamento, equipamento, condições de queima e medições da instalação também precisam ser considerados.",
+      "A Nuxem fornece óleo combustível para SP, MG e PR. Informe a classificação exigida no seu processo e encaminhe os requisitos técnicos para consultar uma proposta compatível.",
+      "A classificação dos óleos combustíveis pode ser consultada na <a href=\"https://www.gov.br/anp/pt-br/assuntos/producao-de-derivados-de-petroleo-e-processamento-de-gas-natural/producao-de-derivados-de-petroleo-e-processamento-de-gas-natural/oleo-combustivel\">orientação oficial da ANP</a>. Verifique os requisitos vigentes na definição da compra."
     ],
+    "criterio": "Classificação OCB1, enxofre documentado e requisitos ambientais da instalação.",
+    "faq": [
+      {
+        "p": "Óleo B1 garante atendimento aos limites de emissões?",
+        "r": "Não. A conformidade é avaliada para a instalação e seus limites aplicáveis. O teor de enxofre é um dos parâmetros de seleção; regulagem da queima e monitoramento continuam necessários."
+      },
+      {
+        "p": "Posso substituir A1 por B1?",
+        "r": "A troca requer conferir viscosidade, poder calorífico, compatibilidade com o estoque e regulagem do queimador. Planeje a transição e acompanhe consumo e emissões."
+      },
+      {
+        "p": "B1 e BTE são sinônimos?",
+        "r": "Não devem ser tratados como uma especificação idêntica. B1 identifica uma classe de óleo combustível; a denominação BTE exige conferir a ficha e a identificação do produto oferecido."
+      }
+    ],
+    "notaSpecs": "Os itens abaixo orientam a consulta e não constituem certificado de um lote. Solicite a ficha técnica e a ficha de dados de segurança do produto ofertado.",
+    "orientacao": "Informe cidade, volume, consumo estimado, combustível atual e modelo do queimador. Envie também os requisitos de aquecimento e as restrições da instalação. Consulte as <a href=\"/cobertura/\">regiões atendidas</a> e veja <a href=\"/blog/como-preparar-uma-solicitacao-de-cotacao-de-oleo-combustivel-industrial/\">como preparar os dados para uma cotação</a>."
   },
   {
-    slug: 'oleo-a1',
-    nome: 'Óleo A1 (OC-A1)',
-    imagem: 'produto-oleo-bpf.webp',
-    imagemAlt: 'Óleo A1 OC-A1 combustível industrial pesado',
-    resumo: 'Óleo combustível pesado tipo A1, alto poder calorífico, para caldeiras, fornos e usinas de asfalto.',
-    title: 'Óleo A1 (OC-A1) em São Paulo | Fornecedor de Óleo BPF A1 | Nuxem',
-    description: 'Óleo combustível A1 OC-A1 para queima industrial em caldeiras, fornos e usinas de asfalto. Alto poder calorífico, viscosidade controlada. Entrega rápida em SP.',
-    specs: [
-      ['Viscosidade cinemática a 60°C', 'Máx. 620 cSt'],
-      ['Teor de Enxofre', 'Máx. 2,5% em massa'],
-      ['Poder Calorífico Superior', '> 10.000 kcal/kg'],
-      ['Ponto de Fulgor', '> 66°C'],
-      ['Classificação ANP', 'Tipo A (OC-A1)'],
+    "slug": "oleo-a1",
+    "nome": "Óleo A1 (OC-A1)",
+    "imagem": "produto-oleo-bpf.webp",
+    "imagemAlt": "Imagem ilustrativa de óleo combustível para uso industrial",
+    "resumo": "Óleo combustível OCA1 para processos térmicos compatíveis. Consulte requisitos de queima e documentação para compra.",
+    "title": "Óleo A1 (OCA1) em SP, MG e PR | Óleo BPF A1 | Nuxem",
+    "description": "Consulte óleo combustível A1 para caldeiras, fornos e usinas de asfalto em SP, MG e PR. Avalie viscosidade, enxofre e custo entregue. Peça cotação.",
+    "specs": [
+      [
+        "Classe solicitada",
+        "OCA1 — confirmar enquadramento na especificação"
+      ],
+      [
+        "Viscosidade cinemática",
+        "Solicitar valor em mm²/s (cSt) e temperatura do ensaio"
+      ],
+      [
+        "Poder calorífico",
+        "Solicitar PCS ou PCI em kcal/kg ou MJ/kg, identificando a base usada"
+      ],
+      [
+        "Teor de enxofre",
+        "Confirmar percentual em massa na especificação do produto cotado"
+      ],
+      [
+        "Ponto de fluidez e ponto de fulgor",
+        "Consultar os valores em °C e as condições de manuseio na documentação"
+      ],
+      [
+        "Densidade",
+        "Confirmar valor e temperatura de referência para converter litros em massa"
+      ]
     ],
-    aplicacoes: 'Caldeiras industriais, fornos, usinas de asfalto, fundições, geração de energia térmica.',
-    corpo: [
-      'O Óleo A1 (OC-A1) é um óleo combustível pesado de alto poder calorífico, classificado pela ANP como tipo A (maior teor de enxofre, menor limite de viscosidade). É a escolha padrão para operações que exigem alta carga energética contínua.',
-      'Sua viscosidade controlada permite atomização eficiente em queimadores industriais, com queima estável e alto rendimento térmico, sendo amplamente utilizado em caldeiras, fornos e usinas de asfalto.',
-      'A Nuxem fornece óleo A1 com produção sob demanda e qualidade constante, com entrega em todo o estado de São Paulo.',
+    "aplicacoes": "Caldeiras, fornos e outros processos térmicos industriais, mediante avaliação de compatibilidade e dos requisitos da instalação.",
+    "corpo": [
+      "O óleo A1, ou OCA1, é uma classe de óleo combustível com maior teor de enxofre e menor limite de viscosidade na comparação entre os tipos A1 e A2. A designação orienta a compra, mas não substitui os dados do produto e a avaliação da instalação.",
+      "Para aplicação em caldeiras, fornos e usinas de asfalto, verifique se a classe é permitida pelas exigências locais e pela licença da operação. Avalie também a viscosidade de trabalho, a capacidade do aquecimento e a faixa admitida pelo queimador.",
+      "Ao comparar propostas de A1, use a mesma unidade de compra e inclua frete, impostos, poder calorífico e consumo medido. A Nuxem atende SP, MG e PR; consulte volume e programação para sua cidade.",
+      "A classificação dos óleos combustíveis pode ser consultada na <a href=\"https://www.gov.br/anp/pt-br/assuntos/producao-de-derivados-de-petroleo-e-processamento-de-gas-natural/producao-de-derivados-de-petroleo-e-processamento-de-gas-natural/oleo-combustivel\">orientação oficial da ANP</a>. Verifique os requisitos vigentes na definição da compra."
     ],
+    "criterio": "Classificação OCA1, viscosidade, teor de enxofre e licença da operação.",
+    "faq": [
+      {
+        "p": "Qual a diferença entre A1 e A2?",
+        "r": "A classificação diferencia, entre outros requisitos, o limite de viscosidade. Isso afeta a análise de bombeamento e aquecimento. Confirme a especificação vigente e as condições do óleo ofertado."
+      },
+      {
+        "p": "A1 pode ser usado em qualquer indústria?",
+        "r": "Não. O combustível deve atender às exigências ambientais da localização e da instalação, além dos limites do equipamento. Valide esses critérios antes da compra."
+      },
+      {
+        "p": "O menor preço por litro significa menor custo?",
+        "r": "Não necessariamente. Densidade, poder calorífico, rendimento, aquecimento e manutenção influenciam o custo por energia útil. Compare o custo entregue e o desempenho no processo."
+      }
+    ],
+    "notaSpecs": "Os itens abaixo orientam a consulta e não constituem certificado de um lote. Solicite a ficha técnica e a ficha de dados de segurança do produto ofertado.",
+    "orientacao": "Informe cidade, volume, consumo estimado, combustível atual e modelo do queimador. Envie também os requisitos de aquecimento e as restrições da instalação. Consulte as <a href=\"/cobertura/\">regiões atendidas</a> e veja <a href=\"/blog/como-preparar-uma-solicitacao-de-cotacao-de-oleo-combustivel-industrial/\">como preparar os dados para uma cotação</a>."
   },
   {
-    slug: 'oleo-de-xisto',
-    nome: 'Óleo de Xisto (OTE)',
-    imagem: 'produto-oleo-bpf.webp',
-    imagemAlt: 'Óleo de Xisto OTE de alta fluidez',
-    resumo: 'Óleo de xisto OTE para caldeiras, fornos e usinas de asfalto. Consulte a especificação adequada à sua operação.',
-    title: 'Óleo de Xisto OTE em SP, MG e PR | Nuxem',
-    description: 'Fornecimento de óleo de xisto OTE para caldeiras, fornos e usinas de asfalto em SP, MG e PR. Consulte especificações e solicite cotação.',
-    specs: [
-      ['Viscosidade cinemática', 'Consultar valor em mm²/s (cSt) e temperatura de ensaio na ficha técnica'],
-      ['Teor de enxofre', 'Consultar percentual em massa na especificação do produto cotado'],
-      ['Poder calorífico', 'Consultar valor em kcal/kg ou MJ/kg, com indicação de PCS ou PCI'],
-      ['Ponto de fluidez e ponto de fulgor', 'Consultar valores em °C na documentação do produto'],
-      ['Condições de aquecimento', 'Avaliar com a especificação do combustível e as exigências do equipamento'],
+    "slug": "oleo-de-xisto",
+    "nome": "Óleo de Xisto (OTE)",
+    "imagem": "produto-oleo-bpf.webp",
+    "imagemAlt": "Imagem ilustrativa de óleo combustível para uso industrial",
+    "resumo": "Óleo de xisto OTE para caldeiras, fornos e usinas de asfalto. Consulte a especificação adequada à sua operação.",
+    "title": "Óleo de Xisto OTE em SP, MG e PR | Nuxem",
+    "description": "Fornecimento de óleo de xisto OTE para caldeiras, fornos e usinas de asfalto em SP, MG e PR. Consulte especificações e solicite cotação.",
+    "specs": [
+      [
+        "Viscosidade cinemática",
+        "Solicitar valor em mm²/s (cSt) e temperatura do ensaio"
+      ],
+      [
+        "Poder calorífico",
+        "Solicitar PCS ou PCI em kcal/kg ou MJ/kg, identificando a base usada"
+      ],
+      [
+        "Teor de enxofre",
+        "Confirmar percentual em massa na especificação do produto cotado"
+      ],
+      [
+        "Ponto de fluidez e ponto de fulgor",
+        "Consultar os valores em °C e as condições de manuseio na documentação"
+      ],
+      [
+        "Densidade",
+        "Confirmar valor e temperatura de referência para converter litros em massa"
+      ]
     ],
-    aplicacoes: 'Caldeiras industriais, fornos e usinas de asfalto, mediante avaliação de compatibilidade com o equipamento.',
-    corpo: [
-      'O Óleo de Xisto OTE é produzido a partir do xisto betuminoso e utilizado como combustível em processos térmicos industriais. A escolha deve considerar as características do produto fornecido e as exigências do queimador.',
-      'Antes de substituir o combustível, confirme viscosidade, teor de enxofre, poder calorífico e condições de armazenamento. A necessidade de aquecimento e os resultados de emissões devem ser avaliados para o produto e a instalação, sem presumir dispensa de aquecimento ou redução de emissões em todos os casos.',
-      'A Nuxem fornece óleo de xisto em São Paulo, Minas Gerais e Paraná, com frota própria e atendimento 24 horas. Consulte a programação de entrega para a sua cidade.',
+    "aplicacoes": "Caldeiras, fornos e outros processos térmicos industriais, mediante avaliação de compatibilidade e dos requisitos da instalação.",
+    "corpo": [
+      "O Óleo de Xisto OTE é produzido a partir do xisto betuminoso e utilizado como combustível em processos térmicos industriais. A escolha deve considerar as características do produto fornecido e as exigências do queimador.",
+      "Antes de substituir o combustível, confirme viscosidade, teor de enxofre, poder calorífico e condições de armazenamento. A necessidade de aquecimento e os resultados de emissões devem ser avaliados para o produto e a instalação, sem presumir dispensa de aquecimento ou redução de emissões em todos os casos.",
+      "A Nuxem fornece óleo de xisto em São Paulo, Minas Gerais e Paraná, com frota própria e atendimento 24 horas. Consulte a programação de entrega para a sua cidade."
     ],
-    orientacao: 'Informe cidade de entrega, tipo de queimador, combustível atual e consumo estimado. Solicite a ficha técnica e a ficha de dados de segurança do produto cotado para avaliar a aplicação. Veja a <a href="/blog/comparacao-tecnica-oleo-de-xisto-bte-bpf-e-oleos-alternativos/">comparação entre combustíveis industriais</a> e as <a href="/cobertura/">regiões atendidas</a>.',
+    "orientacao": "Informe cidade de entrega, tipo de queimador, combustível atual e consumo estimado. Solicite a ficha técnica e a ficha de dados de segurança do produto cotado para avaliar a aplicação. Veja a <a href=\"/blog/comparacao-tecnica-oleo-de-xisto-bte-bpf-e-oleos-alternativos/\">comparação entre combustíveis industriais</a> e as <a href=\"/cobertura/\">regiões atendidas</a>.",
+    "criterio": "Especificação do OTE, compatibilidade de armazenamento e desempenho na aplicação.",
+    "faq": [
+      {
+        "p": "Óleo de xisto pode substituir o BPF?",
+        "r": "Pode ser uma opção após avaliação técnica. Compare viscosidade, poder calorífico, enxofre, estabilidade e exigências do queimador. Planeje a transição do estoque e valide a operação antes de ampliar o uso."
+      },
+      {
+        "p": "OTE dispensa aquecimento?",
+        "r": "Não presuma essa condição pela denominação. A necessidade de aquecimento depende da especificação do óleo, da temperatura ambiente e das exigências de bombeamento e atomização."
+      },
+      {
+        "p": "Como comparar o preço do xisto com o BPF?",
+        "r": "Converta as propostas para a mesma base de massa e energia e inclua frete, rendimento e custos de adaptação. Registre o consumo por tonelada produzida ou de vapor em condições comparáveis."
+      }
+    ],
+    "notaSpecs": "Os itens abaixo orientam a consulta e não constituem certificado de um lote. Solicite a ficha técnica e a ficha de dados de segurança do produto ofertado."
   },
   {
-    slug: 'oleo-bte',
-    nome: 'Óleo BTE',
-    imagem: 'produto-oleo-bpf.webp',
-    imagemAlt: 'Óleo BTE baixo teor de enxofre',
-    resumo: 'Combustível premium baixo teor de enxofre, produzido pela Braskem. Menor emissão de fuligem.',
-    title: 'Óleo BTE em São Paulo | Baixo Teor de Enxofre | Nuxem',
-    description: 'Óleo BTE (Baixo Teor de Enxofre) produzido pela Braskem, combustível premium para caldeiras e fornos industriais. Menor emissão de fuligem. Entrega em SP.',
-    specs: [
-      ['Viscosidade a 60°C', '25 - 60 cSt'],
-      ['Teor de Enxofre', 'Máx. 0,5% em massa'],
-      ['Poder Calorífico Superior', '> 9.800 kcal/kg'],
-      ['Ponto de Fulgor', '> 66°C'],
-      ['Produção', 'Braskem'],
+    "slug": "oleo-bte",
+    "nome": "Óleo BTE",
+    "imagem": "produto-oleo-bpf.webp",
+    "imagemAlt": "Imagem ilustrativa de óleo combustível para uso industrial",
+    "resumo": "Óleo BTE: avalie o teor de enxofre documentado, a viscosidade e a aplicação no seu processo térmico.",
+    "title": "Óleo BTE em SP, MG e PR | Especificação e Cotação | Nuxem",
+    "description": "Consulte óleo BTE para caldeiras e fornos em SP, MG e PR. Compare teor de enxofre, viscosidade, documentação e custo entregue. Solicite cotação.",
+    "specs": [
+      [
+        "Viscosidade cinemática",
+        "Solicitar valor em mm²/s (cSt) e temperatura do ensaio"
+      ],
+      [
+        "Poder calorífico",
+        "Solicitar PCS ou PCI em kcal/kg ou MJ/kg, identificando a base usada"
+      ],
+      [
+        "Teor de enxofre",
+        "Confirmar percentual em massa na especificação do produto cotado"
+      ],
+      [
+        "Ponto de fluidez e ponto de fulgor",
+        "Consultar os valores em °C e as condições de manuseio na documentação"
+      ],
+      [
+        "Densidade",
+        "Confirmar valor e temperatura de referência para converter litros em massa"
+      ]
     ],
-    aplicacoes: 'Caldeiras a vapor, fornos industriais, processos com restrição ambiental, indústrias que exigem baixa emissão de fuligem.',
-    corpo: [
-      'O Óleo BTE (Baixo Teor de Enxofre) é um combustível líquido premium produzido pela Braskem, com baixíssimo teor de enxofre — máximo de 0,5% em massa, sendo a opção mais limpa entre os combustíveis líquidos industriais.',
-      'Com viscosidade entre 25 e 60 cSt, oferece excelente desempenho térmico aliado à menor emissão de fuligem. Ideal para processos industriais com restrições ambientais.',
-      'A Nuxem fornece óleo BTE para todo o estado de São Paulo, com frota própria e atendimento 24 horas.',
+    "aplicacoes": "Caldeiras, fornos e outros processos térmicos industriais, mediante avaliação de compatibilidade e dos requisitos da instalação.",
+    "corpo": [
+      "BTE significa Baixo Teor de Enxofre. Para selecionar esse combustível, confirme o percentual de enxofre, a origem e a identificação comercial na documentação do produto. A denominação não deve ser usada como garantia de uma composição universal.",
+      "A redução de enxofre no combustível pode contribuir para controlar emissões de óxidos de enxofre. Ela não garante, isoladamente, menor fuligem ou atendimento a todos os limites ambientais: a formação de material particulado também depende da composição e das condições de combustão.",
+      "Compare viscosidade, poder calorífico, compatibilidade de armazenamento e custo por energia útil com o combustível atual. A Nuxem atende SP, MG e PR; consulte disponibilidade e condições para a sua instalação."
     ],
+    "criterio": "Teor de enxofre, identificação do fabricante e ficha do produto ofertado.",
+    "faq": [
+      {
+        "p": "Todo BTE tem a mesma especificação?",
+        "r": "Não use a denominação como uma ficha técnica. Peça fabricante, identificação comercial, teor de enxofre e propriedades do produto cotado."
+      },
+      {
+        "p": "BTE elimina a necessidade de controlar emissões?",
+        "r": "Não. A operação continua sujeita à licença e aos limites aplicáveis. Escolha do combustível, manutenção, regulagem e monitoramento devem ser avaliados em conjunto."
+      },
+      {
+        "p": "Como avaliar a troca para BTE?",
+        "r": "Compare dados documentados, compatibilidade do tanque, condições de bombeamento e atomização. Meça consumo e emissões em um teste planejado antes de concluir sobre o benefício."
+      }
+    ],
+    "notaSpecs": "Os itens abaixo orientam a consulta e não constituem certificado de um lote. Solicite a ficha técnica e a ficha de dados de segurança do produto ofertado.",
+    "orientacao": "Informe cidade, volume, consumo estimado, combustível atual e modelo do queimador. Envie também os requisitos de aquecimento e as restrições da instalação. Consulte as <a href=\"/cobertura/\">regiões atendidas</a> e veja <a href=\"/blog/como-preparar-uma-solicitacao-de-cotacao-de-oleo-combustivel-industrial/\">como preparar os dados para uma cotação</a>."
   },
   {
-    slug: 'oleos-alternativos',
-    nome: 'Óleos alternativos',
-    imagem: 'queimador-industrial.webp',
-    imagemAlt: 'Queimador industrial em operação com chama estável',
-    resumo: 'Alternativas ao BPF com viscosidades diferentes e desempenho equivalente, sob medida para seu equipamento.',
-    title: 'Óleos Combustíveis Alternativos ao BPF | Nuxem São Paulo',
-    description: 'Óleos combustíveis alternativos ao BPF, com viscosidades variadas e desempenho equivalente. Especificação sob medida para seu equipamento. Cotação rápida.',
-    specs: [
-      ['Viscosidade', 'Variada, conforme a necessidade do equipamento'],
-      ['Desempenho', 'Equivalente ao óleo BPF'],
-      ['Produção', 'Sob demanda, com padrão de qualidade constante'],
+    "slug": "oleos-alternativos",
+    "nome": "Óleos alternativos",
+    "imagem": "queimador-industrial.webp",
+    "imagemAlt": "Queimador industrial: aplicação ilustrativa de combustível",
+    "resumo": "Avaliação de combustíveis alternativos ao BPF conforme produto disponível, equipamento e requisitos da operação.",
+    "title": "Óleos Combustíveis Alternativos ao BPF | Nuxem",
+    "description": "Avalie óleos combustíveis alternativos ao BPF para sua operação em SP, MG e PR. Compare documentação, compatibilidade e custo útil. Consulte a Nuxem.",
+    "specs": [
+      [
+        "Viscosidade cinemática",
+        "Solicitar valor em mm²/s (cSt) e temperatura do ensaio"
+      ],
+      [
+        "Poder calorífico",
+        "Solicitar PCS ou PCI em kcal/kg ou MJ/kg, identificando a base usada"
+      ],
+      [
+        "Teor de enxofre",
+        "Confirmar percentual em massa na especificação do produto cotado"
+      ],
+      [
+        "Ponto de fluidez e ponto de fulgor",
+        "Consultar os valores em °C e as condições de manuseio na documentação"
+      ],
+      [
+        "Densidade",
+        "Confirmar valor e temperatura de referência para converter litros em massa"
+      ]
     ],
-    aplicacoes: 'Caldeiras, fornos, usinas de asfalto, fundições e demais processos térmicos industriais.',
-    corpo: [
-      'Nem toda operação térmica precisa — ou deve — usar o mesmo combustível. Viscosidade de trabalho, sistema de aquecimento, configuração do queimador e rotina de operação variam de planta para planta, e o combustível ideal é o que se encaixa nesse conjunto.',
-      'A Nuxem fornece óleos combustíveis alternativos ao BPF, com viscosidades diferentes e qualidade equivalente. Nossa equipe avalia o seu equipamento e o seu processo para especificar o produto certo.',
-      'Como a produção é sob demanda, conseguimos ajustar o fornecimento à realidade da sua operação — com entrega rápida por frota própria em todo o estado de São Paulo.',
+    "aplicacoes": "Processos térmicos industriais, conforme a identificação do combustível e a avaliação de compatibilidade.",
+    "corpo": [
+      "Óleos alternativos é uma descrição ampla de opções de combustível para processos térmicos. Cada proposta precisa identificar o produto, sua origem, especificação e condições de uso; não há uma composição única ou desempenho automaticamente equivalente ao BPF.",
+      "A seleção começa pelos limites do queimador, do sistema de bombeamento e do armazenamento. Em processos com contato entre gases e produto, é necessário avaliar também os requisitos de qualidade e as restrições específicas da aplicação.",
+      "Para comparar a mudança, inclua preço entregue, poder calorífico, rendimento, adaptações e manutenção. A Nuxem atende SP, MG e PR e pode avaliar o fornecimento conforme a necessidade informada; consulte a documentação da opção proposta."
     ],
-  },
+    "criterio": "Identificação do combustível, compatibilidade técnica e custo da mudança.",
+    "faq": [
+      {
+        "p": "Qual é o melhor combustível alternativo ao BPF?",
+        "r": "A resposta depende do equipamento, da carga térmica, das restrições ambientais e da disponibilidade. Compare produtos identificados e documentados para a sua operação."
+      },
+      {
+        "p": "Posso misturar o alternativo com o estoque atual?",
+        "r": "Não presuma compatibilidade. Avalie estabilidade da mistura, documentação e procedimento de transição com suporte técnico antes de receber o novo combustível no mesmo tanque."
+      },
+      {
+        "p": "Como comprovar uma economia real?",
+        "r": "Registre uma referência de consumo e produção, inclua os custos de adaptação e compare testes em condições equivalentes. O preço por litro, isoladamente, não comprova economia."
+      }
+    ],
+    "notaSpecs": "Os itens abaixo orientam a consulta e não constituem certificado de um lote. Solicite a ficha técnica e a ficha de dados de segurança do produto ofertado.",
+    "orientacao": "Informe cidade, volume, consumo estimado, combustível atual e modelo do queimador. Envie também os requisitos de aquecimento e as restrições da instalação. Consulte as <a href=\"/cobertura/\">regiões atendidas</a> e veja <a href=\"/blog/como-preparar-uma-solicitacao-de-cotacao-de-oleo-combustivel-industrial/\">como preparar os dados para uma cotação</a>."
+  }
 ];
 
 export const SOLUCOES = [
@@ -276,8 +511,8 @@ export const PILAR = {
       titulo: 'O que é Óleo BPF?',
       paragrafos: [
         'Óleo BPF significa Baixo Ponto de Fluidez. É um combustível industrial derivado de petróleo, classificado pela ANP como óleo combustível pesado, utilizado principalmente em processos de geração de energia térmica em caldeiras, fornos, usinas de asfalto e fundições.',
-        'Sua principal característica é o alto poder calorífico (acima de 10.400 kcal/kg), o que o torna a escolha padrão para operações que exigem queima contínua e alta carga energética. O "baixo ponto de fluidez" significa que ele mantém fluidez em temperaturas mais baixas que outros óleos pesados, facilitando o manuseio e a queima.',
-        'O óleo BPF segue a regulamentação da ANP (Resolução CNP-05) e é comercializado em diferentes classificações: tipo A (maior teor de enxofre) e tipo B (menor teor de enxofre), cada um com aplicações específicas.',
+        'O poder calorífico, o ponto de fluidez e a viscosidade devem ser confirmados para o produto fornecido. A denominação comercial BPF não define sozinha as condições de bombeamento ou atomização.',
+        'A ANP apresenta a Resolução nº 899/2022 como referência para óleos combustíveis. As classes A e B distinguem requisitos de enxofre e viscosidade; consulte a especificação vigente na compra.',
       ],
     },
     {
@@ -287,11 +522,11 @@ export const PILAR = {
       ],
       lista: [
         { texto: 'Óleo BPF — padrão industrial, alto poder calorífico, ideal para caldeiras e fornos', link: '/produtos/oleo-bpf/' },
-        { texto: 'Óleo APF — baixa viscosidade, dispensa aquecimento prévio, fácil manuseio', link: '/produtos/oleo-apf/' },
+        { texto: 'Óleo APF — verificar ponto de fluidez, viscosidade e necessidade de aquecimento', link: '/produtos/oleo-apf/' },
         { texto: 'Óleo B1 (OC-B1) — baixo teor de enxofre (máx 1%), ideal para indústrias com restrição ambiental', link: '/produtos/oleo-b1/' },
         { texto: 'Óleo A1 (OC-A1) — maior teor de enxofre, alta carga energética contínua', link: '/produtos/oleo-a1/' },
         { texto: 'Óleo de Xisto (OTE) — consulte especificações e compatibilidade com o equipamento', link: '/produtos/oleo-de-xisto/' },
-        { texto: 'Óleo BTE — baixíssimo teor de enxofre (0,5%), premium Braskem, menor fuligem', link: '/produtos/oleo-bte/' },
+        { texto: 'Óleo BTE — confirmar teor de enxofre, origem e especificação do produto', link: '/produtos/oleo-bte/' },
         { texto: 'Óleos Alternativos — viscosidades variadas, sob medida para seu equipamento', link: '/produtos/oleos-alternativos/' },
       ],
     },
@@ -314,7 +549,7 @@ export const PILAR = {
         'A escolha do óleo BPF ideal para sua operação depende de alguns fatores técnicos fundamentais:',
         '1. Tipo de equipamento: queimador, caldeira, forno ou secador — cada um tem exigências diferentes de viscosidade e atomização.',
         '2. Temperatura de operação: a viscosidade do combustível precisa ser compatível com a temperatura de trabalho do sistema de aquecimento.',
-        '3. Exigências ambientais: indústrias sujeitas a limites de emissão de SOx precisam de óleos com baixo teor de enxofre (B1, BTE ou Xisto).',
+        '3. Exigências ambientais: confronte o teor de enxofre documentado e as condições de queima com os limites aplicáveis à instalação. A denominação do combustível não garante conformidade.',
         '4. Infraestrutura de armazenamento: tanques, linhas aquecidas e bombas precisam estar dimensionados para o tipo de combustível.',
         '5. Regime de operação: operações contínuas 24h exigem fornecimento programado e suporte técnico permanente.',
         'A Nuxem oferece suporte técnico gratuito para ajudar na especificação correta do combustível para seu equipamento.',
@@ -324,9 +559,9 @@ export const PILAR = {
       titulo: 'Armazenamento e Manuseio Seguro',
       paragrafos: [
         'O armazenamento adequado do óleo BPF é essencial para preservar suas características e garantir segurança operacional:',
-        '- Tanques devem ser dimensionados para o volume de consumo com folga mínima de 5 dias.',
-        '- O óleo BPF requer aquecimento para manter a fluidez ideal para bombeamento (entre 40°C e 80°C, dependendo da viscosidade).',
-        '- O ponto de fulgor do óleo BPF é acima de 66°C, o que exige cuidados com fontes de ignição próximas aos tanques.',
+        '- Dimensione o estoque útil e a reserva considerando consumo, prazo de entrega e capacidade operacional do tanque.',
+        '- Defina o aquecimento conforme a curva de viscosidade do produto e os limites de bombas, linhas e queimadores.',
+        '- Consulte o ponto de fulgor e as medidas de segurança na documentação do produto; controle fontes de ignição conforme o projeto da instalação.',
         '- A manutenção periódica dos tanques evita acúmulo de borra e contaminação do combustível.',
         '- Sistemas de contenção e drenagem devem seguir as normas ambientais vigentes.',
       ],
@@ -347,12 +582,12 @@ export const PILAR = {
       titulo: 'Perguntas Frequentes (FAQ)',
       ehFaq: true,
       perguntas: [
-        { p: 'Qual a diferença entre óleo BPF e óleo APF?', r: 'O BPF tem Baixo Ponto de Fluidez (mantém fluidez em temperaturas mais baixas), enquanto o APF tem Alto Ponto de Fluidez. O BPF é mais viscoso e exige aquecimento, o APF é mais fluido e dispensa aquecimento prévio.' },
+        { p: 'Qual a diferença entre óleo BPF e óleo APF?', r: 'BPF significa Baixo Ponto de Fluidez e APF significa Alto Ponto de Fluidez. As siglas não substituem os valores da ficha técnica. Compare ponto de fluidez e viscosidade na mesma temperatura antes de definir aquecimento e uso.' },
         { p: 'Óleo BPF é inflamável?', r: 'O óleo BPF é um combustível e exige cuidados contra incêndio. Consulte a classificação de perigo e o ponto de fulgor na ficha de dados de segurança do produto fornecido. Não use o ponto de fulgor isoladamente para concluir que não existe risco de incêndio; siga as orientações de armazenamento e manuseio dessa ficha.' },
-        { p: 'Qual o poder calorífico do óleo BPF?', r: 'O óleo BPF tem poder calorífico superior acima de 10.400 kcal/kg, um dos mais altos entre os combustíveis líquidos industriais disponíveis no Brasil.' },
-        { p: 'Precisa aquecer o óleo BPF para usar?', r: 'Sim, o óleo BPF requer aquecimento entre 40°C e 80°C para reduzir sua viscosidade e permitir atomização adequada no queimador.' },
-        { p: 'Qual a diferença entre BPF A1 e B1?', r: 'O BPF tipo A1 tem maior teor de enxofre (até 2,5%), enquanto o B1 tem teor reduzido (máx 1%). O B1 é indicado para indústrias com restrições ambientais.' },
-        { p: 'Quanto tempo dura o óleo BPF armazenado?', r: 'Quando armazenado corretamente, o óleo BPF pode ser mantido por meses sem perda significativa de qualidade, desde que protegido de contaminação e com temperatura controlada.' },
+        { p: 'Qual o poder calorífico do óleo BPF?', r: 'Solicite o valor do produto cotado em kcal/kg ou MJ/kg, com identificação de PCS ou PCI. Use a mesma base ao comparar propostas ou estimar consumo.' },
+        { p: 'Precisa aquecer o óleo BPF para usar?', r: 'A necessidade e a temperatura de aquecimento dependem da viscosidade do produto, do ambiente e dos limites de bombas e queimadores. Consulte a documentação e o fabricante do equipamento.' },
+        { p: 'Qual a diferença entre BPF A1 e B1?', r: 'A1 pertence à classe de maior teor de enxofre; B1, à de menor teor. Confirme os limites vigentes e os dados do produto ofertado. A escolha também deve atender às exigências ambientais da instalação.' },
+        { p: 'Quanto tempo dura o óleo BPF armazenado?', r: 'A condição de uso após armazenamento depende do produto, do tempo e do controle de água, sedimentos e temperatura. Consulte a orientação do fornecedor e avalie o combustível antes de usar um estoque antigo.' },
       ],
     },
   ],

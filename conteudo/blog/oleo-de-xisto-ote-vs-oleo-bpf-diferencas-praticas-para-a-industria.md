@@ -2,6 +2,7 @@
 title: "Óleo de xisto ou BPF: como comparar consumo e custo industrial"
 description: "Compare óleo de xisto e BPF por viscosidade, enxofre, consumo e custo por energia útil. Saiba quais documentos pedir antes de trocar o combustível."
 date: 2026-10-03
+category: compra
 updated: 2026-10-09
 slugOriginal: ""
 ---

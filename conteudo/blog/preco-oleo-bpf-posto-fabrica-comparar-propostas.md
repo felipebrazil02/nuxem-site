@@ -2,6 +2,7 @@
 title: "Preço do óleo BPF com frete: como comparar propostas"
 description: "Compare propostas de óleo BPF na mesma base: produto, quantidade, frete, destino, adicionais e pagamento para calcular o custo entregue."
 date: 2026-09-10
+category: compra
 updated: 2026-10-09
 slugOriginal: ""
 studioArticleId: "28841fbc-b9e5-4ef4-913a-3e20c784e072"

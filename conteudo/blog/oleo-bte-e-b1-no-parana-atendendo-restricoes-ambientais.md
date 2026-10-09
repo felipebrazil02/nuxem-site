@@ -1,39 +1,38 @@
 ---
-title: "Óleo BTE e B1 no Paraná: atendendo restrições ambientais"
-description: "Óleo BTE e B1 para indústrias do Paraná com restrição ambiental: Curitiba, Araucária, São José dos Pinhais. Baixo enxofre, menos emissões."
+title: "Óleo BTE e B1 no Paraná: comparar produto e requisitos"
+description: "Compare BTE e B1 para uma unidade no Paraná com especificação documentada, requisitos ambientais e condições de entrega confirmadas."
 date: 2026-08-03
 slugOriginal: ""
+updated: 2026-10-09
+category: logistica
 ---
-## Restrição ambiental virou critério de compra no Paraná
 
-O Paraná tem uma das legislações ambientais mais atuantes do Sul do país. Órgãos estaduais e municipais monitoram emissões de fontes fixas — caldeiras, fornos e secadores — e o teor de enxofre do combustível virou variável decisiva na especificação. Para indústrias em Curitiba, São José dos Pinhais, Araucária e na região metropolitana, operar com óleo pesado convencional pode significar investimento em tratamento de gases ou risco de autuação.
+**A escolha entre BTE e B1 para uma unidade no Paraná deve partir dos requisitos do produto e da instalação.** A expressão baixo teor de enxofre não demonstra, sozinha, atendimento ambiental. Confira a especificação aprovada para o endereço e o equipamento.
 
-A saída mais direta é escolher o combustível certo na origem: **óleo B1** (máximo 1% de enxofre) ou **óleo BTE** (máximo 0,5%, produzido pela Braskem). Os dois reduzem a emissão de SOx sem exigir troca de queimador ou de toda a planta térmica.
+A Nuxem recebe consultas de fornecimento no estado. Veja a [cobertura no Paraná](/cobertura/) e confirme a programação para sua unidade.
 
-## BTE ou B1: qual faz sentido para a sua operação
+## BTE e B1 não são expressões equivalentes
 
-### Óleo BTE — a opção mais limpa
+O [óleo B1](/produtos/oleo-b1/) corresponde à classe OC-B1. O [óleo BTE](/produtos/oleo-bte/) tem uma designação comercial associada a baixo teor de enxofre e precisa ser identificado pela documentação do produto cotado. Compare origem, propriedades, unidades e condições de ensaio.
 
-O BTE tem o menor teor de enxofre entre os combustíveis líquidos industriais (até 0,5%) e viscosidade entre 25 e 60 cSt, o que facilita a atomização. É a escolha para indústrias em áreas de controle de poluição ou com metas ambientais públicas — e ainda reduz fuligem, prolongando a vida útil de dutos e chaminés.
+Não use um valor de catálogo como se fosse o resultado de qualquer carga. Diferencie limite de especificação e dado de lote ao conferir as propostas.
 
-### Óleo B1 — equilíbrio entre custo e conformidade
+## Como incluir as exigências da planta
 
-O B1 (até 1% de enxofre, classificação ANP tipo B) é a opção intermediária: atende limites ambientais sem o custo premium do BTE. Para muitas caldeiras paranaenses, é o ponto ótimo entre conformidade e resultado financeiro.
+Encaminhe o produto à equipe responsável para verificar o enquadramento e as condições aplicáveis. Informe o município de uso, o equipamento e os critérios internos aprovados. O [guia de normas e documentação](/blog/normas-anp-para-oleo-combustivel-industrial/) distingue classificação do combustível e controle das emissões.
 
-### Compatibilidade com a infraestrutura existente
+A análise também deve considerar viscosidade, poder calorífico e compatibilidade do sistema. Não selecione um combustível por um único parâmetro, ainda que ele seja o motivo principal da consulta.
 
-Os dois produtos são compatíveis com queimadores dimensionados para óleo combustível. A transição exige ajuste de parâmetros de queima e — em alguns casos — limpeza do tanque para evitar contaminação do lote novo, mas não demanda investimento em equipamentos.
+## O que comparar no fornecimento
 
-## Fornecimento no Paraná
+- Quantidade, unidade e endereço de entrega.
+- Documentação disponível e critérios de aceitação.
+- Prazo confirmado e horário de descarga.
+- Frete, adicionais informados e validade da proposta.
+- Estoque remanescente e necessidade de avaliar a mistura.
 
-A Nuxem fornece óleo BTE e B1 para indústrias de todo o Paraná com **laudo por carga, produção sob demanda e entrega com frota própria**. Atendemos caldeiras, fornos e processos com restrição ambiental em Curitiba, Araucária, São José dos Pinhais, Ponta Grossa, Londrina e região metropolitana — com o mesmo padrão de qualidade da operação em São Paulo.
+Em troca de produto, consulte os cuidados com [compatibilidade entre lotes](/blog/compatibilidade-entre-lotes-de-oleo-bpf-como-evitar-borra-na-mistura/). A aceitação individual de duas cargas não comprova que possam ser misturadas em qualquer proporção.
 
-Consulte as [regiões atendidas no Paraná](/cobertura/), os detalhes do [óleo BTE](/produtos/oleo-bte/) e do [óleo B1](/produtos/oleo-b1/), e o artigo sobre [vantagens do BTE para restrições ambientais](/blog/vantagens-do-oleo-bte-para-industrias-com-restricao-ambiental/).
+## Como solicitar uma proposta no Paraná
 
-## Como avaliar a adequação à sua licença
-
-1. Verifique o limite de enxofre aplicável na sua região e o tipo de fonte (caldeira, forno, secador).
-2. Envie o perfil da operação para nossa equipe avaliar entre B1 e BTE.
-3. Receba proposta com laudo por carga e cronograma de entrega para a sua cidade.
-
-Solicite uma cotação pelo WhatsApp e alinhe sua operação no Paraná com a legislação ambiental — sem parar a produção.
+Informe cidade, aplicação, combustível atual, quantidade e janela desejada. Se ainda não houver produto aprovado, indique que se trata de avaliação técnica. [Encaminhe a consulta à Nuxem](/contato/) e peça que a proposta identifique a especificação, a documentação e as condições de entrega.

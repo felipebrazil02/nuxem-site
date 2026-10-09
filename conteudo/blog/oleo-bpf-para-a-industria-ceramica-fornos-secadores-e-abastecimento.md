@@ -1,64 +1,40 @@
 ---
-title: "Óleo BPF para a indústria cerâmica: fornos, secadores e abastecimento contínuo"
-description: "Como o óleo BPF alimenta fornos e secadores cerâmicos: especificação, viscosidade, queima contínua e fornecimento para Santa Gertrudes e o interior de SP."
+title: "Óleo BPF na cerâmica: compra para fornos e secadores"
+description: "Organize a compra de BPF para cerâmicas com dados de fornos, secadores, consumo por campanha e condições de armazenamento e entrega."
 date: 2026-08-20
 slugOriginal: ""
+updated: 2026-10-09
+category: aplicacoes-bpf
 ---
 
-## Por que a indústria cerâmica depende do óleo BPF
+**A compra de óleo BPF para uma cerâmica deve identificar quais equipamentos utilizarão o produto e em que regime.** Forno e secador podem ter demandas, queimadores e critérios de qualidade diferentes. Não trate o consumo total da fábrica como se representasse uma aplicação única.
 
-A indústria cerâmica — de revestimentos e pisos a cerâmica vermelha e refratários — é uma das maiores consumidoras de energia térmica do país. Diferente de processos que admitem intermitência, a produção cerâmica exige **queima contínua por horas ou dias**: um forno túnel não pode ser desligado a cada troca de turno, e o resfriamento de uma carga em andamento representa perda de produto e de energia. Nesse cenário, o combustível deixa de ser insumo e passa a ser variável crítica de processo.
+Consulte as informações de [óleo BPF](/produtos/oleo-bpf/) e reúna as especificações admitidas em cada equipamento. A adequação do combustível deve ser avaliada com os responsáveis pelo processo e pelo sistema de combustão.
 
-O óleo BPF (baixo ponto de fluidez) é uma das alternativas mais usadas no setor por combinar alto poder calorífico, custo térmico competitivo e disponibilidade. Para uma planta que opera com fornos a 1.100 °C ou mais, a regularidade da chama e a constância do padrão do combustível valem mais do que qualquer economia aparente na compra. Conheça a especificação completa em [óleo BPF](/produtos/oleo-bpf/).
+## Separe as demandas de forno e secagem
 
-## O processo térmico na cerâmica: onde o óleo entra
+Registre horas de operação, capacidade, carga e paradas previstas. Para fornos, identifique as condições térmicas e os critérios de aceitação do produto cerâmico. Para secadores, considere a variação de material e das condições de entrada ao comparar períodos.
 
-### Fornos túnel e a queima de revestimentos
+Se houver contato entre gases e material, esse aspecto precisa ser explicitado na avaliação do processo. Não conclua adequação apenas pelo poder calorífico do combustível.
 
-No forno túnel, o produto passa por zonas de pré-aquecimento, queima e resfriamento. A zona de queima concentra a demanda energética, e qualquer variação de poder calorífico ou de qualidade de atomização se reflete em defeitos de superfície, empenamento e variação de tonalidade — problemas caros que só aparecem ao final do ciclo. Por isso, o óleo precisa chegar ao queimador com [viscosidade dentro da faixa de trabalho](/blog/impacto-da-viscosidade-do-oleo-bpf-na-eficiencia-da-queima/), o que depende tanto da especificação do produto quanto do sistema de aquecimento da planta.
+## Que dados incluir na especificação
 
-### Secadores: a carga térmica contínua
+- Modelo do queimador e condições admitidas de atomização.
+- Requisitos do combustível definidos pelo fabricante e pela planta.
+- Capacidade de aquecimento, transferência e filtragem disponível.
+- Critérios ambientais e de qualidade do produto final.
+- Documentos de recebimento e identificação dos lotes.
 
-Antes do forno, a umidade da peça precisa ser removida de forma gradual. Os secadores operam com ar quente em temperaturas mais baixas, mas com **volume de combustível elevado**, muitas vezes superando o próprio forno em consumo. É uma carga térmica contínua que soma no consumo mensal e no planejamento de abastecimento — e que costuma ser subestimada no dimensionamento do tanque.
+O [roteiro de especificação para queimadores](/blog/como-especificar-o-oleo-combustivel-certo-para-seu-queimador/) ajuda a organizar esses dados. Um mesmo nome comercial não comprova que cargas distintas atendam a todos os equipamentos.
 
-## Especificação do óleo BPF para o setor cerâmico
+## Como acompanhar consumo na campanha
 
-Para queima em fornos e secadores, os pontos de especificação mais relevantes são:
+Relacione combustível ao volume de produção em condições comparáveis. Registre partidas, mudanças de carga e variações que possam explicar diferenças. A comparação por mês, sem olhar o que foi produzido, pode ocultar essas mudanças.
 
-- **Poder calorífico superior:** garante que a zona de queima atinja e sustente a temperatura de sinterização.
-- **Viscosidade cinemática:** define a temperatura de pré-aquecimento necessária para atomização adequada no queimador.
-- **Ponto de fulgor:** critério de segurança no armazenamento e na operação do parque de tanques.
-- **Teor de enxofre:** influencia emissões e corrosão nos recuperadores de calor — ponto sensível em plantas com licença ambiental restritiva.
+Mantenha identificada a unidade de compra. Se o estoque é medido em litros e o pedido em toneladas, use a [conversão com densidade documentada](/blog/oleo-bpf-litro-quilo-tonelada-unidade-compra/).
 
-Esses parâmetros devem constar documentados, conforme as [normas da ANP para óleo combustível industrial](/blog/normas-anp-para-oleo-combustivel-industrial/). Um fornecedor que entrega o produto com especificação estável entre cargas reduz a variação de lote que tanto atrapalha o controle de processo cerâmico.
+## Como programar entregas
 
-## Fornecimento contínuo: o desafio do polo cerâmico
+Alinhe o calendário de produção com estoque utilizável, prazo confirmado e capacidade de recebimento. Avise sobre campanhas prolongadas, manutenção do tanque ou restrições de descarga. O [ponto de pedido de BPF](/blog/como-programar-o-abastecimento-de-oleo-bpf-para-evitar-paradas/) oferece uma base para essa programação.
 
-O polo cerâmico de Santa Gertrudes, no interior de São Paulo, concentra uma das maiores produções de revestimentos das Américas, ao lado de Porto Ferreira e Itu. São plantas que queimam combustível 24 horas por dia e cujo estoque de segurança costuma ser contado em dias — quando muito. Uma entrega atrasada significa forno em espera, produção perdida e custo de religamento que nenhum desconto no litro compensa.
-
-Nesse contexto, a logística é o verdadeiro diferencial. A Nuxem atende todo o estado de São Paulo com frota própria, o que permite programar entregas regulares para o polo cerâmico e demais regiões — e também atender Minas Gerais e Paraná, com rotas dedicadas para Belo Horizonte, Curitiba e o interior dos dois estados. Veja as [regiões atendidas pela Nuxem](/cobertura/) e confira se sua planta está na rota.
-
-### Como programar o abastecimento sem parar o forno
-
-O segredo de uma operação contínua está em casar o consumo real da planta com a janela de entrega do fornecedor. A prática recomendada:
-
-- Medir o consumo diário (tanque ou medidor) e definir o ponto de reposição com margem segura;
-- Manter estoque mínimo para pelo menos 3 a 5 dias de operação plena;
-- Alinhar com o fornecedor um cronograma fixo de entregas, com folga para imprevistos de trânsito;
-- Ter um canal de atendimento 24 horas para emergências — forno não espera horário comercial.
-
-O detalhamento desse planejamento está em [como programar o abastecimento de óleo BPF para evitar paradas](/blog/como-programar-o-abastecimento-de-oleo-bpf-para-evitar-paradas/). No polo cerâmico paulista, onde a demanda é concentrada e contínua, esse tipo de rotina é o que separa a operação estável da operação apagando incêndio.
-
-## Cuidados com armazenamento e qualidade
-
-O óleo BPF armazenado por longos períodos acumula água e borra no fundo do tanque, que comprometem a queima exatamente quando a planta mais precisa de constância. Drenagem periódica, controle de temperatura do tanque e inspeção de filtros são rotinas baratas que evitam defeitos de queima caros. Um guia completo está em [manutenção preventiva em sistemas de armazenamento de óleo BPF](/blog/manutencao-preventiva-em-sistemas-de-armazenamento-de-oleo-bpf/).
-
-## Considerações ambientais
-
-Plantas cerâmicas com licenciamento mais restritivo, especialmente em áreas urbanas ou próximas a mananciais, podem precisar de combustíveis com menor teor de enxofre. Nesses casos, o [óleo B1](/produtos/oleo-b1/) (máximo 1% de enxofre) ou o [óleo BTE](/produtos/oleo-bte/) (0,5%) atendem com desempenho próximo ao do BPF e emissões menores — tema aprofundado no post sobre [óleo BTE para indústrias com restrição ambiental](/blog/vantagens-do-oleo-bte-para-industrias-com-restricao-ambiental/).
-
-## Conclusão
-
-Para a indústria cerâmica, o óleo BPF é mais do que combustível: é o insumo que sustenta a queima contínua de fornos e secadores. Escolher a especificação certa, manter o armazenamento em dia e contar com um fornecedor de logística confiável — com frota própria e atendimento 24 horas em São Paulo, Minas Gerais e Paraná — é o que garante o forno aceso na temperatura certa, todos os dias.
-
-Fale com a equipe Nuxem e solicite uma cotação para sua planta, seja no polo de Santa Gertrudes, em Porto Ferreira ou em qualquer região coberta pela [nossa frota](/cobertura/).
+A Nuxem atende SP, MG e PR. Para [cotar BPF para sua cerâmica](/contato/), informe cidade, equipamentos, consumo por período e especificação requerida. A proposta deve confirmar produto e janela de entrega para aquela unidade.

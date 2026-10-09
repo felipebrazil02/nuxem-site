@@ -1,74 +1,42 @@
 ---
-title: "Poder calorífico do óleo de xisto (OTE): como calcular consumo e dimensionar o tanque"
-description: "Poder calorífico do óleo de xisto (OTE): como calcular consumo de combustível, dimensionar tanque e programar abastecimento em caldeiras e fornos."
+title: "Poder calorífico do óleo de xisto: consumo e autonomia do tanque"
+description: "Use poder calorífico, eficiência e densidade do óleo de xisto para estimar consumo e autonomia. Veja um exemplo com unidades e premissas explícitas."
 date: 2026-10-04
 slugOriginal: ""
+updated: 2026-10-09
+category: operacao
 ---
 
-## O calor que o combustível entrega decide o consumo
+**O poder calorífico do óleo de xisto deve vir da documentação do produto, com unidade e indicação de PCI ou PCS.** Esse dado participa do cálculo de consumo, mas não define sozinho o rendimento da instalação nem o tamanho do tanque.
 
-Quando uma indústria avalia trocar de combustível, a primeira pergunta costuma ser sobre o preço por litro. Mas o número que realmente decide o custo é o poder calorífico: a quantidade de energia que cada litro entrega na queima. É ele que define quanto combustível a caldeira ou o forno vai consumir para manter a temperatura de trabalho — e, por consequência, o tamanho do tanque e a frequência do abastecimento.
+Ao cotar [óleo de xisto](/produtos/oleo-de-xisto/), solicite também a densidade na condição de referência. Um valor de energia por massa não pode ser usado diretamente como energia por litro.
 
-Este artigo mostra como usar o poder calorífico do [óleo de xisto (OTE)](/produtos/oleo-de-xisto/) para calcular consumo, dimensionar tanque e programar o fornecimento com previsibilidade.
+## Como preparar o cálculo
 
-## O que é poder calorífico
+Escolha uma unidade coerente para a carga térmica e o poder calorífico. Use eficiência calculada na mesma base: PCI com eficiência sobre PCI, ou PCS com eficiência sobre PCS. Para caldeiras, confira o [exemplo completo de consumo de combustível](/blog/como-calcular-consumo-de-oleo-combustivel-em-caldeiras/).
 
-O poder calorífico é a energia liberada na queima completa de uma unidade de combustível, normalmente expressa em kcal por litro ou kcal por quilo. Ele varia entre combustíveis: óleos mais pesados costumam ter maior densidade energética por volume, enquanto óleos mais leves podem entregar energia de forma diferente.
+**Consumo em kg/h = carga útil em MJ/h ÷ (poder calorífico em MJ/kg × eficiência).**
 
-O ponto importante é que o consumo não depende só do preço por litro, mas da relação entre o poder calorífico e o custo. Um combustível mais barato por litro, mas com menor poder calorífico, pode sair mais caro por unidade de calor gerada.
+Exemplo hipotético: com carga útil de 8.000 MJ/h, PCI de 40 MJ/kg e eficiência de 80%, o consumo estimado é 250 kg/h. Esses números são didáticos; não são características garantidas de OTE.
 
-## Como calcular o consumo estimado
+Se a densidade adotada no mesmo exemplo for 0,95 kg/L, o consumo corresponde a aproximadamente 263 L/h. Em 12 horas no mesmo regime, seriam cerca de 3.158 litros. A operação real pode ter partidas, paradas e variações de carga.
 
-Para estimar o consumo de uma caldeira ou forno, o caminho prático é:
+## Da quantidade consumida à autonomia
 
-1. **Levante a demanda térmica do processo:** a quantidade de vapor ou calor necessária por hora, em kcal/h.
-2. **Divida pelo poder calorífico do combustível:** o resultado é o consumo estimado em litros por hora.
-3. **Aplique um fator de eficiência:** nenhuma queima é 100% eficiente; considere as perdas do queimador, da chaminé e do isolamento.
+**Autonomia estimada = estoque utilizável ÷ consumo por período.**
 
-O resultado é uma estimativa de consumo que permite dimensionar o tanque e programar o abastecimento. Para um passo a passo mais detalhado, vale ler o guia de [como calcular o consumo de óleo combustível em caldeiras](/blog/como-calcular-consumo-de-oleo-combustivel-em-caldeiras/).
+O estoque utilizável precisa ser confirmado pela planta. Ele não é igual ao volume nominal do tanque: níveis operacionais, reserva e condições de sucção limitam o que pode ser efetivamente consumido.
 
-## Dimensionando o tanque
+No exemplo, 9.000 litros utilizáveis corresponderiam a aproximadamente 2,85 dias de 12 horas de operação. Isso não define um estoque seguro; apenas expressa a autonomia nas premissas adotadas.
 
-Com o consumo estimado em mãos, o dimensionamento do tanque considera três fatores:
+## Por que a autonomia não basta para dimensionar o tanque
 
-- **Autonomia desejada:** quantos dias de operação o tanque deve cobrir entre entregas.
-- **Margem de segurança:** um volume extra para variações de consumo e atrasos de entrega.
-- **Espaço e infraestrutura:** o tanque precisa caber na planta e atender às normas de armazenamento.
+O projeto deve considerar frequência e quantidade de entrega, limites operacionais, requisitos de armazenamento e segurança, além de variações de demanda. O cálculo comercial não substitui dimensionamento técnico.
 
-Um tanque bem dimensionado evita dois problemas: parar a linha por falta de combustível e imobilizar capital em estoque excessivo.
+Considere o prazo entre pedido e produto liberado para consumo. O [planejamento de abastecimento](/blog/como-programar-o-abastecimento-de-oleo-bpf-para-evitar-paradas/) mostra como relacionar esse intervalo com o estoque de segurança definido pela empresa.
 
-## Programando o abastecimento
+## Como validar a estimativa
 
-Com consumo e tanque definidos, o abastecimento vira uma rotina previsível:
+Compare consumo medido e produção em períodos equivalentes. Registre as premissas que mudaram e confira unidades e instrumentos antes de atribuir uma diferença ao produto. A avaliação econômica também deve incluir os custos auxiliares, como na [comparação entre BPF e xisto](/blog/oleo-de-xisto-ote-vs-oleo-bpf-diferencas-praticas-para-a-industria/).
 
-- **Defina o ponto de reposição:** o nível do tanque em que o pedido deve ser feito, considerando o prazo de entrega.
-- **Programe entregas regulares:** em vez de pedidos de emergência, entregas programadas mantêm o estoque estável.
-- **Acompanhe o consumo real:** compare o consumo estimado com o medido, para ajustar o dimensionamento ao longo do tempo.
-
-A [produção sob demanda](/produtos/oleos-alternativos/) e o padrão constante de qualidade fazem diferença aqui: um combustível com especificação estável permite prever o consumo com confiança.
-
-## O que validar na prática
-
-Antes de fechar a conta, vale cobrir três pontos:
-
-1. **Poder calorífico real do lote:** confirme a especificação do combustível entregue, não só a de catálogo.
-2. **Eficiência do queimador:** a atomização e o ajuste do bico afetam diretamente o consumo. Veja o artigo sobre [como especificar o óleo combustível certo para o seu queimador](/blog/como-especificar-o-oleo-combustivel-certo-para-seu-queimador/).
-3. **Estabilidade entre lotes:** se o poder calorífico varia entre entregas, o consumo muda e o dimensionamento fica impreciso.
-
-### Um lote-piloto antes da migração completa
-
-Quando a avaliação apontar para a troca, o caminho seguro é validar aos poucos:
-
-- **Teste um lote-piloto:** meça consumo real e temperatura de chama no regime de operação.
-- **Compare com a estimativa:** ajuste o fator de eficiência com base no que foi medido.
-- **Revise o fornecimento:** a troca só vale se o abastecimento for tão confiável quanto o anterior.
-
-## Fornecimento em SP, MG e PR
-
-A Nuxem atende indústrias em São Paulo, Minas Gerais e Paraná, com entrega programada e padrão constante de qualidade. Para entender como a operação é organizada entre os estados, vale ler o artigo sobre [logística de abastecimento de óleo BPF entre SP, MG e PR](/blog/logistica-de-abastecimento-de-oleo-bpf-entre-sp-mg-e-pr/).
-
-## Conclusão
-
-O poder calorífico é a chave para transformar a decisão de combustível em números: consumo, tanque e abastecimento. Com uma estimativa bem feita, a troca para o óleo de xisto deixa de ser uma aposta e vira uma conta previsível — desde que a especificação seja estável e o fornecimento confiável.
-
-A Nuxem produz [óleo de xisto](/produtos/oleo-de-xisto/), [óleos alternativos](/produtos/oleos-alternativos/) e [óleo BTE](/produtos/oleo-bte/) sob demanda, com padrão constante de qualidade e suporte técnico para ajudar a dimensionar consumo e tanque. Para receber uma avaliação e uma cotação sob medida, fale com a equipe Nuxem pelo WhatsApp.
+Para solicitar fornecimento, [informe à Nuxem consumo, capacidade disponível e cidade de entrega](/contato/). Confirme a especificação do combustível e a programação antes de converter a estimativa em pedido.
