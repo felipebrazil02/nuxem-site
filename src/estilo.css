@@ -184,3 +184,10 @@ footer .creditos { border-top: 1px solid #ffffff22; padding-top: 18px; font-size
 .grupo-blog>.card{margin-top:18px}
 .specs th{text-align:left;padding:14px 16px;border-bottom:2px solid #d8e1e8}
 .card-foto h2{font-size:1.25rem}
+
+/* Fotos compactas no catálogo; detalhes do produto priorizam o texto. */
+.card-produto { display: flex; flex-direction: column; }
+.card-produto img { height: 112px; }
+.card-produto h2 { color: var(--azul); }
+.card-produto p { margin-bottom: 18px; }
+.card-produto a.saiba { margin-top: auto; padding-top: 4px; }
