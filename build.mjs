@@ -23,6 +23,7 @@ if (existsSync(dist)) rmSync(dist, { recursive: true });
 mkdirSync(dist, { recursive: true });
 cpSync(join(raiz, 'src', 'estilo.css'), join(dist, 'estilo.css'));
 cpSync(join(raiz, 'src', 'imagens'), join(dist, 'imagens'), { recursive: true });
+if (existsSync(join(raiz, 'src', 'documentos'))) cpSync(join(raiz, 'src', 'documentos'), join(dist, 'documentos'), { recursive: true });
 
 const ZAP = `https://wa.me/${EMPRESA.whatsappPrincipal}?text=${encodeURIComponent('Olá! Gostaria de uma cotação de óleo combustível.')}`;
 
@@ -310,11 +311,13 @@ for (const p of PRODUTOS) {
 </div></div>
 <div class="container"><div class="conteudo">
   ${p.corpo.map(par => `<p>${par}</p>`).join('\n  ')}
-  <h2>Dados para especificação</h2>
+  <h2 id="dados-tecnicos">${p.tituloSpecs || 'Dados para especificação'}</h2>
   <p>${p.notaSpecs}</p>
   <table class="specs">
     ${p.specs.map(([k, v]) => `<tr><td>${k}</td><td>${v}</td></tr>`).join('\n    ')}
   </table>
+  ${p.observacaoSpecs ? `<p class="nota-tecnica">${p.observacaoSpecs}</p>` : ''}
+  ${p.documentos?.length ? `<aside class="documentos-produto" aria-label="Fontes e documentos técnicos"><h3>Fontes e documentos técnicos</h3><ul>${p.documentos.map(d => `<li><a href="${d.url}">${d.titulo}</a></li>`).join('')}</ul></aside>` : ''}
   <p><strong>Aplicações:</strong> ${p.aplicacoes}</p>
 ${p.orientacao ? `  <h2>Como solicitar sua cotação</h2><p>${p.orientacao}</p>` : ''}
   <h2>Perguntas sobre ${p.nome}</h2>
