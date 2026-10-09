@@ -2,6 +2,7 @@
 title: "Óleo de xisto para caldeiras: consumo, compatibilidade e cotação"
 description: "Avalie óleo de xisto em caldeiras: dados do queimador, consumo por tonelada de vapor, aquecimento e informações para cotar em SP, MG e PR."
 date: 2026-10-02
+category: aplicacoes-xisto
 updated: 2026-10-09
 slugOriginal: ""
 ---

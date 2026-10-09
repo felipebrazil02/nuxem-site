@@ -2,6 +2,7 @@
 title: "Como especificar óleo combustível para o queimador industrial"
 description: "Monte o pedido de óleo combustível com viscosidade, poder calorífico, enxofre e documentos. Confira compatibilidade do queimador antes da cotação."
 date: 2026-07-22
+category: compra
 updated: 2026-10-09
 slugOriginal: ""
 ---

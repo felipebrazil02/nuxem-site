@@ -178,3 +178,9 @@ footer .creditos { border-top: 1px solid #ffffff22; padding-top: 18px; font-size
 .leituras ul { margin: 0 0 0 20px; }
 .leituras li { margin: 8px 0; }
 .leituras a { color: var(--azul); text-decoration: underline; text-underline-offset: 3px; }
+
+/* Índice editorial por assunto: âncoras visíveis também no celular. */
+.grupo-blog{scroll-margin-top:110px;margin-top:48px}
+.grupo-blog>.card{margin-top:18px}
+.specs th{text-align:left;padding:14px 16px;border-bottom:2px solid #d8e1e8}
+.card-foto h2{font-size:1.25rem}

@@ -4,6 +4,8 @@ import { mkdtempSync, mkdirSync, cpSync, readFileSync, writeFileSync, existsSync
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { execFileSync } from 'node:child_process';
+import { CATEGORIAS_BLOG, LEITURAS } from '../src/leituras.mjs';
+import { PRODUTOS } from '../src/dados.mjs';
 
 test('SEO output stays consistent across clean and incremental builds, including legacy posts', () => {
   const repository = fileURLToPath(new URL('../', import.meta.url));
@@ -27,12 +29,27 @@ test('SEO output stays consistent across clean and incremental builds, including
     const curatedLinks = read('produtos/oleo-bpf/index.html').match(/<aside class="leituras"[^]*?<\/aside>/)[0];
     assert.equal([...curatedLinks.matchAll(/href=/g)].length, 3);
     assert.match(read('blog/index.html'), /Guias para escolher e comprar combustível/);
+    const assertBlogGroups = () => {
+      const blog = read('blog/index.html');
+      for (const category of CATEGORIAS_BLOG) {
+        assert.ok(blog.includes(`href="#${category.slug}"`));
+        assert.ok(blog.includes(`id="${category.slug}"`));
+      }
+      const articleCards = [...blog.matchAll(/<h3><a href="(\/blog\/[^" ]+)"/g)].map(m => m[1]);
+      assert.equal(new Set(articleCards).size, articleCards.length);
+      for (const url of cleanURLs.filter(url => url.includes('/blog/') && !url.endsWith('/blog/'))) {
+        assert.ok(articleCards.includes(new URL(url).pathname), url);
+      }
+    };
+    assertBlogGroups();
     assert.equal(cleanURLs.length, new Set(cleanURLs).size);
     const legacyDir = join(root, 'dist', 'blog', 'legacy-test');
     mkdirSync(legacyDir, { recursive: true });
     writeFileSync(join(legacyDir, 'index.html'), '<html><head><title>Legado | Blog Nuxem</title></head><body><h1>Legado</h1></body></html>');
     build();
     const incrementalURLs = sitemapURLs();
+    assertBlogGroups();
+    assert.match(read('blog/index.html'), /href="\/blog\/legacy-test\/"/);
     assert.match(read('blog/index.html'), /Guias para escolher e comprar combustível/);
     for (const url of cleanURLs.filter(url => url.includes('/blog/') && !url.endsWith('/blog/'))) {
       const html = read(new URL(url).pathname.slice(1) + 'index.html');
@@ -48,17 +65,24 @@ test('SEO output stays consistent across clean and incremental builds, including
     for (const url of incrementalURLs) {
       assert.ok(existsSync(join(root, 'dist', new URL(url).pathname, 'index.html')), url);
     }
-    for (const slug of ['oleo-bpf', 'oleo-de-xisto']) {
+    for (const {slug} of PRODUTOS) {
       const html = read(`produtos/${slug}/index.html`);
       const product = JSON.parse(html.match(/<script type="application\/ld\+json">([^]*?)<\/script>/)[1]);
       assert.equal(product['@type'], 'Product');
       assert.equal(product.offers, undefined);
-      assert.match(html, /<title>[^<]*SP, MG e PR/);
+      if(slug !== 'oleos-alternativos') assert.match(html, /<title>[^<]*SP, MG e PR/);
       assert.match(html, /ficha técnica/);
       assert.match(html, /ficha de dados de segurança/);
       assert.match(html, /Como solicitar sua cotação/);
+      assert.match(html, /<h2>Perguntas sobre/);
+      const curated = html.match(/<aside class="leituras"[^]*?<\/aside>/)[0];
+      for(const [articleSlug] of LEITURAS[`produtos/${slug}`]) assert.ok(curated.includes(`/blog/${articleSlug}/`));
+      assert.equal(product.additionalProperty, undefined, 'Consultation guidance is not a certified product property');
     }
-    assert.match(read('produtos/oleo-bpf/index.html'), /10\.400 kcal\/kg/);
+    assert.match(read('produtos/oleo-bpf/index.html'), /PCS ou PCI em kcal\/kg ou MJ\/kg/);
+    assert.doesNotMatch(read('produtos/oleo-apf/index.html'), /baixa viscosidade, que dispensa/);
+    assert.doesNotMatch(read('produtos/oleo-a1/index.html'), /2,5%/);
+    assert.doesNotMatch(read('produtos/oleo-b1/index.html'), /atende os limites da Resolução CONAMA 491/);
     assert.doesNotMatch(read('produtos/oleo-de-xisto/index.html'), /dispensando totalmente|dispensa pré-aquecimento/);
     const rules = read('_redirects').trim().split('\n');
     assert.ok(rules.length > 8);

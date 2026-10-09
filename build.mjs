@@ -5,7 +5,7 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { EMPRESA, PRODUTOS, SOLUCOES, HOME, CONTATO, PILAR, COBERTURA } from './src/dados.mjs';
 import { redirecionamentosLegados, destinoLegado } from './src/redirecionamentos.mjs';
-import { LEITURAS } from './src/leituras.mjs';
+import { LEITURAS, CATEGORIAS_BLOG } from './src/leituras.mjs';
 
 const raiz = dirname(fileURLToPath(import.meta.url));
 const dirBlog = join(raiz, 'conteudo', 'blog');
@@ -251,8 +251,8 @@ salvar('.', layout({
 
 // PRODUTOS (índice) — com schema ItemList para rich snippet
 salvar('produtos', layout({
-  title: 'Produtos | Óleo BPF, APF e Alternativos | Nuxem São Paulo',
-  description: 'Conheça os combustíveis industriais da Nuxem: óleo BPF, óleo APF e óleos alternativos com viscosidades variadas. Especificações completas e cotação rápida.',
+  title: 'Óleo BPF, Xisto, BTE e Combustíveis Industriais | Nuxem',
+  description: 'Compare óleo BPF, xisto OTE, APF, A1, B1, BTE e alternativas. Consulte especificação e fornecimento em SP, MG e PR. Solicite cotação à Nuxem.',
   caminho: 'produtos',
   jsonLd: {
     '@context': 'https://schema.org',
@@ -268,12 +268,23 @@ salvar('produtos', layout({
   conteudo: `
 <div class="pagina-topo"><div class="container">
   <h1>Combustíveis industriais Nuxem</h1>
-  <p class="resumo">Produção sob demanda, padrão constante de qualidade e suporte técnico para escolher o produto certo para o seu equipamento.</p>
+  <p class="resumo">Óleo BPF, xisto OTE, APF, A1, B1, BTE e alternativas para processos térmicos. Atendimento em São Paulo, Minas Gerais e Paraná.</p>
 </div></div>
 <section><div class="container">
   <div class="grid grid-3">
-    ${PRODUTOS.map(p => `<div class="card card-foto"><img src="/imagens/${p.imagem}" alt="${p.imagemAlt}" loading="lazy"><h3>${p.nome}</h3><p>${p.resumo}</p><a class="saiba" href="/produtos/${p.slug}/">Ver especificações →</a></div>`).join('\n    ')}
+    ${PRODUTOS.map(p => `<div class="card card-foto"><img src="/imagens/${p.imagem}" alt="${p.imagemAlt}" loading="lazy"><h2>${p.nome}</h2><p>${p.resumo}</p><a class="saiba" href="/produtos/${p.slug}/">Conhecer ${p.nome} →</a></div>`).join('\n    ')}
   </div>
+</div></section>
+<section class="alt"><div class="container conteudo">
+  <h2>Como comparar os combustíveis</h2>
+  <p>A escolha começa pelos limites do equipamento e pelos requisitos da instalação. Os nomes comerciais não substituem a ficha técnica do produto ofertado.</p>
+  <table class="specs"><thead><tr><th scope="col">Produto</th><th scope="col">O que conferir na proposta</th></tr></thead><tbody>
+    ${PRODUTOS.map(p => `<tr><td><a href="/produtos/${p.slug}/">${p.nome}</a></td><td>${p.criterio}</td></tr>`).join('\n    ')}
+  </tbody></table>
+  <p>Compare valores na mesma unidade, distinguindo litros e massa, PCS e PCI. Inclua frete, rendimento, aquecimento e custos de adaptação. Veja a <a href="/blog/comparacao-tecnica-oleo-de-xisto-bte-bpf-e-oleos-alternativos/">comparação técnica entre combustíveis</a> e o <a href="/blog/como-especificar-o-oleo-combustivel-certo-para-seu-queimador/">guia de especificação para o queimador</a>.</p>
+  <h2>Dados para solicitar uma cotação</h2>
+  <p>Informe cidade, volume, consumo, combustível atual, equipamento e restrições da operação. Solicite ficha técnica, ficha de dados de segurança, condições de entrega e identificação do produto. Consulte o <a href="/blog/como-preparar-uma-solicitacao-de-cotacao-de-oleo-combustivel-industrial/">roteiro de cotação</a> e as <a href="/cobertura/">regiões atendidas</a>.</p>
+  <p><a class="btn btn-laranja" href="${ZAP}">Solicitar cotação de combustível</a></p>
 </div></section>`,
 }));
 
@@ -292,11 +303,6 @@ for (const p of PRODUTOS) {
       sku: p.slug,
       // Venda sob cotação: não publicar uma oferta fictícia de preço zero.
       url: `${EMPRESA.dominio}/produtos/${p.slug}/`,
-      additionalProperty: p.specs.map(([k, v]) => ({
-        '@type': 'PropertyValue',
-        name: k,
-        value: v,
-      })),
     },
     conteudo: `
 <div class="pagina-topo"><div class="container">
@@ -306,12 +312,15 @@ for (const p of PRODUTOS) {
 <div class="container"><div class="conteudo">
   <img class="foto-pagina" src="/imagens/${p.imagem}" alt="${p.imagemAlt}">
   ${p.corpo.map(par => `<p>${par}</p>`).join('\n  ')}
-  <h2>Especificações</h2>
+  <h2>Dados para especificação</h2>
+  <p>${p.notaSpecs}</p>
   <table class="specs">
     ${p.specs.map(([k, v]) => `<tr><td>${k}</td><td>${v}</td></tr>`).join('\n    ')}
   </table>
   <p><strong>Aplicações:</strong> ${p.aplicacoes}</p>
 ${p.orientacao ? `  <h2>Como solicitar sua cotação</h2><p>${p.orientacao}</p>` : ''}
+  <h2>Perguntas sobre ${p.nome}</h2>
+  ${p.faq.map(({p: pergunta, r}) => `<h3>${pergunta}</h3><p>${r}</p>`).join('\n  ')}
 ${leituras(`produtos/${p.slug}`)}
   <p><a class="btn btn-laranja" href="${ZAP}">Solicitar cotação de ${p.nome}</a></p>
 </div></div>`,
@@ -427,7 +436,7 @@ for (const f of arquivosBlog) {
   posts.push({
     slug: f.replace(/\.md$/, ''),
     slugOriginal: meta.slugOriginal || '',
-    title: meta.title, description: meta.description, date: meta.date, updated: meta.updated,
+    title: meta.title, description: meta.description, date: meta.date, updated: meta.updated, category: meta.category,
     studioArticleId: meta.studioArticleId, studioContentHash: meta.studioContentHash,
     language: ['pt','en','es'].includes(meta.language) ? meta.language : 'pt',
     html: mdParaHtml(corpoLimpo),
@@ -437,19 +446,26 @@ posts.sort((a, b) => (a.date < b.date ? 1 : -1));
 
 const titulosPorSlug = Object.fromEntries(posts.map(p => [p.slug, p.title]));
 
-salvar('blog', layout({
-  title: 'Blog Nuxem | Conteúdo Técnico sobre Óleo Combustível Industrial',
-  description: 'Artigos técnicos sobre óleo BPF, caldeiras, usinas de asfalto, fundições e logística de combustível industrial. Conteúdo da equipe Nuxem.',
-  caminho: 'blog',
-  conteudo: `
-<div class="pagina-topo"><div class="container">
+function listagemBlog(todos) {
+  const grupos = CATEGORIAS_BLOG.map(c => ({ ...c, posts: todos.filter(p => (p.category || 'operacao') === c.slug) })).filter(c => c.posts.length);
+  return `<div class="pagina-topo"><div class="container">
   <h1>Blog Nuxem</h1>
-  <p class="resumo">Conteúdo técnico sobre combustível industrial, para você decidir com segurança.</p>
+  <p class="resumo">Guias sobre óleo BPF, óleo de xisto e combustíveis industriais. Encontre orientações para comprar, operar e planejar o abastecimento.</p>
 </div></div>
 <section><div class="container lista-posts">
+  <aside class="leituras" aria-label="Assuntos do blog"><h2>Encontre artigos por assunto</h2><ul>
+    ${grupos.map(c => `<li><a href="#${c.slug}">${c.titulo} (${c.posts.length})</a></li>`).join('')}
+  </ul></aside>
   ${leituras('blog')}
-  ${posts.map(p => { const c = existsSync(join(raiz, 'src', 'imagens', 'blog', `${p.slug}.webp`)); return `<div class="card${c ? ' card-post' : ''}">${c ? `<img src="/imagens/blog/${p.slug}.webp" alt="" loading="lazy">` : ''}<div><h3><a href="/blog/${p.slug}/">${p.title}</a></h3><p class="post-meta">${dataBr(p.date)}</p><p>${p.description}</p></div></div>`; }).join('\n  ')}
-</div></section>`,
+  ${grupos.map(c => `<div class="grupo-blog" id="${c.slug}"><h2>${c.titulo}</h2>${c.posts.map(p => `<div class="card"><h3><a href="/blog/${p.slug}/">${p.title}</a></h3><p class="post-meta">${p.updated ? 'Atualizado em ' + dataBr(p.updated) : p.dataExibicao || dataBr(p.date)}</p><p>${p.description}</p></div>`).join('')}</div>`).join('')}
+</div></section>`;
+}
+
+salvar('blog', layout({
+  title: 'Blog Nuxem | Óleo BPF, Xisto e Combustíveis Industriais',
+  description: 'Guias de compra, operação e aplicações de óleo BPF e óleo de xisto. Compare combustíveis e planeje o abastecimento em SP, MG e PR.',
+  caminho: 'blog',
+  conteudo: listagemBlog(posts),
 }));
 
 function relacionados(post, todos, n = 3) {
@@ -700,15 +716,7 @@ gtag('config', '${EMPRESA.gaId}');
   }
   posts.sort((a, b) => (a.date < b.date ? 1 : -1));
   // regera a listagem do blog com todos os posts
-  const blogHtml = `<div class="pagina-topo"><div class="container">
-  <h1>Blog Nuxem</h1>
-  <p class="resumo">Conteúdo técnico sobre combustível industrial, para você decidir com segurança.</p>
-</div></div>
-<section><div class="container lista-posts">
-  ${leituras('blog')}
-  ${posts.map(p => `<div class="card"><h3><a href="/blog/${p.slug}/">${p.title}</a></h3><p class="post-meta">${p.dataExibicao || dataBr(p.date)}</p><p>${p.description}</p></div>`).join('\n  ')}
-</div></section>`;
-  writeFileSync(join(blogDir, 'index.html'), layout({ title: 'Blog Nuxem | Conteúdo Técnico sobre Óleo Combustível Industrial', description: 'Artigos técnicos sobre óleo BPF, caldeiras, usinas de asfalto, fundições e logística de combustível industrial.', caminho: 'blog', conteudo: blogHtml }), 'utf8');
+  writeFileSync(join(blogDir, 'index.html'), layout({ title: 'Blog Nuxem | Óleo BPF, Xisto e Combustíveis Industriais', description: 'Guias de compra, operação e aplicações de óleo BPF e óleo de xisto. Compare combustíveis e planeje o abastecimento em SP, MG e PR.', caminho: 'blog', conteudo: listagemBlog(posts) }), 'utf8');
   // atualiza sitemap com blog posts
   // Uma URL por página. Não usar a data do build como atualização de conteúdo.
   const paginasUnicas = [...new Set([...paginas, ...posts.map(p => `/blog/${p.slug}/`)])];

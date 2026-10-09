@@ -1,68 +1,42 @@
 ---
-title: "Óleo de xisto (OTE) e emissões: enxofre, SOx e conformidade ambiental"
-description: "Óleo de xisto (OTE) e emissões: menor teor de enxofre, redução de SOx e corrosão. Como o OTE ajuda na conformidade ambiental de caldeiras e fornos."
+title: "Óleo de xisto e emissões: o que verificar na avaliação ambiental"
+description: "Saiba como relacionar enxofre documentado, condições de combustão e exigências da instalação ao avaliar óleo de xisto para uso industrial."
 date: 2026-10-05
 slugOriginal: ""
+updated: 2026-10-09
+category: operacao
 ---
 
-## Emissão virou critério de compra de combustível
+**A avaliação ambiental do óleo de xisto deve considerar o produto e a instalação em que será queimado.** Um combustível descrito como de baixo teor de enxofre não comprova, por si, atendimento a todos os limites da fonte. A análise precisa ser feita com a documentação e os critérios aplicáveis à planta.
 
-A pressão por redução de emissões mudou a forma como a indústria escolhe combustível. Além do preço e do poder calorífico, o teor de enxofre e as emissões de SOx entraram na conta — tanto pelo custo de conformidade quanto pelo desgaste que causam nos equipamentos. Para quem opera caldeira, forno ou secador, o combustível certo é aquele que entrega calor sem transformar a chaminé em um problema.
+Na cotação de [óleo de xisto](/produtos/oleo-de-xisto/), peça o teor de enxofre com unidade e referência do produto ofertado. Evite comparar um valor máximo de catálogo com um resultado de lote como se fossem o mesmo tipo de informação.
 
-O [óleo de xisto (OTE)](/produtos/oleo-de-xisto/) se destaca nesse cenário pelo menor teor de enxofre em relação a óleos pesados tradicionais, o que reduz emissões de SOx e a corrosão associada.
+## O que o teor de enxofre informa
 
-## Por que o enxofre importa
+O dado caracteriza uma propriedade do combustível. Ele não é uma medição da chaminé e não substitui o acompanhamento exigido para a operação. Também não permite concluir que todos os demais poluentes serão reduzidos na mesma proporção.
 
-O enxofre presente no combustível vira SOx na queima. Isso tem dois efeitos diretos:
+Compare combustível atual e alternativa na mesma base documental. Para compreender o enquadramento dos óleos combustíveis, consulte o [guia de classificação e documentação](/blog/normas-anp-para-oleo-combustivel-industrial/).
 
-- **Emissões:** o SOx é um poluente regulado, e o controle das emissões pode exigir investimento em tratamento de gases.
-- **Corrosão:** os gases sulfurosos atacam chaminés, dutos, trocadores e superfícies de troca térmica, aumentando o custo de manutenção e reduzindo a vida útil do equipamento.
+## Quem define os critérios da instalação
 
-Um combustível com menor teor de enxofre reduz os dois problemas ao mesmo tempo: menos emissão para tratar e menos corrosão para reparar.
+O [Ministério do Meio Ambiente apresenta referências para controle de fontes fixas](https://www.gov.br/mma/pt-br/assuntos/meio-ambiente-urbano-recursos-hidricos-qualidade-ambiental/qualidade-do-ar/fontes-fixas). O enquadramento da planta deve considerar tipo e histórico da fonte, condições da licença e demais exigências competentes.
 
-## O que o OTE muda na prática
+A equipe ambiental deve avaliar se uma mudança de combustível exige providências documentais ou operacionais. Uma ficha técnica comercial não substitui essa análise, nem autoriza alterações fora das condições aprovadas para a instalação.
 
-O menor teor de enxofre do óleo de xisto se traduz em ganhos concretos:
+## Quais dados levar à avaliação
 
-- **Menos emissões de SOx:** reduz a carga sobre sistemas de controle e facilita o atendimento a limites de emissão.
-- **Menos corrosão em chaminés e dutos:** diminui a manutenção e prolonga a vida útil dos equipamentos.
-- **Menos borra e depósitos:** em processos de contato indireto, onde os gases passam perto de produto e equipamento, o ganho é direto.
+- Identificação do combustível atual e do produto proposto.
+- Especificações e documentos de qualidade disponíveis.
+- Equipamento, carga de referência e condições de operação.
+- Sistemas de controle existentes e registros de monitoramento aplicáveis.
+- Critérios de aceitação definidos pelos responsáveis técnicos e ambientais.
 
-Para uma visão mais ampla das opções de combustível e seus perfis, vale ler o guia de [como escolher entre óleo de xisto, BTE, BPF e óleos alternativos](/blog/comparacao-tecnica-oleo-de-xisto-bte-bpf-e-oleos-alternativos/).
+Mantenha identificado o que é estimativa, limite contratual e resultado medido. Essa separação facilita comparar propostas e evitar conclusões que os dados não sustentam.
 
-## Conformidade e documentação
+## Como conduzir uma comparação
 
-A conformidade ambiental não depende só do combustível, mas de um conjunto de fatores: o equipamento, o controle de queima, o monitoramento e a documentação. O combustível com menor teor de enxofre ajuda, mas não substitui o licenciamento e o controle do processo.
+Estabeleça previamente as condições em que cada combustível será avaliado. Mudança de carga, manutenção ou ajuste do equipamento pode influenciar os resultados e precisa constar do registro.
 
-Ao avaliar a troca, vale considerar:
+O [plano de migração para OTE](/blog/como-migrar-sua-caldeira-ou-forno-para-oleo-de-xisto-ote/) integra essa etapa à avaliação do queimador e do armazenamento. A aprovação deve ser documentada para a configuração testada, sem ser estendida automaticamente a outras unidades.
 
-- **A especificação do combustível:** confirme o teor de enxofre do lote entregue, não só o de catálogo.
-- **O equipamento de controle:** entenda o que a planta já tem instalado para tratamento de gases.
-- **A documentação:** mantenha registros da especificação do combustível e das medições de emissão.
-
-## O que validar antes de trocar
-
-A troca de combustível não é decisão de catálogo. Antes de migrar, vale cobrir quatro pontos:
-
-1. **Queimador e atomização:** a viscosidade de trabalho do novo combustível precisa estar na faixa que o bico do queimador entrega. Veja o artigo sobre [como especificar o óleo combustível certo para o seu queimador](/blog/como-especificar-o-oleo-combustivel-certo-para-seu-queimador/).
-2. **Temperatura do processo:** o combustível muda, mas o forno, caldeira ou secador continua precisando da temperatura correta.
-3. **Tanque, linhas e vedações:** confirmar compatibilidade de filtros, vedações e a real necessidade de aquecimento.
-4. **Consumo e autonomia:** recalcular o consumo estimado com o poder calorífico do novo combustível, para dimensionar tanque e programar o abastecimento.
-
-### Um lote-piloto antes da migração completa
-
-Quando a avaliação apontar para a troca, o caminho seguro é validar aos poucos:
-
-- **Teste um lote-piloto:** meça consumo, temperatura de chama e, se possível, as emissões no regime real de operação.
-- **Acompanhe a manutenção:** a melhor prova é a redução de corrosão e de borra ao longo de um ciclo completo.
-- **Revise o fornecimento:** a troca só vale se o abastecimento for tão confiável quanto o anterior.
-
-## Fornecimento em SP, MG e PR
-
-A Nuxem atende indústrias em São Paulo, Minas Gerais e Paraná, com entrega programada e padrão constante de qualidade. Para entender como a operação é organizada entre os estados, vale ler o artigo sobre [logística de abastecimento de óleo BPF entre SP, MG e PR](/blog/logistica-de-abastecimento-de-oleo-bpf-entre-sp-mg-e-pr/).
-
-## Conclusão
-
-O menor teor de enxofre do óleo de xisto é um argumento real para indústrias que querem reduzir emissões de SOx e o custo de corrosão — mas a conformidade depende do conjunto: combustível, equipamento, controle e documentação. Com a especificação certa e o fornecimento confiável, o OTE ajuda a queimar mais limpo sem abrir mão do desempenho térmico.
-
-A Nuxem produz [óleo de xisto](/produtos/oleo-de-xisto/), [óleos alternativos](/produtos/oleos-alternativos/) e [óleo BTE](/produtos/oleo-bte/) sob demanda, com padrão constante de qualidade e suporte técnico para avaliar a compatibilidade com o seu queimador. Para receber uma avaliação e uma cotação sob medida, fale com a equipe Nuxem pelo WhatsApp.
+Para discutir fornecimento, [encaminhe à Nuxem a especificação requerida e os documentos necessários](/contato/). A proposta comercial deve confirmar o produto; a decisão de conformidade depende da avaliação da instalação.

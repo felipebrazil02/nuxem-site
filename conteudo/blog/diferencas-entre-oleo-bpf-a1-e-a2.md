@@ -2,6 +2,7 @@
 title: "Óleo BPF A1 e A2: diferenças de viscosidade e como escolher"
 description: "Entenda a diferença entre óleo BPF A1 e A2, como conferir a especificação e o que avaliar no aquecimento, queimador e custo antes da compra."
 date: 2026-08-02
+category: compra
 updated: 2026-10-09
 slugOriginal: ""
 ---

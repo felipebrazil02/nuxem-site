@@ -2,6 +2,7 @@
 title: "Consumo de óleo BPF em caldeiras: fórmula e exemplo de cálculo"
 description: "Calcule consumo de óleo combustível em kg/h, litros/h e kg por tonelada de vapor. Veja um exemplo e os cuidados com densidade, PCI, PCS e eficiência."
 date: 2026-07-16
+category: operacao
 updated: 2026-10-09
 slugOriginal: ""
 ---
