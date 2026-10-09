@@ -18,6 +18,7 @@
 <link rel="icon" type="image/png" href="/imagens/icone-nuxem.png">
 
 <link rel="stylesheet" href="/estilo.css">
+<script src="/interface.js" defer></script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0XF8SXJ4B"></script>
 <script>
@@ -28,12 +29,13 @@ gtag('config', 'G-H0XF8SXJ4B');
 </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"Óleo BTE","description":"Consulte óleo BTE para caldeiras e fornos em SP, MG e PR. Compare teor de enxofre, viscosidade, documentação e custo entregue. Solicite cotação.","brand":{"@type":"Brand","name":"Nuxem"},"category":"Combustível industrial","sku":"oleo-bte","url":"https://nuxemoil.com.br/produtos/oleo-bte/"}</script>
 </head>
-<body>
+<body class="site-product">
+<a class="skip-link" href="#principal">Ir ao conteúdo</a>
 <header>
   <div class="header-inner">
     <a class="logo" href="/"><img src="/imagens/logo-chama.png" alt="Nuxem" height="58"></a>
-    <button class="menu-toggle" aria-label="Abrir menu" onclick="document.querySelector('nav').classList.toggle('aberto')">☰</button>
-    <nav>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">☰</button>
+    <nav id="menu-principal" aria-label="Menu principal">
       <a href="/">Início</a>
       <a href="/produtos/">Produtos</a>
       <a href="/solucoes/">Soluções</a>
@@ -43,13 +45,13 @@ gtag('config', 'G-H0XF8SXJ4B');
     </nav>
   </div>
 </header>
-<main>
+<main id="principal">
 
-<div class="pagina-topo"><div class="container">
+<div class="pagina-topo"><div class="container"><div class="breadcrumb"><a href="/">Início</a><span>/</span>COMBUSTÍVEIS INDUSTRIAIS</div>
   <h1>Óleo BTE</h1>
   <p class="resumo">Óleo BTE: avalie o teor de enxofre documentado, a viscosidade e a aplicação no seu processo térmico.</p>
 </div></div>
-<div class="container"><div class="conteudo">
+<div class="container product-layout"><div class="conteudo">
   <p>BTE significa Baixo Teor de Enxofre. Para selecionar esse combustível, confirme o percentual de enxofre, a origem e a identificação comercial na documentação do produto. A denominação não deve ser usada como garantia de uma composição universal.</p>
   <p>A redução de enxofre no combustível pode contribuir para controlar emissões de óxidos de enxofre. Ela não garante, isoladamente, menor fuligem ou atendimento a todos os limites ambientais: a formação de material particulado também depende da composição e das condições de combustão.</p>
   <p>Compare viscosidade, poder calorífico, compatibilidade de armazenamento e custo por energia útil com o combustível atual. A Nuxem atende SP, MG e PR; consulte disponibilidade e condições para a sua instalação.</p>
@@ -71,7 +73,7 @@ gtag('config', 'G-H0XF8SXJ4B');
   <h3>Como avaliar a troca para BTE?</h3><p>Compare dados documentados, compatibilidade do tanque, condições de bombeamento e atomização. Meça consumo e emissões em um teste planejado antes de concluir sobre o benefício.</p>
 <aside class="leituras" aria-label="Guias para escolher e comprar combustível"><h2>Guias para escolher e comprar combustível</h2><ul><li><a href="/blog/normas-anp-para-oleo-combustivel-industrial/">Requisitos técnicos e ambientais na compra</a></li><li><a href="/blog/comparacao-tecnica-oleo-de-xisto-bte-bpf-e-oleos-alternativos/">Comparação entre BTE, BPF, xisto e alternativas</a></li><li><a href="/blog/como-calcular-consumo-de-oleo-combustivel-em-caldeiras/">Cálculo de consumo de óleo em caldeiras</a></li></ul></aside>
   <p><a class="btn btn-laranja" href="https://wa.me/5511915011527?text=Ol%C3%A1!%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20de%20%C3%B3leo%20combust%C3%ADvel.">Solicitar cotação de Óleo BTE</a></p>
-</div></div>
+</div><aside class="quote-panel"><div class="section-kicker">SUA PRÓXIMA ENTREGA</div><h2>Vamos encontrar a melhor opção?</h2><p>Informe o produto, o volume e sua cidade. Nossa equipe orienta sua cotação.</p><a class="btn btn-laranja" href="/contato/">Solicitar uma cotação ↗</a><a class="panel-link" href="#dados-tecnicos">Consultar dados técnicos ↓</a><hr><div class="panel-detail"><b>Atendimento 24h</b><span>SP, MG e PR · Frota própria</span></div><a class="panel-link" href="/produtos/">← Todos os produtos</a></aside></div>
 </main>
 <div class="faixa-cta">
   <div class="container">

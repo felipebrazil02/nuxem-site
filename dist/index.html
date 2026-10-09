@@ -18,6 +18,7 @@
 <link rel="icon" type="image/png" href="/imagens/icone-nuxem.png">
 <link rel="preload" as="image" href="/imagens/hero-usina-asfalto.webp">
 <link rel="stylesheet" href="/estilo.css">
+<script src="/interface.js" defer></script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0XF8SXJ4B"></script>
 <script>
@@ -28,12 +29,13 @@ gtag('config', 'G-H0XF8SXJ4B');
 </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Nuxem","description":"Fornecemos óleo BPF e combustíveis industriais para caldeiras, usinas de asfalto e fundições em São Paulo, Minas Gerais e Paraná. Frota própria, atendimento 24h e produção sob demanda.","url":"https://nuxemoil.com.br/","logo":"https://nuxemoil.com.br/imagens/icone-nuxem.png","image":"https://nuxemoil.com.br/imagens/hero-usina-asfalto.webp","telephone":"+55-11-91501-1527","email":"contato@nuxemoil.com","address":{"@type":"PostalAddress","streetAddress":"Av Brasília, 2242","addressLocality":"Salto","addressRegion":"SP","postalCode":"13327-896","addressCountry":"BR"},"areaServed":[{"@type":"State","name":"São Paulo"},{"@type":"State","name":"Minas Gerais"},{"@type":"State","name":"Paraná"}],"priceRange":"$$","vatID":"47.626.641/0001-10"}</script>
 </head>
-<body>
+<body class="site-home">
+<a class="skip-link" href="#principal">Ir ao conteúdo</a>
 <header>
   <div class="header-inner">
     <a class="logo" href="/"><img src="/imagens/logo-chama.png" alt="Nuxem" height="58"></a>
-    <button class="menu-toggle" aria-label="Abrir menu" onclick="document.querySelector('nav').classList.toggle('aberto')">☰</button>
-    <nav>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">☰</button>
+    <nav id="menu-principal" aria-label="Menu principal">
       <a href="/" aria-current="page">Início</a>
       <a href="/produtos/">Produtos</a>
       <a href="/solucoes/">Soluções</a>
@@ -43,18 +45,20 @@ gtag('config', 'G-H0XF8SXJ4B');
     </nav>
   </div>
 </header>
-<main>
+<main id="principal">
 
-<div class="hero hero-img"><div class="container">
-  <h1>Óleo BPF e combustíveis industriais para sua operação não parar</h1>
+<section class="site-hero"><div class="container hero-layout"><div class="hero-copy">
+  <div class="section-kicker">ENERGIA PARA A INDÚSTRIA</div>
+  <h1>Óleo BPF e combustíveis industriais para sua operação <em>não parar</em></h1>
   <p>Fornecimento para caldeiras, usinas de asfalto e fundições em São Paulo, Minas Gerais e Paraná — com frota própria, produção sob demanda e atendimento 24 horas.</p>
   <div class="botoes">
     <a class="btn btn-laranja" href="https://wa.me/5511915011527?text=Ol%C3%A1!%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20de%20%C3%B3leo%20combust%C3%ADvel.">Solicitar cotação no WhatsApp</a>
     <a class="btn btn-vazado" href="/produtos/">Conhecer os produtos</a>
   </div>
-</div></div>
+</div><div class="hero-visual"><img src="/imagens/hero-usina-asfalto.webp" alt="Usina de asfalto — imagem ilustrativa de aplicação industrial" fetchpriority="high"><div class="visual-label"><span>CONTINUIDADE OPERACIONAL</span><strong>O combustível certo.<br>No ritmo da sua indústria.</strong></div><div class="photo-caption">Aplicação industrial · imagem ilustrativa</div></div></div></section>
+<div class="trust-band"><div class="container"><div><b>24h</b><span>Atendimento e suporte</span></div><div><b>Frota própria</b><span>Logística de fornecimento</span></div><div><b>SP · MG · PR</b><span>Regiões atendidas</span></div><a href="/cobertura/">Conheça nossa cobertura ↗</a></div></div>
 <section><div class="container">
-  <h2 class="secao">Soluções por segmento</h2>
+  <div class="section-kicker">APLICAÇÕES INDUSTRIAIS</div><h2 class="secao">Soluções por segmento</h2>
   <p class="secao-sub">Cada operação térmica tem uma exigência diferente. Atendemos as três mais críticas da indústria:</p>
   <div class="grid grid-3">
     <div class="card card-foto"><img src="/imagens/hero-usina-asfalto.webp" alt="Usina de asfalto ao entardecer com caminhão de óleo combustível" loading="lazy"><h3>Usinas de asfalto</h3><p>Combustível com entrega programada para a usina nunca parar por falta de abastecimento.</p><a class="saiba" href="/solucoes/usinas-de-asfalto/">Saiba mais →</a></div>
@@ -63,7 +67,7 @@ gtag('config', 'G-H0XF8SXJ4B');
   </div>
 </div></section>
 <section class="alt"><div class="container">
-  <h2 class="secao">Nossos produtos</h2>
+  <div class="section-kicker">PORTFÓLIO NUXEM</div><h2 class="secao">Nossos produtos</h2>
   <p class="secao-sub">Combustíveis industriais com produção sob demanda e padrão constante de qualidade:</p>
   <div class="grid grid-3">
     <div class="card card-foto"><img src="/imagens/produto-oleo-bpf.webp" alt="Imagem ilustrativa de óleo combustível para uso industrial" loading="lazy"><h3>Óleo BPF</h3><p>Óleo combustível para caldeiras, fornos e usinas de asfalto. Compare classe, viscosidade, enxofre e custo entregue.</p><a class="saiba" href="/produtos/oleo-bpf/">Ver especificações →</a></div>
@@ -76,7 +80,7 @@ gtag('config', 'G-H0XF8SXJ4B');
   </div>
 </div></section>
 <section><div class="container">
-  <h2 class="secao">Por que a Nuxem</h2>
+  <div class="section-kicker">PARCERIA QUE MOVE</div><h2 class="secao">Por que a Nuxem</h2>
   <p class="secao-sub">Uma planta térmica parada custa muito mais do que o combustível. Nosso trabalho é garantir que isso nunca aconteça:</p>
   <div class="grid grid-4">
     <div class="card"><h3>Atendimento 24h</h3><p>Suporte e atendimento a qualquer hora, todos os dias. Operação térmica não espera horário comercial.</p></div>
@@ -90,6 +94,7 @@ gtag('config', 'G-H0XF8SXJ4B');
   <p class="secao-sub">Entrega com frota própria em São Paulo, Campinas, Sorocaba, Jundiaí, Piracicaba, Ribeirão Preto, Belo Horizonte, Betim, Contagem, Uberlândia, Juiz de Fora, Curitiba, Araucária, Ponta Grossa, Londrina, Maringá e São José dos Pinhais — e em todas as demais regiões dos três estados.</p>
   <p style="margin-top:8px"><a class="saiba" href="/cobertura/">Ver todas as regiões atendidas →</a></p>
 </div></section>
+<section class="site-editorial"><div class="container"><div class="section-kicker">CONHECIMENTO QUE AJUDA A DECIDIR</div><h2 class="secao">Da especificação à compra.</h2><p class="secao-sub">Conteúdo técnico para quem precisa escolher bem e manter a operação em movimento.</p><div class="grid grid-3"><a class="editorial-card" href="/guia-oleo-bpf/"><span>GUIA TÉCNICO</span><h3>Entenda o óleo BPF.</h3><p>Classificações, aplicações e critérios para a sua operação.</p><b>Explorar o guia ↗</b></a><a class="editorial-card" href="/blog/oleo-de-xisto-ote-vs-oleo-bpf-diferencas-praticas-para-a-industria/"><span>ESCOLHA DO COMBUSTÍVEL</span><h3>BPF ou óleo de xisto?</h3><p>Compare consumo, especificações e custo por energia útil.</p><b>Ler comparação ↗</b></a><a class="editorial-card" href="/blog/"><span>BLOG NUXEM</span><h3>Respostas para a indústria.</h3><p>Artigos sobre compra, aplicações, operação e logística.</p><b>Acessar todos os artigos ↗</b></a></div></div></section>
 </main>
 <div class="faixa-cta">
   <div class="container">
