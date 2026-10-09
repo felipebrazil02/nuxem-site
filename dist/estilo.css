@@ -191,3 +191,8 @@ footer .creditos { border-top: 1px solid #ffffff22; padding-top: 18px; font-size
 .card-produto h2 { color: var(--azul); }
 .card-produto p { margin-bottom: 18px; }
 .card-produto a.saiba { margin-top: auto; padding-top: 4px; }
+.nota-tecnica { font-size: .92rem; color: #4d5b67; }
+.documentos-produto { margin: 22px 0; padding: 18px 22px; background: #f5f8fb; border-left: 4px solid var(--laranja); border-radius: 6px; }
+.conteudo .documentos-produto h3 { margin-top: 0; }
+.documentos-produto a { overflow-wrap: anywhere; }
+#dados-tecnicos { scroll-margin-top: 110px; }

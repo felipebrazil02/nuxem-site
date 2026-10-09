@@ -33,24 +33,28 @@ export const PRODUTOS = [
     "description": "Fornecimento de óleo BPF para caldeiras, fornos e usinas de asfalto em SP, MG e PR. Frota própria e atendimento 24h. Solicite cotação.",
     "specs": [
       [
-        "Viscosidade cinemática",
-        "Solicitar valor em mm²/s (cSt) e temperatura do ensaio"
+        "OCA1 — viscosidade a 60 °C e enxofre",
+        "Máximo 620 mm²/s; máximo 2,0% em massa de enxofre"
+      ],
+      [
+        "OCB1 — viscosidade a 60 °C e enxofre",
+        "Máximo 620 mm²/s; máximo 1,0% em massa de enxofre"
+      ],
+      [
+        "OCA2 — viscosidade a 60 °C e enxofre",
+        "Máximo 960 mm²/s; máximo 2,0% em massa de enxofre"
+      ],
+      [
+        "OCB2 — viscosidade a 60 °C e enxofre",
+        "Máximo 960 mm²/s; máximo 1,0% em massa de enxofre"
       ],
       [
         "Poder calorífico",
-        "Solicitar PCS ou PCI em kcal/kg ou MJ/kg, identificando a base usada"
+        "Solicitar PCS ou PCI em kcal/kg ou MJ/kg"
       ],
       [
-        "Teor de enxofre",
-        "Confirmar percentual em massa na especificação do produto cotado"
-      ],
-      [
-        "Ponto de fluidez e ponto de fulgor",
-        "Consultar os valores em °C e as condições de manuseio na documentação"
-      ],
-      [
-        "Densidade",
-        "Confirmar valor e temperatura de referência para converter litros em massa"
+        "Massa específica e ponto de fluidez",
+        "Conferir os valores e as condições na documentação do produto"
       ]
     ],
     "aplicacoes": "Caldeiras, fornos e outros processos térmicos industriais, mediante avaliação de compatibilidade e dos requisitos da instalação.",
@@ -75,49 +79,85 @@ export const PRODUTOS = [
         "r": "BPF é uma denominação comercial ampla. A1 e B1 identificam classes de óleo combustível com critérios próprios. Registre na compra a classificação aplicável e os parâmetros do produto fornecido."
       }
     ],
-    "notaSpecs": "Os itens abaixo orientam a consulta e não constituem certificado de um lote. Solicite a ficha técnica e a ficha de dados de segurança do produto ofertado."
+    "notaSpecs": "BPF é uma denominação comercial ampla. As classes abaixo possuem limites diferentes de enxofre e viscosidade; confirme qual delas corresponde ao produto cotado. Referências: classificação ANP e manual técnico Petrobras.",
+    "tituloSpecs": "Referências técnicas para especificar óleo BPF",
+    "observacaoSpecs": "Os valores são limites das classes, não características universais de todo óleo BPF. O manual Petrobras consultado é a versão 1.4, de 15/01/2019; os limites de classe também são apresentados no glossário atual da ANP. Consulte ficha técnica, ficha de dados de segurança e certificado do fornecimento.",
+    "documentos": [
+      {
+        "titulo": "ANP — classificação e regulamentação dos óleos combustíveis",
+        "url": "https://www.gov.br/anp/pt-br/assuntos/producao-de-derivados-de-petroleo-e-processamento-de-gas-natural/producao-de-derivados-de-petroleo-e-processamento-de-gas-natural/oleo-combustivel"
+      },
+      {
+        "titulo": "ANP — limites das classes OCA1, OCA2, OCB1 e OCB2",
+        "url": "https://www.gov.br/anp/pt-br/acesso-a-informacao/glossario/o"
+      },
+      {
+        "titulo": "Petrobras — Manual técnico de óleo combustível (versão 1.4, 15/01/2019, PDF)",
+        "url": "https://petrobras.com.br/documents/2677942/3190768/manual-tecnico-oleo-combustivel-assistencia-tecnica-petrobras.pdf/7ff0d6b9-3f9f-95f6-2e57-6c6730e851ce?download=true&t=1691773221000&version=1.0"
+      }
+    ]
   },
   {
     "slug": "oleo-apf",
     "nome": "Óleo APF",
     "imagem": "produto-oleo-apf.webp",
     "imagemAlt": "Imagem ilustrativa de óleo combustível para uso industrial",
-    "resumo": "Óleo combustível APF: confirme ponto de fluidez, viscosidade e condições de aquecimento antes de escolher.",
+    "resumo": "Óleo combustível APF com resultados de análise disponíveis para consulta. Veja as propriedades da amostra e solicite cotação.",
     "title": "Óleo APF em SP, MG e PR | Especificação e Cotação | Nuxem",
-    "description": "Consulte óleo APF para processos térmicos em SP, MG e PR. Avalie viscosidade, ponto de fluidez e compatibilidade com o queimador. Peça cotação.",
+    "description": "Consulte os resultados da análise do óleo APF: viscosidade, massa específica, enxofre, PCI e PCS. Atendimento em SP, MG e PR. Solicite cotação.",
     "specs": [
       [
-        "Viscosidade cinemática",
-        "Solicitar valor em mm²/s (cSt) e temperatura do ensaio"
+        "Aspecto",
+        "Turvo"
       ],
       [
-        "Poder calorífico",
-        "Solicitar PCS ou PCI em kcal/kg ou MJ/kg, identificando a base usada"
+        "Cor",
+        "Castanho"
       ],
       [
-        "Teor de enxofre",
-        "Confirmar percentual em massa na especificação do produto cotado"
+        "Massa específica a 20 °C",
+        "860,0 kg/m³"
       ],
       [
-        "Ponto de fluidez e ponto de fulgor",
-        "Consultar os valores em °C e as condições de manuseio na documentação"
+        "Ponto de fulgor",
+        "> 61,0 °C"
       ],
       [
-        "Densidade",
-        "Confirmar valor e temperatura de referência para converter litros em massa"
+        "Viscosidade cinemática a 60 °C",
+        "28,0 cSt"
+      ],
+      [
+        "Fluidez",
+        "1,0 °C"
+      ],
+      [
+        "Água e sedimentos",
+        "0,1%"
+      ],
+      [
+        "Enxofre",
+        "< 0,5%"
+      ],
+      [
+        "Poder calorífico inferior (PCI)",
+        "10.200 kcal/kg"
+      ],
+      [
+        "Poder calorífico superior (PCS)",
+        "10.600 kcal/kg"
       ]
     ],
     "aplicacoes": "Caldeiras, fornos e outros processos térmicos industriais, mediante avaliação de compatibilidade e dos requisitos da instalação.",
     "corpo": [
-      "APF é a denominação Alto Ponto de Fluidez. Ao consultar esse óleo combustível, solicite a identificação comercial completa e a ficha técnica: a sigla, isoladamente, não informa a viscosidade na temperatura de operação.",
-      "Ponto de fluidez e viscosidade representam características diferentes. Não se deve concluir que um óleo APF dispensa aquecimento. O projeto precisa considerar o produto real, a menor temperatura ambiente, as condições de partida e os limites do equipamento.",
-      "Para avaliar a aplicação em caldeiras, fornos ou usinas de asfalto, compare as exigências de bombeamento e atomização. A Nuxem atende SP, MG e PR; consulte disponibilidade, documentação e programação para o seu destino."
+      "O óleo APF fornecido pela Nuxem possui um documento de análise disponível nesta página. A tabela apresenta os resultados da amostra identificada como Óleo APF, de 1 litro, incluindo viscosidade, massa específica, ponto de fulgor e poder calorífico.",
+      "Esses resultados ajudam a avaliar bombeamento, armazenamento e queima. A viscosidade foi medida a 60 °C; esse valor não deve ser interpretado como viscosidade à temperatura ambiente nem como garantia de uso sem aquecimento.",
+      "A aplicação em caldeiras, fornos e usinas de asfalto depende dos limites do equipamento e dos requisitos da instalação. A Nuxem atende SP, MG e PR; informe o consumo, o volume e o endereço de entrega para consultar as condições de fornecimento."
     ],
-    "criterio": "Ponto de fluidez, curva de viscosidade e necessidade de aquecimento.",
+    "criterio": "Resultados da amostra analisada, viscosidade e compatibilidade com a instalação.",
     "faq": [
       {
-        "p": "APF é sempre mais fluido que BPF?",
-        "r": "Não é possível estabelecer essa comparação pela sigla. Compare os valores de viscosidade na mesma temperatura e os pontos de fluidez das duas propostas."
+        "p": "Os valores da tabela valem para qualquer entrega?",
+        "r": "A tabela reproduz resultados de uma amostra de 1 litro. Para a compra, confirme a ficha técnica e os dados do fornecimento; os resultados da amostra não são uma garantia universal de composição."
       },
       {
         "p": "Posso usar APF em uma linha sem aquecimento?",
@@ -128,8 +168,16 @@ export const PRODUTOS = [
         "r": "Envie cidade, volume, combustível atual, modelo do queimador e condições de aquecimento disponíveis. Peça a especificação do produto ofertado para validar a aplicação."
       }
     ],
-    "notaSpecs": "Os itens abaixo orientam a consulta e não constituem certificado de um lote. Solicite a ficha técnica e a ficha de dados de segurança do produto ofertado.",
-    "orientacao": "Informe cidade, volume, consumo estimado, combustível atual e modelo do queimador. Envie também os requisitos de aquecimento e as restrições da instalação. Consulte as <a href=\"/cobertura/\">regiões atendidas</a> e veja <a href=\"/blog/como-preparar-uma-solicitacao-de-cotacao-de-oleo-combustivel-industrial/\">como preparar os dados para uma cotação</a>."
+    "notaSpecs": "Fonte: Laudo de Análise — Óleo APF, Nuxem. Os resultados referem-se exclusivamente à amostra de 1 litro identificada no documento; não são limites garantidos para todos os fornecimentos.",
+    "orientacao": "Informe cidade, volume, consumo estimado, combustível atual e modelo do queimador. Envie também os requisitos de aquecimento e as restrições da instalação. Consulte as <a href=\"/cobertura/\">regiões atendidas</a> e veja <a href=\"/blog/como-preparar-uma-solicitacao-de-cotacao-de-oleo-combustivel-industrial/\">como preparar os dados para uma cotação</a>.",
+    "tituloSpecs": "Resultados da análise do óleo APF",
+    "observacaoSpecs": "O documento não informa data de emissão ou número de lote, nem especifica a base dos percentuais de enxofre e de água e sedimentos. Consulte a documentação correspondente ao fornecimento para confirmar os valores aplicáveis. Os métodos de ensaio estão reproduzidos no PDF original; este laudo não substitui a ficha de dados de segurança.",
+    "documentos": [
+      {
+        "titulo": "Consultar laudo de análise do APF — amostra de 1 litro (PDF)",
+        "url": "/documentos/laudo-oleo-apf.pdf"
+      }
+    ]
   },
   {
     "slug": "oleo-b1",
@@ -141,28 +189,32 @@ export const PRODUTOS = [
     "description": "Óleo combustível B1 para caldeiras e fornos em SP, MG e PR. Consulte especificação, teor de enxofre, viscosidade e entrega. Solicite cotação.",
     "specs": [
       [
-        "Classe solicitada",
-        "OCB1 — confirmar enquadramento na especificação"
+        "Classificação",
+        "OCB1"
       ],
       [
-        "Viscosidade cinemática",
-        "Solicitar valor em mm²/s (cSt) e temperatura do ensaio"
-      ],
-      [
-        "Poder calorífico",
-        "Solicitar PCS ou PCI em kcal/kg ou MJ/kg, identificando a base usada"
+        "Viscosidade cinemática a 60 °C",
+        "Máximo 620 mm²/s (cSt)"
       ],
       [
         "Teor de enxofre",
-        "Confirmar percentual em massa na especificação do produto cotado"
+        "Máximo 1,0% em massa"
       ],
       [
-        "Ponto de fluidez e ponto de fulgor",
-        "Consultar os valores em °C e as condições de manuseio na documentação"
+        "Água e sedimentos",
+        "Máximo 2,0% em volume"
       ],
       [
-        "Densidade",
-        "Confirmar valor e temperatura de referência para converter litros em massa"
+        "Ponto de fulgor",
+        "Mínimo 66 °C"
+      ],
+      [
+        "Massa específica a 20 °C",
+        "Valor a informar na documentação do fornecimento"
+      ],
+      [
+        "Poder calorífico",
+        "Solicitar PCS ou PCI em kcal/kg ou MJ/kg"
       ]
     ],
     "aplicacoes": "Caldeiras, fornos e outros processos térmicos industriais, mediante avaliação de compatibilidade e dos requisitos da instalação.",
@@ -187,8 +239,28 @@ export const PRODUTOS = [
         "r": "Não devem ser tratados como uma especificação idêntica. B1 identifica uma classe de óleo combustível; a denominação BTE exige conferir a ficha e a identificação do produto oferecido."
       }
     ],
-    "notaSpecs": "Os itens abaixo orientam a consulta e não constituem certificado de um lote. Solicite a ficha técnica e a ficha de dados de segurança do produto ofertado.",
-    "orientacao": "Informe cidade, volume, consumo estimado, combustível atual e modelo do queimador. Envie também os requisitos de aquecimento e as restrições da instalação. Consulte as <a href=\"/cobertura/\">regiões atendidas</a> e veja <a href=\"/blog/como-preparar-uma-solicitacao-de-cotacao-de-oleo-combustivel-industrial/\">como preparar os dados para uma cotação</a>."
+    "notaSpecs": "Limites da Tabela 1 da Resolução ANP nº 899/2022 para a classe OCB1. São requisitos da classe, não resultados de análise de um lote. O manual técnico da Petrobras complementa as orientações de aplicação e manuseio.",
+    "orientacao": "Informe cidade, volume, consumo estimado, combustível atual e modelo do queimador. Envie também os requisitos de aquecimento e as restrições da instalação. Consulte as <a href=\"/cobertura/\">regiões atendidas</a> e veja <a href=\"/blog/como-preparar-uma-solicitacao-de-cotacao-de-oleo-combustivel-industrial/\">como preparar os dados para uma cotação</a>.",
+    "tituloSpecs": "Limites de referência da classe OCB1",
+    "observacaoSpecs": "A seleção também depende das exigências ambientais da localidade e da instalação. Confirme os resultados do produto cotado, a ficha técnica e a ficha de dados de segurança. O manual Petrobras é a versão 1.4, de 15/01/2019; a referência regulatória dos limites acima é a Resolução ANP nº 899/2022.",
+    "documentos": [
+      {
+        "titulo": "ANP — classificação e regulamentação dos óleos combustíveis",
+        "url": "https://www.gov.br/anp/pt-br/assuntos/producao-de-derivados-de-petroleo-e-processamento-de-gas-natural/producao-de-derivados-de-petroleo-e-processamento-de-gas-natural/oleo-combustivel"
+      },
+      {
+        "titulo": "ANP — limites das classes OCA1, OCA2, OCB1 e OCB2",
+        "url": "https://www.gov.br/anp/pt-br/acesso-a-informacao/glossario/o"
+      },
+      {
+        "titulo": "Resolução ANP nº 899/2022 — anexo, Tabela 1 (DOU, 23/11/2022, página 64)",
+        "url": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=23%2F11%2F2022&jornal=515&pagina=64"
+      },
+      {
+        "titulo": "Petrobras — Manual técnico de óleo combustível (versão 1.4, 15/01/2019, PDF)",
+        "url": "https://petrobras.com.br/documents/2677942/3190768/manual-tecnico-oleo-combustivel-assistencia-tecnica-petrobras.pdf/7ff0d6b9-3f9f-95f6-2e57-6c6730e851ce?download=true&t=1691773221000&version=1.0"
+      }
+    ]
   },
   {
     "slug": "oleo-a1",
@@ -200,28 +272,32 @@ export const PRODUTOS = [
     "description": "Consulte óleo combustível A1 para caldeiras, fornos e usinas de asfalto em SP, MG e PR. Avalie viscosidade, enxofre e custo entregue. Peça cotação.",
     "specs": [
       [
-        "Classe solicitada",
-        "OCA1 — confirmar enquadramento na especificação"
+        "Classificação",
+        "OCA1"
       ],
       [
-        "Viscosidade cinemática",
-        "Solicitar valor em mm²/s (cSt) e temperatura do ensaio"
-      ],
-      [
-        "Poder calorífico",
-        "Solicitar PCS ou PCI em kcal/kg ou MJ/kg, identificando a base usada"
+        "Viscosidade cinemática a 60 °C",
+        "Máximo 620 mm²/s (cSt)"
       ],
       [
         "Teor de enxofre",
-        "Confirmar percentual em massa na especificação do produto cotado"
+        "Máximo 2,0% em massa"
       ],
       [
-        "Ponto de fluidez e ponto de fulgor",
-        "Consultar os valores em °C e as condições de manuseio na documentação"
+        "Água e sedimentos",
+        "Máximo 2,0% em volume"
       ],
       [
-        "Densidade",
-        "Confirmar valor e temperatura de referência para converter litros em massa"
+        "Ponto de fulgor",
+        "Mínimo 66 °C"
+      ],
+      [
+        "Massa específica a 20 °C",
+        "Valor a informar na documentação do fornecimento"
+      ],
+      [
+        "Poder calorífico",
+        "Solicitar PCS ou PCI em kcal/kg ou MJ/kg"
       ]
     ],
     "aplicacoes": "Caldeiras, fornos e outros processos térmicos industriais, mediante avaliação de compatibilidade e dos requisitos da instalação.",
@@ -246,8 +322,28 @@ export const PRODUTOS = [
         "r": "Não necessariamente. Densidade, poder calorífico, rendimento, aquecimento e manutenção influenciam o custo por energia útil. Compare o custo entregue e o desempenho no processo."
       }
     ],
-    "notaSpecs": "Os itens abaixo orientam a consulta e não constituem certificado de um lote. Solicite a ficha técnica e a ficha de dados de segurança do produto ofertado.",
-    "orientacao": "Informe cidade, volume, consumo estimado, combustível atual e modelo do queimador. Envie também os requisitos de aquecimento e as restrições da instalação. Consulte as <a href=\"/cobertura/\">regiões atendidas</a> e veja <a href=\"/blog/como-preparar-uma-solicitacao-de-cotacao-de-oleo-combustivel-industrial/\">como preparar os dados para uma cotação</a>."
+    "notaSpecs": "Limites da Tabela 1 da Resolução ANP nº 899/2022 para a classe OCA1. São requisitos da classe, não resultados de análise de um lote. O manual técnico da Petrobras complementa as orientações de aplicação e manuseio.",
+    "orientacao": "Informe cidade, volume, consumo estimado, combustível atual e modelo do queimador. Envie também os requisitos de aquecimento e as restrições da instalação. Consulte as <a href=\"/cobertura/\">regiões atendidas</a> e veja <a href=\"/blog/como-preparar-uma-solicitacao-de-cotacao-de-oleo-combustivel-industrial/\">como preparar os dados para uma cotação</a>.",
+    "tituloSpecs": "Limites de referência da classe OCA1",
+    "observacaoSpecs": "A seleção também depende das exigências ambientais da localidade e da instalação. Confirme os resultados do produto cotado, a ficha técnica e a ficha de dados de segurança. O manual Petrobras é a versão 1.4, de 15/01/2019; a referência regulatória dos limites acima é a Resolução ANP nº 899/2022.",
+    "documentos": [
+      {
+        "titulo": "ANP — classificação e regulamentação dos óleos combustíveis",
+        "url": "https://www.gov.br/anp/pt-br/assuntos/producao-de-derivados-de-petroleo-e-processamento-de-gas-natural/producao-de-derivados-de-petroleo-e-processamento-de-gas-natural/oleo-combustivel"
+      },
+      {
+        "titulo": "ANP — limites das classes OCA1, OCA2, OCB1 e OCB2",
+        "url": "https://www.gov.br/anp/pt-br/acesso-a-informacao/glossario/o"
+      },
+      {
+        "titulo": "Resolução ANP nº 899/2022 — anexo, Tabela 1 (DOU, 23/11/2022, página 64)",
+        "url": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=23%2F11%2F2022&jornal=515&pagina=64"
+      },
+      {
+        "titulo": "Petrobras — Manual técnico de óleo combustível (versão 1.4, 15/01/2019, PDF)",
+        "url": "https://petrobras.com.br/documents/2677942/3190768/manual-tecnico-oleo-combustivel-assistencia-tecnica-petrobras.pdf/7ff0d6b9-3f9f-95f6-2e57-6c6730e851ce?download=true&t=1691773221000&version=1.0"
+      }
+    ]
   },
   {
     "slug": "oleo-de-xisto",
@@ -259,24 +355,28 @@ export const PRODUTOS = [
     "description": "Fornecimento de óleo de xisto OTE para caldeiras, fornos e usinas de asfalto em SP, MG e PR. Consulte especificações e solicite cotação.",
     "specs": [
       [
-        "Viscosidade cinemática",
-        "Solicitar valor em mm²/s (cSt) e temperatura do ensaio"
+        "Viscosidade a 60 °C — ASTM D445",
+        "Máximo 48,0 cSt"
       ],
       [
-        "Poder calorífico",
-        "Solicitar PCS ou PCI em kcal/kg ou MJ/kg, identificando a base usada"
+        "Ponto de fulgor — ASTM D93",
+        "Mínimo 66,0 °C"
       ],
       [
-        "Teor de enxofre",
-        "Confirmar percentual em massa na especificação do produto cotado"
+        "Ponto de fluidez — ABNT NBR 11349",
+        "Máximo 9,0 °C"
       ],
       [
-        "Ponto de fluidez e ponto de fulgor",
-        "Consultar os valores em °C e as condições de manuseio na documentação"
+        "Enxofre total — ASTM D5453",
+        "Máximo 1,0% em massa"
       ],
       [
-        "Densidade",
-        "Confirmar valor e temperatura de referência para converter litros em massa"
+        "Densidade relativa a 20/4 °C — ASTM D4052",
+        "0,97 (adimensional)"
+      ],
+      [
+        "Poder calorífico superior (PCS) — ASTM D240",
+        "10.170 kcal/kg"
       ]
     ],
     "aplicacoes": "Caldeiras, fornos e outros processos térmicos industriais, mediante avaliação de compatibilidade e dos requisitos da instalação.",
@@ -301,7 +401,19 @@ export const PRODUTOS = [
         "r": "Converta as propostas para a mesma base de massa e energia e inclua frete, rendimento e custos de adaptação. Registre o consumo por tonelada produzida ou de vapor em condições comparáveis."
       }
     ],
-    "notaSpecs": "Os itens abaixo orientam a consulta e não constituem certificado de um lote. Solicite a ficha técnica e a ficha de dados de segurança do produto ofertado."
+    "notaSpecs": "Dados publicados no catálogo oficial da Greca para o OTE. Os limites máximos e mínimos estão identificados abaixo; densidade relativa e PCS são valores publicados sem indicação de limite. Confirme a documentação do produto cotado.",
+    "tituloSpecs": "Especificações de referência — OTE Greca",
+    "observacaoSpecs": "Referência técnica do catálogo, não um laudo de lote da Nuxem. A densidade relativa é adimensional e não deve ser apresentada como massa específica em kg/m³. Solicite ficha técnica e ficha de dados de segurança para definir as condições de manuseio.",
+    "documentos": [
+      {
+        "titulo": "Greca — catálogo oficial, especificações do OTE na página 34 (PDF)",
+        "url": "https://www.grupogreca.com.br/wp-content/uploads/2024/05/catalogo-produtos-greca-asfaltos-web.pdf"
+      },
+      {
+        "titulo": "Greca — página oficial do OTE",
+        "url": "https://www.grupogreca.com.br/produto/ote/"
+      }
+    ]
   },
   {
     "slug": "oleo-bte",
@@ -313,24 +425,20 @@ export const PRODUTOS = [
     "description": "Consulte óleo BTE para caldeiras e fornos em SP, MG e PR. Compare teor de enxofre, viscosidade, documentação e custo entregue. Solicite cotação.",
     "specs": [
       [
-        "Viscosidade cinemática",
-        "Solicitar valor em mm²/s (cSt) e temperatura do ensaio"
-      ],
-      [
-        "Poder calorífico",
-        "Solicitar PCS ou PCI em kcal/kg ou MJ/kg, identificando a base usada"
+        "Viscosidade",
+        "10 a 90 mm²/s — temperatura de ensaio não informada no portfólio"
       ],
       [
         "Teor de enxofre",
-        "Confirmar percentual em massa na especificação do produto cotado"
+        "0,4% em massa — valor publicado no portfólio"
       ],
       [
-        "Ponto de fluidez e ponto de fulgor",
-        "Consultar os valores em °C e as condições de manuseio na documentação"
+        "Ponto de fulgor",
+        "Mínimo 66 °C"
       ],
       [
-        "Densidade",
-        "Confirmar valor e temperatura de referência para converter litros em massa"
+        "Descrição do produto",
+        "Mistura principalmente de hidrocarbonetos aromáticos; líquido viscoso escuro"
       ]
     ],
     "aplicacoes": "Caldeiras, fornos e outros processos térmicos industriais, mediante avaliação de compatibilidade e dos requisitos da instalação.",
@@ -354,8 +462,20 @@ export const PRODUTOS = [
         "r": "Compare dados documentados, compatibilidade do tanque, condições de bombeamento e atomização. Meça consumo e emissões em um teste planejado antes de concluir sobre o benefício."
       }
     ],
-    "notaSpecs": "Os itens abaixo orientam a consulta e não constituem certificado de um lote. Solicite a ficha técnica e a ficha de dados de segurança do produto ofertado.",
-    "orientacao": "Informe cidade, volume, consumo estimado, combustível atual e modelo do queimador. Envie também os requisitos de aquecimento e as restrições da instalação. Consulte as <a href=\"/cobertura/\">regiões atendidas</a> e veja <a href=\"/blog/como-preparar-uma-solicitacao-de-cotacao-de-oleo-combustivel-industrial/\">como preparar os dados para uma cotação</a>."
+    "notaSpecs": "Valores publicados no portfólio oficial de combustíveis da Braskem. A tabela do fabricante informa o ponto de fulgor como mínimo; não identifica o teor de enxofre como limite máximo nem apresenta a temperatura de ensaio da viscosidade.",
+    "orientacao": "Informe cidade, volume, consumo estimado, combustível atual e modelo do queimador. Envie também os requisitos de aquecimento e as restrições da instalação. Consulte as <a href=\"/cobertura/\">regiões atendidas</a> e veja <a href=\"/blog/como-preparar-uma-solicitacao-de-cotacao-de-oleo-combustivel-industrial/\">como preparar os dados para uma cotação</a>.",
+    "tituloSpecs": "Dados de referência — óleo BTE Braskem",
+    "observacaoSpecs": "Confirme a especificação comercial do BTE ofertado, inclusive temperatura de ensaio, densidade e PCS ou PCI, antes de comparar propostas. O portfólio não substitui o certificado do fornecimento nem a ficha de dados de segurança.",
+    "documentos": [
+      {
+        "titulo": "Braskem — portfólio de combustíveis, Óleo BTE na página 4 (PDF)",
+        "url": "https://www.braskem.com.br/portal/Principal/arquivos/listas/13478/thumb.pdf"
+      },
+      {
+        "titulo": "Braskem — óleo combustível BTE e ficha de segurança",
+        "url": "https://www.braskem.com.br/usa/product-search?p=483"
+      }
+    ]
   },
   {
     "slug": "oleos-alternativos",
@@ -408,8 +528,24 @@ export const PRODUTOS = [
         "r": "Registre uma referência de consumo e produção, inclua os custos de adaptação e compare testes em condições equivalentes. O preço por litro, isoladamente, não comprova economia."
       }
     ],
-    "notaSpecs": "Os itens abaixo orientam a consulta e não constituem certificado de um lote. Solicite a ficha técnica e a ficha de dados de segurança do produto ofertado.",
-    "orientacao": "Informe cidade, volume, consumo estimado, combustível atual e modelo do queimador. Envie também os requisitos de aquecimento e as restrições da instalação. Consulte as <a href=\"/cobertura/\">regiões atendidas</a> e veja <a href=\"/blog/como-preparar-uma-solicitacao-de-cotacao-de-oleo-combustivel-industrial/\">como preparar os dados para uma cotação</a>."
+    "notaSpecs": "Esta página reúne opções de combustíveis, sem representar uma formulação única. A documentação deve corresponder ao produto identificado na proposta. Consulte as referências específicas de APF, OTE e BTE nas páginas abaixo.",
+    "orientacao": "Informe cidade, volume, consumo estimado, combustível atual e modelo do queimador. Envie também os requisitos de aquecimento e as restrições da instalação. Consulte as <a href=\"/cobertura/\">regiões atendidas</a> e veja <a href=\"/blog/como-preparar-uma-solicitacao-de-cotacao-de-oleo-combustivel-industrial/\">como preparar os dados para uma cotação</a>.",
+    "tituloSpecs": "Documentação para comparar as alternativas",
+    "documentos": [
+      {
+        "titulo": "APF — resultados da amostra e laudo disponível",
+        "url": "/produtos/oleo-apf/"
+      },
+      {
+        "titulo": "OTE — especificações publicadas pela Greca",
+        "url": "/produtos/oleo-de-xisto/"
+      },
+      {
+        "titulo": "BTE — dados do portfólio Braskem",
+        "url": "/produtos/oleo-bte/"
+      }
+    ],
+    "observacaoSpecs": "Não existe uma ficha única para todos os óleos alternativos. Identifique o produto e confirme a ficha técnica, a ficha de dados de segurança e a compatibilidade com a instalação na cotação."
   }
 ];
 

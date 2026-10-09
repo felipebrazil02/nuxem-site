@@ -21,6 +21,8 @@ test('SEO output stays consistent across clean and incremental builds, including
     const sitemapURLs = () => [...read('sitemap.xml').matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
     build();
     const cleanURLs = sitemapURLs();
+    const apfDocument = readFileSync(join(repository, 'src/documentos/laudo-oleo-apf.pdf'));
+    assert.deepEqual(readFileSync(join(root, 'dist/documentos/laudo-oleo-apf.pdf')), apfDocument);
     const consumptionPath = 'blog/como-calcular-consumo-de-oleo-combustivel-em-caldeiras/index.html';
     const article = JSON.parse(read(consumptionPath).match(/<script type="application\/ld\+json">([^]*?)<\/script>/)[1]);
     assert.equal(article.datePublished, '2026-07-16');
@@ -48,6 +50,7 @@ test('SEO output stays consistent across clean and incremental builds, including
     writeFileSync(join(legacyDir, 'index.html'), '<html><head><title>Legado | Blog Nuxem</title></head><body><h1>Legado</h1></body></html>');
     build();
     const incrementalURLs = sitemapURLs();
+    assert.deepEqual(readFileSync(join(root, 'dist/documentos/laudo-oleo-apf.pdf')), apfDocument);
     assertBlogGroups();
     assert.match(read('blog/index.html'), /href="\/blog\/legacy-test\/"/);
     assert.match(read('blog/index.html'), /Guias para escolher e comprar combustível/);
