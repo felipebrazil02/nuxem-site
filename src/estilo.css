@@ -223,3 +223,5 @@ form{max-width:none;grid-template-columns:1fr 1fr;gap:23px;padding:30px;backgrou
 
 [hidden]{display:none!important}
 [id]{scroll-margin-top:112px}
+
+.conteudo a.btn-laranja{color:#132d38}
