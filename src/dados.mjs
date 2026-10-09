@@ -193,7 +193,7 @@ export const SOLUCOES = [
       'Fornecemos óleo BPF e alternativas de viscosidades diferentes, com produção sob demanda e padrão constante. Nossa equipe apoia a especificação correta para o seu queimador e o seu regime de produção, em qualquer região do estado de São Paulo.',
     ],
     produtosRelacionados: ['oleo-bpf', 'oleos-alternativos', 'oleo-a1'],
-    artigosRelacionados: ['oleo-combustivel-para-usina-de-asfalto', 'logistica-de-combustivel-industrial-na-pratica', 'melhores-praticas-para-abastecimento-industrial-continuo'],
+    artigosRelacionados: ['oleo-de-xisto-para-usinas-de-asfalto', 'logistica-de-abastecimento-de-oleo-bpf-entre-sp-mg-e-pr', 'como-programar-o-abastecimento-de-oleo-bpf-para-evitar-paradas'],
   },
   {
     slug: 'caldeiras',
@@ -209,7 +209,7 @@ export const SOLUCOES = [
       'Com frota própria e atendimento 24 horas, garantimos o abastecimento contínuo que uma caldeira exige — em todo o estado de São Paulo.',
     ],
     produtosRelacionados: ['oleo-bpf', 'oleo-apf', 'oleo-b1', 'oleo-bte'],
-    artigosRelacionados: ['como-especificar-oleo-para-caldeira', 'melhores-combustiveis-para-caldeiras-industriais', 'principais-causas-de-instabilidade-termica'],
+    artigosRelacionados: ['como-especificar-o-oleo-combustivel-certo-para-seu-queimador', 'como-calcular-consumo-de-oleo-combustivel-em-caldeiras', 'impacto-da-viscosidade-do-oleo-bpf-na-eficiencia-da-queima'],
   },
   {
     slug: 'fundicoes',
@@ -225,7 +225,7 @@ export const SOLUCOES = [
       'Nosso atendimento 24 horas e a frota própria garantem que o forno não pare por falta de combustível. Atendemos fundições em todo o estado de São Paulo, com suporte técnico na especificação.',
     ],
     produtosRelacionados: ['oleo-bpf', 'oleos-alternativos'],
-    artigosRelacionados: ['oleo-pesado-para-geracao-termica-industrial', 'como-reduzir-custo-termico-industrial', 'sinais-de-combustivel-inadequado-no-processo'],
+    artigosRelacionados: ['compatibilidade-entre-lotes-de-oleo-bpf-como-evitar-borra-na-mistura', 'reducao-de-custos-com-substituicao-de-oleo-combustivel', 'como-especificar-o-oleo-combustivel-certo-para-seu-queimador'],
   },
 ];
 
