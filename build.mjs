@@ -272,7 +272,7 @@ salvar('produtos', layout({
 </div></div>
 <section><div class="container">
   <div class="grid grid-3">
-    ${PRODUTOS.map(p => `<div class="card card-foto"><img src="/imagens/${p.imagem}" alt="${p.imagemAlt}" loading="lazy"><h2>${p.nome}</h2><p>${p.resumo}</p><a class="saiba" href="/produtos/${p.slug}/">Conhecer ${p.nome} →</a></div>`).join('\n    ')}
+    ${PRODUTOS.map(p => `<div class="card card-foto card-produto"><img src="/imagens/${p.imagem}" alt="${p.imagemAlt}" loading="lazy"><h2>${p.nome}</h2><p>${p.resumo}</p><a class="saiba" href="/produtos/${p.slug}/">Conhecer ${p.nome} →</a></div>`).join('\n    ')}
   </div>
 </div></section>
 <section class="alt"><div class="container"><div class="conteudo">
@@ -297,7 +297,6 @@ for (const p of PRODUTOS) {
       '@type': 'Product',
       name: p.nome,
       description: p.description,
-      image: `${EMPRESA.dominio}/imagens/${p.imagem}`,
       brand: { '@type': 'Brand', name: 'Nuxem' },
       category: 'Combustível industrial',
       sku: p.slug,
@@ -310,7 +309,6 @@ for (const p of PRODUTOS) {
   <p class="resumo">${p.resumo}</p>
 </div></div>
 <div class="container"><div class="conteudo">
-  <img class="foto-pagina" src="/imagens/${p.imagem}" alt="${p.imagemAlt}">
   ${p.corpo.map(par => `<p>${par}</p>`).join('\n  ')}
   <h2>Dados para especificação</h2>
   <p>${p.notaSpecs}</p>
