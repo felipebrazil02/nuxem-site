@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtempSync, mkdirSync, cpSync, readFileSync, writeFileSync, existsSync, rmSync } from 'node:fs';
+import { mkdtempSync, mkdirSync, cpSync, readFileSync, writeFileSync, existsSync, rmSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { execFileSync } from 'node:child_process';
@@ -44,14 +44,34 @@ test('SEO output stays consistent across clean and incremental builds, including
     }
     assert.match(read('produtos/oleo-bpf/index.html'), /10\.400 kcal\/kg/);
     assert.doesNotMatch(read('produtos/oleo-de-xisto/index.html'), /dispensando totalmente|dispensa pré-aquecimento/);
-    const rules = read('_redirects').trim().split('\n').filter(line => line.startsWith('/blog/'));
-    assert.equal(rules.length, 8);
+    const rules = read('_redirects').trim().split('\n');
+    assert.ok(rules.length > 8);
+    assert.equal(new Set(rules.map(rule => rule.split(' ')[0])).size, rules.length);
+    assert.doesNotMatch(read('_redirects'), /\/post\/\*/);
+    assert.ok(rules.includes('/oleo-bpf /produtos/oleo-bpf/ 301'));
+    assert.ok(rules.includes('/post/como-especificar-%C3%B3leo-para-caldeira /blog/como-especificar-o-oleo-combustivel-certo-para-seu-queimador/ 301'));
+    assert.ok(rules.includes('/blog/como-validar-a-viscosidade-do-combustivel/ /blog/impacto-da-viscosidade-do-oleo-bpf-na-eficiencia-da-queima/ 301'));
+    assert.doesNotMatch(read('solucoes/caldeiras/index.html'), /href="\/blog\/como-especificar-oleo-para-caldeira\//);
     for (const rule of rules) {
       const [from, to, status] = rule.split(' ');
       assert.notEqual(from, to);
+      assert.notEqual(to, '/blog/');
       assert.equal(status, '301');
       assert.ok(existsSync(join(root, 'dist', to, 'index.html')), rule);
     }
+    function checkInternalLinks(directory) {
+      for (const entry of readdirSync(directory, { withFileTypes: true })) {
+        const file = join(directory, entry.name);
+        if (entry.isDirectory()) checkInternalLinks(file);
+        else if (entry.name.endsWith('.html')) {
+          const html = readFileSync(file, 'utf8');
+          for (const match of html.matchAll(/href="(\/[^"?#]*)"/g)) {
+            assert.ok(existsSync(join(root, 'dist', match[1])), `${file}: ${match[1]}`);
+          }
+        }
+      }
+    }
+    checkInternalLinks(join(root, 'dist'));
     build();
     assert.deepEqual(sitemapURLs(), incrementalURLs);
   } finally {

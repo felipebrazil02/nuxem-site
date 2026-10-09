@@ -4,6 +4,7 @@ import { readdirSync, readFileSync, writeFileSync, mkdirSync, cpSync, rmSync, ex
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { EMPRESA, PRODUTOS, SOLUCOES, HOME, CONTATO, PILAR, COBERTURA } from './src/dados.mjs';
+import { redirecionamentosLegados, destinoLegado } from './src/redirecionamentos.mjs';
 
 const raiz = dirname(fileURLToPath(import.meta.url));
 const dirBlog = join(raiz, 'conteudo', 'blog');
@@ -580,24 +581,19 @@ salvar('cobertura', layout({
 </div></section>`}));
 
 // ---------- redirecionamentos (links antigos do Wix → páginas novas) ----------
-const redirects = posts
-  .filter(p => p.slugOriginal)
-  .map(p => `/post/${encodeURI(p.slugOriginal)} /blog/${p.slug}/ 301`)
-  .join('\n');
-const redirecionamentosLegados = [
-  ['/blog/oleo-de-xisto-analise-comparativa/', '/blog/comparacao-tecnica-oleo-de-xisto-bte-bpf-e-oleos-alternativos/'],
-  ['/blog/oleo-de-xisto-propriedades-e-aplicacoes-industriais/', '/produtos/oleo-de-xisto/'],
-  ['/blog/oleo-combustivel-bpf-especificacoes-e-aplicacoes-industriais/', '/guia-oleo-bpf/'],
-  ['/blog/oleo-bpf-e-inflamavel-entenda-o-risco/', '/guia-oleo-bpf/faq/'],
-];
-writeFileSync(join(dist, '_redirects'), [
-  ...redirecionamentosLegados.flatMap(([origem, destino]) => [
-    `${origem} ${destino} 301`,
-    `${origem.slice(0, -1)} ${destino} 301`,
-  ]),
-  redirects,
-  '/post/* /blog/ 301',
-].filter(Boolean).join('\n') + '\n', 'utf8');
+const mapaRedirects = new Map(redirecionamentosLegados);
+for (const p of posts.filter(p => p.slugOriginal)) {
+  mapaRedirects.set(`/post/${p.slugOriginal.replace(/\/$/, '')}/`, `/blog/${p.slug}/`);
+}
+const regras = [];
+for (const [origem, destino] of mapaRedirects) {
+  if (existsSync(join(dist, origem, 'index.html'))) continue;
+  if (!existsSync(join(dist, destino, 'index.html'))) throw new Error(`Destino de redirecionamento ausente: ${destino}`);
+  for (const variante of [origem, origem.slice(0, -1)]) {
+    regras.push(`${encodeURI(variante)} ${destino} 301`);
+  }
+}
+writeFileSync(join(dist, '_redirects'), [...new Set(regras)].join('\n') + '\n', 'utf8');
 
 // ---------- sitemap e robots ----------
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -705,3 +701,20 @@ ${paginasUnicas.map(p => `  <url><loc>${EMPRESA.dominio}${p}</loc></url>`).join(
   writeFileSync(join(dist, 'sitemap.xml'), sitemap, 'utf8');
   console.log(`  + ${todosSlugs.length - arquivosBlog.length} posts restaurados do backup`);
 }
+
+// Links internos apontam ao conteúdo final, inclusive nos HTMLs legados preservados.
+function atualizarLinksLegados(diretorio) {
+  for (const entry of readdirSync(diretorio, { withFileTypes: true })) {
+    const arquivo = join(diretorio, entry.name);
+    if (entry.isDirectory()) atualizarLinksLegados(arquivo);
+    else if (entry.name.endsWith('.html')) {
+      const html = readFileSync(arquivo, 'utf8');
+      const atualizado = html.replace(/href="(\/(?:blog|post)\/[^"?#]+)"/g, (match, url) => {
+        if (existsSync(join(dist, url, 'index.html'))) return match;
+        return `href="${destinoLegado(url)}"`;
+      });
+      if (atualizado !== html) writeFileSync(arquivo, atualizado, 'utf8');
+    }
+  }
+}
+atualizarLinksLegados(dist);
