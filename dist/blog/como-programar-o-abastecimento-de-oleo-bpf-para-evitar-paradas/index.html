@@ -18,6 +18,7 @@
 <link rel="icon" type="image/png" href="/imagens/icone-nuxem.png">
 
 <link rel="stylesheet" href="/estilo.css">
+<script src="/interface.js" defer></script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0XF8SXJ4B"></script>
 <script>
@@ -28,12 +29,13 @@ gtag('config', 'G-H0XF8SXJ4B');
 </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Abastecimento de óleo BPF: estoque, autonomia e ponto de pedido","description":"Calcule o ponto de pedido de BPF com consumo, prazo de reposição e reserva definida pela planta. Veja um exemplo e os cuidados no recebimento.","datePublished":"2026-07-25","dateModified":"2026-10-09","inLanguage":"pt-BR","author":{"@type":"Organization","name":"Nuxem"},"publisher":{"@type":"Organization","name":"Nuxem","logo":{"@type":"ImageObject","url":"https://nuxemoil.com.br/imagens/icone-nuxem.png"}},"mainEntityOfPage":"https://nuxemoil.com.br/blog/como-programar-o-abastecimento-de-oleo-bpf-para-evitar-paradas/"}</script>
 </head>
-<body>
+<body class="site-inner">
+<a class="skip-link" href="#principal">Ir ao conteúdo</a>
 <header>
   <div class="header-inner">
     <a class="logo" href="/"><img src="/imagens/logo-chama.png" alt="Nuxem" height="58"></a>
-    <button class="menu-toggle" aria-label="Abrir menu" onclick="document.querySelector('nav').classList.toggle('aberto')">☰</button>
-    <nav>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">☰</button>
+    <nav id="menu-principal" aria-label="Menu principal">
       <a href="/">Início</a>
       <a href="/produtos/">Produtos</a>
       <a href="/solucoes/">Soluções</a>
@@ -43,9 +45,9 @@ gtag('config', 'G-H0XF8SXJ4B');
     </nav>
   </div>
 </header>
-<main>
+<main id="principal">
 
-<div class="pagina-topo"><div class="container">
+<div class="pagina-topo"><div class="container"><div class="breadcrumb"><a href="/">Início</a><span>/</span>CONHECIMENTO NUXEM</div>
   <h1>Abastecimento de óleo BPF: estoque, autonomia e ponto de pedido</h1>
 </div></div>
 <div class="container"><div class="conteudo">

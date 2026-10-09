@@ -18,6 +18,7 @@
 <link rel="icon" type="image/png" href="/imagens/icone-nuxem.png">
 
 <link rel="stylesheet" href="/estilo.css">
+<script src="/interface.js" defer></script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0XF8SXJ4B"></script>
 <script>
@@ -28,12 +29,13 @@ gtag('config', 'G-H0XF8SXJ4B');
 </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Nuxem","url":"https://nuxemoil.com.br/","logo":"https://nuxemoil.com.br/imagens/icone-nuxem.png","telephone":"+55-11-91501-1527","email":"contato@nuxemoil.com","address":{"@type":"PostalAddress","streetAddress":"Av Brasília, 2242","addressLocality":"Salto","addressRegion":"SP","postalCode":"13327-896","addressCountry":"BR"},"vatID":"47.626.641/0001-10"}</script>
 </head>
-<body>
+<body class="site-inner">
+<a class="skip-link" href="#principal">Ir ao conteúdo</a>
 <header>
   <div class="header-inner">
     <a class="logo" href="/"><img src="/imagens/logo-chama.png" alt="Nuxem" height="58"></a>
-    <button class="menu-toggle" aria-label="Abrir menu" onclick="document.querySelector('nav').classList.toggle('aberto')">☰</button>
-    <nav>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">☰</button>
+    <nav id="menu-principal" aria-label="Menu principal">
       <a href="/">Início</a>
       <a href="/produtos/">Produtos</a>
       <a href="/solucoes/">Soluções</a>
@@ -43,9 +45,9 @@ gtag('config', 'G-H0XF8SXJ4B');
     </nav>
   </div>
 </header>
-<main>
+<main id="principal">
 
-<div class="pagina-topo"><div class="container">
+<div class="pagina-topo"><div class="container"><div class="breadcrumb"><a href="/">Início</a><span>/</span>VAMOS CONVERSAR</div>
   <h1>Fale com a Nuxem</h1>
   <p class="resumo">Atendimento 24 horas. Resposta rápida pelo WhatsApp.</p>
 </div></div>
@@ -76,7 +78,7 @@ gtag('config', 'G-H0XF8SXJ4B');
     <p><strong>E-mail:</strong> <a href="mailto:contato@nuxemoil.com">contato@nuxemoil.com</a></p>
     <p><strong>Endereço:</strong> Av Brasília, 2242 - Vila Norma, Salto/SP, CEP 13327-896</p>
     <p><strong>CNPJ:</strong> 47.626.641/0001-10</p>
-</div></div>
+</div></div></div>
 </main>
 <div class="faixa-cta">
   <div class="container">

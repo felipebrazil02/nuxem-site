@@ -18,6 +18,7 @@
 <link rel="icon" type="image/png" href="/imagens/icone-nuxem.png">
 
 <link rel="stylesheet" href="/estilo.css">
+<script src="/interface.js" defer></script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0XF8SXJ4B"></script>
 <script>
@@ -28,12 +29,13 @@ gtag('config', 'G-H0XF8SXJ4B');
 </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"Óleos alternativos","description":"Avalie óleos combustíveis alternativos ao BPF para sua operação em SP, MG e PR. Compare documentação, compatibilidade e custo útil. Consulte a Nuxem.","brand":{"@type":"Brand","name":"Nuxem"},"category":"Combustível industrial","sku":"oleos-alternativos","url":"https://nuxemoil.com.br/produtos/oleos-alternativos/"}</script>
 </head>
-<body>
+<body class="site-product">
+<a class="skip-link" href="#principal">Ir ao conteúdo</a>
 <header>
   <div class="header-inner">
     <a class="logo" href="/"><img src="/imagens/logo-chama.png" alt="Nuxem" height="58"></a>
-    <button class="menu-toggle" aria-label="Abrir menu" onclick="document.querySelector('nav').classList.toggle('aberto')">☰</button>
-    <nav>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">☰</button>
+    <nav id="menu-principal" aria-label="Menu principal">
       <a href="/">Início</a>
       <a href="/produtos/">Produtos</a>
       <a href="/solucoes/">Soluções</a>
@@ -43,13 +45,13 @@ gtag('config', 'G-H0XF8SXJ4B');
     </nav>
   </div>
 </header>
-<main>
+<main id="principal">
 
-<div class="pagina-topo"><div class="container">
+<div class="pagina-topo"><div class="container"><div class="breadcrumb"><a href="/">Início</a><span>/</span>COMBUSTÍVEIS INDUSTRIAIS</div>
   <h1>Óleos alternativos</h1>
   <p class="resumo">Avaliação de combustíveis alternativos ao BPF conforme produto disponível, equipamento e requisitos da operação.</p>
 </div></div>
-<div class="container"><div class="conteudo">
+<div class="container product-layout"><div class="conteudo">
   <p>Óleos alternativos é uma descrição ampla de opções de combustível para processos térmicos. Cada proposta precisa identificar o produto, sua origem, especificação e condições de uso; não há uma composição única ou desempenho automaticamente equivalente ao BPF.</p>
   <p>A seleção começa pelos limites do queimador, do sistema de bombeamento e do armazenamento. Em processos com contato entre gases e produto, é necessário avaliar também os requisitos de qualidade e as restrições específicas da aplicação.</p>
   <p>Para comparar a mudança, inclua preço entregue, poder calorífico, rendimento, adaptações e manutenção. A Nuxem atende SP, MG e PR e pode avaliar o fornecimento conforme a necessidade informada; consulte a documentação da opção proposta.</p>
@@ -72,7 +74,7 @@ gtag('config', 'G-H0XF8SXJ4B');
   <h3>Como comprovar uma economia real?</h3><p>Registre uma referência de consumo e produção, inclua os custos de adaptação e compare testes em condições equivalentes. O preço por litro, isoladamente, não comprova economia.</p>
 <aside class="leituras" aria-label="Guias para escolher e comprar combustível"><h2>Guias para escolher e comprar combustível</h2><ul><li><a href="/blog/comparacao-tecnica-oleo-de-xisto-bte-bpf-e-oleos-alternativos/">Como comparar as opções de combustível</a></li><li><a href="/blog/reducao-de-custos-com-substituicao-de-oleo-combustivel/">Como avaliar custos de substituição</a></li><li><a href="/blog/compatibilidade-entre-lotes-de-oleo-bpf-como-evitar-borra-na-mistura/">Qualidade do BPF e compatibilidade entre lotes</a></li></ul></aside>
   <p><a class="btn btn-laranja" href="https://wa.me/5511915011527?text=Ol%C3%A1!%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20de%20%C3%B3leo%20combust%C3%ADvel.">Solicitar cotação de Óleos alternativos</a></p>
-</div></div>
+</div><aside class="quote-panel"><div class="section-kicker">SUA PRÓXIMA ENTREGA</div><h2>Vamos encontrar a melhor opção?</h2><p>Informe o produto, o volume e sua cidade. Nossa equipe orienta sua cotação.</p><a class="btn btn-laranja" href="/contato/">Solicitar uma cotação ↗</a><a class="panel-link" href="#dados-tecnicos">Consultar dados técnicos ↓</a><hr><div class="panel-detail"><b>Atendimento 24h</b><span>SP, MG e PR · Frota própria</span></div><a class="panel-link" href="/produtos/">← Todos os produtos</a></aside></div>
 </main>
 <div class="faixa-cta">
   <div class="container">

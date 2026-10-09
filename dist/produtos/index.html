@@ -18,6 +18,7 @@
 <link rel="icon" type="image/png" href="/imagens/icone-nuxem.png">
 
 <link rel="stylesheet" href="/estilo.css">
+<script src="/interface.js" defer></script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0XF8SXJ4B"></script>
 <script>
@@ -28,12 +29,13 @@ gtag('config', 'G-H0XF8SXJ4B');
 </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"Combustíveis industriais Nuxem","itemListElement":[{"@type":"ListItem","position":1,"url":"https://nuxemoil.com.br/produtos/oleo-bpf/","name":"Óleo BPF"},{"@type":"ListItem","position":2,"url":"https://nuxemoil.com.br/produtos/oleo-apf/","name":"Óleo APF"},{"@type":"ListItem","position":3,"url":"https://nuxemoil.com.br/produtos/oleo-b1/","name":"Óleo B1 (OC-B1)"},{"@type":"ListItem","position":4,"url":"https://nuxemoil.com.br/produtos/oleo-a1/","name":"Óleo A1 (OC-A1)"},{"@type":"ListItem","position":5,"url":"https://nuxemoil.com.br/produtos/oleo-de-xisto/","name":"Óleo de Xisto (OTE)"},{"@type":"ListItem","position":6,"url":"https://nuxemoil.com.br/produtos/oleo-bte/","name":"Óleo BTE"},{"@type":"ListItem","position":7,"url":"https://nuxemoil.com.br/produtos/oleos-alternativos/","name":"Óleos alternativos"}]}</script>
 </head>
-<body>
+<body class="site-inner">
+<a class="skip-link" href="#principal">Ir ao conteúdo</a>
 <header>
   <div class="header-inner">
     <a class="logo" href="/"><img src="/imagens/logo-chama.png" alt="Nuxem" height="58"></a>
-    <button class="menu-toggle" aria-label="Abrir menu" onclick="document.querySelector('nav').classList.toggle('aberto')">☰</button>
-    <nav>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">☰</button>
+    <nav id="menu-principal" aria-label="Menu principal">
       <a href="/">Início</a>
       <a href="/produtos/" aria-current="page">Produtos</a>
       <a href="/solucoes/">Soluções</a>
@@ -43,9 +45,9 @@ gtag('config', 'G-H0XF8SXJ4B');
     </nav>
   </div>
 </header>
-<main>
+<main id="principal">
 
-<div class="pagina-topo"><div class="container">
+<div class="pagina-topo"><div class="container"><div class="breadcrumb"><a href="/">Início</a><span>/</span>COMBUSTÍVEIS INDUSTRIAIS</div>
   <h1>Combustíveis industriais Nuxem</h1>
   <p class="resumo">Óleo BPF, xisto OTE, APF, A1, B1, BTE e alternativas para processos térmicos. Atendimento em São Paulo, Minas Gerais e Paraná.</p>
 </div></div>

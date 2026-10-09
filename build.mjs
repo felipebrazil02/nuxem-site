@@ -22,6 +22,7 @@ if (existsSync(blogDir)) {
 if (existsSync(dist)) rmSync(dist, { recursive: true });
 mkdirSync(dist, { recursive: true });
 cpSync(join(raiz, 'src', 'estilo.css'), join(dist, 'estilo.css'));
+cpSync(join(raiz, 'src', 'interface.js'), join(dist, 'interface.js'));
 cpSync(join(raiz, 'src', 'imagens'), join(dist, 'imagens'), { recursive: true });
 if (existsSync(join(raiz, 'src', 'documentos'))) cpSync(join(raiz, 'src', 'documentos'), join(dist, 'documentos'), { recursive: true });
 
@@ -106,6 +107,9 @@ function layout({ title, description, caminho, conteudo, ogImage, jsonLd, preloa
     ['/blog/', 'Blog'],
   ];
   const atual = caminho === '.' ? '/' : `/${caminho.replace(/\\/g, '/')}/`;
+  const tipoPagina = caminho === '.' ? 'site-home' : caminho.startsWith('produtos/') ? 'site-product' : 'site-inner';
+  const rotulo = caminho.startsWith('produtos') ? 'COMBUSTÍVEIS INDUSTRIAIS' : caminho.startsWith('blog') ? 'CONHECIMENTO NUXEM' : caminho.startsWith('solucoes') ? 'APLICAÇÕES INDUSTRIAIS' : caminho === 'cobertura' ? 'LOGÍSTICA E FORNECIMENTO' : caminho === 'contato' ? 'VAMOS CONVERSAR' : 'GUIA TÉCNICO';
+  conteudo = conteudo.replace('<div class="pagina-topo"><div class="container">', '<div class="pagina-topo"><div class="container"><div class="breadcrumb"><a href="/">Início</a><span>/</span>' + rotulo + '</div>');
   return `<!DOCTYPE html>
 <html lang="${({pt:'pt-BR',en:'en',es:'es'})[language] || 'pt-BR'}">
 <head>
@@ -126,6 +130,7 @@ ${studioContentHash && /^[0-9a-f]{64}$/.test(studioContentHash) ? `<meta name="s
 <link rel="icon" type="image/png" href="/imagens/icone-nuxem.png">
 ${preloadHero ? '<link rel="preload" as="image" href="/imagens/hero-usina-asfalto.webp">' : ''}
 <link rel="stylesheet" href="/estilo.css">
+<script src="/interface.js" defer></script>
 ${EMPRESA.gaId ? `<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=${EMPRESA.gaId}"></script>
 <script>
@@ -136,18 +141,19 @@ gtag('config', '${EMPRESA.gaId}');
 </script>` : ''}
 ${jsonLd ? `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>` : ''}
 </head>
-<body>
+<body class="${tipoPagina}">
+<a class="skip-link" href="#principal">Ir ao conteúdo</a>
 <header>
   <div class="header-inner">
     <a class="logo" href="/"><img src="/imagens/logo-chama.png" alt="Nuxem" height="58"></a>
-    <button class="menu-toggle" aria-label="Abrir menu" onclick="document.querySelector('nav').classList.toggle('aberto')">☰</button>
-    <nav>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">☰</button>
+    <nav id="menu-principal" aria-label="Menu principal">
       ${nav.map(([h, t]) => `<a href="${h}"${atual === h ? ' aria-current="page"' : ''}>${t}</a>`).join('\n      ')}
       <a href="/contato/" class="cta">Solicitar cotação</a>
     </nav>
   </div>
 </header>
-<main>
+<main id="principal">
 ${conteudo}
 </main>
 <div class="faixa-cta">
@@ -214,30 +220,32 @@ salvar('.', layout({
     vatID: EMPRESA.cnpj,
   },
   conteudo: `
-<div class="hero hero-img"><div class="container">
-  <h1>${HOME.heroTitulo}</h1>
+<section class="site-hero"><div class="container hero-layout"><div class="hero-copy">
+  <div class="section-kicker">ENERGIA PARA A INDÚSTRIA</div>
+  <h1>${HOME.heroTitulo.replace('não parar', '<em>não parar</em>')}</h1>
   <p>${HOME.heroTexto}</p>
   <div class="botoes">
     <a class="btn btn-laranja" href="${ZAP}">Solicitar cotação no WhatsApp</a>
     <a class="btn btn-vazado" href="/produtos/">Conhecer os produtos</a>
   </div>
-</div></div>
+</div><div class="hero-visual"><img src="/imagens/hero-usina-asfalto.webp" alt="Usina de asfalto — imagem ilustrativa de aplicação industrial" fetchpriority="high"><div class="visual-label"><span>CONTINUIDADE OPERACIONAL</span><strong>O combustível certo.<br>No ritmo da sua indústria.</strong></div><div class="photo-caption">Aplicação industrial · imagem ilustrativa</div></div></div></section>
+<div class="trust-band"><div class="container"><div><b>24h</b><span>Atendimento e suporte</span></div><div><b>Frota própria</b><span>Logística de fornecimento</span></div><div><b>SP · MG · PR</b><span>Regiões atendidas</span></div><a href="/cobertura/">Conheça nossa cobertura ↗</a></div></div>
 <section><div class="container">
-  <h2 class="secao">Soluções por segmento</h2>
+  <div class="section-kicker">APLICAÇÕES INDUSTRIAIS</div><h2 class="secao">Soluções por segmento</h2>
   <p class="secao-sub">Cada operação térmica tem uma exigência diferente. Atendemos as três mais críticas da indústria:</p>
   <div class="grid grid-3">
     ${SOLUCOES.map(s => `<div class="card card-foto"><img src="/imagens/${s.imagem}" alt="${s.imagemAlt}" loading="lazy"><h3>${s.nome}</h3><p>${s.resumo}</p><a class="saiba" href="/solucoes/${s.slug}/">Saiba mais →</a></div>`).join('\n    ')}
   </div>
 </div></section>
 <section class="alt"><div class="container">
-  <h2 class="secao">Nossos produtos</h2>
+  <div class="section-kicker">PORTFÓLIO NUXEM</div><h2 class="secao">Nossos produtos</h2>
   <p class="secao-sub">Combustíveis industriais com produção sob demanda e padrão constante de qualidade:</p>
   <div class="grid grid-3">
     ${PRODUTOS.map(p => `<div class="card card-foto"><img src="/imagens/${p.imagem}" alt="${p.imagemAlt}" loading="lazy"><h3>${p.nome}</h3><p>${p.resumo}</p><a class="saiba" href="/produtos/${p.slug}/">Ver especificações →</a></div>`).join('\n    ')}
   </div>
 </div></section>
 <section><div class="container">
-  <h2 class="secao">Por que a Nuxem</h2>
+  <div class="section-kicker">PARCERIA QUE MOVE</div><h2 class="secao">Por que a Nuxem</h2>
   <p class="secao-sub">Uma planta térmica parada custa muito mais do que o combustível. Nosso trabalho é garantir que isso nunca aconteça:</p>
   <div class="grid grid-4">
     ${EMPRESA.diferenciais.map(d => `<div class="card"><h3>${d.titulo}</h3><p>${d.texto}</p></div>`).join('\n    ')}
@@ -247,7 +255,8 @@ salvar('.', layout({
   <h2 class="secao">Atendemos São Paulo, Minas Gerais e Paraná</h2>
   <p class="secao-sub">Entrega com frota própria em ${EMPRESA.cidades} — e em todas as demais regiões dos três estados.</p>
   <p style="margin-top:8px"><a class="saiba" href="/cobertura/">Ver todas as regiões atendidas →</a></p>
-</div></section>`,
+</div></section>
+<section class="site-editorial"><div class="container"><div class="section-kicker">CONHECIMENTO QUE AJUDA A DECIDIR</div><h2 class="secao">Da especificação à compra.</h2><p class="secao-sub">Conteúdo técnico para quem precisa escolher bem e manter a operação em movimento.</p><div class="grid grid-3"><a class="editorial-card" href="/guia-oleo-bpf/"><span>GUIA TÉCNICO</span><h3>Entenda o óleo BPF.</h3><p>Classificações, aplicações e critérios para a sua operação.</p><b>Explorar o guia ↗</b></a><a class="editorial-card" href="/blog/oleo-de-xisto-ote-vs-oleo-bpf-diferencas-praticas-para-a-industria/"><span>ESCOLHA DO COMBUSTÍVEL</span><h3>BPF ou óleo de xisto?</h3><p>Compare consumo, especificações e custo por energia útil.</p><b>Ler comparação ↗</b></a><a class="editorial-card" href="/blog/"><span>BLOG NUXEM</span><h3>Respostas para a indústria.</h3><p>Artigos sobre compra, aplicações, operação e logística.</p><b>Acessar todos os artigos ↗</b></a></div></div></section>`,
 }));
 
 // PRODUTOS (índice) — com schema ItemList para rich snippet
@@ -309,7 +318,7 @@ for (const p of PRODUTOS) {
   <h1>${p.nome}</h1>
   <p class="resumo">${p.resumo}</p>
 </div></div>
-<div class="container"><div class="conteudo">
+<div class="container product-layout"><div class="conteudo">
   ${p.corpo.map(par => `<p>${par}</p>`).join('\n  ')}
   <h2 id="dados-tecnicos">${p.tituloSpecs || 'Dados para especificação'}</h2>
   <p>${p.notaSpecs}</p>
@@ -324,7 +333,7 @@ ${p.orientacao ? `  <h2>Como solicitar sua cotação</h2><p>${p.orientacao}</p>`
   ${p.faq.map(({p: pergunta, r}) => `<h3>${pergunta}</h3><p>${r}</p>`).join('\n  ')}
 ${leituras(`produtos/${p.slug}`)}
   <p><a class="btn btn-laranja" href="${ZAP}">Solicitar cotação de ${p.nome}</a></p>
-</div></div>`,
+</div><aside class="quote-panel"><div class="section-kicker">SUA PRÓXIMA ENTREGA</div><h2>Vamos encontrar a melhor opção?</h2><p>Informe o produto, o volume e sua cidade. Nossa equipe orienta sua cotação.</p><a class="btn btn-laranja" href="/contato/">Solicitar uma cotação ↗</a><a class="panel-link" href="#dados-tecnicos">Consultar dados técnicos ↓</a><hr><div class="panel-detail"><b>Atendimento 24h</b><span>SP, MG e PR · Frota própria</span></div><a class="panel-link" href="/produtos/">← Todos os produtos</a></aside></div>`,
   }));
 }
 
@@ -454,6 +463,7 @@ function listagemBlog(todos) {
   <p class="resumo">Guias sobre óleo BPF, óleo de xisto e combustíveis industriais. Encontre orientações para comprar, operar e planejar o abastecimento.</p>
 </div></div>
 <section><div class="container lista-posts">
+  <div class="blog-search" hidden><label for="buscar-artigos">O que você precisa saber?</label><input id="buscar-artigos" type="search" placeholder="Busque por produto, aplicação ou dúvida…"><p id="busca-status" role="status"></p></div>
   <aside class="leituras" aria-label="Assuntos do blog"><h2>Encontre artigos por assunto</h2><ul>
     ${grupos.map(c => `<li><a href="#${c.slug}">${c.titulo} (${c.posts.length})</a></li>`).join('')}
   </ul></aside>
@@ -575,7 +585,7 @@ salvar('contato', layout({
     <p><strong>E-mail:</strong> <a href="mailto:${EMPRESA.email}">${EMPRESA.email}</a></p>
     <p><strong>Endereço:</strong> ${EMPRESA.endereco}</p>
     <p><strong>CNPJ:</strong> ${EMPRESA.cnpj}</p>
-</div></div>`}));
+</div></div></div>`}));
 
 // COBERTURA — página com os estados atendidos (SEO local MG/PR)
 salvar('cobertura', layout({

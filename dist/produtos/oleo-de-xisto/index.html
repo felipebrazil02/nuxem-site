@@ -18,6 +18,7 @@
 <link rel="icon" type="image/png" href="/imagens/icone-nuxem.png">
 
 <link rel="stylesheet" href="/estilo.css">
+<script src="/interface.js" defer></script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0XF8SXJ4B"></script>
 <script>
@@ -28,12 +29,13 @@ gtag('config', 'G-H0XF8SXJ4B');
 </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"Óleo de Xisto (OTE)","description":"Fornecimento de óleo de xisto OTE para caldeiras, fornos e usinas de asfalto em SP, MG e PR. Consulte especificações e solicite cotação.","brand":{"@type":"Brand","name":"Nuxem"},"category":"Combustível industrial","sku":"oleo-de-xisto","url":"https://nuxemoil.com.br/produtos/oleo-de-xisto/"}</script>
 </head>
-<body>
+<body class="site-product">
+<a class="skip-link" href="#principal">Ir ao conteúdo</a>
 <header>
   <div class="header-inner">
     <a class="logo" href="/"><img src="/imagens/logo-chama.png" alt="Nuxem" height="58"></a>
-    <button class="menu-toggle" aria-label="Abrir menu" onclick="document.querySelector('nav').classList.toggle('aberto')">☰</button>
-    <nav>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">☰</button>
+    <nav id="menu-principal" aria-label="Menu principal">
       <a href="/">Início</a>
       <a href="/produtos/">Produtos</a>
       <a href="/solucoes/">Soluções</a>
@@ -43,13 +45,13 @@ gtag('config', 'G-H0XF8SXJ4B');
     </nav>
   </div>
 </header>
-<main>
+<main id="principal">
 
-<div class="pagina-topo"><div class="container">
+<div class="pagina-topo"><div class="container"><div class="breadcrumb"><a href="/">Início</a><span>/</span>COMBUSTÍVEIS INDUSTRIAIS</div>
   <h1>Óleo de Xisto (OTE)</h1>
   <p class="resumo">Óleo de xisto OTE para caldeiras, fornos e usinas de asfalto. Consulte a especificação adequada à sua operação.</p>
 </div></div>
-<div class="container"><div class="conteudo">
+<div class="container product-layout"><div class="conteudo">
   <p>O Óleo de Xisto OTE é produzido a partir do xisto betuminoso e utilizado como combustível em processos térmicos industriais. A escolha deve considerar as características do produto fornecido e as exigências do queimador.</p>
   <p>Antes de substituir o combustível, confirme viscosidade, teor de enxofre, poder calorífico e condições de armazenamento. A necessidade de aquecimento e os resultados de emissões devem ser avaliados para o produto e a instalação, sem presumir dispensa de aquecimento ou redução de emissões em todos os casos.</p>
   <p>A Nuxem fornece óleo de xisto em São Paulo, Minas Gerais e Paraná, com frota própria e atendimento 24 horas. Consulte a programação de entrega para a sua cidade.</p>
@@ -73,7 +75,7 @@ gtag('config', 'G-H0XF8SXJ4B');
   <h3>Como comparar o preço do xisto com o BPF?</h3><p>Converta as propostas para a mesma base de massa e energia e inclua frete, rendimento e custos de adaptação. Registre o consumo por tonelada produzida ou de vapor em condições comparáveis.</p>
 <aside class="leituras" aria-label="Guias para escolher e comprar combustível"><h2>Guias para escolher e comprar combustível</h2><ul><li><a href="/blog/oleo-de-xisto-ote-vs-oleo-bpf-diferencas-praticas-para-a-industria/">Óleo de xisto ou BPF: comparação de custo e consumo</a></li><li><a href="/blog/oleo-de-xisto-ote-para-caldeiras-industriais-vapor-queima-e-custo/">Óleo de xisto para caldeiras</a></li><li><a href="/blog/como-calcular-consumo-de-oleo-combustivel-em-caldeiras/">Cálculo de consumo de óleo em caldeiras</a></li></ul></aside>
   <p><a class="btn btn-laranja" href="https://wa.me/5511915011527?text=Ol%C3%A1!%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20de%20%C3%B3leo%20combust%C3%ADvel.">Solicitar cotação de Óleo de Xisto (OTE)</a></p>
-</div></div>
+</div><aside class="quote-panel"><div class="section-kicker">SUA PRÓXIMA ENTREGA</div><h2>Vamos encontrar a melhor opção?</h2><p>Informe o produto, o volume e sua cidade. Nossa equipe orienta sua cotação.</p><a class="btn btn-laranja" href="/contato/">Solicitar uma cotação ↗</a><a class="panel-link" href="#dados-tecnicos">Consultar dados técnicos ↓</a><hr><div class="panel-detail"><b>Atendimento 24h</b><span>SP, MG e PR · Frota própria</span></div><a class="panel-link" href="/produtos/">← Todos os produtos</a></aside></div>
 </main>
 <div class="faixa-cta">
   <div class="container">

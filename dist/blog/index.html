@@ -18,6 +18,7 @@
 <link rel="icon" type="image/png" href="/imagens/icone-nuxem.png">
 
 <link rel="stylesheet" href="/estilo.css">
+<script src="/interface.js" defer></script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0XF8SXJ4B"></script>
 <script>
@@ -28,12 +29,13 @@ gtag('config', 'G-H0XF8SXJ4B');
 </script>
 
 </head>
-<body>
+<body class="site-inner">
+<a class="skip-link" href="#principal">Ir ao conteúdo</a>
 <header>
   <div class="header-inner">
     <a class="logo" href="/"><img src="/imagens/logo-chama.png" alt="Nuxem" height="58"></a>
-    <button class="menu-toggle" aria-label="Abrir menu" onclick="document.querySelector('nav').classList.toggle('aberto')">☰</button>
-    <nav>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">☰</button>
+    <nav id="menu-principal" aria-label="Menu principal">
       <a href="/">Início</a>
       <a href="/produtos/">Produtos</a>
       <a href="/solucoes/">Soluções</a>
@@ -43,12 +45,13 @@ gtag('config', 'G-H0XF8SXJ4B');
     </nav>
   </div>
 </header>
-<main>
-<div class="pagina-topo"><div class="container">
+<main id="principal">
+<div class="pagina-topo"><div class="container"><div class="breadcrumb"><a href="/">Início</a><span>/</span>CONHECIMENTO NUXEM</div>
   <h1>Blog Nuxem</h1>
   <p class="resumo">Guias sobre óleo BPF, óleo de xisto e combustíveis industriais. Encontre orientações para comprar, operar e planejar o abastecimento.</p>
 </div></div>
 <section><div class="container lista-posts">
+  <div class="blog-search" hidden><label for="buscar-artigos">O que você precisa saber?</label><input id="buscar-artigos" type="search" placeholder="Busque por produto, aplicação ou dúvida…"><p id="busca-status" role="status"></p></div>
   <aside class="leituras" aria-label="Assuntos do blog"><h2>Encontre artigos por assunto</h2><ul>
     <li><a href="#compra">Escolha e compra de combustível (11)</a></li><li><a href="#operacao">Operação, consumo e qualidade (11)</a></li><li><a href="#aplicacoes-bpf">Aplicações do óleo BPF (5)</a></li><li><a href="#aplicacoes-xisto">Aplicações do óleo de xisto (10)</a></li><li><a href="#logistica">Entrega e atendimento regional (11)</a></li>
   </ul></aside>
