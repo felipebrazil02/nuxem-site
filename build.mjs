@@ -275,7 +275,7 @@ salvar('produtos', layout({
     ${PRODUTOS.map(p => `<div class="card card-foto"><img src="/imagens/${p.imagem}" alt="${p.imagemAlt}" loading="lazy"><h2>${p.nome}</h2><p>${p.resumo}</p><a class="saiba" href="/produtos/${p.slug}/">Conhecer ${p.nome} →</a></div>`).join('\n    ')}
   </div>
 </div></section>
-<section class="alt"><div class="container conteudo">
+<section class="alt"><div class="container"><div class="conteudo">
   <h2>Como comparar os combustíveis</h2>
   <p>A escolha começa pelos limites do equipamento e pelos requisitos da instalação. Os nomes comerciais não substituem a ficha técnica do produto ofertado.</p>
   <table class="specs"><thead><tr><th scope="col">Produto</th><th scope="col">O que conferir na proposta</th></tr></thead><tbody>
@@ -285,7 +285,7 @@ salvar('produtos', layout({
   <h2>Dados para solicitar uma cotação</h2>
   <p>Informe cidade, volume, consumo, combustível atual, equipamento e restrições da operação. Solicite ficha técnica, ficha de dados de segurança, condições de entrega e identificação do produto. Consulte o <a href="/blog/como-preparar-uma-solicitacao-de-cotacao-de-oleo-combustivel-industrial/">roteiro de cotação</a> e as <a href="/cobertura/">regiões atendidas</a>.</p>
   <p><a class="btn btn-laranja" href="${ZAP}">Solicitar cotação de combustível</a></p>
-</div></section>`,
+</div></div></section>`,
 }));
 
 // PRODUTOS (páginas individuais) — com schema Product
