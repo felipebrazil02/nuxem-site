@@ -298,19 +298,18 @@ salvar('produtos', layout({
 </div></div></section>`,
 }));
 
-// PRODUTOS (páginas individuais) — com schema Product
+// Catálogo sob cotação: WebPage, sem oferta ou avaliações públicas elegíveis para Product snippets.
 for (const p of PRODUTOS) {
   salvar(join('produtos', p.slug), layout({
     title: p.title, description: p.description, caminho: `produtos/${p.slug}`,
     jsonLd: {
       '@context': 'https://schema.org',
-      '@type': 'Product',
+      '@type': 'WebPage',
       name: p.nome,
       description: p.description,
-      brand: { '@type': 'Brand', name: 'Nuxem' },
-      category: 'Combustível industrial',
-      sku: p.slug,
-      // Venda sob cotação: não publicar uma oferta fictícia de preço zero.
+      inLanguage: 'pt-BR',
+      isPartOf: { '@type': 'WebSite', name: 'Nuxem', url: `${EMPRESA.dominio}/` },
+      // A página continua indexável; não criar preços ou avaliações para obter rich results.
       url: `${EMPRESA.dominio}/produtos/${p.slug}/`,
     },
     conteudo: `

@@ -71,8 +71,12 @@ test('SEO output stays consistent across clean and incremental builds, including
     for (const {slug} of PRODUTOS) {
       const html = read(`produtos/${slug}/index.html`);
       const product = JSON.parse(html.match(/<script type="application\/ld\+json">([^]*?)<\/script>/)[1]);
-      assert.equal(product['@type'], 'Product');
+      assert.equal(product['@type'], 'WebPage');
       assert.equal(product.offers, undefined);
+      assert.equal(product.review, undefined);
+      assert.equal(product.aggregateRating, undefined);
+      assert.equal(product.url, `https://nuxemoil.com.br/produtos/${slug}/`);
+      assert.equal(product.isPartOf['@type'], 'WebSite');
       if(slug !== 'oleos-alternativos') assert.match(html, /<title>[^<]*SP, MG e PR/);
       assert.match(html, /ficha técnica/);
       assert.match(html, /ficha de dados de segurança/);
@@ -92,6 +96,15 @@ test('SEO output stays consistent across clean and incremental builds, including
     assert.equal(new Set(rules.map(rule => rule.split(' ')[0])).size, rules.length);
     assert.doesNotMatch(read('_redirects'), /\/post\/\*/);
     assert.ok(rules.includes('/oleo-bpf /produtos/oleo-bpf/ 301'));
+    for (const [from, to] of [
+      ['como-armazenar-oleo-bpf-com-seguranca', '/blog/manutencao-preventiva-em-sistemas-de-armazenamento-de-oleo-bpf/'],
+      ['controle-de-temperatura-oleo-usina-de-asfalto', '/blog/impacto-da-viscosidade-do-oleo-bpf-na-eficiencia-da-queima/'],
+      ['oleo-bpf-vida-util-de-equipamentos', '/blog/manutencao-preventiva-em-sistemas-de-armazenamento-de-oleo-bpf/'],
+      ['oleo-combustivel-b1-especificacoes-e-aplicacoes', '/produtos/oleo-b1/'],
+    ]) {
+      assert.ok(rules.includes(`/blog/${from}/ ${to} 301`));
+      assert.ok(rules.includes(`/blog/${from} ${to} 301`));
+    }
     assert.ok(rules.includes('/post/como-especificar-%C3%B3leo-para-caldeira /blog/como-especificar-o-oleo-combustivel-certo-para-seu-queimador/ 301'));
     assert.ok(rules.includes('/blog/como-validar-a-viscosidade-do-combustivel/ /blog/impacto-da-viscosidade-do-oleo-bpf-na-eficiencia-da-queima/ 301'));
     assert.doesNotMatch(read('solucoes/caldeiras/index.html'), /href="\/blog\/como-especificar-oleo-para-caldeira\//);
