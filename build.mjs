@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url';
 import { EMPRESA, PRODUTOS, SOLUCOES, HOME, CONTATO, PILAR, COBERTURA } from './src/dados.mjs';
 import { redirecionamentosLegados, destinoLegado } from './src/redirecionamentos.mjs';
 import { LEITURAS, CATEGORIAS_BLOG } from './src/leituras.mjs';
+import { otimizarImagens, preloadHero as preloadImagemPrincipal } from './src/imagens.mjs';
 
 const raiz = dirname(fileURLToPath(import.meta.url));
 const dirBlog = join(raiz, 'conteudo', 'blog');
@@ -110,7 +111,7 @@ function layout({ title, description, caminho, conteudo, ogImage, jsonLd, preloa
   const tipoPagina = caminho === '.' ? 'site-home' : caminho.startsWith('produtos/') ? 'site-product' : 'site-inner';
   const rotulo = caminho.startsWith('produtos') ? 'COMBUSTÍVEIS INDUSTRIAIS' : caminho.startsWith('blog') ? 'CONHECIMENTO NUXEM' : caminho.startsWith('solucoes') ? 'APLICAÇÕES INDUSTRIAIS' : caminho === 'cobertura' ? 'LOGÍSTICA E FORNECIMENTO' : caminho === 'contato' ? 'VAMOS CONVERSAR' : 'GUIA TÉCNICO';
   conteudo = conteudo.replace('<div class="pagina-topo"><div class="container">', '<div class="pagina-topo"><div class="container"><div class="breadcrumb"><a href="/">Início</a><span>/</span>' + rotulo + '</div>');
-  return `<!DOCTYPE html>
+  return otimizarImagens(`<!DOCTYPE html>
 <html lang="${({pt:'pt-BR',en:'en',es:'es'})[language] || 'pt-BR'}">
 <head>
 <meta charset="utf-8">
@@ -128,7 +129,7 @@ ${studioContentHash && /^[0-9a-f]{64}$/.test(studioContentHash) ? `<meta name="s
 <meta property="og:image" content="${EMPRESA.dominio}${ogImage || '/imagens/hero-usina-asfalto.webp'}">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/imagens/icone-nuxem.png">
-${preloadHero ? '<link rel="preload" as="image" href="/imagens/hero-usina-asfalto.webp">' : ''}
+${preloadHero ? preloadImagemPrincipal() : ''}
 <link rel="stylesheet" href="/estilo.css">
 <script src="/interface.js" defer></script>
 ${EMPRESA.gaId ? `<!-- Google tag (gtag.js) -->
@@ -166,19 +167,19 @@ ${conteudo}
   <div class="container">
     <div class="grid grid-4">
       <div>
-        <h4>Nuxem</h4>
+        <h2>Nuxem</h2>
         <p style="font-size:.9rem">Óleo BPF e combustíveis industriais para ${EMPRESA.regiao}. CNPJ: ${EMPRESA.cnpj}</p>
       </div>
       <div>
-        <h4>Produtos</h4>
+        <h2>Produtos</h2>
         ${PRODUTOS.map(p => `<a href="/produtos/${p.slug}/">${p.nome}</a>`).join('\n        ')}
       </div>
       <div>
-        <h4>Soluções</h4>
+        <h2>Soluções</h2>
         ${SOLUCOES.map(s => `<a href="/solucoes/${s.slug}/">${s.nome}</a>`).join('\n        ')}
       </div>
       <div>
-        <h4>Contato</h4>
+        <h2>Contato</h2>
         <a href="${ZAP}">WhatsApp: (11) 91501-1527</a>
         <a href="${EMPRESA.telefoneLink}">Telefone: ${EMPRESA.telefone}</a>
         <a href="mailto:${EMPRESA.email}">${EMPRESA.email}</a>
@@ -191,7 +192,7 @@ ${conteudo}
   <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.5c1.2.5 2.5.7 3.8.7 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 22.2c-1.2 0-2.4-.2-3.5-.7l-.7-.3-4.9.9 1-4.7-.3-.7c-.9-1.5-1.4-3.2-1.4-4.9 0-5.4 4.4-9.8 9.8-9.8s9.8 4.4 9.8 9.8-4.4 9.4-9.8 9.4zm5.4-7.1c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.2-.6-.4z"/></svg>
 </a>
 </body>
-</html>`;
+</html>`);
 }
 
 // ---------- páginas ----------
@@ -241,7 +242,7 @@ salvar('.', layout({
   <div class="section-kicker">PORTFÓLIO NUXEM</div><h2 class="secao">Nossos produtos</h2>
   <p class="secao-sub">Combustíveis industriais com produção sob demanda e padrão constante de qualidade:</p>
   <div class="grid grid-3">
-    ${PRODUTOS.map(p => `<div class="card card-foto"><img src="/imagens/${p.imagem}" alt="${p.imagemAlt}" loading="lazy"><h3>${p.nome}</h3><p>${p.resumo}</p><a class="saiba" href="/produtos/${p.slug}/">Ver especificações →</a></div>`).join('\n    ')}
+    ${PRODUTOS.map(p => `<div class="card card-foto"><img src="/imagens/${p.imagem}" alt="${p.imagemAlt}" loading="lazy" sizes="64px"><h3>${p.nome}</h3><p>${p.resumo}</p><a class="saiba" href="/produtos/${p.slug}/">Ver especificações →</a></div>`).join('\n    ')}
   </div>
 </div></section>
 <section><div class="container">
@@ -330,6 +331,7 @@ for (const p of PRODUTOS) {
 ${p.orientacao ? `  <h2>Como solicitar sua cotação</h2><p>${p.orientacao}</p>` : ''}
   <h2>Perguntas sobre ${p.nome}</h2>
   ${p.faq.map(({p: pergunta, r}) => `<h3>${pergunta}</h3><p>${r}</p>`).join('\n  ')}
+  ${p.slug === 'oleo-bpf' ? '<p>Para outras dúvidas sobre armazenamento, aquecimento e especificação, consulte as <a href="/guia-oleo-bpf/faq/">perguntas frequentes sobre óleo BPF</a>.</p>' : ''}
 ${leituras(`produtos/${p.slug}`)}
   <p><a class="btn btn-laranja" href="${ZAP}">Solicitar cotação de ${p.nome}</a></p>
 </div><aside class="quote-panel"><div class="section-kicker">SUA PRÓXIMA ENTREGA</div><h2>Vamos encontrar a melhor opção?</h2><p>Informe o produto, o volume e sua cidade. Nossa equipe orienta sua cotação.</p><a class="btn btn-laranja" href="/contato/">Solicitar uma cotação ↗</a><a class="panel-link" href="#dados-tecnicos">Consultar dados técnicos ↓</a><hr><div class="panel-detail"><b>Atendimento 24h</b><span>SP, MG e PR · Frota própria</span></div><a class="panel-link" href="/produtos/">← Todos os produtos</a></aside></div>`,
@@ -354,6 +356,7 @@ salvar(PILAR.slug, layout({
     ${s.lista ? `<ul>${s.lista.map(i => i.link ? `<li><a href="${i.link}">${i.texto}</a></li>` : `<li>${i.texto}</li>`).join('')}</ul>` : ''}
   `).join('\n')}
   ${leituras(PILAR.slug)}
+  <p>Consulte também as <a href="/guia-oleo-bpf/faq/">perguntas frequentes sobre óleo BPF</a>, reunidas em uma página para facilitar a consulta.</p>
   <p style="margin-top:32px"><a class="btn btn-laranja" href="${ZAP}">Solicitar cotação de óleo BPF</a></p>
 </div></div>`}));
 salvar(PILAR.slug + '/faq', layout({
@@ -391,7 +394,7 @@ salvar('solucoes', layout({
 </div></div>
 <section><div class="container">
   <div class="grid grid-3">
-    ${SOLUCOES.map(s => `<div class="card card-foto"><img src="/imagens/${s.imagem}" alt="${s.imagemAlt}" loading="lazy"><h3>${s.nome}</h3><p>${s.resumo}</p><a class="saiba" href="/solucoes/${s.slug}/">Saiba mais →</a></div>`).join('\n    ')}
+    ${SOLUCOES.map(s => `<div class="card card-foto"><img src="/imagens/${s.imagem}" alt="${s.imagemAlt}" loading="lazy"><h2>${s.nome}</h2><p>${s.resumo}</p><a class="saiba" href="/solucoes/${s.slug}/">Saiba mais →</a></div>`).join('\n    ')}
   </div>
 </div></section>`,
 }));

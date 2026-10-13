@@ -21,6 +21,34 @@ test('SEO output stays consistent across clean and incremental builds, including
     const sitemapURLs = () => [...read('sitemap.xml').matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
     build();
     const cleanURLs = sitemapURLs();
+    // A imagem pré-carregada deve ser a mesma escolhida pelo navegador no HTML.
+    const home = read('index.html');
+    const hero = home.match(/<img[^>]+fetchpriority="high"[^>]*>/)[0];
+    const preload = home.match(/<link rel="preload"[^>]*>/)[0];
+    assert.equal(preload.match(/imagesrcset="([^"]+)"/)[1], hero.match(/srcset="([^"]+)"/)[1]);
+    assert.equal(preload.match(/imagesizes="([^"]+)"/)[1], hero.match(/sizes="([^"]+)"/)[1]);
+    assert.match(preload, /fetchpriority="high"/);
+    for (const page of ['produtos/oleo-bpf/index.html', 'guia-oleo-bpf/index.html']) {
+      assert.match(read(page), /href="\/guia-oleo-bpf\/faq\/"/);
+    }
+    for (const url of cleanURLs) {
+      const html = read(new URL(url).pathname.slice(1) + 'index.html');
+      let lastHeading = 0;
+      for (const [, level] of html.matchAll(/<h([1-6])\b/g)) {
+        assert.ok(!lastHeading || Number(level) <= lastHeading + 1, `Heading order: ${url}`);
+        lastHeading = Number(level);
+      }
+      assert.doesNotMatch(html.split('<footer>')[1], /<h4>/);
+      assert.match(html, /googletagmanager.com\/gtag\/js\?id=G-H0XF8SXJ4B/);
+      for (const [tag] of html.matchAll(/<img\b[^>]*>/g)) {
+        assert.match(tag, /width="[1-9]\d*"/);
+        assert.match(tag, /height="[1-9]\d*"/);
+        for (const candidate of (tag.match(/srcset="([^"]+)"/)?.[1] || '').split(',').filter(Boolean)) {
+          const asset = candidate.trim().split(' ')[0];
+          assert.ok(existsSync(join(root, 'dist', asset)), `${url}: ${asset}`);
+        }
+      }
+    }
     const apfDocument = readFileSync(join(repository, 'src/documentos/laudo-oleo-apf.pdf'));
     assert.deepEqual(readFileSync(join(root, 'dist/documentos/laudo-oleo-apf.pdf')), apfDocument);
     const consumptionPath = 'blog/como-calcular-consumo-de-oleo-combustivel-em-caldeiras/index.html';
