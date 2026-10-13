@@ -55,6 +55,11 @@ const grupos = [
 
 export const redirecionamentosLegados = new Map([
   ['/oleo-bpf/', '/produtos/oleo-bpf/'],
+  // Variantes antigas ainda rastreadas pelo Google, conferidas em 13/10/2026.
+  ['/blog/como-armazenar-oleo-bpf-com-seguranca/', '/blog/manutencao-preventiva-em-sistemas-de-armazenamento-de-oleo-bpf/'],
+  ['/blog/controle-de-temperatura-oleo-usina-de-asfalto/', '/blog/impacto-da-viscosidade-do-oleo-bpf-na-eficiencia-da-queima/'],
+  ['/blog/oleo-bpf-vida-util-de-equipamentos/', '/blog/manutencao-preventiva-em-sistemas-de-armazenamento-de-oleo-bpf/'],
+  ['/blog/oleo-combustivel-b1-especificacoes-e-aplicacoes/', '/produtos/oleo-b1/'],
 ]);
 for (const [destino, slugs] of grupos) {
   for (const slug of slugs) {
