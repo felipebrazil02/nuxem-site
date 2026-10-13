@@ -3,7 +3,7 @@ title: "Qualidade do óleo BPF: recebimento e compatibilidade entre lotes"
 description: "Entenda como avaliar a compatibilidade entre lotes de óleo BPF, prevenir borra e planejar a troca de combustível em caldeiras, fornos e usinas de asfalto."
 date: 2026-09-07
 category: operacao
-updated: 2026-10-09
+updated: 2026-10-13
 slugOriginal: ""
 ---
 
@@ -77,3 +77,7 @@ Preserve amostras e registros, comunique o fornecedor e envolva o responsável t
 Entregas programadas criam tempo para avaliar documentos, realizar ensaios quando necessários e preparar a transição. Em polos industriais como Betim e Contagem, em Minas Gerais, ou Araucária e Ponta Grossa, no Paraná, essa coordenação deve integrar compras, laboratório e operação.
 
 A Nuxem atende com frota própria todo o estado de São Paulo, Minas Gerais e Paraná. Consulte a [cobertura de entregas](/cobertura/) e informe o combustível atualmente utilizado, o estoque remanescente e as características do sistema ao solicitar uma cotação. A escolha técnica do produto, combinada com um [abastecimento programado para evitar paradas](/blog/como-programar-o-abastecimento-de-oleo-bpf-para-evitar-paradas/), reduz decisões emergenciais e permite tratar a compatibilidade antes que a mistura chegue ao queimador.
+
+## Da avaliação dos lotes à compra de BPF
+
+Ao consultar um novo fornecimento, reúna a especificação aprovada e os dados do combustível remanescente descritos neste artigo. Na página de [fornecimento de óleo BPF da Nuxem](/produtos/oleo-bpf/#cotacao-bpf), você encontra os dados necessários para a cotação e as condições de entrega a partir de 5.000 litros, sob demanda e com planejamento mensal. Informe cidade, consumo previsto e necessidade de transição entre lotes para alinhar a programação antes da compra.

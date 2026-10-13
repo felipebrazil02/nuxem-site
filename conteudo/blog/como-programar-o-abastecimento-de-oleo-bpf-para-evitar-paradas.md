@@ -3,7 +3,7 @@ title: "Abastecimento de óleo BPF: estoque, autonomia e ponto de pedido"
 description: "Calcule o ponto de pedido de BPF com consumo, prazo de reposição e reserva definida pela planta. Veja um exemplo e os cuidados no recebimento."
 date: 2026-07-25
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-13
 category: logistica
 ---
 
@@ -43,4 +43,8 @@ A [logística entre SP, MG e PR](/blog/logistica-de-abastecimento-de-oleo-bpf-en
 
 Compare consumo previsto e realizado, prazos e ocorrências. Ajuste a reserva com base no risco e no histórico, sem reduzir níveis operacionais definidos pela engenharia. Para uma nova aplicação, use o [cálculo de consumo em caldeiras](/blog/como-calcular-consumo-de-oleo-combustivel-em-caldeiras/) como apoio inicial.
 
-[Envie à Nuxem consumo, capacidade disponível e destino](/contato/) para discutir um calendário de entregas sujeito à confirmação comercial e operacional.
+## Transforme o plano de consumo em uma programação de fornecimento
+
+A Nuxem fornece BPF a partir de 5.000 litros por entrega e trabalha sob demanda, com planejamento mensal. Informe consumo previsto, capacidade segura disponível no tanque, cidade e datas desejadas para [consultar a programação de fornecimento de BPF](/produtos/oleo-bpf/#cotacao-bpf). As condições e os prazos precisam ser confirmados para a sua operação; use o prazo acordado com o fornecedor ao calcular o ponto de pedido.
+
+Se a produção ou a janela de descarga mudar, [avise a equipe da Nuxem](/contato/) para revisar o calendário de entregas.
