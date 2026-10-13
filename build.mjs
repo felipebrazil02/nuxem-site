@@ -8,6 +8,7 @@ import { redirecionamentosLegados, destinoLegado } from './src/redirecionamentos
 import { LEITURAS, CATEGORIAS_BLOG } from './src/leituras.mjs';
 import { otimizarImagens, preloadHero as preloadImagemPrincipal } from './src/imagens.mjs';
 import { comercialBpf } from './src/comercial-bpf.mjs';
+import { comercialXisto } from './src/comercial-xisto.mjs';
 
 const raiz = dirname(fileURLToPath(import.meta.url));
 const dirBlog = join(raiz, 'conteudo', 'blog');
@@ -302,7 +303,8 @@ salvar('produtos', layout({
 
 // Catálogo sob cotação: WebPage, sem oferta ou avaliações públicas elegíveis para Product snippets.
 for (const p of PRODUTOS) {
-  const comercial = p.slug === 'oleo-bpf' ? comercialBpf(EMPRESA) : null;
+  const comercial = p.slug === 'oleo-bpf' ? comercialBpf(EMPRESA)
+    : p.slug === 'oleo-de-xisto' ? comercialXisto(EMPRESA) : null;
   salvar(join('produtos', p.slug), layout({
     title: p.title, description: p.description, caminho: `produtos/${p.slug}`,
     jsonLd: {
