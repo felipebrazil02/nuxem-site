@@ -7,6 +7,7 @@ import { EMPRESA, PRODUTOS, SOLUCOES, HOME, CONTATO, PILAR, COBERTURA } from './
 import { redirecionamentosLegados, destinoLegado } from './src/redirecionamentos.mjs';
 import { LEITURAS, CATEGORIAS_BLOG } from './src/leituras.mjs';
 import { otimizarImagens, preloadHero as preloadImagemPrincipal } from './src/imagens.mjs';
+import { comercialBpf } from './src/comercial-bpf.mjs';
 
 const raiz = dirname(fileURLToPath(import.meta.url));
 const dirBlog = join(raiz, 'conteudo', 'blog');
@@ -301,6 +302,7 @@ salvar('produtos', layout({
 
 // Catálogo sob cotação: WebPage, sem oferta ou avaliações públicas elegíveis para Product snippets.
 for (const p of PRODUTOS) {
+  const comercial = p.slug === 'oleo-bpf' ? comercialBpf(EMPRESA) : null;
   salvar(join('produtos', p.slug), layout({
     title: p.title, description: p.description, caminho: `produtos/${p.slug}`,
     jsonLd: {
@@ -316,9 +318,11 @@ for (const p of PRODUTOS) {
     conteudo: `
 <div class="pagina-topo"><div class="container">
   <h1>${p.nome}</h1>
-  <p class="resumo">${p.resumo}</p>
+  <p class="resumo">${comercial?.resumo || p.resumo}</p>
+  ${comercial?.abertura || ''}
 </div></div>
 <div class="container product-layout"><div class="conteudo">
+  ${comercial?.fornecimento || ''}
   ${p.corpo.map(par => `<p>${par}</p>`).join('\n  ')}
   <h2 id="dados-tecnicos">${p.tituloSpecs || 'Dados para especificação'}</h2>
   <p>${p.notaSpecs}</p>
@@ -328,12 +332,14 @@ for (const p of PRODUTOS) {
   ${p.observacaoSpecs ? `<p class="nota-tecnica">${p.observacaoSpecs}</p>` : ''}
   ${p.documentos?.length ? `<aside class="documentos-produto" aria-label="Fontes e documentos técnicos"><h3>Fontes e documentos técnicos</h3><ul>${p.documentos.map(d => `<li><a href="${d.url}">${d.titulo}</a></li>`).join('')}</ul></aside>` : ''}
   <p><strong>Aplicações:</strong> ${p.aplicacoes}</p>
-${p.orientacao ? `  <h2>Como solicitar sua cotação</h2><p>${p.orientacao}</p>` : ''}
+${comercial?.cotacao || ''}
+${p.orientacao ? `  <h2>${comercial ? 'Documentação para confirmar a compra' : 'Como solicitar sua cotação'}</h2><p>${p.orientacao}</p>` : ''}
   <h2>Perguntas sobre ${p.nome}</h2>
+  ${comercial?.perguntas || ''}
   ${p.faq.map(({p: pergunta, r}) => `<h3>${pergunta}</h3><p>${r}</p>`).join('\n  ')}
   ${p.slug === 'oleo-bpf' ? '<p>Para outras dúvidas sobre armazenamento, aquecimento e especificação, consulte as <a href="/guia-oleo-bpf/faq/">perguntas frequentes sobre óleo BPF</a>.</p>' : ''}
 ${leituras(`produtos/${p.slug}`)}
-  <p><a class="btn btn-laranja" href="${ZAP}">Solicitar cotação de ${p.nome}</a></p>
+  <p><a class="btn btn-laranja" href="${comercial?.whatsapp || ZAP}">Solicitar cotação de ${p.nome}</a></p>
 </div><aside class="quote-panel"><div class="section-kicker">SUA PRÓXIMA ENTREGA</div><h2>Vamos encontrar a melhor opção?</h2><p>Informe o produto, o volume e sua cidade. Nossa equipe orienta sua cotação.</p><a class="btn btn-laranja" href="/contato/">Solicitar uma cotação ↗</a><a class="panel-link" href="#dados-tecnicos">Consultar dados técnicos ↓</a><hr><div class="panel-detail"><b>Atendimento 24h</b><span>SP, MG e PR · Frota própria</span></div><a class="panel-link" href="/produtos/">← Todos os produtos</a></aside></div>`,
   }));
 }
