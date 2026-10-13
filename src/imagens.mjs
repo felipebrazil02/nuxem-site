@@ -1,0 +1,35 @@
+import { readFileSync } from 'node:fs';
+
+const manifesto = JSON.parse(readFileSync(new URL('./imagens/manifesto.json', import.meta.url)));
+export const tamanhosHero = '(max-width: 560px) calc(100vw - 44px), (max-width: 860px) calc(100vw - 40px), (max-width: 1240px) 48vw, 562px';
+const tamanhosCard = '(max-width: 560px) calc(100vw - 44px), (max-width: 860px) calc((100vw - 62px) / 2), (max-width: 1240px) calc((100vw - 84px) / 3), 385px';
+
+function candidatos(src, meta) {
+  const variantes = [...meta.variants];
+  if (!variantes.some(v => v.width === meta.width)) variantes.push({url: src, width: meta.width});
+  return variantes.map(v => `${v.url} ${v.width}w`).join(', ');
+}
+
+export function preloadHero() {
+  const src = '/imagens/hero-usina-asfalto.webp';
+  return `<link rel="preload" as="image" href="${src}" imagesrcset="${candidatos(src, manifesto[src])}" imagesizes="${tamanhosHero}" fetchpriority="high">`;
+}
+
+// Mantém src e alt existentes; adiciona alternativas sem mudar as URLs de conteúdo.
+export function otimizarImagens(html) {
+  return html.replace(/<img\b[^>]*>/g, tag => {
+    const src = tag.match(/\bsrc="([^"]+)"/)?.[1];
+    const meta = manifesto[src];
+    if (!meta) return tag;
+    let resultado = tag.replace(/\s(?:width|height)="[^"]*"/g, '').replace(/>$/, ` width="${meta.width}" height="${meta.height}">`);
+    if (meta.variants.length && !/\bsrcset=/.test(tag)) {
+      const sizes = tag.match(/\bsizes="([^"]+)"/)?.[1]
+        || (src.endsWith('logo-chama.png') ? '(max-width: 860px) 83px, 94px'
+          : /fetchpriority="high"/.test(tag) ? tamanhosHero
+          : /class="foto-pagina"/.test(tag) ? '(max-width: 830px) calc(100vw - 44px), 790px'
+          : tamanhosCard);
+      resultado = resultado.replace(/\s sizes="[^"]*"/, '').replace(/>$/, ` srcset="${candidatos(src, meta)}" sizes="${sizes}">`);
+    }
+    return resultado;
+  });
+}
