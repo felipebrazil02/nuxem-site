@@ -3,7 +3,7 @@ title: "Óleo de xisto para usinas de asfalto: avaliação do consumo"
 description: "Avalie óleo de xisto em usinas de asfalto com dados do queimador, produção, condições dos agregados e programação de uma entrega de teste."
 date: 2026-09-22
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-13
 category: aplicacoes-xisto
 ---
 
@@ -37,4 +37,6 @@ Combine janela de entrega, equipe de recebimento e acompanhamento técnico. O [p
 
 Documente produto, configuração e condições em que o teste foi aprovado. Revise a programação quando a usina mudar de local ou o cronograma de produção for alterado.
 
-Para [cotar óleo de xisto com a Nuxem](/contato/), envie endereço da usina, modelo do queimador, consumo e objetivo da consulta. A entrega e a especificação precisam ser confirmadas para a campanha.
+Para levar essa avaliação à compra, consulte as [condições de fornecimento de óleo de xisto OTE](/produtos/oleo-de-xisto/#cotacao-xisto). A Nuxem atende operações com demanda mínima de 200 mil litros por mês, exige planejamento mensal e depende de consulta de disponibilidade.
+
+Informe endereço da usina, modelo do queimador, consumo mensal previsto e cronograma da campanha. Uma entrega para avaliação também precisa ser alinhada previamente; este roteiro técnico não representa uma oferta de carga de teste avulsa. [Fale com a Nuxem sobre a necessidade da usina](/contato/) para confirmar disponibilidade, especificação e programação.

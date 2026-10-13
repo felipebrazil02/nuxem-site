@@ -3,7 +3,7 @@ title: "Óleo de xisto na cerâmica: como avaliar fornos e secadores"
 description: "Compare óleo de xisto para processos cerâmicos com critérios de qualidade, consumo, compatibilidade do queimador e planejamento da avaliação."
 date: 2026-09-26
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-13
 category: aplicacoes-xisto
 ---
 
@@ -37,4 +37,8 @@ O custo deve ser comparado por produção equivalente. O [comparativo entre BPF 
 
 Confirme a janela em que a planta pode receber e avaliar o produto. Verifique tanque e estoque antes da descarga e mantenha responsáveis pelo acompanhamento identificados.
 
-Para [consultar a Nuxem](/contato/), envie aplicação, modelo do queimador, consumo, especificação e cidade. O fornecimento deve ser programado depois de resolvidas as pendências técnicas da avaliação.
+## Consulte o fornecimento para a demanda da cerâmica
+
+Com as pendências técnicas da avaliação resolvidas, reúna aplicação, modelo do queimador, consumo mensal previsto, especificação e cidade. Consulte a [cotação de óleo de xisto para sua operação industrial](/produtos/oleo-de-xisto/#cotacao-xisto): o fornecimento da Nuxem exige demanda mínima de 200 mil litros por mês, planejamento mensal e consulta de disponibilidade.
+
+Informe também as variações de produção, os turnos e as paradas previstas de fornos e secadores. Esses dados ajudam a alinhar as entregas à demanda real da fábrica. Para esclarecer a programação, [entre em contato com a Nuxem](/contato/).

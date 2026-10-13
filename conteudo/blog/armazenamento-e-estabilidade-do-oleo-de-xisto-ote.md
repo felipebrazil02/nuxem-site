@@ -3,7 +3,7 @@ title: "Armazenamento de óleo de xisto: lote, tanque e compatibilidade"
 description: "Saiba o que avaliar no tanque de óleo de xisto: estoque remanescente, condições de armazenamento, rastreabilidade e investigação de depósitos."
 date: "2026-09-25"
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-13
 category: operacao
 ---
 
@@ -37,4 +37,10 @@ Também não adote um prazo universal de armazenamento. Consulte a orientação 
 
 Limpeza, drenagem e manutenção devem seguir procedimentos técnicos e de segurança da instalação, com destinação adequada dos materiais retirados. Não improvise mistura com solventes para tentar dissolver borra.
 
-Integre a intervenção ao [planejamento de migração para óleo de xisto](/blog/como-migrar-sua-caldeira-ou-forno-para-oleo-de-xisto-ote/), quando houver troca de combustível. Para programar uma entrega, [informe à Nuxem produto atual, estoque e janela de recebimento](/contato/).
+Integre a intervenção ao [planejamento de migração para óleo de xisto](/blog/como-migrar-sua-caldeira-ou-forno-para-oleo-de-xisto-ote/), quando houver troca de combustível.
+
+## Alinhe o armazenamento ao fornecimento mensal
+
+Antes de programar as entregas, consulte as [condições comerciais do óleo de xisto da Nuxem](/produtos/oleo-de-xisto/#cotacao-xisto). O atendimento exige consumo a partir de 200 mil litros por mês, planejamento mensal e consulta de disponibilidade. Esse consumo mensal não corresponde ao volume que deve ser armazenado de uma só vez: a quantidade de cada entrega precisa respeitar a capacidade segura disponível e a programação acordada.
+
+Para avaliar o calendário de recebimento, [informe à Nuxem produto atual, estoque e janela de descarga](/contato/), junto com o consumo previsto e eventuais intervenções no tanque.
