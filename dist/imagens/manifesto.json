@@ -1,0 +1,861 @@
+{
+  "/imagens/atendimento-tecnico.jpg": {
+    "width": 682,
+    "height": 456,
+    "variants": [
+      {
+        "url": "/imagens/responsivas/atendimento-tecnico-160.webp",
+        "width": 160
+      },
+      {
+        "url": "/imagens/responsivas/atendimento-tecnico-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/imagens/atendimento-tecnico.webp": {
+    "width": 682,
+    "height": 456,
+    "variants": [
+      {
+        "url": "/imagens/responsivas/atendimento-tecnico-160.webp",
+        "width": 160
+      },
+      {
+        "url": "/imagens/responsivas/atendimento-tecnico-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/imagens/caldeira.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": [
+      {
+        "url": "/imagens/responsivas/caldeira-160.webp",
+        "width": 160
+      },
+      {
+        "url": "/imagens/responsivas/caldeira-480.webp",
+        "width": 480
+      },
+      {
+        "url": "/imagens/responsivas/caldeira-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/imagens/caldeira.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": [
+      {
+        "url": "/imagens/responsivas/caldeira-160.webp",
+        "width": 160
+      },
+      {
+        "url": "/imagens/responsivas/caldeira-480.webp",
+        "width": 480
+      },
+      {
+        "url": "/imagens/responsivas/caldeira-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/imagens/forno-industrial.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": [
+      {
+        "url": "/imagens/responsivas/forno-industrial-160.webp",
+        "width": 160
+      },
+      {
+        "url": "/imagens/responsivas/forno-industrial-480.webp",
+        "width": 480
+      },
+      {
+        "url": "/imagens/responsivas/forno-industrial-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/imagens/forno-industrial.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": [
+      {
+        "url": "/imagens/responsivas/forno-industrial-160.webp",
+        "width": 160
+      },
+      {
+        "url": "/imagens/responsivas/forno-industrial-480.webp",
+        "width": 480
+      },
+      {
+        "url": "/imagens/responsivas/forno-industrial-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/imagens/fundicao.jpg": {
+    "width": 900,
+    "height": 900,
+    "variants": [
+      {
+        "url": "/imagens/responsivas/fundicao-160.webp",
+        "width": 160
+      },
+      {
+        "url": "/imagens/responsivas/fundicao-480.webp",
+        "width": 480
+      },
+      {
+        "url": "/imagens/responsivas/fundicao-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/imagens/fundicao.webp": {
+    "width": 900,
+    "height": 900,
+    "variants": [
+      {
+        "url": "/imagens/responsivas/fundicao-160.webp",
+        "width": 160
+      },
+      {
+        "url": "/imagens/responsivas/fundicao-480.webp",
+        "width": 480
+      },
+      {
+        "url": "/imagens/responsivas/fundicao-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/imagens/hero-usina-asfalto.jpg": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "url": "/imagens/responsivas/hero-usina-asfalto-160.webp",
+        "width": 160
+      },
+      {
+        "url": "/imagens/responsivas/hero-usina-asfalto-480.webp",
+        "width": 480
+      },
+      {
+        "url": "/imagens/responsivas/hero-usina-asfalto-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/imagens/hero-usina-asfalto.webp": {
+    "width": 1280,
+    "height": 853,
+    "variants": [
+      {
+        "url": "/imagens/responsivas/hero-usina-asfalto-160.webp",
+        "width": 160
+      },
+      {
+        "url": "/imagens/responsivas/hero-usina-asfalto-480.webp",
+        "width": 480
+      },
+      {
+        "url": "/imagens/responsivas/hero-usina-asfalto-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/imagens/icone-nuxem.png": {
+    "width": 96,
+    "height": 96,
+    "variants": []
+  },
+  "/imagens/logo-chama.png": {
+    "width": 253,
+    "height": 140,
+    "variants": [
+      {
+        "url": "/imagens/responsivas/logo-chama-160.webp",
+        "width": 160
+      },
+      {
+        "url": "/imagens/responsivas/logo-chama-253.webp",
+        "width": 253
+      }
+    ]
+  },
+  "/imagens/produto-oleo-apf.jpg": {
+    "width": 800,
+    "height": 1202,
+    "variants": [
+      {
+        "url": "/imagens/responsivas/produto-oleo-apf-160.webp",
+        "width": 160
+      },
+      {
+        "url": "/imagens/responsivas/produto-oleo-apf-480.webp",
+        "width": 480
+      },
+      {
+        "url": "/imagens/responsivas/produto-oleo-apf-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/imagens/produto-oleo-apf.webp": {
+    "width": 800,
+    "height": 1202,
+    "variants": [
+      {
+        "url": "/imagens/responsivas/produto-oleo-apf-160.webp",
+        "width": 160
+      },
+      {
+        "url": "/imagens/responsivas/produto-oleo-apf-480.webp",
+        "width": 480
+      },
+      {
+        "url": "/imagens/responsivas/produto-oleo-apf-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/imagens/produto-oleo-bpf.jpg": {
+    "width": 800,
+    "height": 1200,
+    "variants": [
+      {
+        "url": "/imagens/responsivas/produto-oleo-bpf-160.webp",
+        "width": 160
+      },
+      {
+        "url": "/imagens/responsivas/produto-oleo-bpf-480.webp",
+        "width": 480
+      },
+      {
+        "url": "/imagens/responsivas/produto-oleo-bpf-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/imagens/produto-oleo-bpf.webp": {
+    "width": 800,
+    "height": 1200,
+    "variants": [
+      {
+        "url": "/imagens/responsivas/produto-oleo-bpf-160.webp",
+        "width": 160
+      },
+      {
+        "url": "/imagens/responsivas/produto-oleo-bpf-480.webp",
+        "width": 480
+      },
+      {
+        "url": "/imagens/responsivas/produto-oleo-bpf-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/imagens/queimador-industrial.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": [
+      {
+        "url": "/imagens/responsivas/queimador-industrial-160.webp",
+        "width": 160
+      },
+      {
+        "url": "/imagens/responsivas/queimador-industrial-480.webp",
+        "width": 480
+      },
+      {
+        "url": "/imagens/responsivas/queimador-industrial-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/imagens/queimador-industrial.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": [
+      {
+        "url": "/imagens/responsivas/queimador-industrial-160.webp",
+        "width": 160
+      },
+      {
+        "url": "/imagens/responsivas/queimador-industrial-480.webp",
+        "width": 480
+      },
+      {
+        "url": "/imagens/responsivas/queimador-industrial-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/imagens/blog/7-erros-criticos-na-compra-de-combustivel.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/7-erros-criticos-na-compra-de-combustivel.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/7-erros-na-compra-de-oleo-bpf.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/7-erros-na-compra-de-oleo-bpf.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/armazenamento-de-oleo-combustivel-industrial.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/armazenamento-de-oleo-combustivel-industrial.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/avaliacao-tecnica-de-fornecedor-de-combustivel.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/avaliacao-tecnica-de-fornecedor-de-combustivel.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/como-armazenar-oleo-bpf-com-seguranca.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/como-armazenar-oleo-bpf-com-seguranca.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/como-calcular-autonomia-de-combustivel.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/como-calcular-autonomia-de-combustivel.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/como-escolher-oleo-combustivel-industrial.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/como-escolher-oleo-combustivel-industrial.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/como-especificar-oleo-para-caldeira.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/como-especificar-oleo-para-caldeira.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/como-evitar-falhas-no-abastecimento-termico.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/como-evitar-falhas-no-abastecimento-termico.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/como-funciona-oleo-bpf-na-industria.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/como-funciona-oleo-bpf-na-industria.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/como-padronizar-combustivel-para-processo-industrial.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/como-padronizar-combustivel-para-processo-industrial.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/como-reduzir-custo-termico-industrial.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/como-reduzir-custo-termico-industrial.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/como-reduzir-paradas-por-falta-de-combustivel.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/como-reduzir-paradas-por-falta-de-combustivel.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/como-validar-a-viscosidade-do-combustivel.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/como-validar-a-viscosidade-do-combustivel.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/consumo-de-oleo-combustivel-em-caldeira.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/consumo-de-oleo-combustivel-em-caldeira.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/continuidade-operacional-na-industria.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/continuidade-operacional-na-industria.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/digitalizacao-do-abastecimento-industrial.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/digitalizacao-do-abastecimento-industrial.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/distribuicao-de-oleo-combustivel-industrial.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/distribuicao-de-oleo-combustivel-industrial.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/exemplo-de-transicao-sem-parada-produtiva.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/exemplo-de-transicao-sem-parada-produtiva.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/fornecedor-de-oleo-combustivel-industrial.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/fornecedor-de-oleo-combustivel-industrial.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/guia-de-especificacao-do-oleo-industrial.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/guia-de-especificacao-do-oleo-industrial.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/guia-de-recebimento-tecnico-de-combustivel.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/guia-de-recebimento-tecnico-de-combustivel.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/guia-do-oleo-bpf-para-uso-industrial.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/guia-do-oleo-bpf-para-uso-industrial.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/guia-para-abastecimento-de-forno-industrial.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/guia-para-abastecimento-de-forno-industrial.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/logistica-de-combustivel-industrial-na-pratica.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/logistica-de-combustivel-industrial-na-pratica.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/manutencao-preventiva-de-linha-termica.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/manutencao-preventiva-de-linha-termica.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/melhores-combustiveis-para-caldeiras-industriais.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/melhores-combustiveis-para-caldeiras-industriais.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/melhores-praticas-para-abastecimento-industrial-continuo.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/melhores-praticas-para-abastecimento-industrial-continuo.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/o-que-avaliar-em-fornecedor-energetico.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/o-que-avaliar-em-fornecedor-energetico.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/o-que-e-oleo-combustivel-na-industria.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/o-que-e-oleo-combustivel-na-industria.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/oleo-bpf-e-inflamavel-entenda-o-risco.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/oleo-bpf-e-inflamavel-entenda-o-risco.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/oleo-bpf-ponto-de-fulgor-e-operacao-segura.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/oleo-bpf-ponto-de-fulgor-e-operacao-segura.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/oleo-bpf-sao-paulo-para-operacao-industrial.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/oleo-bpf-sao-paulo-para-operacao-industrial.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/oleo-bpf-viscosidade-em-climas-extremos.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/oleo-bpf-viscosidade-em-climas-extremos.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/oleo-bpf-vs-gas-qual-faz-mais-sentido.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/oleo-bpf-vs-gas-qual-faz-mais-sentido.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/oleo-bte-para-forno-quando-vale-a-pena.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/oleo-bte-para-forno-quando-vale-a-pena.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/oleo-bte-vs-ocbv-qual-faz-sentido.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/oleo-bte-vs-ocbv-qual-faz-sentido.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/oleo-combustivel-para-caldeira-industrial.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/oleo-combustivel-para-caldeira-industrial.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/oleo-combustivel-para-secagem-industrial.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/oleo-combustivel-para-secagem-industrial.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/oleo-combustivel-para-usina-de-asfalto.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/oleo-combustivel-para-usina-de-asfalto.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/oleo-de-xisto-vs-bpf-qual-faz-mais-sentido.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/oleo-de-xisto-vs-bpf-qual-faz-mais-sentido.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/oleo-industrial-como-escolher-sem-erro.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/oleo-industrial-como-escolher-sem-erro.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/oleo-ocbv-para-caldeira-quando-faz-sentido.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/oleo-ocbv-para-caldeira-quando-faz-sentido.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/oleo-para-secador-rotativo-como-escolher.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/oleo-para-secador-rotativo-como-escolher.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/oleo-pesado-para-geracao-termica-industrial.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/oleo-pesado-para-geracao-termica-industrial.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/principais-causas-de-instabilidade-termica.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/principais-causas-de-instabilidade-termica.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/qual-oleo-usar-em-caldeira-industrial.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/qual-oleo-usar-em-caldeira-industrial.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/quando-trocar-o-tipo-de-combustivel-industrial.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/quando-trocar-o-tipo-de-combustivel-industrial.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/quanto-estoque-minimo-manter-na-operacao.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/quanto-estoque-minimo-manter-na-operacao.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/rastreabilidade-no-abastecimento-industrial.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/rastreabilidade-no-abastecimento-industrial.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/review-de-queimadores-para-oleo-pesado.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/review-de-queimadores-para-oleo-pesado.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/review-oleo-ocbv-industrial-o-que-avaliar.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/review-oleo-ocbv-industrial-o-que-avaliar.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/seguranca-no-uso-de-oleo-combustivel-industrial.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/seguranca-no-uso-de-oleo-combustivel-industrial.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/sinais-de-combustivel-inadequado-no-processo.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/sinais-de-combustivel-inadequado-no-processo.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/tipos-de-oleo-combustivel-industrial.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/tipos-de-oleo-combustivel-industrial.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/transporte-de-oleo-combustivel-industrial.jpg": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  },
+  "/imagens/blog/transporte-de-oleo-combustivel-industrial.webp": {
+    "width": 900,
+    "height": 600,
+    "variants": []
+  }
+}

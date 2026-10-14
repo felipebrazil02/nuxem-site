@@ -27,7 +27,7 @@ A diferença entre as classes aparece em três pontos que afetam diretamente a o
 - **Viscosidade:** B2 e A2 admitem até 960 mm²/s a 60 °C; B1 e A1, até 620 mm²/s. Quanto maior a viscosidade, maior a necessidade de aquecimento para chegar à faixa de bombeamento e atomização do queimador.
 - **Manuseio e infraestrutura:** um óleo mais viscoso tende a exigir linhas aquecidas, tanque com aquecimento e mais energia para manter a temperatura de trabalho.
 
-A escolha entre **B2 e B1** é, essencialmente, uma escolha de viscosidade: se a sua instalação já tem aquecimento dimensionado para óleo pesado, o B2 pode ser uma alternativa de baixo enxofre; se você quer simplificar o manuseio, o B1 tende a ser mais fácil de bombear e atomizar. A escolha entre **B2 e A2** é uma escolha de enxofre: mesmo perfil de viscosidade, mas o A2 tem o dobro do limite de enxofre, o que pode pesar nas emissões e na licença da operação.
+A escolha entre **B2 e B1** é, essencialmente, uma escolha de viscosidade: se a sua instalação já tem aquecimento dimensionado para óleo pesado, o B2 pode ser uma alternativa de baixo enxofre; se você quer simplificar o manuseio, o B1 tende a ser mais fácil de bombear e atomizar. Veja o artigo dedicado sobre [óleo B1 (OCB1) e quando usar](/blog/oleo-b1-ocb1-o-que-e-diferencas-a1-a2-b2-e-quando-usar/). A escolha entre **B2 e A2** é uma escolha de enxofre: mesmo perfil de viscosidade, mas o A2 tem o dobro do limite de enxofre, o que pode pesar nas emissões e na licença da operação.
 
 ## Quando o B2 faz sentido
 

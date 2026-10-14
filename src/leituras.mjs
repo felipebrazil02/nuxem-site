@@ -15,6 +15,7 @@ export const LEITURAS = {
     ['comparacao-tecnica-oleo-de-xisto-bte-bpf-e-oleos-alternativos', 'Critérios para comparar combustíveis'],
   ],
   'produtos/oleo-b1': [
+    ['oleo-b1-ocb1-o-que-e-diferencas-a1-a2-b2-e-quando-usar', 'Óleo B1 (OCB1): o que é e quando usar'],
     ['normas-anp-para-oleo-combustivel-industrial', 'Especificação ANP e documentação para compra'],
     ['como-especificar-o-oleo-combustivel-certo-para-seu-queimador', 'Compatibilidade com o queimador'],
     qualidade,
