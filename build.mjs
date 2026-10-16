@@ -13,6 +13,9 @@ import { comercialXisto } from './src/comercial-xisto.mjs';
 const raiz = dirname(fileURLToPath(import.meta.url));
 const dirBlog = join(raiz, 'conteudo', 'blog');
 const dist = join(raiz, 'dist');
+// A home entrega o mesmo CSS no HTML para evitar uma ida à rede antes do primeiro desenho.
+// As demais páginas reutilizam a folha externa; nenhuma regra visual é removida.
+const estiloHome = readFileSync(join(raiz, 'src', 'estilo.css'), 'utf8');
 
 // preserva blog existente ANTES de limpar dist — sempre
 let blogBackup = null;
@@ -132,7 +135,7 @@ ${studioContentHash && /^[0-9a-f]{64}$/.test(studioContentHash) ? `<meta name="s
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/imagens/icone-nuxem.png">
 ${preloadHero ? preloadImagemPrincipal() : ''}
-<link rel="stylesheet" href="/estilo.css">
+${caminho === '.' ? `<style data-home-css>${estiloHome}</style>` : '<link rel="stylesheet" href="/estilo.css">'}
 <script src="/interface.js" defer></script>
 ${EMPRESA.gaId ? `<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=${EMPRESA.gaId}"></script>
