@@ -50,15 +50,15 @@
     "height": 600,
     "variants": [
       {
-        "url": "/imagens/responsivas/caldeira-160.webp",
+        "url": "/imagens/responsivas/caldeira-160-0f0ffc42cf.webp",
         "width": 160
       },
       {
-        "url": "/imagens/responsivas/caldeira-480.webp",
+        "url": "/imagens/responsivas/caldeira-480-0b3c7e19a6.webp",
         "width": 480
       },
       {
-        "url": "/imagens/responsivas/caldeira-800.webp",
+        "url": "/imagens/responsivas/caldeira-800-cdb225bb73.webp",
         "width": 800
       }
     ]
@@ -122,15 +122,15 @@
     "height": 900,
     "variants": [
       {
-        "url": "/imagens/responsivas/fundicao-160.webp",
+        "url": "/imagens/responsivas/fundicao-160-d393f9e355.webp",
         "width": 160
       },
       {
-        "url": "/imagens/responsivas/fundicao-480.webp",
+        "url": "/imagens/responsivas/fundicao-480-640adeb092.webp",
         "width": 480
       },
       {
-        "url": "/imagens/responsivas/fundicao-800.webp",
+        "url": "/imagens/responsivas/fundicao-800-d993adc2e5.webp",
         "width": 800
       }
     ]
@@ -158,15 +158,15 @@
     "height": 853,
     "variants": [
       {
-        "url": "/imagens/responsivas/hero-usina-asfalto-160.webp",
+        "url": "/imagens/responsivas/hero-usina-asfalto-160-0287632e40.webp",
         "width": 160
       },
       {
-        "url": "/imagens/responsivas/hero-usina-asfalto-480.webp",
+        "url": "/imagens/responsivas/hero-usina-asfalto-480-2dd38670ce.webp",
         "width": 480
       },
       {
-        "url": "/imagens/responsivas/hero-usina-asfalto-800.webp",
+        "url": "/imagens/responsivas/hero-usina-asfalto-800-de1b48a66b.webp",
         "width": 800
       }
     ]
