@@ -40,6 +40,13 @@ test('SEO output stays consistent across clean and incremental builds, including
       }
       assert.doesNotMatch(html.split('<footer>')[1], /<h4>/);
       assert.match(html, /googletagmanager.com\/gtag\/js\?id=G-H0XF8SXJ4B/);
+      const consentDefault = html.indexOf("gtag('consent', 'default'");
+      const analyticsConfig = html.indexOf("gtag('config', 'G-H0XF8SXJ4B'");
+      const tagLoad = html.indexOf('googletagmanager.com/gtag/js?id=G-H0XF8SXJ4B');
+      assert.ok(consentDefault > -1 && consentDefault < analyticsConfig && analyticsConfig < tagLoad, `Consent order: ${url}`);
+      assert.match(html, /data-consent="denied"/);
+      assert.match(html, /data-consent="granted"/);
+      assert.match(html, /data-open-consent/);
       for (const [tag] of html.matchAll(/<img\b[^>]*>/g)) {
         assert.match(tag, /width="[1-9]\d*"/);
         assert.match(tag, /height="[1-9]\d*"/);

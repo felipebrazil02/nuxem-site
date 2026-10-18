@@ -17,6 +17,40 @@ const dist = join(raiz, 'dist');
 // As demais páginas reutilizam a folha externa; nenhuma regra visual é removida.
 const estiloHome = readFileSync(join(raiz, 'src', 'estilo.css'), 'utf8');
 const usaEstiloInline = caminho => /^(produtos|blog)\/.+/.test(caminho.replace(/\\/g, '/'));
+const analyticsMarkup = EMPRESA.gaId ? `<!-- Google tag (gtag.js) -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent', 'default', {
+  ad_storage: 'denied',
+  ad_user_data: 'denied',
+  ad_personalization: 'denied',
+  analytics_storage: 'denied'
+});
+try {
+  if (localStorage.getItem('nuxem_consent_v1') === 'granted') {
+    gtag('consent', 'update', {
+      ad_storage: 'granted',
+      ad_user_data: 'granted',
+      ad_personalization: 'granted',
+      analytics_storage: 'granted'
+    });
+  }
+} catch (error) {}
+gtag('js', new Date());
+gtag('config', '${EMPRESA.gaId}');
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=${EMPRESA.gaId}"></script>` : '';
+const consentBannerMarkup = `<section class="consent-banner" aria-labelledby="consent-title" aria-describedby="consent-description" hidden>
+  <div class="consent-copy">
+    <h2 id="consent-title">Privacidade e medição</h2>
+    <p id="consent-description">Usamos o Google Analytics para entender o uso do site. Com sua autorização, o Google pode armazenar cookies de medição e publicidade. Se você recusar, a medição será limitada e sem cookies.</p>
+  </div>
+  <div class="consent-actions">
+    <button type="button" class="btn consent-reject" data-consent="denied">Recusar cookies</button>
+    <button type="button" class="btn consent-accept" data-consent="granted">Aceitar todos</button>
+  </div>
+</section>`;
 
 // preserva blog existente ANTES de limpar dist — sempre
 let blogBackup = null;
@@ -137,15 +171,8 @@ ${studioContentHash && /^[0-9a-f]{64}$/.test(studioContentHash) ? `<meta name="s
 <link rel="icon" type="image/png" href="/imagens/icone-nuxem.png">
 ${preloadHero ? preloadImagemPrincipal() : ''}
 ${caminho === '.' ? `<style data-home-css>${estiloHome}</style>` : usaEstiloInline(caminho) ? `<style data-product-css>${estiloHome}</style>` : '<link rel="stylesheet" href="/estilo.css">'}
+${analyticsMarkup}
 <script src="/interface.js" defer></script>
-${EMPRESA.gaId ? `<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=${EMPRESA.gaId}"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', '${EMPRESA.gaId}');
-</script>` : ''}
 ${jsonLd ? `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>` : ''}
 </head>
 <body class="${tipoPagina}">
@@ -189,11 +216,13 @@ ${conteudo}
         <a href="${ZAP}">WhatsApp: (11) 91501-1527</a>
         <a href="${EMPRESA.telefoneLink}">Telefone: ${EMPRESA.telefone}</a>
         <a href="mailto:${EMPRESA.email}">${EMPRESA.email}</a>
+        <button type="button" class="privacy-settings" data-open-consent>Preferências de privacidade</button>
       </div>
     </div>
     <div class="creditos">© ${new Date().getFullYear()} Nuxem Comércio e Transporte de Óleos LTDA — ${EMPRESA.endereco}</div>
   </div>
 </footer>
+${consentBannerMarkup}
 <a class="zap-flutuante" href="${ZAP}" aria-label="Conversar no WhatsApp">
   <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.5c1.2.5 2.5.7 3.8.7 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 22.2c-1.2 0-2.4-.2-3.5-.7l-.7-.3-4.9.9 1-4.7-.3-.7c-.9-1.5-1.4-3.2-1.4-4.9 0-5.4 4.4-9.8 9.8-9.8s9.8 4.4 9.8 9.8-4.4 9.4-9.8 9.4zm5.4-7.1c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.2-.6-.4z"/></svg>
 </a>
@@ -681,15 +710,15 @@ if (blogBackup && existsSync(blogBackup)) {
       // injeta snippet GA4 nos posts restaurados (HTML antigo não tem)
       let mudouGtag = false;
       if (EMPRESA.gaId && !html.includes('googletagmanager.com/gtag/js')) {
-        const gtag = `<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=${EMPRESA.gaId}"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', '${EMPRESA.gaId}');
-</script>`;
-        html = html.replace('</head>', `${gtag}\n</head>`);
+        html = html.replace('</head>', `${analyticsMarkup}\n</head>`);
+        mudouGtag = true;
+      }
+      if (!html.includes('src="/interface.js"')) {
+        html = html.replace('</head>', '<script src="/interface.js" defer></script>\n</head>');
+        mudouGtag = true;
+      }
+      if (!html.includes('class="consent-banner"')) {
+        html = html.replace('</body>', `${consentBannerMarkup}\n</body>`);
         mudouGtag = true;
       }
       // migra refs .jpg -> .webp nos posts restaurados (quando o webp existe)
