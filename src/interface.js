@@ -5,6 +5,44 @@ const input=document.querySelector('#buscar-artigos');
 if(input) input.closest('.blog-search').hidden=false;
 input?.addEventListener('input',()=>{const norm=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();const query=norm(input.value.trim());let count=0;document.querySelectorAll('.grupo-blog').forEach(group=>{let visible=0;group.querySelectorAll('.card').forEach(card=>{card.hidden=!norm(card.textContent).includes(query);if(!card.hidden){count++;visible++;}});group.hidden=visible===0;});document.querySelector('#busca-status').textContent=query?`${count} artigo${count===1?'':'s'} encontrado${count===1?'':'s'}.`:'';});
 
+// Consent Mode v2: the Google tag defaults to denied in <head> and is updated here.
+(() => {
+  const storageKey = 'nuxem_consent_v1';
+  const banner = document.querySelector('.consent-banner');
+  if (!banner) return;
+  let choice = null;
+  try { choice = localStorage.getItem(storageKey); } catch (error) {}
+  const show = () => {
+    banner.hidden = false;
+    document.body.classList.add('has-consent-banner');
+  };
+  const hide = () => {
+    banner.hidden = true;
+    document.body.classList.remove('has-consent-banner');
+  };
+  if (choice !== 'granted' && choice !== 'denied') show();
+  document.querySelector('[data-open-consent]')?.addEventListener('click', () => {
+    show();
+    banner.querySelector('button')?.focus();
+  });
+  banner.addEventListener('click', event => {
+    const button = event.target.closest?.('[data-consent]');
+    if (!button) return;
+    const granted = button.dataset.consent === 'granted';
+    const value = granted ? 'granted' : 'denied';
+    try { localStorage.setItem(storageKey, value); } catch (error) {}
+    if (typeof window.gtag === 'function') {
+      window.gtag('consent', 'update', {
+        ad_storage: value,
+        ad_user_data: value,
+        ad_personalization: value,
+        analytics_storage: value,
+      });
+    }
+    hide();
+  });
+})();
+
 // Contact intent only: opening WhatsApp does not confirm a sent message or sale.
 // Never collect form values, link text, telephone numbers or URL query strings.
 (() => {

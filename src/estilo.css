@@ -146,12 +146,31 @@ textarea { min-height: 110px; }
 }
 .zap-flutuante svg { width: 30px; height: 30px; fill: var(--branco); }
 
+/* Consentimento: fixo para não causar deslocamento de layout. */
+.consent-banner {
+  position: fixed; left: 20px; right: 20px; bottom: 18px; z-index: 90;
+  max-width: 920px; margin: 0 auto; padding: 20px 22px;
+  display: flex; align-items: center; justify-content: space-between; gap: 24px;
+  background: #fff; color: var(--texto); border: 1px solid var(--borda); border-radius: 8px;
+  box-shadow: 0 10px 34px rgba(17,46,60,.2);
+}
+.consent-banner h2 { color: var(--azul); font-size: 1.15rem; margin: 0 0 5px; }
+.consent-banner p { font-size: .83rem; line-height: 1.5; margin: 0; max-width: 610px; }
+.consent-actions { display: flex; align-items: center; gap: 9px; flex-shrink: 0; }
+.consent-actions .btn { border: 1px solid var(--azul); cursor: pointer; padding: 11px 15px; }
+.consent-reject { background: #fff; color: var(--azul); }
+.consent-accept { background: var(--azul); color: #fff; }
+.consent-reject:hover { background: var(--cinza-fundo); }
+.consent-accept:hover { background: var(--azul-claro); }
+
 /* Rodapé */
 footer { background: var(--azul); color: #b9c8d6; padding: 44px 0 28px; margin-top: 0; }
 footer .grid-4 { margin-bottom: 28px; }
 footer h2 { color: var(--branco); margin-bottom: 12px; font-size: 1rem; }
 footer a { color: #b9c8d6; text-decoration: none; display: block; margin-bottom: 8px; font-size: .92rem; }
 footer a:hover { color: var(--branco); }
+.privacy-settings { display: block; margin: 13px 0 0; padding: 0; border: 0; background: transparent; color: #b9c8d6; font: inherit; font-size: .92rem; cursor: pointer; text-align: left; }
+.privacy-settings:hover { color: var(--branco); text-decoration: underline; }
 footer .creditos { border-top: 1px solid #ffffff22; padding-top: 18px; font-size: .85rem; text-align: center; }
 
 /* Responsivo */
@@ -170,6 +189,11 @@ footer .creditos { border-top: 1px solid #ffffff22; padding-top: 18px; font-size
 @media (max-width: 560px) {
   .grid-3, .grid-4 { grid-template-columns: 1fr; }
   .hero { padding: 48px 0; }
+  .consent-banner { left: 12px; right: 12px; bottom: 12px; padding: 18px; display: block; }
+  .consent-banner p { font-size: .78rem; }
+  .consent-actions { margin-top: 14px; }
+  .consent-actions .btn { flex: 1; padding: 11px 8px; }
+  .has-consent-banner .zap-flutuante { bottom: 210px; }
 }
 
 /* Leituras editoriais: separadas do menu principal, inclusive no celular. */
