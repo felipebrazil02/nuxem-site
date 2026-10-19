@@ -631,7 +631,7 @@ salvar('contato', layout({
   <h2>Prepare sua solicitação de cotação</h2>
   <p id="cotacao-ajuda">Os campos com * são obrigatórios. Ao continuar, o WhatsApp abrirá com os dados preenchidos. Revise a mensagem e toque em enviar para falar com a Nuxem. O formulário não envia um pedido automaticamente.</p>
   <form class="quote-form" onsubmit="enviarZap(event)" aria-describedby="cotacao-ajuda">
-    <div><label>Produto*<select required name="produto"><option value="">Selecione o produto</option>${PRODUTOS.map(p => `<option>${p.nome}</option>`).join('')}<option>Preciso de orientação</option></select></label></div>
+    <div><label>Produto*<select required name="produto"><option value="">Selecione o produto</option>${PRODUTOS.map(p => `<option data-product-slug="${p.slug}">${p.nome}</option>`).join('')}<option>Preciso de orientação</option></select></label></div>
     <div><label>Cidade de entrega*<input required name="cidade" autocomplete="address-level2" maxlength="100"></label></div>
     <div><label>Estado de entrega*<select required name="uf" autocomplete="address-level1"><option value="">Selecione o estado</option><option>São Paulo</option><option>Minas Gerais</option><option>Paraná</option><option>Outro estado — consultar atendimento</option></select></label></div>
     <div><label>Consumo mensal estimado (opcional)<input name="consumo" placeholder="Ex.: 30.000 L/mês ou ainda não sei" maxlength="100"></label></div>

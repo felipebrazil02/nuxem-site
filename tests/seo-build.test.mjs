@@ -71,7 +71,10 @@ test('SEO output stays consistent across clean and incremental builds, including
     // The existing intent event still targets this form and excludes personal fields.
     const interfaceScript = read('interface.js');
     assert.match(interfaceScript, /form\[onsubmit="enviarZap\(event\)"\]/);
-    assert.match(interfaceScript, /track\('quote_whatsapp_start', 'whatsapp', 'formulario'\)/);
+    assert.match(interfaceScript, /track\('quote_whatsapp_start', 'whatsapp', 'formulario', selectedProduct/);
+    for (const product of PRODUTOS) {
+      assert.ok(contact.includes(`<option data-product-slug="${product.slug}">${product.nome}</option>`));
+    }
     // A imagem pré-carregada deve ser a mesma escolhida pelo navegador no HTML.
     const home = read('index.html');
     const stylesheet = read('estilo.css');
