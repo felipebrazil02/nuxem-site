@@ -212,7 +212,11 @@ footer .creditos { border-top: 1px solid #ffffff22; padding-top: 18px; font-size
   .consent-banner p { font-size: .78rem; }
   .consent-actions { margin-top: 14px; }
   .consent-actions .btn { flex: 1; padding: 11px 8px; }
-  .has-consent-banner .zap-flutuante { bottom: 210px; }
+  .has-consent-banner .zap-flutuante {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 
 /* Leituras editoriais: separadas do menu principal, inclusive no celular. */
@@ -268,6 +272,9 @@ form{max-width:none;grid-template-columns:1fr 1fr;gap:23px;padding:30px;backgrou
 [id]{scroll-margin-top:112px}
 
 .conteudo a.btn-laranja{color:#132d38}
+
+/* Datas e autoria legíveis no fundo claro dos artigos e nos cards do blog. */
+.conteudo .post-meta,.lista-posts .card .post-meta{color:#485d66}
 </style>
 <!-- Google tag (gtag.js) -->
 <script>
@@ -343,9 +350,9 @@ gtag('config', 'G-H0XF8SXJ4B');
 <p>Para <a href="/contato/">cotar BPF com a Nuxem</a>, envie o local da usina, a previsão da campanha e os dados do queimador. Informe qualquer mudança de endereço ou cronograma para que a programação seja reavaliada.</p>
   <h2>Leia também</h2>
   <ul>
-    <li><a href="/blog/oleo-de-xisto-para-usinas-de-asfalto/">Óleo de xisto para usinas de asfalto: avaliação do consumo</a></li>
     <li><a href="/blog/oleo-bpf-litro-quilo-tonelada-unidade-compra/">Óleo BPF por litro, quilo ou tonelada: confira a unidade</a></li>
     <li><a href="/blog/oleo-bpf-para-laticinios-e-agroindustria-de-leite-em-mg/">Óleo BPF para laticínios em MG: consumo e programação de entrega</a></li>
+    <li><a href="/blog/oleo-bpf-para-industria-textil-vapor-em-tinturarias-e-lavanderias/">Óleo BPF na indústria têxtil: consumo de vapor por lote</a></li>
   </ul>
   <p style="margin-top:32px"><a class="btn btn-laranja" href="https://wa.me/5511915011527?text=Ol%C3%A1!%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20de%20%C3%B3leo%20combust%C3%ADvel.">Falar com a Nuxem no WhatsApp</a></p>
 </div></div>

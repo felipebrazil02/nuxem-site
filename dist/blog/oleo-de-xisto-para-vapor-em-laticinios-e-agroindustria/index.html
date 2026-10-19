@@ -212,7 +212,11 @@ footer .creditos { border-top: 1px solid #ffffff22; padding-top: 18px; font-size
   .consent-banner p { font-size: .78rem; }
   .consent-actions { margin-top: 14px; }
   .consent-actions .btn { flex: 1; padding: 11px 8px; }
-  .has-consent-banner .zap-flutuante { bottom: 210px; }
+  .has-consent-banner .zap-flutuante {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 
 /* Leituras editoriais: separadas do menu principal, inclusive no celular. */
@@ -268,6 +272,9 @@ form{max-width:none;grid-template-columns:1fr 1fr;gap:23px;padding:30px;backgrou
 [id]{scroll-margin-top:112px}
 
 .conteudo a.btn-laranja{color:#132d38}
+
+/* Datas e autoria legíveis no fundo claro dos artigos e nos cards do blog. */
+.conteudo .post-meta,.lista-posts .card .post-meta{color:#485d66}
 </style>
 <!-- Google tag (gtag.js) -->
 <script>
