@@ -638,10 +638,10 @@ export const COBERTURA = [
 
 export const PILAR = {
   slug: 'guia-oleo-bpf',
-  title: 'Óleo BPF: Tudo que Sua Indústria Precisa Saber | Guia Completo | Nuxem',
-  description: 'Guia completo sobre óleo BPF: o que é, tipos (B1, A1, BTE, Xisto), aplicações em caldeiras, usinas de asfalto e fundições, como escolher e armazenar. Tudo que sua indústria precisa saber.',
-  h1: 'Óleo BPF: Tudo que Sua Indústria Precisa Saber',
-  resumo: 'Guia completo sobre o principal combustível industrial do Brasil. Saiba o que é, como escolher, onde usar e como garantir o melhor fornecimento para sua operação térmica.',
+  title: 'Óleo BPF: o que é, significado, tipos e aplicações | Nuxem',
+  description: 'Entenda o que é óleo BPF, o significado da sigla, os tipos A1 e B1, aplicações em caldeiras e fornos e os dados para comparar e comprar.',
+  h1: 'Óleo BPF: o que é, significado, tipos e aplicações',
+  resumo: 'Entenda o significado de BPF, as classificações do óleo combustível, onde ele é utilizado e quais dados técnicos devem ser avaliados antes da compra.',
   secoes: [
     {
       titulo: 'O que é Óleo BPF?',
