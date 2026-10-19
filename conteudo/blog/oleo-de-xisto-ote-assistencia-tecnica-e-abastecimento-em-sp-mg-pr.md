@@ -3,7 +3,7 @@ title: "Fornecedor de óleo de xisto em SP, MG e PR: o que informar"
 description: "Organize a consulta de óleo de xisto com ficha técnica, equipamento, consumo e recebimento. Entenda o escopo do apoio na escolha do combustível."
 date: 2026-09-29
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-19
 category: logistica
 ---
 
@@ -34,6 +34,8 @@ Esclareça se a necessidade é obter documentos, comparar produtos ou avaliar um
 Para questões de operação, reúna registros do equipamento. Uma descrição como chama ruim, sem condições de carga e alimentação, limita a investigação. Veja [o que registrar na avaliação do queimador](/blog/queima-de-oleo-de-xisto-ote-atomizacao-e-ajuste-de-queimador/).
 
 ## Programação de entrega
+
+O fornecimento de óleo de xisto pela Nuxem exige **consumo mínimo de 200.000 litros por mês**, **planejamento mensal** e **consulta de disponibilidade**. Esse mínimo corresponde ao consumo da operação, não ao volume de cada entrega. A carteira de clientes de OTE é limitada para permitir a programação de aquisição e abastecimento; o atendimento e os prazos precisam ser confirmados antes da compra.
 
 Informe endereço, quantidade, capacidade disponível e janela de recebimento. A data desejada deve ser confirmada pelo atendimento comercial. Se o produto será usado em um teste, alinhe a entrega com a equipe que acompanhará a avaliação.
 
