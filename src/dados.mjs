@@ -349,11 +349,12 @@ export const PRODUTOS = [
   {
     "slug": "oleo-de-xisto",
     "nome": "Óleo de Xisto (OTE)",
+    "h1": "Fornecedor de óleo de xisto OTE em SP, MG e PR",
     "imagem": "produto-oleo-bpf.webp",
     "imagemAlt": "Imagem ilustrativa de óleo combustível para uso industrial",
     "resumo": "Óleo de xisto OTE para caldeiras, fornos e usinas de asfalto. Consulte a especificação adequada à sua operação.",
-    "title": "Óleo de Xisto OTE em SP, MG e PR | Nuxem",
-    "description": "Fornecimento de óleo de xisto OTE para caldeiras, fornos e usinas de asfalto em SP, MG e PR. Consulte especificações e solicite cotação.",
+    "title": "Fornecedor de Óleo de Xisto OTE em SP, MG e PR | Nuxem",
+    "description": "Óleo de xisto OTE para indústrias com consumo a partir de 200 mil litros/mês. Atendimento em SP, MG e PR com planejamento e disponibilidade sob consulta.",
     "specs": [
       [
         "Viscosidade a 60 °C — ASTM D445",
