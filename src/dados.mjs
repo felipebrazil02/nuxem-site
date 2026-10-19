@@ -714,6 +714,7 @@ export const PILAR = {
         '- Rastreabilidade completa de cada carga',
         '- Suporte técnico na especificação e no acompanhamento',
         '- Padrão constante de qualidade entre entregas',
+        'Para comprar, consulte as condições de <a href="/produtos/oleo-bpf/#cotacao-bpf">fornecimento e cotação de óleo BPF</a>. A Nuxem atende pedidos a partir de 5.000 litros por entrega, sob demanda e com planejamento mensal.',
       ],
     },
     {

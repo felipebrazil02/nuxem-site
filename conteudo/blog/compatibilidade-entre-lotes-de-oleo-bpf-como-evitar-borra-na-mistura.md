@@ -3,7 +3,7 @@ title: "Qualidade do óleo BPF: recebimento e compatibilidade entre lotes"
 description: "Entenda como avaliar a compatibilidade entre lotes de óleo BPF, prevenir borra e planejar a troca de combustível em caldeiras, fornos e usinas de asfalto."
 date: 2026-09-07
 category: operacao
-updated: 2026-10-13
+updated: 2026-10-19
 slugOriginal: ""
 ---
 
@@ -12,6 +12,8 @@ slugOriginal: ""
 Receber um novo lote de óleo combustível não significa apenas recompor o estoque. Quando existe produto remanescente no tanque, a descarga cria uma mistura que precisa continuar estável durante o armazenamento, o bombeamento e a alimentação do queimador. Dois lotes individualmente adequados às suas especificações podem apresentar incompatibilidade quando combinados.
 
 Em caldeiras, fornos e usinas de asfalto, essa condição pode provocar formação de borra, saturação de filtros e restrição de vazão. O problema merece atenção especialmente nas mudanças de fornecedor, de formulação ou de tipo de combustível. Avaliar a compatibilidade do [óleo BPF](/produtos/oleo-bpf/) antes da transição ajuda a preservar a continuidade operacional sem atribuir automaticamente toda ocorrência à qualidade de uma carga isolada.
+
+Este artigo trata da qualidade no recebimento e da mistura entre lotes. Para a definição do combustível, consulte [o que é óleo BPF, seu significado e suas classes](/guia-oleo-bpf/).
 
 ## Qualidade do óleo BPF: o que conferir no recebimento
 

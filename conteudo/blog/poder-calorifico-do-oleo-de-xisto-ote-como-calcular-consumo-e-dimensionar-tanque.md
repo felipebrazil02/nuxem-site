@@ -1,9 +1,9 @@
 ---
 title: "Poder calorífico do óleo de xisto: consumo e autonomia do tanque"
-description: "Use poder calorífico, eficiência e densidade do óleo de xisto para estimar consumo e autonomia. Veja um exemplo com unidades e premissas explícitas."
+description: "Calcule consumo e autonomia com o poder calorífico do óleo de xisto OTE. Veja como combinar PCI ou PCS, eficiência e densidade sem misturar unidades."
 date: 2026-10-04
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-19
 category: operacao
 ---
 

@@ -3,13 +3,15 @@ title: "Consumo de óleo BPF em caldeiras: fórmula e exemplo de cálculo"
 description: "Calcule consumo de óleo combustível em kg/h, litros/h e kg por tonelada de vapor. Veja um exemplo e os cuidados com densidade, PCI, PCS e eficiência."
 date: 2026-07-16
 category: operacao
-updated: 2026-10-09
+updated: 2026-10-19
 slugOriginal: ""
 ---
 
 **Consumo de combustível = carga térmica útil ÷ (poder calorífico × eficiência).** Essa relação permite estimar o consumo de óleo BPF ou de outro combustível em uma caldeira. O resultado só é comparável à operação quando unidades e condições adotadas são consistentes.
 
 Para preparar uma compra de [óleo BPF](/produtos/oleo-bpf/), confronte a estimativa com os registros da caldeira. A ficha técnica do produto e os dados do equipamento são necessários; não existe um consumo universal por tipo de óleo.
+
+Se você ainda estiver definindo a classe e a aplicação do combustível, consulte primeiro o [guia de óleo BPF](/guia-oleo-bpf/). Use esta página para calcular consumo depois que as propriedades do produto e a condição da caldeira estiverem identificadas.
 
 ## Dados necessários para o cálculo
 
