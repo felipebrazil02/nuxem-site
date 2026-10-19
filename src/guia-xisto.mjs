@@ -10,7 +10,7 @@ export function conteudoGuiaXisto() {
   return `
 <p><strong>Óleo de xisto é um óleo obtido pelo processamento do xisto betuminoso.</strong> No contexto deste guia, tratamos do combustível industrial comercializado como OTE e avaliado para geração de calor em caldeiras, fornos, secadores e usinas de asfalto. A aplicação depende das propriedades do produto e da compatibilidade com a instalação.</p>
 <p>Se você já conhece o combustível e quer comprar, consulte a <a href="/produtos/oleo-de-xisto/">página de fornecimento de óleo de xisto OTE</a>. Aqui estão os conceitos e os caminhos para aprofundar cada avaliação.</p>
-<nav class="leituras" aria-label="Neste guia"><h2>Neste guia</h2><ul>
+<aside class="leituras" aria-label="Neste guia"><h2>Neste guia</h2><ul>
 <li><a href="#origem">Origem e identificação do OTE</a></li>
 <li><a href="#aplicacoes">Para que serve e onde utilizar</a></li>
 <li><a href="#propriedades">Propriedades e documentos técnicos</a></li>
@@ -19,7 +19,7 @@ export function conteudoGuiaXisto() {
 <li><a href="#fornecimento">Compra e fornecimento na Nuxem</a></li>
 <li><a href="#perguntas">Perguntas frequentes</a></li>
 <li><a href="#artigos-xisto">Artigos para aprofundar</a></li>
-</ul></nav>
+</ul></aside>
 
 <h2 id="origem">De onde vem o óleo de xisto?</h2>
 <p>O xisto betuminoso é uma rocha com matéria orgânica. Seu processamento térmico permite obter óleo e outros produtos. O glossário da ANP relaciona o óleo de xisto ao xisto pirobetuminoso; a Greca identifica o OTE como óleo combustível industrial obtido pelo processamento dessa matéria-prima.</p>
