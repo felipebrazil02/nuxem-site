@@ -23,6 +23,9 @@ test('SEO output stays consistent across clean and incremental builds, including
     const cleanURLs = sitemapURLs();
     // A imagem pré-carregada deve ser a mesma escolhida pelo navegador no HTML.
     const home = read('index.html');
+    const stylesheet = read('estilo.css');
+    assert.doesNotMatch(stylesheet, /\.has-consent-banner \.zap-flutuante\s*\{[^}]*bottom:/s);
+    assert.match(stylesheet, /\.has-consent-banner \.zap-flutuante\s*\{[^}]*visibility:\s*hidden/s);
     const hero = home.match(/<img[^>]+fetchpriority="high"[^>]*>/)[0];
     const preload = home.match(/<link rel="preload"[^>]*>/)[0];
     assert.equal(preload.match(/imagesrcset="([^"]+)"/)[1], hero.match(/srcset="([^"]+)"/)[1]);
