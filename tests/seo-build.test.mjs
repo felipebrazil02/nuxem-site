@@ -135,6 +135,7 @@ test('SEO output stays consistent across clean and incremental builds, including
       ['como-armazenar-oleo-bpf-com-seguranca', '/blog/manutencao-preventiva-em-sistemas-de-armazenamento-de-oleo-bpf/'],
       ['controle-de-temperatura-oleo-usina-de-asfalto', '/blog/impacto-da-viscosidade-do-oleo-bpf-na-eficiencia-da-queima/'],
       ['oleo-bpf-vida-util-de-equipamentos', '/blog/manutencao-preventiva-em-sistemas-de-armazenamento-de-oleo-bpf/'],
+      ['oleo-bpf-a1-conformidade-tecnica-e-aplicacoes', '/produtos/oleo-a1/'],
       ['oleo-combustivel-b1-especificacoes-e-aplicacoes', '/produtos/oleo-b1/'],
     ]) {
       assert.ok(rules.includes(`/blog/${from}/ ${to} 301`));
