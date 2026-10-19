@@ -26,6 +26,8 @@ O [óleo BPF](/produtos/oleo-bpf/) e o [óleo de xisto OTE](/produtos/oleo-de-xi
 
 Para entender as denominações, consulte os guias de [óleo BPF: significado e aplicações](/guia-oleo-bpf/) e [óleo de xisto: o que é e para que serve](/guia-oleo-de-xisto/). Se a avaliação for de OTE na produção de asfalto, veja o roteiro de [consumo e compatibilidade do óleo de xisto em usinas](/blog/oleo-de-xisto-para-usinas-de-asfalto/).
 
+Se o produto em análise for BPF, veja [como acompanhar consumo, avaliar o queimador e programar o abastecimento da usina](/blog/oleo-bpf-para-usinas-de-asfalto/).
+
 ## O que é óleo térmico e onde ele circula?
 
 Óleo térmico é um fluido selecionado para transferir calor em sistemas de aquecimento indireto. Ele circula pelo aquecedor e pelos componentes previstos no projeto, transportando energia entre eles. No uso normal desse circuito, sua finalidade é a troca térmica, e não a alimentação do queimador.

@@ -566,7 +566,7 @@ export const SOLUCOES = [
       'Fornecemos óleo BPF e alternativas de viscosidades diferentes, com produção sob demanda e padrão constante. Nossa equipe apoia a especificação correta para o seu queimador e o seu regime de produção, em qualquer região do estado de São Paulo.',
     ],
     produtosRelacionados: ['oleo-bpf', 'oleos-alternativos', 'oleo-a1'],
-    artigosRelacionados: ['oleo-combustivel-oleo-termico-cap-usina-asfalto', 'oleo-de-xisto-para-usinas-de-asfalto', 'logistica-de-abastecimento-de-oleo-bpf-entre-sp-mg-e-pr', 'como-programar-o-abastecimento-de-oleo-bpf-para-evitar-paradas'],
+    artigosRelacionados: ['oleo-bpf-para-usinas-de-asfalto', 'oleo-combustivel-oleo-termico-cap-usina-asfalto', 'oleo-de-xisto-para-usinas-de-asfalto', 'logistica-de-abastecimento-de-oleo-bpf-entre-sp-mg-e-pr', 'como-programar-o-abastecimento-de-oleo-bpf-para-evitar-paradas'],
   },
   {
     slug: 'caldeiras',
@@ -672,6 +672,7 @@ export const PILAR = {
       titulo: 'Aplicações Industriais do Óleo BPF',
       paragrafos: [
         'O óleo BPF é amplamente utilizado em diversos segmentos industriais que dependem de geração de calor para seus processos produtivos. Cada aplicação exige um perfil específico de combustível.',
+        'Em usinas de asfalto, veja como relacionar <a href="/blog/oleo-bpf-para-usinas-de-asfalto/">consumo de óleo BPF, compatibilidade do queimador e planejamento do abastecimento</a> com a campanha de produção.',
       ],
       lista: [
         { texto: 'Caldeiras Industriais — geração de vapor para processos contínuos', link: '/solucoes/caldeiras/' },
