@@ -352,7 +352,7 @@ for (const p of PRODUTOS) {
     },
     conteudo: `
 <div class="pagina-topo"><div class="container">
-  <h1>${p.nome}</h1>
+  <h1>${p.h1 || p.nome}</h1>
   <p class="resumo">${comercial?.resumo || p.resumo}</p>
   ${comercial?.abertura || ''}
 </div></div>

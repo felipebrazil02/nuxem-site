@@ -125,6 +125,8 @@ test('SEO output stays consistent across clean and incremental builds, including
       assert.equal(product.additionalProperty, undefined, 'Consultation guidance is not a certified product property');
     }
     assert.match(read('produtos/oleo-bpf/index.html'), /PCS ou PCI em kcal\/kg ou MJ\/kg/);
+    assert.match(read('produtos/oleo-bpf/index.html'), /<h1>Fornecedor de óleo BPF para indústria em SP, MG e PR<\/h1>/);
+    assert.match(read('produtos/oleo-bpf/index.html'), /a partir de 5\.000 litros/);
     assert.doesNotMatch(read('produtos/oleo-apf/index.html'), /baixa viscosidade, que dispensa/);
     assert.doesNotMatch(read('produtos/oleo-a1/index.html'), /2,5%/);
     assert.doesNotMatch(read('produtos/oleo-b1/index.html'), /atende os limites da Resolução CONAMA 491/);
