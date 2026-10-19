@@ -2,6 +2,7 @@
 title: "Ficha técnica, FDS e laudo de óleo combustível: como ler cada documento antes de comprar"
 description: "Como ler ficha técnica, FDS e laudo de análise de óleo combustível: entenda a diferença e o que conferir em cada um antes de fechar a compra."
 date: "2026-10-15"
+updated: 2026-10-19
 slugOriginal: ""
 category: "compra"
 ---
@@ -9,6 +10,8 @@ category: "compra"
 ## A resposta curta primeiro
 
 Ao comprar óleo combustível industrial você deve receber três documentos diferentes: a **ficha técnica**, a **Ficha de Dados de Segurança (FDS)** e, em alguns casos, o **laudo de análise**. Eles respondem a perguntas distintas e não são intercambiáveis. A ficha técnica informa as propriedades do produto para especificação; a FDS trata de perigos, manuseio e transporte; o laudo reporta o resultado de uma análise de uma amostra específica. Confundir um com o outro é um dos erros mais comuns na compra, porque cada um sustenta uma decisão diferente — escolher o combustível certo, operar com segurança e comparar propostas de forma justa.
+
+Use este roteiro ao conferir a documentação do [óleo BPF ofertado](/produtos/oleo-bpf/) ou do [óleo de xisto OTE](/produtos/oleo-de-xisto/). As páginas comerciais indicam quais referências e documentos devem ser confirmados antes da compra.
 
 ## A diferença entre os três documentos
 

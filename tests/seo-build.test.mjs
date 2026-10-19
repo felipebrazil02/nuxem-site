@@ -129,6 +129,20 @@ test('SEO output stays consistent across clean and incremental builds, including
     assert.match(read('produtos/oleo-bpf/index.html'), /a partir de 5\.000 litros/);
     assert.match(read('produtos/oleo-de-xisto/index.html'), /<h1>Fornecedor de óleo de xisto OTE em SP, MG e PR<\/h1>/);
     assert.match(read('produtos/oleo-de-xisto/index.html'), /consumo a partir de 200 mil litros\/mês/);
+    for (const slug of [
+      'como-preparar-uma-solicitacao-de-cotacao-de-oleo-combustivel-industrial',
+      'ficha-tecnica-fds-e-laudo-de-oleo-combustivel-como-ler-antes-de-comprar',
+      'oleo-combustivel-para-estufas-e-secadores-agricolas-no-parana',
+      'oleo-combustivel-para-estufas-e-secadores-agricolas',
+      'ponto-de-fulgor-oleo-combustivel-armazenamento',
+      'reducao-de-custos-com-substituicao-de-oleo-combustivel',
+    ]) assert.match(read(`blog/${slug}/index.html`), /href="\/produtos\/oleo-bpf\/"/);
+    for (const slug of [
+      'como-preparar-uma-solicitacao-de-cotacao-de-oleo-combustivel-industrial',
+      'ficha-tecnica-fds-e-laudo-de-oleo-combustivel-como-ler-antes-de-comprar',
+      'ponto-de-fulgor-oleo-combustivel-armazenamento',
+      'reducao-de-custos-com-substituicao-de-oleo-combustivel',
+    ]) assert.match(read(`blog/${slug}/index.html`), /href="\/produtos\/oleo-de-xisto\/"/);
     assert.doesNotMatch(read('produtos/oleo-apf/index.html'), /baixa viscosidade, que dispensa/);
     assert.doesNotMatch(read('produtos/oleo-a1/index.html'), /2,5%/);
     assert.doesNotMatch(read('produtos/oleo-b1/index.html'), /atende os limites da Resolução CONAMA 491/);
