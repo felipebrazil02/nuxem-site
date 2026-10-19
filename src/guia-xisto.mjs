@@ -35,7 +35,7 @@ export function conteudoGuiaXisto() {
 <li><a href="/blog/oleo-de-xisto-para-fornos-e-secadores-industriais/">Fornos e secadores</a>: confira o regime térmico e a forma de transferência de calor.</li>
 <li><a href="/blog/oleo-de-xisto-para-a-industria-ceramica-fornos-secadores-e-abastecimento/">Indústria cerâmica</a>: avalie também os critérios de qualidade do material processado.</li>
 </ul>
-<p>Em uma usina, diferencie o combustível queimado do fluido de transferência de calor e do ligante asfáltico. A aprovação de um uso não autoriza empregar o mesmo produto em outro circuito.</p>
+<p>Em uma usina, diferencie o combustível queimado do fluido de transferência de calor e do ligante asfáltico. Veja a <a href="/blog/oleo-combustivel-oleo-termico-cap-usina-asfalto/">diferença entre óleo combustível, óleo térmico e CAP</a> antes de definir o pedido. A aprovação de um uso não autoriza empregar o mesmo produto em outro circuito.</p>
 
 <h2 id="propriedades">Quais propriedades devem ser verificadas?</h2>
 <p>Confira cada valor com sua unidade, temperatura de ensaio e natureza: limite máximo, limite mínimo, referência de catálogo ou resultado de amostra. A <a href="/produtos/oleo-de-xisto/#dados-tecnicos">página comercial reúne especificações de referência do OTE Greca</a>, com a fonte identificada. Elas não são um laudo de lote da Nuxem.</p>
