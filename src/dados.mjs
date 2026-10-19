@@ -566,7 +566,7 @@ export const SOLUCOES = [
       'Fornecemos óleo BPF e alternativas de viscosidades diferentes, com produção sob demanda e padrão constante. Nossa equipe apoia a especificação correta para o seu queimador e o seu regime de produção, em qualquer região do estado de São Paulo.',
     ],
     produtosRelacionados: ['oleo-bpf', 'oleos-alternativos', 'oleo-a1'],
-    artigosRelacionados: ['oleo-de-xisto-para-usinas-de-asfalto', 'logistica-de-abastecimento-de-oleo-bpf-entre-sp-mg-e-pr', 'como-programar-o-abastecimento-de-oleo-bpf-para-evitar-paradas'],
+    artigosRelacionados: ['oleo-combustivel-oleo-termico-cap-usina-asfalto', 'oleo-de-xisto-para-usinas-de-asfalto', 'logistica-de-abastecimento-de-oleo-bpf-entre-sp-mg-e-pr', 'como-programar-o-abastecimento-de-oleo-bpf-para-evitar-paradas'],
   },
   {
     slug: 'caldeiras',

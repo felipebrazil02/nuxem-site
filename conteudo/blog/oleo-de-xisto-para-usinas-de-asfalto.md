@@ -15,6 +15,8 @@ Consulte o [óleo de xisto OTE](/produtos/oleo-de-xisto/) ofertado e a documenta
 
 Identifique o consumidor de combustível e sua função. Secagem de agregados e sistemas de aquecimento de outros componentes da usina não devem ser tratados automaticamente como uma única aplicação.
 
+Antes de pedir o produto, confira a [diferença entre óleo combustível, óleo térmico e CAP na usina de asfalto](/blog/oleo-combustivel-oleo-termico-cap-usina-asfalto/). O combustível do queimador, o fluido de transferência de calor e o ligante da mistura atendem a funções diferentes.
+
 Registre fabricante, modelo, capacidade e condições de alimentação. As [soluções para usinas de asfalto](/solucoes/usinas-de-asfalto/) ajudam a encaminhar a consulta comercial, mas a especificação depende do equipamento.
 
 ## Como comparar consumo
