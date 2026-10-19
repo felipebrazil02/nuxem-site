@@ -9,26 +9,35 @@ category: "operacao"
 
 ## A resposta curta
 
-O **ponto de fulgor** de um líquido é a menor temperatura, em condições padronizadas de ensaio, na qual ele desprende vapor suficiente para formar uma mistura inflamável com o ar que se inflama momentaneamente ao entrar em contato com uma fonte de ignição. Em termos práticos, ele indica o risco de o produto iniciar uma queima em contato com faísca ou chama durante o manuseio. Quanto maior o ponto de fulgor, mais alta é a temperatura necessária para o produto liberar vapores inflamáveis — ou seja, mais segura tende a ser a operação à temperatura ambiente. Para quem armazena e usa óleo combustível industrial, esse dado orienta decisões de armazenamento, aquecimento e classificação do risco.
+O **ponto de fulgor** de um líquido é a menor temperatura, em condições padronizadas de ensaio, na qual ele desprende vapor suficiente para formar uma mistura inflamável com o ar que se inflama momentaneamente ao entrar em contato com uma fonte de ignição. Esse resultado ajuda a avaliar os riscos de armazenamento, aquecimento e manuseio do óleo combustível, mas não define sozinho uma condição segura de operação. A avaliação também depende da temperatura de uso, da formação de névoas, das fontes de ignição e das características da instalação.
 
 ## O que o ponto de fulgor significa na prática
 
-No ensaio, o produto é aquecido em uma cuba (vaso aberto ou fechado) e uma fonte de ignição é aproximada da superfície em intervalos de temperatura. O ponto de fulgor é a menor temperatura em que ocorre a inflamação momentânea dos vapores. A definição e o método de medição seguem normas como a ABNT NBR 7974, citada nas regras de armazenagem de líquidos inflamáveis e combustíveis.
+No ensaio, a amostra é submetida às condições do método escolhido, incluindo o tipo de vaso e a aplicação de uma fonte de ignição. O ponto de fulgor é identificado pela inflamação momentânea dos vapores. Confira no laudo qual método foi utilizado: resultados de ensaios em vaso aberto e fechado não devem ser tratados como equivalentes.
 
 Dois pontos merecem atenção:
 
-- O ponto de fulgor **não** é a temperatura em que o líquido passa a queimar de forma contínua — isso é o **ponto de combustão**, sempre mais alto.
-- Ele também **não** é a temperatura de autoignição, na qual o produto se inflama sozinho, sem fonte externa, que é ainda mais alta.
+- O ponto de fulgor **não** é o **ponto de combustão**, que caracteriza a manutenção da queima nas condições do ensaio.
+- Ele também **não** é a temperatura de autoignição, relacionada à ignição sem chama ou faísca externa nas condições de ensaio. Não se deve calcular uma dessas propriedades a partir da outra.
 
-Para a maioria dos óleos combustíveis industriais o ponto de fulgor fica bem acima da temperatura ambiente. Por isso eles costumam ser classificados como **líquidos combustíveis** (ponto de fulgor em vaso fechado igual ou superior a 37,8 °C), e não como líquidos inflamáveis, que apresentam ponto de fulgor abaixo desse valor. Essa distinção aparece em regras de armazenamento como a ABNT NBR 17505 e em normas de segurança no trabalho.
+## Como a NR-20 classifica os líquidos
+
+Para fins da **NR-20**, a classificação considera os seguintes limites de ponto de fulgor:
+
+- **Líquidos inflamáveis:** ponto de fulgor igual ou inferior a **60 °C** (item 20.3.1).
+- **Líquidos combustíveis:** ponto de fulgor superior a **60 °C** e igual ou inferior a **93 °C** (item 20.3.3).
+
+Esses critérios são específicos da NR-20. Classificações de armazenamento, transporte e outras normas devem ser verificadas em seus próprios textos; seus limites não são intercambiáveis. Um resultado acima de 93 °C também não significa ausência de risco ou dispensa automática de avaliação da instalação.
+
+Fonte: [NR-20 — texto oficial do Ministério do Trabalho e Emprego, itens 20.3.1, 20.3.1.1 e 20.3.3](https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-20-atualizada-2025.pdf).
 
 ## Por que isso importa no armazenamento
 
 O ponto de fulgor influencia três aspectos da operação de quem compra óleo combustível:
 
 - **Classificação do risco da instalação:** o produto classificado como líquido combustível tem requisitos de armazenagem e distância de segurança diferentes dos líquidos inflamáveis. Confirmar o ponto de fulgor do produto cotado ajuda a enquadrar o tanque e o pátio na regra aplicável.
-- **Aquecimento e transferência:** quem usa [óleo BPF](/produtos/oleo-bpf/), APF, [óleo de xisto OTE](/produtos/oleo-de-xisto/) ou BTE pode precisar aquecer o produto para reduzir a viscosidade e permitir bombeamento e atomização, conforme a especificação e o equipamento. Se o produto for armazenado ou transferido aquecido a temperaturas iguais ou superiores ao seu ponto de fulgor, a **NR 20** (norma de segurança com inflamáveis e combustíveis) passa a tratá-lo como líquido inflamável, com exigências adicionais de controle e documentação.
-- **Trabalho com chama e corte:** soldas, esmerilhamento e outras fontes de ignição próximas a tanques e linhas exigem cuidado redobrado. Quanto mais alto o ponto de fulgor, maior a temperatura em que os vapores se tornam inflamáveis — mas isso não elimina o risco, apenas o desloca para temperaturas mais altas.
+- **Aquecimento e transferência:** quem usa [óleo BPF](/produtos/oleo-bpf/), APF, [óleo de xisto OTE](/produtos/oleo-de-xisto/) ou BTE pode precisar aquecer o produto para reduzir a viscosidade e permitir bombeamento e atomização, conforme a especificação e o equipamento. Pelo item 20.3.1.1 da NR-20, líquidos com ponto de fulgor superior a 60 °C se equiparam aos inflamáveis quando armazenados e transferidos aquecidos a temperaturas iguais ou superiores ao seu ponto de fulgor.
+- **Trabalho com chama e corte:** soldas, esmerilhamento e outras fontes de ignição próximas a tanques e linhas exigem avaliação e controle específicos. O ponto de fulgor não deve ser usado isoladamente para autorizar trabalhos a quente ou concluir que uma instalação está segura.
 
 ## O que um laudo de análise mostra
 
