@@ -193,7 +193,11 @@ footer .creditos { border-top: 1px solid #ffffff22; padding-top: 18px; font-size
   .consent-banner p { font-size: .78rem; }
   .consent-actions { margin-top: 14px; }
   .consent-actions .btn { flex: 1; padding: 11px 8px; }
-  .has-consent-banner .zap-flutuante { bottom: 210px; }
+  .has-consent-banner .zap-flutuante {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 
 /* Leituras editoriais: separadas do menu principal, inclusive no celular. */
