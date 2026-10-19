@@ -9,6 +9,7 @@ import { LEITURAS, CATEGORIAS_BLOG } from './src/leituras.mjs';
 import { otimizarImagens, preloadHero as preloadImagemPrincipal } from './src/imagens.mjs';
 import { comercialBpf } from './src/comercial-bpf.mjs';
 import { comercialXisto } from './src/comercial-xisto.mjs';
+import { GUIA_XISTO, conteudoGuiaXisto } from './src/guia-xisto.mjs';
 
 const raiz = dirname(fileURLToPath(import.meta.url));
 const dirBlog = join(raiz, 'conteudo', 'blog');
@@ -292,7 +293,7 @@ salvar('.', layout({
   <p class="secao-sub">Entrega com frota própria em ${EMPRESA.cidades} — e em todas as demais regiões dos três estados.</p>
   <p style="margin-top:8px"><a class="saiba" href="/cobertura/">Ver todas as regiões atendidas →</a></p>
 </div></section>
-<section class="site-editorial"><div class="container"><div class="section-kicker">CONHECIMENTO QUE AJUDA A DECIDIR</div><h2 class="secao">Da especificação à compra.</h2><p class="secao-sub">Conteúdo técnico para quem precisa escolher bem e manter a operação em movimento.</p><div class="grid grid-3"><a class="editorial-card" href="/guia-oleo-bpf/"><span>GUIA TÉCNICO</span><h3>Entenda o óleo BPF.</h3><p>Classificações, aplicações e critérios para a sua operação.</p><b>Explorar o guia ↗</b></a><a class="editorial-card" href="/blog/oleo-de-xisto-ote-vs-oleo-bpf-diferencas-praticas-para-a-industria/"><span>ESCOLHA DO COMBUSTÍVEL</span><h3>BPF ou óleo de xisto?</h3><p>Compare consumo, especificações e custo por energia útil.</p><b>Ler comparação ↗</b></a><a class="editorial-card" href="/blog/"><span>BLOG NUXEM</span><h3>Respostas para a indústria.</h3><p>Artigos sobre compra, aplicações, operação e logística.</p><b>Acessar todos os artigos ↗</b></a></div></div></section>`,
+<section class="site-editorial"><div class="container"><div class="section-kicker">CONHECIMENTO QUE AJUDA A DECIDIR</div><h2 class="secao">Da especificação à compra.</h2><p class="secao-sub">Conteúdo técnico para quem precisa escolher bem e manter a operação em movimento.</p><div class="grid grid-3"><a class="editorial-card" href="/guia-oleo-bpf/"><span>GUIA TÉCNICO</span><h3>Entenda o óleo BPF.</h3><p>Classificações, aplicações e critérios para a sua operação.</p><b>Explorar o guia ↗</b></a><a class="editorial-card" href="/guia-oleo-de-xisto/"><span>GUIA TÉCNICO</span><h3>Conheça o óleo de xisto.</h3><p>Origem, aplicações e critérios para avaliar o OTE na indústria.</p><b>Explorar o guia ↗</b></a><a class="editorial-card" href="/blog/"><span>BLOG NUXEM</span><h3>Respostas para a indústria.</h3><p>Artigos sobre compra, aplicações, operação e logística.</p><b>Acessar todos os artigos ↗</b></a></div></div></section>`,
 }));
 
 // PRODUTOS (índice) — com schema ItemList para rich snippet
@@ -497,6 +498,29 @@ for (const f of arquivosBlog) {
 }
 posts.sort((a, b) => (a.date < b.date ? 1 : -1));
 
+// Página informativa central de xisto, com diretório dos artigos existentes.
+const artigosXisto = posts.filter(p => p.slug.includes('xisto') && p.language === 'pt');
+salvar(GUIA_XISTO.slug, layout({
+  title: GUIA_XISTO.title, description: GUIA_XISTO.description, caminho: GUIA_XISTO.slug,
+  jsonLd: {
+    '@context': 'https://schema.org', '@type': 'Article',
+    headline: GUIA_XISTO.h1, description: GUIA_XISTO.description,
+    datePublished: '2026-10-19', dateModified: '2026-10-19', inLanguage: 'pt-BR',
+    author: { '@type': 'Organization', name: EMPRESA.nome },
+    publisher: { '@type': 'Organization', name: EMPRESA.nome },
+    mainEntityOfPage: `${EMPRESA.dominio}/${GUIA_XISTO.slug}/`,
+  },
+  conteudo: `<div class="pagina-topo"><div class="container">
+    <h1>${GUIA_XISTO.h1}</h1><p class="resumo">${GUIA_XISTO.resumo}</p>
+  </div></div><div class="container"><div class="conteudo">
+    <p class="post-meta">Publicado em 19 de outubro de 2026 — Equipe Nuxem</p>
+    ${conteudoGuiaXisto()}
+    <h2 id="artigos-xisto">Artigos para aprofundar a avaliação do óleo de xisto</h2>
+    <p>Escolha o assunto relacionado à sua aplicação ou etapa de compra. Os artigos detalham os critérios apresentados neste guia.</p>
+    <ul>${artigosXisto.map(p => `<li><a href="/blog/${p.slug}/">${p.title}</a></li>`).join('')}</ul>
+  </div></div>`,
+}));
+
 const titulosPorSlug = Object.fromEntries(posts.map(p => [p.slug, p.title]));
 
 function listagemBlog(todos) {
@@ -511,6 +535,7 @@ function listagemBlog(todos) {
     ${grupos.map(c => `<li><a href="#${c.slug}">${c.titulo} (${c.posts.length})</a></li>`).join('')}
   </ul></aside>
   ${leituras('blog')}
+  <p>Comece pelos guias: <a href="/guia-oleo-bpf/">óleo BPF: significado e aplicações</a> ou <a href="/guia-oleo-de-xisto/">óleo de xisto: o que é e para que serve</a>.</p>
   ${grupos.map(c => `<div class="grupo-blog" id="${c.slug}"><h2>${c.titulo}</h2>${c.posts.map(p => `<div class="card"><h3><a href="/blog/${p.slug}/">${p.title}</a></h3><p class="post-meta">${p.updated ? 'Atualizado em ' + dataBr(p.updated) : p.dataExibicao || dataBr(p.date)}</p><p>${p.description}</p></div>`).join('')}</div>`).join('')}
 </div></section>`;
 }
@@ -563,6 +588,7 @@ for (const p of posts) {
 ${p.updated ? `<p class="post-meta">Atualizado em ${dataBr(p.updated)}</p>` : ''}
   ${capa ? `<img class="foto-pagina" src="${capa}" alt="${p.title}">` : ''}
   ${p.html}
+  ${p.slug.includes('xisto') && p.language === 'pt' ? '<aside class="leituras" aria-label="Guia de óleo de xisto"><h2>Entenda o combustível antes de aprofundar a aplicação</h2><p>Consulte o <a href="/guia-oleo-de-xisto/">guia de óleo de xisto: o que é, para que serve e aplicações</a>. Para comprar, veja as <a href="/produtos/oleo-de-xisto/">condições de fornecimento de óleo de xisto OTE</a>.</p></aside>' : ''}
   <h2>Leia também</h2>
   <ul>
     ${rel.map(r => `<li><a href="/blog/${r.slug}/">${r.title}</a></li>`).join('\n    ')}
