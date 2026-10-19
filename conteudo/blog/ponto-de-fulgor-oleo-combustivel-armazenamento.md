@@ -11,6 +11,8 @@ category: "operacao"
 
 O **ponto de fulgor** de um líquido é a menor temperatura, em condições padronizadas de ensaio, na qual ele desprende vapor suficiente para formar uma mistura inflamável com o ar que se inflama momentaneamente ao entrar em contato com uma fonte de ignição. Esse resultado ajuda a avaliar os riscos de armazenamento, aquecimento e manuseio do óleo combustível, mas não define sozinho uma condição segura de operação. A avaliação também depende da temperatura de uso, da formação de névoas, das fontes de ignição e das características da instalação.
 
+Se a dúvida for sobre a denominação do combustível, consulte [o que é óleo BPF e o significado da sigla](/guia-oleo-bpf/). Nesta página, o foco é interpretar o ponto de fulgor e suas implicações para armazenamento e operação.
+
 ## O que o ponto de fulgor significa na prática
 
 No ensaio, a amostra é submetida às condições do método escolhido, incluindo o tipo de vaso e a aplicação de uma fonte de ignição. O ponto de fulgor é identificado pela inflamação momentânea dos vapores. Confira no laudo qual método foi utilizado: resultados de ensaios em vaso aberto e fechado não devem ser tratados como equivalentes.

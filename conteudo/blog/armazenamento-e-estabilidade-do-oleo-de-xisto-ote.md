@@ -1,9 +1,9 @@
 ---
 title: "Armazenamento de óleo de xisto: lote, tanque e compatibilidade"
-description: "Saiba o que avaliar no tanque de óleo de xisto: estoque remanescente, condições de armazenamento, rastreabilidade e investigação de depósitos."
+description: "Armazenamento de óleo de xisto OTE: avalie tanque, estoque remanescente, compatibilidade entre lotes, aquecimento e rastreabilidade."
 date: "2026-09-25"
 slugOriginal: ""
-updated: 2026-10-13
+updated: 2026-10-19
 category: operacao
 ---
 
