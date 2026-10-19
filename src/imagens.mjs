@@ -3,6 +3,10 @@ import { readFileSync } from 'node:fs';
 const manifesto = JSON.parse(readFileSync(new URL('./imagens/manifesto.json', import.meta.url)));
 const heroAvif = JSON.parse(readFileSync(new URL('./imagens/hero-avif.json', import.meta.url)));
 const candidatosAvif = heroAvif.map(v => `${v.url} ${v.width}w`).join(', ');
+const fotosAvif = {
+  '/imagens/hero-usina-asfalto.webp': heroAvif,
+  ...Object.fromEntries(['caldeira', 'fundicao'].map(nome => [`/imagens/${nome}.webp`, JSON.parse(readFileSync(new URL(`./imagens/${nome}-avif.json`, import.meta.url)))])),
+};
 export const tamanhosHero = '(max-width: 560px) calc(100vw - 44px), (max-width: 860px) calc(100vw - 40px), (max-width: 1240px) 48vw, 562px';
 const tamanhosCard = '(max-width: 560px) calc(100vw - 44px), (max-width: 860px) calc((100vw - 62px) / 2), (max-width: 1240px) calc((100vw - 84px) / 3), 385px';
 
@@ -33,6 +37,11 @@ export function otimizarImagens(html) {
     }
     if (src === '/imagens/hero-usina-asfalto.webp' && /fetchpriority="high"/.test(tag)) {
       return `<picture class="hero-picture"><source type="image/avif" srcset="${candidatosAvif}" sizes="${tamanhosHero}">${resultado}</picture>`;
+    }
+    if (fotosAvif[src] && /loading="lazy"/.test(tag)) {
+      const srcset = fotosAvif[src].map(v => `${v.url} ${v.width}w`).join(', ');
+      const sizes = resultado.match(/\bsizes="([^"]+)"/)[1];
+      return `<picture><source type="image/avif" srcset="${srcset}" sizes="${sizes}">${resultado}</picture>`;
     }
     return resultado;
   });
