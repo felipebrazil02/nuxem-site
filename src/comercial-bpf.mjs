@@ -16,7 +16,7 @@ export function comercialBpf(empresa) {
       <p>Informe o consumo mensal, o volume por entrega e as datas previstas. Se sua produção variar, comunique a nova necessidade para revisar a programação. Veja <a href="/blog/como-programar-o-abastecimento-de-oleo-bpf-para-evitar-paradas/">como planejar o abastecimento de óleo BPF</a>.</p>
       <h2>Fornecimento para caldeiras, fornos e usinas de asfalto</h2>
       <ul><li><a href="/solucoes/caldeiras/">Caldeiras industriais</a>: informe a demanda de vapor, o combustível atual e o consumo estimado.</li>
-      <li><a href="/solucoes/usinas-de-asfalto/">Usinas de asfalto</a>: informe o consumo por período e a previsão de produção para planejar as entregas.</li>
+      <li><a href="/solucoes/usinas-de-asfalto/">Usinas de asfalto</a>: informe o consumo por período e a previsão de produção para planejar as entregas. Consulte o roteiro de <a href="/blog/oleo-bpf-para-usinas-de-asfalto/">consumo, queimador e abastecimento de BPF na usina</a>.</li>
       <li>Fornos e <a href="/solucoes/fundicoes/">fundições</a>: informe o processo, o regime de operação e a especificação de combustível exigida pelo equipamento.</li></ul>
       <p>A escolha do óleo depende da compatibilidade com o equipamento e dos requisitos da instalação. Consulte abaixo as referências de classe e os documentos necessários para a compra.</p>`,
     cotacao: `<h2 id="cotacao-bpf">Como solicitar sua cotação de óleo BPF</h2>

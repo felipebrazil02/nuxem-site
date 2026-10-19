@@ -3,13 +3,15 @@ title: "Óleo BPF para usinas de asfalto em MG: entrega por campanha"
 description: "Planeje BPF para usinas de asfalto no Triângulo Mineiro e interior de MG com produção prevista, localização da usina e capacidade de recebimento."
 date: 2026-08-03
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-19
 category: logistica
 ---
 
 **O abastecimento de BPF de uma usina de asfalto deve acompanhar a campanha de produção e o endereço real da operação.** Uma alteração de local ou cronograma pode mudar acesso, frete e janela de entrega, mesmo quando o comprador continua sendo a mesma empresa.
 
 A Nuxem atende Minas Gerais, incluindo consultas para o Triângulo Mineiro e o interior. Verifique a [cobertura de fornecimento em MG](/cobertura/) e confirme as condições do pedido.
+
+Para a avaliação técnica e o indicador em litros por tonelada, consulte [óleo BPF para usinas de asfalto: consumo, queimador e abastecimento](/blog/oleo-bpf-para-usinas-de-asfalto/). Este artigo concentra-se na logística regional e no endereço da campanha em Minas Gerais.
 
 ## Informe onde e como a usina operará
 
