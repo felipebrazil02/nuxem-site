@@ -44,18 +44,20 @@ input?.addEventListener('input',()=>{const norm=s=>s.normalize('NFD').replace(/[
 })();
 
 // Contact intent only: opening WhatsApp does not confirm a sent message or sale.
-// Never collect form values, link text, telephone numbers or URL query strings.
+// Only approved product codes; never collect free text, personal fields or query strings.
 (() => {
   if (!['nuxemoil.com.br', 'www.nuxemoil.com.br'].includes(location.hostname)) return;
   const path = location.pathname;
-  const product = /^\/produtos\/([^/]+)\/?$/.exec(path)?.[1] || 'nao_especificado';
-  function track(name, method, placement) {
+  const products = new Set(['oleo-bpf', 'oleo-de-xisto', 'oleo-apf', 'oleo-b1', 'oleo-a1', 'oleo-bte', 'oleos-alternativos']);
+  const safeProduct = value => products.has(value) ? value : 'nao_especificado';
+  const product = safeProduct(/^\/produtos\/([^/]+)\/?$/.exec(path)?.[1]);
+  function track(name, method, placement, selectedProduct = product) {
     if (typeof window.gtag !== 'function') return;
     window.gtag('event', name, {
       send_to: 'G-H0XF8SXJ4B',
       contact_method: method,
       contact_placement: placement,
-      product_slug: product,
+      product_slug: safeProduct(selectedProduct),
       page_location: location.origin + path,
     });
   }
@@ -80,7 +82,9 @@ input?.addEventListener('input',()=>{const norm=s=>s.normalize('NFD').replace(/[
   const form = document.querySelector('form[onsubmit="enviarZap(event)"]');
   if (form) {
     form.addEventListener('submit', () => {
-      if (form.checkValidity()) track('quote_whatsapp_start', 'whatsapp', 'formulario');
+      if (!form.checkValidity()) return;
+      const selectedProduct = form.elements.namedItem('produto')?.selectedOptions[0]?.dataset.productSlug;
+      track('quote_whatsapp_start', 'whatsapp', 'formulario', selectedProduct || 'nao_especificado');
     });
   }
 })();
