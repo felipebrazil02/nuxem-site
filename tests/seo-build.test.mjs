@@ -28,11 +28,15 @@ test('SEO output stays consistent across clean and incremental builds, including
     assert.match(stylesheet, /\.has-consent-banner \.zap-flutuante\s*\{[^}]*visibility:\s*hidden/s);
     const hero = home.match(/<img[^>]+fetchpriority="high"[^>]*>/)[0];
     const preload = home.match(/<link rel="preload"[^>]*>/)[0];
-    assert.equal(preload.match(/imagesrcset="([^"]+)"/)[1], hero.match(/srcset="([^"]+)"/)[1]);
-    assert.equal(preload.match(/imagesizes="([^"]+)"/)[1], hero.match(/sizes="([^"]+)"/)[1]);
+    const avif = home.match(/<source type="image\/avif"[^>]+>/)[0];
+    assert.equal(preload.match(/imagesrcset="([^"]+)"/)[1], avif.match(/srcset="([^"]+)"/)[1]);
+    assert.equal(preload.match(/imagesizes="([^"]+)"/)[1], avif.match(/sizes="([^"]+)"/)[1]);
+    assert.equal(avif.match(/sizes="([^"]+)"/)[1], hero.match(/sizes="([^"]+)"/)[1]);
+    assert.match(preload, /type="image\/avif"/);
     assert.match(preload, /fetchpriority="high"/);
     assert.match(hero, /hero-usina-asfalto-640-[a-f0-9]{10}\.webp 640w/);
-    assert.match(preload, /hero-usina-asfalto-640-[a-f0-9]{10}\.webp 640w/);
+    assert.match(preload, /hero-usina-asfalto-640-[a-f0-9]{10}\.avif 640w/);
+    for (const [, asset] of avif.matchAll(/(\/imagens\/responsivas\/[^ ,]+\.avif)/g)) assert.ok(existsSync(join(root, 'dist', asset)));
     for (const page of ['produtos/oleo-bpf/index.html', 'guia-oleo-bpf/index.html']) {
       assert.match(read(page), /href="\/guia-oleo-bpf\/faq\/"/);
     }
