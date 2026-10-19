@@ -1,9 +1,9 @@
 ---
-title: "Óleo de xisto para usinas de asfalto: avaliação do consumo"
-description: "Avalie óleo de xisto em usinas de asfalto com dados do queimador, produção, condições dos agregados e programação de uma entrega de teste."
+title: "Óleo de xisto para usina de asfalto"
+description: "Veja como avaliar consumo, queimador e teste do óleo de xisto em usinas de asfalto. Fornecimento planejado sob consulta para demandas a partir de 200 mil L/mês."
 date: 2026-09-22
 slugOriginal: ""
-updated: 2026-10-13
+updated: 2026-10-19
 category: aplicacoes-xisto
 ---
 
