@@ -15,7 +15,8 @@ for name in ['hero-usina-asfalto', 'caldeira', 'fundicao']:
     src = f'/imagens/{name}.webp'
     variants = []
     with Image.open(root / f'{name}.webp') as original:
-        for width in [160, 480, 800]:
+        widths = [160, 480, 640, 800] if name == 'hero-usina-asfalto' else [160, 480, 800]
+        for width in widths:
             output = BytesIO()
             size = (width, round(original.height * width / original.width))
             original.resize(size, Image.Resampling.LANCZOS).save(
@@ -25,6 +26,7 @@ for name in ['hero-usina-asfalto', 'caldeira', 'fundicao']:
             (root / 'responsivas' / filename).write_bytes(data)
             variants.append({'url': '/imagens/responsivas/' + filename, 'width': width})
             previous = root / 'responsivas' / f'{name}-{width}.webp'
-            print(f'{name} {width}: {previous.stat().st_size} -> {len(data)} bytes')
+            previous_size = previous.stat().st_size if previous.exists() else 'nova variante'
+            print(f'{name} {width}: {previous_size} -> {len(data)} bytes')
     manifest[src]['variants'] = variants
 manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')

@@ -31,6 +31,8 @@ test('SEO output stays consistent across clean and incremental builds, including
     assert.equal(preload.match(/imagesrcset="([^"]+)"/)[1], hero.match(/srcset="([^"]+)"/)[1]);
     assert.equal(preload.match(/imagesizes="([^"]+)"/)[1], hero.match(/sizes="([^"]+)"/)[1]);
     assert.match(preload, /fetchpriority="high"/);
+    assert.match(hero, /hero-usina-asfalto-640-[a-f0-9]{10}\.webp 640w/);
+    assert.match(preload, /hero-usina-asfalto-640-[a-f0-9]{10}\.webp 640w/);
     for (const page of ['produtos/oleo-bpf/index.html', 'guia-oleo-bpf/index.html']) {
       assert.match(read(page), /href="\/guia-oleo-bpf\/faq\/"/);
     }
