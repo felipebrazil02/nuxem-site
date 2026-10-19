@@ -22,6 +22,27 @@ test('SEO output stays consistent across clean and incremental builds, including
     const sitemapURLs = () => [...read('sitemap.xml').matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
     build();
     const cleanURLs = sitemapURLs();
+    const guideURL = 'https://nuxemoil.com.br/guia-oleo-de-xisto/';
+    assert.equal(cleanURLs.filter(u => u === guideURL).length, 1);
+    const xistoGuide = read('guia-oleo-de-xisto/index.html');
+    assert.equal([...xistoGuide.matchAll(/<h1\b/g)].length, 1);
+    assert.ok(xistoGuide.includes(`<link rel="canonical" href="${guideURL}">`));
+    assert.doesNotMatch(xistoGuide, /noindex/);
+    const guideSchema = JSON.parse(xistoGuide.match(/<script type="application\/ld\+json">([^]*?)<\/script>/)[1]);
+    assert.equal(guideSchema['@type'], 'Article');
+    assert.equal(guideSchema.mainEntityOfPage, guideURL);
+    assert.equal(guideSchema.datePublished, '2026-10-19');
+    for (const [, id] of xistoGuide.matchAll(/href="#([^"]+)"/g)) {
+      assert.ok(xistoGuide.includes(`id="${id}"`), `Broken guide anchor: ${id}`);
+    }
+    for (const url of cleanURLs.filter(u => /\/blog\/[^/]*xisto[^/]*\/$/.test(u))) {
+      assert.ok(xistoGuide.includes(`href="${new URL(url).pathname}"`), `Missing guide article: ${url}`);
+      assert.match(read(new URL(url).pathname.slice(1) + 'index.html'), /href="\/guia-oleo-de-xisto\/"/);
+    }
+    for (const path of ['index.html','blog/index.html','produtos/oleo-de-xisto/index.html']) {
+      assert.match(read(path), /href="\/guia-oleo-de-xisto\/"/);
+    }
+    assert.match(xistoGuide, /href="\/produtos\/oleo-de-xisto\/#cotacao-xisto"/);
     // The form opens a draft only; special characters and optional blanks must survive.
     const contact = read('contato/index.html');
     const formScript = [...contact.matchAll(/<script>([^]*?)<\/script>/g)].map(m => m[1]).find(s => s.includes('function enviarZap'));

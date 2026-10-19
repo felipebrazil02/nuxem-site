@@ -387,7 +387,7 @@ export const PRODUTOS = [
       "Antes de substituir o combustível, confirme viscosidade, teor de enxofre, poder calorífico e condições de armazenamento. A necessidade de aquecimento e os resultados de emissões devem ser avaliados para o produto e a instalação, sem presumir dispensa de aquecimento ou redução de emissões em todos os casos.",
       "A Nuxem fornece óleo de xisto em São Paulo, Minas Gerais e Paraná, com frota própria e atendimento 24 horas. Consulte a programação de entrega para a sua cidade."
     ],
-    "orientacao": "Informe cidade de entrega, tipo de queimador, combustível atual e consumo estimado. Solicite a ficha técnica e a ficha de dados de segurança do produto cotado para avaliar a aplicação. Veja a <a href=\"/blog/comparacao-tecnica-oleo-de-xisto-bte-bpf-e-oleos-alternativos/\">comparação entre combustíveis industriais</a> e as <a href=\"/cobertura/\">regiões atendidas</a>.",
+    "orientacao": "Informe cidade de entrega, tipo de queimador, combustível atual e consumo estimado. Solicite a ficha técnica e a ficha de dados de segurança do produto cotado para avaliar a aplicação. Consulte o <a href=\"/guia-oleo-de-xisto/\">guia de óleo de xisto: origem e aplicações</a>, a <a href=\"/blog/comparacao-tecnica-oleo-de-xisto-bte-bpf-e-oleos-alternativos/\">comparação entre combustíveis industriais</a> e as <a href=\"/cobertura/\">regiões atendidas</a>.",
     "criterio": "Especificação do OTE, compatibilidade de armazenamento e desempenho na aplicação.",
     "faq": [
       {
