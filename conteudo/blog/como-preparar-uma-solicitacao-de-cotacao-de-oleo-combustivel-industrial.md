@@ -6,13 +6,15 @@ slugOriginal: ""
 studioArticleId: "0f411d7f-d004-442e-a0b5-a21fbeefcc0a"
 studioContentHash: "08e248084794bbea8b81fd3268800cd43ca718c283a702f9f3c9ea13ffdfc82b"
 language: "pt"
-updated: 2026-10-09
+updated: 2026-10-19
 category: compra
 ---
 
 Solicitar uma cotação de óleo combustível industrial parece simples, mas a qualidade das informações enviadas faz muita diferença no retorno comercial. Quando a empresa apresenta dados claros sobre consumo, aplicação e logística, o fornecedor consegue avaliar melhor a demanda e responder com uma proposta mais útil. Para quem opera fornos, caldeiras, fundições ou usinas de asfalto, isso ajuda a evitar retrabalho, atrasos e ruídos na negociação.
 
 Neste artigo, você vai ver como organizar uma solicitação de cotação de forma objetiva, técnica e alinhada ao uso industrial.
+
+Se a operação já estiver avaliando um produto, consulte as condições de fornecimento do [óleo BPF](/produtos/oleo-bpf/) e do [óleo de xisto OTE](/produtos/oleo-de-xisto/) antes de enviar os dados. Cada opção possui requisitos comerciais e de planejamento diferentes.
 
 ## Por que a solicitação de cotação precisa ser bem feita
 

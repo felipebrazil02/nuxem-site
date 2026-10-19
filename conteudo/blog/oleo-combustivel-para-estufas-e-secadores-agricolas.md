@@ -3,13 +3,13 @@ title: "Combustível para secadores agrícolas: equipamento e consumo"
 description: "Veja o que avaliar antes de usar óleo combustível em secadores ou estufas agrícolas: equipamento, contato com produto, consumo e armazenamento."
 date: 2026-08-05
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-19
 category: aplicacoes-bpf
 ---
 
 **O uso de óleo combustível em secagem agrícola depende da aprovação do equipamento e dos requisitos do material processado.** Não se deve adaptar uma instalação ou escolher o combustível apenas pelo preço. A avaliação deve distinguir aquecimento direto e indireto e as condições de contato dos gases com o produto.
 
-O [catálogo de combustíveis da Nuxem](/produtos/) apresenta opções para consulta industrial. A adequação a um secador ou estufa deve ser confirmada pelo fabricante e pelos responsáveis pelo processo.
+A página de [fornecimento de óleo BPF](/produtos/oleo-bpf/) apresenta as condições comerciais para consulta industrial. A adequação a um secador ou estufa deve ser confirmada pelo fabricante e pelos responsáveis pelo processo.
 
 ## Identifique a aplicação antes da compra
 

@@ -2,6 +2,7 @@
 title: "Ponto de fulgor do óleo combustível: o que é e por que importa no armazenamento"
 description: "Entenda o que é o ponto de fulgor de um óleo combustível, a diferença para ponto de combustão e ignição e quais cuidados considerar no armazenamento e aquecimento."
 date: "2026-10-18"
+updated: 2026-10-19
 slugOriginal: ""
 category: "operacao"
 ---
@@ -26,7 +27,7 @@ Para a maioria dos óleos combustíveis industriais o ponto de fulgor fica bem a
 O ponto de fulgor influencia três aspectos da operação de quem compra óleo combustível:
 
 - **Classificação do risco da instalação:** o produto classificado como líquido combustível tem requisitos de armazenagem e distância de segurança diferentes dos líquidos inflamáveis. Confirmar o ponto de fulgor do produto cotado ajuda a enquadrar o tanque e o pátio na regra aplicável.
-- **Aquecimento e transferência:** quem usa óleo BPF, APF, xisto ou BTE normalmente precisa aquecer o produto para reduzir a viscosidade e permitir bombeamento e atomização. Se o produto for armazenado ou transferido aquecido a temperaturas iguais ou superiores ao seu ponto de fulgor, a **NR 20** (norma de segurança com inflamáveis e combustíveis) passa a tratá-lo como líquido inflamável, com exigências adicionais de controle e documentação.
+- **Aquecimento e transferência:** quem usa [óleo BPF](/produtos/oleo-bpf/), APF, [óleo de xisto OTE](/produtos/oleo-de-xisto/) ou BTE pode precisar aquecer o produto para reduzir a viscosidade e permitir bombeamento e atomização, conforme a especificação e o equipamento. Se o produto for armazenado ou transferido aquecido a temperaturas iguais ou superiores ao seu ponto de fulgor, a **NR 20** (norma de segurança com inflamáveis e combustíveis) passa a tratá-lo como líquido inflamável, com exigências adicionais de controle e documentação.
 - **Trabalho com chama e corte:** soldas, esmerilhamento e outras fontes de ignição próximas a tanques e linhas exigem cuidado redobrado. Quanto mais alto o ponto de fulgor, maior a temperatura em que os vapores se tornam inflamáveis — mas isso não elimina o risco, apenas o desloca para temperaturas mais altas.
 
 ## O que um laudo de análise mostra

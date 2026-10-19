@@ -3,13 +3,15 @@ title: "Combustível para secadores no Paraná: logística da campanha"
 description: "Planeje a cotação de combustível para secadores no Paraná com especificação aprovada, acesso rural, período de operação e capacidade de recebimento."
 date: 2026-08-11
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-19
 category: logistica
 ---
 
 **A compra de combustível para um secador no Paraná deve combinar aprovação técnica e planejamento da campanha.** A demanda pode variar com o material recebido e o tempo de operação; acesso e capacidade de descarga também precisam ser confirmados para cada destino.
 
 Consulte a [cobertura da Nuxem no Paraná](/cobertura/). Informe o endereço operacional, inclusive quando diferente do endereço fiscal da empresa.
+
+Quando o equipamento estiver aprovado para essa classe de combustível, consulte também as [condições de fornecimento de óleo BPF](/produtos/oleo-bpf/) e informe o consumo previsto durante a campanha.
 
 ## Primeiro, confirme a aplicação
 

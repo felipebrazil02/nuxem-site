@@ -3,13 +3,13 @@ title: "Troca de combustível industrial: como calcular economia e retorno"
 description: "Compare custo por produção, energia auxiliar, manutenção e investimento antes de substituir óleo combustível. Veja um exemplo de retorno simples."
 date: 2026-07-31
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-19
 category: compra
 ---
 
 **Uma troca de combustível só representa economia quando reduz o custo para a mesma entrega útil, nas condições avaliadas.** Preço por litro menor é um indício comercial, não uma conclusão sobre o custo do processo.
 
-Comece pelo combustível atual, pela produção e pelas despesas associadas. Identifique o período da medição e os fatores que mudaram. O [catálogo de combustíveis industriais](/produtos/) ajuda a organizar opções, mas a comparação depende da especificação de cada proposta.
+Comece pelo combustível atual, pela produção e pelas despesas associadas. Identifique o período da medição e os fatores que mudaram. Compare as condições comerciais do [óleo BPF](/produtos/oleo-bpf/) e do [óleo de xisto OTE](/produtos/oleo-de-xisto/) somente depois de confirmar a compatibilidade técnica; a comparação depende da especificação de cada proposta.
 
 ## Monte a condição de referência
 
