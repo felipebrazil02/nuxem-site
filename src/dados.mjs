@@ -26,11 +26,12 @@ export const PRODUTOS = [
   {
     "slug": "oleo-bpf",
     "nome": "Óleo BPF",
+    "h1": "Fornecedor de óleo BPF para indústria em SP, MG e PR",
     "imagem": "produto-oleo-bpf.webp",
     "imagemAlt": "Imagem ilustrativa de óleo combustível para uso industrial",
     "resumo": "Óleo combustível para caldeiras, fornos e usinas de asfalto. Compare classe, viscosidade, enxofre e custo entregue.",
-    "title": "Óleo BPF em SP, MG e PR | Fornecedor | Nuxem",
-    "description": "Fornecimento de óleo BPF para caldeiras, fornos e usinas de asfalto em SP, MG e PR. Frota própria e atendimento 24h. Solicite cotação.",
+    "title": "Fornecedor de Óleo BPF em SP, MG e PR | Nuxem",
+    "description": "Óleo BPF a partir de 5.000 litros para indústrias em SP, MG e PR. Entrega em até 1 dia útil num raio de 200 km de Salto, conforme programação.",
     "specs": [
       [
         "OCA1 — viscosidade a 60 °C e enxofre",
