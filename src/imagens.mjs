@@ -1,6 +1,8 @@
 import { readFileSync } from 'node:fs';
 
 const manifesto = JSON.parse(readFileSync(new URL('./imagens/manifesto.json', import.meta.url)));
+const heroAvif = JSON.parse(readFileSync(new URL('./imagens/hero-avif.json', import.meta.url)));
+const candidatosAvif = heroAvif.map(v => `${v.url} ${v.width}w`).join(', ');
 export const tamanhosHero = '(max-width: 560px) calc(100vw - 44px), (max-width: 860px) calc(100vw - 40px), (max-width: 1240px) 48vw, 562px';
 const tamanhosCard = '(max-width: 560px) calc(100vw - 44px), (max-width: 860px) calc((100vw - 62px) / 2), (max-width: 1240px) calc((100vw - 84px) / 3), 385px';
 
@@ -11,8 +13,7 @@ function candidatos(src, meta) {
 }
 
 export function preloadHero() {
-  const src = '/imagens/hero-usina-asfalto.webp';
-  return `<link rel="preload" as="image" href="${src}" imagesrcset="${candidatos(src, manifesto[src])}" imagesizes="${tamanhosHero}" fetchpriority="high">`;
+  return `<link rel="preload" as="image" type="image/avif" href="${heroAvif.at(-1).url}" imagesrcset="${candidatosAvif}" imagesizes="${tamanhosHero}" fetchpriority="high">`;
 }
 
 // Mantém src e alt existentes; adiciona alternativas sem mudar as URLs de conteúdo.
@@ -29,6 +30,9 @@ export function otimizarImagens(html) {
           : /class="foto-pagina"/.test(tag) ? '(max-width: 830px) calc(100vw - 44px), 790px'
           : tamanhosCard);
       resultado = resultado.replace(/\s sizes="[^"]*"/, '').replace(/>$/, ` srcset="${candidatos(src, meta)}" sizes="${sizes}">`);
+    }
+    if (src === '/imagens/hero-usina-asfalto.webp' && /fetchpriority="high"/.test(tag)) {
+      return `<picture class="hero-picture"><source type="image/avif" srcset="${candidatosAvif}" sizes="${tamanhosHero}">${resultado}</picture>`;
     }
     return resultado;
   });
