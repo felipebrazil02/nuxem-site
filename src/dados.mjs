@@ -557,7 +557,7 @@ export const SOLUCOES = [
     nome: 'Usinas de asfalto',
     imagem: 'hero-usina-asfalto.webp',
     imagemAlt: 'Usina de asfalto ao entardecer com caminhão de óleo combustível',
-    resumo: 'Combustível com entrega programada para a usina nunca parar por falta de abastecimento.',
+    resumo: 'Combustível com entrega programada conforme o consumo e o cronograma de produção da usina.',
     title: 'Óleo Combustível para Usina de Asfalto | Entrega em SP | Nuxem',
     description: 'Fornecimento de óleo BPF e combustíveis industriais para usinas de asfalto em São Paulo. Entrega rápida com frota própria e atendimento 24h. Solicite cotação.',
     corpo: [
@@ -579,7 +579,7 @@ export const SOLUCOES = [
     corpo: [
       'Caldeiras industriais operam em regime contínuo, e a estabilidade da queima impacta diretamente a produção de vapor, o consumo específico e a vida útil do equipamento. Variações no combustível aparecem na chama, no rendimento e na manutenção.',
       'A Nuxem fornece óleo BPF e óleos alternativos com padrão constante de qualidade, produzidos sob demanda. Apoiamos a especificação correta para o seu sistema: viscosidade de trabalho, aquecimento de linha, temperatura de atomização e rotina de operação.',
-      'Com frota própria e atendimento 24 horas, garantimos o abastecimento contínuo que uma caldeira exige — em todo o estado de São Paulo.',
+      'Com frota própria e atendimento 24 horas, planejamos o abastecimento conforme o consumo da caldeira. Consulte disponibilidade e programação para sua cidade em São Paulo.',
     ],
     produtosRelacionados: ['oleo-bpf', 'oleo-apf', 'oleo-b1', 'oleo-bte'],
     artigosRelacionados: ['como-especificar-o-oleo-combustivel-certo-para-seu-queimador', 'como-calcular-consumo-de-oleo-combustivel-em-caldeiras', 'impacto-da-viscosidade-do-oleo-bpf-na-eficiencia-da-queima'],
@@ -595,7 +595,7 @@ export const SOLUCOES = [
     corpo: [
       'Fundições trabalham com as cargas térmicas mais exigentes da indústria. A consistência do processo depende de um combustível com padrão estável: variações de qualidade aparecem em comportamento de queima, controle de temperatura e paradas não planejadas.',
       'A Nuxem fornece óleo BPF e alternativas de viscosidades diferentes para fornos de fundição, com produção sob demanda e qualidade constante entre entregas — o que protege a repetibilidade do seu processo.',
-      'Nosso atendimento 24 horas e a frota própria garantem que o forno não pare por falta de combustível. Atendemos fundições em todo o estado de São Paulo, com suporte técnico na especificação.',
+      'Com atendimento 24 horas e frota própria, organizamos o fornecimento conforme a demanda e a programação da fundição. Atendemos São Paulo, com suporte técnico na especificação e confirmação das condições de entrega.',
     ],
     produtosRelacionados: ['oleo-bpf', 'oleos-alternativos'],
     artigosRelacionados: ['compatibilidade-entre-lotes-de-oleo-bpf-como-evitar-borra-na-mistura', 'reducao-de-custos-com-substituicao-de-oleo-combustivel', 'como-especificar-o-oleo-combustivel-certo-para-seu-queimador'],

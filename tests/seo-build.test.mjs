@@ -4,6 +4,7 @@ import { mkdtempSync, mkdirSync, cpSync, readFileSync, writeFileSync, existsSync
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { execFileSync } from 'node:child_process';
+import { runInNewContext } from 'node:vm';
 import { CATEGORIAS_BLOG, LEITURAS } from '../src/leituras.mjs';
 import { PRODUTOS } from '../src/dados.mjs';
 
@@ -21,6 +22,35 @@ test('SEO output stays consistent across clean and incremental builds, including
     const sitemapURLs = () => [...read('sitemap.xml').matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
     build();
     const cleanURLs = sitemapURLs();
+    // The form opens a draft only; special characters and optional blanks must survive.
+    const contact = read('contato/index.html');
+    const formScript = [...contact.matchAll(/<script>([^]*?)<\/script>/g)].map(m => m[1]).find(s => s.includes('function enviarZap'));
+    const opened = [];
+    const context = { window: { open: (...args) => opened.push(args) } };
+    runInNewContext(formScript, context);
+    const values = { produto: 'Óleo BPF', cidade: 'Salto', uf: 'São Paulo', consumo: '30.000 L/mês', volume: '5.000 L', segmento: '', nome: 'Teste & QA', empresa: 'Empresa #1', fone: '', demanda: '', msg: 'Acentos: óleo + dados?\nSegunda linha' };
+    const form = { reportValidity: () => true, elements: { namedItem: name => ({ value: values[name] }) } };
+    let prevented = false;
+    context.enviarZap({ preventDefault: () => { prevented = true; }, target: form });
+    assert.ok(prevented);
+    assert.equal(opened.length, 1);
+    const whatsapp = new URL(opened[0][0]);
+    assert.equal(whatsapp.origin, 'https://wa.me');
+    assert.equal(whatsapp.pathname, '/5511915011527');
+    const message = whatsapp.searchParams.get('text');
+    assert.ok(message.includes('Produto: Óleo BPF\nCidade: Salto\nEstado: São Paulo'));
+    assert.ok(message.includes('Empresa: Empresa #1'));
+    assert.ok(message.includes(values.msg));
+    assert.ok(!message.includes('Contato:'));
+    assert.equal(opened[0][2], 'noopener,noreferrer');
+    form.reportValidity = () => false;
+    context.enviarZap({ preventDefault() {}, target: form });
+    assert.equal(opened.length, 1, 'Invalid form must never open WhatsApp');
+    assert.match(contact, /onsubmit="enviarZap\(event\)"/);
+    // The existing intent event still targets this form and excludes personal fields.
+    const interfaceScript = read('interface.js');
+    assert.match(interfaceScript, /form\[onsubmit="enviarZap\(event\)"\]/);
+    assert.match(interfaceScript, /track\('quote_whatsapp_start', 'whatsapp', 'formulario'\)/);
     // A imagem pré-carregada deve ser a mesma escolhida pelo navegador no HTML.
     const home = read('index.html');
     const stylesheet = read('estilo.css');
