@@ -1,6 +1,6 @@
 ---
-title: "Óleo de xisto para usina de asfalto"
-description: "Veja como avaliar consumo, queimador e teste do óleo de xisto em usinas de asfalto. Fornecimento planejado sob consulta para demandas a partir de 200 mil L/mês."
+title: "Óleo de xisto para usinas de asfalto: consumo e cotação"
+description: "Óleo de xisto OTE para usinas de asfalto: consumo, queimador e compra. Consulte disponibilidade para consumo a partir de 200 mil L/mês, com planejamento."
 date: 2026-09-22
 slugOriginal: ""
 updated: 2026-10-19
@@ -9,7 +9,9 @@ category: aplicacoes-xisto
 
 **Uma avaliação de óleo de xisto em usina de asfalto deve comparar o desempenho para condições de produção identificadas.** Mudanças nos agregados, na carga e nas partidas podem alterar o consumo e precisam ser registradas antes de concluir que um combustível economiza mais que outro.
 
-Consulte o [óleo de xisto OTE](/produtos/oleo-de-xisto/) ofertado e a documentação do queimador. A aprovação de uso deve considerar a instalação e os critérios do processo.
+Consulte a especificação do [óleo de xisto OTE para fornecimento industrial](/produtos/oleo-de-xisto/) e a documentação do queimador. A aprovação de uso deve considerar a instalação e os critérios do processo.
+
+**Para consultar fornecimento à Nuxem:** a usina deve ter consumo a partir de **200 mil litros por mês**, com planejamento mensal e disponibilidade sob consulta. O mínimo é mensal; o volume por entrega depende da programação. [Veja as condições para cotar óleo de xisto para sua usina](/produtos/oleo-de-xisto/#cotacao-xisto).
 
 ## Qual equipamento será avaliado?
 
@@ -35,10 +37,14 @@ Defina a especificação requerida, a documentação e os critérios de aceitaç
 
 Combine janela de entrega, equipe de recebimento e acompanhamento técnico. O [plano de migração para OTE](/blog/como-migrar-sua-caldeira-ou-forno-para-oleo-de-xisto-ote/) deve incluir a conduta em caso de desvio, respeitando os procedimentos da instalação.
 
-## Da avaliação ao fornecimento recorrente
+## Como consultar preço e fornecimento de xisto para a usina
 
 Documente produto, configuração e condições em que o teste foi aprovado. Revise a programação quando a usina mudar de local ou o cronograma de produção for alterado.
 
 Para levar essa avaliação à compra, consulte as [condições de fornecimento de óleo de xisto OTE](/produtos/oleo-de-xisto/#cotacao-xisto). A Nuxem atende operações com demanda mínima de 200 mil litros por mês, exige planejamento mensal e depende de consulta de disponibilidade.
 
-Informe endereço da usina, modelo do queimador, consumo mensal previsto e cronograma da campanha. Uma entrega para avaliação também precisa ser alinhada previamente; este roteiro técnico não representa uma oferta de carga de teste avulsa. [Fale com a Nuxem sobre a necessidade da usina](/contato/) para confirmar disponibilidade, especificação e programação.
+Informe cidade/UF e endereço da usina, modelo do queimador, combustível atual, consumo mensal previsto, quantidade desejada por entrega e cronograma da campanha. Esses dados permitem consultar preço, frete, disponibilidade e programação para a operação.
+
+Uma entrega para avaliação também precisa ser alinhada previamente; este roteiro técnico não representa uma oferta de carga de teste avulsa.
+
+[Consulte preço e condições de fornecimento de óleo de xisto OTE](/produtos/oleo-de-xisto/#cotacao-xisto) ou [prepare os dados da usina no formulário de cotação](/contato/). Quantidades e prazos são confirmados após avaliar a demanda e o planejamento mensal.
