@@ -1,9 +1,9 @@
 ---
-title: "Preço do óleo BPF com frete: como comparar propostas"
-description: "Compare propostas de óleo BPF na mesma base: produto, quantidade, frete, destino, adicionais e pagamento para calcular o custo entregue."
+title: "Preço do óleo BPF com frete: cálculo e cotação"
+description: "Veja como calcular o preço do óleo BPF com frete e comparar propostas sem duplicar custos. Consulte cotação conforme produto, quantidade e cidade de entrega."
 date: 2026-09-10
 category: compra
-updated: 2026-10-13
+updated: 2026-10-19
 slugOriginal: ""
 studioArticleId: "28841fbc-b9e5-4ef4-913a-3e20c784e072"
 studioContentHash: "5db48d732225cfa31887de084560e6c628ab1d53947317fd2320f7b328358151"
@@ -13,6 +13,8 @@ language: "pt"
 Para comparar o preço do óleo BPF com frete, coloque todas as propostas na mesma base de produto, quantidade, unidade de cobrança e endereço de entrega. Depois, some somente os valores que serão efetivamente cobrados e ainda não estejam incluídos. Divida esse total pela quantidade correspondente. O resultado é o custo entregue por unidade, que deve ser analisado junto com o pagamento e a entrega confirmados.
 
 Uma oferta com valor unitário menor pode deixar o transporte para contratação à parte. Outra pode incluir o frete, mas considerar quantidade ou destino diferentes. Antes de escolher, elimine essas diferenças de escopo.
+
+**Para consultar preço e frete com a Nuxem:** informe cidade/UF de entrega, produto e quantidade com unidade. O fornecimento de BPF começa em **5.000 litros por entrega**, sob demanda e com planejamento mensal. [Veja as condições para cotar óleo BPF para sua operação](/produtos/oleo-bpf/#cotacao-bpf). O custo entregue e a programação devem ser confirmados na proposta.
 
 ## Confirme qual produto está sendo comparado
 
@@ -74,8 +76,10 @@ O custo entregue por unidade é uma etapa da decisão. Produtos com desempenho d
 
 Antes da aprovação, confira se a oferta continua válida, se a quantidade pode ser atendida e se a janela informada corresponde à necessidade da fábrica. Guarde a versão utilizada, os esclarecimentos e o total aprovado no registro do pedido.
 
-## Solicite uma proposta de BPF na mesma base de comparação
+## Como consultar preço, frete e entrega de óleo BPF
 
-Para [solicitar uma cotação de óleo BPF](/produtos/oleo-bpf/#cotacao-bpf), envie município, aplicação, volume ou massa pretendida, consumo mensal e período de entrega. A Nuxem trabalha a partir de 5.000 litros por entrega, sob demanda e mediante planejamento mensal. Confirme produto, unidade de cobrança, frete e demais condições na proposta antes de aplicar o comparativo deste artigo.
+Para [solicitar uma cotação de óleo BPF](/produtos/oleo-bpf/#cotacao-bpf), envie cidade/UF e endereço de entrega, aplicação, volume ou massa pretendida com unidade, consumo mensal e período desejado. Informe também o equipamento e o combustível atual para orientar a avaliação da demanda.
 
-Consulte também a [cobertura de entregas em SP, MG e PR](/cobertura/) e, se precisar esclarecer os dados do pedido, [fale com a equipe da Nuxem](/contato/).
+A Nuxem trabalha a partir de 5.000 litros por entrega, sob demanda e mediante planejamento mensal. Peça a confirmação do produto, da quantidade, da unidade de cobrança, do frete, dos tributos e da programação antes de aplicar o comparativo deste artigo. O exemplo numérico acima é didático; o preço para sua operação depende da proposta.
+
+[Consulte preço e condições de fornecimento de óleo BPF](/produtos/oleo-bpf/#cotacao-bpf) ou [prepare os dados para cotação no formulário da Nuxem](/contato/). Confira também a [cobertura de entregas em SP, MG e PR](/cobertura/) para informar corretamente o destino.
