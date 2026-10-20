@@ -4,9 +4,13 @@ export function comercialBpf(empresa) {
   const whatsapp = `https://wa.me/${empresa.whatsappPrincipal}?text=${encodeURIComponent(mensagem)}`;
   return {
     whatsapp,
-    resumo: 'Fornecimento a partir de 5.000 litros para caldeiras, fornos e usinas de asfalto em SP, MG e PR. Frota própria e programação conforme o consumo da sua operação.',
-    abertura: `<div class="botoes"><a class="btn btn-laranja" href="${whatsapp}">Cotar óleo BPF pelo WhatsApp</a></div>
+    resumo: 'Consulte preço e fornecimento de óleo BPF para caldeiras, fornos e usinas de asfalto em SP, MG e PR. Pedidos a partir de 5.000 litros por entrega, com planejamento mensal conforme o consumo da sua operação.',
+    abertura: `<div class="botoes"><a class="btn btn-laranja" href="${whatsapp}">Iniciar cotação de BPF no WhatsApp</a></div>
+      <p>Informe cidade/UF, volume por entrega e consumo mensal para consultar preço, frete e disponibilidade.</p>
       <p class="resumo">Até 200 km de Salto/SP: entrega no mesmo dia ou em até 1 dia útil, mediante confirmação da programação. Consulte as condições abaixo.</p>`,
+    painelTitulo: 'Cote o BPF para sua operação',
+    painelTexto: 'Pedidos a partir de 5.000 L por entrega. Informe cidade e consumo mensal para consultar preço, frete e programação.',
+    painelBotao: 'Preparar cotação de BPF ↗',
     fornecimento: `<h2>Óleo BPF com entrega programada para sua indústria</h2>
       <p>A Nuxem fornece óleo BPF a partir de <strong>5.000 litros por entrega</strong>, com frota própria e atendimento 24 horas em <a href="/cobertura/">São Paulo, Minas Gerais e Paraná</a>. A proposta considera o produto adequado ao seu processo, o volume e o local de recebimento.</p>
       <h3>Prazo de entrega e região atendida</h3>
@@ -19,11 +23,11 @@ export function comercialBpf(empresa) {
       <li><a href="/solucoes/usinas-de-asfalto/">Usinas de asfalto</a>: informe o consumo por período e a previsão de produção para planejar as entregas. Consulte o roteiro de <a href="/blog/oleo-bpf-para-usinas-de-asfalto/">consumo, queimador e abastecimento de BPF na usina</a>.</li>
       <li>Fornos e <a href="/solucoes/fundicoes/">fundições</a>: informe o processo, o regime de operação e a especificação de combustível exigida pelo equipamento.</li></ul>
       <p>A escolha do óleo depende da compatibilidade com o equipamento e dos requisitos da instalação. Consulte abaixo as referências de classe e os documentos necessários para a compra.</p>`,
-    cotacao: `<h2 id="cotacao-bpf">Como solicitar sua cotação de óleo BPF</h2>
+    cotacao: `<h2 id="cotacao-bpf">Solicite preço e programação de entrega de óleo BPF</h2>
       <ol><li><strong>Informe sua necessidade.</strong> Envie cidade/UF, volume a partir de 5.000 L, consumo mensal estimado, equipamento, combustível atual e data desejada.</li>
       <li><strong>Confira a proposta.</strong> Confirme a especificação do produto, a unidade de venda, o frete, os tributos, as condições de pagamento e a programação de entrega.</li>
       <li><strong>Organize o recebimento.</strong> Alinhe o horário de descarga, as condições de acesso e o abastecimento recorrente conforme o planejamento da operação.</li></ol>
-      <p><a class="btn btn-laranja" href="${whatsapp}">Enviar dados para cotação de BPF</a></p>
+      <p><a class="btn btn-laranja" href="${whatsapp}">Preparar pedido de cotação no WhatsApp</a></p>
       <h2>Preço do óleo BPF: compare o custo entregue</h2>
       <p>O preço é informado por cotação, conforme o produto, o volume e o destino. Para comparar fornecedores, registre os itens abaixo na mesma base:</p>
       <ul><li><strong>Unidade:</strong> verifique se a proposta está em litros, quilos ou toneladas. A conversão entre massa e volume depende da massa específica e das condições informadas.</li>

@@ -30,8 +30,8 @@ export const PRODUTOS = [
     "imagem": "produto-oleo-bpf.webp",
     "imagemAlt": "Imagem ilustrativa de óleo combustível para uso industrial",
     "resumo": "Óleo combustível para caldeiras, fornos e usinas de asfalto. Compare classe, viscosidade, enxofre e custo entregue.",
-    "title": "Fornecedor de Óleo BPF em SP, MG e PR | Nuxem",
-    "description": "Óleo BPF a partir de 5.000 litros para indústrias em SP, MG e PR. Entrega em até 1 dia útil num raio de 200 km de Salto, conforme programação.",
+    "title": "Óleo BPF: cotação e fornecimento em SP, MG e PR | Nuxem",
+    "description": "Cote óleo BPF a partir de 5.000 L por entrega em SP, MG e PR. Informe cidade, volume e consumo para consultar preço, frete e programação mensal.",
     "specs": [
       [
         "OCA1 — viscosidade a 60 °C e enxofre",
@@ -640,10 +640,10 @@ export const COBERTURA = [
 
 export const PILAR = {
   slug: 'guia-oleo-bpf',
-  title: 'Óleo BPF: o que é, significado, tipos e aplicações | Nuxem',
-  description: 'Entenda o que é óleo BPF, o significado da sigla, os tipos A1 e B1, aplicações em caldeiras e fornos e os dados para comparar e comprar.',
-  h1: 'Óleo BPF: o que é, significado, tipos e aplicações',
-  resumo: 'Entenda o significado de BPF, as classificações do óleo combustível, onde ele é utilizado e quais dados técnicos devem ser avaliados antes da compra.',
+  title: 'Óleo BPF: o que é, para que serve e tipos | Nuxem',
+  description: 'Saiba o que é óleo BPF, o significado da sigla, tipos e aplicações. Veja o que conferir na especificação e como consultar fornecimento para sua indústria.',
+  h1: 'Óleo BPF: o que é, tipos e aplicações na indústria',
+  resumo: 'Entenda o significado de BPF, onde o combustível é utilizado e como comparar os tipos e a especificação antes de comprar para caldeiras, fornos ou usinas de asfalto.',
   secoes: [
     {
       titulo: 'O que é Óleo BPF?',
