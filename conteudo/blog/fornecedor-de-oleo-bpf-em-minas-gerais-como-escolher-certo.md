@@ -1,9 +1,9 @@
 ---
-title: "Fornecedor de óleo BPF em Minas Gerais: critérios para cotação"
-description: "Compare fornecedores de BPF em MG por especificação, preço entregue, documentação e prazo confirmado para a sua unidade industrial."
+title: "Fornecedor de óleo BPF em MG: preço, entrega e cotação"
+description: "Compare BPF em Minas Gerais por especificação, custo entregue e prazo confirmado. Reúna município, consumo e recebimento para solicitar cotação."
 date: 2026-08-03
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-20
 category: logistica
 ---
 
@@ -40,3 +40,5 @@ Pergunte como a programação é confirmada, quais informações precisam antece
 Registre prazos efetivamente cumpridos e divergências de recebimento. Esse histórico é mais útil para a próxima negociação do que uma promessa sem condição definida.
 
 Para [cotar com a Nuxem em MG](/contato/), envie município, endereço, equipamento, consumo e quantidade desejada. A proposta deve confirmar especificação, documentação e programação para a unidade solicitante.
+
+Para consultar fornecimento à unidade mineira, envie o endereço industrial completo e restrições de recebimento; atendimento regional não significa entrega imediata em qualquer cidade. Consulte [fornecimento e cotação de óleo BPF](/produtos/oleo-bpf/#cotacao-bpf). Na Nuxem, o BPF começa em 5.000 litros por entrega, sob demanda e com planejamento mensal; preço, frete e programação são confirmados na proposta.

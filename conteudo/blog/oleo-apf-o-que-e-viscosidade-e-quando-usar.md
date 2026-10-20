@@ -1,9 +1,10 @@
 ---
-title: "Óleo APF: o que é, viscosidade e quando usar na indústria"
-description: "Entenda o que é óleo APF, os resultados da amostra Nuxem e como avaliar viscosidade, aquecimento e compatibilidade antes de cotar para caldeira ou forno."
+title: "Óleo APF: viscosidade, aplicação e dados para cotação"
+description: "Entenda o APF e os dados da amostra Nuxem. Confira viscosidade, temperatura e compatibilidade antes de consultar produto e condições de fornecimento."
 date: "2026-10-10"
 slugOriginal: ""
 category: "compra"
+updated: 2026-10-20
 ---
 
 ## A resposta curta primeiro
@@ -62,3 +63,5 @@ Para uma proposta comparável, informe cidade de entrega, volume desejado, consu
 ## Conclusão
 
 Óleo APF pode ser vantajoso para quem quer um combustível mais fluido e de manuseio mais simples, mas a decisão é de especificação, não de rótulo. Use os dados da amostra como ponto de partida, confirme a ficha técnica do lote cotado, valide a viscosidade na temperatura de trabalho com o fabricante do equipamento e compare propostas na mesma base de massa e energia. A [Nuxem](/produtos/oleo-apf/) oferece suporte para especificar o óleo certo para a sua caldeira ou forno — fale com a equipe pelo [WhatsApp](https://wa.me/5511915011527?text=Ol%C3%A1,%20quero%20especificar%20%C3%B3leo%20APF%20para%20minha%20opera%C3%A7%C3%A3o) e informe cidade, volume, consumo e modelo do queimador para uma avaliação.
+
+Para cotar APF, informe condições de aquecimento, faixa de viscosidade admitida e combustível atual. Os resultados da amostra não substituem a documentação do produto ofertado. Consulte [especificação e fornecimento de óleo APF](/produtos/oleo-apf/). Volume mínimo, disponibilidade e prazo devem ser confirmados para o produto escolhido; as condições de BPF e xisto não se estendem automaticamente às demais opções.

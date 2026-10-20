@@ -1,9 +1,9 @@
 ---
-title: "Óleo de xisto e emissões: o que verificar na avaliação ambiental"
-description: "Saiba como relacionar enxofre documentado, condições de combustão e exigências da instalação ao avaliar óleo de xisto para uso industrial."
+title: "Óleo de xisto e emissões: enxofre e avaliação ambiental"
+description: "Relacione enxofre documentado e condições da instalação ao avaliar xisto. Veja os dados necessários para consultar produto e documentação."
 date: 2026-10-05
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-20
 category: operacao
 ---
 
@@ -40,3 +40,5 @@ Estabeleça previamente as condições em que cada combustível será avaliado. 
 O [plano de migração para OTE](/blog/como-migrar-sua-caldeira-ou-forno-para-oleo-de-xisto-ote/) integra essa etapa à avaliação do queimador e do armazenamento. A aprovação deve ser documentada para a configuração testada, sem ser estendida automaticamente a outras unidades.
 
 Para discutir fornecimento, [encaminhe à Nuxem a especificação requerida e os documentos necessários](/contato/). A proposta comercial deve confirmar o produto; a decisão de conformidade depende da avaliação da instalação.
+
+Ao consultar xisto com requisitos ambientais, envie a especificação definida para o combustível e os documentos necessários; a proposta não substitui a avaliação da instalação. Consulte [preço e disponibilidade de óleo de xisto OTE](/produtos/oleo-de-xisto/#cotacao-xisto). O fornecimento de xisto exige consumo a partir de 200 mil litros por mês, planejamento mensal e disponibilidade sob consulta. O mínimo é mensal, não por entrega; quantidades e prazos são alinhados na programação.

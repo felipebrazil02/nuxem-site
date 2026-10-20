@@ -1,9 +1,9 @@
 ---
-title: "Óleo BPF em papel e celulose: planejar combustível de apoio"
-description: "Veja como organizar especificação, estoque e reposição de BPF quando utilizado como apoio térmico ou em equipamentos de papel e celulose."
+title: "Óleo BPF em papel e celulose: apoio e abastecimento"
+description: "Planeje BPF de apoio em papel e celulose com cenários de consumo, estoque útil e reposição. Consulte fornecimento conforme os eventos previstos."
 date: 2026-08-26
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-20
 category: aplicacoes-bpf
 ---
 
@@ -38,3 +38,5 @@ Consulte a [especificação do combustível para o queimador](/blog/como-especif
 Registre o consumo efetivo e recalcule a autonomia restante. A próxima entrega precisa considerar o tempo de reposição e outros eventos programados. Veja o [planejamento de abastecimento de BPF](/blog/como-programar-o-abastecimento-de-oleo-bpf-para-evitar-paradas/).
 
 Para [consultar fornecimento com a Nuxem](/contato/), envie localização, função do combustível, estoque utilizável e demanda prevista. Diferencie pedido de reposição de um estudo de alteração da especificação. Isso evita tratar uma necessidade de contingência como compra recorrente de consumo estável.
+
+Ao consultar BPF de apoio para papel e celulose, descreva os eventos de utilização, o estoque remanescente e o volume de reposição após cada ocorrência. Consulte [fornecimento e cotação de óleo BPF](/produtos/oleo-bpf/#cotacao-bpf). Na Nuxem, o BPF começa em 5.000 litros por entrega, sob demanda e com planejamento mensal; preço, frete e programação são confirmados na proposta.

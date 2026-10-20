@@ -1,9 +1,9 @@
 ---
-title: "Óleo de xisto na indústria da borracha: calor e vapor de processo"
-description: "Avalie óleo de xisto na geração de calor ou vapor para processos de borracha com dados do equipamento, ciclo, consumo e critérios de aceitação."
+title: "Óleo de xisto na indústria da borracha: vapor e compra"
+description: "Relacione xisto, calor e vapor nos processos de borracha. Reúna equipamentos, ciclos e consumo para consultar especificação e fornecimento."
 date: "2026-10-09"
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-20
 category: aplicacoes-xisto
 ---
 
@@ -38,3 +38,5 @@ Qualquer alteração de equipamento, controle ou regulagem deve seguir o fabrica
 Confirme estoque remanescente, capacidade disponível e janela em que a equipe poderá acompanhar o recebimento. O [plano de migração para OTE](/blog/como-migrar-sua-caldeira-ou-forno-para-oleo-de-xisto-ote/) deve integrar documentação, teste e decisão de fornecimento.
 
 Para [cotar com a Nuxem](/contato/), envie cidade, sistema térmico, consumo e objetivo da consulta. Especifique se o produto será avaliado ou já está aprovado para reposição.
+
+Para a operação de borracha, informe o caminho do calor até o processo, os ciclos e o consumo previsto; diferencie reposição de produto aprovado de estudo de troca. Consulte [preço e disponibilidade de óleo de xisto OTE](/produtos/oleo-de-xisto/#cotacao-xisto). O fornecimento de xisto exige consumo a partir de 200 mil litros por mês, planejamento mensal e disponibilidade sob consulta. O mínimo é mensal, não por entrega; quantidades e prazos são alinhados na programação.

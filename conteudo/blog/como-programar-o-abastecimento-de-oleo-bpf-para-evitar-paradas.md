@@ -1,9 +1,9 @@
 ---
 title: "Abastecimento de óleo BPF: estoque, autonomia e ponto de pedido"
-description: "Calcule o ponto de pedido de BPF com consumo, prazo de reposição e reserva definida pela planta. Veja um exemplo e os cuidados no recebimento."
+description: "Planeje reposição de BPF com consumo, estoque útil, prazo confirmado e reserva. Veja o exemplo de ponto de pedido e consulte a programação de fornecimento."
 date: 2026-07-25
 slugOriginal: ""
-updated: 2026-10-13
+updated: 2026-10-20
 category: logistica
 ---
 
@@ -48,3 +48,5 @@ Compare consumo previsto e realizado, prazos e ocorrências. Ajuste a reserva co
 A Nuxem fornece BPF a partir de 5.000 litros por entrega e trabalha sob demanda, com planejamento mensal. Informe consumo previsto, capacidade segura disponível no tanque, cidade e datas desejadas para [consultar a programação de fornecimento de BPF](/produtos/oleo-bpf/#cotacao-bpf). As condições e os prazos precisam ser confirmados para a sua operação; use o prazo acordado com o fornecedor ao calcular o ponto de pedido.
 
 Se a produção ou a janela de descarga mudar, [avise a equipe da Nuxem](/contato/) para revisar o calendário de entregas.
+
+Para confirmar a programação calculada neste roteiro, envie estoque utilizável, consumo previsto e janela de descarga; utilize somente o prazo acordado ao definir a reposição. Consulte [fornecimento e cotação de óleo BPF](/produtos/oleo-bpf/#cotacao-bpf). Na Nuxem, o BPF começa em 5.000 litros por entrega, sob demanda e com planejamento mensal; preço, frete e programação são confirmados na proposta.

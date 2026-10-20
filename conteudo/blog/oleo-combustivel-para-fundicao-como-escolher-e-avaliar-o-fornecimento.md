@@ -1,9 +1,10 @@
 ---
-title: "Óleo combustível para fundição: como escolher e avaliar o fornecimento"
-description: "Como escolher óleo combustível para fornos de fundição: estabilidade de queima, viscosidade, enxofre e o que conferir no fornecimento para não parar o processo."
+title: "Óleo combustível para fundição: escolha e cotação"
+description: "Reúna requisitos de forno e queimador para cotar combustível de fundição. Compare documentação, consumo e condições de entrega para a operação."
 date: "2026-10-13"
 slugOriginal: ""
 category: "aplicacoes-bpf"
+updated: 2026-10-20
 ---
 
 **A escolha do óleo combustível para uma fundição começa pela estabilidade do processo e pela continuidade do fornecimento, não pelo nome comercial.** O combustível precisa manter padrão de queima e qualidade entre entregas, atender aos limites do queimador e do sistema de aquecimento e estar disponível quando o forno precisa operar. A [página de soluções para fundições](/solucoes/fundicoes/) resume o que a Nuxem considera nessa aplicação; abaixo você encontra o que conferir antes de fechar a compra.
@@ -44,3 +45,5 @@ Além da especificação, o fornecimento para uma fundição é avaliado por:
 Para uma avaliação coerente, informe cidade, volume, consumo estimado, equipamento e queimador, combustível atual e restrições da operação. O [roteiro de solicitação de cotação](/blog/como-preparar-uma-solicitacao-de-cotacao-de-oleo-combustivel-industrial/) ajuda a reunir esses dados.
 
 A Nuxem fornece óleo combustível para fundições e apoia a especificação da classe certa para o seu forno. Fale pelo [WhatsApp](https://wa.me/5511915011527?text=Ol%C3%A1,%20quero%20avaliar%20%C3%B3leo%20combust%C3%ADvel%20para%20minha%20funda%C3%A7%C3%A3o) e informe cidade, volume, consumo, equipamento e combustível atual para uma avaliação.
+
+Para cotar combustível de fundição, informe o processo, o forno e a especificação admitida pelo queimador; compare o custo para a mesma condição de produção. Consulte [cotação de BPF](/produtos/oleo-bpf/#cotacao-bpf), [cotação de óleo de xisto](/produtos/oleo-de-xisto/#cotacao-xisto). Volume mínimo, disponibilidade e prazo devem ser confirmados para o produto escolhido; as condições de BPF e xisto não se estendem automaticamente às demais opções.

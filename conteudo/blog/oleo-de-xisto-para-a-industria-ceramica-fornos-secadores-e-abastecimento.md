@@ -1,9 +1,9 @@
 ---
-title: "Óleo de xisto na cerâmica: como avaliar fornos e secadores"
-description: "Compare óleo de xisto para processos cerâmicos com critérios de qualidade, consumo, compatibilidade do queimador e planejamento da avaliação."
+title: "Óleo de xisto para cerâmicas: aplicação e cotação"
+description: "Avalie xisto em fornos e secadores cerâmicos com critérios do processo e do queimador. Consulte consumo mensal e condições de fornecimento."
 date: 2026-09-26
 slugOriginal: ""
-updated: 2026-10-13
+updated: 2026-10-20
 category: aplicacoes-xisto
 ---
 
@@ -42,3 +42,5 @@ Confirme a janela em que a planta pode receber e avaliar o produto. Verifique ta
 Com as pendências técnicas da avaliação resolvidas, reúna aplicação, modelo do queimador, consumo mensal previsto, especificação e cidade. Consulte a [cotação de óleo de xisto para sua operação industrial](/produtos/oleo-de-xisto/#cotacao-xisto): o fornecimento da Nuxem exige demanda mínima de 200 mil litros por mês, planejamento mensal e consulta de disponibilidade.
 
 Informe também as variações de produção, os turnos e as paradas previstas de fornos e secadores. Esses dados ajudam a alinhar as entregas à demanda real da fábrica. Para esclarecer a programação, [entre em contato com a Nuxem](/contato/).
+
+Ao cotar OTE para a cerâmica, informe variações de produção e critérios de qualidade do material; a aprovação deve corresponder à aplicação efetivamente avaliada. Consulte [preço e disponibilidade de óleo de xisto OTE](/produtos/oleo-de-xisto/#cotacao-xisto). O fornecimento de xisto exige consumo a partir de 200 mil litros por mês, planejamento mensal e disponibilidade sob consulta. O mínimo é mensal, não por entrega; quantidades e prazos são alinhados na programação.

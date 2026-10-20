@@ -1,9 +1,9 @@
 ---
-title: "Qualidade do óleo BPF: recebimento e compatibilidade entre lotes"
-description: "Entenda como avaliar a compatibilidade entre lotes de óleo BPF, prevenir borra e planejar a troca de combustível em caldeiras, fornos e usinas de asfalto."
+title: "Óleo BPF: qualidade e compatibilidade entre lotes"
+description: "Confira recebimento e compatibilidade de lotes de BPF antes da mistura. Veja quais dados do estoque informar ao consultar um novo fornecimento."
 date: 2026-09-07
 category: operacao
-updated: 2026-10-19
+updated: 2026-10-20
 slugOriginal: ""
 ---
 
@@ -83,3 +83,5 @@ A Nuxem atende com frota própria todo o estado de São Paulo, Minas Gerais e Pa
 ## Da avaliação dos lotes à compra de BPF
 
 Ao consultar um novo fornecimento, reúna a especificação aprovada e os dados do combustível remanescente descritos neste artigo. Na página de [fornecimento de óleo BPF da Nuxem](/produtos/oleo-bpf/#cotacao-bpf), você encontra os dados necessários para a cotação e as condições de entrega a partir de 5.000 litros, sob demanda e com planejamento mensal. Informe cidade, consumo previsto e necessidade de transição entre lotes para alinhar a programação antes da compra.
+
+Ao avaliar uma carga nova, envie a identificação do combustível remanescente e os critérios de aceitação; alinhe a compra à verificação de compatibilidade antes da descarga. Consulte [fornecimento e cotação de óleo BPF](/produtos/oleo-bpf/#cotacao-bpf). Na Nuxem, o BPF começa em 5.000 litros por entrega, sob demanda e com planejamento mensal; preço, frete e programação são confirmados na proposta.

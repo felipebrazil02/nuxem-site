@@ -1,9 +1,9 @@
 ---
-title: "BPF, xisto, BTE e óleos alternativos: critérios de comparação"
-description: "Compare combustíveis industriais por especificação, compatibilidade, custo útil e logística. Entenda o que os nomes comerciais não demonstram."
+title: "BPF, xisto, BTE e alternativas: como comparar e cotar"
+description: "Compare BPF, xisto, BTE e alternativas por especificação, custo útil e logística. Consulte as páginas de cada produto antes de solicitar propostas."
 date: 2026-09-21
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-20
 category: compra
 ---
 
@@ -39,3 +39,5 @@ Confirme prazo de entrega, quantidade, janela de recebimento e capacidade dispon
 Uma primeira entrega não valida automaticamente todos os equipamentos da empresa. Registre condições de aprovação, especificação e acompanhamento definido para cada unidade.
 
 Para uma proposta comparável, [envie à Nuxem aplicação, consumo, destino e requisitos técnicos](/contato/). As condições comerciais e a programação precisam ser confirmadas para o produto e a operação escolhidos.
+
+Depois de definir os requisitos da planta, consulte as opções separadamente e peça propostas na mesma base de quantidade, especificação e custo entregue. Consulte [BPF](/produtos/oleo-bpf/#cotacao-bpf), [xisto OTE](/produtos/oleo-de-xisto/#cotacao-xisto), [BTE](/produtos/oleo-bte/), [óleos alternativos](/produtos/oleos-alternativos/). Volume mínimo, disponibilidade e prazo devem ser confirmados para o produto escolhido; as condições de BPF e xisto não se estendem automaticamente às demais opções.

@@ -1,9 +1,9 @@
 ---
-title: "Troca de combustível industrial: como calcular economia e retorno"
-description: "Compare custo por produção, energia auxiliar, manutenção e investimento antes de substituir óleo combustível. Veja um exemplo de retorno simples."
+title: "Troca de combustível industrial: custo, retorno e compra"
+description: "Compare energia útil, consumo e investimento ao avaliar troca de combustível. Use o exemplo de retorno e consulte propostas na mesma base comercial."
 date: 2026-07-31
 slugOriginal: ""
-updated: 2026-10-19
+updated: 2026-10-20
 category: compra
 ---
 
@@ -40,3 +40,5 @@ Defina antes da mudança o que será medido e em quais condições. Compare per�
 Preserve os dados da avaliação e revise a decisão quando preço, produção ou fornecimento mudarem. Uma economia demonstrada em um período não permanece automaticamente igual nos seguintes.
 
 Para [solicitar uma proposta comparável à Nuxem](/contato/), envie produto atual, consumo, destino e requisitos técnicos. Use também o [guia de preço entregue com frete](/blog/preco-oleo-bpf-posto-fabrica-comparar-propostas/) para organizar a parcela comercial.
+
+Para obter propostas para o cenário econômico estudado, identifique combustível atual, consumo, adaptações e hipóteses da comparação. Economia projetada não é resultado garantido. Consulte [BPF](/produtos/oleo-bpf/#cotacao-bpf), [xisto OTE](/produtos/oleo-de-xisto/#cotacao-xisto), [BTE](/produtos/oleo-bte/), [óleos alternativos](/produtos/oleos-alternativos/). Volume mínimo, disponibilidade e prazo devem ser confirmados para o produto escolhido; as condições de BPF e xisto não se estendem automaticamente às demais opções.

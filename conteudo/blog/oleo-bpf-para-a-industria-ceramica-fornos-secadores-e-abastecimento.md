@@ -1,9 +1,9 @@
 ---
-title: "Óleo BPF na cerâmica: compra para fornos e secadores"
-description: "Organize a compra de BPF para cerâmicas com dados de fornos, secadores, consumo por campanha e condições de armazenamento e entrega."
+title: "Óleo BPF para cerâmicas: consumo, compra e entrega"
+description: "Prepare a compra de BPF para fornos e secadores cerâmicos com equipamentos, consumo por campanha e recebimento. Consulte preço e programação."
 date: 2026-08-20
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-20
 category: aplicacoes-bpf
 ---
 
@@ -38,3 +38,5 @@ Mantenha identificada a unidade de compra. Se o estoque é medido em litros e o 
 Alinhe o calendário de produção com estoque utilizável, prazo confirmado e capacidade de recebimento. Avise sobre campanhas prolongadas, manutenção do tanque ou restrições de descarga. O [ponto de pedido de BPF](/blog/como-programar-o-abastecimento-de-oleo-bpf-para-evitar-paradas/) oferece uma base para essa programação.
 
 A Nuxem atende SP, MG e PR. Para [cotar BPF para sua cerâmica](/contato/), informe cidade, equipamentos, consumo por período e especificação requerida. A proposta deve confirmar produto e janela de entrega para aquela unidade.
+
+Para cotar BPF para a cerâmica, separe consumo de fornos e secadores e informe os turnos e a campanha prevista, junto aos requisitos de cada queimador. Consulte [fornecimento e cotação de óleo BPF](/produtos/oleo-bpf/#cotacao-bpf). Na Nuxem, o BPF começa em 5.000 litros por entrega, sob demanda e com planejamento mensal; preço, frete e programação são confirmados na proposta.

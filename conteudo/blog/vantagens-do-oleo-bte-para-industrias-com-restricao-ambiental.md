@@ -1,9 +1,9 @@
 ---
-title: "Óleo BTE: como avaliar enxofre, aplicação e custo industrial"
-description: "Veja o que conferir na compra de óleo BTE: enxofre documentado, compatibilidade do equipamento, custo e critérios ambientais da instalação."
+title: "Óleo BTE: enxofre, aplicação e critérios de compra"
+description: "Confira enxofre, especificação e compatibilidade ao comprar BTE. Compare o custo e os requisitos da planta antes de consultar fornecimento."
 date: 2026-07-19
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-20
 category: compra
 ---
 
@@ -38,3 +38,5 @@ Compare custo entregue por massa ou energia útil, consumo em condições equiva
 Uma economia prevista precisa explicitar preço, consumo, eficiência e custos auxiliares. O artigo de [substituição de combustível e custo térmico](/blog/reducao-de-custos-com-substituicao-de-oleo-combustivel/) apresenta uma forma de organizar essa análise.
 
 Para receber uma proposta, [informe à Nuxem destino, quantidade e requisitos técnicos](/contato/). Solicite confirmação da origem, da especificação e dos documentos disponíveis para o produto cotado.
+
+Ao cotar BTE, envie o limite de enxofre requerido e os dados do equipamento. Confirme origem e documentação sem tratar a denominação como certificado ambiental. Consulte [especificação e fornecimento de óleo BTE](/produtos/oleo-bte/). Volume mínimo, disponibilidade e prazo devem ser confirmados para o produto escolhido; as condições de BPF e xisto não se estendem automaticamente às demais opções.

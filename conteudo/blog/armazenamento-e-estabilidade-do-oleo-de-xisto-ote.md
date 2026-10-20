@@ -1,9 +1,9 @@
 ---
-title: "Armazenamento de óleo de xisto: lote, tanque e compatibilidade"
-description: "Armazenamento de óleo de xisto OTE: avalie tanque, estoque remanescente, compatibilidade entre lotes, aquecimento e rastreabilidade."
+title: "Armazenamento de óleo de xisto: tanque, lotes e entrega"
+description: "Confira tanque, estoque e compatibilidade antes de receber óleo de xisto OTE. Veja como alinhar armazenamento, consumo mensal e fornecimento."
 date: "2026-09-25"
 slugOriginal: ""
-updated: 2026-10-19
+updated: 2026-10-20
 category: operacao
 ---
 
@@ -44,3 +44,5 @@ Integre a intervenção ao [planejamento de migração para óleo de xisto](/blo
 Antes de programar as entregas, consulte as [condições comerciais do óleo de xisto da Nuxem](/produtos/oleo-de-xisto/#cotacao-xisto). O atendimento exige consumo a partir de 200 mil litros por mês, planejamento mensal e consulta de disponibilidade. Esse consumo mensal não corresponde ao volume que deve ser armazenado de uma só vez: a quantidade de cada entrega precisa respeitar a capacidade segura disponível e a programação acordada.
 
 Para avaliar o calendário de recebimento, [informe à Nuxem produto atual, estoque e janela de descarga](/contato/), junto com o consumo previsto e eventuais intervenções no tanque.
+
+Para alinhar a próxima carga ao tanque disponível, informe produto remanescente, capacidade segura de recebimento e intervenções previstas. Consulte [preço e disponibilidade de óleo de xisto OTE](/produtos/oleo-de-xisto/#cotacao-xisto). O fornecimento de xisto exige consumo a partir de 200 mil litros por mês, planejamento mensal e disponibilidade sob consulta. O mínimo é mensal, não por entrega; quantidades e prazos são alinhados na programação.

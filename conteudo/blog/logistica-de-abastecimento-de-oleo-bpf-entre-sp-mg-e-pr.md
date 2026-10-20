@@ -1,9 +1,9 @@
 ---
-title: "Entrega de óleo BPF em SP, MG e PR: como planejar o recebimento"
-description: "Organize entrega de BPF em SP, MG e PR com endereço, acesso, capacidade do tanque, janela de descarga e confirmação da programação."
+title: "Entrega de óleo BPF em SP, MG e PR: planejar e cotar"
+description: "Consulte entrega de BPF em SP, MG e PR com endereço, quantidade, acesso e capacidade do tanque. Alinhe frete e janela de descarga na programação."
 date: 2026-08-08
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-20
 category: logistica
 ---
 
@@ -40,3 +40,5 @@ A Nuxem informa operação com frota própria, o que permite tratar a programaç
 Combine como serão comunicadas alterações de horário e quem decide sobre reprogramação. Registre a data confirmada e os requisitos que a unidade precisa cumprir.
 
 Para [solicitar uma cotação de entrega](/contato/), envie destino, produto, quantidade e janela desejada. Compare o [preço do BPF com frete](/blog/preco-oleo-bpf-posto-fabrica-comparar-propostas/) na mesma base para evitar somar novamente um transporte já incluído.
+
+Para consultar frete e janela de entrega entre SP, MG e PR, informe destino, acesso, volume e capacidade disponível. A programação precisa ser confirmada para esse endereço. Consulte [fornecimento e cotação de óleo BPF](/produtos/oleo-bpf/#cotacao-bpf). Na Nuxem, o BPF começa em 5.000 litros por entrega, sob demanda e com planejamento mensal; preço, frete e programação são confirmados na proposta.

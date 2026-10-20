@@ -1,9 +1,9 @@
 ---
-title: "Óleo BPF A1 e A2: diferenças de viscosidade e como escolher"
-description: "Entenda a diferença entre óleo BPF A1 e A2, como conferir a especificação e o que avaliar no aquecimento, queimador e custo antes da compra."
+title: "Óleo BPF A1 ou A2: diferenças e critérios de compra"
+description: "Compare A1 e A2 por viscosidade, aquecimento e requisitos do equipamento. Veja o que confirmar na especificação e na disponibilidade antes de cotar."
 date: 2026-08-02
 category: compra
-updated: 2026-10-09
+updated: 2026-10-20
 slugOriginal: ""
 ---
 
@@ -55,3 +55,5 @@ Se houver restrição, solicite à equipe técnica a avaliação de outra especi
 ## Como solicitar uma proposta
 
 A Nuxem fornece [óleo BPF](/produtos/oleo-bpf/) e apresenta informações sobre [óleo A1](/produtos/oleo-a1/). Envie cidade, equipamento, consumo e especificação requerida para [confirmar produto e condições de fornecimento](/contato/). A disponibilidade de cada grau precisa ser verificada na cotação.
+
+Ao consultar classes da família A, informe a especificação aprovada e os requisitos de aquecimento. A disponibilidade de A2 deve ser confirmada; uma página de A1 não representa oferta automática de A2. Consulte [especificação e fornecimento de óleo A1](/produtos/oleo-a1/), [condições comerciais do óleo BPF](/produtos/oleo-bpf/#cotacao-bpf). Volume mínimo, disponibilidade e prazo devem ser confirmados para o produto escolhido; as condições de BPF e xisto não se estendem automaticamente às demais opções.

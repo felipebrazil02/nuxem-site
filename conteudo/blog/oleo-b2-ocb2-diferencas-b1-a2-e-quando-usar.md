@@ -1,9 +1,10 @@
 ---
-title: "Óleo B2 (OCB2): o que é, diferenças para B1 e A2 e quando usar"
-description: "Entenda o óleo B2 (OCB2): teor de enxofre de 1,0% e viscosidade de até 960 mm²/s a 60 °C, diferenças para B1 e A2 e o que conferir na cotação industrial."
+title: "Óleo B2 (OCB2): diferenças para B1 e A2 e compra"
+description: "Entenda as diferenças de B2, B1 e A2 e o que conferir antes da compra. Consulte classes ofertadas, viscosidade e condições do equipamento."
 date: "2026-10-11"
 slugOriginal: ""
 category: "compra"
+updated: 2026-10-20
 ---
 
 ## A resposta curta primeiro
@@ -57,3 +58,5 @@ Compare propostas na mesma unidade e na mesma base de energia. Use o custo entre
 ## Conclusão
 
 O óleo B2 (OCB2) é a opção de baixo enxofre para operações que já lidam com óleo de alta viscosidade. Ele se diferencia do B1 pelo limite de viscosidade e do A2 pelo teor de enxofre. A decisão passa por três verificações: requisitos ambientais da instalação, infraestrutura de aquecimento e faixa de viscosidade aceita pelo queimador. Confirme a ficha técnica do produto cotado e compare propostas na mesma base de massa e energia. A [Nuxem](/produtos/oleo-bpf/) fornece óleo combustível em São Paulo, Minas Gerais e Paraná e apoia a especificação da classe certa para a sua operação — fale pelo [WhatsApp](https://wa.me/5511915011527?text=Ol%C3%A1,%20quero%20especificar%20%C3%B3leo%20B2%20(OCB2)%20para%20minha%20opera%C3%A7%C3%A3o) e informe cidade, volume, consumo, equipamento e combustível atual para uma avaliação.
+
+Para avaliar uma demanda de OCB2, encaminhe a classe requerida e confirme expressamente sua disponibilidade. As páginas de BPF e B1 ajudam a comparar opções, mas B1 não substitui B2 automaticamente. Consulte [classes de óleo combustível ofertadas pela Nuxem](/produtos/oleo-bpf/), [óleo B1 para comparação de especificação](/produtos/oleo-b1/). Volume mínimo, disponibilidade e prazo devem ser confirmados para o produto escolhido; as condições de BPF e xisto não se estendem automaticamente às demais opções.

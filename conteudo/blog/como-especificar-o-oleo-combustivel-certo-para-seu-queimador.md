@@ -1,9 +1,9 @@
 ---
-title: "Como especificar óleo combustível para o queimador industrial"
-description: "Monte o pedido de óleo combustível com viscosidade, poder calorífico, enxofre e documentos. Confira compatibilidade do queimador antes da cotação."
+title: "Óleo combustível para queimador: como especificar e cotar"
+description: "Confira viscosidade, poder calorífico, enxofre e documentação na cotação de combustível. Compare as opções com os requisitos do queimador industrial."
 date: 2026-07-22
 category: compra
-updated: 2026-10-09
+updated: 2026-10-20
 slugOriginal: ""
 ---
 
@@ -50,3 +50,5 @@ Se houver estoque remanescente, avalie a [compatibilidade entre lotes de óleo B
 - Documentos necessários para avaliação e aceitação do produto.
 
 Com os requisitos definidos, [encaminhe a solicitação à Nuxem](/contato/). A proposta deve confirmar produto, documentação e condições de entrega. Alterações na especificação precisam voltar à equipe técnica antes da aprovação comercial.
+
+Com o manual e a especificação aprovados, consulte os produtos candidatos e envie modelo do queimador, combustível atual e requisitos técnicos; cotação não equivale a aprovação de uso. Consulte [cotação de BPF](/produtos/oleo-bpf/#cotacao-bpf), [cotação de óleo de xisto](/produtos/oleo-de-xisto/#cotacao-xisto). Volume mínimo, disponibilidade e prazo devem ser confirmados para o produto escolhido; as condições de BPF e xisto não se estendem automaticamente às demais opções.

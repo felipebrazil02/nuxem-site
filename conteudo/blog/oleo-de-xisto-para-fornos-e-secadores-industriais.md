@@ -1,9 +1,9 @@
 ---
-title: "Óleo de xisto em fornos e secadores: critérios de aplicação"
-description: "Confira o que avaliar no uso de óleo de xisto em fornos e secadores: transferência de calor, queimador, consumo e critérios do produto final."
+title: "Óleo de xisto para fornos e secadores: avaliar e cotar"
+description: "Avalie queimador, transferência de calor e consumo antes de cotar xisto para fornos e secadores. Consulte condições de fornecimento de OTE."
 date: 2026-09-23
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-20
 category: aplicacoes-xisto
 ---
 
@@ -38,3 +38,5 @@ A [análise de custo de substituição](/blog/reducao-de-custos-com-substituicao
 Envie cidade, aplicação, modelo do equipamento, combustível atual e consumo. Informe se a instalação já está aprovada para o produto ou se a consulta faz parte de um estudo.
 
 [Solicite uma proposta à Nuxem](/contato/) com especificação e programação desejada. Produto, documentos e entrega devem ser confirmados antes de organizar o recebimento.
+
+Na consulta de OTE para fornos e secadores, diferencie aquecimento direto e indireto e informe os critérios do material processado antes de confirmar a compra. Consulte [preço e disponibilidade de óleo de xisto OTE](/produtos/oleo-de-xisto/#cotacao-xisto). O fornecimento de xisto exige consumo a partir de 200 mil litros por mês, planejamento mensal e disponibilidade sob consulta. O mínimo é mensal, não por entrega; quantidades e prazos são alinhados na programação.

@@ -1,9 +1,9 @@
 ---
 title: "Óleo combustível: classificação ANP e documentos para a compra"
-description: "Entenda classificação de óleo combustível, documentação de qualidade e a diferença entre especificação do produto e limites de emissão da instalação."
+description: "Confira classificação ANP e documentos do óleo combustível antes da compra. Diferencie especificação de produto e requisitos ambientais da instalação."
 date: 2026-07-10
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-20
 category: operacao
 ---
 
@@ -42,3 +42,5 @@ Também não confunda o limite da especificação com uma medição de emissões
 Encaminhe a especificação definida pela equipe responsável, a cidade de entrega e o equipamento. O [roteiro de especificação para queimadores](/blog/como-especificar-o-oleo-combustivel-certo-para-seu-queimador/) ajuda a reunir os dados técnicos, e a [solicitação de cotação](/blog/como-preparar-uma-solicitacao-de-cotacao-de-oleo-combustivel-industrial/) organiza as informações comerciais.
 
 Para avaliar o fornecimento de [óleo BPF](/produtos/oleo-bpf/) e outros produtos, [fale com a Nuxem](/contato/). Confirme produto e documentação na proposta; decisões de enquadramento e licenciamento devem ser verificadas com os responsáveis pela instalação.
+
+Na consulta de compra, encaminhe a especificação e os documentos definidos pelos responsáveis da planta. A proposta identifica o produto; não certifica o enquadramento ambiental da instalação. Consulte [cotação de BPF](/produtos/oleo-bpf/#cotacao-bpf), [cotação de óleo de xisto](/produtos/oleo-de-xisto/#cotacao-xisto). Volume mínimo, disponibilidade e prazo devem ser confirmados para o produto escolhido; as condições de BPF e xisto não se estendem automaticamente às demais opções.

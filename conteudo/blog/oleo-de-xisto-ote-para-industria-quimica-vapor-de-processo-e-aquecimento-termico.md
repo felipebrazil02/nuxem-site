@@ -1,24 +1,27 @@
 ---
-title: "Óleo de xisto (OTE) para indústria química: vapor de processo e aquecimento térmico"
-description: "Óleo de xisto (OTE) para indústria química: vapor de processo, aquecimento térmico, queima estável e fornecimento em SP, MG e PR."
+title: "Óleo de xisto na indústria química: vapor e fornecimento"
+description: "Avalie xisto para geração de vapor e aquecimento na indústria química com dados do queimador, consumo e estoque. Consulte disponibilidade e planejamento."
 date: 2026-10-12
 slugOriginal: ""
+updated: 2026-10-20
 ---
 
 ## A indústria química precisa de calor contínuo e previsível
 
 A indústria química depende de calor em várias etapas: geração de vapor de processo, aquecimento de reatores, secagem de produtos, destilação e aquecimento de tanques. Em muitos casos, a operação é contínua e não pode parar no meio de um lote. Por isso, o combustível que alimenta a caldeira ou o aquecedor térmico precisa entregar calor de forma estável e previsível — e o fornecimento precisa acompanhar o ritmo da produção.
 
-O [óleo de xisto (OTE)](/produtos/oleo-de-xisto/) entra nessa conta como uma alternativa que combina fluidez, baixo teor de enxofre e queima estável, com ganhos que aparecem tanto na operação quanto na manutenção.
+O [óleo de xisto (OTE)](/produtos/oleo-de-xisto/) pode ser avaliado como alternativa para o queimador da instalação. Fluidez, enxofre e desempenho devem ser conferidos na documentação e nas condições reais de operação, sem presumir ganhos de consumo ou manutenção para toda planta.
 
 ## O que o OTE muda na operação
 
-O óleo de xisto tem características que respondem bem às necessidades de uma planta química:
+Antes de decidir pela troca, relacione as propriedades do produto aos requisitos da planta química:
 
-- **Alta fluidez a frio:** o OTE permanece fluido mesmo em baixas temperaturas, o que reduz a necessidade de pré-aquecimento de tanque e linha. Em plantas que operam por turnos ou param na madrugada, a partida fica mais simples.
-- **Baixo teor de enxofre:** reduz as emissões de SOx e diminui a corrosão em chaminés, dutos e trocadores — um ganho relevante em processos onde a confiabilidade do equipamento é crítica.
-- **Queima mais estável:** com menos variação de viscosidade, a atomização no bico do queimador fica mais previsível, o que ajuda a manter a pressão e a temperatura do vapor constantes.
-- **Poder calorífico competitivo:** mantém a geração de calor necessária para o processo, sem exigir aumento de consumo.
+- **Fluidez e aquecimento:** confira viscosidade, temperatura de ensaio e condições de partida. A necessidade de aquecimento de tanque, linha e queimador deve ser avaliada separadamente.
+- **Enxofre:** compare o produto ofertado e os requisitos da instalação. O dado do combustível não comprova, sozinho, emissões ou redução de corrosão na planta.
+- **Estabilidade da queima:** avalie combustível, alimentação e regulagem nas condições do equipamento, com acompanhamento técnico.
+- **Poder calorífico e consumo:** identifique PCI ou PCS e compare a energia útil e o consumo para a mesma produção, sem garantir que a troca preserve ou reduza o volume consumido.
+
+A [página oficial do OTE Greca](https://www.grupogreca.com.br/produto/ote/) apresenta propriedades e benefícios em comparação com óleos pesados. Essa referência comercial não substitui a verificação do produto ofertado e da aplicação industrial.
 
 ## Estabilidade entre lotes: o ponto que ninguém deve pular
 
@@ -40,7 +43,7 @@ A troca de combustível em uma planta química não é decisão de catálogo. An
 Quando a avaliação apontar para a troca, o caminho seguro é validar aos poucos:
 
 - **Teste um lote-piloto:** meça consumo, temperatura de chama e estabilidade no regime real de operação.
-- **Acompanhe a manutenção:** a melhor prova é a redução de corrosão e de borra ao longo de um ciclo completo.
+- **Acompanhe a manutenção:** registre ocorrências de corrosão, depósitos e intervenções, sem presumir redução antes de comparar os resultados.
 - **Revise o fornecimento:** a troca só vale se o abastecimento for tão confiável quanto o anterior, com entrega programada e suporte técnico.
 
 ## Fornecimento contínuo em SP, MG e PR
@@ -51,6 +54,8 @@ A Nuxem atende indústrias em São Paulo, Minas Gerais e Paraná, com entrega pr
 
 ## Conclusão
 
-O óleo de xisto é uma alternativa real para a indústria química que quer reduzir o custo de aquecimento de linha, simplificar a partida e diminuir a corrosão — desde que a especificação seja feita com base no queimador e no processo, e o fornecimento tenha a mesma confiabilidade do combustível tradicional. Em operação contínua, a estabilidade entre lotes pesa tanto quanto a fluidez ou o preço.
+Para decidir pelo óleo de xisto na indústria química, confronte a especificação com o queimador, o processo e o planejamento de abastecimento. Registre consumo, custos auxiliares e manutenção em condições comparáveis antes de concluir sobre economia ou desempenho.
 
-A Nuxem produz [óleo de xisto](/produtos/oleo-de-xisto/), [óleos alternativos](/produtos/oleos-alternativos/) e [óleo BTE](/produtos/oleo-bte/) sob demanda, com padrão constante de qualidade e suporte técnico para avaliar a compatibilidade com o seu queimador. Para receber uma avaliação da sua planta e uma cotação sob medida, fale com a equipe Nuxem pelo WhatsApp.
+A Nuxem fornece [óleo de xisto](/produtos/oleo-de-xisto/), [óleos alternativos](/produtos/oleos-alternativos/) e [óleo BTE](/produtos/oleo-bte/), com condições a confirmar para cada produto e operação. Consulte documentação, disponibilidade e planejamento antes de programar o recebimento.
+
+Para a indústria química, informe regime térmico, equipamento, consumo e paradas previstas. OTE é combustível de queima; sua cotação não autoriza usá-lo como fluido térmico. Consulte [preço e disponibilidade de óleo de xisto OTE](/produtos/oleo-de-xisto/#cotacao-xisto). O fornecimento de xisto exige consumo a partir de 200 mil litros por mês, planejamento mensal e disponibilidade sob consulta. O mínimo é mensal, não por entrega; quantidades e prazos são alinhados na programação.

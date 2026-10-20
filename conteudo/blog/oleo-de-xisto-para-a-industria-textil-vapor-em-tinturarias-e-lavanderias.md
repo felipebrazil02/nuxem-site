@@ -1,9 +1,9 @@
 ---
-title: "Óleo de xisto na indústria têxtil: avaliar vapor por ciclo"
-description: "Saiba como comparar óleo de xisto em tinturarias e lavanderias com dados de vapor, ciclos de produção, consumo e compatibilidade da caldeira."
+title: "Óleo de xisto na indústria têxtil: consumo e cotação"
+description: "Compare xisto por ciclos e demanda de vapor em tinturarias e lavanderias. Reúna caldeira, turnos e consumo para consultar produto e fornecimento."
 date: 2026-09-27
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-20
 category: aplicacoes-xisto
 ---
 
@@ -38,3 +38,5 @@ O [plano de migração de combustível](/blog/como-migrar-sua-caldeira-ou-forno-
 Informe cidade, consumo por turno ou período, combustível atual e modelo do queimador. Diferencie reposição de produto aprovado de avaliação de substituição.
 
 [Envie a consulta à Nuxem](/contato/) com quantidade e janela desejada. A proposta deve identificar produto, documentos e condições de entrega para a fábrica.
+
+Para a tinturaria ou lavanderia, envie os ciclos e turnos de referência e os dados do queimador, indicando se o OTE já está aprovado ou será avaliado. Consulte [preço e disponibilidade de óleo de xisto OTE](/produtos/oleo-de-xisto/#cotacao-xisto). O fornecimento de xisto exige consumo a partir de 200 mil litros por mês, planejamento mensal e disponibilidade sob consulta. O mínimo é mensal, não por entrega; quantidades e prazos são alinhados na programação.

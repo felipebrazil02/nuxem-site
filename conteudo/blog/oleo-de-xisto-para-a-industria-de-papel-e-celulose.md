@@ -1,9 +1,9 @@
 ---
-title: "Óleo de xisto em papel e celulose: vapor contínuo ou de apoio"
-description: "Avalie óleo de xisto para uma unidade de papel e celulose distinguindo consumo contínuo, apoio, estoque e critérios da geração de vapor."
+title: "Óleo de xisto em papel e celulose: consumo e compra"
+description: "Diferencie xisto de uso contínuo e de apoio em papel e celulose. Consulte requisitos do equipamento, estoque, consumo e programação comercial."
 date: 2026-09-28
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-20
 category: aplicacoes-xisto
 ---
 
@@ -38,3 +38,5 @@ Após um evento de consumo elevado, atualize a autonomia e a previsão de reposi
 Compare produto aprovado, quantidade, unidade e custo entregue. Inclua custos auxiliares e investimento na análise econômica. Use o [plano de migração para xisto](/blog/como-migrar-sua-caldeira-ou-forno-para-oleo-de-xisto-ote/) para organizar a decisão técnica antes de uma troca.
 
 [Encaminhe à Nuxem a aplicação, o consumo e a cidade](/contato/), indicando se o fornecimento será contínuo ou de apoio. A proposta precisa confirmar especificação e programação para esse perfil de uso.
+
+Para papel e celulose, declare se a demanda é contínua ou de apoio e informe o consumo mensal previsto de OTE. Uma necessidade de reserva isolada não confirma elegibilidade do fornecimento. Consulte [preço e disponibilidade de óleo de xisto OTE](/produtos/oleo-de-xisto/#cotacao-xisto). O fornecimento de xisto exige consumo a partir de 200 mil litros por mês, planejamento mensal e disponibilidade sob consulta. O mínimo é mensal, não por entrega; quantidades e prazos são alinhados na programação.

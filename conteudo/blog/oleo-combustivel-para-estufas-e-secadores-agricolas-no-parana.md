@@ -1,9 +1,9 @@
 ---
-title: "Combustível para secadores no Paraná: logística da campanha"
-description: "Planeje a cotação de combustível para secadores no Paraná com especificação aprovada, acesso rural, período de operação e capacidade de recebimento."
+title: "Combustível para secadores no Paraná: compra e entrega"
+description: "Prepare a compra de combustível para secadores no Paraná com especificação, acesso rural e calendário da campanha. Consulte produto e entrega."
 date: 2026-08-11
 slugOriginal: ""
-updated: 2026-10-19
+updated: 2026-10-20
 category: logistica
 ---
 
@@ -40,3 +40,5 @@ Use o [ponto de pedido e estoque de segurança](/blog/como-programar-o-abastecim
 Verifique se o produto ofertado corresponde ao aprovado e se quantidade, unidade e destino são iguais. Confira frete e adicionais, validade e janela de entrega. Consulte o [comparativo de preço entregue](/blog/preco-oleo-bpf-posto-fabrica-comparar-propostas/) para organizar os valores.
 
 [Envie sua consulta à Nuxem](/contato/) com especificação, cidade e período de operação. A identificação da aplicação e das condições de recebimento permite discutir uma proposta concreta para a campanha.
+
+Para a campanha de secagem no Paraná, envie o combustível aprovado, o acesso rural e a janela de recebimento; a adequação ao processo deve estar definida antes da compra. Consulte [cotação de BPF](/produtos/oleo-bpf/#cotacao-bpf), [cotação de óleo de xisto](/produtos/oleo-de-xisto/#cotacao-xisto). Volume mínimo, disponibilidade e prazo devem ser confirmados para o produto escolhido; as condições de BPF e xisto não se estendem automaticamente às demais opções.

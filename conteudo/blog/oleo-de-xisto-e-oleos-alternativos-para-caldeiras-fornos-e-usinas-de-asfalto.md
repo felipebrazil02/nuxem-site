@@ -1,9 +1,9 @@
 ---
-title: "Óleo de xisto e alternativas ao BPF: como avaliar uma substituição"
-description: "Saiba quando iniciar uma avaliação de alternativas ao BPF e quais informações reunir para caldeiras, fornos e usinas de asfalto."
+title: "Óleo de xisto e alternativas ao BPF: avaliação e compra"
+description: "Avalie alternativas ao BPF em caldeiras, fornos e asfalto com requisitos técnicos e comerciais. Consulte xisto e óleos alternativos separadamente."
 date: 2026-08-02
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-20
 category: compra
 ---
 
@@ -38,3 +38,5 @@ Defina responsáveis, condições de carga, critérios de aceitação e procedim
 Documente as premissas econômicas separadamente dos resultados técnicos. Se o cenário mudar, atualize a comparação antes de aprovar o fornecimento recorrente.
 
 [Encaminhe à Nuxem os dados da aplicação e o objetivo da substituição](/contato/). Isso permite discutir opções concretas, com especificação e condições de entrega identificadas.
+
+Ao consultar uma alternativa ao BPF, descreva o problema a resolver e os critérios de aceitação. Cada opção precisa de especificação e programação próprias, sem equivalência presumida. Consulte [óleo de xisto OTE](/produtos/oleo-de-xisto/#cotacao-xisto), [óleos alternativos](/produtos/oleos-alternativos/). Volume mínimo, disponibilidade e prazo devem ser confirmados para o produto escolhido; as condições de BPF e xisto não se estendem automaticamente às demais opções.

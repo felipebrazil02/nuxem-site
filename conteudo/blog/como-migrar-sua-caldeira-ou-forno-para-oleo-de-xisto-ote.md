@@ -1,9 +1,9 @@
 ---
-title: "Migração para óleo de xisto: etapas de avaliação na indústria"
-description: "Planeje a avaliação de óleo de xisto em caldeiras e fornos: documentação, compatibilidade, critérios do teste e decisão de fornecimento."
+title: "Migração para óleo de xisto: avaliação e fornecimento"
+description: "Planeje a troca para óleo de xisto em caldeiras e fornos: compatibilidade, estoque e critérios de avaliação antes de consultar fornecimento."
 date: "2026-10-06"
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-20
 category: operacao
 ---
 
@@ -40,3 +40,5 @@ Compare consumo específico, estabilidade do processo e registros de operação 
 Uma aprovação em um equipamento não valida automaticamente os demais. Documente a configuração e as condições em que o produto foi aceito.
 
 Para avaliar o fornecimento em SP, MG ou PR, [envie à Nuxem os dados da planta e a programação pretendida](/contato/). A proposta deve identificar o produto e a documentação para análise antes da entrega.
+
+Para discutir o fornecimento após a avaliação de migração, informe adaptações pendentes, combustível remanescente e calendário aprovado pela equipe técnica. Consulte [preço e disponibilidade de óleo de xisto OTE](/produtos/oleo-de-xisto/#cotacao-xisto). O fornecimento de xisto exige consumo a partir de 200 mil litros por mês, planejamento mensal e disponibilidade sob consulta. O mínimo é mensal, não por entrega; quantidades e prazos são alinhados na programação.
