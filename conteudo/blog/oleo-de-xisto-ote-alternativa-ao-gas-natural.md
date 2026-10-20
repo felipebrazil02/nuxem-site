@@ -1,15 +1,17 @@
 ---
-title: "Óleo de xisto ou gás natural: como avaliar troca e contingência"
-description: "Compare óleo de xisto e gás natural por energia útil, infraestrutura, contrato e continuidade. Veja os dados necessários para avaliar uma alternativa."
+title: "Óleo de xisto ou gás natural: custo e cotação"
+description: "Avalie óleo de xisto OTE como alternativa ao gás natural: custo, infraestrutura e contingência. Consulte condições de fornecimento e cotação na Nuxem."
 date: "2026-09-30"
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-20
 category: compra
 ---
 
 **Óleo de xisto pode entrar em uma avaliação de substituição ou contingência ao gás natural, mas exige infraestrutura compatível.** A comparação deve incluir combustível, investimento, operação e condições contratuais. Não basta comparar preço por litro com preço por metro cúbico.
 
-Consulte a especificação do [óleo de xisto](/produtos/oleo-de-xisto/) ofertado e identifique o objetivo da análise: operar continuamente com outra fonte, atender picos ou manter uma reserva para interrupções. Cada objetivo muda o perfil de custos e de estoque.
+Consulte a especificação do [óleo de xisto OTE para fornecimento industrial](/produtos/oleo-de-xisto/) e identifique o objetivo da análise: operar continuamente com outra fonte, atender picos ou manter uma reserva para interrupções. Cada objetivo muda o perfil de custos e de estoque.
+
+**Para consultar fornecimento de xisto à Nuxem:** a operação deve ter consumo de óleo de xisto a partir de **200 mil litros por mês**, com planejamento mensal obrigatório e disponibilidade sob consulta. [Veja as condições para cotar óleo de xisto OTE](/produtos/oleo-de-xisto/#cotacao-xisto). Uma necessidade pontual de reserva deve ser avaliada com a equipe e não representa atendimento garantido.
 
 ## Coloque as propostas na mesma base energética
 
@@ -35,8 +37,10 @@ O estoque pode permanecer sem consumo por períodos maiores. Avalie condições 
 
 Confira o [armazenamento de óleo de xisto](/blog/armazenamento-e-estabilidade-do-oleo-de-xisto-ote/) e registre quem autoriza a ativação da contingência, quais condições precisam ser verificadas e como o fornecimento será retomado.
 
-## Como preparar uma consulta comercial
+## Como consultar preço e disponibilidade de xisto para sua operação
 
-Envie histórico de consumo, regime de utilização pretendido, equipamento e cidade. Informe se há infraestrutura para líquidos ou se o projeto ainda está em estudo. A [migração para OTE](/blog/como-migrar-sua-caldeira-ou-forno-para-oleo-de-xisto-ote/) deve integrar essas informações à avaliação técnica.
+Envie cidade/UF e endereço de entrega, histórico de consumo de gás com unidade, consumo mensal estimado de óleo de xisto, quantidade por entrega, equipamento e período desejado. Identifique o regime pretendido: operação contínua, atendimento de picos ou contingência. Não converta o consumo de gás em litros de óleo sem registrar a base energética e as premissas da avaliação.
 
-[Solicite à Nuxem uma proposta para o cenário definido](/contato/). Confirme quantidade e frequência de compra; uma necessidade de reserva não tem o mesmo perfil de uma operação contínua.
+Informe se há infraestrutura para líquidos ou se o projeto ainda está em estudo. A [migração para OTE](/blog/como-migrar-sua-caldeira-ou-forno-para-oleo-de-xisto-ote/) deve integrar essas informações à avaliação técnica. A cotação do combustível não confirma a compatibilidade do sistema nem garante economia com a troca.
+
+[Consulte preço e condições de fornecimento de óleo de xisto OTE](/produtos/oleo-de-xisto/#cotacao-xisto) ou [prepare os dados do cenário no formulário de cotação](/contato/). O fornecimento exige consumo a partir de 200 mil litros por mês, planejamento mensal e confirmação de disponibilidade. Quantidades por entrega, frete e prazos devem constar da proposta; uma necessidade de reserva não tem o mesmo perfil de uma operação contínua.
