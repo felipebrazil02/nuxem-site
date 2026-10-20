@@ -3,8 +3,12 @@ export function comercialXisto(empresa) {
   const whatsapp = `https://wa.me/${empresa.whatsappPrincipal}?text=${encodeURIComponent(mensagem)}`;
   return {
     whatsapp,
-    resumo: 'Fornecimento de óleo de xisto OTE para caldeiras, fornos e usinas de asfalto em SP, MG e PR, para operações com consumo a partir de 200 mil litros por mês. Planejamento mensal obrigatório e atendimento sujeito à disponibilidade.',
-    abertura: `<div class="botoes"><a class="btn btn-laranja" href="${whatsapp}">Cotar óleo de xisto pelo WhatsApp</a></div>`,
+    resumo: 'Consulte preço e disponibilidade de óleo de xisto OTE para caldeiras, fornos e usinas de asfalto em SP, MG e PR. Fornecimento para consumo a partir de 200 mil litros/mês, com planejamento mensal obrigatório.',
+    abertura: `<div class="botoes"><a class="btn btn-laranja" href="${whatsapp}">Consultar disponibilidade de xisto no WhatsApp</a></div>
+      <p>Informe cidade/UF, consumo mensal e combustível atual para avaliar o atendimento. Quantidades por entrega e prazos dependem da programação confirmada.</p>`,
+    painelTitulo: 'Planeje sua compra de óleo de xisto',
+    painelTexto: 'Consumo a partir de 200 mil litros por mês. Envie os dados da operação para consultar disponibilidade, preço e planejamento mensal.',
+    painelBotao: 'Preparar cotação de xisto ↗',
     fornecimento: `<h2>Óleo de xisto para o processo da sua indústria</h2>
       <p>A Nuxem fornece óleo de xisto OTE em <a href="/cobertura/">São Paulo, Minas Gerais e Paraná</a>. A cotação considera a aplicação, a especificação do combustível, o volume e o destino. Informe se você já utiliza OTE ou está avaliando a substituição do combustível atual.</p>
       <h3>Consumo mínimo e planejamento do fornecimento</h3>
@@ -19,11 +23,11 @@ export function comercialXisto(empresa) {
       <p>Para decidir pela troca, compare o produto ofertado com o combustível que sua operação já utiliza. Além do preço, considere o consumo para a mesma produção, o rendimento do processo e eventuais adaptações. A avaliação deve usar as especificações dos produtos e as condições reais da instalação.</p>
       <p>Veja <a href="/blog/oleo-de-xisto-ote-vs-oleo-bpf-diferencas-praticas-para-a-industria/">as diferenças entre óleo de xisto e BPF</a> e <a href="/blog/como-migrar-sua-caldeira-ou-forno-para-oleo-de-xisto-ote/">como planejar a mudança de combustível</a> com o responsável técnico.</p>
       <p>Se a operação utiliza gás, consulte os <a href="/blog/oleo-de-xisto-ote-alternativa-ao-gas-natural/">critérios para avaliar óleo de xisto como alternativa ao gás natural</a>. Para a avaliação do equipamento, confira <a href="/blog/queima-de-oleo-de-xisto-ote-atomizacao-e-ajuste-de-queimador/">quais informações registrar sobre atomização e ajuste do queimador</a>.</p>`,
-    cotacao: `<h2 id="cotacao-xisto">Como solicitar sua cotação de óleo de xisto</h2>
+    cotacao: `<h2 id="cotacao-xisto">Como solicitar sua cotação de óleo de xisto e consultar disponibilidade</h2>
       <ol><li><strong>Envie os dados da operação.</strong> Informe cidade/UF, volume e unidade de compra, consumo mensal estimado, combustível atual, equipamento e data desejada.</li>
       <li><strong>Consulte disponibilidade e condições comerciais.</strong> Com base na demanda mínima de 200 mil litros por mês, alinhe o planejamento mensal, solicite a documentação do OTE ofertado e confirme preço, frete, tributos, pagamento e programação de entrega.</li>
       <li><strong>Planeje o recebimento.</strong> Alinhe acesso e descarga. Se houver troca de combustível, combine a transição com o responsável técnico antes do abastecimento.</li></ol>
-      <p><a class="btn btn-laranja" href="${whatsapp}">Enviar dados para cotação de OTE</a></p>
+      <p><a class="btn btn-laranja" href="${whatsapp}">Consultar preço e disponibilidade de OTE no WhatsApp</a></p>
       <h2>Preço do óleo de xisto: como comparar propostas</h2>
       <p>O preço é informado por cotação. Compare propostas para a mesma quantidade, destino e especificação, incluindo frete, tributos e condições de pagamento.</p>
       <ul><li><strong>Unidade de compra:</strong> confirme se o valor está em litros, quilos ou toneladas. Para converter massa e volume, utilize a massa específica nas condições informadas.</li>

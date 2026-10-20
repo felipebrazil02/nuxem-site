@@ -517,6 +517,8 @@ salvar(GUIA_XISTO.slug, layout({
   },
   conteudo: `<div class="pagina-topo"><div class="container">
     <h1>${GUIA_XISTO.h1}</h1><p class="resumo">${GUIA_XISTO.resumo}</p>
+    <p>Para comprar na Nuxem: consumo a partir de 200 mil litros por mês, planejamento mensal e disponibilidade sob consulta.</p>
+    <div class="botoes"><a class="btn btn-laranja" href="/produtos/oleo-de-xisto/">Consultar fornecimento de óleo de xisto</a></div>
   </div></div><div class="container"><div class="conteudo">
     <p class="post-meta">Publicado em 19 de outubro de 2026 — Equipe Nuxem</p>
     ${conteudoGuiaXisto()}
