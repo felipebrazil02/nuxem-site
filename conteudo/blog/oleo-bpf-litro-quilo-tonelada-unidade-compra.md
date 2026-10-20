@@ -1,18 +1,20 @@
 ---
-title: "Óleo BPF por litro, quilo ou tonelada: confira a unidade"
-description: "Entenda massa e volume na compra de óleo BPF, a conversão de kg para tonelada e os dados necessários antes de transformar litros em quilos."
+title: "Óleo BPF por litro, quilo ou tonelada: como cotar"
+description: "Compare cotações de óleo BPF por litro, kg ou tonelada. Entenda a conversão com massa específica documentada e consulte preço, frete e fornecimento na Nuxem."
 date: 2026-09-12
 slugOriginal: ""
 studioArticleId: "7030bc51-e7ed-4845-bca5-b2903d481814"
 studioContentHash: "c0ee3e247ba9e964cb6d8bdcba1a22f2e61fd6de3f935a72ffc4ed2b4259d832"
 language: "pt"
-updated: 2026-10-09
+updated: 2026-10-19
 category: compra
 ---
 
 Na compra de óleo BPF, quilo e tonelada expressam massa; litro expressa volume. A conversão entre quilos e toneladas é direta: 1 t corresponde a 1.000 kg. Para converter litros em quilos, é necessário conhecer a massa específica do produto e a condição de referência à qual esse dado se aplica. Não existe uma equivalência universal de um litro de BPF para um quilo.
 
 Essa distinção permite comparar propostas e conferir pedidos sem transformar diferenças de unidade em aparentes diferenças de preço ou de quantidade recebida.
+
+**Para consultar uma cotação de BPF:** informe a quantidade e a unidade que sua operação utiliza. A Nuxem fornece a partir de **5.000 litros por entrega**, sob demanda e com planejamento mensal. Se sua previsão estiver em kg ou toneladas, confirme a conversão com os dados do produto ofertado. [Veja as condições de fornecimento e cotação de óleo BPF](/produtos/oleo-bpf/#cotacao-bpf).
 
 ## Quilo, tonelada e litro medem grandezas diferentes
 
@@ -75,8 +77,12 @@ Quando aparecer uma divergência, primeiro verifique se todos estão falando de 
 Para negociar uma demanda em kg, t ou L, apresente a unidade utilizada pela sua operação e os dados disponíveis. Conheça os [produtos da Nuxem](https://nuxemoil.com.br/produtos/) e confirme a base de quantidade e cobrança da proposta.
 
 
-## Da conversão à proposta comercial
+## Como solicitar preço e fornecimento de BPF na unidade correta
 
 Depois de uniformizar as unidades, compare o [preço do BPF com frete](/blog/preco-oleo-bpf-posto-fabrica-comparar-propostas/) no mesmo destino e quantidade. A conta só deve usar a densidade documentada do [óleo BPF ofertado](/produtos/oleo-bpf/), não um valor de referência de outra carga.
 
-Se a intenção é estimar quanto comprar, relacione quantidade e produção pelo [cálculo de consumo em caldeiras](/blog/como-calcular-consumo-de-oleo-combustivel-em-caldeiras/). Para receber uma proposta, [informe sua unidade de compra à Nuxem](/contato/).
+Se a intenção é estimar quanto comprar, relacione quantidade e produção pelo [cálculo de consumo em caldeiras](/blog/como-calcular-consumo-de-oleo-combustivel-em-caldeiras/).
+
+Para consultar preço, frete e programação, reúna cidade/UF de entrega, quantidade com unidade, consumo mensal estimado, equipamento, combustível atual e data desejada. Na proposta, confirme como serão expressos a quantidade e o preço e quais dados documentam uma eventual conversão.
+
+[Consulte as condições para cotar óleo BPF com a Nuxem](/produtos/oleo-bpf/#cotacao-bpf) ou [prepare sua solicitação no formulário de cotação](/contato/). O atendimento começa em 5.000 litros por entrega e depende da avaliação da demanda e do planejamento mensal; quantidade, unidade e prazo devem ser confirmados na proposta.
