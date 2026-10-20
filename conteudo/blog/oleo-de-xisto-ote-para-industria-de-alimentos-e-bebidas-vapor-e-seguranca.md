@@ -1,9 +1,9 @@
 ---
-title: "Óleo de xisto em alimentos e bebidas: avaliação da caldeira"
-description: "Veja quais dados reunir para avaliar óleo de xisto em alimentos e bebidas, mantendo separados combustível, geração de vapor e qualidade do processo."
+title: "Óleo de xisto em alimentos e bebidas: vapor e cotação"
+description: "Avalie xisto na caldeira de alimentos e bebidas com produção, vapor e consumo. Consulte produto, documentação e planejamento de fornecimento."
 date: 2026-10-06
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-20
 category: aplicacoes-xisto
 ---
 
@@ -38,3 +38,5 @@ O [método de cálculo do consumo](/blog/como-calcular-consumo-de-oleo-combustiv
 Uma entrega para teste deve estar alinhada com os responsáveis pelo acompanhamento e com o estoque existente. Verifique compatibilidade e capacidade disponível antes da descarga.
 
 Para [consultar fornecimento com a Nuxem](/contato/), envie aplicação, cidade, consumo e especificação requerida. Informe se a unidade já utiliza o produto ou se está conduzindo um estudo de substituição, para que a proposta reflita esse contexto.
+
+Para consultar OTE na unidade de alimentos e bebidas, identifique o uso do vapor e os critérios de aceitação, mantendo combustível e qualidade do processo como avaliações distintas. Consulte [preço e disponibilidade de óleo de xisto OTE](/produtos/oleo-de-xisto/#cotacao-xisto). O fornecimento de xisto exige consumo a partir de 200 mil litros por mês, planejamento mensal e disponibilidade sob consulta. O mínimo é mensal, não por entrega; quantidades e prazos são alinhados na programação.

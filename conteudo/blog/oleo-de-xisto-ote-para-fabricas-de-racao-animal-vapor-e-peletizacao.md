@@ -1,9 +1,9 @@
 ---
-title: "Óleo de xisto em fábricas de ração: avaliar vapor e consumo"
-description: "Organize a avaliação de óleo de xisto na geração de vapor de uma fábrica de ração com dados de produção, caldeira, consumo e recebimento."
+title: "Óleo de xisto em fábricas de ração: consumo e cotação"
+description: "Avalie xisto na geração de vapor da fábrica de ração com produção, caldeira e consumo. Consulte fornecimento conforme os requisitos do processo."
 date: 2026-10-07
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-20
 category: aplicacoes-xisto
 ---
 
@@ -38,3 +38,5 @@ Consulte a [aplicação de OTE em caldeiras](/blog/oleo-de-xisto-ote-para-caldei
 Informe cidade, equipamento, consumo por período, quantidade solicitada e janela de recebimento. Diferencie uma entrega de avaliação de uma reposição recorrente de produto já aprovado.
 
 [Envie sua consulta à Nuxem](/contato/). A proposta deve confirmar a especificação ofertada, a documentação disponível e a programação para a fábrica de ração.
+
+Para consultar OTE na fábrica de ração, descreva o uso do vapor e os requisitos de qualidade do processo, junto aos dados da caldeira e do recebimento. Consulte [preço e disponibilidade de óleo de xisto OTE](/produtos/oleo-de-xisto/#cotacao-xisto). O fornecimento de xisto exige consumo a partir de 200 mil litros por mês, planejamento mensal e disponibilidade sob consulta. O mínimo é mensal, não por entrega; quantidades e prazos são alinhados na programação.

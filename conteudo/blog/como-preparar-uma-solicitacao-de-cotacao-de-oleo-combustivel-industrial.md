@@ -1,12 +1,12 @@
 ---
-title: "Como preparar uma solicitação de cotação de óleo combustível industrial"
-description: "Guia prático para empresas que precisam solicitar cotação de óleo combustível industrial com clareza, agilidade e informações técnicas relevantes."
+title: "Cotação de óleo combustível: dados e modelo de pedido"
+description: "Prepare sua cotação de combustível com produto, consumo, unidade e destino. Use o modelo de pedido e consulte as condições de cada opção na Nuxem."
 date: 2026-09-09
 slugOriginal: ""
 studioArticleId: "0f411d7f-d004-442e-a0b5-a21fbeefcc0a"
 studioContentHash: "08e248084794bbea8b81fd3268800cd43ca718c283a702f9f3c9ea13ffdfc82b"
 language: "pt"
-updated: 2026-10-19
+updated: 2026-10-20
 category: compra
 ---
 
@@ -173,3 +173,5 @@ Para operações industriais que dependem de fornecimento consistente, essa orga
 - Documentos técnicos necessários: informar.
 
 Antes de enviar, confira o [roteiro de especificação do combustível](/blog/como-especificar-o-oleo-combustivel-certo-para-seu-queimador/) e a diferença entre [litros, quilos e toneladas](/blog/oleo-bpf-litro-quilo-tonelada-unidade-compra/). Quando chegar a proposta, use o [comparativo de preço com frete](/blog/preco-oleo-bpf-posto-fabrica-comparar-propostas/) para avaliar ofertas equivalentes. [Envie os dados à Nuxem para cotação](/contato/).
+
+Use o modelo deste artigo para consultar um produto identificado, com quantidade e unidade de compra, destino e documentos necessários; compare a resposta com os mesmos requisitos. Consulte [cotação de BPF](/produtos/oleo-bpf/#cotacao-bpf), [cotação de óleo de xisto](/produtos/oleo-de-xisto/#cotacao-xisto). Volume mínimo, disponibilidade e prazo devem ser confirmados para o produto escolhido; as condições de BPF e xisto não se estendem automaticamente às demais opções.

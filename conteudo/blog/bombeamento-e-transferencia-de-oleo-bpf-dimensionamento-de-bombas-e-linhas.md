@@ -1,9 +1,9 @@
 ---
-title: "Bombeamento de óleo BPF: dados para dimensionar bombas e linhas"
-description: "Organize vazão, viscosidade, temperatura, perda de carga e condições de sucção para avaliar o sistema de transferência de óleo BPF."
+title: "Bombeamento de óleo BPF: viscosidade, bombas e linhas"
+description: "Reúna vazão, viscosidade e condições da linha para avaliar o bombeamento de BPF. Consulte especificação e fornecimento com os dados do projeto."
 date: 2026-08-14
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-20
 category: operacao
 ---
 
@@ -41,3 +41,5 @@ Confirme capacidade disponível, identificação do produto e condições acorda
 Ruído, vibração, vazamento ou perda de alimentação exigem avaliação conforme os procedimentos da planta. O [plano de manutenção do armazenamento](/blog/manutencao-preventiva-em-sistemas-de-armazenamento-de-oleo-bpf/) deve incluir os componentes da linha.
 
 Para discutir o combustível e a entrega, [informe à Nuxem aplicação, consumo e condições de recebimento](/contato/). A escolha dos equipamentos e seus ajustes permanece vinculada ao projeto técnico.
+
+Ao consultar combustível para o sistema de transferência, envie a especificação aprovada, a condição de partida e os requisitos de recebimento; o dimensionamento continua com a engenharia. Consulte [fornecimento e cotação de óleo BPF](/produtos/oleo-bpf/#cotacao-bpf). Na Nuxem, o BPF começa em 5.000 litros por entrega, sob demanda e com planejamento mensal; preço, frete e programação são confirmados na proposta.

@@ -1,9 +1,10 @@
 ---
-title: "Contrato de fornecimento de óleo combustível: o que conferir antes de assinar"
-description: "O que conferir em um contrato de fornecimento de óleo combustível: especificação, unidade, energia, volume, pagamento e documentos que protegem sua operação."
+title: "Fornecimento de óleo combustível: checklist do contrato"
+description: "Confira produto, quantidade, unidade, preço e programação no contrato de combustível. Reúna os dados da operação antes de consultar uma proposta."
 date: "2026-10-16"
 slugOriginal: ""
 category: "compra"
+updated: 2026-10-20
 ---
 
 ## A resposta curta primeiro
@@ -82,3 +83,5 @@ Antes de assinar, vale completar a [solicitação de cotação](/blog/como-prepa
 ## Próximo passo
 
 Um contrato bem feito nasce de uma cotação bem informada. Ao falar com a [Nuxem](/contato/), informe cidade, volume, consumo, equipamento, combustível atual e a necessidade de fornecimento recorrente — assim a proposta considera produto, logística e programação de entrega adequadas à sua operação. Fale pelo [WhatsApp](https://wa.me/5511915011527?text=Ol%C3%A1,%20quero%20avaliar%20um%20contrato%20de%20fornecimento%20recorrente%20de%20%C3%B3leo%20combust%C3%ADvel) e envie os dados da sua planta para uma avaliação.
+
+Para iniciar a negociação de fornecimento recorrente, consulte o produto pretendido e peça que especificação, volumes, documentação e programação fiquem identificados na proposta. Consulte [cotação de BPF](/produtos/oleo-bpf/#cotacao-bpf), [cotação de óleo de xisto](/produtos/oleo-de-xisto/#cotacao-xisto). Volume mínimo, disponibilidade e prazo devem ser confirmados para o produto escolhido; as condições de BPF e xisto não se estendem automaticamente às demais opções.

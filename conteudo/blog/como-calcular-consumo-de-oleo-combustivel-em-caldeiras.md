@@ -1,9 +1,9 @@
 ---
 title: "Consumo de óleo BPF em caldeiras: fórmula e exemplo de cálculo"
-description: "Calcule consumo de óleo combustível em kg/h, litros/h e kg por tonelada de vapor. Veja um exemplo e os cuidados com densidade, PCI, PCS e eficiência."
+description: "Estime consumo de BPF em kg/h, L/h e por tonelada de vapor. Veja fórmula, exemplo e dados para transformar a previsão em consulta de fornecimento."
 date: 2026-07-16
 category: operacao
-updated: 2026-10-19
+updated: 2026-10-20
 slugOriginal: ""
 ---
 
@@ -81,3 +81,5 @@ Combine consumo diário, estoque utilizável, prazo de entrega e reserva operaci
 Consulte o roteiro de [programação do abastecimento de BPF](/blog/como-programar-o-abastecimento-de-oleo-bpf-para-evitar-paradas/). Se estiver avaliando uma troca, refaça a conta com dados documentados do [óleo de xisto](/produtos/oleo-de-xisto/) ou de outro produto aprovado, sem presumir que a eficiência será a mesma.
 
 Para uma proposta de fornecimento, [informe à Nuxem a cidade, o consumo e os dados da caldeira](/contato/).
+
+Para transformar a estimativa de consumo em uma consulta de compra, identifique produção de vapor, horas de operação, unidade calculada e registros reais da caldeira. Consulte [fornecimento e cotação de óleo BPF](/produtos/oleo-bpf/#cotacao-bpf). Na Nuxem, o BPF começa em 5.000 litros por entrega, sob demanda e com planejamento mensal; preço, frete e programação são confirmados na proposta.

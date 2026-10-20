@@ -1,9 +1,9 @@
 ---
 title: "Óleo de xisto em Santa Gertrudes: cotação para cerâmicas"
-description: "Prepare uma cotação de óleo de xisto para uma cerâmica de Santa Gertrudes com aplicação, especificação, consumo e condições de entrega."
+description: "Consulte xisto para cerâmicas em Santa Gertrudes com aplicação, especificação e consumo mensal. Confira disponibilidade e recebimento da unidade."
 date: 2026-10-08
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-20
 category: logistica
 ---
 
@@ -38,3 +38,5 @@ Se a entrega for destinada a uma avaliação, alinhe a programação com a equip
 Mantenha produto, quantidade, unidade e destino na mesma base. Confira frete, validade e prazo confirmado, além do preço. Uma data solicitada não deve ser registrada como entrega garantida.
 
 [Envie à Nuxem os dados da cerâmica de Santa Gertrudes](/contato/). A proposta deve confirmar produto e programação para a unidade informada, incluindo eventuais requisitos de avaliação antes da compra recorrente.
+
+Para a cerâmica de Santa Gertrudes, separe as demandas de fornos e secadores e informe a unidade de entrega e suas restrições de descarga. Consulte [preço e disponibilidade de óleo de xisto OTE](/produtos/oleo-de-xisto/#cotacao-xisto). O fornecimento de xisto exige consumo a partir de 200 mil litros por mês, planejamento mensal e disponibilidade sob consulta. O mínimo é mensal, não por entrega; quantidades e prazos são alinhados na programação.

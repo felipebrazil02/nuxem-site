@@ -1,9 +1,9 @@
 ---
-title: "Viscosidade do óleo BPF: relação com aquecimento e atomização"
-description: "Entenda viscosidade de ensaio, bombeamento e atomização do BPF. Saiba quais dados reunir para investigar consumo e instabilidade do queimador."
+title: "Viscosidade do óleo BPF: aquecimento e atomização"
+description: "Entenda viscosidade de ensaio, transferência e atomização do BPF. Leve os requisitos do queimador à consulta de especificação e fornecimento."
 date: 2026-07-13
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-20
 category: operacao
 ---
 
@@ -39,3 +39,5 @@ Chama instável não comprova, isoladamente, problema de viscosidade. Água, res
 Compare o consumo para a mesma produção, em condições equivalentes. Uma queda no consumo horário pode apenas indicar carga menor. Use o [consumo por tonelada de vapor](/blog/como-calcular-consumo-de-oleo-combustivel-em-caldeiras/) ou outro indicador adequado ao processo e documente as condições de cada período.
 
 Para avaliar o fornecimento, [envie à Nuxem a especificação requerida e os dados do queimador](/contato/). Isso permite discutir o produto sem adotar uma temperatura ou faixa de viscosidade genérica para todas as plantas.
+
+Antes de cotar outro BPF, reúna viscosidade requerida, temperatura de referência e registros de carga; não use a consulta comercial para definir ajustes genéricos no queimador. Consulte [fornecimento e cotação de óleo BPF](/produtos/oleo-bpf/#cotacao-bpf). Na Nuxem, o BPF começa em 5.000 litros por entrega, sob demanda e com planejamento mensal; preço, frete e programação são confirmados na proposta.

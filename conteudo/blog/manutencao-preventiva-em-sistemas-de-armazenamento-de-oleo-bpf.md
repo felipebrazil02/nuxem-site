@@ -1,9 +1,9 @@
 ---
-title: "Armazenamento de óleo BPF: como organizar a manutenção preventiva"
-description: "Veja quais registros acompanhar em tanques, filtros, bombas e aquecimento de BPF e como definir prioridades de manutenção com a equipe técnica."
+title: "Tanques de óleo BPF: manutenção e abastecimento"
+description: "Organize registros de tanque, bombas, filtros e aquecimento do BPF. Alinhe a intervenção técnica à capacidade de recebimento e à próxima entrega."
 date: 2026-07-28
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-20
 category: operacao
 ---
 
@@ -42,3 +42,5 @@ Não compense uma restrição aumentando indiscriminadamente temperatura ou pres
 ## Integre a parada ao abastecimento
 
 Antes de uma intervenção, coordene estoque utilizável, consumo previsto e disponibilidade de recebimento. Avise o fornecedor sobre mudanças na janela de descarga. Consulte o [planejamento de reposição de BPF](/blog/como-programar-o-abastecimento-de-oleo-bpf-para-evitar-paradas/) e [encaminhe à Nuxem as condições de entrega](/contato/) para programar o fornecimento.
+
+Se a manutenção alterar o recebimento, envie o calendário da intervenção e a capacidade liberada para a próxima carga; o fornecimento deve acompanhar a condição segura da planta. Consulte [fornecimento e cotação de óleo BPF](/produtos/oleo-bpf/#cotacao-bpf). Na Nuxem, o BPF começa em 5.000 litros por entrega, sob demanda e com planejamento mensal; preço, frete e programação são confirmados na proposta.

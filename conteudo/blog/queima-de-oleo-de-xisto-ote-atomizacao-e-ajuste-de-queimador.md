@@ -1,9 +1,9 @@
 ---
-title: "Queima de óleo de xisto: atomização e avaliação do queimador"
-description: "Entenda quais dados do óleo de xisto e do queimador verificar antes de ajustar aquecimento, transferência e condições de combustão."
+title: "Queima de óleo de xisto: atomização e compatibilidade"
+description: "Confira dados de xisto, aquecimento e queimador antes de avaliar a queima. Consulte especificação e fornecimento com os requisitos da instalação."
 date: 2026-10-01
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-20
 category: operacao
 ---
 
@@ -38,3 +38,5 @@ Siga os procedimentos da planta e não desabilite intertravamentos para manter o
 Use condições equivalentes de produção e os indicadores definidos pela equipe técnica. Aparência da chama não substitui medições nem confirma atendimento ambiental. A [avaliação de emissões do processo](/blog/oleo-de-xisto-ote-e-emissoes-enxofre-sox-e-conformidade-ambiental/) deve permanecer vinculada aos requisitos da instalação.
 
 Para discutir o combustível, [encaminhe à Nuxem a especificação e os dados do equipamento](/contato/). Ajustes de combustão devem ser executados por profissionais responsáveis pelo sistema, com base no fabricante e no projeto.
+
+Para consultar o combustível do queimador, envie a especificação admitida e os registros de transferência e atomização; ajustes seguem o fabricante e os profissionais responsáveis. Consulte [preço e disponibilidade de óleo de xisto OTE](/produtos/oleo-de-xisto/#cotacao-xisto). O fornecimento de xisto exige consumo a partir de 200 mil litros por mês, planejamento mensal e disponibilidade sob consulta. O mínimo é mensal, não por entrega; quantidades e prazos são alinhados na programação.

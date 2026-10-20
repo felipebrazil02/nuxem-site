@@ -1,9 +1,9 @@
 ---
-title: "Óleo BPF para laticínios em MG: consumo e programação de entrega"
-description: "Planeje BPF para laticínios em Minas Gerais com demanda de vapor, variação de produção, capacidade do tanque e janela de recebimento."
+title: "Óleo BPF para laticínios em MG: consumo e cotação"
+description: "Planeje BPF para laticínios mineiros com produção, vapor e capacidade do tanque. Consulte preço, frete e janela de recebimento para a unidade."
 date: 2026-08-29
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-20
 category: logistica
 ---
 
@@ -37,3 +37,5 @@ Para unidades com variação de consumo, revise o [ponto de pedido e a reserva o
 Coloque propostas na mesma unidade, quantidade e endereço. Registre frete, validade e documentação disponível, além do total a pagar. O [guia de fornecedor de BPF em MG](/blog/fornecedor-de-oleo-bpf-em-minas-gerais-como-escolher-certo/) detalha esses critérios.
 
 Para [cotar com a Nuxem](/contato/), envie cidade, consumo, especificação e janela desejada. Informe se o pedido é reposição rotineira ou faz parte de uma alteração de combustível, pois as avaliações necessárias são diferentes.
+
+Para o laticínio em MG, informe cidade, rotina de limpeza, sazonalidade e janela em que a equipe pode receber a carga; confirme as condições para esse destino. Consulte [fornecimento e cotação de óleo BPF](/produtos/oleo-bpf/#cotacao-bpf). Na Nuxem, o BPF começa em 5.000 litros por entrega, sob demanda e com planejamento mensal; preço, frete e programação são confirmados na proposta.

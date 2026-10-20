@@ -1,9 +1,9 @@
 ---
-title: "Poder calorífico do óleo de xisto: consumo e autonomia do tanque"
-description: "Calcule consumo e autonomia com o poder calorífico do óleo de xisto OTE. Veja como combinar PCI ou PCS, eficiência e densidade sem misturar unidades."
+title: "Poder calorífico do óleo de xisto: cálculo de consumo"
+description: "Calcule consumo e autonomia de xisto com PCI ou PCS, eficiência e densidade. Use a estimativa documentada para consultar a programação do fornecimento."
 date: 2026-10-04
 slugOriginal: ""
-updated: 2026-10-19
+updated: 2026-10-20
 category: operacao
 ---
 
@@ -40,3 +40,5 @@ Considere o prazo entre pedido e produto liberado para consumo. O [planejamento 
 Compare consumo medido e produção em períodos equivalentes. Registre as premissas que mudaram e confira unidades e instrumentos antes de atribuir uma diferença ao produto. A avaliação econômica também deve incluir os custos auxiliares, como na [comparação entre BPF e xisto](/blog/oleo-de-xisto-ote-vs-oleo-bpf-diferencas-praticas-para-a-industria/).
 
 Para solicitar fornecimento, [informe à Nuxem consumo, capacidade disponível e cidade de entrega](/contato/). Confirme a especificação do combustível e a programação antes de converter a estimativa em pedido.
+
+Para planejar a compra a partir do cálculo térmico, envie a base de poder calorífico adotada, o consumo estimado e a capacidade útil disponível; dimensionamento de tanque exige avaliação própria. Consulte [preço e disponibilidade de óleo de xisto OTE](/produtos/oleo-de-xisto/#cotacao-xisto). O fornecimento de xisto exige consumo a partir de 200 mil litros por mês, planejamento mensal e disponibilidade sob consulta. O mínimo é mensal, não por entrega; quantidades e prazos são alinhados na programação.

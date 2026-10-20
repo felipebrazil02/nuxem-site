@@ -1,9 +1,9 @@
 ---
-title: "Óleo BTE e B1 no Paraná: comparar produto e requisitos"
-description: "Compare BTE e B1 para uma unidade no Paraná com especificação documentada, requisitos ambientais e condições de entrega confirmadas."
+title: "Óleo BTE e B1 no Paraná: especificação e cotação"
+description: "Compare BTE e B1 para sua unidade no Paraná com documentação e requisitos ambientais. Consulte cada produto e confirme condições de entrega."
 date: 2026-08-03
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-20
 category: logistica
 ---
 
@@ -36,3 +36,5 @@ Em troca de produto, consulte os cuidados com [compatibilidade entre lotes](/blo
 ## Como solicitar uma proposta no Paraná
 
 Informe cidade, aplicação, combustível atual, quantidade e janela desejada. Se ainda não houver produto aprovado, indique que se trata de avaliação técnica. [Encaminhe a consulta à Nuxem](/contato/) e peça que a proposta identifique a especificação, a documentação e as condições de entrega.
+
+Para cotar BTE ou B1 no Paraná, indique o limite requerido e a especificação aprovada. Consulte os produtos separadamente; as denominações não são equivalentes nem garantem conformidade da planta. Consulte [fornecimento de BTE](/produtos/oleo-bte/), [fornecimento de B1](/produtos/oleo-b1/). Volume mínimo, disponibilidade e prazo devem ser confirmados para o produto escolhido; as condições de BPF e xisto não se estendem automaticamente às demais opções.

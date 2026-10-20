@@ -1,9 +1,9 @@
 ---
-title: "Combustível para secadores agrícolas: equipamento e consumo"
-description: "Veja o que avaliar antes de usar óleo combustível em secadores ou estufas agrícolas: equipamento, contato com produto, consumo e armazenamento."
+title: "Óleo combustível para secadores agrícolas: como cotar"
+description: "Avalie equipamento, consumo e armazenamento antes de cotar combustível para secadores e estufas. Confirme a aplicação aprovada e a programação."
 date: 2026-08-05
 slugOriginal: ""
-updated: 2026-10-19
+updated: 2026-10-20
 category: aplicacoes-bpf
 ---
 
@@ -38,3 +38,5 @@ O [roteiro de especificação para queimadores](/blog/como-especificar-o-oleo-co
 Envie estimativa de consumo, período de operação e capacidade disponível. Informe mudanças na previsão de processamento e confirme a reposição com antecedência. O [planejamento de abastecimento](/blog/como-programar-o-abastecimento-de-oleo-bpf-para-evitar-paradas/) deve considerar a variabilidade da campanha.
 
 Para [consultar a Nuxem](/contato/), identifique cidade, equipamento e especificação aprovada. A proposta comercial deve ser analisada depois de confirmada a adequação do produto à aplicação.
+
+Na consulta para estufas e secadores, identifique o tipo de aquecimento e qualquer contato com o produto processado, além do calendário da campanha e do consumo previsto. Consulte [cotação de BPF](/produtos/oleo-bpf/#cotacao-bpf), [cotação de óleo de xisto](/produtos/oleo-de-xisto/#cotacao-xisto). Volume mínimo, disponibilidade e prazo devem ser confirmados para o produto escolhido; as condições de BPF e xisto não se estendem automaticamente às demais opções.

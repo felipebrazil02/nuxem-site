@@ -1,9 +1,9 @@
 ---
-title: "Óleo BPF na indústria têxtil: consumo de vapor por lote"
-description: "Organize consumo e compra de BPF para tinturarias e lavanderias. Compare lotes, turnos, demanda de vapor e condições de fornecimento."
+title: "Óleo BPF na indústria têxtil: vapor e fornecimento"
+description: "Relacione BPF, lotes e demanda de vapor em tinturarias e lavanderias. Reúna consumo por período e turnos para consultar a compra e as entregas."
 date: 2026-08-23
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-20
 category: aplicacoes-bpf
 ---
 
@@ -38,3 +38,5 @@ Use o [planejamento de abastecimento](/blog/como-programar-o-abastecimento-de-ol
 Uniformize quantidade, unidade, especificação e destino. Separe frete e outros valores já incluídos no total. Registre validade e janela confirmada, além do preço unitário.
 
 Para [solicitar BPF à Nuxem](/contato/), envie cidade, consumo por período e perfil dos turnos. Informe se a compra atende uma campanha específica ou a operação regular, para que a programação seja discutida com esse contexto.
+
+Para discutir BPF na tinturaria ou lavanderia, envie o perfil dos turnos e dos ciclos, identificando se a demanda atende uma campanha ou a operação regular. Consulte [fornecimento e cotação de óleo BPF](/produtos/oleo-bpf/#cotacao-bpf). Na Nuxem, o BPF começa em 5.000 litros por entrega, sob demanda e com planejamento mensal; preço, frete e programação são confirmados na proposta.

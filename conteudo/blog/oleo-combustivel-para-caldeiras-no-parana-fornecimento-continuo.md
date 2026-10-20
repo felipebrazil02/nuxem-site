@@ -1,9 +1,9 @@
 ---
-title: "Óleo combustível para caldeiras no Paraná: planejar reposição"
-description: "Organize a compra de combustível para caldeiras no Paraná com consumo de vapor, estoque utilizável, especificação e janela de entrega."
+title: "Óleo combustível para caldeiras no Paraná: cotação"
+description: "Reúna consumo de vapor, estoque e especificação para cotar combustível no Paraná. Consulte o produto aprovado e confirme reposição por endereço."
 date: 2026-08-03
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-20
 category: logistica
 ---
 
@@ -38,3 +38,5 @@ Informe antecipadamente paradas de manutenção e mudanças na previsão de prod
 Compare especificação, quantidade, preço entregue e condições de programação. Registre o que foi solicitado e o que foi confirmado. Um acordo comercial precisa deixar claras as responsabilidades e as condições das entregas.
 
 [Solicite uma proposta à Nuxem](/contato/) com consumo, produto e cidade. Para várias unidades, separe as informações por endereço e por caldeira quando houver especificações diferentes.
+
+Para cotar combustível da caldeira no Paraná, envie especificação, demanda de vapor e autonomia. Separe os dados por endereço quando houver várias unidades. Consulte [cotação de BPF](/produtos/oleo-bpf/#cotacao-bpf), [cotação de óleo de xisto](/produtos/oleo-de-xisto/#cotacao-xisto). Volume mínimo, disponibilidade e prazo devem ser confirmados para o produto escolhido; as condições de BPF e xisto não se estendem automaticamente às demais opções.

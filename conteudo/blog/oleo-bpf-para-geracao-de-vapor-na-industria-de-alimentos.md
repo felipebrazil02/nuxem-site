@@ -1,9 +1,9 @@
 ---
-title: "Óleo BPF em alimentos: compra e continuidade da geração de vapor"
-description: "Planeje BPF para caldeiras de alimentos com perfil de consumo, requisitos do equipamento, produção e janelas de recebimento."
+title: "Óleo BPF em alimentos: vapor, consumo e cotação"
+description: "Organize a compra de BPF para caldeiras de alimentos com produção, consumo de vapor e recebimento. Consulte especificação e planejamento de entrega."
 date: 2026-08-17
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-20
 category: aplicacoes-bpf
 ---
 
@@ -38,3 +38,5 @@ O [planejamento do ponto de pedido](/blog/como-programar-o-abastecimento-de-oleo
 Mantenha identificação das cargas e registros da operação. Diante de alteração no consumo ou na alimentação, compare também carga e condições do sistema. Não atribua automaticamente uma ocorrência ao combustível sem investigação.
 
 Para [cotar BPF para a unidade de alimentos](/contato/), informe cidade, especificação, consumo e janela desejada. A Nuxem atende SP, MG e PR, com programação a confirmar para cada entrega.
+
+Para uma cotação à fábrica de alimentos, informe a demanda de vapor e as variações de produção e limpeza, sem tratar a escolha do combustível como garantia de qualidade do alimento. Consulte [fornecimento e cotação de óleo BPF](/produtos/oleo-bpf/#cotacao-bpf). Na Nuxem, o BPF começa em 5.000 litros por entrega, sob demanda e com planejamento mensal; preço, frete e programação são confirmados na proposta.

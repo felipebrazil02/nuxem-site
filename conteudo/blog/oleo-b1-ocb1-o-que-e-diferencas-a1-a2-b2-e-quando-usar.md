@@ -1,9 +1,10 @@
 ---
-title: "Óleo B1 (OCB1): o que é, diferenças para A1, A2 e B2 e quando usar"
-description: "Entenda o óleo B1 (OCB1): teor de enxofre até 1,0%, viscosidade até 620 mm²/s a 60 ºC, diferenças para A1, A2 e B2 e o que conferir na cotação."
+title: "Óleo B1 (OCB1): diferenças, aplicação e cotação"
+description: "Compare B1 com A1, A2 e B2 por especificação e requisitos da planta. Veja o que pedir sobre viscosidade, enxofre e fornecimento antes da compra."
 date: "2026-10-14"
 slugOriginal: ""
 category: "compra"
+updated: 2026-10-20
 ---
 
 ## A resposta curta primeiro
@@ -57,3 +58,5 @@ Compare propostas na mesma unidade e na mesma base de energia. Use o custo entre
 ## Conclusão
 
 O óleo B1 (OCB1) é a opção de baixo enxofre com manuseio mais simples entre as classes da família B. Ele se diferencia do A1 pelo teor de enxofre e do B2 pelo limite de viscosidade. A decisão passa por três verificações: requisitos ambientais da instalação, infraestrutura de aquecimento e faixa de viscosidade aceita pelo queimador. Confirme a ficha técnica do produto cotado e compare propostas na mesma base de massa e energia. A [Nuxem](/produtos/oleo-b1/) fornece óleo combustível em São Paulo, Minas Gerais e Paraná e apoia a especificação da classe certa para a sua operação — fale pelo [WhatsApp](https://wa.me/5511915011527?text=Ol%C3%A1,%20quero%20especificar%20%C3%B3leo%20B1%20(OCB1)%20para%20minha%20opera%C3%A7%C3%A3o) e informe cidade, volume, consumo, equipamento e combustível atual para uma avaliação.
+
+Para consultar B1, envie a especificação requerida, o modelo do queimador e os critérios ambientais definidos para sua operação; confirme os documentos da proposta. Consulte [especificação e fornecimento de óleo B1](/produtos/oleo-b1/). Volume mínimo, disponibilidade e prazo devem ser confirmados para o produto escolhido; as condições de BPF e xisto não se estendem automaticamente às demais opções.

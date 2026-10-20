@@ -1,9 +1,9 @@
 ---
-title: "Óleo BPF em Betim e Contagem: compra para processos térmicos"
-description: "Veja quais dados reunir ao cotar BPF para uma unidade metalúrgica em Betim ou Contagem: equipamento, especificação, consumo e recebimento."
+title: "Óleo BPF em Betim e Contagem: especificação e cotação"
+description: "Cote BPF para processos térmicos em Betim e Contagem com aplicação, equipamento e consumo. Confira produto, frete e programação por unidade."
 date: 2026-08-05
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-20
 category: logistica
 ---
 
@@ -37,3 +37,5 @@ Uma parada programada ou mudança de turno pode alterar a necessidade de entrega
 Mantenha produto, quantidade, unidade e endereço na mesma base. Confira se frete está incluído, quais adicionais foram confirmados e até quando a oferta é válida. Para comparar opções, use o [custo entregue com frete](/blog/preco-oleo-bpf-posto-fabrica-comparar-propostas/).
 
 [Envie à Nuxem a demanda da unidade de Betim ou Contagem](/contato/), com especificação, aplicação e janela desejada. A resposta comercial deve confirmar as condições para aquele pedido, sem estender automaticamente um acordo de outra fábrica.
+
+Para a unidade de Betim ou Contagem, identifique se o uso é em forno, fundição ou geração de vapor e encaminhe os requisitos daquele processo antes de consultar preço. Consulte [fornecimento e cotação de óleo BPF](/produtos/oleo-bpf/#cotacao-bpf). Na Nuxem, o BPF começa em 5.000 litros por entrega, sob demanda e com planejamento mensal; preço, frete e programação são confirmados na proposta.

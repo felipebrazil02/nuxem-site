@@ -1,9 +1,9 @@
 ---
 title: "Óleo de xisto para caldeiras: consumo, compatibilidade e cotação"
-description: "Avalie óleo de xisto em caldeiras: dados do queimador, consumo por tonelada de vapor, aquecimento e informações para cotar em SP, MG e PR."
+description: "Compare consumo e compatibilidade do xisto em caldeiras. Reúna dados de vapor e queimador para consultar fornecimento com planejamento mensal."
 date: 2026-10-02
 category: aplicacoes-xisto
-updated: 2026-10-09
+updated: 2026-10-20
 slugOriginal: ""
 ---
 
@@ -53,3 +53,5 @@ Não misture um novo produto ao estoque existente sem avaliar a compatibilidade.
 Envie município, volume pretendido, consumo mensal, prazo desejado e dados do queimador. Informe se a demanda é uma reposição de produto já aprovado ou uma avaliação de substituição.
 
 A Nuxem atende São Paulo, Minas Gerais e Paraná. Consulte a [cobertura de entregas](/cobertura/) e [encaminhe os dados para cotação](/contato/). A programação e a especificação devem ser confirmadas para cada operação.
+
+Para cotar xisto para a caldeira, identifique produção de vapor, consumo específico e situação da aprovação técnica. Uma consulta para avaliação deve ser planejada com a equipe responsável. Consulte [preço e disponibilidade de óleo de xisto OTE](/produtos/oleo-de-xisto/#cotacao-xisto). O fornecimento de xisto exige consumo a partir de 200 mil litros por mês, planejamento mensal e disponibilidade sob consulta. O mínimo é mensal, não por entrega; quantidades e prazos são alinhados na programação.

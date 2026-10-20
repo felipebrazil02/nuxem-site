@@ -1,8 +1,8 @@
 ---
-title: "Ponto de fulgor do óleo combustível: o que é e por que importa no armazenamento"
-description: "Entenda o que é o ponto de fulgor de um óleo combustível, a diferença para ponto de combustão e ignição e quais cuidados considerar no armazenamento e aquecimento."
+title: "Ponto de fulgor do óleo combustível: segurança e compra"
+description: "Entenda ponto de fulgor e sua relação com armazenamento. Confira a documentação do combustível e os requisitos da instalação antes da compra."
 date: "2026-10-18"
-updated: 2026-10-19
+updated: 2026-10-20
 slugOriginal: ""
 category: "operacao"
 ---
@@ -70,3 +70,5 @@ Por isso ele deve ser lido junto com as demais propriedades do produto e com a d
 Com o ponto de fulgor e as demais propriedades em mãos, você consegue avaliar o armazenamento e o aquecimento com mais segurança. Para complementar, veja como organizar a [manutenção preventiva de sistemas de armazenamento](/blog/manutencao-preventiva-em-sistemas-de-armazenamento-de-oleo-bpf/) e os dados necessários para o [bombeamento e a transferência do óleo](/blog/bombeamento-e-transferencia-de-oleo-bpf-dimensionamento-de-bombas-e-linhas/).
 
 Ao solicitar uma cotação com a [Nuxem](/contato/), informe a cidade, o volume, o consumo estimado, o equipamento e o combustível atual — assim é possível verificar a documentação do produto ofertado, incluindo o ponto de fulgor, para a sua operação. Fale pelo [WhatsApp](https://wa.me/5511915011527?text=Ol%C3%A1!%20Quero%20solicitar%20uma%20cota%C3%A7%C3%A3o%20de%20%C3%B3leo%20combust%C3%ADvel.) e envie os dados da sua instalação para uma avaliação.
+
+Ao consultar um combustível, peça a FDS e a identificação do dado de ponto de fulgor. A cotação não substitui a avaliação de segurança, armazenamento e aquecimento. Consulte [cotação de BPF](/produtos/oleo-bpf/#cotacao-bpf), [cotação de óleo de xisto](/produtos/oleo-de-xisto/#cotacao-xisto). Volume mínimo, disponibilidade e prazo devem ser confirmados para o produto escolhido; as condições de BPF e xisto não se estendem automaticamente às demais opções.

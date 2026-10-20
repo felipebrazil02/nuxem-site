@@ -1,9 +1,9 @@
 ---
-title: "Óleo BPF para usinas de asfalto em MG: entrega por campanha"
-description: "Planeje BPF para usinas de asfalto no Triângulo Mineiro e interior de MG com produção prevista, localização da usina e capacidade de recebimento."
+title: "Óleo BPF para usinas de asfalto em MG: cotação e entrega"
+description: "Cote BPF para usinas no Triângulo Mineiro e interior de MG com produção, endereço da campanha e recebimento. Consulte preço e programação."
 date: 2026-08-03
 slugOriginal: ""
-updated: 2026-10-19
+updated: 2026-10-20
 category: logistica
 ---
 
@@ -40,3 +40,5 @@ O [ponto de pedido](/blog/como-programar-o-abastecimento-de-oleo-bpf-para-evitar
 Uniformize produto, quantidade e local. Registre frete incluído ou separado e eventuais condições de acesso que afetem a proposta. Use o [comparativo de custo entregue](/blog/preco-oleo-bpf-posto-fabrica-comparar-propostas/).
 
 Para [cotar BPF com a Nuxem](/contato/), envie o local da usina, a previsão da campanha e os dados do queimador. Informe qualquer mudança de endereço ou cronograma para que a programação seja reavaliada.
+
+Para a campanha de asfalto em Minas Gerais, informe a localização real da usina, o cronograma e o consumo esperado; mudanças de obra exigem rever frete e entrega. Consulte [fornecimento e cotação de óleo BPF](/produtos/oleo-bpf/#cotacao-bpf). Na Nuxem, o BPF começa em 5.000 litros por entrega, sob demanda e com planejamento mensal; preço, frete e programação são confirmados na proposta.

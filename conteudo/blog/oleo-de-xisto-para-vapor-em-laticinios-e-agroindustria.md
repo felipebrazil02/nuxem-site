@@ -1,9 +1,9 @@
 ---
-title: "Óleo de xisto em laticínios: comparar vapor e consumo"
-description: "Veja como avaliar óleo de xisto em caldeiras de laticínios, comparando demanda de vapor, consumo específico e requisitos da instalação."
+title: "Óleo de xisto em laticínios: vapor, consumo e cotação"
+description: "Relacione xisto, vapor e ciclos do laticínio antes da compra. Reúna consumo e dados da caldeira para consultar disponibilidade e planejamento."
 date: 2026-09-24
 slugOriginal: ""
-updated: 2026-10-09
+updated: 2026-10-20
 category: aplicacoes-xisto
 ---
 
@@ -38,3 +38,5 @@ Consulte o [plano de migração para OTE](/blog/como-migrar-sua-caldeira-ou-forn
 Informe cidade, consumo, quantidade desejada, combustível atual e dados da caldeira. Indique se a demanda é uma avaliação ou reposição de produto já aprovado.
 
 [Encaminhe os dados à Nuxem](/contato/). A programação da entrega deve ser confirmada junto à janela em que o laticínio pode receber e acompanhar a operação.
+
+Para o laticínio, envie o perfil dos ciclos de produção e limpeza e a janela de recebimento, mantendo a avaliação técnica separada da programação comercial. Consulte [preço e disponibilidade de óleo de xisto OTE](/produtos/oleo-de-xisto/#cotacao-xisto). O fornecimento de xisto exige consumo a partir de 200 mil litros por mês, planejamento mensal e disponibilidade sob consulta. O mínimo é mensal, não por entrega; quantidades e prazos são alinhados na programação.

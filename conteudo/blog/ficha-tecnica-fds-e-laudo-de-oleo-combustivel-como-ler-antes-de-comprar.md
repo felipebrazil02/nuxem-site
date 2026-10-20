@@ -1,8 +1,8 @@
 ---
-title: "Ficha técnica, FDS e laudo de óleo combustível: como ler cada documento antes de comprar"
-description: "Como ler ficha técnica, FDS e laudo de análise de óleo combustível: entenda a diferença e o que conferir em cada um antes de fechar a compra."
+title: "Ficha técnica, FDS e laudo: documentos do óleo combustível"
+description: "Diferencie ficha técnica, FDS e laudo de óleo combustível. Confira identificação, unidades e resultados antes de pedir documentação e cotação."
 date: "2026-10-15"
-updated: 2026-10-19
+updated: 2026-10-20
 slugOriginal: ""
 category: "compra"
 ---
@@ -75,3 +75,5 @@ Esses pontos completam a [preparação de uma solicitação de cotação](/blog/
 Ficha técnica, FDS e laudo de análise respondem a perguntas diferentes e devem ser usados juntos na decisão de compra. A ficha técnica orienta a especificação; a FDS orienta o manuseio e o transporte; o laudo mostra o resultado de uma amostra. Confirme os dados na documentação do produto cotado e compare propostas na mesma unidade e na mesma base de energia — nunca confiando apenas no nome comercial.
 
 Ao solicitar cotação com a [Nuxem](/contato/), informe cidade, volume, consumo estimado, equipamento e combustível atual. Nossa equipe apoia a comparação da documentação e a especificação do produto adequado à sua operação — fale pelo [WhatsApp](https://wa.me/5511915011527?text=Ol%C3%A1,%20quero%20conferir%20a%20documenta%C3%A7%C3%A3o%20de%20uma%20cota%C3%A7%C3%A3o%20de%20%C3%B3leo%20combust%C3%ADvel) e informe os dados da sua instalação para uma avaliação.
+
+Com os documentos organizados, indique qual produto está sendo avaliado e quais resultados ou fichas sua operação exige para aceitar uma carga. Consulte [cotação de BPF](/produtos/oleo-bpf/#cotacao-bpf), [cotação de óleo de xisto](/produtos/oleo-de-xisto/#cotacao-xisto). Volume mínimo, disponibilidade e prazo devem ser confirmados para o produto escolhido; as condições de BPF e xisto não se estendem automaticamente às demais opções.
