@@ -1,15 +1,17 @@
 ---
-title: "Óleo de xisto ou BPF: como comparar consumo e custo industrial"
-description: "Compare óleo de xisto e BPF por viscosidade, enxofre, consumo e custo por energia útil. Saiba quais documentos pedir antes de trocar o combustível."
+title: "Óleo de xisto ou BPF: consumo, custo e cotação"
+description: "Compare óleo de xisto OTE e BPF por consumo, especificação e custo por energia útil. Veja condições de fornecimento e como consultar cotação de cada produto."
 date: 2026-10-03
 category: compra
-updated: 2026-10-09
+updated: 2026-10-20
 slugOriginal: ""
 ---
 
 **A escolha entre óleo de xisto e óleo BPF depende da especificação dos produtos e do equipamento.** Compare a energia útil entregue, o aquecimento necessário, a compatibilidade da instalação e o abastecimento. O menor preço por litro não garante o menor custo de operação.
 
 O [óleo BPF](/produtos/oleo-bpf/) e o [óleo de xisto (OTE)](/produtos/oleo-de-xisto/) são opções para avaliação em processos térmicos industriais. O nome comercial não garante menor consumo, ausência de aquecimento ou atendimento ambiental: essas conclusões exigem documentação e verificação na planta.
+
+**Para consultar uma cotação na Nuxem, confira também as condições de fornecimento:** [BPF a partir de 5.000 litros por entrega](/produtos/oleo-bpf/#cotacao-bpf), sob demanda e com planejamento mensal; [óleo de xisto para consumo a partir de 200 mil litros por mês](/produtos/oleo-de-xisto/#cotacao-xisto), com planejamento mensal obrigatório e disponibilidade sob consulta. Os mínimos têm bases diferentes: entrega no BPF e consumo mensal no xisto.
 
 ## Viscosidade: transferência e atomização têm exigências diferentes
 
@@ -44,6 +46,15 @@ O segundo produto tem preço maior por massa e custo menor por energia útil nes
 
 A troca deve seguir um plano aprovado pelo responsável técnico. Consulte os cuidados com [compatibilidade entre lotes e formação de borra](/blog/compatibilidade-entre-lotes-de-oleo-bpf-como-evitar-borra-na-mistura/) antes de programar a descarga.
 
+## Como consultar preço e fornecimento de BPF ou xisto
+
+Reúna cidade/UF e endereço de entrega, combustível atual, modelo do equipamento, consumo mensal, quantidade com unidade por entrega e período desejado. Esses dados ajudam a avaliar disponibilidade, preço, frete e programação. Para comparar as propostas, confirme a especificação e a mesma base de quantidade e custo entregue.
+
+- [Consultar preço e condições de fornecimento de óleo BPF](/produtos/oleo-bpf/#cotacao-bpf): pedidos a partir de 5.000 litros por entrega, sob demanda e com planejamento mensal.
+- [Consultar preço e disponibilidade de óleo de xisto OTE](/produtos/oleo-de-xisto/#cotacao-xisto): consumo a partir de 200 mil litros por mês, planejamento mensal obrigatório e disponibilidade a confirmar. A quantidade de cada entrega é definida na programação.
+
+Se ainda está avaliando a alternativa, [prepare os dados da operação no formulário de cotação](/contato/). A consulta comercial não substitui a aprovação técnica da troca; os prazos e as condições de cada combustível são confirmados na proposta.
+
 ## Dúvidas frequentes
 
 ### Óleo de xisto sempre consome menos que BPF?
@@ -56,4 +67,4 @@ A compatibilidade deve ser confirmada pelo fabricante ou responsável técnico. 
 
 ### Como pedir uma comparação à Nuxem?
 
-Informe cidade de entrega, combustível utilizado, modelo do equipamento e consumo atual. A Nuxem atende SP, MG e PR; consulte a [cobertura de fornecimento](/cobertura/) e [solicite uma cotação para sua operação](/contato/).
+Informe cidade de entrega, combustível utilizado, modelo do equipamento e consumo atual. A Nuxem atende SP, MG e PR; consulte a [cobertura de fornecimento](/cobertura/), confira as condições comerciais de [óleo BPF](/produtos/oleo-bpf/#cotacao-bpf) e [óleo de xisto OTE](/produtos/oleo-de-xisto/#cotacao-xisto) e [solicite uma cotação para sua operação](/contato/).
