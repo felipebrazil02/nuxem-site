@@ -376,7 +376,7 @@ ${p.orientacao ? `  <h2>${comercial ? 'Documentação para confirmar a compra' :
   ${p.slug === 'oleo-bpf' ? '<p>Para outras dúvidas sobre armazenamento, aquecimento e especificação, consulte as <a href="/guia-oleo-bpf/faq/">perguntas frequentes sobre óleo BPF</a>.</p>' : ''}
 ${leituras(`produtos/${p.slug}`)}
   <p><a class="btn btn-laranja" href="${comercial?.whatsapp || ZAP}">Solicitar cotação de ${p.nome}</a></p>
-</div><aside class="quote-panel"><div class="section-kicker">SUA PRÓXIMA ENTREGA</div><h2>Vamos encontrar a melhor opção?</h2><p>Informe o produto, o volume e sua cidade. Nossa equipe orienta sua cotação.</p><a class="btn btn-laranja" href="/contato/">Solicitar uma cotação ↗</a><a class="panel-link" href="#dados-tecnicos">Consultar dados técnicos ↓</a><hr><div class="panel-detail"><b>Atendimento 24h</b><span>SP, MG e PR · Frota própria</span></div><a class="panel-link" href="/produtos/">← Todos os produtos</a></aside></div>`,
+</div><aside class="quote-panel"><div class="section-kicker">SUA PRÓXIMA ENTREGA</div><h2>${comercial?.painelTitulo || 'Vamos encontrar a melhor opção?'}</h2><p>${comercial?.painelTexto || 'Informe o produto, o volume e sua cidade. Nossa equipe orienta sua cotação.'}</p><a class="btn btn-laranja" href="/contato/">${comercial?.painelBotao || 'Solicitar uma cotação ↗'}</a><a class="panel-link" href="#dados-tecnicos">Consultar dados técnicos ↓</a><hr><div class="panel-detail"><b>Atendimento 24h</b><span>SP, MG e PR · Frota própria</span></div><a class="panel-link" href="/produtos/">← Todos os produtos</a></aside></div>`,
   }));
 }
 
@@ -387,6 +387,8 @@ salvar(PILAR.slug, layout({
 <div class="pagina-topo"><div class="container">
   <h1>${PILAR.h1}</h1>
   <p class="resumo">${PILAR.resumo}</p>
+  <p>Está procurando um fornecedor? Confira pedido mínimo, região atendida e condições para abastecer sua operação.</p>
+  <div class="botoes"><a class="btn btn-laranja" href="/produtos/oleo-bpf/">Consultar fornecimento de óleo BPF</a></div>
 </div></div>
 <div class="container"><div class="conteudo">
   ${PILAR.secoes.map(s => s.ehFaq ? `
@@ -399,7 +401,10 @@ salvar(PILAR.slug, layout({
   `).join('\n')}
   ${leituras(PILAR.slug)}
   <p>Consulte também as <a href="/guia-oleo-bpf/faq/">perguntas frequentes sobre óleo BPF</a>, reunidas em uma página para facilitar a consulta.</p>
-  <p style="margin-top:32px"><a class="btn btn-laranja" href="${ZAP}">Solicitar cotação de óleo BPF</a></p>
+  <h2>Da especificação à cotação de óleo BPF</h2>
+  <p>Já sabe o consumo da sua operação? A Nuxem fornece BPF a partir de 5.000 litros por entrega, sob demanda e com planejamento mensal. Informe cidade, volume e equipamento para consultar as condições.</p>
+  <p><a href="/produtos/oleo-bpf/#cotacao-bpf">Veja como solicitar preço e programação de entrega de BPF</a>.</p>
+  <p style="margin-top:32px"><a class="btn btn-laranja" href="${ZAP}">Iniciar cotação de óleo BPF no WhatsApp</a></p>
 </div></div>`}));
 salvar(PILAR.slug + '/faq', layout({
   title: 'Perguntas Frequentes sobre Óleo BPF | Nuxem',

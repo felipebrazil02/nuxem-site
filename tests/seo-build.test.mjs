@@ -178,7 +178,7 @@ test('SEO output stays consistent across clean and incremental builds, including
       if(slug !== 'oleos-alternativos') assert.match(html, /<title>[^<]*SP, MG e PR/);
       assert.match(html, /ficha técnica/);
       assert.match(html, /ficha de dados de segurança/);
-      assert.match(html, /Como solicitar sua cotação/);
+      assert.match(html, /Como solicitar sua cotação|Solicite preço e programação de entrega de óleo BPF/);
       assert.match(html, /<h2>Perguntas sobre/);
       const curated = html.match(/<aside class="leituras"[^]*?<\/aside>/)[0];
       for(const [articleSlug] of LEITURAS[`produtos/${slug}`]) assert.ok(curated.includes(`/blog/${articleSlug}/`));
