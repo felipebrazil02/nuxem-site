@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Óleo BPF na indústria têxtil: consumo de vapor por lote | Blog Nuxem</title>
-<meta name="description" content="Organize consumo e compra de BPF para tinturarias e lavanderias. Compare lotes, turnos, demanda de vapor e condições de fornecimento.">
+<title>Óleo BPF na indústria têxtil: vapor e fornecimento | Blog Nuxem</title>
+<meta name="description" content="Relacione BPF, lotes e demanda de vapor em tinturarias e lavanderias. Reúna consumo por período e turnos para consultar a compra e as entregas.">
 
 
 <link rel="canonical" href="https://nuxemoil.com.br/blog/oleo-bpf-para-industria-textil-vapor-em-tinturarias-e-lavanderias/">
-<meta property="og:title" content="Óleo BPF na indústria têxtil: consumo de vapor por lote | Blog Nuxem">
-<meta property="og:description" content="Organize consumo e compra de BPF para tinturarias e lavanderias. Compare lotes, turnos, demanda de vapor e condições de fornecimento.">
+<meta property="og:title" content="Óleo BPF na indústria têxtil: vapor e fornecimento | Blog Nuxem">
+<meta property="og:description" content="Relacione BPF, lotes e demanda de vapor em tinturarias e lavanderias. Reúna consumo por período e turnos para consultar a compra e as entregas.">
 <meta property="og:url" content="https://nuxemoil.com.br/blog/oleo-bpf-para-industria-textil-vapor-em-tinturarias-e-lavanderias/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
@@ -279,6 +279,15 @@ form{max-width:none;grid-template-columns:1fr 1fr;gap:23px;padding:30px;backgrou
 /* O picture mantém as dimensões e o enquadramento da imagem principal. */
 .hero-picture{position:absolute;inset:0;display:block}
 .hero-picture>img{position:absolute;width:100%;height:100%;object-fit:cover;object-position:62% center}
+
+/* Cotação: campos flexíveis e condições legíveis em qualquer largura. */
+.quote-form{grid-template-columns:repeat(2,minmax(0,1fr))}
+.quote-form>div{min-width:0}
+.quote-form .quote-wide{grid-column:1/-1}
+.quote-form .quote-conditions{background:#f0f3ef;padding:18px;border-radius:4px;color:#183643;font-size:14px}
+.quote-conditions p{margin:10px 0 0}
+.quote-form .quote-help{font-size:13px;margin:0;color:#485d66}
+@media(max-width:560px){.quote-form{grid-template-columns:minmax(0,1fr)}}
 </style>
 <!-- Google tag (gtag.js) -->
 <script>
@@ -305,7 +314,7 @@ gtag('config', 'G-H0XF8SXJ4B');
 </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0XF8SXJ4B"></script>
 <script src="/interface.js" defer></script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Óleo BPF na indústria têxtil: consumo de vapor por lote","description":"Organize consumo e compra de BPF para tinturarias e lavanderias. Compare lotes, turnos, demanda de vapor e condições de fornecimento.","datePublished":"2026-08-23","dateModified":"2026-10-09","inLanguage":"pt-BR","author":{"@type":"Organization","name":"Nuxem"},"publisher":{"@type":"Organization","name":"Nuxem","logo":{"@type":"ImageObject","url":"https://nuxemoil.com.br/imagens/icone-nuxem.png"}},"mainEntityOfPage":"https://nuxemoil.com.br/blog/oleo-bpf-para-industria-textil-vapor-em-tinturarias-e-lavanderias/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Óleo BPF na indústria têxtil: vapor e fornecimento","description":"Relacione BPF, lotes e demanda de vapor em tinturarias e lavanderias. Reúna consumo por período e turnos para consultar a compra e as entregas.","datePublished":"2026-08-23","dateModified":"2026-10-20","inLanguage":"pt-BR","author":{"@type":"Organization","name":"Nuxem"},"publisher":{"@type":"Organization","name":"Nuxem","logo":{"@type":"ImageObject","url":"https://nuxemoil.com.br/imagens/icone-nuxem.png"}},"mainEntityOfPage":"https://nuxemoil.com.br/blog/oleo-bpf-para-industria-textil-vapor-em-tinturarias-e-lavanderias/"}</script>
 </head>
 <body class="site-inner">
 <a class="skip-link" href="#principal">Ir ao conteúdo</a>
@@ -326,11 +335,11 @@ gtag('config', 'G-H0XF8SXJ4B');
 <main id="principal">
 
 <div class="pagina-topo"><div class="container"><div class="breadcrumb"><a href="/">Início</a><span>/</span>CONHECIMENTO NUXEM</div>
-  <h1>Óleo BPF na indústria têxtil: consumo de vapor por lote</h1>
+  <h1>Óleo BPF na indústria têxtil: vapor e fornecimento</h1>
 </div></div>
 <div class="container"><div class="conteudo">
   <p class="post-meta">Publicado em 23 de agosto de 2026 — Equipe Nuxem</p>
-<p class="post-meta">Atualizado em 9 de outubro de 2026</p>
+<p class="post-meta">Atualizado em 20 de outubro de 2026</p>
   
   <p><strong>Em tinturarias e lavanderias, o consumo de BPF deve ser analisado junto aos lotes e ciclos de produção.</strong> A quantidade mensal de combustível não explica sozinha a eficiência: tipos de processo, carga e tempo de operação podem variar.</p>
 <p>O <a href="/produtos/oleo-bpf/">óleo BPF</a> deve ser compatível com a caldeira e seu queimador. A escolha não garante, isoladamente, uniformidade de tingimento ou qualidade de lavagem, que dependem do conjunto do processo.</p>
@@ -352,19 +361,21 @@ gtag('config', 'G-H0XF8SXJ4B');
 <h2>O que comparar nas propostas</h2>
 <p>Uniformize quantidade, unidade, especificação e destino. Separe frete e outros valores já incluídos no total. Registre validade e janela confirmada, além do preço unitário.</p>
 <p>Para <a href="/contato/">solicitar BPF à Nuxem</a>, envie cidade, consumo por período e perfil dos turnos. Informe se a compra atende uma campanha específica ou a operação regular, para que a programação seja discutida com esse contexto.</p>
+<p>Para discutir BPF na tinturaria ou lavanderia, envie o perfil dos turnos e dos ciclos, identificando se a demanda atende uma campanha ou a operação regular. Consulte <a href="/produtos/oleo-bpf/#cotacao-bpf">fornecimento e cotação de óleo BPF</a>. Na Nuxem, o BPF começa em 5.000 litros por entrega, sob demanda e com planejamento mensal; preço, frete e programação são confirmados na proposta.</p>
+  
   <h2>Leia também</h2>
   <ul>
-    <li><a href="/blog/oleo-de-xisto-para-a-industria-textil-vapor-em-tinturarias-e-lavanderias/">Óleo de xisto na indústria têxtil: avaliar vapor por ciclo</a></li>
-    <li><a href="/blog/oleo-de-xisto-ote-para-industria-quimica-vapor-de-processo-e-aquecimento-termico/">Óleo de xisto (OTE) para indústria química: vapor de processo e aquecimento térmico</a></li>
-    <li><a href="/blog/oleo-de-xisto-ote-para-industria-da-borracha-vulcanizacao-e-autoclaves/">Óleo de xisto na indústria da borracha: calor e vapor de processo</a></li>
+    <li><a href="/blog/oleo-de-xisto-ote-para-industria-quimica-vapor-de-processo-e-aquecimento-termico/">Óleo de xisto na indústria química: vapor e fornecimento</a></li>
+    <li><a href="/blog/oleo-de-xisto-ote-para-industria-da-borracha-vulcanizacao-e-autoclaves/">Óleo de xisto na indústria da borracha: vapor e compra</a></li>
+    <li><a href="/blog/oleo-de-xisto-para-a-industria-textil-vapor-em-tinturarias-e-lavanderias/">Óleo de xisto na indústria têxtil: consumo e cotação</a></li>
   </ul>
   <p style="margin-top:32px"><a class="btn btn-laranja" href="https://wa.me/5511915011527?text=Ol%C3%A1!%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20de%20%C3%B3leo%20combust%C3%ADvel.">Falar com a Nuxem no WhatsApp</a></p>
 </div></div>
 </main>
 <div class="faixa-cta">
   <div class="container">
-    <h2>Precisa de combustível industrial com entrega rápida?</h2>
-    <a class="btn" href="https://wa.me/5511915011527?text=Ol%C3%A1!%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20de%20%C3%B3leo%20combust%C3%ADvel.">Chamar no WhatsApp agora</a>
+    <h2>Planeje o abastecimento de combustível da sua indústria</h2>
+    <a class="btn" href="https://wa.me/5511915011527?text=Ol%C3%A1!%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20de%20%C3%B3leo%20combust%C3%ADvel.">Consultar fornecimento pelo WhatsApp</a>
   </div>
 </div>
 <footer>

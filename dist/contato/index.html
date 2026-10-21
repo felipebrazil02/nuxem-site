@@ -65,26 +65,38 @@ gtag('config', 'G-H0XF8SXJ4B');
 
 <div class="pagina-topo"><div class="container"><div class="breadcrumb"><a href="/">Início</a><span>/</span>VAMOS CONVERSAR</div>
   <h1>Fale com a Nuxem</h1>
-  <p class="resumo">Atendimento 24 horas. Resposta rápida pelo WhatsApp.</p>
+  <p class="resumo">Cotação de óleo combustível em SP, MG e PR. Informe produto, cidade e consumo para consultar disponibilidade e programar o fornecimento.</p>
 </div></div>
 <div class="container"><div class="conteudo">
-  <form onsubmit="enviarZap(event)">
-    <div><label>Nome*<input required name="nome"></label></div>
-    <div><label>Empresa*<input required name="empresa"></label></div>
-    <div><label>Telefone/WhatsApp*<input required name="fone"></label></div>
-    <div><label>Segmento*<select name="segmento"><option>Usina de asfalto</option><option>Caldeira</option><option>Fundição</option><option>Forno industrial</option><option>Outro</option></select></label></div>
-    <div><label>Tipo de demanda*<select name="demanda"><option>Cotação pontual</option><option>Fornecimento recorrente</option><option>Solução sob demanda</option></select></label></div>
-    <div><label>Mensagem<textarea name="msg"></textarea></label></div>
-    <button class="btn btn-laranja" type="submit">Enviar pelo WhatsApp</button>
+  <h2>Prepare sua solicitação de cotação</h2>
+  <p id="cotacao-ajuda">Os campos com * são obrigatórios. Ao continuar, o WhatsApp abrirá com os dados preenchidos. Revise a mensagem e toque em enviar para falar com a Nuxem. O formulário não envia um pedido automaticamente.</p>
+  <form class="quote-form" onsubmit="enviarZap(event)" aria-describedby="cotacao-ajuda">
+    <div><label>Produto*<select required name="produto"><option value="">Selecione o produto</option><option data-product-slug="oleo-bpf">Óleo BPF</option><option data-product-slug="oleo-apf">Óleo APF</option><option data-product-slug="oleo-b1">Óleo B1 (OC-B1)</option><option data-product-slug="oleo-a1">Óleo A1 (OC-A1)</option><option data-product-slug="oleo-de-xisto">Óleo de Xisto (OTE)</option><option data-product-slug="oleo-bte">Óleo BTE</option><option data-product-slug="oleos-alternativos">Óleos alternativos</option><option>Preciso de orientação</option></select></label></div>
+    <div><label>Cidade de entrega*<input required name="cidade" autocomplete="address-level2" maxlength="100"></label></div>
+    <div><label>Estado de entrega*<select required name="uf" autocomplete="address-level1"><option value="">Selecione o estado</option><option>São Paulo</option><option>Minas Gerais</option><option>Paraná</option><option>Outro estado — consultar atendimento</option></select></label></div>
+    <div><label>Consumo mensal estimado (opcional)<input name="consumo" placeholder="Ex.: 30.000 L/mês ou ainda não sei" maxlength="100"></label></div>
+    <div><label>Volume por entrega (opcional)<input name="volume" placeholder="Ex.: 5.000 L — informe a unidade" maxlength="100"></label></div>
+    <div><label>Aplicação (opcional)<select name="segmento"><option value="">Selecione ou informe na mensagem</option><option>Usina de asfalto</option><option>Caldeira</option><option>Fundição</option><option>Forno industrial</option><option>Outro</option></select></label></div>
+    <div><label>Nome*<input required name="nome" autocomplete="name" maxlength="100"></label></div>
+    <div><label>Empresa*<input required name="empresa" autocomplete="organization" maxlength="150"></label></div>
+    <div><label>Telefone/WhatsApp (opcional)<input type="tel" name="fone" autocomplete="tel" maxlength="30"></label></div>
+    <div><label>Tipo de demanda (opcional)<select name="demanda"><option value="">Selecione a demanda</option><option>Cotação pontual</option><option>Fornecimento recorrente</option><option>Preciso de orientação</option></select></label></div>
+    <div class="quote-wide"><label>Mensagem (opcional)<textarea name="msg" maxlength="2000" placeholder="Informe combustível atual, equipamento e data desejada, se souber."></textarea></label></div>
+    <div class="quote-conditions quote-wide"><strong>Condições de fornecimento</strong><p><a href="/produtos/oleo-bpf/">Óleo BPF</a>: a partir de 5.000 litros por entrega, sob demanda e com planejamento mensal. Até 200 km de Salto/SP, entrega no mesmo dia ou em até 1 dia útil, mediante confirmação da programação.</p><p><a href="/produtos/oleo-de-xisto/">Óleo de xisto OTE</a>: consumo a partir de 200 mil litros por mês, planejamento mensal obrigatório e disponibilidade sob consulta. Os prazos do BPF não se aplicam automaticamente ao xisto.</p><p>Outros produtos e localidades: consulte volume, disponibilidade e prazo com a equipe.</p></div>
+    <button class="btn btn-laranja" type="submit">Continuar cotação no WhatsApp</button>
+    <p class="quote-wide quote-help">Prefere outro canal? <a href="mailto:contato@nuxemoil.com">Envie sua solicitação por e-mail</a> ou <a href="tel:+5511974620945">fale por telefone</a>. Nenhuma compra é confirmada nesta etapa.</p>
   </form>
   <script>
   function enviarZap(e) {
     e.preventDefault();
     const f = e.target;
-    const texto = 'Olá! Meu nome é ' + f.nome.value + ', da empresa ' + f.empresa.value +
-      '. Segmento: ' + f.segmento.value + '. Demanda: ' + f.demanda.value +
-      '. Contato: ' + f.fone.value + (f.msg.value ? '. ' + f.msg.value : '');
-    window.open('https://wa.me/5511915011527?text=' + encodeURIComponent(texto), '_blank');
+    if (!f.reportValidity()) return;
+    const valor = name => f.elements.namedItem(name).value.trim();
+    const linhas = ['Olá! Gostaria de solicitar uma cotação à Nuxem.'];
+    for (const [campo, rotulo] of [['produto','Produto'],['cidade','Cidade'],['uf','Estado'],['consumo','Consumo mensal'],['volume','Volume por entrega'],['segmento','Aplicação'],['nome','Nome'],['empresa','Empresa'],['fone','Contato'],['demanda','Demanda'],['msg','Mensagem']]) {
+      if (valor(campo)) linhas.push(rotulo + ': ' + valor(campo));
+    }
+    window.open('https://wa.me/5511915011527?text=' + encodeURIComponent(linhas.join('\n')), '_blank', 'noopener,noreferrer');
   }
   </script>
   <div class="contato-direto">
@@ -98,8 +110,8 @@ gtag('config', 'G-H0XF8SXJ4B');
 </main>
 <div class="faixa-cta">
   <div class="container">
-    <h2>Precisa de combustível industrial com entrega rápida?</h2>
-    <a class="btn" href="https://wa.me/5511915011527?text=Ol%C3%A1!%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20de%20%C3%B3leo%20combust%C3%ADvel.">Chamar no WhatsApp agora</a>
+    <h2>Planeje o abastecimento de combustível da sua indústria</h2>
+    <a class="btn" href="https://wa.me/5511915011527?text=Ol%C3%A1!%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20de%20%C3%B3leo%20combust%C3%ADvel.">Consultar fornecimento pelo WhatsApp</a>
   </div>
 </div>
 <footer>

@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Consumo de óleo BPF em caldeiras: fórmula e exemplo de cálculo | Blog Nuxem</title>
-<meta name="description" content="Calcule consumo de óleo combustível em kg/h, litros/h e kg por tonelada de vapor. Veja um exemplo e os cuidados com densidade, PCI, PCS e eficiência.">
+<meta name="description" content="Estime consumo de BPF em kg/h, L/h e por tonelada de vapor. Veja fórmula, exemplo e dados para transformar a previsão em consulta de fornecimento.">
 
 
 <link rel="canonical" href="https://nuxemoil.com.br/blog/como-calcular-consumo-de-oleo-combustivel-em-caldeiras/">
 <meta property="og:title" content="Consumo de óleo BPF em caldeiras: fórmula e exemplo de cálculo | Blog Nuxem">
-<meta property="og:description" content="Calcule consumo de óleo combustível em kg/h, litros/h e kg por tonelada de vapor. Veja um exemplo e os cuidados com densidade, PCI, PCS e eficiência.">
+<meta property="og:description" content="Estime consumo de BPF em kg/h, L/h e por tonelada de vapor. Veja fórmula, exemplo e dados para transformar a previsão em consulta de fornecimento.">
 <meta property="og:url" content="https://nuxemoil.com.br/blog/como-calcular-consumo-de-oleo-combustivel-em-caldeiras/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
@@ -279,6 +279,15 @@ form{max-width:none;grid-template-columns:1fr 1fr;gap:23px;padding:30px;backgrou
 /* O picture mantém as dimensões e o enquadramento da imagem principal. */
 .hero-picture{position:absolute;inset:0;display:block}
 .hero-picture>img{position:absolute;width:100%;height:100%;object-fit:cover;object-position:62% center}
+
+/* Cotação: campos flexíveis e condições legíveis em qualquer largura. */
+.quote-form{grid-template-columns:repeat(2,minmax(0,1fr))}
+.quote-form>div{min-width:0}
+.quote-form .quote-wide{grid-column:1/-1}
+.quote-form .quote-conditions{background:#f0f3ef;padding:18px;border-radius:4px;color:#183643;font-size:14px}
+.quote-conditions p{margin:10px 0 0}
+.quote-form .quote-help{font-size:13px;margin:0;color:#485d66}
+@media(max-width:560px){.quote-form{grid-template-columns:minmax(0,1fr)}}
 </style>
 <!-- Google tag (gtag.js) -->
 <script>
@@ -305,7 +314,7 @@ gtag('config', 'G-H0XF8SXJ4B');
 </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0XF8SXJ4B"></script>
 <script src="/interface.js" defer></script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Consumo de óleo BPF em caldeiras: fórmula e exemplo de cálculo","description":"Calcule consumo de óleo combustível em kg/h, litros/h e kg por tonelada de vapor. Veja um exemplo e os cuidados com densidade, PCI, PCS e eficiência.","datePublished":"2026-07-16","dateModified":"2026-10-09","inLanguage":"pt-BR","author":{"@type":"Organization","name":"Nuxem"},"publisher":{"@type":"Organization","name":"Nuxem","logo":{"@type":"ImageObject","url":"https://nuxemoil.com.br/imagens/icone-nuxem.png"}},"mainEntityOfPage":"https://nuxemoil.com.br/blog/como-calcular-consumo-de-oleo-combustivel-em-caldeiras/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Consumo de óleo BPF em caldeiras: fórmula e exemplo de cálculo","description":"Estime consumo de BPF em kg/h, L/h e por tonelada de vapor. Veja fórmula, exemplo e dados para transformar a previsão em consulta de fornecimento.","datePublished":"2026-07-16","dateModified":"2026-10-20","inLanguage":"pt-BR","author":{"@type":"Organization","name":"Nuxem"},"publisher":{"@type":"Organization","name":"Nuxem","logo":{"@type":"ImageObject","url":"https://nuxemoil.com.br/imagens/icone-nuxem.png"}},"mainEntityOfPage":"https://nuxemoil.com.br/blog/como-calcular-consumo-de-oleo-combustivel-em-caldeiras/"}</script>
 </head>
 <body class="site-inner">
 <a class="skip-link" href="#principal">Ir ao conteúdo</a>
@@ -330,10 +339,11 @@ gtag('config', 'G-H0XF8SXJ4B');
 </div></div>
 <div class="container"><div class="conteudo">
   <p class="post-meta">Publicado em 16 de julho de 2026 — Equipe Nuxem</p>
-<p class="post-meta">Atualizado em 9 de outubro de 2026</p>
+<p class="post-meta">Atualizado em 20 de outubro de 2026</p>
   
   <p><strong>Consumo de combustível = carga térmica útil ÷ (poder calorífico × eficiência).</strong> Essa relação permite estimar o consumo de óleo BPF ou de outro combustível em uma caldeira. O resultado só é comparável à operação quando unidades e condições adotadas são consistentes.</p>
 <p>Para preparar uma compra de <a href="/produtos/oleo-bpf/">óleo BPF</a>, confronte a estimativa com os registros da caldeira. A ficha técnica do produto e os dados do equipamento são necessários; não existe um consumo universal por tipo de óleo.</p>
+<p>Se você ainda estiver definindo a classe e a aplicação do combustível, consulte primeiro o <a href="/guia-oleo-bpf/">guia de óleo BPF</a>. Use esta página para calcular consumo depois que as propriedades do produto e a condição da caldeira estiverem identificadas.</p>
 <h2>Dados necessários para o cálculo</h2>
 <p>O método de relacionar combustível, eficiência e condições do vapor é apresentado também na <a href="https://www.energy.gov/sites/prod/files/2014/05/f16/steam15_benchmark.pdf">referência técnica do Departamento de Energia dos EUA sobre custo de geração de vapor</a>. Os números abaixo são exemplos próprios, sem representar uma especificação comercial.</p>
 <ul>
@@ -380,19 +390,21 @@ gtag('config', 'G-H0XF8SXJ4B');
 <p>Combine consumo diário, estoque utilizável, prazo de entrega e reserva operacional definida para a planta. O volume nominal do tanque não equivale necessariamente ao volume disponível para consumo.</p>
 <p>Consulte o roteiro de <a href="/blog/como-programar-o-abastecimento-de-oleo-bpf-para-evitar-paradas/">programação do abastecimento de BPF</a>. Se estiver avaliando uma troca, refaça a conta com dados documentados do <a href="/produtos/oleo-de-xisto/">óleo de xisto</a> ou de outro produto aprovado, sem presumir que a eficiência será a mesma.</p>
 <p>Para uma proposta de fornecimento, <a href="/contato/">informe à Nuxem a cidade, o consumo e os dados da caldeira</a>.</p>
+<p>Para transformar a estimativa de consumo em uma consulta de compra, identifique produção de vapor, horas de operação, unidade calculada e registros reais da caldeira. Consulte <a href="/produtos/oleo-bpf/#cotacao-bpf">fornecimento e cotação de óleo BPF</a>. Na Nuxem, o BPF começa em 5.000 litros por entrega, sob demanda e com planejamento mensal; preço, frete e programação são confirmados na proposta.</p>
+  
   <h2>Leia também</h2>
   <ul>
-    <li><a href="/blog/oleo-de-xisto-ote-vs-oleo-bpf-diferencas-praticas-para-a-industria/">Óleo de xisto ou BPF: como comparar consumo e custo industrial</a></li>
-    <li><a href="/blog/oleo-de-xisto-ote-para-caldeiras-industriais-vapor-queima-e-custo/">Óleo de xisto para caldeiras: consumo, compatibilidade e cotação</a></li>
-    <li><a href="/blog/oleo-bpf-para-laticinios-e-agroindustria-de-leite-em-mg/">Óleo BPF para laticínios em MG: consumo e programação de entrega</a></li>
+    <li><a href="/blog/oleo-bpf-para-usinas-de-asfalto/">Óleo BPF para usinas de asfalto: consumo e abastecimento</a></li>
+    <li><a href="/blog/poder-calorifico-do-oleo-de-xisto-ote-como-calcular-consumo-e-dimensionar-tanque/">Poder calorífico do óleo de xisto: cálculo de consumo</a></li>
+    <li><a href="/blog/oleo-de-xisto-ote-vs-oleo-bpf-diferencas-praticas-para-a-industria/">Óleo de xisto ou BPF: consumo, custo e cotação</a></li>
   </ul>
   <p style="margin-top:32px"><a class="btn btn-laranja" href="https://wa.me/5511915011527?text=Ol%C3%A1!%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20de%20%C3%B3leo%20combust%C3%ADvel.">Falar com a Nuxem no WhatsApp</a></p>
 </div></div>
 </main>
 <div class="faixa-cta">
   <div class="container">
-    <h2>Precisa de combustível industrial com entrega rápida?</h2>
-    <a class="btn" href="https://wa.me/5511915011527?text=Ol%C3%A1!%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20de%20%C3%B3leo%20combust%C3%ADvel.">Chamar no WhatsApp agora</a>
+    <h2>Planeje o abastecimento de combustível da sua indústria</h2>
+    <a class="btn" href="https://wa.me/5511915011527?text=Ol%C3%A1!%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20de%20%C3%B3leo%20combust%C3%ADvel.">Consultar fornecimento pelo WhatsApp</a>
   </div>
 </div>
 <footer>

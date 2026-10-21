@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Abastecimento de óleo BPF: estoque, autonomia e ponto de pedido | Blog Nuxem</title>
-<meta name="description" content="Calcule o ponto de pedido de BPF com consumo, prazo de reposição e reserva definida pela planta. Veja um exemplo e os cuidados no recebimento.">
+<meta name="description" content="Planeje reposição de BPF com consumo, estoque útil, prazo confirmado e reserva. Veja o exemplo de ponto de pedido e consulte a programação de fornecimento.">
 
 
 <link rel="canonical" href="https://nuxemoil.com.br/blog/como-programar-o-abastecimento-de-oleo-bpf-para-evitar-paradas/">
 <meta property="og:title" content="Abastecimento de óleo BPF: estoque, autonomia e ponto de pedido | Blog Nuxem">
-<meta property="og:description" content="Calcule o ponto de pedido de BPF com consumo, prazo de reposição e reserva definida pela planta. Veja um exemplo e os cuidados no recebimento.">
+<meta property="og:description" content="Planeje reposição de BPF com consumo, estoque útil, prazo confirmado e reserva. Veja o exemplo de ponto de pedido e consulte a programação de fornecimento.">
 <meta property="og:url" content="https://nuxemoil.com.br/blog/como-programar-o-abastecimento-de-oleo-bpf-para-evitar-paradas/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
@@ -279,6 +279,15 @@ form{max-width:none;grid-template-columns:1fr 1fr;gap:23px;padding:30px;backgrou
 /* O picture mantém as dimensões e o enquadramento da imagem principal. */
 .hero-picture{position:absolute;inset:0;display:block}
 .hero-picture>img{position:absolute;width:100%;height:100%;object-fit:cover;object-position:62% center}
+
+/* Cotação: campos flexíveis e condições legíveis em qualquer largura. */
+.quote-form{grid-template-columns:repeat(2,minmax(0,1fr))}
+.quote-form>div{min-width:0}
+.quote-form .quote-wide{grid-column:1/-1}
+.quote-form .quote-conditions{background:#f0f3ef;padding:18px;border-radius:4px;color:#183643;font-size:14px}
+.quote-conditions p{margin:10px 0 0}
+.quote-form .quote-help{font-size:13px;margin:0;color:#485d66}
+@media(max-width:560px){.quote-form{grid-template-columns:minmax(0,1fr)}}
 </style>
 <!-- Google tag (gtag.js) -->
 <script>
@@ -305,7 +314,7 @@ gtag('config', 'G-H0XF8SXJ4B');
 </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0XF8SXJ4B"></script>
 <script src="/interface.js" defer></script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Abastecimento de óleo BPF: estoque, autonomia e ponto de pedido","description":"Calcule o ponto de pedido de BPF com consumo, prazo de reposição e reserva definida pela planta. Veja um exemplo e os cuidados no recebimento.","datePublished":"2026-07-25","dateModified":"2026-10-13","inLanguage":"pt-BR","author":{"@type":"Organization","name":"Nuxem"},"publisher":{"@type":"Organization","name":"Nuxem","logo":{"@type":"ImageObject","url":"https://nuxemoil.com.br/imagens/icone-nuxem.png"}},"mainEntityOfPage":"https://nuxemoil.com.br/blog/como-programar-o-abastecimento-de-oleo-bpf-para-evitar-paradas/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Abastecimento de óleo BPF: estoque, autonomia e ponto de pedido","description":"Planeje reposição de BPF com consumo, estoque útil, prazo confirmado e reserva. Veja o exemplo de ponto de pedido e consulte a programação de fornecimento.","datePublished":"2026-07-25","dateModified":"2026-10-20","inLanguage":"pt-BR","author":{"@type":"Organization","name":"Nuxem"},"publisher":{"@type":"Organization","name":"Nuxem","logo":{"@type":"ImageObject","url":"https://nuxemoil.com.br/imagens/icone-nuxem.png"}},"mainEntityOfPage":"https://nuxemoil.com.br/blog/como-programar-o-abastecimento-de-oleo-bpf-para-evitar-paradas/"}</script>
 </head>
 <body class="site-inner">
 <a class="skip-link" href="#principal">Ir ao conteúdo</a>
@@ -330,7 +339,7 @@ gtag('config', 'G-H0XF8SXJ4B');
 </div></div>
 <div class="container"><div class="conteudo">
   <p class="post-meta">Publicado em 25 de julho de 2026 — Equipe Nuxem</p>
-<p class="post-meta">Atualizado em 13 de outubro de 2026</p>
+<p class="post-meta">Atualizado em 20 de outubro de 2026</p>
   
   <p><strong>A reposição de óleo BPF deve ser programada antes de o estoque chegar à reserva operacional.</strong> O planejamento combina consumo, prazo até o produto ficar disponível e margem definida pela empresa para as variações do processo.</p>
 <p>Ao organizar o fornecimento de <a href="/produtos/oleo-bpf/">óleo BPF</a>, trabalhe com estoque utilizável e consumo na mesma unidade. Não use o volume nominal do tanque como se todo ele pudesse ser consumido.</p>
@@ -356,19 +365,21 @@ gtag('config', 'G-H0XF8SXJ4B');
 <h2>Transforme o plano de consumo em uma programação de fornecimento</h2>
 <p>A Nuxem fornece BPF a partir de 5.000 litros por entrega e trabalha sob demanda, com planejamento mensal. Informe consumo previsto, capacidade segura disponível no tanque, cidade e datas desejadas para <a href="/produtos/oleo-bpf/#cotacao-bpf">consultar a programação de fornecimento de BPF</a>. As condições e os prazos precisam ser confirmados para a sua operação; use o prazo acordado com o fornecedor ao calcular o ponto de pedido.</p>
 <p>Se a produção ou a janela de descarga mudar, <a href="/contato/">avise a equipe da Nuxem</a> para revisar o calendário de entregas.</p>
+<p>Para confirmar a programação calculada neste roteiro, envie estoque utilizável, consumo previsto e janela de descarga; utilize somente o prazo acordado ao definir a reposição. Consulte <a href="/produtos/oleo-bpf/#cotacao-bpf">fornecimento e cotação de óleo BPF</a>. Na Nuxem, o BPF começa em 5.000 litros por entrega, sob demanda e com planejamento mensal; preço, frete e programação são confirmados na proposta.</p>
+  
   <h2>Leia também</h2>
   <ul>
-    <li><a href="/blog/ponto-de-fulgor-oleo-combustivel-armazenamento/">Ponto de fulgor do óleo combustível: o que é e por que importa no armazenamento</a></li>
-    <li><a href="/blog/poder-calorifico-do-oleo-de-xisto-ote-como-calcular-consumo-e-dimensionar-tanque/">Poder calorífico do óleo de xisto: consumo e autonomia do tanque</a></li>
-    <li><a href="/blog/oleo-de-xisto-ote-vs-oleo-bpf-diferencas-praticas-para-a-industria/">Óleo de xisto ou BPF: como comparar consumo e custo industrial</a></li>
+    <li><a href="/blog/oleo-bpf-para-usinas-de-asfalto/">Óleo BPF para usinas de asfalto: consumo e abastecimento</a></li>
+    <li><a href="/blog/oleo-bpf-para-a-industria-de-papel-e-celulose/">Óleo BPF em papel e celulose: apoio e abastecimento</a></li>
+    <li><a href="/blog/manutencao-preventiva-em-sistemas-de-armazenamento-de-oleo-bpf/">Tanques de óleo BPF: manutenção e abastecimento</a></li>
   </ul>
   <p style="margin-top:32px"><a class="btn btn-laranja" href="https://wa.me/5511915011527?text=Ol%C3%A1!%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20de%20%C3%B3leo%20combust%C3%ADvel.">Falar com a Nuxem no WhatsApp</a></p>
 </div></div>
 </main>
 <div class="faixa-cta">
   <div class="container">
-    <h2>Precisa de combustível industrial com entrega rápida?</h2>
-    <a class="btn" href="https://wa.me/5511915011527?text=Ol%C3%A1!%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20de%20%C3%B3leo%20combust%C3%ADvel.">Chamar no WhatsApp agora</a>
+    <h2>Planeje o abastecimento de combustível da sua indústria</h2>
+    <a class="btn" href="https://wa.me/5511915011527?text=Ol%C3%A1!%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20de%20%C3%B3leo%20combust%C3%ADvel.">Consultar fornecimento pelo WhatsApp</a>
   </div>
 </div>
 <footer>

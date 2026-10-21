@@ -260,3 +260,12 @@ form{max-width:none;grid-template-columns:1fr 1fr;gap:23px;padding:30px;backgrou
 /* O picture mantém as dimensões e o enquadramento da imagem principal. */
 .hero-picture{position:absolute;inset:0;display:block}
 .hero-picture>img{position:absolute;width:100%;height:100%;object-fit:cover;object-position:62% center}
+
+/* Cotação: campos flexíveis e condições legíveis em qualquer largura. */
+.quote-form{grid-template-columns:repeat(2,minmax(0,1fr))}
+.quote-form>div{min-width:0}
+.quote-form .quote-wide{grid-column:1/-1}
+.quote-form .quote-conditions{background:#f0f3ef;padding:18px;border-radius:4px;color:#183643;font-size:14px}
+.quote-conditions p{margin:10px 0 0}
+.quote-form .quote-help{font-size:13px;margin:0;color:#485d66}
+@media(max-width:560px){.quote-form{grid-template-columns:minmax(0,1fr)}}

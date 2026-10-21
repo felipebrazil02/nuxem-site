@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Armazenamento de óleo BPF: como organizar a manutenção preventiva | Blog Nuxem</title>
-<meta name="description" content="Veja quais registros acompanhar em tanques, filtros, bombas e aquecimento de BPF e como definir prioridades de manutenção com a equipe técnica.">
+<title>Tanques de óleo BPF: manutenção e abastecimento | Blog Nuxem</title>
+<meta name="description" content="Organize registros de tanque, bombas, filtros e aquecimento do BPF. Alinhe a intervenção técnica à capacidade de recebimento e à próxima entrega.">
 
 
 <link rel="canonical" href="https://nuxemoil.com.br/blog/manutencao-preventiva-em-sistemas-de-armazenamento-de-oleo-bpf/">
-<meta property="og:title" content="Armazenamento de óleo BPF: como organizar a manutenção preventiva | Blog Nuxem">
-<meta property="og:description" content="Veja quais registros acompanhar em tanques, filtros, bombas e aquecimento de BPF e como definir prioridades de manutenção com a equipe técnica.">
+<meta property="og:title" content="Tanques de óleo BPF: manutenção e abastecimento | Blog Nuxem">
+<meta property="og:description" content="Organize registros de tanque, bombas, filtros e aquecimento do BPF. Alinhe a intervenção técnica à capacidade de recebimento e à próxima entrega.">
 <meta property="og:url" content="https://nuxemoil.com.br/blog/manutencao-preventiva-em-sistemas-de-armazenamento-de-oleo-bpf/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
@@ -279,6 +279,15 @@ form{max-width:none;grid-template-columns:1fr 1fr;gap:23px;padding:30px;backgrou
 /* O picture mantém as dimensões e o enquadramento da imagem principal. */
 .hero-picture{position:absolute;inset:0;display:block}
 .hero-picture>img{position:absolute;width:100%;height:100%;object-fit:cover;object-position:62% center}
+
+/* Cotação: campos flexíveis e condições legíveis em qualquer largura. */
+.quote-form{grid-template-columns:repeat(2,minmax(0,1fr))}
+.quote-form>div{min-width:0}
+.quote-form .quote-wide{grid-column:1/-1}
+.quote-form .quote-conditions{background:#f0f3ef;padding:18px;border-radius:4px;color:#183643;font-size:14px}
+.quote-conditions p{margin:10px 0 0}
+.quote-form .quote-help{font-size:13px;margin:0;color:#485d66}
+@media(max-width:560px){.quote-form{grid-template-columns:minmax(0,1fr)}}
 </style>
 <!-- Google tag (gtag.js) -->
 <script>
@@ -305,7 +314,7 @@ gtag('config', 'G-H0XF8SXJ4B');
 </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0XF8SXJ4B"></script>
 <script src="/interface.js" defer></script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Armazenamento de óleo BPF: como organizar a manutenção preventiva","description":"Veja quais registros acompanhar em tanques, filtros, bombas e aquecimento de BPF e como definir prioridades de manutenção com a equipe técnica.","datePublished":"2026-07-28","dateModified":"2026-10-09","inLanguage":"pt-BR","author":{"@type":"Organization","name":"Nuxem"},"publisher":{"@type":"Organization","name":"Nuxem","logo":{"@type":"ImageObject","url":"https://nuxemoil.com.br/imagens/icone-nuxem.png"}},"mainEntityOfPage":"https://nuxemoil.com.br/blog/manutencao-preventiva-em-sistemas-de-armazenamento-de-oleo-bpf/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Tanques de óleo BPF: manutenção e abastecimento","description":"Organize registros de tanque, bombas, filtros e aquecimento do BPF. Alinhe a intervenção técnica à capacidade de recebimento e à próxima entrega.","datePublished":"2026-07-28","dateModified":"2026-10-20","inLanguage":"pt-BR","author":{"@type":"Organization","name":"Nuxem"},"publisher":{"@type":"Organization","name":"Nuxem","logo":{"@type":"ImageObject","url":"https://nuxemoil.com.br/imagens/icone-nuxem.png"}},"mainEntityOfPage":"https://nuxemoil.com.br/blog/manutencao-preventiva-em-sistemas-de-armazenamento-de-oleo-bpf/"}</script>
 </head>
 <body class="site-inner">
 <a class="skip-link" href="#principal">Ir ao conteúdo</a>
@@ -326,11 +335,11 @@ gtag('config', 'G-H0XF8SXJ4B');
 <main id="principal">
 
 <div class="pagina-topo"><div class="container"><div class="breadcrumb"><a href="/">Início</a><span>/</span>CONHECIMENTO NUXEM</div>
-  <h1>Armazenamento de óleo BPF: como organizar a manutenção preventiva</h1>
+  <h1>Tanques de óleo BPF: manutenção e abastecimento</h1>
 </div></div>
 <div class="container"><div class="conteudo">
   <p class="post-meta">Publicado em 28 de julho de 2026 — Equipe Nuxem</p>
-<p class="post-meta">Atualizado em 9 de outubro de 2026</p>
+<p class="post-meta">Atualizado em 20 de outubro de 2026</p>
   
   <p><strong>A manutenção do armazenamento deve preservar a integridade da instalação e as condições do combustível até o queimador.</strong> Filtros saturados, água, depósitos e falhas no aquecimento podem alterar a alimentação. O plano precisa considerar projeto, histórico e orientação dos fabricantes.</p>
 <p>Não existe um intervalo de limpeza ou drenagem válido para todos os tanques de <a href="/produtos/oleo-bpf/">óleo BPF</a>. Defina periodicidades e critérios de intervenção com o responsável técnico, em vez de copiar um calendário genérico.</p>
@@ -354,19 +363,21 @@ gtag('config', 'G-H0XF8SXJ4B');
 <p>Não compense uma restrição aumentando indiscriminadamente temperatura ou pressão. As causas devem ser avaliadas dentro dos limites do projeto e das proteções instaladas.</p>
 <h2>Integre a parada ao abastecimento</h2>
 <p>Antes de uma intervenção, coordene estoque utilizável, consumo previsto e disponibilidade de recebimento. Avise o fornecedor sobre mudanças na janela de descarga. Consulte o <a href="/blog/como-programar-o-abastecimento-de-oleo-bpf-para-evitar-paradas/">planejamento de reposição de BPF</a> e <a href="/contato/">encaminhe à Nuxem as condições de entrega</a> para programar o fornecimento.</p>
+<p>Se a manutenção alterar o recebimento, envie o calendário da intervenção e a capacidade liberada para a próxima carga; o fornecimento deve acompanhar a condição segura da planta. Consulte <a href="/produtos/oleo-bpf/#cotacao-bpf">fornecimento e cotação de óleo BPF</a>. Na Nuxem, o BPF começa em 5.000 litros por entrega, sob demanda e com planejamento mensal; preço, frete e programação são confirmados na proposta.</p>
+  
   <h2>Leia também</h2>
   <ul>
-    <li><a href="/blog/ponto-de-fulgor-oleo-combustivel-armazenamento/">Ponto de fulgor do óleo combustível: o que é e por que importa no armazenamento</a></li>
-    <li><a href="/blog/oleo-de-xisto-ote-vs-oleo-bpf-diferencas-praticas-para-a-industria/">Óleo de xisto ou BPF: como comparar consumo e custo industrial</a></li>
-    <li><a href="/blog/armazenamento-e-estabilidade-do-oleo-de-xisto-ote/">Armazenamento de óleo de xisto: lote, tanque e compatibilidade</a></li>
+    <li><a href="/blog/oleo-bpf-para-usinas-de-asfalto/">Óleo BPF para usinas de asfalto: consumo e abastecimento</a></li>
+    <li><a href="/blog/oleo-bpf-para-a-industria-de-papel-e-celulose/">Óleo BPF em papel e celulose: apoio e abastecimento</a></li>
+    <li><a href="/blog/oleo-de-xisto-ote-vs-oleo-bpf-diferencas-praticas-para-a-industria/">Óleo de xisto ou BPF: consumo, custo e cotação</a></li>
   </ul>
   <p style="margin-top:32px"><a class="btn btn-laranja" href="https://wa.me/5511915011527?text=Ol%C3%A1!%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20de%20%C3%B3leo%20combust%C3%ADvel.">Falar com a Nuxem no WhatsApp</a></p>
 </div></div>
 </main>
 <div class="faixa-cta">
   <div class="container">
-    <h2>Precisa de combustível industrial com entrega rápida?</h2>
-    <a class="btn" href="https://wa.me/5511915011527?text=Ol%C3%A1!%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20de%20%C3%B3leo%20combust%C3%ADvel.">Chamar no WhatsApp agora</a>
+    <h2>Planeje o abastecimento de combustível da sua indústria</h2>
+    <a class="btn" href="https://wa.me/5511915011527?text=Ol%C3%A1!%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20de%20%C3%B3leo%20combust%C3%ADvel.">Consultar fornecimento pelo WhatsApp</a>
   </div>
 </div>
 <footer>
