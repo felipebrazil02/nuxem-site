@@ -10,6 +10,7 @@ import { otimizarImagens, preloadHero as preloadImagemPrincipal } from './src/im
 import { comercialBpf } from './src/comercial-bpf.mjs';
 import { comercialXisto } from './src/comercial-xisto.mjs';
 import { GUIA_XISTO, conteudoGuiaXisto } from './src/guia-xisto.mjs';
+import { conteudoPrivacidade } from './src/privacidade.mjs';
 
 const raiz = dirname(fileURLToPath(import.meta.url));
 const dirBlog = join(raiz, 'conteudo', 'blog');
@@ -150,7 +151,7 @@ function layout({ title, description, caminho, conteudo, ogImage, jsonLd, preloa
   ];
   const atual = caminho === '.' ? '/' : `/${caminho.replace(/\\/g, '/')}/`;
   const tipoPagina = caminho === '.' ? 'site-home' : caminho.startsWith('produtos/') ? 'site-product' : 'site-inner';
-  const rotulo = caminho.startsWith('produtos') ? 'COMBUSTÍVEIS INDUSTRIAIS' : caminho.startsWith('blog') ? 'CONHECIMENTO NUXEM' : caminho.startsWith('solucoes') ? 'APLICAÇÕES INDUSTRIAIS' : caminho === 'cobertura' ? 'LOGÍSTICA E FORNECIMENTO' : caminho === 'contato' ? 'VAMOS CONVERSAR' : 'GUIA TÉCNICO';
+  const rotulo = caminho.startsWith('produtos') ? 'COMBUSTÍVEIS INDUSTRIAIS' : caminho.startsWith('blog') ? 'CONHECIMENTO NUXEM' : caminho.startsWith('solucoes') ? 'APLICAÇÕES INDUSTRIAIS' : caminho === 'cobertura' ? 'LOGÍSTICA E FORNECIMENTO' : caminho === 'contato' ? 'VAMOS CONVERSAR' : caminho === 'politicadeprivacidade' ? 'PRIVACIDADE' : 'GUIA TÉCNICO';
   conteudo = conteudo.replace('<div class="pagina-topo"><div class="container">', '<div class="pagina-topo"><div class="container"><div class="breadcrumb"><a href="/">Início</a><span>/</span>' + rotulo + '</div>');
   return otimizarImagens(`<!DOCTYPE html>
 <html lang="${({pt:'pt-BR',en:'en',es:'es'})[language] || 'pt-BR'}">
@@ -217,6 +218,7 @@ ${conteudo}
         <a href="${ZAP}">WhatsApp: (11) 91501-1527</a>
         <a href="${EMPRESA.telefoneLink}">Telefone: ${EMPRESA.telefone}</a>
         <a href="mailto:${EMPRESA.email}">${EMPRESA.email}</a>
+        <a href="/politicadeprivacidade/">Política de privacidade</a>
         <button type="button" class="privacy-settings" data-open-consent>Preferências de privacidade</button>
       </div>
     </div>
@@ -232,6 +234,14 @@ ${consentBannerMarkup}
 }
 
 // ---------- páginas ----------
+
+// Mantém o endereço da política existente no antigo site Wix.
+salvar('politicadeprivacidade', layout({
+  title: 'Política de Privacidade e Cookies | Nuxem',
+  description: 'Entenda os contatos iniciados no site da Nuxem, o uso do Google Analytics e como aceitar, recusar ou rever suas preferências de cookies.',
+  caminho: 'politicadeprivacidade',
+  conteudo: conteudoPrivacidade(EMPRESA),
+}));
 
 // HOME
 salvar('.', layout({

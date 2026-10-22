@@ -223,6 +223,27 @@ test('SEO output stays consistent across clean and incremental builds, including
       assert.ok(rules.includes(`/blog/${from} ${to} 301`));
     }
     assert.ok(rules.includes('/post/como-especificar-%C3%B3leo-para-caldeira /blog/como-especificar-o-oleo-combustivel-certo-para-seu-queimador/ 301'));
+    // Casos reais encontrados na propriedade www em 22/10: acentos e aliases Wix.
+    for (const [legacy, target] of [
+      ['o-que-é-óleo-combustível-na-indústria', '/guia-oleo-bpf/'],
+      ['óleo-bpf-são-paulo-para-operação-industrial', '/produtos/oleo-bpf/'],
+      ['melhores-combustíveis-para-caldeiras-industriais', '/solucoes/caldeiras/'],
+    ]) {
+      for (const slug of new Set([legacy, legacy.normalize('NFD').replace(/\p{M}/gu, '')])) {
+        for (const prefix of ['post', 'blog']) {
+          for (const suffix of ['', '/']) assert.ok(rules.includes(`${encodeURI(`/${prefix}/${slug}${suffix}`)} ${target} 301`));
+        }
+      }
+    }
+    assert.doesNotMatch(read('_redirects'), /access-tokens/);
+    const privacy = read('politicadeprivacidade/index.html');
+    assert.equal(sitemapURLs().filter(url => url === 'https://nuxemoil.com.br/politicadeprivacidade/').length, 1);
+    assert.match(privacy, /rel="canonical" href="https:\/\/nuxemoil.com.br\/politicadeprivacidade\/"/);
+    assert.match(privacy, /sem cookies/);
+    assert.match(privacy, /não são incluídos nesses eventos/);
+    assert.match(privacy, /analytics_storage: 'denied'/);
+    assert.equal([...privacy.matchAll(/data-open-consent/g)].length, 1);
+    assert.match(read('index.html'), /href="\/politicadeprivacidade\/"/);
     assert.ok(rules.includes('/blog/como-validar-a-viscosidade-do-combustivel/ /blog/impacto-da-viscosidade-do-oleo-bpf-na-eficiencia-da-queima/ 301'));
     assert.doesNotMatch(read('solucoes/caldeiras/index.html'), /href="\/blog\/como-especificar-oleo-para-caldeira\//);
     for (const rule of rules) {
