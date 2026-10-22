@@ -5,9 +5,11 @@ const grupos = [
     'óleo-combustível-bpf-especificações-e-aplicações-industriais',
     'como-funciona-óleo-bpf-na-indústria', 'guia-do-óleo-bpf-para-uso-industrial',
     'tipos-de-óleo-combustível-industrial', 'óleo-pesado-para-geração-térmica-industrial',
+    'o-que-é-óleo-combustível-na-indústria',
   ]],
   ['/guia-oleo-bpf/faq/', ['óleo-bpf-é-inflamável-entenda-o-risco', 'óleo-bpf-ponto-de-fulgor-e-operação-segura', 'segurança-no-uso-de-óleo-combustível-industrial']],
   ['/produtos/oleo-de-xisto/', ['óleo-de-xisto-propriedades-e-aplicações-industriais']],
+  ['/produtos/oleo-bpf/', ['óleo-bpf-são-paulo-para-operação-industrial']],
   ['/produtos/oleo-a1/', ['óleo-combustível-a1-especificações-técnicas-e-aplicações', 'óleo-combustível-a1-compatibilidade-com-equipamentos']],
   ['/produtos/oleo-b1/', ['óleo-combustível-b1-especificações-e-aplicações-industriais', 'óleo-b1-otimização-de-queima-em-caldeiras']],
   ['/produtos/oleos-alternativos/', ['óleo-ocbv-para-caldeira-quando-faz-sentido', 'review-óleo-ocbv-industrial-o-que-avaliar']],
@@ -49,7 +51,7 @@ const grupos = [
   ['/blog/oleo-de-xisto-para-fornos-e-secadores-industriais/', ['óleo-para-secador-rotativo-como-escolher', 'óleo-combustível-para-secagem-industrial', 'óleo-combustível-em-fornos-industriais', 'guia-para-abastecimento-de-forno-industrial']],
   ['/blog/reducao-de-custos-com-substituicao-de-oleo-combustivel/', ['como-reduzir-custo-térmico-industrial', 'quando-trocar-o-tipo-de-combustível-industrial', 'óleo-bpf-vs-gás-qual-faz-mais-sentido', 'exemplo-de-transição-sem-parada-produtiva']],
   ['/blog/normas-anp-para-oleo-combustivel-industrial/', ['óleo-bpf-impacto-ambiental-e-conformidade', 'óleo-bpf-redução-de-emissões-e-sustentabilidade']],
-  ['/solucoes/caldeiras/', ['óleo-combustível-para-caldeira-industrial', 'melhores-combustiveis-para-caldeiras-industriais', 'principais-causas-de-instabilidade-termica']],
+  ['/solucoes/caldeiras/', ['óleo-combustível-para-caldeira-industrial', 'melhores-combustíveis-para-caldeiras-industriais', 'principais-causas-de-instabilidade-termica']],
   ['/solucoes/usinas-de-asfalto/', ['óleo-combustível-para-usina-de-asfalto', 'óleo-combustível-em-usinas-de-asfalto']],
 ];
 
