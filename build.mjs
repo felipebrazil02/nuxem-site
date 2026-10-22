@@ -151,7 +151,7 @@ function layout({ title, description, caminho, conteudo, ogImage, jsonLd, preloa
   ];
   const atual = caminho === '.' ? '/' : `/${caminho.replace(/\\/g, '/')}/`;
   const tipoPagina = caminho === '.' ? 'site-home' : caminho.startsWith('produtos/') ? 'site-product' : 'site-inner';
-  const rotulo = caminho.startsWith('produtos') ? 'COMBUSTÍVEIS INDUSTRIAIS' : caminho.startsWith('blog') ? 'CONHECIMENTO NUXEM' : caminho.startsWith('solucoes') ? 'APLICAÇÕES INDUSTRIAIS' : caminho === 'cobertura' ? 'LOGÍSTICA E FORNECIMENTO' : caminho === 'contato' ? 'VAMOS CONVERSAR' : 'GUIA TÉCNICO';
+  const rotulo = caminho.startsWith('produtos') ? 'COMBUSTÍVEIS INDUSTRIAIS' : caminho.startsWith('blog') ? 'CONHECIMENTO NUXEM' : caminho.startsWith('solucoes') ? 'APLICAÇÕES INDUSTRIAIS' : caminho === 'cobertura' ? 'LOGÍSTICA E FORNECIMENTO' : caminho === 'contato' ? 'VAMOS CONVERSAR' : caminho === 'politicadeprivacidade' ? 'PRIVACIDADE' : 'GUIA TÉCNICO';
   conteudo = conteudo.replace('<div class="pagina-topo"><div class="container">', '<div class="pagina-topo"><div class="container"><div class="breadcrumb"><a href="/">Início</a><span>/</span>' + rotulo + '</div>');
   return otimizarImagens(`<!DOCTYPE html>
 <html lang="${({pt:'pt-BR',en:'en',es:'es'})[language] || 'pt-BR'}">
