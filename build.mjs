@@ -148,8 +148,11 @@ function leituras(caminho) {
 }
 
 // ---------- layout ----------
+const linkCotacaoProduto = slug => ['oleo-bpf', 'oleo-de-xisto'].includes(slug)
+  ? `/contato/?produto=${slug}` : '/contato/';
 function layout({ title, description, caminho, conteudo, ogImage, jsonLd, preloadHero, studioArticleId, studioContentHash, language = 'pt' }) {
   const url = `${EMPRESA.dominio}${caminho === '.' ? '/' : `/${caminho.replace(/\\/g, '/')}/`}`;
+  const urlContato = linkCotacaoProduto(caminho.replace(/\\/g, '/').match(/^produtos\/([^/]+)$/)?.[1]);
   const nav = [
     ['/', 'Início'],
     ['/produtos/', 'Produtos'],
@@ -193,7 +196,7 @@ ${jsonLd ? `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script
     <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">☰</button>
     <nav id="menu-principal" aria-label="Menu principal">
       ${nav.map(([h, t]) => `<a href="${h}"${atual === h ? ' aria-current="page"' : ''}>${t}</a>`).join('\n      ')}
-      <a href="/contato/" class="cta">Solicitar cotação</a>
+      <a href="${urlContato}" class="cta">Solicitar cotação</a>
     </nav>
   </div>
 </header>
@@ -394,7 +397,7 @@ ${p.orientacao ? `  <h2>${comercial ? 'Documentação para confirmar a compra' :
   ${p.slug === 'oleo-bpf' ? '<p>Para outras dúvidas sobre armazenamento, aquecimento e especificação, consulte as <a href="/guia-oleo-bpf/faq/">perguntas frequentes sobre óleo BPF</a>.</p>' : ''}
 ${leituras(`produtos/${p.slug}`)}
   <p><a class="btn btn-laranja" href="${comercial?.whatsapp || ZAP}">Solicitar cotação de ${p.nome}</a></p>
-</div><aside class="quote-panel"><div class="section-kicker">SUA PRÓXIMA ENTREGA</div><h2>${comercial?.painelTitulo || 'Vamos encontrar a melhor opção?'}</h2><p>${comercial?.painelTexto || 'Informe o produto, o volume e sua cidade. Nossa equipe orienta sua cotação.'}</p><a class="btn btn-laranja" href="/contato/">${comercial?.painelBotao || 'Solicitar uma cotação ↗'}</a><a class="panel-link" href="#dados-tecnicos">Consultar dados técnicos ↓</a><hr><div class="panel-detail"><b>Atendimento 24h</b><span>SP, MG e PR · Frota própria</span></div><a class="panel-link" href="/produtos/">← Todos os produtos</a></aside></div>`,
+</div><aside class="quote-panel"><div class="section-kicker">SUA PRÓXIMA ENTREGA</div><h2>${comercial?.painelTitulo || 'Vamos encontrar a melhor opção?'}</h2><p>${comercial?.painelTexto || 'Informe o produto, o volume e sua cidade. Nossa equipe orienta sua cotação.'}</p><a class="btn btn-laranja" href="${linkCotacaoProduto(p.slug)}">${comercial?.painelBotao || 'Solicitar uma cotação ↗'}</a><a class="panel-link" href="#dados-tecnicos">Consultar dados técnicos ↓</a><hr><div class="panel-detail"><b>Atendimento 24h</b><span>SP, MG e PR · Frota própria</span></div><a class="panel-link" href="/produtos/">← Todos os produtos</a></aside></div>`,
   }));
 }
 

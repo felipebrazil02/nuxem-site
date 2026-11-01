@@ -43,6 +43,18 @@ input?.addEventListener('input',()=>{const norm=s=>s.normalize('NFD').replace(/[
   });
 })();
 
+// Product context only: never fill personal fields or replace a restored/manual choice.
+// This is functional UI, independent of analytics consent and available in previews.
+(() => {
+  if (!/^\/contato\/?$/.test(location.pathname)) return;
+  const requested = new URLSearchParams(location.search).getAll('produto');
+  if (requested.length !== 1 || !['oleo-bpf', 'oleo-de-xisto'].includes(requested[0])) return;
+  const select = document.querySelector('select[name="produto"]');
+  if (!select || select.value) return;
+  const option = Array.from(select.options).find(option => option.dataset.productSlug === requested[0]);
+  if (option) select.value = option.value;
+})();
+
 // Contact intent only: opening WhatsApp does not confirm a sent message or sale.
 // Only approved product codes; never collect free text, personal fields or query strings.
 (() => {

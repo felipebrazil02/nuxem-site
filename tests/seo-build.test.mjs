@@ -45,6 +45,14 @@ test('SEO output stays consistent across clean and incremental builds, including
     assert.match(xistoGuide, /href="\/produtos\/oleo-de-xisto\/#cotacao-xisto"/);
     // The form opens a draft only; special characters and optional blanks must survive.
     const contact = read('contato/index.html');
+    assert.match(contact, /rel="canonical" href="https:\/\/nuxemoil.com.br\/contato\/"/);
+    assert.doesNotMatch(read('sitemap.xml'), /\?produto=/);
+    for (const slug of ['oleo-bpf', 'oleo-de-xisto']) {
+      const product = read(`produtos/${slug}/index.html`);
+      assert.match(product.match(/<header>([^]*?)<\/header>/)[1], new RegExp(`href="/contato/\\?produto=${slug}"`));
+      assert.match(product.match(/<aside class="quote-panel">([^]*?)<\/aside>/)[1], new RegExp(`href="/contato/\\?produto=${slug}"`));
+    }
+    assert.doesNotMatch(read('produtos/oleo-apf/index.html'), /\?produto=/);
     const formScript = [...contact.matchAll(/<script>([^]*?)<\/script>/g)].map(m => m[1]).find(s => s.includes('function enviarZap'));
     const opened = [];
     const context = { window: { open: (...args) => opened.push(args) } };

@@ -25,7 +25,7 @@ function fixture({ slug, valid = true, hostname = 'nuxemoil.com.br', pathname = 
   };
   runInNewContext(script, { document, location: { hostname, pathname, origin: `https://${hostname}`,
     search: '?nome=Pessoa&telefone=5511999999999', hash: '#mensagem-privada' },
-    window: { gtag: (...args) => events.push(JSON.parse(JSON.stringify(args))) }, URL });
+    window: { gtag: (...args) => events.push(JSON.parse(JSON.stringify(args))) }, URL, URLSearchParams });
   return { events, submit: () => listeners.submit?.(), click(href) {
     documentListeners.click?.({ target: { closest: () => ({ href, closest: () => null }) } });
   } };
