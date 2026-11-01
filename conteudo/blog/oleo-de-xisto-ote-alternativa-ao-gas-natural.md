@@ -3,7 +3,7 @@ title: "Óleo de xisto ou gás natural: custo e cotação"
 description: "Avalie óleo de xisto OTE como alternativa ao gás natural: custo, infraestrutura e contingência. Consulte condições de fornecimento e cotação na Nuxem."
 date: "2026-09-30"
 slugOriginal: ""
-updated: 2026-10-20
+updated: 2026-11-01
 category: compra
 ---
 
@@ -16,6 +16,21 @@ Consulte a especificação do [óleo de xisto OTE para fornecimento industrial](
 ## Coloque as propostas na mesma base energética
 
 Obtenha o poder calorífico e a condição de referência de cada unidade comercial. Converta o custo para a mesma quantidade de energia e considere a eficiência esperada do equipamento com cada combustível.
+
+| Dado da avaliação | Gás natural | Óleo de xisto |
+| --- | --- | --- |
+| Quantidade consumida | Volume e condições de referência da medição/faturamento | Massa ou volume, com massa específica e temperatura de referência |
+| Energia do combustível | Poder calorífico por m³ nas mesmas condições do volume | Poder calorífico por kg, convertido para litro quando necessário |
+| Rendimento | Eficiência do conjunto no regime atual | Eficiência estimada para o conjunto adaptado, a confirmar na operação |
+| Custo a comparar | Parcela variável e encargos que permaneceriam no contrato | Produto entregue e despesas adicionais de recebimento e uso |
+
+O [controle de qualidade do gás natural descrito pela ANP](https://www.gov.br/anp/pt-br/assuntos/qualidade-de-produtos/gas-natural-regulamentacao-das-especificacoes-e-controle-de-qualidade) inclui o poder calorífico superior (PCS). Identifique se cada dado recebido está em PCS ou PCI e mantenha as eficiências na mesma base; não trate os dois poderes caloríficos como intercambiáveis.
+
+Para estimar o volume de óleo que entregaria a mesma energia útil, uma relação de balanço energético é:
+
+**Litros de OTE estimados = (m³ de gás × poder calorífico do gás em MJ/m³ × eficiência com gás) ÷ (poder calorífico do OTE em MJ/kg × eficiência com OTE × massa específica do OTE em kg/L).**
+
+Use eficiências como frações e dados referentes ao mesmo período e à mesma demanda térmica. O resultado é uma estimativa para discutir o cenário, não dimensiona tanque, queimador ou frequência de entrega. Sem essas informações, não há conversão confiável de m³ de gás para litros de xisto. Para aprofundar a comparação com outro combustível líquido, consulte [óleo de xisto ou BPF por custo e consumo](/blog/oleo-de-xisto-ote-vs-oleo-bpf-diferencas-praticas-para-a-industria/).
 
 Preço de gás pode envolver parcelas e condições contratuais além do consumo. Registre essas condições sem presumir que todas desaparecem com uma redução de uso. Para o óleo, inclua frete, armazenamento, energia auxiliar e manutenção.
 
@@ -30,6 +45,8 @@ O roteiro de [custo térmico e substituição de combustível](/blog/reducao-de-
 - Capacidade de recebimento e reserva operacional no caso de contingência.
 
 Não abasteça um sistema projetado exclusivamente para gás com um combustível líquido. A adequação deve ser definida pelo fabricante e pela engenharia responsável, incluindo os procedimentos de transição e as proteções.
+
+O [manual de planejamento de caldeiras da Bosch](https://www.boiler-planning.com/en/steam/technology/components/combustion-and-heating.html) distingue os sistemas de alimentação e combustão para líquidos e gases. A descrição de um equipamento como dual também precisa ser conferida para os combustíveis específicos do projeto; ela não autoriza qualquer óleo no mesmo sistema.
 
 ## Quando a análise é de combustível de reserva
 
