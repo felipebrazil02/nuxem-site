@@ -21,8 +21,11 @@ const estiloHome = readFileSync(join(raiz, 'src', 'estilo.css'), 'utf8');
 const usaEstiloInline = caminho => /^(produtos|blog)\/.+/.test(caminho.replace(/\\/g, '/'));
 const analyticsMarkup = EMPRESA.gaId ? `<!-- Google tag (gtag.js) -->
 <script>
+(() => {
+if (!['nuxemoil.com.br', 'www.nuxemoil.com.br'].includes(location.hostname)) return;
 window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
+window.gtag = function(){window.dataLayer.push(arguments);};
+const gtag = window.gtag;
 gtag('consent', 'default', {
   ad_storage: 'denied',
   ad_user_data: 'denied',
@@ -41,8 +44,13 @@ try {
 } catch (error) {}
 gtag('js', new Date());
 gtag('config', '${EMPRESA.gaId}');
+const tag = document.createElement('script');
+tag.async = true;
+tag.src = 'https://www.googletagmanager.com/gtag/js?id=${EMPRESA.gaId}';
+document.head.appendChild(tag);
+})();
 </script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=${EMPRESA.gaId}"></script>` : '';
+` : '';
 const consentBannerMarkup = `<section class="consent-banner" aria-labelledby="consent-title" aria-describedby="consent-description" hidden>
   <div class="consent-copy">
     <h2 id="consent-title">Privacidade e medição</h2>
@@ -762,9 +770,15 @@ if (blogBackup && existsSync(blogBackup)) {
     const idx = join(blogDir, slug, 'index.html');
     if (existsSync(idx) && !posts.find(p => p.slug === slug)) {
       let html = readFileSync(idx, 'utf8');
-      // injeta snippet GA4 nos posts restaurados (HTML antigo não tem)
+      // Atualiza também o snippet conhecido dos posts antigos: um loader estático
+      // continuaria enviando dados de prévias mesmo com a proteção nas páginas novas.
       let mudouGtag = false;
-      if (EMPRESA.gaId && !html.includes('googletagmanager.com/gtag/js')) {
+      if (EMPRESA.gaId && !html.includes(analyticsMarkup)) {
+        html = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, script => {
+          const nossoAnalytics = script.includes(EMPRESA.gaId)
+            && (script.includes('googletagmanager.com/gtag/js') || /gtag\s*\(\s*['"]config/.test(script));
+          return nossoAnalytics ? '' : script;
+        });
         html = html.replace('</head>', `${analyticsMarkup}\n</head>`);
         mudouGtag = true;
       }
