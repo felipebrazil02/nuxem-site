@@ -39,12 +39,10 @@ Oscilação de alimentação, alarmes e mudança no comportamento da chama justi
 
 Organize os registros já disponíveis para que o responsável técnico possa separar as hipóteses:
 
-| Situação observada | Registro útil para a investigação |
-| --- | --- |
-| Mudança após recebimento | Identificação e documentos do lote, data da descarga e combustível que já estava no tanque |
-| Ocorrência apenas na partida | Tempo de parada, sequência de alarmes e condições registradas de alimentação e aquecimento |
-| Ocorrência em determinada carga | Produção ou carga, vazão, temperaturas e pressões nos pontos previstos no projeto |
-| Variação depois de manutenção | Serviço executado, componentes alterados e relatório de liberação do equipamento |
+- **Mudança após recebimento:** registrar identificação e documentos do lote, data da descarga e combustível que já estava no tanque.
+- **Ocorrência apenas na partida:** registrar tempo de parada, sequência de alarmes e condições registradas de alimentação e aquecimento.
+- **Ocorrência em determinada carga:** registrar produção ou carga, vazão, temperaturas e pressões nos pontos previstos no projeto.
+- **Variação depois de manutenção:** registrar serviço executado, componentes alterados e relatório de liberação do equipamento.
 
 O quadro organiza evidências; não atribui uma causa nem define intervenções. Informe quais instrumentos geraram os dados e quando foram verificados, para distinguir uma variação do processo de uma leitura que precisa ser confirmada.
 

@@ -17,12 +17,10 @@ Consulte a especificação do [óleo de xisto OTE para fornecimento industrial](
 
 Obtenha o poder calorífico e a condição de referência de cada unidade comercial. Converta o custo para a mesma quantidade de energia e considere a eficiência esperada do equipamento com cada combustível.
 
-| Dado da avaliação | Gás natural | Óleo de xisto |
-| --- | --- | --- |
-| Quantidade consumida | Volume e condições de referência da medição/faturamento | Massa ou volume, com massa específica e temperatura de referência |
-| Energia do combustível | Poder calorífico por m³ nas mesmas condições do volume | Poder calorífico por kg, convertido para litro quando necessário |
-| Rendimento | Eficiência do conjunto no regime atual | Eficiência estimada para o conjunto adaptado, a confirmar na operação |
-| Custo a comparar | Parcela variável e encargos que permaneceriam no contrato | Produto entregue e despesas adicionais de recebimento e uso |
+- **Quantidade consumida:** no gás natural, volume e condições de referência da medição/faturamento; no óleo de xisto, massa ou volume, com massa específica e temperatura de referência.
+- **Energia do combustível:** no gás natural, poder calorífico por m³ nas mesmas condições do volume; no óleo de xisto, poder calorífico por kg, convertido para litro quando necessário.
+- **Rendimento:** no gás natural, eficiência do conjunto no regime atual; no óleo de xisto, eficiência estimada para o conjunto adaptado, a confirmar na operação.
+- **Custo a comparar:** no gás natural, parcela variável e encargos que permaneceriam no contrato; no óleo de xisto, produto entregue e despesas adicionais de recebimento e uso.
 
 O [controle de qualidade do gás natural descrito pela ANP](https://www.gov.br/anp/pt-br/assuntos/qualidade-de-produtos/gas-natural-regulamentacao-das-especificacoes-e-controle-de-qualidade) inclui o poder calorífico superior (PCS). Identifique se cada dado recebido está em PCS ou PCI e mantenha as eficiências na mesma base; não trate os dois poderes caloríficos como intercambiáveis.
 

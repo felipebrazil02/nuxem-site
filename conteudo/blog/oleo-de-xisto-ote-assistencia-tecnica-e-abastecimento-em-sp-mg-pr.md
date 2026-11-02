@@ -47,13 +47,11 @@ Informe endereço, quantidade, capacidade disponível e janela de recebimento. A
 
 Monte uma programação que possa ser conferida pela produção, pelo recebimento e pelo fornecedor. O volume mensal isolado não informa em que dias a fábrica precisará receber.
 
-| Informação a compartilhar | Conferência antes de confirmar a entrega |
-| --- | --- |
-| Consumo previsto por período e dias de produção | Identificar picos, paradas e alterações em relação ao mês anterior |
-| Estoque utilizável e previsão de saldo na chegada | Conferir medição e capacidade de recebimento permitida para a carga proposta |
-| Volume e janela desejados por entrega | Validar disponibilidade, transporte e condições de descarga na unidade |
-| Combustível remanescente e documentação do novo produto | Encaminhar a análise de compatibilidade quando houver mudança ou mistura |
-| Contato responsável por mudanças na programação | Comunicar aumento de consumo ou parada antes de tratar o atendimento como confirmado |
+- **Consumo previsto por período e dias de produção:** identificar picos, paradas e alterações em relação ao mês anterior.
+- **Estoque utilizável e previsão de saldo na chegada:** conferir medição e capacidade de recebimento permitida para a carga proposta.
+- **Volume e janela desejados por entrega:** validar disponibilidade, transporte e condições de descarga na unidade.
+- **Combustível remanescente e documentação do novo produto:** encaminhar a análise de compatibilidade quando houver mudança ou mistura.
+- **Contato responsável por mudanças na programação:** comunicar aumento de consumo ou parada antes de tratar o atendimento como confirmado.
 
 Evite calcular a capacidade de recebimento apenas pela diferença entre o volume nominal do tanque e o estoque. Use a capacidade permitida pelo projeto e pelos procedimentos da instalação. A rotina de [armazenamento e estabilidade do OTE](/blog/armazenamento-e-estabilidade-do-oleo-de-xisto-ote/) complementa a programação.
 
