@@ -3,7 +3,7 @@ title: "Óleo de xisto ou BPF: consumo, custo e cotação"
 description: "Compare óleo de xisto OTE e BPF por consumo, especificação e custo por energia útil. Veja condições de fornecimento e como consultar cotação de cada produto."
 date: 2026-10-03
 category: compra
-updated: 2026-10-20
+updated: 2026-11-01
 slugOriginal: ""
 ---
 
@@ -23,17 +23,25 @@ Não desligue aquecedores apenas porque a proposta descreve o combustível como 
 
 Não presuma que todo óleo de xisto terá teor inferior ao de todo BPF. Compare os dados do produto cotado com os requisitos da instalação. Consulte a [classificação dos óleos combustíveis na ANP](https://www.gov.br/anp/pt-br/assuntos/producao-de-derivados-de-petroleo-e-processamento-de-gas-natural/producao-de-derivados-de-petroleo-e-processamento-de-gas-natural/oleo-combustivel).
 
+Identifique a classe do óleo combustível de referência. A ANP diferencia OCA1, OCA2, OCB1 e OCB2 pelos limites de viscosidade e enxofre; comparar OTE com um produto A1 não permite concluir o mesmo resultado frente a um B1. Da mesma forma, o [catálogo de OTE da GRECA](https://www.grupogreca.com.br/wp-content/uploads/2024/05/catalogo-produtos-greca-asfaltos-web.pdf#page=34) identifica BPF OC-1A em sua tabela comparativa. Use a identificação completa dos dois produtos no estudo.
+
 O teor de enxofre é um dos dados da avaliação. A conformidade ambiental também depende das condições de combustão, dos controles instalados e das exigências aplicáveis à planta.
 
 ## Como comparar o custo por energia útil
 
 Use preço e poder calorífico na mesma unidade de massa. A eficiência precisa estar na mesma base do poder calorífico: inferior (PCI) ou superior (PCS).
 
+Se a proposta estiver em R$/L, faça primeiro a conversão: **preço em R$/kg = preço em R$/L ÷ massa específica em kg/L**. Para uma proposta em R$/t, divida o preço por 1.000. Os dois preços devem incluir os mesmos itens, como frete até a fábrica.
+
+Confirme a temperatura de referência do volume e da massa específica usada na conversão. Densidade relativa é uma razão sem unidade: não transcreva esse dado como se fosse uma massa específica em kg/L sem confirmar a conversão. O artigo sobre [compra de BPF por litro, quilo ou tonelada](/blog/oleo-bpf-litro-quilo-tonelada-unidade-compra/) detalha a conferência das unidades.
+
 **Custo do combustível por MJ útil = preço entregue em R$/kg ÷ (poder calorífico em MJ/kg × eficiência).**
 
 Exemplo exclusivamente didático: um combustível A a R$ 3,00/kg, com 40 MJ/kg e eficiência de 80%, custa aproximadamente R$ 0,094 por MJ útil. Um combustível B a R$ 3,10/kg, com 41 MJ/kg e eficiência de 85%, custa aproximadamente R$ 0,089 por MJ útil. Esses números não são cotações nem características atribuídas ao BPF ou ao OTE.
 
 O segundo produto tem preço maior por massa e custo menor por energia útil neste exemplo. A conclusão muda se a eficiência real for diferente. Some separadamente energia auxiliar, manutenção e adaptação para avaliar o custo total. O [cálculo do consumo em caldeiras](/blog/como-calcular-consumo-de-oleo-combustivel-em-caldeiras/) detalha a relação entre carga térmica e consumo.
+
+Na planilha de comparação, identifique a origem de cada entrada: preço da proposta, característica de ficha técnica ou laudo e eficiência medida ou estimada. Um limite máximo de especificação não é automaticamente o resultado de um lote. Mantenha cenários distintos quando ainda faltar uma medição; isso evita apresentar uma estimativa comercial como desempenho comprovado.
 
 ## O que registrar antes de trocar
 

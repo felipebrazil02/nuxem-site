@@ -64,7 +64,7 @@ export const PRODUTOS = [
       "A designação BPF não substitui a especificação de compra. Confirme a classe do óleo, o teor de enxofre, a viscosidade e o poder calorífico do produto ofertado. Esses dados orientam a regulagem do queimador e a comparação de propostas.",
       "A Nuxem atende São Paulo, Minas Gerais e Paraná com frota própria e atendimento 24 horas. Informe seu consumo e a cidade para consultar o produto disponível e a programação de entrega."
     ],
-    "orientacao": "Informe a cidade de entrega, o equipamento, o consumo estimado e o volume desejado. Solicite a ficha técnica e a ficha de dados de segurança do produto cotado; confirme viscosidade, temperatura de ensaio, teor de enxofre e poder calorífico antes da compra. Consulte também o <a href=\"/guia-oleo-bpf/\">guia de óleo BPF</a> e as <a href=\"/cobertura/\">regiões atendidas</a>.",
+    "orientacao": "Informe a cidade de entrega, o equipamento, o consumo estimado e o volume desejado. Veja <a href=\"/blog/ficha-tecnica-fds-e-laudo-de-oleo-combustivel-como-ler-antes-de-comprar/\">como conferir ficha técnica, FDS e laudo</a> do produto cotado; confirme viscosidade, temperatura de ensaio, teor de enxofre e poder calorífico antes da compra. Consulte também o <a href=\"/guia-oleo-bpf/\">guia de óleo BPF</a> e as <a href=\"/cobertura/\">regiões atendidas</a>.",
     "criterio": "Classe do óleo, viscosidade na temperatura de uso e custo por energia útil.",
     "faq": [
       {
@@ -596,6 +596,7 @@ export const SOLUCOES = [
       'Fundições trabalham com as cargas térmicas mais exigentes da indústria. A consistência do processo depende de um combustível com padrão estável: variações de qualidade aparecem em comportamento de queima, controle de temperatura e paradas não planejadas.',
       'A Nuxem fornece óleo BPF e alternativas de viscosidades diferentes para fornos de fundição, com produção sob demanda e qualidade constante entre entregas — o que protege a repetibilidade do seu processo.',
       'Com atendimento 24 horas e frota própria, organizamos o fornecimento conforme a demanda e a programação da fundição. Atendemos São Paulo, com suporte técnico na especificação e confirmação das condições de entrega.',
+      'Antes da cotação, veja <a href="/blog/oleo-combustivel-para-fundicao-como-escolher-e-avaliar-o-fornecimento/">como avaliar o combustível e o fornecimento para fundição</a>: tipo de forno, regime por batelada ou contínuo, consumo específico e requisitos do queimador.',
     ],
     produtosRelacionados: ['oleo-bpf', 'oleos-alternativos'],
     artigosRelacionados: ['compatibilidade-entre-lotes-de-oleo-bpf-como-evitar-borra-na-mistura', 'reducao-de-custos-com-substituicao-de-oleo-combustivel', 'como-especificar-o-oleo-combustivel-certo-para-seu-queimador'],
@@ -657,11 +658,12 @@ export const PILAR = {
       titulo: 'Tipos de Óleo BPF e Combustíveis Relacionados',
       paragrafos: [
         'Existem diferentes tipos de óleo combustível industrial, cada um com características específicas de viscosidade, teor de enxofre e poder calorífico. A escolha do tipo certo depende do equipamento, da aplicação e das exigências ambientais da sua operação.',
+        'Para interpretar a classificação, confira as <a href="/blog/oleo-b1-ocb1-o-que-e-diferencas-a1-a2-b2-e-quando-usar/">diferenças entre B1, B2 e A1</a>. Os limites de classe não substituem os resultados do produto fornecido.',
       ],
       lista: [
         { texto: 'Óleo BPF — padrão industrial, alto poder calorífico, ideal para caldeiras e fornos', link: '/produtos/oleo-bpf/' },
         { texto: 'Óleo APF — verificar ponto de fluidez, viscosidade e necessidade de aquecimento', link: '/produtos/oleo-apf/' },
-        { texto: 'Óleo B1 (OC-B1) — baixo teor de enxofre (máx 1%), ideal para indústrias com restrição ambiental', link: '/produtos/oleo-b1/' },
+        { texto: 'Óleo B1 (OCB1) — máximo de 1,0% em massa de enxofre; avaliar os requisitos ambientais da instalação', link: '/produtos/oleo-b1/' },
         { texto: 'Óleo A1 (OC-A1) — maior teor de enxofre, alta carga energética contínua', link: '/produtos/oleo-a1/' },
         { texto: 'Óleo de Xisto (OTE) — consulte especificações e compatibilidade com o equipamento', link: '/produtos/oleo-de-xisto/' },
         { texto: 'Óleo BTE — confirmar teor de enxofre, origem e especificação do produto', link: '/produtos/oleo-bte/' },
