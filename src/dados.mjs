@@ -558,15 +558,33 @@ export const SOLUCOES = [
     imagem: 'hero-usina-asfalto.webp',
     imagemAlt: 'Usina de asfalto ao entardecer com caminhão de óleo combustível',
     resumo: 'Combustível com entrega programada conforme o consumo e o cronograma de produção da usina.',
-    title: 'Óleo Combustível para Usina de Asfalto | Entrega em SP | Nuxem',
-    description: 'Fornecimento de óleo BPF e combustíveis industriais para usinas de asfalto em São Paulo. Entrega rápida com frota própria e atendimento 24h. Solicite cotação.',
+    title: 'Óleo Combustível para Usina de Asfalto | SP, MG e PR | Nuxem',
+    description: 'Óleo BPF e combustíveis industriais para usinas de asfalto em SP, MG e PR. Entrega programada com frota própria e atendimento 24h. Solicite cotação.',
     corpo: [
       'Em uma usina de asfalto, o combustível é o coração da produção: sem calor não há secagem de agregados, não há massa asfáltica e não há obra andando. Uma falha de abastecimento para a usina, atrasa o cronograma e gera custo em cascata.',
       'Por isso a Nuxem trata o fornecimento para usinas de asfalto como operação crítica. Trabalhamos com entrega programada e frota própria, para o combustível chegar quando a produção precisa — e com atendimento 24 horas para imprevistos, porque obra não espera.',
-      'Fornecemos óleo BPF e alternativas de viscosidades diferentes, com produção sob demanda e padrão constante. Nossa equipe apoia a especificação correta para o seu queimador e o seu regime de produção, em qualquer região do estado de São Paulo.',
+      'Fornecemos óleo BPF e alternativas de viscosidades diferentes, com produção sob demanda e padrão constante. Nossa equipe apoia a especificação correta para o seu queimador e o seu regime de produção, em São Paulo, Minas Gerais e Paraná.',
+    ],
+    secoes: [
+      { titulo: 'Dados que a usina deve informar para cotar', paragrafos: [
+        'Para uma proposta confiável, informe o consumo médio por turno ou por tonelada produzida, a capacidade do tanque, o modelo do queimador, o sistema de aquecimento do óleo e o endereço da usina. Com esses dados, a Nuxem indica o produto e organiza entregas compatíveis com o ritmo de produção.',
+        'Se a usina já usa óleo BPF, informe também o tipo atual e o estoque remanescente. A troca de fornecedor deve considerar a <a href="/blog/compatibilidade-entre-lotes-de-oleo-bpf-como-evitar-borra-na-mistura/">compatibilidade entre lotes</a>.',
+      ] },
+      { titulo: 'Programação de entregas e continuidade da produção', paragrafos: [
+        'O consumo de uma usina varia conforme a carteira de obras. Por isso o fornecimento é planejado todo mês e as entregas são programadas: no óleo BPF, a partir de 5.000 litros por entrega. Avise a Nuxem sempre que o cronograma de produção mudar.',
+        'O artigo sobre <a href="/blog/como-programar-o-abastecimento-de-oleo-bpf-para-evitar-paradas/">como programar o abastecimento para evitar paradas</a> mostra como calcular estoque, autonomia e ponto de pedido.',
+      ] },
+      { titulo: 'Combustível do queimador, óleo térmico e CAP', paragrafos: [
+        'São insumos diferentes da usina. O combustível alimenta o queimador do secador de agregados; o óleo térmico aquece o CAP e os tanques. Veja a diferença no artigo <a href="/blog/oleo-combustivel-oleo-termico-cap-usina-asfalto/">óleo combustível, óleo térmico e CAP na usina</a>.',
+      ] },
+    ],
+    faq: [
+      { p: 'Qual óleo combustível é usado em usina de asfalto?', r: 'O óleo BPF é uma opção comum para o queimador do secador de agregados. A escolha depende do queimador e da especificação aprovada para a instalação, e alternativas como o óleo de xisto (OTE) podem ser avaliadas caso a caso.' },
+      { p: 'A Nuxem entrega em usinas de asfalto de Minas Gerais e do Paraná?', r: 'Sim. A Nuxem atende São Paulo, Minas Gerais e Paraná. O prazo e a disponibilidade são confirmados pelo endereço da usina.' },
+      { p: 'Qual é o volume mínimo de fornecimento?', r: 'Para o óleo BPF, a partir de 5.000 litros por entrega, sob demanda e com planejamento mensal. Para o óleo de xisto OTE, o consumo deve ser de pelo menos 200 mil litros por mês.' },
     ],
     produtosRelacionados: ['oleo-bpf', 'oleos-alternativos', 'oleo-a1'],
-    artigosRelacionados: ['oleo-bpf-para-usinas-de-asfalto', 'oleo-combustivel-oleo-termico-cap-usina-asfalto', 'oleo-de-xisto-para-usinas-de-asfalto', 'logistica-de-abastecimento-de-oleo-bpf-entre-sp-mg-e-pr', 'como-programar-o-abastecimento-de-oleo-bpf-para-evitar-paradas'],
+    artigosRelacionados: ['oleo-bpf-para-usinas-de-asfalto', 'oleo-combustivel-oleo-termico-cap-usina-asfalto', 'oleo-de-xisto-para-usinas-de-asfalto', 'oleo-bpf-para-usinas-de-asfalto-no-triangulo-mineiro-e-interior-de-mg', 'logistica-de-abastecimento-de-oleo-bpf-entre-sp-mg-e-pr', 'como-programar-o-abastecimento-de-oleo-bpf-para-evitar-paradas'],
   },
   {
     slug: 'caldeiras',
@@ -574,15 +592,33 @@ export const SOLUCOES = [
     imagem: 'caldeira.webp',
     imagemAlt: 'Caldeira industrial de geração de vapor com queimador',
     resumo: 'Queima estável e fornecimento contínuo para geração de vapor sem sustos.',
-    title: 'Óleo Combustível para Caldeira Industrial | Nuxem São Paulo',
-    description: 'Óleo BPF e combustíveis industriais para caldeiras com queima estável e fornecimento contínuo. Atendimento 24h em todo o estado de SP. Peça sua cotação.',
+    title: 'Óleo Combustível para Caldeira Industrial | SP, MG e PR | Nuxem',
+    description: 'Óleo BPF e combustíveis industriais para caldeiras, com fornecimento contínuo em SP, MG e PR. Atendimento 24h e frota própria. Peça sua cotação.',
     corpo: [
       'Caldeiras industriais operam em regime contínuo, e a estabilidade da queima impacta diretamente a produção de vapor, o consumo específico e a vida útil do equipamento. Variações no combustível aparecem na chama, no rendimento e na manutenção.',
       'A Nuxem fornece óleo BPF e óleos alternativos com padrão constante de qualidade, produzidos sob demanda. Apoiamos a especificação correta para o seu sistema: viscosidade de trabalho, aquecimento de linha, temperatura de atomização e rotina de operação.',
-      'Com frota própria e atendimento 24 horas, planejamos o abastecimento conforme o consumo da caldeira. Consulte disponibilidade e programação para sua cidade em São Paulo.',
+      'Com frota própria e atendimento 24 horas, planejamos o abastecimento conforme o consumo da caldeira. Consulte disponibilidade e programação para sua cidade em São Paulo, Minas Gerais ou Paraná.',
+    ],
+    secoes: [
+      { titulo: 'Dados para especificar o combustível da caldeira', paragrafos: [
+        'Informe o consumo de combustível por hora ou a produção de vapor, o regime de operação, o modelo do queimador, o sistema de aquecimento de linha e a capacidade do tanque. A especificação vem do equipamento, e o nome comercial do óleo não substitui a ficha técnica do produto cotado.',
+        'O roteiro de <a href="/blog/como-especificar-o-oleo-combustivel-certo-para-seu-queimador/">especificação para o queimador</a> organiza esses dados antes da cotação.',
+      ] },
+      { titulo: 'Consumo, viscosidade e estabilidade da queima', paragrafos: [
+        'O consumo depende da produção de vapor, do poder calorífico do combustível e do rendimento da caldeira. Veja a fórmula e um exemplo em <a href="/blog/como-calcular-consumo-de-oleo-combustivel-em-caldeiras/">como calcular o consumo de óleo em caldeiras</a>.',
+        'A viscosidade na entrada do queimador afeta atomização e queima; entenda o efeito em <a href="/blog/impacto-da-viscosidade-do-oleo-bpf-na-eficiencia-da-queima/">viscosidade do óleo BPF e eficiência da queima</a>. Para caldeiras de vapor em têxteis, veja o caso de <a href="/blog/oleo-bpf-para-industria-textil-vapor-em-tinturarias-e-lavanderias/">tinturarias e lavanderias</a>.',
+      ] },
+      { titulo: 'Abastecimento contínuo', paragrafos: [
+        'Caldeiras de operação contínua precisam de reposição planejada. A Nuxem programa as entregas conforme o consumo informado, com planejamento mensal, e atende São Paulo, Minas Gerais e Paraná. No Paraná, veja também o artigo sobre <a href="/blog/oleo-combustivel-para-caldeiras-no-parana-fornecimento-continuo/">combustível para caldeiras no Paraná</a>.',
+      ] },
+    ],
+    faq: [
+      { p: 'Qual óleo usar em caldeira industrial?', r: 'Depende do queimador e da instalação. O óleo BPF é uma das opções mais consultadas, e alternativas como APF, B1, BTE ou xisto OTE devem ser avaliadas conforme a especificação aprovada para o equipamento.' },
+      { p: 'Como calcular quanto óleo a caldeira consome?', r: 'Divida a energia necessária para produzir o vapor pelo poder calorífico do combustível e pelo rendimento da caldeira. O artigo de cálculo de consumo traz a fórmula e um exemplo numérico.' },
+      { p: 'Vale trocar o combustível da caldeira por óleo de xisto?', r: 'Depende do custo entregue, da compatibilidade do queimador e do consumo da planta. O xisto OTE exige consumo a partir de 200 mil litros por mês. Compare as opções antes de decidir.' },
     ],
     produtosRelacionados: ['oleo-bpf', 'oleo-apf', 'oleo-b1', 'oleo-bte'],
-    artigosRelacionados: ['como-especificar-o-oleo-combustivel-certo-para-seu-queimador', 'como-calcular-consumo-de-oleo-combustivel-em-caldeiras', 'impacto-da-viscosidade-do-oleo-bpf-na-eficiencia-da-queima'],
+    artigosRelacionados: ['como-especificar-o-oleo-combustivel-certo-para-seu-queimador', 'como-calcular-consumo-de-oleo-combustivel-em-caldeiras', 'impacto-da-viscosidade-do-oleo-bpf-na-eficiencia-da-queima', 'oleo-bpf-para-industria-textil-vapor-em-tinturarias-e-lavanderias', 'oleo-combustivel-para-caldeiras-no-parana-fornecimento-continuo'],
   },
   {
     slug: 'fundicoes',
@@ -590,22 +626,72 @@ export const SOLUCOES = [
     imagem: 'fundicao.webp',
     imagemAlt: 'Forno de fundição vertendo metal incandescente',
     resumo: 'Alta carga térmica com consistência de processo e fornecimento confiável.',
-    title: 'Óleo Combustível para Fundição | Fornecedor em SP | Nuxem',
-    description: 'Combustível industrial para fundições e fornos de alta temperatura. Óleo BPF com qualidade constante, entrega rápida e suporte técnico em São Paulo.',
+    title: 'Óleo Combustível para Fundição | SP, MG e PR | Nuxem',
+    description: 'Combustível industrial para fundições e fornos de alta temperatura em SP, MG e PR. Óleo BPF com qualidade constante, frota própria e suporte técnico.',
     corpo: [
       'Fundições trabalham com as cargas térmicas mais exigentes da indústria. A consistência do processo depende de um combustível com padrão estável: variações de qualidade aparecem em comportamento de queima, controle de temperatura e paradas não planejadas.',
       'A Nuxem fornece óleo BPF e alternativas de viscosidades diferentes para fornos de fundição, com produção sob demanda e qualidade constante entre entregas — o que protege a repetibilidade do seu processo.',
-      'Com atendimento 24 horas e frota própria, organizamos o fornecimento conforme a demanda e a programação da fundição. Atendemos São Paulo, com suporte técnico na especificação e confirmação das condições de entrega.',
+      'Com atendimento 24 horas e frota própria, organizamos o fornecimento conforme a demanda e a programação da fundição. Atendemos São Paulo, Minas Gerais e Paraná, com suporte técnico na especificação e confirmação das condições de entrega.',
       'Antes da cotação, veja <a href="/blog/oleo-combustivel-para-fundicao-como-escolher-e-avaliar-o-fornecimento/">como avaliar o combustível e o fornecimento para fundição</a>: tipo de forno, regime por batelada ou contínuo, consumo específico e requisitos do queimador.',
     ],
+    secoes: [
+      { titulo: 'Forno e regime de operação', paragrafos: [
+        'Informe o tipo de forno, se a operação é por batelada ou contínua, a frequência de partidas, o consumo e o modelo do queimador. Esses dados definem o produto e o ritmo de reposição; o nome do setor, sozinho, não descreve a exigência térmica.',
+        'O artigo <a href="/blog/oleo-combustivel-para-fundicao-como-escolher-e-avaliar-o-fornecimento/">óleo combustível para fundição: como escolher e avaliar o fornecimento</a> detalha o que conferir.',
+      ] },
+      { titulo: 'Qualidade constante entre entregas', paragrafos: [
+        'Na fundição, a repetibilidade do processo depende de combustível com padrão estável. Ao trocar de fornecedor ou de lote, avalie a mistura com o estoque do tanque e registre cada recebimento. Veja os cuidados em <a href="/blog/compatibilidade-entre-lotes-de-oleo-bpf-como-evitar-borra-na-mistura/">compatibilidade entre lotes de óleo BPF</a>.',
+      ] },
+      { titulo: 'Atendimento em SP, MG e PR', paragrafos: [
+        'A Nuxem atende fundições em São Paulo, Minas Gerais e Paraná, com atendimento 24 horas e frota própria. Para o polo metalúrgico de Minas, veja o artigo sobre <a href="/blog/oleo-bpf-para-o-polo-metalurgico-de-betim-e-contagem-mg/">óleo BPF em Betim e Contagem</a>.',
+      ] },
+    ],
+    faq: [
+      { p: 'Que combustível usar em forno de fundição?', r: 'O óleo BPF é uma das opções para fornos de fundição, mas a escolha depende do tipo de forno, do queimador e da especificação aprovada pela engenharia da planta. Confirme a ficha técnica do produto cotado.' },
+      { p: 'Como evitar variação de qualidade entre as entregas?', r: 'Peça a identificação do produto e a documentação a cada entrega, registre os recebimentos e avalie a mistura com o estoque do tanque antes de trocar de fornecedor.' },
+      { p: 'A Nuxem atende fundições fora de São Paulo?', r: 'Sim. A Nuxem atende São Paulo, Minas Gerais e Paraná, e confirma prazo e disponibilidade pelo endereço da fundição.' },
+    ],
     produtosRelacionados: ['oleo-bpf', 'oleos-alternativos'],
-    artigosRelacionados: ['compatibilidade-entre-lotes-de-oleo-bpf-como-evitar-borra-na-mistura', 'reducao-de-custos-com-substituicao-de-oleo-combustivel', 'como-especificar-o-oleo-combustivel-certo-para-seu-queimador'],
+    artigosRelacionados: ['compatibilidade-entre-lotes-de-oleo-bpf-como-evitar-borra-na-mistura', 'reducao-de-custos-com-substituicao-de-oleo-combustivel', 'como-especificar-o-oleo-combustivel-certo-para-seu-queimador', 'oleo-bpf-para-o-polo-metalurgico-de-betim-e-contagem-mg'],
+  },
+  {
+    slug: 'fornos-e-secadores',
+    nome: 'Fornos e secadores industriais',
+    imagem: 'forno-industrial.webp',
+    imagemAlt: 'Forno industrial de alta temperatura',
+    resumo: 'Combustível para fornos, estufas e secadores, com especificação alinhada ao queimador e ao processo.',
+    title: 'Óleo Combustível para Fornos e Secadores | SP, MG e PR | Nuxem',
+    description: 'Óleo BPF e óleo de xisto para fornos, estufas e secadores industriais em SP, MG e PR. Informe queimador e consumo e solicite cotação à Nuxem.',
+    corpo: [
+      'Fornos, estufas e secadores trabalham com cargas térmicas e arranjos de combustão muito diferentes. Por isso o combustível deve ser avaliado pelo processo e pelo queimador, e não apenas pela temperatura de trabalho.',
+      'A Nuxem fornece óleo BPF e óleos alternativos, e o óleo de xisto (OTE) para consumos a partir de 200 mil litros por mês. Atendemos São Paulo, Minas Gerais e Paraná, com frota própria, produção sob demanda e atendimento 24 horas.',
+    ],
+    secoes: [
+      { titulo: 'Aquecimento direto ou indireto', paragrafos: [
+        'Informe se os gases de combustão entram em contato com o material ou se há um sistema intermediário de transferência de calor. Um combustível aprovado em um arranjo não fica automaticamente aprovado em outro, e o critério de qualidade do material processado deve constar na avaliação.',
+        'O roteiro de <a href="/blog/queima-de-oleo-de-xisto-ote-atomizacao-e-ajuste-de-queimador/">atomização e ajuste do queimador para xisto OTE</a> ajuda a separar essas condições.',
+      ] },
+      { titulo: 'Dados para a cotação', paragrafos: [
+        'Envie cidade, aplicação, modelo do equipamento, combustível atual, regime de operação e consumo. Informe se a instalação já está aprovada para o produto ou se a consulta faz parte de um estudo.',
+        'Para secadores e estufas agrícolas, veja os artigos sobre <a href="/blog/oleo-combustivel-para-estufas-e-secadores-agricolas/">estufas e secadores agrícolas</a> e <a href="/blog/oleo-combustivel-para-estufas-e-secadores-agricolas-no-parana/">secadores no Paraná</a>. Para cerâmica, veja <a href="/blog/oleo-de-xisto-para-a-industria-ceramica-fornos-secadores-e-abastecimento/">fornos e secadores cerâmicos com óleo de xisto</a>.',
+      ] },
+      { titulo: 'Como comparar o resultado no processo', paragrafos: [
+        'Compare o consumo para a mesma entrega térmica ou a mesma produção, incluindo os critérios de qualidade do material. Considere os custos de adaptação e de auxiliares, como descreve a <a href="/blog/reducao-de-custos-com-substituicao-de-oleo-combustivel/">análise de custo de substituição de combustível</a>.',
+      ] },
+    ],
+    faq: [
+      { p: 'Qual combustível usar em forno ou secador industrial?', r: 'Depende do queimador, do regime de operação e do processo. O óleo BPF e o óleo de xisto OTE são opções para consulta, sempre confirmadas pela ficha técnica e pela aprovação da engenharia da planta.' },
+      { p: 'O óleo de xisto serve para fornos e secadores?', r: 'Pode ser avaliado para fornos e secadores, desde que o queimador e o processo sejam compatíveis. O fornecimento da Nuxem exige consumo a partir de 200 mil litros por mês e planejamento mensal.' },
+      { p: 'A Nuxem atende estufas e secadores agrícolas?', r: 'Sim, em São Paulo, Minas Gerais e Paraná. Informe o endereço, o equipamento e o consumo para confirmar produto, prazo e disponibilidade.' },
+    ],
+    produtosRelacionados: ['oleo-bpf', 'oleo-de-xisto', 'oleos-alternativos'],
+    artigosRelacionados: ['oleo-de-xisto-para-fornos-e-secadores-industriais', 'oleo-combustivel-para-estufas-e-secadores-agricolas', 'oleo-de-xisto-para-a-industria-ceramica-fornos-secadores-e-abastecimento', 'oleo-bpf-para-a-industria-ceramica-fornos-secadores-e-abastecimento', 'queima-de-oleo-de-xisto-ote-atomizacao-e-ajuste-de-queimador'],
   },
 ];
 
 export const HOME = {
-  title: 'Nuxem | Fornecedor de Óleo BPF e Combustíveis Industriais em SP, MG e PR',
-  description: 'Fornecemos óleo BPF e combustíveis industriais para caldeiras, usinas de asfalto e fundições em São Paulo, Minas Gerais e Paraná. Frota própria, atendimento 24h e produção sob demanda.',
+  title: 'Fornecedor de Óleo BPF e Óleo de Xisto em SP, MG e PR | Nuxem',
+  description: 'Óleo BPF, óleo de xisto e combustíveis industriais para caldeiras, usinas de asfalto e fundições em SP, MG e PR. Frota própria e atendimento 24h.',
   heroTitulo: 'Óleo BPF e combustíveis industriais para sua operação não parar',
   heroTexto: 'Fornecimento para caldeiras, usinas de asfalto e fundições em São Paulo, Minas Gerais e Paraná — com frota própria, produção sob demanda e atendimento 24 horas.',
 };
@@ -622,6 +708,23 @@ export const COBERTURA = [
     uf: 'SP',
     chamada: 'Operação principal, com entrega programada e atendimento 24h em todo o estado.',
     cidades: 'São Paulo, Campinas, Sorocaba, Jundiaí, Piracicaba, Ribeirão Preto, Santos, São José dos Campos e interior',
+    title: 'Óleo BPF e Óleo de Xisto em São Paulo | Fornecedor | Nuxem',
+    description: 'Fornecedor de óleo BPF e óleo de xisto em São Paulo, com base em Salto. Frota própria, atendimento 24h e cotação por cidade. Solicite sua proposta.',
+    h1: 'Fornecedor de óleo BPF e óleo de xisto em São Paulo',
+    resumo: 'A Nuxem opera a partir de Salto/SP e atende indústrias de todo o estado com frota própria, produção sob demanda e atendimento 24 horas.',
+    paragrafos: [
+      'São Paulo é a operação principal da Nuxem: a sede e a base de distribuição ficam em Salto, no interior do estado. A partir dela, a frota própria atende caldeiras, usinas de asfalto, fundições, fornos e secadores de toda a região.',
+      'Para o óleo BPF, o fornecimento é feito a partir de 5.000 litros por entrega, sob demanda e com planejamento mensal. Até 200 km de Salto, a entrega ocorre no mesmo dia ou em até 1 dia útil, mediante confirmação da programação. Fora desse raio, prazo e disponibilidade são confirmados na cotação.',
+      'O óleo de xisto (OTE) atende consumos a partir de 200 mil litros por mês, com planejamento mensal obrigatório e disponibilidade sob consulta. Os prazos do BPF não se aplicam automaticamente ao xisto.',
+    ],
+    aplicacoes: ['usinas-de-asfalto', 'caldeiras', 'fundicoes', 'fornos-e-secadores'],
+    polos: 'Entre os polos industriais atendidos estão Campinas, Sorocaba, Jundiaí, Piracicaba, Ribeirão Preto, Santos, São José dos Campos e a região de Santa Gertrudes, polo cerâmico do interior paulista.',
+    artigos: ['oleo-de-xisto-ote-para-o-polo-ceramico-de-santa-gertrudes-sp', 'oleo-de-xisto-ote-assistencia-tecnica-e-abastecimento-em-sp-mg-pr', 'logistica-de-abastecimento-de-oleo-bpf-entre-sp-mg-e-pr', 'preco-oleo-bpf-posto-fabrica-comparar-propostas'],
+    faq: [
+      { p: 'A Nuxem entrega óleo BPF em todo o estado de São Paulo?', r: 'Sim. A Nuxem atende indústrias de todo o estado. Até 200 km de Salto, a entrega ocorre no mesmo dia ou em até 1 dia útil, mediante confirmação da programação; para outras cidades, o prazo é confirmado na cotação.' },
+      { p: 'Qual é o pedido mínimo de óleo BPF em São Paulo?', r: 'A partir de 5.000 litros por entrega, sob demanda e com planejamento mensal.' },
+      { p: 'Como solicitar uma cotação?', r: 'Informe produto, cidade, volume e consumo pelo formulário, pelo WhatsApp (11) 91501-1527 ou por e-mail. A equipe confirma especificação, documentação e programação para o seu endereço.' },
+    ],
   },
   {
     slug: 'minas-gerais',
@@ -629,6 +732,23 @@ export const COBERTURA = [
     uf: 'MG',
     chamada: 'Fornecimento de óleo BPF e combustíveis industriais para o polo metalúrgico, usinas de asfalto e caldeiras mineiras.',
     cidades: 'Belo Horizonte, Betim, Contagem, Uberlândia, Juiz de Fora, Ipatinga, Divinópolis e região metropolitana',
+    title: 'Fornecedor de Óleo BPF em Minas Gerais (MG) | Nuxem',
+    description: 'Óleo BPF e óleo de xisto em Minas Gerais: Belo Horizonte, Betim, Contagem, Uberlândia e Juiz de Fora. Frota própria, atendimento 24h e cotação por endereço.',
+    h1: 'Fornecedor de óleo BPF e óleo de xisto em Minas Gerais',
+    resumo: 'Fornecimento para o polo metalúrgico, usinas de asfalto, caldeiras e laticínios mineiros, com cotação feita para o endereço da sua unidade.',
+    paragrafos: [
+      'A Nuxem atende Minas Gerais com frota própria e atendimento 24 horas, a partir da operação de Salto/SP. O fornecimento cobre a região metropolitana de Belo Horizonte, Betim e Contagem, o Triângulo Mineiro, Juiz de Fora, Ipatinga e Divinópolis.',
+      'Prazo, frete e disponibilidade são confirmados por endereço: uma proposta para Betim não vale como referência para Uberlândia. Informe o município, o equipamento, o consumo e as condições de recebimento da unidade para receber uma cotação precisa.',
+      'O óleo BPF é fornecido a partir de 5.000 litros por entrega, sob demanda e com planejamento mensal. O óleo de xisto (OTE) atende consumos a partir de 200 mil litros por mês, com disponibilidade sob consulta.',
+    ],
+    aplicacoes: ['usinas-de-asfalto', 'caldeiras', 'fundicoes', 'fornos-e-secadores'],
+    polos: 'Os segmentos mais frequentes no estado são o polo metalúrgico de Betim e Contagem, as usinas de asfalto do Triângulo Mineiro e do interior, e a agroindústria de leite, que usa vapor de caldeira.',
+    artigos: ['fornecedor-de-oleo-bpf-em-minas-gerais-como-escolher-certo', 'oleo-bpf-para-o-polo-metalurgico-de-betim-e-contagem-mg', 'oleo-bpf-para-usinas-de-asfalto-no-triangulo-mineiro-e-interior-de-mg', 'oleo-bpf-para-laticinios-e-agroindustria-de-leite-em-mg'],
+    faq: [
+      { p: 'A Nuxem fornece óleo BPF em Minas Gerais?', r: 'Sim. A Nuxem atende Minas Gerais com frota própria. Os prazos e as condições de entrega são confirmados pelo endereço industrial da unidade.' },
+      { p: 'Quais cidades de Minas Gerais a Nuxem atende?', r: 'Belo Horizonte, Betim, Contagem, Uberlândia, Juiz de Fora, Ipatinga, Divinópolis e a região metropolitana, além de outras localidades consultadas por endereço.' },
+      { p: 'O que informar para cotar em Minas Gerais?', r: 'Município e endereço industrial, equipamento, produto utilizado, consumo, quantidade desejada e restrições de recebimento. Com esses dados, a proposta confirma especificação, documentação e programação.' },
+    ],
   },
   {
     slug: 'parana',
@@ -636,6 +756,23 @@ export const COBERTURA = [
     uf: 'PR',
     chamada: 'Entrega com frota própria para caldeiras, fornos e usinas de asfalto em todo o estado, com apoio no polo de Araucária.',
     cidades: 'Curitiba, Araucária, Ponta Grossa, Londrina, Maringá, São José dos Pinhais, Cascavel e região metropolitana',
+    title: 'Fornecedor de Óleo BPF no Paraná (PR) | Nuxem',
+    description: 'Óleo BPF, BTE e óleo de xisto no Paraná: Curitiba, Araucária, Ponta Grossa, Londrina e Maringá. Frota própria, atendimento 24h e cotação por endereço.',
+    h1: 'Fornecedor de óleo BPF e óleo de xisto no Paraná',
+    resumo: 'Entrega para caldeiras, fornos, secadores e usinas de asfalto paranaenses, com apoio no polo de Araucária e programação por unidade.',
+    paragrafos: [
+      'A Nuxem atende todo o Paraná com frota própria e atendimento 24 horas, com apoio no polo de Araucária. O fornecimento cobre Curitiba e região metropolitana, Ponta Grossa, Londrina, Maringá, São José dos Pinhais e Cascavel.',
+      'O estado de destino, sozinho, não determina o produto: a especificação vem do queimador e da instalação. A Nuxem fornece óleo BPF, BTE e alternativas, e o óleo de xisto (OTE) para consumos a partir de 200 mil litros por mês. Prazos são confirmados por endereço.',
+      'O óleo BPF é fornecido a partir de 5.000 litros por entrega, sob demanda e com planejamento mensal. Em operações contínuas, como caldeiras, a reposição deve ser programada conforme o consumo da unidade.',
+    ],
+    aplicacoes: ['caldeiras', 'fornos-e-secadores', 'usinas-de-asfalto', 'fundicoes'],
+    polos: 'No Paraná, as demandas mais frequentes vêm de caldeiras de vapor, de estufas e secadores agrícolas e de indústrias com restrição ambiental, que consultam o óleo BTE e o B1.',
+    artigos: ['oleo-combustivel-para-caldeiras-no-parana-fornecimento-continuo', 'oleo-combustivel-para-estufas-e-secadores-agricolas-no-parana', 'oleo-bte-e-b1-no-parana-atendendo-restricoes-ambientais', 'vantagens-do-oleo-bte-para-industrias-com-restricao-ambiental'],
+    faq: [
+      { p: 'A Nuxem fornece óleo BPF no Paraná?', r: 'Sim. A Nuxem atende o Paraná com frota própria e apoio no polo de Araucária. Prazo e disponibilidade são confirmados pelo endereço da unidade.' },
+      { p: 'A Nuxem fornece óleo BTE e B1 no Paraná?', r: 'Sim. O óleo BTE e o B1 podem ser consultados para operações com restrição ambiental. Confirme a ficha técnica e os requisitos da instalação na cotação.' },
+      { p: 'Como solicitar uma cotação no Paraná?', r: 'Informe produto, cidade, volume e consumo pelo formulário, pelo WhatsApp (11) 91501-1527 ou por e-mail. A equipe confirma a programação para o seu endereço.' },
+    ],
   },
 ];
 

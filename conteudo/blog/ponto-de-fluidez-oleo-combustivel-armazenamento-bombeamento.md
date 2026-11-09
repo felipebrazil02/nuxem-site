@@ -1,6 +1,6 @@
 ---
-title: "Ponto de fluidez do óleo combustível: o que é e por que importa no armazenamento e bombeamento"
-description: "Entenda o que é o ponto de fluidez de um óleo combustível, a diferença para ponto de fulgor e viscosidade e por que ele importa no armazenamento e no bombeamento em dias frios."
+title: "Ponto de fluidez do óleo combustível: armazenamento e bombeamento"
+description: "Entenda o ponto de fluidez do óleo combustível, a diferença para ponto de fulgor e viscosidade e o efeito no armazenamento e no bombeamento no frio."
 date: "2026-10-21"
 slugOriginal: ""
 category: "operacao"
