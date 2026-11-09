@@ -1,6 +1,12 @@
 // Migração Wix: destinos revisados por assunto a partir do Search Console.
 // URLs sem conteúdo equivalente devem continuar 404, nunca ir ao índice do blog.
 const grupos = [
+  // Posts de setor fundidos em 09/11/2026: o endereço do xisto aponta ao artigo único BPF + xisto.
+  ['/blog/oleo-bpf-para-a-industria-de-papel-e-celulose/', ['oleo-de-xisto-para-a-industria-de-papel-e-celulose']],
+  ['/blog/oleo-bpf-para-industria-textil-vapor-em-tinturarias-e-lavanderias/', ['oleo-de-xisto-para-a-industria-textil-vapor-em-tinturarias-e-lavanderias']],
+  ['/blog/oleo-bpf-para-a-industria-ceramica-fornos-secadores-e-abastecimento/', ['oleo-de-xisto-para-a-industria-ceramica-fornos-secadores-e-abastecimento']],
+  ['/blog/oleo-bpf-para-laticinios-e-agroindustria-de-leite-em-mg/', ['oleo-de-xisto-para-vapor-em-laticinios-e-agroindustria']],
+  ['/blog/oleo-bpf-para-geracao-de-vapor-na-industria-de-alimentos/', ['oleo-de-xisto-ote-para-industria-de-alimentos-e-bebidas-vapor-e-seguranca']],
   ['/guia-oleo-bpf/', [
     'óleo-combustível-bpf-especificações-e-aplicações-industriais',
     'como-funciona-óleo-bpf-na-indústria', 'guia-do-óleo-bpf-para-uso-industrial',

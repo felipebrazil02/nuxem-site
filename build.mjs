@@ -3,7 +3,7 @@
 import { readdirSync, readFileSync, writeFileSync, mkdirSync, cpSync, rmSync, existsSync, statSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { EMPRESA, PRODUTOS, SOLUCOES, HOME, CONTATO, PILAR, COBERTURA } from './src/dados.mjs';
+import { EMPRESA, PRODUTOS, SOLUCOES, HOME, CONTATO, PILAR, COBERTURA, SETORES_BPF_XISTO } from './src/dados.mjs';
 import { redirecionamentosLegados, destinoLegado } from './src/redirecionamentos.mjs';
 import { LEITURAS, CATEGORIAS_BLOG } from './src/leituras.mjs';
 import { otimizarImagens, preloadHero as preloadImagemPrincipal } from './src/imagens.mjs';
@@ -463,8 +463,8 @@ salvar(PILAR.slug, layout({
   <p style="margin-top:32px"><a class="btn btn-laranja" href="${ZAP}">Iniciar cotação de óleo BPF no WhatsApp</a></p>
 </div></div>`}));
 salvar(PILAR.slug + '/faq', layout({
-  title: 'Perguntas Frequentes sobre Óleo BPF | Nuxem',
-  description: 'FAQ sobre óleo BPF: diferenças entre tipos, armazenamento, aquecimento, poder calorífico e mais. Tire suas dúvidas técnicas.',
+  title: 'Óleo BPF é inflamável? Perguntas frequentes | Nuxem',
+  description: 'Óleo BPF é inflamável? Veja respostas sobre ponto de fulgor, tipos, aquecimento, armazenamento e poder calorífico do óleo combustível industrial.',
   caminho: PILAR.slug + '/faq',
   jsonLd: {
     '@context': 'https://schema.org',
@@ -581,7 +581,7 @@ for (const f of arquivosBlog) {
 posts.sort((a, b) => (a.date < b.date ? 1 : -1));
 
 // Página informativa central de xisto, com diretório dos artigos existentes.
-const artigosXisto = posts.filter(p => p.slug.includes('xisto') && p.language === 'pt');
+const artigosXisto = posts.filter(p => (p.slug.includes('xisto') || SETORES_BPF_XISTO.includes(p.slug)) && p.language === 'pt');
 salvar(GUIA_XISTO.slug, layout({
   title: GUIA_XISTO.title, description: GUIA_XISTO.description, caminho: GUIA_XISTO.slug,
   jsonLd: {
@@ -672,7 +672,7 @@ for (const p of posts) {
 ${p.updated ? `<p class="post-meta">Atualizado em ${dataBr(p.updated)}</p>` : ''}
   ${capa ? `<img class="foto-pagina" src="${capa}" alt="${p.title}">` : ''}
   ${p.html}
-  ${p.slug.includes('xisto') && p.language === 'pt' ? '<aside class="leituras" aria-label="Guia de óleo de xisto"><h2>Entenda o combustível antes de aprofundar a aplicação</h2><p>Consulte o <a href="/guia-oleo-de-xisto/">guia de óleo de xisto: o que é, para que serve e aplicações</a>. Para comprar, veja as <a href="/produtos/oleo-de-xisto/">condições de fornecimento de óleo de xisto OTE</a>.</p></aside>' : ''}
+  ${(p.slug.includes('xisto') || SETORES_BPF_XISTO.includes(p.slug)) && p.language === 'pt' ? '<aside class="leituras" aria-label="Guia de óleo de xisto"><h2>Entenda o combustível antes de aprofundar a aplicação</h2><p>Consulte o <a href="/guia-oleo-de-xisto/">guia de óleo de xisto: o que é, para que serve e aplicações</a>. Para comprar, veja as <a href="/produtos/oleo-de-xisto/">condições de fornecimento de óleo de xisto OTE</a>.</p></aside>' : ''}
   <h2>Leia também</h2>
   <ul>
     ${rel.map(r => `<li><a href="/blog/${r.slug}/">${r.title}</a></li>`).join('\n    ')}

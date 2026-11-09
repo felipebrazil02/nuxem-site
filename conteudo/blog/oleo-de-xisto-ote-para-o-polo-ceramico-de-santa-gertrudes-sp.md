@@ -15,7 +15,7 @@ A Nuxem atende São Paulo. Consulte a [cobertura no estado](/cobertura/) e as in
 
 Informe se a consulta envolve forno, secador, spray dryer ou outro equipamento, quando aplicável. Identifique fabricante, modelo do queimador, regime e condições requeridas pelo processo.
 
-O [roteiro de avaliação de xisto na cerâmica](/blog/oleo-de-xisto-para-a-industria-ceramica-fornos-secadores-e-abastecimento/) ajuda a separar compatibilidade do equipamento e critérios de qualidade do material. Uma aplicação não deve ser validada apenas pela experiência em outra etapa da fábrica.
+O [roteiro de avaliação de xisto na cerâmica](/blog/oleo-bpf-para-a-industria-ceramica-fornos-secadores-e-abastecimento/) ajuda a separar compatibilidade do equipamento e critérios de qualidade do material. Uma aplicação não deve ser validada apenas pela experiência em outra etapa da fábrica.
 
 ## Como informar o consumo
 
