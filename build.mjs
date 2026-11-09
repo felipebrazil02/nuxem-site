@@ -150,8 +150,30 @@ function leituras(caminho) {
 // ---------- layout ----------
 const linkCotacaoProduto = slug => ['oleo-bpf', 'oleo-de-xisto'].includes(slug)
   ? `/contato/?produto=${slug}` : '/contato/';
-function layout({ title, description, caminho, conteudo, ogImage, jsonLd, preloadHero, studioArticleId, studioContentHash, language = 'pt' }) {
+// Rótulos das páginas-pai usados nas trilhas (BreadcrumbList) de dados estruturados.
+const ROTULOS_TRILHA = { produtos: 'Produtos', solucoes: 'Soluções', blog: 'Blog', cobertura: 'Regiões atendidas', 'guia-oleo-bpf': 'Guia do óleo BPF' };
+function trilha(caminho, nomePagina) {
+  const partes = caminho.replace(/\\/g, '/').split('/').filter(p => p && p !== '.');
+  if (!partes.length) return null;
+  const itens = [{ nome: 'Início', url: `${EMPRESA.dominio}/` }];
+  partes.forEach((_, i) => {
+    const acumulado = partes.slice(0, i + 1).join('/');
+    const ultimo = i === partes.length - 1;
+    const nome = ultimo ? nomePagina : ROTULOS_TRILHA[acumulado];
+    if (nome) itens.push({ nome, url: `${EMPRESA.dominio}/${acumulado}/` });
+  });
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: itens.map((it, i) => ({ '@type': 'ListItem', position: i + 1, name: it.nome, item: it.url })),
+  };
+}
+// Páginas de blog com título longo perdem o sufixo da marca para não serem cortadas nos resultados do Google.
+const tituloBlog = titulo => (`${titulo} | Blog Nuxem`.length <= 66 ? `${titulo} | Blog Nuxem` : titulo);
+function layout({ title, description, caminho, conteudo, ogImage, jsonLd, jsonLdExtra = [], crumbNome, preloadHero, studioArticleId, studioContentHash, language = 'pt' }) {
   const url = `${EMPRESA.dominio}${caminho === '.' ? '/' : `/${caminho.replace(/\\/g, '/')}/`}`;
+  const trilhaLd = trilha(caminho, crumbNome || title.split('|')[0].trim());
+  const blocosLd = [jsonLd, ...jsonLdExtra, trilhaLd].filter(Boolean);
   const urlContato = linkCotacaoProduto(caminho.replace(/\\/g, '/').match(/^produtos\/([^/]+)$/)?.[1]);
   const nav = [
     ['/', 'Início'],
@@ -186,7 +208,7 @@ ${preloadHero ? preloadImagemPrincipal() : ''}
 ${caminho === '.' ? `<style data-home-css>${estiloHome}</style>` : usaEstiloInline(caminho) ? `<style data-product-css>${estiloHome}</style>` : '<link rel="stylesheet" href="/estilo.css">'}
 ${analyticsMarkup}
 <script src="/interface.js" defer></script>
-${jsonLd ? `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>` : ''}
+${blocosLd.map(b => `<script type="application/ld+json">${JSON.stringify(b)}</script>`).join('\n')}
 </head>
 <body class="${tipoPagina}">
 <a class="skip-link" href="#principal">Ir ao conteúdo</a>
@@ -215,6 +237,7 @@ ${conteudo}
       <div>
         <h2>Nuxem</h2>
         <p style="font-size:.9rem">Óleo BPF e combustíveis industriais para ${EMPRESA.regiao}. CNPJ: ${EMPRESA.cnpj}</p>
+        ${COBERTURA.map(e => `<a href="/cobertura/${e.slug}/">Óleo BPF em ${e.nome}</a>`).join('\n        ')}
       </div>
       <div>
         <h2>Produtos</h2>
@@ -261,7 +284,9 @@ salvar('.', layout({
   jsonLd: {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
+    '@id': `${EMPRESA.dominio}/#organizacao`,
     name: 'Nuxem',
+    legalName: 'Nuxem Comércio e Transporte de Óleos LTDA',
     description: HOME.description,
     url: `${EMPRESA.dominio}/`,
     logo: `${EMPRESA.dominio}/imagens/icone-nuxem.png`,
@@ -274,9 +299,18 @@ salvar('.', layout({
       { '@type': 'State', name: 'Minas Gerais' },
       { '@type': 'State', name: 'Paraná' },
     ],
-    priceRange: '$$',
+    openingHoursSpecification: { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'], opens: '00:00', closes: '23:59' },
     vatID: EMPRESA.cnpj,
   },
+  jsonLdExtra: [{
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${EMPRESA.dominio}/#site`,
+    name: 'Nuxem',
+    url: `${EMPRESA.dominio}/`,
+    inLanguage: 'pt-BR',
+    publisher: { '@id': `${EMPRESA.dominio}/#organizacao` },
+  }],
   conteudo: `
 <section class="site-hero"><div class="container hero-layout"><div class="hero-copy">
   <div class="section-kicker">ENERGIA PARA A INDÚSTRIA</div>
@@ -290,8 +324,8 @@ salvar('.', layout({
 <div class="trust-band"><div class="container"><div><b>24h</b><span>Atendimento e suporte</span></div><div><b>Frota própria</b><span>Logística de fornecimento</span></div><div><b>SP · MG · PR</b><span>Regiões atendidas</span></div><a href="/cobertura/">Conheça nossa cobertura ↗</a></div></div>
 <section><div class="container">
   <div class="section-kicker">APLICAÇÕES INDUSTRIAIS</div><h2 class="secao">Soluções por segmento</h2>
-  <p class="secao-sub">Cada operação térmica tem uma exigência diferente. Atendemos as três mais críticas da indústria:</p>
-  <div class="grid grid-3">
+  <p class="secao-sub">Cada operação térmica tem uma exigência diferente. Atendemos as aplicações mais críticas da indústria:</p>
+  <div class="grid ${SOLUCOES.length === 4 ? 'grid-2x2' : 'grid-3'}">
     ${SOLUCOES.map(s => `<div class="card card-foto"><img src="/imagens/${s.imagem}" alt="${s.imagemAlt}" loading="lazy"><h3>${s.nome}</h3><p>${s.resumo}</p><a class="saiba" href="/solucoes/${s.slug}/">Saiba mais →</a></div>`).join('\n    ')}
   </div>
 </div></section>
@@ -313,6 +347,7 @@ salvar('.', layout({
   <h2 class="secao">Atendemos São Paulo, Minas Gerais e Paraná</h2>
   <p class="secao-sub">Entrega com frota própria em ${EMPRESA.cidades} — e em todas as demais regiões dos três estados.</p>
   <p style="margin-top:8px"><a class="saiba" href="/cobertura/">Ver todas as regiões atendidas →</a></p>
+  <p class="secao-sub">${COBERTURA.map(e => `<a href="/cobertura/${e.slug}/">Óleo BPF e xisto em ${e.nome}</a>`).join(' · ')}</p>
 </div></section>
 <section class="site-editorial"><div class="container"><div class="section-kicker">CONHECIMENTO QUE AJUDA A DECIDIR</div><h2 class="secao">Da especificação à compra.</h2><p class="secao-sub">Conteúdo técnico para quem precisa escolher bem e manter a operação em movimento.</p><div class="grid grid-3"><a class="editorial-card" href="/guia-oleo-bpf/"><span>GUIA TÉCNICO</span><h3>Entenda o óleo BPF.</h3><p>Classificações, aplicações e critérios para a sua operação.</p><b>Explorar o guia ↗</b></a><a class="editorial-card" href="/guia-oleo-de-xisto/"><span>GUIA TÉCNICO</span><h3>Conheça o óleo de xisto.</h3><p>Origem, aplicações e critérios para avaliar o OTE na indústria.</p><b>Explorar o guia ↗</b></a><a class="editorial-card" href="/blog/"><span>BLOG NUXEM</span><h3>Respostas para a indústria.</h3><p>Artigos sobre compra, aplicações, operação e logística.</p><b>Acessar todos os artigos ↗</b></a></div></div></section>`,
 }));
@@ -453,7 +488,7 @@ salvar(PILAR.slug + '/faq', layout({
 // SOLUÇÕES (índice)
 salvar('solucoes', layout({
   title: 'Soluções por Segmento | Caldeiras, Asfalto e Fundições | Nuxem',
-  description: 'Fornecimento de combustível industrial sob medida para usinas de asfalto, caldeiras industriais e fundições em todo o estado de São Paulo.',
+  description: 'Combustível industrial para usinas de asfalto, caldeiras, fundições, fornos e secadores em SP, MG e PR. Veja a solução para a sua operação.',
   caminho: 'solucoes',
   conteudo: `
 <div class="pagina-topo"><div class="container">
@@ -461,7 +496,8 @@ salvar('solucoes', layout({
   <p class="resumo">Fornecimento pensado para a realidade de cada operação térmica.</p>
 </div></div>
 <section><div class="container">
-  <div class="grid grid-3">
+  <p class="secao-sub">Cada operação térmica tem exigências próprias de especificação, consumo e programação. Escolha o seu segmento para ver os dados a informar na cotação, os produtos indicados e os artigos técnicos relacionados. A Nuxem atende São Paulo, Minas Gerais e Paraná com frota própria e atendimento 24 horas; confira as <a href="/cobertura/">regiões atendidas</a>.</p>
+  <div class="grid grid-2x2">
     ${SOLUCOES.map(s => `<div class="card card-foto"><img src="/imagens/${s.imagem}" alt="${s.imagemAlt}" loading="lazy"><h2>${s.nome}</h2><p>${s.resumo}</p><a class="saiba" href="/solucoes/${s.slug}/">Saiba mais →</a></div>`).join('\n    ')}
   </div>
 </div></section>`,
@@ -472,6 +508,22 @@ for (const s of SOLUCOES) {
   const rel = PRODUTOS.filter(p => s.produtosRelacionados.includes(p.slug));
   salvar(join('solucoes', s.slug), layout({
     title: s.title, description: s.description, caminho: `solucoes/${s.slug}`,
+    crumbNome: s.nome,
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'Service',
+      name: `Fornecimento de combustível industrial para ${s.nome.toLowerCase()}`,
+      description: s.description,
+      serviceType: 'Fornecimento de óleo combustível industrial',
+      provider: { '@id': `${EMPRESA.dominio}/#organizacao`, '@type': 'LocalBusiness', name: 'Nuxem', url: `${EMPRESA.dominio}/` },
+      areaServed: COBERTURA.map(e => ({ '@type': 'State', name: e.nome })),
+      url: `${EMPRESA.dominio}/solucoes/${s.slug}/`,
+    },
+    jsonLdExtra: s.faq?.length ? [{
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: s.faq.map(q => ({ '@type': 'Question', name: q.p, acceptedAnswer: { '@type': 'Answer', text: q.r } })),
+    }] : [],
     conteudo: `
 <div class="pagina-topo"><div class="container">
   <h1>${s.title.split('|')[0].trim()}</h1>
@@ -480,6 +532,7 @@ for (const s of SOLUCOES) {
 <div class="container"><div class="conteudo">
   <img class="foto-pagina" src="/imagens/${s.imagem}" alt="${s.imagemAlt}">
   ${s.corpo.map(par => `<p>${par}</p>`).join('\n  ')}
+  ${(s.secoes || []).map(sec => `<h2>${sec.titulo}</h2>\n  ${sec.paragrafos.map(par => `<p>${par}</p>`).join('\n  ')}`).join('\n  ')}
   <h2>Produtos indicados</h2>
   <ul>
     ${rel.map(p => `<li><a href="/produtos/${p.slug}/">${p.nome}</a> — ${p.resumo}</li>`).join('\n    ')}
@@ -488,6 +541,9 @@ for (const s of SOLUCOES) {
   <ul>
     ${s.artigosRelacionados.map(a => `<li><a href="/blog/${a}/">${a.replace(/-/g, ' ')}</a></li>`).join('\n    ')}
   </ul>
+  ${s.faq?.length ? `<h2>Perguntas frequentes</h2>\n  ${s.faq.map(q => `<h3>${q.p}</h3><p>${q.r}</p>`).join('\n  ')}` : ''}
+  <h2>Atendimento por região</h2>
+  <p>Atendemos ${COBERTURA.map(e => `<a href="/cobertura/${e.slug}/">${e.nome}</a>`).join(', ')}. Veja as condições de cada estado e outras dúvidas no <a href="/guia-oleo-bpf/faq/">FAQ sobre óleo BPF</a>.</p>
   <p><a class="btn btn-laranja" href="${ZAP}">Solicitar cotação para ${s.nome.toLowerCase()}</a></p>
 </div></div>`,
   }));
@@ -591,7 +647,7 @@ for (const p of posts) {
   const capa = existsSync(join(raiz, 'src', 'imagens', 'blog', `${p.slug}.webp`)) ? `/imagens/blog/${p.slug}.webp` : null;
   const rel = relacionados(p, posts);
   salvar(join('blog', p.slug), layout({
-    title: `${p.title} | Blog Nuxem`, description: p.description, caminho: `blog/${p.slug}`,
+    title: tituloBlog(p.title), crumbNome: p.title, description: p.description, caminho: `blog/${p.slug}`,
     studioArticleId: p.studioArticleId, studioContentHash: p.studioContentHash, language: p.language,
     ogImage: capa,
     jsonLd: {
@@ -699,7 +755,7 @@ salvar('contato', layout({
 // COBERTURA — página com os estados atendidos (SEO local MG/PR)
 salvar('cobertura', layout({
   title: 'Regiões Atendidas | Óleo BPF em SP, MG e PR | Nuxem',
-  description: 'A Nuxem entrega óleo BPF e combustíveis industriais com frota própria em São Paulo, Minas Gerais e Paraná. Belo Horizonte, Curitiba, Uberlândia e mais. Peça cotação.',
+  description: 'Óleo BPF e combustíveis industriais com frota própria em São Paulo, Minas Gerais e Paraná: Belo Horizonte, Curitiba, Uberlândia e mais.',
   caminho: 'cobertura',
   jsonLd: {
     '@context': 'https://schema.org',
@@ -723,6 +779,7 @@ salvar('cobertura', layout({
       <h2>${e.nome} (${e.uf})</h2>
       <p>${e.chamada}</p>
       <p><strong>Cidades:</strong> ${e.cidades}</p>
+      <p style="margin-top:12px"><a class="saiba" href="/cobertura/${e.slug}/">Óleo BPF e xisto em ${e.nome} →</a></p>
       <p style="margin-top:12px"><a class="btn btn-laranja" href="${ZAP}">Cotação para ${e.nome}</a></p>
     </div>`).join('\n    ')}
   </div>
@@ -732,6 +789,70 @@ salvar('cobertura', layout({
   <p class="secao-sub">Frota própria, produção sob demanda e padrão constante de qualidade — do interior de SP ao polo metalúrgico de MG e às caldeiras do PR.</p>
   <p><a class="btn" href="${ZAP}">Falar com a Nuxem agora</a></p>
 </div></section>`}));
+
+// PÁGINAS REGIONAIS — uma por estado atendido (SEO local para SP, MG e PR)
+for (const e of COBERTURA) {
+  const urlPagina = `${EMPRESA.dominio}/cobertura/${e.slug}/`;
+  const outras = COBERTURA.filter(o => o.slug !== e.slug);
+  for (const a of e.artigos) if (!existsSync(join(dirBlog, a + '.md'))) throw new Error(`Artigo regional ausente: ${a}`);
+  salvar(join('cobertura', e.slug), layout({
+    title: e.title, description: e.description, caminho: `cobertura/${e.slug}`, crumbNome: e.nome,
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'Service',
+      name: `Fornecimento de óleo BPF e óleo de xisto em ${e.nome}`,
+      description: e.description,
+      serviceType: 'Fornecimento de óleo combustível industrial',
+      provider: { '@id': `${EMPRESA.dominio}/#organizacao`, '@type': 'LocalBusiness', name: 'Nuxem', url: `${EMPRESA.dominio}/` },
+      areaServed: { '@type': 'State', name: e.nome },
+      url: urlPagina,
+    },
+    jsonLdExtra: [{
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: e.faq.map(q => ({ '@type': 'Question', name: q.p, acceptedAnswer: { '@type': 'Answer', text: q.r } })),
+    }],
+    conteudo: `
+<div class="pagina-topo"><div class="container">
+  <h1>${e.h1}</h1>
+  <p class="resumo">${e.resumo}</p>
+</div></div>
+<div class="container"><div class="conteudo">
+  ${e.paragrafos.map(par => `<p>${par}</p>`).join('\n  ')}
+  <h2>Cidades e polos atendidos em ${e.nome}</h2>
+  <p><strong>Cidades:</strong> ${e.cidades}.</p>
+  <p>${e.polos}</p>
+  <h2>Soluções por aplicação em ${e.nome}</h2>
+  <ul>
+    ${e.aplicacoes.map(slug => { const sol = SOLUCOES.find(x => x.slug === slug); return `<li><a href="/solucoes/${sol.slug}/">${sol.nome}</a> — ${sol.resumo}</li>`; }).join('\n    ')}
+  </ul>
+  <h2>Produtos disponíveis</h2>
+  <ul>
+    ${PRODUTOS.map(p => `<li><a href="/produtos/${p.slug}/">${p.nome}</a></li>`).join('\n    ')}
+  </ul>
+  <h2>Artigos sobre ${e.nome}</h2>
+  <ul>
+    ${e.artigos.map(a => `<li><a href="/blog/${a}/">${a}</a></li>`).join('\n    ')}
+  </ul>
+  <h2>Perguntas frequentes</h2>
+  <div class="faq-regional">
+  ${e.faq.map(q => `<h3>${q.p}</h3><p>${q.r}</p>`).join('\n  ')}
+  </div>
+  <p>Veja também: ${outras.map(o => `<a href="/cobertura/${o.slug}/">óleo BPF em ${o.nome}</a>`).join(' e ')}, e as <a href="/cobertura/">regiões atendidas</a>.</p>
+  <p style="margin-top:32px"><a class="btn btn-laranja" href="${ZAP}">Solicitar cotação para ${e.nome}</a></p>
+</div></div>`,
+  }));
+}
+
+// Títulos legíveis nos links de artigos das páginas regionais (mesmo tratamento das soluções).
+for (const e of COBERTURA) {
+  const caminho = join(dist, 'cobertura', e.slug, 'index.html');
+  let html = readFileSync(caminho, 'utf8');
+  for (const a of e.artigos) {
+    if (titulosPorSlug[a]) html = html.replace(`>${a}<`, `>${titulosPorSlug[a]}<`);
+  }
+  writeFileSync(caminho, html, 'utf8');
+}
 
 // ---------- redirecionamentos (links antigos do Wix → páginas novas) ----------
 const mapaRedirects = new Map(redirecionamentosLegados);
@@ -749,9 +870,17 @@ for (const [origem, destino] of mapaRedirects) {
 writeFileSync(join(dist, '_redirects'), [...new Set(regras)].join('\n') + '\n', 'utf8');
 
 // ---------- sitemap e robots ----------
+// lastmod só quando há uma data real de publicação ou atualização do conteúdo; nunca a data do build.
+const DATAS_FIXAS = { [`/${GUIA_XISTO.slug}/`]: '2026-10-19' };
+const dataIsoValida = d => typeof d === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(d);
+function entradaSitemap(caminho) {
+  const post = caminho.startsWith('/blog/') ? posts.find(x => `/blog/${x.slug}/` === caminho) : null;
+  const data = DATAS_FIXAS[caminho] || (post && (dataIsoValida(post.updated) ? post.updated : dataIsoValida(post.date) ? post.date : ''));
+  return `  <url><loc>${EMPRESA.dominio}${caminho}</loc>${data ? `<lastmod>${data}</lastmod>` : ''}</url>`;
+}
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${[...new Set(paginas)].map(p => `  <url><loc>${EMPRESA.dominio}${p}</loc></url>`).join('\n')}
+${[...new Set(paginas)].map(entradaSitemap).join('\n')}
 </urlset>`;
 writeFileSync(join(dist, 'sitemap.xml'), sitemap, 'utf8');
 writeFileSync(join(dist, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${EMPRESA.dominio}/sitemap.xml\n`, 'utf8');
@@ -848,7 +977,7 @@ if (blogBackup && existsSync(blogBackup)) {
   const paginasUnicas = [...new Set([...paginas, ...posts.map(p => `/blog/${p.slug}/`)])];
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${paginasUnicas.map(p => `  <url><loc>${EMPRESA.dominio}${p}</loc></url>`).join('\n')}
+${paginasUnicas.map(entradaSitemap).join('\n')}
 </urlset>`;
   writeFileSync(join(dist, 'sitemap.xml'), sitemap, 'utf8');
   console.log(`  + ${todosSlugs.length - arquivosBlog.length} posts restaurados do backup`);

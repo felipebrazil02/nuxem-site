@@ -170,7 +170,13 @@ test('SEO output stays consistent across clean and incremental builds, including
     assert.equal(incrementalURLs.length, cleanURLs.length + 1);
     assert.equal(incrementalURLs.length, new Set(incrementalURLs).size);
     assert.ok(incrementalURLs.includes('https://nuxemoil.com.br/blog/legacy-test/'));
-    assert.doesNotMatch(read('sitemap.xml'), /<lastmod>/);
+    // lastmod usa apenas datas reais do conteúdo (publicação/atualização), nunca a data do build.
+    const hoje = new Date().toISOString().slice(0, 10);
+    for (const [, data] of read('sitemap.xml').matchAll(/<lastmod>([^<]*)<\/lastmod>/g)) {
+      assert.match(data, /^\d{4}-\d{2}-\d{2}$/);
+      assert.notEqual(data, hoje);
+    }
+    assert.doesNotMatch(read('sitemap.xml'), /<url><loc>https:\/\/nuxemoil\.com\.br\/(produtos|contato|cobertura)\/<\/loc><lastmod>/);
     for (const url of incrementalURLs) {
       assert.ok(existsSync(join(root, 'dist', new URL(url).pathname, 'index.html')), url);
     }

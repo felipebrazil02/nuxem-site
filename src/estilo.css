@@ -269,3 +269,7 @@ form{max-width:none;grid-template-columns:1fr 1fr;gap:23px;padding:30px;backgrou
 .quote-conditions p{margin:10px 0 0}
 .quote-form .quote-help{font-size:13px;margin:0;color:#485d66}
 @media(max-width:560px){.quote-form{grid-template-columns:minmax(0,1fr)}}
+
+.grid-2x2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.faq-regional h3{margin-top:18px}
+@media(max-width:560px){.grid-2x2{grid-template-columns:1fr}}
