@@ -171,10 +171,14 @@ test('SEO output stays consistent across clean and incremental builds, including
     assert.equal(incrementalURLs.length, new Set(incrementalURLs).size);
     assert.ok(incrementalURLs.includes('https://nuxemoil.com.br/blog/legacy-test/'));
     // lastmod usa apenas datas reais do conteúdo (publicação/atualização), nunca a data do build.
-    const hoje = new Date().toISOString().slice(0, 10);
+    const datasReais = new Set(['2026-10-19']);
+    for (const arquivo of readdirSync(join(repository, 'conteudo', 'blog'))) {
+      const meta = readFileSync(join(repository, 'conteudo', 'blog', arquivo), 'utf8').replace(/\r\n/g, '\n').match(/^---\n([^]*?)\n---/)?.[1] ?? '';
+      for (const [, data] of meta.matchAll(/^(?:date|updated):\s*"?(\d{4}-\d{2}-\d{2})"?/gm)) datasReais.add(data);
+    }
     for (const [, data] of read('sitemap.xml').matchAll(/<lastmod>([^<]*)<\/lastmod>/g)) {
       assert.match(data, /^\d{4}-\d{2}-\d{2}$/);
-      assert.notEqual(data, hoje);
+      assert.ok(datasReais.has(data), `lastmod sem data de conteúdo correspondente: ${data}`);
     }
     assert.doesNotMatch(read('sitemap.xml'), /<url><loc>https:\/\/nuxemoil\.com\.br\/(produtos|contato|cobertura)\/<\/loc><lastmod>/);
     for (const url of incrementalURLs) {

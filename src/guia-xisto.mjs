@@ -33,7 +33,7 @@ export function conteudoGuiaXisto() {
 <li><a href="/blog/oleo-de-xisto-ote-para-caldeiras-industriais-vapor-queima-e-custo/">Caldeiras industriais</a>: compare consumo por tonelada de vapor, carga e condições de alimentação.</li>
 <li><a href="/blog/oleo-de-xisto-para-usinas-de-asfalto/">Usinas de asfalto</a>: identifique o equipamento consumidor e relacione combustível, produção e condições dos agregados.</li>
 <li><a href="/blog/oleo-de-xisto-para-fornos-e-secadores-industriais/">Fornos e secadores</a>: confira o regime térmico e a forma de transferência de calor.</li>
-<li><a href="/blog/oleo-de-xisto-para-a-industria-ceramica-fornos-secadores-e-abastecimento/">Indústria cerâmica</a>: avalie também os critérios de qualidade do material processado.</li>
+<li><a href="/blog/oleo-bpf-para-a-industria-ceramica-fornos-secadores-e-abastecimento/">Indústria cerâmica</a>: avalie também os critérios de qualidade do material processado.</li>
 </ul>
 <p>Em uma usina, diferencie o combustível queimado do fluido de transferência de calor e do ligante asfáltico. Veja a <a href="/blog/oleo-combustivel-oleo-termico-cap-usina-asfalto/">diferença entre óleo combustível, óleo térmico e CAP</a> antes de definir o pedido. A aprovação de um uso não autoriza empregar o mesmo produto em outro circuito.</p>
 

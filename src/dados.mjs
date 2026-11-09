@@ -30,8 +30,8 @@ export const PRODUTOS = [
     "imagem": "produto-oleo-bpf.webp",
     "imagemAlt": "Imagem ilustrativa de óleo combustível para uso industrial",
     "resumo": "Óleo combustível para caldeiras, fornos e usinas de asfalto. Compare classe, viscosidade, enxofre e custo entregue.",
-    "title": "Óleo BPF: cotação e fornecimento em SP, MG e PR | Nuxem",
-    "description": "Cote óleo BPF a partir de 5.000 L por entrega em SP, MG e PR. Informe cidade, volume e consumo para consultar preço, frete e programação mensal.",
+    "title": "Óleo BPF: preço, cotação e fornecimento em SP, MG e PR | Nuxem",
+    "description": "Cote óleo BPF a partir de 5.000 L por entrega em SP, MG e PR. Veja como comparar preço e frete e informe cidade, volume e consumo para a proposta.",
     "specs": [
       [
         "OCA1 — viscosidade a 60 °C e enxofre",
@@ -269,8 +269,8 @@ export const PRODUTOS = [
     "imagem": "produto-oleo-bpf.webp",
     "imagemAlt": "Imagem ilustrativa de óleo combustível para uso industrial",
     "resumo": "Óleo combustível OCA1 para processos térmicos compatíveis. Consulte requisitos de queima e documentação para compra.",
-    "title": "Óleo A1 (OCA1) em SP, MG e PR | Óleo BPF A1 | Nuxem",
-    "description": "Consulte óleo combustível A1 para caldeiras, fornos e usinas de asfalto em SP, MG e PR. Avalie viscosidade, enxofre e custo entregue. Peça cotação.",
+    "title": "Óleo A1 (OCA1): especificação e cotação em SP, MG e PR | Nuxem",
+    "description": "Óleo combustível A1 (OCA1) para caldeiras, fornos e usinas de asfalto em SP, MG e PR. Veja viscosidade e enxofre e peça cotação à Nuxem.",
     "specs": [
       [
         "Classificação",
@@ -353,8 +353,8 @@ export const PRODUTOS = [
     "imagem": "produto-oleo-bpf.webp",
     "imagemAlt": "Imagem ilustrativa de óleo combustível para uso industrial",
     "resumo": "Óleo de xisto OTE para caldeiras, fornos e usinas de asfalto. Consulte a especificação adequada à sua operação.",
-    "title": "Óleo de Xisto OTE: cotação em SP, MG e PR | Nuxem",
-    "description": "Cote óleo de xisto OTE em SP, MG e PR para consumo a partir de 200 mil L/mês. Consulte preço e disponibilidade com planejamento mensal.",
+    "title": "Óleo de Xisto (OTE): cotação em SP, MG e PR | Nuxem",
+    "description": "Óleo de xisto (OTE) para caldeiras e fornos em SP, MG e PR, para consumo a partir de 200 mil L/mês. Veja especificação, preço e disponibilidade.",
     "specs": [
       [
         "Viscosidade a 60 °C — ASTM D445",
@@ -673,7 +673,7 @@ export const SOLUCOES = [
       ] },
       { titulo: 'Dados para a cotação', paragrafos: [
         'Envie cidade, aplicação, modelo do equipamento, combustível atual, regime de operação e consumo. Informe se a instalação já está aprovada para o produto ou se a consulta faz parte de um estudo.',
-        'Para secadores e estufas agrícolas, veja os artigos sobre <a href="/blog/oleo-combustivel-para-estufas-e-secadores-agricolas/">estufas e secadores agrícolas</a> e <a href="/blog/oleo-combustivel-para-estufas-e-secadores-agricolas-no-parana/">secadores no Paraná</a>. Para cerâmica, veja <a href="/blog/oleo-de-xisto-para-a-industria-ceramica-fornos-secadores-e-abastecimento/">fornos e secadores cerâmicos com óleo de xisto</a>.',
+        'Para secadores e estufas agrícolas, veja os artigos sobre <a href="/blog/oleo-combustivel-para-estufas-e-secadores-agricolas/">estufas e secadores agrícolas</a> e <a href="/blog/oleo-combustivel-para-estufas-e-secadores-agricolas-no-parana/">secadores no Paraná</a>. Para cerâmica, veja <a href="/blog/oleo-bpf-para-a-industria-ceramica-fornos-secadores-e-abastecimento/">fornos e secadores cerâmicos com óleo de xisto</a>.',
       ] },
       { titulo: 'Como comparar o resultado no processo', paragrafos: [
         'Compare o consumo para a mesma entrega térmica ou a mesma produção, incluindo os critérios de qualidade do material. Considere os custos de adaptação e de auxiliares, como descreve a <a href="/blog/reducao-de-custos-com-substituicao-de-oleo-combustivel/">análise de custo de substituição de combustível</a>.',
@@ -685,9 +685,12 @@ export const SOLUCOES = [
       { p: 'A Nuxem atende estufas e secadores agrícolas?', r: 'Sim, em São Paulo, Minas Gerais e Paraná. Informe o endereço, o equipamento e o consumo para confirmar produto, prazo e disponibilidade.' },
     ],
     produtosRelacionados: ['oleo-bpf', 'oleo-de-xisto', 'oleos-alternativos'],
-    artigosRelacionados: ['oleo-de-xisto-para-fornos-e-secadores-industriais', 'oleo-combustivel-para-estufas-e-secadores-agricolas', 'oleo-de-xisto-para-a-industria-ceramica-fornos-secadores-e-abastecimento', 'oleo-bpf-para-a-industria-ceramica-fornos-secadores-e-abastecimento', 'queima-de-oleo-de-xisto-ote-atomizacao-e-ajuste-de-queimador'],
+    artigosRelacionados: ['oleo-de-xisto-para-fornos-e-secadores-industriais', 'oleo-combustivel-para-estufas-e-secadores-agricolas', 'oleo-bpf-para-a-industria-ceramica-fornos-secadores-e-abastecimento', 'queima-de-oleo-de-xisto-ote-atomizacao-e-ajuste-de-queimador'],
   },
 ];
+
+// Artigos de setor que reúnem óleo BPF e óleo de xisto (fusão de 09/11/2026).
+export const SETORES_BPF_XISTO = ['oleo-bpf-para-a-industria-de-papel-e-celulose', 'oleo-bpf-para-industria-textil-vapor-em-tinturarias-e-lavanderias', 'oleo-bpf-para-a-industria-ceramica-fornos-secadores-e-abastecimento', 'oleo-bpf-para-laticinios-e-agroindustria-de-leite-em-mg', 'oleo-bpf-para-geracao-de-vapor-na-industria-de-alimentos'];
 
 export const HOME = {
   title: 'Fornecedor de Óleo BPF e Óleo de Xisto em SP, MG e PR | Nuxem',
@@ -779,7 +782,7 @@ export const COBERTURA = [
 export const PILAR = {
   slug: 'guia-oleo-bpf',
   title: 'Óleo BPF: o que é, para que serve e tipos | Nuxem',
-  description: 'Saiba o que é óleo BPF, o significado da sigla, tipos e aplicações. Veja o que conferir na especificação e como consultar fornecimento para sua indústria.',
+  description: 'BPF significa Baixo Ponto de Fluidez: combustível industrial de caldeiras, fornos e usinas de asfalto. Veja tipos, classes ANP e como comparar antes de comprar.',
   h1: 'Óleo BPF: o que é, tipos e aplicações na indústria',
   resumo: 'Entenda o significado de BPF, onde o combustível é utilizado e como comparar os tipos e a especificação antes de comprar para caldeiras, fornos ou usinas de asfalto.',
   secoes: [

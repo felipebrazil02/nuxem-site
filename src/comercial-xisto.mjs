@@ -18,7 +18,7 @@ export function comercialXisto(empresa) {
       <h3>Aplicações e informações para a cotação</h3>
       <ul><li><a href="/solucoes/caldeiras/">Caldeiras industriais</a>: informe o modelo do queimador, o consumo atual e a demanda de vapor.</li>
       <li><a href="/blog/oleo-de-xisto-para-usinas-de-asfalto/">Usinas de asfalto</a>: informe a previsão de produção, o combustível utilizado e a frequência de abastecimento.</li>
-      <li><a href="/blog/oleo-de-xisto-para-a-industria-ceramica-fornos-secadores-e-abastecimento/">Fornos e secadores industriais</a>: descreva o regime de operação e os requisitos do equipamento.</li></ul>
+      <li><a href="/blog/oleo-bpf-para-a-industria-ceramica-fornos-secadores-e-abastecimento/">Fornos e secadores industriais</a>: descreva o regime de operação e os requisitos do equipamento.</li></ul>
       <h2>Avalie a troca de BPF por óleo de xisto</h2>
       <p>Para decidir pela troca, compare o produto ofertado com o combustível que sua operação já utiliza. Além do preço, considere o consumo para a mesma produção, o rendimento do processo e eventuais adaptações. A avaliação deve usar as especificações dos produtos e as condições reais da instalação.</p>
       <p>Veja <a href="/blog/oleo-de-xisto-ote-vs-oleo-bpf-diferencas-praticas-para-a-industria/">as diferenças entre óleo de xisto e BPF</a> e <a href="/blog/como-migrar-sua-caldeira-ou-forno-para-oleo-de-xisto-ote/">como planejar a mudança de combustível</a> com o responsável técnico.</p>
