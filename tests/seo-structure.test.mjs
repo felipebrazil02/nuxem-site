@@ -98,3 +98,38 @@ test('structured data, breadcrumbs, regional pages and solution pages are genera
     rmSync(root, { recursive: true, force: true });
   }
 });
+
+test('APF, A1, B1 and BTE product pages carry the extended sections, comparison tables and FAQ schema', () => {
+  const root = construir();
+  try {
+    const dist = join(root, 'dist');
+    for (const slug of ['oleo-apf', 'oleo-a1', 'oleo-b1', 'oleo-bte']) {
+      const html = readFileSync(join(dist, 'produtos', slug, 'index.html'), 'utf8');
+      const principal = html.match(/<main id="principal">([^]*?)<\/main>/)[1];
+      const palavras = principal.replace(/<[^>]+>/g, ' ').match(/\p{L}+/gu).length;
+      assert.ok(palavras >= 950, `${slug}: ${palavras} palavras`);
+      const blocos = [...html.matchAll(/<script type="application\/ld\+json">([^]*?)<\/script>/g)].map(m => JSON.parse(m[1]));
+      assert.equal(blocos[0]['@type'], 'WebPage');
+      const faq = blocos.find(b => b['@type'] === 'FAQPage');
+      assert.ok(faq && faq.mainEntity.length >= 6, `${slug}: FAQPage`);
+      for (const q of faq.mainEntity) assert.doesNotMatch(q.acceptedAnswer.text, /<[a-z]/i);
+      assert.equal([...html.matchAll(/<h1\b/g)].length, 1);
+      assert.match(principal, /Volume mínimo, disponibilidade e prazo são confirmados na cotação/);
+    }
+    // As tabelas de classes destacam a própria classe e usam apenas os limites já publicados.
+    const a1 = readFileSync(join(dist, 'produtos', 'oleo-a1', 'index.html'), 'utf8');
+    assert.match(a1, /<tr aria-current="true"><td><strong>OCA1<\/strong><\/td><td>até 2,0% em massa<\/td><td>até 620 mm²\/s<\/td><\/tr>/);
+    const b1 = readFileSync(join(dist, 'produtos', 'oleo-b1', 'index.html'), 'utf8');
+    assert.match(b1, /<tr aria-current="true"><td><strong>OCB1<\/strong><\/td><td>até 1,0% em massa<\/td><td>até 620 mm²\/s<\/td><\/tr>/);
+    // Links internos novos apontam para páginas que existem.
+    for (const slug of ['oleo-apf', 'oleo-a1', 'oleo-b1', 'oleo-bte']) {
+      const html = readFileSync(join(dist, 'produtos', slug, 'index.html'), 'utf8');
+      for (const [, href] of html.matchAll(/href="(\/[^"#?]*)"/g)) {
+        if (/\.[a-z0-9]+$/i.test(href)) continue;
+        assert.ok(existsSync(join(dist, href, 'index.html')), `${href} em ${slug}`);
+      }
+    }
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});

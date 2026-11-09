@@ -11,6 +11,7 @@ import { comercialBpf } from './src/comercial-bpf.mjs';
 import { comercialXisto } from './src/comercial-xisto.mjs';
 import { GUIA_XISTO, conteudoGuiaXisto } from './src/guia-xisto.mjs';
 import { conteudoPrivacidade } from './src/privacidade.mjs';
+import { APROFUNDAMENTO } from './src/aprofundamento-produtos.mjs';
 
 const raiz = dirname(fileURLToPath(import.meta.url));
 const dirBlog = join(raiz, 'conteudo', 'blog');
@@ -395,6 +396,9 @@ salvar('produtos', layout({
 for (const p of PRODUTOS) {
   const comercial = p.slug === 'oleo-bpf' ? comercialBpf(EMPRESA)
     : p.slug === 'oleo-de-xisto' ? comercialXisto(EMPRESA) : null;
+  const extra = APROFUNDAMENTO[p.slug];
+  const faqCompleto = [...p.faq, ...(extra?.faq || [])];
+  const secoesExtra = (extra?.secoes || []).map(sec => `<h2>${sec.titulo}</h2>\n  ${sec.blocos.map(b => (b.startsWith('<') ? b : `<p>${b}</p>`)).join('\n  ')}`).join('\n  ');
   salvar(join('produtos', p.slug), layout({
     title: p.title, description: p.description, caminho: `produtos/${p.slug}`,
     jsonLd: {
@@ -407,6 +411,11 @@ for (const p of PRODUTOS) {
       // A página continua indexável; não criar preços ou avaliações para obter rich results.
       url: `${EMPRESA.dominio}/produtos/${p.slug}/`,
     },
+    jsonLdExtra: extra?.faq?.length ? [{
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faqCompleto.map(q => ({ '@type': 'Question', name: q.p, acceptedAnswer: { '@type': 'Answer', text: q.r.replace(/<[^>]+>/g, '') } })),
+    }] : [],
     conteudo: `
 <div class="pagina-topo"><div class="container">
   <h1>${p.h1 || p.nome}</h1>
@@ -424,11 +433,12 @@ for (const p of PRODUTOS) {
   ${p.observacaoSpecs ? `<p class="nota-tecnica">${p.observacaoSpecs}</p>` : ''}
   ${p.documentos?.length ? `<aside class="documentos-produto" aria-label="Fontes e documentos técnicos"><h3>Fontes e documentos técnicos</h3><ul>${p.documentos.map(d => `<li><a href="${d.url}">${d.titulo}</a></li>`).join('')}</ul></aside>` : ''}
   <p><strong>Aplicações:</strong> ${p.aplicacoes}</p>
+  ${secoesExtra}
 ${comercial?.cotacao || ''}
 ${p.orientacao ? `  <h2>${comercial ? 'Documentação para confirmar a compra' : 'Como solicitar sua cotação'}</h2><p>${p.orientacao}</p>` : ''}
   <h2>Perguntas sobre ${p.nome}</h2>
   ${comercial?.perguntas || ''}
-  ${p.faq.map(({p: pergunta, r}) => `<h3>${pergunta}</h3><p>${r}</p>`).join('\n  ')}
+  ${faqCompleto.map(({p: pergunta, r}) => `<h3>${pergunta}</h3><p>${r}</p>`).join('\n  ')}
   ${p.slug === 'oleo-bpf' ? '<p>Para outras dúvidas sobre armazenamento, aquecimento e especificação, consulte as <a href="/guia-oleo-bpf/faq/">perguntas frequentes sobre óleo BPF</a>.</p>' : ''}
 ${leituras(`produtos/${p.slug}`)}
   <p><a class="btn btn-laranja" href="${comercial?.whatsapp || ZAP}">Solicitar cotação de ${p.nome}</a></p>
