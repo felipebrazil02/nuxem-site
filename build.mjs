@@ -3,6 +3,7 @@
 import { readdirSync, readFileSync, writeFileSync, mkdirSync, cpSync, rmSync, existsSync, statSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { createHash } from 'node:crypto';
 import { EMPRESA, PRODUTOS, SOLUCOES, HOME, CONTATO, PILAR, COBERTURA, SETORES_BPF_XISTO } from './src/dados.mjs';
 import { redirecionamentosLegados, destinoLegado } from './src/redirecionamentos.mjs';
 import { LEITURAS, CATEGORIAS_BLOG } from './src/leituras.mjs';
@@ -302,6 +303,7 @@ salvar('.', layout({
     ],
     openingHoursSpecification: { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'], opens: '00:00', closes: '23:59' },
     vatID: EMPRESA.cnpj,
+    sameAs: EMPRESA.perfis,
   },
   jsonLdExtra: [{
     '@context': 'https://schema.org',
@@ -893,7 +895,6 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 ${[...new Set(paginas)].map(entradaSitemap).join('\n')}
 </urlset>`;
 writeFileSync(join(dist, 'sitemap.xml'), sitemap, 'utf8');
-writeFileSync(join(dist, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${EMPRESA.dominio}/sitemap.xml\n`, 'utf8');
 
 console.log(`Site gerado: ${paginas.length} páginas em dist/`);
 
@@ -1009,3 +1010,58 @@ function atualizarLinksLegados(diretorio) {
   }
 }
 atualizarLinksLegados(dist);
+
+// ---------- llms.txt, robots e IndexNow ----------
+// robots.txt: libera tudo e nomeia os robôs de busca e de IA, para não haver dúvida de que podem ler o site.
+const ROBOS = ['Googlebot', 'Bingbot', 'GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-SearchBot', 'Claude-User', 'PerplexityBot', 'Perplexity-User', 'Google-Extended', 'Applebot-Extended', 'CCBot'];
+writeFileSync(join(dist, 'robots.txt'), `User-agent: *\nAllow: /\n\n${ROBOS.map(r => `User-agent: ${r}`).join('\n')}\nAllow: /\n\nSitemap: ${EMPRESA.dominio}/sitemap.xml\n`, 'utf8');
+
+// llms.txt: resumo do site em Markdown para assistentes de IA. Só repete o que as páginas já publicam.
+const umaLinha = t => String(t || '').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+const itemLlms = (caminho, nome, descricao) => `- [${umaLinha(nome)}](${EMPRESA.dominio}${caminho})${descricao ? `: ${umaLinha(descricao)}` : ''}`;
+const postsLlms = posts.filter(p => existsSync(join(dist, 'blog', p.slug, 'index.html'))).sort((a, b) => a.slug.localeCompare(b.slug));
+const llms = `# ${EMPRESA.nome}
+
+> ${umaLinha(HOME.description)}
+
+Nuxem Comércio e Transporte de Óleos LTDA (CNPJ ${EMPRESA.cnpj}) fornece óleo combustível industrial para ${EMPRESA.regiao}. Base: ${EMPRESA.endereco}. Pedidos de óleo BPF a partir de 5.000 litros por entrega; preço, prazo e disponibilidade são confirmados na cotação.
+
+Contato para cotação: WhatsApp +${EMPRESA.whatsappPrincipal}, telefone ${EMPRESA.telefone}, e-mail ${EMPRESA.email}, ${EMPRESA.dominio}/contato/
+
+## Produtos
+
+${PRODUTOS.map(p => itemLlms(`/produtos/${p.slug}/`, p.nome, p.description)).join('\n')}
+
+## Aplicações
+
+${SOLUCOES.map(s => itemLlms(`/solucoes/${s.slug}/`, s.nome, s.description)).join('\n')}
+
+## Regiões atendidas
+
+${COBERTURA.map(e => itemLlms(`/cobertura/${e.slug}/`, e.nome, e.description)).join('\n')}
+
+## Guias técnicos
+
+${itemLlms(`/${PILAR.slug}/`, PILAR.h1, PILAR.description)}
+${itemLlms(`/${GUIA_XISTO.slug}/`, 'Guia do óleo de xisto', GUIA_XISTO.description)}
+${itemLlms('/guia-oleo-bpf/faq/', 'Perguntas frequentes sobre óleo BPF', '')}
+
+## Artigos
+
+${postsLlms.map(p => itemLlms(`/blog/${p.slug}/`, p.title || p.titulo || p.slug, p.description || '')).join('\n')}
+`;
+writeFileSync(join(dist, 'llms.txt'), llms, 'utf8');
+
+// IndexNow: arquivo da chave e impressão digital de cada página. O plugin em netlify/plugins/indexnow
+// compara com a versão publicada e avisa o Bing apenas das URLs que mudaram.
+writeFileSync(join(dist, `${EMPRESA.indexNowKey}.txt`), EMPRESA.indexNowKey, 'utf8');
+const urlsFinais = [...readFileSync(join(dist, 'sitemap.xml'), 'utf8').matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
+const digitais = {};
+for (const url of urlsFinais) {
+  const arquivo = join(dist, url.slice(EMPRESA.dominio.length), 'index.html');
+  if (!existsSync(arquivo)) continue;
+  const html = readFileSync(arquivo, 'utf8');
+  const partes = [html.match(/<title>[^]*?<\/title>/)?.[0], html.match(/<meta name="description"[^>]*>/)?.[0], html.match(/<main[^]*?<\/main>/)?.[0] ?? html];
+  digitais[url] = createHash('sha256').update(partes.join('\n')).digest('hex').slice(0, 16);
+}
+writeFileSync(join(dist, 'indexnow-manifest.json'), JSON.stringify(digitais), 'utf8');
