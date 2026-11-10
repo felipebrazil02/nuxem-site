@@ -12,6 +12,10 @@ export const EMPRESA = {
   email: 'contato@nuxemoil.com',
   endereco: 'Av Brasília, 2242 - Vila Norma, Salto/SP, CEP 13327-896',
   cnpj: '47.626.641/0001-10',
+  // Perfis oficiais da empresa fora do site (schema sameAs).
+  perfis: ['https://www.instagram.com/nuxemoil/'],
+  // Chave pública do IndexNow (Bing); o arquivo <chave>.txt é gerado na raiz do site.
+  indexNowKey: 'a8d0465dafd8afc044d06d5a1933bf4c',
   regiao: 'todo o estado de São Paulo, Minas Gerais e Paraná',
   cidades: 'São Paulo, Campinas, Sorocaba, Jundiaí, Piracicaba, Ribeirão Preto, Belo Horizonte, Betim, Contagem, Uberlândia, Juiz de Fora, Curitiba, Araucária, Ponta Grossa, Londrina, Maringá e São José dos Pinhais',
   diferenciais: [

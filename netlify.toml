@@ -21,3 +21,7 @@ skip_processing = true
 
 [build.environment]
 NODE_VERSION = "22"
+
+# Avisa o Bing (IndexNow) das páginas alteradas a cada publicação.
+[[plugins]]
+package = "/netlify/plugins/indexnow"
