@@ -203,7 +203,7 @@ test('SEO output stays consistent across clean and incremental builds, including
       assert.equal(product.additionalProperty, undefined, 'Consultation guidance is not a certified product property');
     }
     assert.match(read('produtos/oleo-bpf/index.html'), /PCS ou PCI em kcal\/kg ou MJ\/kg/);
-    assert.match(read('produtos/oleo-bpf/index.html'), /<h1>Fornecedor de óleo BPF para indústria em SP, MG e PR<\/h1>/);
+    assert.match(read('produtos/oleo-bpf/index.html'), /<h1>Óleo BPF para indústria: fornecedor em SP, MG e PR<\/h1>/);
     assert.match(read('produtos/oleo-bpf/index.html'), /a partir de 5\.000 litros/);
     assert.match(read('produtos/oleo-de-xisto/index.html'), /<h1>Fornecedor de óleo de xisto OTE em SP, MG e PR<\/h1>/);
     assert.match(read('produtos/oleo-de-xisto/index.html'), /consumo a partir de 200 mil litros\/mês/);

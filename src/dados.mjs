@@ -30,7 +30,7 @@ export const PRODUTOS = [
   {
     "slug": "oleo-bpf",
     "nome": "Óleo BPF",
-    "h1": "Fornecedor de óleo BPF para indústria em SP, MG e PR",
+    "h1": "Óleo BPF para indústria: fornecedor em SP, MG e PR",
     "imagem": "produto-oleo-bpf.webp",
     "imagemAlt": "Imagem ilustrativa de óleo combustível para uso industrial",
     "resumo": "Óleo combustível para caldeiras, fornos e usinas de asfalto. Compare classe, viscosidade, enxofre e custo entregue.",
@@ -873,6 +873,9 @@ export const PILAR = {
         { p: 'Qual o poder calorífico do óleo BPF?', r: 'Solicite o valor do produto cotado em kcal/kg ou MJ/kg, com identificação de PCS ou PCI. Use a mesma base ao comparar propostas ou estimar consumo.' },
         { p: 'Precisa aquecer o óleo BPF para usar?', r: 'A necessidade e a temperatura de aquecimento dependem da viscosidade do produto, do ambiente e dos limites de bombas e queimadores. Consulte a documentação e o fabricante do equipamento.' },
         { p: 'Qual a diferença entre BPF A1 e B1?', r: 'A1 pertence à classe de maior teor de enxofre; B1, à de menor teor. Confirme os limites vigentes e os dados do produto ofertado. A escolha também deve atender às exigências ambientais da instalação.' },
+        { p: 'Óleo diesel pode substituir o óleo BPF?', r: 'Não diretamente. O diesel é um combustível bem mais leve, com viscosidade e atomização diferentes, e o queimador ajustado para BPF não queima diesel corretamente sem adaptação. A troca exige avaliação do fabricante do queimador e comparação do custo por energia útil, não apenas do preço por litro.' },
+        { p: 'Qual legislação vale para comercializar óleo BPF?', r: 'A comercialização de combustíveis é regulada pela ANP, que exige autorização das empresas que atuam no setor. A especificação do óleo combustível segue a Resolução ANP nº 899/2022, com classes por viscosidade e teor de enxofre. Na compra, peça a ficha de dados de segurança (FDS) e o laudo ou certificado do lote.' },
+        { p: 'Como determinar a densidade do óleo BPF?', r: 'A densidade é medida em laboratório e informada no laudo do lote, sempre com a temperatura de referência. Use esse valor para converter litros em quilos ao comparar propostas e calcular consumo. Densidade relativa é adimensional e não deve ser confundida com massa específica em kg/m³.' },
         { p: 'Quanto tempo dura o óleo BPF armazenado?', r: 'A condição de uso após armazenamento depende do produto, do tempo e do controle de água, sedimentos e temperatura. Consulte a orientação do fornecedor e avalie o combustível antes de usar um estoque antigo.' },
       ],
     },
