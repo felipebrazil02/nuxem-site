@@ -2,14 +2,15 @@
 // Todo número vem dos dados já publicados nas próprias páginas (limites de classe da ANP,
 // laudo da amostra APF, portfólio de referência do BTE) ou dos artigos do blog. Nada é inventado.
 
-const tabelaClasses = destaque => `<table class="specs"><caption>Limites de classe da ANP para óleos combustíveis (viscosidade a 60 °C)</caption><thead><tr><th scope="col">Classe</th><th scope="col">Enxofre (limite da classe)</th><th scope="col">Viscosidade (limite da classe)</th></tr></thead><tbody>${[
+export const tabelaClasses = destaque => `<table class="specs"><caption>Limites de classe da ANP para óleos combustíveis (viscosidade a 60 °C)</caption><thead><tr><th scope="col">Classe</th><th scope="col">Enxofre (limite da classe)</th><th scope="col">Viscosidade (limite da classe)</th></tr></thead><tbody>${[
   ['OCA1', 'até 2,0% em massa', 'até 620 mm²/s'],
   ['OCA2', 'até 2,0% em massa', 'até 960 mm²/s'],
   ['OCB1', 'até 1,0% em massa', 'até 620 mm²/s'],
   ['OCB2', 'até 1,0% em massa', 'até 960 mm²/s'],
 ].map(([c, s, v]) => `<tr${c === destaque ? ' aria-current="true"' : ''}><td>${c === destaque ? `<strong>${c}</strong>` : c}</td><td>${s}</td><td>${v}</td></tr>`).join('')}</tbody></table>`;
 
-const notaTabela = '<p class="nota-tecnica">São requisitos da classe, não resultados de um lote. Confirme a especificação vigente e os dados do produto cotado.</p>';
+export const notaTabelaClasses = '<p class="nota-tecnica">São requisitos da classe, não resultados de um lote. Confirme a especificação vigente e os dados do produto cotado.</p>';
+const notaTabela = notaTabelaClasses;
 
 const lista = itens => `<ul>${itens.map(i => `<li>${i}</li>`).join('')}</ul>`;
 

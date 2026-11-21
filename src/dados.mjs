@@ -785,8 +785,8 @@ export const COBERTURA = [
 
 export const PILAR = {
   slug: 'guia-oleo-bpf',
-  title: 'Óleo BPF: o que é, para que serve e tipos | Nuxem',
-  description: 'BPF significa Baixo Ponto de Fluidez: combustível industrial de caldeiras, fornos e usinas de asfalto. Veja tipos, classes ANP e como comparar antes de comprar.',
+  title: 'O que é óleo BPF? Classes A1, A2, B1, B2 e usos | Nuxem',
+  description: 'Óleo BPF (Baixo Ponto de Fluidez) é óleo combustível pesado para caldeiras, fornos e usinas de asfalto. Veja as classes ANP: enxofre até 2,0% ou 1,0% e viscosidade até 620 ou 960 mm²/s.',
   h1: 'Óleo BPF: o que é, tipos e aplicações na indústria',
   resumo: 'Entenda o significado de BPF, onde o combustível é utilizado e como comparar os tipos e a especificação antes de comprar para caldeiras, fornos ou usinas de asfalto.',
   secoes: [
@@ -797,6 +797,7 @@ export const PILAR = {
         'O poder calorífico, o ponto de fluidez e a viscosidade devem ser confirmados para o produto fornecido. A denominação comercial BPF não define sozinha as condições de bombeamento ou atomização.',
         'A ANP apresenta a Resolução nº 899/2022 como referência para óleos combustíveis. As classes A e B distinguem requisitos de enxofre e viscosidade; consulte a especificação vigente na compra.',
       ],
+      tabelaClasses: true,
     },
     {
       titulo: 'Tipos de Óleo BPF e Combustíveis Relacionados',

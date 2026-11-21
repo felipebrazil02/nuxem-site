@@ -12,7 +12,7 @@ import { comercialBpf } from './src/comercial-bpf.mjs';
 import { comercialXisto } from './src/comercial-xisto.mjs';
 import { GUIA_XISTO, conteudoGuiaXisto } from './src/guia-xisto.mjs';
 import { conteudoPrivacidade } from './src/privacidade.mjs';
-import { APROFUNDAMENTO } from './src/aprofundamento-produtos.mjs';
+import { APROFUNDAMENTO, tabelaClasses, notaTabelaClasses } from './src/aprofundamento-produtos.mjs';
 
 const raiz = dirname(fileURLToPath(import.meta.url));
 const dirBlog = join(raiz, 'conteudo', 'blog');
@@ -357,8 +357,8 @@ salvar('.', layout({
 
 // PRODUTOS (índice) — com schema ItemList para rich snippet
 salvar('produtos', layout({
-  title: 'Óleo BPF, Xisto, BTE e Combustíveis Industriais | Nuxem',
-  description: 'Compare óleo BPF, xisto OTE, APF, A1, B1, BTE e alternativas. Consulte especificação e fornecimento em SP, MG e PR. Solicite cotação à Nuxem.',
+  title: 'Óleo combustível industrial: BPF, A1, B1, xisto e BTE | Nuxem',
+  description: 'Compare os óleos combustíveis industriais: BPF, OCA1, OCB1, APF, xisto OTE e BTE. Veja enxofre e viscosidade por classe ANP e peça cotação em SP, MG e PR.',
   caminho: 'produtos',
   jsonLd: {
     '@context': 'https://schema.org',
@@ -373,7 +373,7 @@ salvar('produtos', layout({
   },
   conteudo: `
 <div class="pagina-topo"><div class="container">
-  <h1>Combustíveis industriais Nuxem</h1>
+  <h1>Óleo combustível industrial: BPF, A1, B1, xisto, BTE e APF</h1>
   <p class="resumo">Óleo BPF, xisto OTE, APF, A1, B1, BTE e alternativas para processos térmicos. Atendimento em São Paulo, Minas Gerais e Paraná.</p>
 </div></div>
 <section><div class="container">
@@ -387,6 +387,10 @@ salvar('produtos', layout({
   <table class="specs"><thead><tr><th scope="col">Produto</th><th scope="col">O que conferir na proposta</th></tr></thead><tbody>
     ${PRODUTOS.map(p => `<tr><td><a href="/produtos/${p.slug}/">${p.nome}</a></td><td>${p.criterio}</td></tr>`).join('\n    ')}
   </tbody></table>
+  <h3>Classes de óleo combustível da ANP</h3>
+  ${tabelaClasses()}
+  ${notaTabelaClasses}
+  <p>O <a href="/produtos/oleo-de-xisto/#dados-tecnicos">óleo de xisto OTE</a> tem especificação de referência própria: enxofre máximo de 1,0% em massa e PCS de 10.170 kcal/kg no catálogo publicado.</p>
   <p>Compare valores na mesma unidade, distinguindo litros e massa, PCS e PCI. Inclua frete, rendimento, aquecimento e custos de adaptação. Veja a <a href="/blog/comparacao-tecnica-oleo-de-xisto-bte-bpf-e-oleos-alternativos/">comparação técnica entre combustíveis</a> e o <a href="/blog/como-especificar-o-oleo-combustivel-certo-para-seu-queimador/">guia de especificação para o queimador</a>.</p>
   <h2>Dados para solicitar uma cotação</h2>
   <p>Informe cidade, volume, consumo, combustível atual, equipamento e restrições da operação. Solicite ficha técnica, ficha de dados de segurança, condições de entrega e identificação do produto. Consulte o <a href="/blog/como-preparar-uma-solicitacao-de-cotacao-de-oleo-combustivel-industrial/">roteiro de cotação</a> e as <a href="/cobertura/">regiões atendidas</a>.</p>
@@ -465,6 +469,7 @@ salvar(PILAR.slug, layout({
   ` : `
     <h2>${s.titulo}</h2>
     ${(s.paragrafos || []).map(p => `<p>${p}</p>`).join('\n')}
+    ${s.tabelaClasses ? tabelaClasses() + notaTabelaClasses : ''}
     ${s.lista ? `<ul>${s.lista.map(i => i.link ? `<li><a href="${i.link}">${i.texto}</a></li>` : `<li>${i.texto}</li>`).join('')}</ul>` : ''}
   `).join('\n')}
   ${leituras(PILAR.slug)}

@@ -1,12 +1,12 @@
 ---
-title: "Óleo BPF por litro, quilo ou tonelada: como cotar"
-description: "Compare cotações de óleo BPF por litro, kg ou tonelada. Entenda a conversão com massa específica documentada e consulte preço, frete e fornecimento na Nuxem."
+title: "Óleo BPF: quantos kg tem 1 litro e como converter em tonelada"
+description: "1 t = 1.000 kg; litro vira kg pela massa específica do lote. Veja a conta, onde achar o dado no laudo e como comparar cotações por L, kg ou t."
 date: 2026-09-12
 slugOriginal: ""
 studioArticleId: "7030bc51-e7ed-4845-bca5-b2903d481814"
 studioContentHash: "c0ee3e247ba9e964cb6d8bdcba1a22f2e61fd6de3f935a72ffc4ed2b4259d832"
 language: "pt"
-updated: 2026-10-19
+updated: 2026-11-21
 category: compra
 ---
 
