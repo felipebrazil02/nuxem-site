@@ -59,6 +59,13 @@ const grupos = [
   ['/blog/normas-anp-para-oleo-combustivel-industrial/', ['óleo-bpf-impacto-ambiental-e-conformidade', 'óleo-bpf-redução-de-emissões-e-sustentabilidade']],
   ['/solucoes/caldeiras/', ['óleo-combustível-para-caldeira-industrial', 'melhores-combustíveis-para-caldeiras-industriais', 'principais-causas-de-instabilidade-termica']],
   ['/solucoes/usinas-de-asfalto/', ['óleo-combustível-para-usina-de-asfalto', 'óleo-combustível-em-usinas-de-asfalto']],
+  // 404 do Search Console conferidos em 21/11/2026 que têm conteúdo equivalente no site atual.
+  ['/blog/manutencao-preventiva-em-sistemas-de-armazenamento-de-oleo-bpf/', ['manutencao-preventiva-armazenamento-oleo-bpf']],
+  ['/blog/oleo-de-xisto-ote-vs-oleo-bpf-diferencas-praticas-para-a-industria/', ['óleo-de-xisto-vs-bpf-qual-faz-mais-sentido']],
+  ['/produtos/oleo-b1/', ['oleo-combustivel-b1-especificacoes-e-aplicacoes-em-caldeiras-industriais']],
+  ['/blog/ponto-de-fluidez-oleo-combustivel-armazenamento-bombeamento/', ['oleo-bpf-viscosidade-em-climas-extremos']],
+  ['/solucoes/caldeiras/', ['oleo-combustivel-para-caldeiras-eficiencia-termica']],
+  ['/produtos/oleo-bte/', ['oleo-bte-para-forno-quando-vale-a-pena']],
 ];
 
 export const redirecionamentosLegados = new Map([
