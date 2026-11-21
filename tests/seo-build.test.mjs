@@ -210,7 +210,6 @@ test('SEO output stays consistent across clean and incremental builds, including
     for (const slug of [
       'como-preparar-uma-solicitacao-de-cotacao-de-oleo-combustivel-industrial',
       'ficha-tecnica-fds-e-laudo-de-oleo-combustivel-como-ler-antes-de-comprar',
-      'oleo-combustivel-para-estufas-e-secadores-agricolas-no-parana',
       'oleo-combustivel-para-estufas-e-secadores-agricolas',
       'ponto-de-fulgor-oleo-combustivel-armazenamento',
       'reducao-de-custos-com-substituicao-de-oleo-combustivel',

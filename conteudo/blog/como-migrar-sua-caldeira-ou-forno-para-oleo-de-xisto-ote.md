@@ -3,7 +3,7 @@ title: "Migração para óleo de xisto: avaliação e fornecimento"
 description: "Planeje a troca para óleo de xisto em caldeiras e fornos: compatibilidade, estoque e critérios de avaliação antes de consultar fornecimento."
 date: "2026-10-06"
 slugOriginal: ""
-updated: 2026-10-20
+updated: 2026-11-21
 category: operacao
 ---
 
@@ -32,6 +32,24 @@ Um queimador exclusivo para gás não deve ser tratado como apto a óleo sem ava
 Defina o destino do estoque anterior, a estratégia de recebimento e os cuidados com [armazenamento e compatibilidade do OTE](/blog/armazenamento-e-estabilidade-do-oleo-de-xisto-ote/). A mistura deve ser avaliada; não a use como atalho para evitar o planejamento.
 
 Antes do teste, estabeleça condições de carga, indicadores, duração e critérios de aceitação. Inclua responsáveis pelo acompanhamento e a conduta em caso de desvio. O procedimento deve respeitar o fabricante, as proteções e as regras da instalação.
+
+## Documentos e apoio técnico na consulta
+
+Peça ficha técnica, ficha de dados de segurança e documentação de qualidade, e use cada uma para sua finalidade: ficha técnica para características e limites declarados; FDS para perigos, manuseio e armazenamento; documento de qualidade para os resultados e a identificação do produto fornecido. Registre fornecedor, revisão e lote, em vez de reunir arquivos de produtos distintos sob o nome genérico de xisto.
+
+Esclareça se a necessidade é obter documentos, comparar produtos ou avaliar uma aplicação. Instalação, alteração de projeto, regulagem e comissionamento precisam de responsáveis e escopo próprios; não devem ser presumidos como incluídos em uma cotação de combustível.
+
+## Planejamento mensal de OTE
+
+O fornecimento de óleo de xisto pela Nuxem exige **consumo a partir de 200.000 litros por mês**, **planejamento mensal** e **consulta de disponibilidade**. Esse mínimo corresponde ao consumo da operação, não ao volume de cada entrega. Monte uma programação que a produção, o recebimento e o fornecedor possam conferir:
+
+- **Consumo previsto por período e dias de produção:** identificar picos, paradas e alterações em relação ao mês anterior.
+- **Estoque utilizável e saldo previsto na chegada:** conferir medição e capacidade de recebimento permitida para a carga.
+- **Volume e janela desejados por entrega:** validar disponibilidade, transporte e condições de descarga.
+- **Combustível remanescente e documentação do novo produto:** encaminhar a análise de compatibilidade quando houver mudança ou mistura.
+- **Contato responsável por mudanças na programação:** comunicar aumento de consumo ou parada com antecedência.
+
+A cobertura em SP, MG e PR não implica estoque ou atendimento imediato em toda cidade; confirme a programação para a unidade de destino.
 
 ## Etapa 4: decidir com os resultados
 

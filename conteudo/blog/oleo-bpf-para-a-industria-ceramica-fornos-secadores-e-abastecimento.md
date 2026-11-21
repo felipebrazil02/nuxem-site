@@ -3,7 +3,7 @@ title: "Cerâmica: óleo BPF ou xisto para fornos e secadores"
 description: "Compare óleo BPF e óleo de xisto (OTE) em fornos e secadores cerâmicos: consumo por campanha, compatibilidade e fornecimento da Nuxem."
 date: 2026-08-20
 slugOriginal: ""
-updated: 2026-11-08
+updated: 2026-11-21
 category: aplicacoes-bpf
 ---
 
@@ -89,6 +89,12 @@ Confirme a janela em que a planta pode receber e avaliar o produto. Verifique ta
 Com as pendências técnicas da avaliação resolvidas, reúna aplicação, modelo do queimador, consumo mensal previsto, especificação e cidade. Consulte a [cotação de óleo de xisto para sua operação industrial](/produtos/oleo-de-xisto/#cotacao-xisto): o fornecimento da Nuxem exige demanda mínima de 200 mil litros por mês, planejamento mensal e consulta de disponibilidade.
 
 Informe também as variações de produção, os turnos e as paradas previstas de fornos e secadores. Esses dados ajudam a alinhar as entregas à demanda real da fábrica. Para esclarecer a programação, [entre em contato com a Nuxem](/contato/).
+
+## Polo cerâmico de Santa Gertrudes (SP)
+
+**Uma cotação para Santa Gertrudes deve identificar a unidade e o consumidor de combustível.** Fornos, secadores e spray dryers podem ter requisitos diferentes, e a localização no polo não determina uma especificação única para todas as fábricas. Informe fabricante, modelo do queimador, regime e condições requeridas pelo processo; uma aplicação não deve ser validada apenas pela experiência em outra etapa da fábrica.
+
+Para o recebimento, envie endereço industrial e acesso de veículos, horários e contato da descarga, capacidade utilizável do tanque e produto remanescente, documentos exigidos e janela desejada. Se a entrega for para avaliação, alinhe a programação com a equipe que acompanhará o processo.
 
 ## Como solicitar a cotação
 

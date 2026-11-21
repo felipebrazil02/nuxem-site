@@ -77,7 +77,7 @@ ${tabelaReferencia()}
 <h2 id="fornecimento">Como comprar óleo de xisto e planejar o fornecimento?</h2>
 <p>A Nuxem atende São Paulo, Minas Gerais e Paraná com fornecimento de OTE para operações com <strong>consumo a partir de 200 mil litros por mês</strong>. O atendimento exige <strong>planejamento mensal e consulta de disponibilidade</strong>. Essa condição comercial da Nuxem se refere ao consumo mensal da operação; o volume de cada entrega é combinado na programação.</p>
 <p>Para solicitar uma proposta, reúna cidade/UF, aplicação, consumo estimado, quantidade por entrega, combustível atual e data pretendida. A equipe avalia a disponibilidade e as condições comerciais. Quantidade, frete, tributos, pagamento e prazos devem constar da proposta.</p>
-<p>Veja o <a href="/blog/oleo-de-xisto-ote-assistencia-tecnica-e-abastecimento-em-sp-mg-pr/">roteiro de planejamento do abastecimento de xisto em SP, MG e PR</a> e as <a href="/cobertura/">regiões atendidas</a>. Os prazos regionais informados para BPF não devem ser aplicados automaticamente ao OTE.</p>
+<p>Veja o <a href="/blog/como-migrar-sua-caldeira-ou-forno-para-oleo-de-xisto-ote/">roteiro de planejamento do abastecimento de xisto em SP, MG e PR</a> e as <a href="/cobertura/">regiões atendidas</a>. Os prazos regionais informados para BPF não devem ser aplicados automaticamente ao OTE.</p>
 <p><a class="btn btn-laranja" href="/produtos/oleo-de-xisto/#cotacao-xisto">Ver condições e cotação de óleo de xisto</a> <a class="btn btn-vazado" href="/contato/">Preparar consulta de disponibilidade</a></p>
 
 <h2 id="perguntas">Perguntas frequentes sobre óleo de xisto</h2>

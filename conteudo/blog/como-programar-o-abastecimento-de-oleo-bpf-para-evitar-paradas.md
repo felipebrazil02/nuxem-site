@@ -3,7 +3,7 @@ title: "Abastecimento de óleo BPF: estoque, autonomia e ponto de pedido"
 description: "Planeje reposição de BPF com consumo, estoque útil, prazo confirmado e reserva. Veja o exemplo de ponto de pedido e consulte a programação de fornecimento."
 date: 2026-07-25
 slugOriginal: ""
-updated: 2026-10-20
+updated: 2026-11-21
 category: logistica
 ---
 
@@ -37,11 +37,23 @@ Para converter unidades, consulte [litro, quilo e tonelada na compra de BPF](/bl
 
 Registre produto, quantidade, unidade, destino, janela de entrega e documentos de recebimento. Diferencie data solicitada de data confirmada. Informe mudanças de consumo e indisponibilidade de descarga antes do embarque.
 
-A [logística entre SP, MG e PR](/blog/logistica-de-abastecimento-de-oleo-bpf-entre-sp-mg-e-pr/) deve ser planejada com acesso, equipe e instalações disponíveis. Um caminhão na portaria ainda não representa combustível liberado para o processo.
+A entrega (detalhada abaixo) deve ser planejada com acesso, equipe e instalações disponíveis. Um caminhão na portaria ainda não representa combustível liberado para o processo.
 
 ## Como revisar o plano
 
 Compare consumo previsto e realizado, prazos e ocorrências. Ajuste a reserva com base no risco e no histórico, sem reduzir níveis operacionais definidos pela engenharia. Para uma nova aplicação, use o [cálculo de consumo em caldeiras](/blog/como-calcular-consumo-de-oleo-combustivel-em-caldeiras/) como apoio inicial.
+
+## Entrega e recebimento na unidade
+
+A distância é apenas uma parte do prazo: preparação da carga, transporte, acesso, descarga e liberação também entram na programação. Para evitar desencontro na chegada, informe:
+
+- Endereço da unidade que receberá o produto e identificação do acesso industrial.
+- Contato da equipe de recebimento e horários em que a descarga pode ocorrer.
+- Restrições de circulação, dimensões, portaria e agendamento.
+- Capacidade disponível e produto remanescente no tanque.
+- Requisitos documentais e condições acordadas para a transferência.
+
+Em compras para várias unidades, mantenha um registro por destino; usar o endereço de faturamento no lugar do ponto de descarga pode mudar frete, prazo e viabilidade. A Nuxem opera com frota própria em São Paulo, Minas Gerais e Paraná, o que permite tratar a programação diretamente com a empresa; ainda assim, trânsito, acesso e recebimento precisam entrar no planejamento.
 
 ## Transforme o plano de consumo em uma programação de fornecimento
 

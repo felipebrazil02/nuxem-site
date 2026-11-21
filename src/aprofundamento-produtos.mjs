@@ -145,7 +145,7 @@ export const APROFUNDAMENTO = {
         'A <a href="/blog/reducao-de-custos-com-substituicao-de-oleo-combustivel/">análise de custo de substituição</a> e a <a href="/blog/compatibilidade-entre-lotes-de-oleo-bpf-como-evitar-borra-na-mistura/">compatibilidade entre lotes</a> complementam o roteiro.',
       ] },
       { titulo: 'BTE em São Paulo, Minas Gerais e Paraná', blocos: [
-        'A Nuxem atende os três estados. Para operações com restrição ambiental no Paraná, veja o artigo sobre <a href="/blog/oleo-bte-e-b1-no-parana-atendendo-restricoes-ambientais/">BTE e B1 no Paraná</a> e a página de <a href="/cobertura/parana/">fornecimento no Paraná</a>. ' + condicaoOutros,
+        'A Nuxem atende os três estados. Para operações com restrição ambiental no Paraná, veja a diferença entre BTE e B1 na página de <a href="/cobertura/parana/">fornecimento no Paraná</a>. ' + condicaoOutros,
       ] },
     ],
     faq: [
