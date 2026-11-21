@@ -34,7 +34,7 @@ const grupos = [
     'como-reduzir-paradas-por-falta-de-combustível', 'continuidade-operacional-na-indústria',
     'digitalização-do-abastecimento-industrial',
   ]],
-  ['/blog/logistica-de-abastecimento-de-oleo-bpf-entre-sp-mg-e-pr/', [
+  ['/blog/como-programar-o-abastecimento-de-oleo-bpf-para-evitar-paradas/', [
     'logística-de-combustível-industrial-na-prática', 'transporte-de-óleo-combustível-industrial',
     'distribuição-de-óleo-combustível-industrial', 'rastreabilidade-no-abastecimento-industrial',
   ]],
@@ -59,6 +59,14 @@ const grupos = [
   ['/blog/normas-anp-para-oleo-combustivel-industrial/', ['óleo-bpf-impacto-ambiental-e-conformidade', 'óleo-bpf-redução-de-emissões-e-sustentabilidade']],
   ['/solucoes/caldeiras/', ['óleo-combustível-para-caldeira-industrial', 'melhores-combustíveis-para-caldeiras-industriais', 'principais-causas-de-instabilidade-termica']],
   ['/solucoes/usinas-de-asfalto/', ['óleo-combustível-para-usina-de-asfalto', 'óleo-combustível-em-usinas-de-asfalto']],
+  // Artigos de pouco alcance fundidos em 21/11/2026 no conteúdo mais completo do mesmo tema.
+  ['/blog/oleo-de-xisto-ote-para-industria-quimica-vapor-de-processo-e-aquecimento-termico/', ['oleo-de-xisto-ote-para-industria-da-borracha-vulcanizacao-e-autoclaves', 'oleo-de-xisto-ote-para-fabricas-de-racao-animal-vapor-e-peletizacao']],
+  ['/blog/oleo-bpf-para-a-industria-ceramica-fornos-secadores-e-abastecimento/', ['oleo-de-xisto-ote-para-o-polo-ceramico-de-santa-gertrudes-sp']],
+  ['/blog/como-migrar-sua-caldeira-ou-forno-para-oleo-de-xisto-ote/', ['oleo-de-xisto-ote-assistencia-tecnica-e-abastecimento-em-sp-mg-pr']],
+  ['/blog/como-programar-o-abastecimento-de-oleo-bpf-para-evitar-paradas/', ['logistica-de-abastecimento-de-oleo-bpf-entre-sp-mg-e-pr']],
+  ['/blog/oleo-combustivel-para-estufas-e-secadores-agricolas/', ['oleo-combustivel-para-estufas-e-secadores-agricolas-no-parana']],
+  ['/cobertura/parana/', ['oleo-combustivel-para-caldeiras-no-parana-fornecimento-continuo', 'oleo-bte-e-b1-no-parana-atendendo-restricoes-ambientais']],
+  ['/cobertura/minas-gerais/', ['oleo-bpf-para-usinas-de-asfalto-no-triangulo-mineiro-e-interior-de-mg', 'fornecedor-de-oleo-bpf-em-minas-gerais-como-escolher-certo']],
   // 404 do Search Console conferidos em 21/11/2026 que têm conteúdo equivalente no site atual.
   ['/blog/manutencao-preventiva-em-sistemas-de-armazenamento-de-oleo-bpf/', ['manutencao-preventiva-armazenamento-oleo-bpf']],
   ['/blog/oleo-de-xisto-ote-vs-oleo-bpf-diferencas-praticas-para-a-industria/', ['óleo-de-xisto-vs-bpf-qual-faz-mais-sentido']],

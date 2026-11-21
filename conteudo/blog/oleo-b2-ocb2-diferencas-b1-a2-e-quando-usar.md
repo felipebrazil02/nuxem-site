@@ -1,10 +1,10 @@
 ---
-title: "Óleo B2 (OCB2): diferenças para B1 e A2 e compra"
-description: "Entenda as diferenças de B2, B1 e A2 e o que conferir antes da compra. Consulte classes ofertadas, viscosidade e condições do equipamento."
+title: "Óleo B2 (OCB2): enxofre, viscosidade e diferença para B1 e A2"
+description: "OCB2 tem até 1,0% de enxofre e viscosidade até 960 mm²/s a 60 °C. Compare com OCB1 e OCA2 e veja quando o B2 faz sentido para a sua caldeira ou forno."
 date: "2026-10-11"
 slugOriginal: ""
 category: "compra"
-updated: 2026-10-20
+updated: 2026-11-21
 ---
 
 ## A resposta curta primeiro

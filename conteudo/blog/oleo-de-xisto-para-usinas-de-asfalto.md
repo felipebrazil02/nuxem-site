@@ -1,9 +1,9 @@
 ---
-title: "Óleo de xisto para usinas de asfalto: consumo e cotação"
-description: "Óleo de xisto OTE para usinas de asfalto: consumo, queimador e compra. Consulte disponibilidade para consumo a partir de 200 mil L/mês, com planejamento."
+title: "Óleo de xisto (OTE) na usina de asfalto: como avaliar e comprar"
+description: "Como testar o óleo de xisto no queimador da usina de asfalto: consumo comparável, especificação (enxofre máx. 1,0% na referência do OTE) e fornecimento a partir de 200 mil L/mês."
 date: 2026-09-22
 slugOriginal: ""
-updated: 2026-10-19
+updated: 2026-11-21
 category: aplicacoes-xisto
 ---
 

@@ -1,10 +1,19 @@
 export const GUIA_XISTO = {
   slug: 'guia-oleo-de-xisto',
-  title: 'Óleo de xisto: o que é o OTE e para que serve | Nuxem',
-  description: 'Saiba o que é óleo de xisto OTE, para que serve e como se compara ao BPF. Confira aplicações, especificações e condições de fornecimento para sua indústria.',
+  title: 'Óleo de xisto (OTE): o que é, especificação e usos | Nuxem',
+  description: 'Óleo de xisto OTE é combustível industrial obtido do xisto betuminoso. Veja a especificação de referência (enxofre máx. 1,0%, PCS 10.170 kcal/kg), usos e diferença para o BPF.',
   h1: 'Óleo de xisto OTE: o que é e para que serve na indústria',
   resumo: 'Entenda a origem do óleo de xisto OTE, suas aplicações em caldeiras, fornos e usinas de asfalto e o que avaliar na especificação antes de comprar.',
 };
+
+import { PRODUTOS } from './dados.mjs';
+
+// Mesma especificação de referência publicada na página do produto (catálogo Greca), com a fonte.
+function tabelaReferencia() {
+  const p = PRODUTOS.find(x => x.slug === 'oleo-de-xisto');
+  return `<table class="specs"><caption>${p.tituloSpecs}</caption><tbody>${p.specs.map(([k, v]) => `<tr><td>${k}</td><td>${v}</td></tr>`).join('')}</tbody></table>
+<p class="nota-tecnica">${p.observacaoSpecs}</p>`;
+}
 
 export function conteudoGuiaXisto() {
   return `
@@ -39,6 +48,7 @@ export function conteudoGuiaXisto() {
 
 <h2 id="propriedades">Quais propriedades devem ser verificadas?</h2>
 <p>Confira cada valor com sua unidade, temperatura de ensaio e natureza: limite máximo, limite mínimo, referência de catálogo ou resultado de amostra. A <a href="/produtos/oleo-de-xisto/#dados-tecnicos">página comercial reúne especificações de referência do OTE Greca</a>, com a fonte identificada. Elas não são um laudo de lote da Nuxem.</p>
+${tabelaReferencia()}
 <ul>
 <li><strong>Viscosidade:</strong> orienta a avaliação de bombeamento e atomização. A temperatura informada no ensaio faz parte do dado.</li>
 <li><strong>Poder calorífico:</strong> informa energia por unidade de massa ou volume. Identifique se é PCI ou PCS antes de usar no cálculo.</li>
@@ -67,7 +77,7 @@ export function conteudoGuiaXisto() {
 <h2 id="fornecimento">Como comprar óleo de xisto e planejar o fornecimento?</h2>
 <p>A Nuxem atende São Paulo, Minas Gerais e Paraná com fornecimento de OTE para operações com <strong>consumo a partir de 200 mil litros por mês</strong>. O atendimento exige <strong>planejamento mensal e consulta de disponibilidade</strong>. Essa condição comercial da Nuxem se refere ao consumo mensal da operação; o volume de cada entrega é combinado na programação.</p>
 <p>Para solicitar uma proposta, reúna cidade/UF, aplicação, consumo estimado, quantidade por entrega, combustível atual e data pretendida. A equipe avalia a disponibilidade e as condições comerciais. Quantidade, frete, tributos, pagamento e prazos devem constar da proposta.</p>
-<p>Veja o <a href="/blog/oleo-de-xisto-ote-assistencia-tecnica-e-abastecimento-em-sp-mg-pr/">roteiro de planejamento do abastecimento de xisto em SP, MG e PR</a> e as <a href="/cobertura/">regiões atendidas</a>. Os prazos regionais informados para BPF não devem ser aplicados automaticamente ao OTE.</p>
+<p>Veja o <a href="/blog/como-migrar-sua-caldeira-ou-forno-para-oleo-de-xisto-ote/">roteiro de planejamento do abastecimento de xisto em SP, MG e PR</a> e as <a href="/cobertura/">regiões atendidas</a>. Os prazos regionais informados para BPF não devem ser aplicados automaticamente ao OTE.</p>
 <p><a class="btn btn-laranja" href="/produtos/oleo-de-xisto/#cotacao-xisto">Ver condições e cotação de óleo de xisto</a> <a class="btn btn-vazado" href="/contato/">Preparar consulta de disponibilidade</a></p>
 
 <h2 id="perguntas">Perguntas frequentes sobre óleo de xisto</h2>

@@ -1,9 +1,10 @@
 ---
-title: "Óleo de xisto na indústria química: vapor e fornecimento"
-description: "Avalie xisto para geração de vapor e aquecimento na indústria química com dados do queimador, consumo e estoque. Consulte disponibilidade e planejamento."
+title: "Óleo de xisto na indústria química, da borracha e de ração"
+description: "Como avaliar óleo de xisto OTE para vapor e aquecimento na indústria química, na vulcanização de borracha e na peletização de ração: dados do queimador, consumo e fornecimento."
 date: 2026-10-12
 slugOriginal: ""
-updated: 2026-10-20
+updated: 2026-11-21
+category: aplicacoes-xisto
 ---
 
 ## A indústria química precisa de calor contínuo e previsível
@@ -46,11 +47,41 @@ Quando a avaliação apontar para a troca, o caminho seguro é validar aos pouco
 - **Acompanhe a manutenção:** registre ocorrências de corrosão, depósitos e intervenções, sem presumir redução antes de comparar os resultados.
 - **Revise o fornecimento:** a troca só vale se o abastecimento for tão confiável quanto o anterior, com entrega programada e suporte técnico.
 
+## Indústria da borracha: vulcanização e autoclaves
+
+**Identifique o equipamento que queima o combustível.** Um processo de borracha pode receber vapor, fluido térmico ou calor de outro sistema; isso não significa que o óleo será utilizado diretamente na autoclave ou no equipamento de produção. A adequação do combustível não comprova, por si, a qualidade do ciclo de fabricação.
+
+Descreva o caminho do calor: gerador, consumidores e condições exigidas pelo processo, e se a operação ocorre por ciclos ou de forma contínua. Para comparar dois cenários, reúna:
+
+- Consumo de combustível e quantidade produzida no mesmo intervalo.
+- Duração dos ciclos e carga processada.
+- Condições térmicas requeridas e registros de operação.
+- Ocorrências de parada, ajuste ou manutenção.
+- Indicadores de qualidade definidos pela fábrica.
+
+Não compare ciclos diferentes apenas pela duração ou pelo combustível consumido. Qualquer alteração de equipamento, controle ou regulagem deve seguir o fabricante e o responsável técnico.
+
+## Fábricas de ração: vapor e peletização
+
+**Geração de vapor e aquecimento direto são aplicações diferentes.** Quando o vapor é usado na linha, registre produção, períodos de funcionamento e condições requeridas. Mudanças de formulação, carga ou umidade podem afetar a comparação entre campanhas e precisam ser identificadas pela equipe de processo.
+
+Não use uma queda no consumo diário como prova isolada de eficiência; compare a entrega útil e as condições do período. O [cálculo de consumo de óleo em caldeiras](/blog/como-calcular-consumo-de-oleo-combustivel-em-caldeiras/) ajuda a estruturar a base térmica. No sistema de geração, confira:
+
+- Modelo do queimador e especificação de combustível admitida.
+- Condições de atomização e de transferência.
+- Capacidade de aquecimento, filtragem e armazenamento.
+- Critérios de documentação e aceitação de cargas.
+- Requisitos ambientais e de qualidade aplicáveis à unidade.
+
+Se houver contato direto de gases ou vapor com o material, esse uso deve ser explicitado na avaliação técnica. Uma aprovação para aquecimento indireto não pode ser estendida automaticamente a outra configuração.
+
+Nos dois casos, o [plano de migração para OTE](/blog/como-migrar-sua-caldeira-ou-forno-para-oleo-de-xisto-ote/) organiza as etapas entre documentação, teste acompanhado e decisão de fornecimento.
+
 ## Fornecimento contínuo em SP, MG e PR
 
 Uma planta química não pode parar no meio de um lote por falta de combustível. O abastecimento precisa acompanhar o ritmo da linha, e a região de atendimento importa tanto quanto a especificação do produto.
 
-A Nuxem atende indústrias em São Paulo, Minas Gerais e Paraná, com entrega programada e padrão constante de qualidade. Para entender como a operação é organizada entre os estados, vale ler o artigo sobre [logística de abastecimento de óleo BPF entre SP, MG e PR](/blog/logistica-de-abastecimento-de-oleo-bpf-entre-sp-mg-e-pr/).
+A Nuxem atende indústrias em São Paulo, Minas Gerais e Paraná, com entrega programada e padrão constante de qualidade. Para entender como a operação é organizada entre os estados, vale ler o artigo sobre [programação de abastecimento e entrega](/blog/como-programar-o-abastecimento-de-oleo-bpf-para-evitar-paradas/).
 
 ## Conclusão
 
@@ -58,4 +89,4 @@ Para decidir pelo óleo de xisto na indústria química, confronte a especifica�
 
 A Nuxem fornece [óleo de xisto](/produtos/oleo-de-xisto/), [óleos alternativos](/produtos/oleos-alternativos/) e [óleo BTE](/produtos/oleo-bte/), com condições a confirmar para cada produto e operação. Consulte documentação, disponibilidade e planejamento antes de programar o recebimento.
 
-Para a indústria química, informe regime térmico, equipamento, consumo e paradas previstas. OTE é combustível de queima; sua cotação não autoriza usá-lo como fluido térmico. Consulte [preço e disponibilidade de óleo de xisto OTE](/produtos/oleo-de-xisto/#cotacao-xisto). O fornecimento de xisto exige consumo a partir de 200 mil litros por mês, planejamento mensal e disponibilidade sob consulta. O mínimo é mensal, não por entrega; quantidades e prazos são alinhados na programação.
+Para a indústria química, da borracha ou de ração, informe regime térmico, caminho do calor até o processo, equipamento, consumo e paradas previstas. OTE é combustível de queima; sua cotação não autoriza usá-lo como fluido térmico. Consulte [preço e disponibilidade de óleo de xisto OTE](/produtos/oleo-de-xisto/#cotacao-xisto). O fornecimento de xisto exige consumo a partir de 200 mil litros por mês, planejamento mensal e disponibilidade sob consulta. O mínimo é mensal, não por entrega; quantidades e prazos são alinhados na programação.

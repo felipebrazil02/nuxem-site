@@ -1,8 +1,8 @@
 ---
-title: "Ponto de fulgor do óleo combustível: segurança e compra"
-description: "Entenda ponto de fulgor e sua relação com armazenamento. Confira a documentação do combustível e os requisitos da instalação antes da compra."
+title: "Ponto de fulgor do óleo combustível: o que é e como ler no laudo"
+description: "Ponto de fulgor é a menor temperatura em que o vapor do óleo inflama no ensaio. Veja como ler o valor no laudo, a diferença para o ponto de combustão e o que muda no armazenamento."
 date: "2026-10-18"
-updated: 2026-10-20
+updated: 2026-11-21
 slugOriginal: ""
 category: "operacao"
 ---
@@ -10,6 +10,8 @@ category: "operacao"
 ## A resposta curta
 
 O **ponto de fulgor** de um líquido é a menor temperatura, em condições padronizadas de ensaio, na qual ele desprende vapor suficiente para formar uma mistura inflamável com o ar que se inflama momentaneamente ao entrar em contato com uma fonte de ignição. Esse resultado ajuda a avaliar os riscos de armazenamento, aquecimento e manuseio do óleo combustível, mas não define sozinho uma condição segura de operação. A avaliação também depende da temperatura de uso, da formação de névoas, das fontes de ignição e das características da instalação.
+
+O valor aparece no laudo ou na ficha técnica com o método de ensaio. Na especificação de referência publicada para o [óleo de xisto OTE](/produtos/oleo-de-xisto/#dados-tecnicos), por exemplo, o ponto de fulgor é de no mínimo 66,0 °C pelo método ASTM D93. Compare sempre o número com o método e com o tipo de limite (mínimo ou resultado de amostra).
 
 Se a dúvida for sobre a denominação do combustível, consulte [o que é óleo BPF e o significado da sigla](/guia-oleo-bpf/). Nesta página, o foco é interpretar o ponto de fulgor e suas implicações para armazenamento e operação.
 

@@ -2,14 +2,15 @@
 // Todo número vem dos dados já publicados nas próprias páginas (limites de classe da ANP,
 // laudo da amostra APF, portfólio de referência do BTE) ou dos artigos do blog. Nada é inventado.
 
-const tabelaClasses = destaque => `<table class="specs"><caption>Limites de classe da ANP para óleos combustíveis (viscosidade a 60 °C)</caption><thead><tr><th scope="col">Classe</th><th scope="col">Enxofre (limite da classe)</th><th scope="col">Viscosidade (limite da classe)</th></tr></thead><tbody>${[
+export const tabelaClasses = destaque => `<table class="specs"><caption>Limites de classe da ANP para óleos combustíveis (viscosidade a 60 °C)</caption><thead><tr><th scope="col">Classe</th><th scope="col">Enxofre (limite da classe)</th><th scope="col">Viscosidade (limite da classe)</th></tr></thead><tbody>${[
   ['OCA1', 'até 2,0% em massa', 'até 620 mm²/s'],
   ['OCA2', 'até 2,0% em massa', 'até 960 mm²/s'],
   ['OCB1', 'até 1,0% em massa', 'até 620 mm²/s'],
   ['OCB2', 'até 1,0% em massa', 'até 960 mm²/s'],
 ].map(([c, s, v]) => `<tr${c === destaque ? ' aria-current="true"' : ''}><td>${c === destaque ? `<strong>${c}</strong>` : c}</td><td>${s}</td><td>${v}</td></tr>`).join('')}</tbody></table>`;
 
-const notaTabela = '<p class="nota-tecnica">São requisitos da classe, não resultados de um lote. Confirme a especificação vigente e os dados do produto cotado.</p>';
+export const notaTabelaClasses = '<p class="nota-tecnica">São requisitos da classe, não resultados de um lote. Confirme a especificação vigente e os dados do produto cotado.</p>';
+const notaTabela = notaTabelaClasses;
 
 const lista = itens => `<ul>${itens.map(i => `<li>${i}</li>`).join('')}</ul>`;
 
@@ -144,7 +145,7 @@ export const APROFUNDAMENTO = {
         'A <a href="/blog/reducao-de-custos-com-substituicao-de-oleo-combustivel/">análise de custo de substituição</a> e a <a href="/blog/compatibilidade-entre-lotes-de-oleo-bpf-como-evitar-borra-na-mistura/">compatibilidade entre lotes</a> complementam o roteiro.',
       ] },
       { titulo: 'BTE em São Paulo, Minas Gerais e Paraná', blocos: [
-        'A Nuxem atende os três estados. Para operações com restrição ambiental no Paraná, veja o artigo sobre <a href="/blog/oleo-bte-e-b1-no-parana-atendendo-restricoes-ambientais/">BTE e B1 no Paraná</a> e a página de <a href="/cobertura/parana/">fornecimento no Paraná</a>. ' + condicaoOutros,
+        'A Nuxem atende os três estados. Para operações com restrição ambiental no Paraná, veja a diferença entre BTE e B1 na página de <a href="/cobertura/parana/">fornecimento no Paraná</a>. ' + condicaoOutros,
       ] },
     ],
     faq: [

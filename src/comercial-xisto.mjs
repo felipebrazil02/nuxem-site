@@ -14,7 +14,7 @@ export function comercialXisto(empresa) {
       <h3>Consumo mínimo e planejamento do fornecimento</h3>
       <p>O fornecimento de óleo de xisto pela Nuxem exige uma demanda mínima de <strong>200.000 litros por mês</strong> e <strong>planejamento mensal</strong>. Esse volume se refere ao consumo mensal da operação; o volume de cada entrega é definido na programação de abastecimento.</p>
       <p>Consulte a disponibilidade antes de programar a compra. A Nuxem trabalha com uma carteira limitada de clientes de OTE para organizar a aquisição do produto e o atendimento às demandas planejadas. A confirmação do fornecimento e dos prazos depende dessa avaliação.</p>
-      <p>Veja <a href="/blog/oleo-de-xisto-ote-assistencia-tecnica-e-abastecimento-em-sp-mg-pr/">quais dados reunir para planejar o abastecimento de óleo de xisto em SP, MG e PR</a>, incluindo consumo, documentação e condições de recebimento.</p>
+      <p>Veja <a href="/blog/como-migrar-sua-caldeira-ou-forno-para-oleo-de-xisto-ote/">quais dados reunir para planejar o abastecimento de óleo de xisto em SP, MG e PR</a>, incluindo consumo, documentação e condições de recebimento.</p>
       <h3>Aplicações e informações para a cotação</h3>
       <ul><li><a href="/solucoes/caldeiras/">Caldeiras industriais</a>: informe o modelo do queimador, o consumo atual e a demanda de vapor.</li>
       <li><a href="/blog/oleo-de-xisto-para-usinas-de-asfalto/">Usinas de asfalto</a>: informe a previsão de produção, o combustível utilizado e a frequência de abastecimento.</li>
